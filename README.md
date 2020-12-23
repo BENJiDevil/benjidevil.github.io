@@ -1,2 +1,2 @@
 # benjidevil.github.io
-my person page 2
+ My personal page (coming soon)
