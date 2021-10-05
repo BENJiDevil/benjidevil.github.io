@@ -82,7 +82,7 @@
                                     <div class="submenu-content submenu-blocks">
                                         <div class="submenu-blocks__content">
                                             <div class="submenu-blocks__pro">
-                                                <div class="category-title">Techno PRO (2019)</div>
+                                                <a href="#" class="category-title">Techno PRO (2019)</a>
                                                 <div class="category-images">
                                                     <a href="#" class="category-link">
                                                         <img src="images/main/menu_pro_black.png" alt="Techno PRO" class="category-image">
@@ -96,7 +96,7 @@
                                                 </div>
                                             </div>
                                             <div class="submenu-blocks__lite">
-                                                <div class="category-title">Techno LITE/RED</div>
+                                                <a href="#" class="category-title">Techno LITE/RED</a>
                                                 <div class="category-images">
                                                     <a href="#" class="category-link">
                                                         <img src="images/main/menu_pro_lite.png" alt="Techno LITE" class="category-image">
@@ -106,39 +106,16 @@
                                                     </a>
                                                 </div>
                                                 <div class="category-btn">
-                                                    <a href="#" class="mmenu-btn"><span><i class="icon icon-right-small"></i>Launch discount <span class="old-price">€449,-</span> €349,-</span></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="main-menu__item">
-                                    <a href="#" class="main-menu__link submenu-link"><span>Accessories</span></a>
-                                    <ul class="submenu-content submenu-list">
-                                        <li class="submenu-list__item">
-                                            <a href="#" class="submenu-list__link"><span>item1</span></a>
-                                        </li>
-                                        <li class="submenu-list__item">
-                                            <a href="#" class="submenu-list__link"><span>item2</span></a>
-                                        </li>
-                                        <li class="submenu-list__item">
-                                            <a href="#" class="submenu-list__link"><span>item3</span></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#" class="main-menu__link"><span>Accessories</span></a>
                                 </li>
                                 <li class="main-menu__item">
-                                    <a href="#" class="main-menu__link submenu-link"><span>Brand stores</span></a>
-                                    <ul class="submenu-content submenu-list">
-                                        <li class="submenu-list__item">
-                                            <a href="#" class="submenu-list__link"><span>item1</span></a>
-                                        </li>
-                                        <li class="submenu-list__item">
-                                            <a href="#" class="submenu-list__link"><span>item2</span></a>
-                                        </li>
-                                        <li class="submenu-list__item">
-                                            <a href="#" class="submenu-list__link"><span>item3</span></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#" class="main-menu__link"><span>Brand stores</span></a>
                                 </li>
                                 <li class="main-menu__item">
                                     <a href="#" class="main-menu__link"><span>Our Story</span></a>
@@ -227,20 +204,22 @@
                                 <span class="check-icon" style="opacity: 0;"><i class="icon icon-ok"></i></span>
                             </h2>
                             <div class="section-content" style="display: block;">
-                                <div class="input-group">
-                                    <input id="info_fname" type="text" class="input-style">
-                                    <label for="info_fname">First name</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="info_lname" type="text" class="input-style">
-                                    <label for="info_lname">Last name</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="info_email" type="email" class="input-style">
-                                    <label for="info_email">E-mail adress</label>
-                                </div>
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" data-step="2" class="form-step btn-style"><span>Next</span></a>
+                                <div class="section-content__row">
+                                    <div class="input-group half-group">
+                                        <input id="info_fname" type="text" class="input-style">
+                                        <label for="info_fname">First name</label>
+                                    </div>
+                                    <div class="input-group half-group">
+                                        <input id="info_lname" type="text" class="input-style">
+                                        <label for="info_lname">Last name</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="info_email" type="email" class="input-style">
+                                        <label for="info_email">E-mail adress</label>
+                                    </div>
+                                    <div class="input-group btn-group">
+                                        <a href="javascript:void(0);" data-step="2" class="form-step btn-style"><span>Next</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -251,56 +230,58 @@
                                 <span class="check-icon" style="opacity: 0;"><i class="icon icon-ok"></i></span>
                             </h2>
                             <div class="section-content">
-                                <div class="input-group input-checkbox">
-                                    <input id="ship_delivery" type="checkbox" checked>
-                                    <label for="ship_delivery">Home delivery</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="ship_fname" type="text" class="input-style">
-                                    <label for="ship_fname">First name</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="ship_lname" type="text" class="input-style">
-                                    <label for="ship_lname">Last name</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="ship_phone" type="text" class="input-style">
-                                    <label for="ship_phone">Phone number</label>
-                                </div>
-                                <div class="input-group input-select">
-                                    <label for="ship_country" class="hide-select-label">Country</label>
-                                    <select name="ship_country" id="ship_country">
-                                        <option value="" disabled selected>Country</option>
-                                        <option value="value1">value1</option>
-                                        <option value="value2">value2</option>
-                                    </select>
-                                </div>
-                                <div class="input-group">
-                                    <input id="ship_city" type="text" class="input-style">
-                                    <label for="ship_city">City</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="ship_street" type="text" class="input-style">
-                                    <label for="ship_street">Street name and number</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="ship_postal" type="text" class="input-style">
-                                    <label for="ship_postal">Zip/Postal code</label>
-                                </div>
-                                <div class="input-group input-checkbox">
-                                    <input id="ship_typeorder" type="checkbox" checked>
-                                    <label for="ship_typeorder">This is a business order</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="ship_company" type="text" class="input-style">
-                                    <label for="ship_company">Company name</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="ship_vat" type="text" class="input-style">
-                                    <label for="ship_vat">VAT/ID number</label>
-                                </div>
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" data-step="3" class="form-step btn-style"><span>Next</span></a>
+                                <div class="section-content__row">
+                                    <div class="input-group input-checkbox">
+                                        <input id="ship_delivery" type="checkbox" checked>
+                                        <label for="ship_delivery">Home delivery</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="ship_fname" type="text" class="input-style">
+                                        <label for="ship_fname">First name</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="ship_lname" type="text" class="input-style">
+                                        <label for="ship_lname">Last name</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="ship_phone" type="text" class="input-style">
+                                        <label for="ship_phone">Phone number</label>
+                                    </div>
+                                    <div class="input-group input-select half-group">
+                                        <select name="ship_country" id="ship_country">
+                                            <option value="" disabled selected>Country</option>
+                                            <option value="value1">value1</option>
+                                            <option value="value2">value2</option>
+                                        </select>
+                                        <label for="ship_country" class="hide-select-label">Country</label>
+                                    </div>
+                                    <div class="input-group half-group">
+                                        <input id="ship_city" type="text" class="input-style">
+                                        <label for="ship_city">City</label>
+                                    </div>
+                                    <div class="input-group auto-group">
+                                        <input id="ship_street" type="text" class="input-style">
+                                        <label for="ship_street">Street name and number</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="ship_postal" type="text" class="input-style">
+                                        <label for="ship_postal">Zip/Postal code</label>
+                                    </div>
+                                    <div class="input-group input-checkbox">
+                                        <input id="ship_typeorder" type="checkbox" checked>
+                                        <label for="ship_typeorder">This is a business order</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="ship_company" type="text" class="input-style">
+                                        <label for="ship_company">Company name</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="ship_vat" type="text" class="input-style">
+                                        <label for="ship_vat">VAT/ID number</label>
+                                    </div>
+                                    <div class="input-group btn-group">
+                                        <a href="javascript:void(0);" data-step="3" class="form-step btn-style"><span>Next</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -311,56 +292,59 @@
                                 <span class="check-icon" style="opacity: 0;"><i class="icon icon-ok"></i></span>
                             </h2>
                             <div class="section-content">
-                                <div class="input-group input-checkbox">
-                                    <input id="adress_ship" type="checkbox" checked>
-                                    <label for="adress_ship">Use shipping adress for billing</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="adress_fname" type="text" class="input-style">
-                                    <label for="adress_fname">First name</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="adress_lname" type="text" class="input-style">
-                                    <label for="adress_lname">Last name</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="adress_phone" type="text" class="input-style">
-                                    <label for="adress_phone">Phone number</label>
-                                </div>
-                                <div class="input-group input-select">
-                                    <label for="adress_country" class="hide-select-label">Country</label>
-                                    <select name="ship_country" id="adress_country">
-                                        <option value="" disabled selected>Country</option>
-                                        <option value="value1">value1</option>
-                                        <option value="value2">value2</option>
-                                    </select>
-                                </div>
-                                <div class="input-group">
-                                    <input id="adress_city" type="text" class="input-style">
-                                    <label for="adress_city">City</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="adress_street" type="text" class="input-style">
-                                    <label for="adress_street">Street name and number</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="adress_postal" type="text" class="input-style">
-                                    <label for="adress_postal">Zip/Postal code</label>
-                                </div>
-                                <div class="input-group input-checkbox">
-                                    <input id="adress_typeorder" type="checkbox">
-                                    <label for="adress_typeorder">This is a business order</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="adress_company" type="text" class="input-style">
-                                    <label for="adress_company">Company name</label>
-                                </div>
-                                <div class="input-group">
-                                    <input id="adress_vat" type="text" class="input-style">
-                                    <label for="adress_vat">VAT/ID number</label>
-                                </div>
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" data-step="4" class="form-step btn-style"><span>Next</span></a>
+                                <div class="section-content__row">
+                                    <div class="input-group input-checkbox">
+                                        <input id="adress_ship" type="checkbox" checked>
+                                        <label for="adress_ship">Use shipping adress for billing</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="adress_fname" type="text" class="input-style">
+                                        <label for="adress_fname">First name</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="adress_lname" type="text" class="input-style">
+                                        <label for="adress_lname">Last name</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="adress_phone" type="text" class="input-style">
+                                        <label for="adress_phone">Phone number</label>
+                                    </div>
+                                    <div class="input-group half-group input-select">
+                                        <select name="ship_country" id="adress_country">
+                                            <option value="" disabled selected>Country</option>
+                                            <option value="value1">value1</option>
+                                            <option value="value2">value2</option>
+                                        </select>
+                                        <label for="adress_country" class="hide-select-label">Country</label>
+                                    </div>
+                                    <div class="input-group half-group">
+                                        <input id="adress_city" type="text" class="input-style">
+                                        <label for="adress_city">City</label>
+                                    </div>
+                                    <div class="input-group auto-group">
+
+                                        <input id="adress_street" type="text" class="input-style">
+                                        <label for="adress_street">Street name and number</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="adress_postal" type="text" class="input-style">
+                                        <label for="adress_postal">Zip/Postal code</label>
+                                    </div>
+                                    <div class="input-group input-checkbox">
+                                        <input id="adress_typeorder" type="checkbox">
+                                        <label for="adress_typeorder">This is a business order</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="adress_company" type="text" class="input-style">
+                                        <label for="adress_company">Company name</label>
+                                    </div>
+                                    <div class="input-group thrd-group">
+                                        <input id="adress_vat" type="text" class="input-style">
+                                        <label for="adress_vat">VAT/ID number</label>
+                                    </div>
+                                    <div class="input-group btn-group">
+                                        <a href="javascript:void(0);" data-step="4" class="form-step btn-style"><span>Next</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -374,46 +358,50 @@
                                 <div class="details">
                                     <h4 class="payinfo-title">Your details</h4>
                                     <div class="details-info">
-                                        <div class="details-info__ship">
-                                            <p class="info-title">Ship to:</p>
-                                            <p>John Smith</p>
-                                            <p>Ctreet Name 30</p>
-                                            <p>3067NL Rotterdam</p>
-                                            <p>Netherlands</p>
-                                            <p>+31 5455566</p>
-                                        </div>
-                                        <div class="details-info__bill">
-                                            <p class="info-title">Bill to:</p>
-                                            <p>John Smith</p>
-                                            <p>Ctreet Name 30</p>
-                                            <p>3067NL Rotterdam</p>
-                                            <p>Netherlands</p>
-                                            <p>+31 5455566</p>
+                                        <div class="section-content__row">
+                                            <div class="details-info__ship">
+                                                <p class="info-title">Ship to:</p>
+                                                <p>John Smith</p>
+                                                <p>Ctreet Name 30</p>
+                                                <p>3067NL Rotterdam</p>
+                                                <p>Netherlands</p>
+                                                <p>+31 5455566</p>
+                                            </div>
+                                            <div class="details-info__bill">
+                                                <p class="info-title">Bill to:</p>
+                                                <p>John Smith</p>
+                                                <p>Ctreet Name 30</p>
+                                                <p>3067NL Rotterdam</p>
+                                                <p>Netherlands</p>
+                                                <p>+31 5455566</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="payment">
                                     <h4 class="payinfo-title">Payment method</h4>
                                     <div class="payment__method active">
-                                        <div class="input-group input-checkbox">
-                                            <input id="payinfo_card" type="checkbox" checked>
-                                            <label for="payinfo_card">Credit Card</label>
-                                        </div>
-                                        <div class="input-group" style="display: block;">
-                                            <input type="text" id="card_number" class="input-style">
-                                            <label for="card_number">Card number</label>
-                                        </div>
-                                        <div class="input-group" style="display: block;">
-                                            <input type="text" id="card_date" class="input-style">
-                                            <label for="card_date">Expiry date</label>
-                                        </div>
-                                        <div class="input-group" style="display: block;">
-                                            <input type="text" id="card_cvc" class="input-style">
-                                            <label for="card_cvc">CVC / CVV</label>
-                                        </div>
-                                        <div class="input-group" style="display: block;">
-                                            <input type="text" id="card_holder" class="input-style">
-                                            <label for="card_holder">Cardholder name</label>
+                                        <div class="section-content__row">
+                                            <div class="input-group input-checkbox">
+                                                <input id="payinfo_card" type="checkbox" checked>
+                                                <label for="payinfo_card">Credit Card</label>
+                                            </div>
+                                            <div class="input-group frth-group" style="display: block;">
+                                                <label for="card_number">Card number</label>
+                                                <input type="text" id="card_number" class="input-style">
+                                            </div>
+                                            <div class="input-group frth-group" style="display: block;">
+                                                <label for="card_date">Expiry date</label>
+                                                <input type="text" id="card_date" class="input-style">
+                                            </div>
+                                            <div class="input-group frth-group" style="display: block;">
+                                                <label for="card_cvc">CVC / CVV</label>
+                                                <input type="text" id="card_cvc" class="input-style">
+                                            </div>
+                                            <div class="input-group frth-group" style="display: block;">
+                                                <label for="card_holder">Cardholder name</label>
+                                                <input type="text" id="card_holder" class="input-style">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="payment__method">
@@ -465,7 +453,7 @@
                         </div>
                         <div id="step5" class="payment__content__summary">
                             <h2 class="section-title"><span>Summary</span></h2>
-                            <div class="section-content">
+                            <div class="section-content" style="display: block;">
                                 <div class="result-list">
                                     <div class="result-list__item">
                                         <div class="item-title">
