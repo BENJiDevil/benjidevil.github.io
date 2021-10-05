@@ -57,19 +57,19 @@ body {
 }
 @font-face {
   font-family: Helvetica;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/HelveticaMedium/HelveticaMedium.eot);
-  src: url(../fonts/HelveticaMedium/HelveticaMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/HelveticaMedium/HelveticaMedium.woff) format("woff"),url(../fonts/HelveticaMedium/HelveticaMedium.woff2) format("woff2"),url(../fonts/HelveticaMedium/HelveticaMedium.ttf) format("truetype")
-}
-@font-face {
-  font-family: Helvetica;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/HelveticaRegular/HelveticaRegular.eot);
   src: url(../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/HelveticaRegular/HelveticaRegular.woff) format("woff"),url(../fonts/HelveticaRegular/HelveticaRegular.woff2) format("woff2"),url(../fonts/HelveticaRegular/HelveticaRegular.ttf) format("truetype")
+}
+@font-face {
+  font-family: Helvetica;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/HelveticaMedium/HelveticaMedium.eot);
+  src: url(../fonts/HelveticaMedium/HelveticaMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/HelveticaMedium/HelveticaMedium.woff) format("woff"),url(../fonts/HelveticaMedium/HelveticaMedium.woff2) format("woff2"),url(../fonts/HelveticaMedium/HelveticaMedium.ttf) format("truetype")
 }
 @font-face {
   font-family: Fontello;
@@ -218,7 +218,8 @@ body:after {
   transition: background-color .3s;
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
-  transform: translateY(-100%)
+  transform: translateY(-100%);
+  z-index: 10
 }
 body::-webkit-scrollbar {
   width: 8px
@@ -1157,6 +1158,10 @@ body.overflow:after {
   transition: transform .3s;
   -o-transition: transform .3s;
   transition: transform .3s,-webkit-transform .3s
+}
+.order__content .order-btn .icon-right-long {
+  -webkit-animation: 1s linear infinite arrow-1;
+  animation: 1s linear infinite arrow-1
 }
 .order__content .order-btn span {
   position: relative;
