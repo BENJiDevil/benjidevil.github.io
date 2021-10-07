@@ -147,20 +147,22 @@
         <div class="cart-page__steps">
             <div class="container">
                 <ul class="steps-list">
-                    <li class="steps-list__item ok"><a href="#">1. Specifications</a></li>
-                    <li class="steps-list__item active"><a href="#">2. Accessories</a></li>
-                    <li class="steps-list__item new"><a href="#">3. Services</a></li>
-                    <li class="steps-list__item new"><a href="#">4. Payment</a></li>
+                    <li class="steps-list__item ok" data-count="1"><a href="#">1. Specifications</a></li>
+                    <li class="steps-list__item active" data-count="2"><a href="#">2. Accessories</a></li>
+                    <li class="steps-list__item new" data-count="3"><a href="#">3. Services</a></li>
+                    <li class="steps-list__item new" data-count="4"><a href="#">4. Payment</a></li>
                 </ul>
+                <span class="steps-count">Step <span id="stps-count">2/4</span></span>
             </div>
         </div>
         <div class="cart-page__content">
             <div class="container">
                 <div class="services__content">
-                    <div class="services__content__left-side">
+                    <div class="services__content__left-side cart-page__row__left-side">
                         <div class="image-block lazyload" data-bgset="images/main/mobile/cart_main-image.jpg [(max-width: 575px)] | images/main/pad/cart_main-image.jpg [(max-width: 1024px)] | images/main/cart_main-image.jpg [(min-width: 1025px)]"></div>
+
                     </div>
-                    <div class="services__content__right-side">
+                    <div class="services__content__right-side cart-page__row__right-side">
                         <h1 class="block-title">Additional Services</h1>
                         <div class="service-note">
                             <i class="icon icon-notification"></i>
@@ -181,7 +183,33 @@
                                 </div>
                             </form>
                         </div>
-                        <a href="#" class="step-link btn-style"><span>Next</span></a>
+                        <button type="submit" class="step-link btn-style"><span>Next</span></button>
+                        <div class="cart-descr-block">
+                            <div class="cart-descr-block__item">
+                                <div class="icon">
+                                    <img src="images/svg/icons/diamond.svg" alt="icon" class="icon-image">
+                                </div>
+                                <div class="text">High quality</div>
+                            </div>
+                            <div class="cart-descr-block__item">
+                                <div class="icon">
+                                    <img src="images/svg/icons/recycle.svg" alt="icon" class="icon-image">
+                                </div>
+                                <div class="text">14-Day Risk-Free Trial</div>
+                            </div>
+                            <div class="cart-descr-block__item">
+                                <div class="icon">
+                                    <img src="images/svg/icons/shield-checked.svg" alt="icon" class="icon-image">
+                                </div>
+                                <div class="text">2-Year Warranty</div>
+                            </div>
+                            <div class="cart-descr-block__item">
+                                <div class="icon">
+                                    <img src="images/svg/icons/box.svg" alt="icon" class="icon-image">
+                                </div>
+                                <div class="text">Shipped within 24h!</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

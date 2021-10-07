@@ -147,11 +147,12 @@
         <div class="cart-page__steps">
             <div class="container">
                 <ul class="steps-list">
-                    <li class="steps-list__item ok"><a href="#">1. Specifications</a></li>
-                    <li class="steps-list__item active"><a href="#">2. Accessories</a></li>
-                    <li class="steps-list__item new"><a href="#">3. Services</a></li>
-                    <li class="steps-list__item new"><a href="#">4. Payment</a></li>
+                    <li class="steps-list__item ok" data-count="1"><a href="#">1. Specifications</a></li>
+                    <li class="steps-list__item active" data-count="2"><a href="#">2. Accessories</a></li>
+                    <li class="steps-list__item new" data-count="3"><a href="#">3. Services</a></li>
+                    <li class="steps-list__item new" data-count="4"><a href="#">4. Payment</a></li>
                 </ul>
+                <span class="steps-count">Step <span id="stps-count">2/4</span></span>
             </div>
         </div>
         <div class="cart-page__content">
@@ -206,15 +207,15 @@
                             <div class="section-content" style="display: block;">
                                 <div class="section-content__row">
                                     <div class="input-group half-group">
-                                        <input id="info_fname" type="text" class="input-style">
+                                        <input id="info_fname" type="text" class="input-style" placeholder="First name">
                                         <label for="info_fname">First name</label>
                                     </div>
                                     <div class="input-group half-group">
-                                        <input id="info_lname" type="text" class="input-style">
+                                        <input id="info_lname" type="text" class="input-style" placeholder="Last name">
                                         <label for="info_lname">Last name</label>
                                     </div>
                                     <div class="input-group">
-                                        <input id="info_email" type="email" class="input-style">
+                                        <input id="info_email" type="email" class="input-style" placeholder="E-mail adress">
                                         <label for="info_email">E-mail adress</label>
                                     </div>
                                     <div class="input-group btn-group">
@@ -236,15 +237,15 @@
                                         <label for="ship_delivery">Home delivery</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="ship_fname" type="text" class="input-style">
+                                        <input id="ship_fname" type="text" class="input-style" placeholder="First name">
                                         <label for="ship_fname">First name</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="ship_lname" type="text" class="input-style">
+                                        <input id="ship_lname" type="text" class="input-style" placeholder="Last name">
                                         <label for="ship_lname">Last name</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="ship_phone" type="text" class="input-style">
+                                        <input id="ship_phone" type="text" class="input-style" placeholder="Phone number">
                                         <label for="ship_phone">Phone number</label>
                                     </div>
                                     <div class="input-group input-select half-group">
@@ -256,15 +257,15 @@
                                         <label for="ship_country" class="hide-select-label">Country</label>
                                     </div>
                                     <div class="input-group half-group">
-                                        <input id="ship_city" type="text" class="input-style">
+                                        <input id="ship_city" type="text" class="input-style" placeholder="City">
                                         <label for="ship_city">City</label>
                                     </div>
                                     <div class="input-group auto-group">
-                                        <input id="ship_street" type="text" class="input-style">
+                                        <input id="ship_street" type="text" class="input-style" placeholder="Street name and number">
                                         <label for="ship_street">Street name and number</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="ship_postal" type="text" class="input-style">
+                                        <input id="ship_postal" type="text" class="input-style" placeholder="Zip/Postal code">
                                         <label for="ship_postal">Zip/Postal code</label>
                                     </div>
                                     <div class="input-group input-checkbox">
@@ -272,11 +273,11 @@
                                         <label for="ship_typeorder">This is a business order</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="ship_company" type="text" class="input-style">
+                                        <input id="ship_company" type="text" class="input-style" placeholder="Company name">
                                         <label for="ship_company">Company name</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="ship_vat" type="text" class="input-style">
+                                        <input id="ship_vat" type="text" class="input-style" placeholder="VAT/ID number">
                                         <label for="ship_vat">VAT/ID number</label>
                                     </div>
                                     <div class="input-group btn-group">
@@ -298,15 +299,15 @@
                                         <label for="adress_ship">Use shipping adress for billing</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="adress_fname" type="text" class="input-style">
+                                        <input id="adress_fname" type="text" class="input-style" placeholder="First name">
                                         <label for="adress_fname">First name</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="adress_lname" type="text" class="input-style">
+                                        <input id="adress_lname" type="text" class="input-style" placeholder="Last name">
                                         <label for="adress_lname">Last name</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="adress_phone" type="text" class="input-style">
+                                        <input id="adress_phone" type="text" class="input-style" placeholder="Phone number">
                                         <label for="adress_phone">Phone number</label>
                                     </div>
                                     <div class="input-group half-group input-select">
@@ -318,16 +319,16 @@
                                         <label for="adress_country" class="hide-select-label">Country</label>
                                     </div>
                                     <div class="input-group half-group">
-                                        <input id="adress_city" type="text" class="input-style">
+                                        <input id="adress_city" type="text" class="input-style" placeholder="City">
                                         <label for="adress_city">City</label>
                                     </div>
                                     <div class="input-group auto-group">
 
-                                        <input id="adress_street" type="text" class="input-style">
+                                        <input id="adress_street" type="text" class="input-style" placeholder="Street name and number">
                                         <label for="adress_street">Street name and number</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="adress_postal" type="text" class="input-style">
+                                        <input id="adress_postal" type="text" class="input-style" placeholder="Zip/Postal code">
                                         <label for="adress_postal">Zip/Postal code</label>
                                     </div>
                                     <div class="input-group input-checkbox">
@@ -335,11 +336,11 @@
                                         <label for="adress_typeorder">This is a business order</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="adress_company" type="text" class="input-style">
+                                        <input id="adress_company" type="text" class="input-style" placeholder="Company name">
                                         <label for="adress_company">Company name</label>
                                     </div>
                                     <div class="input-group thrd-group">
-                                        <input id="adress_vat" type="text" class="input-style">
+                                        <input id="adress_vat" type="text" class="input-style" placeholder="VAT/ID number">
                                         <label for="adress_vat">VAT/ID number</label>
                                     </div>
                                     <div class="input-group btn-group">
@@ -388,19 +389,19 @@
                                             </div>
                                             <div class="input-group frth-group" style="display: block;">
                                                 <label for="card_number">Card number</label>
-                                                <input type="text" id="card_number" class="input-style">
+                                                <input type="text" id="card_number" class="input-style" placeholder="Card number">
                                             </div>
                                             <div class="input-group frth-group" style="display: block;">
                                                 <label for="card_date">Expiry date</label>
-                                                <input type="text" id="card_date" class="input-style">
+                                                <input type="text" id="card_date" class="input-style" placeholder="Expiry date">
                                             </div>
                                             <div class="input-group frth-group" style="display: block;">
                                                 <label for="card_cvc">CVC / CVV</label>
-                                                <input type="text" id="card_cvc" class="input-style">
+                                                <input type="text" id="card_cvc" class="input-style" placeholder="CVC / CVV">
                                             </div>
                                             <div class="input-group frth-group" style="display: block;">
                                                 <label for="card_holder">Cardholder name</label>
-                                                <input type="text" id="card_holder" class="input-style">
+                                                <input type="text" id="card_holder" class="input-style" placeholder="Cardholder name">
                                             </div>
                                         </div>
                                     </div>
