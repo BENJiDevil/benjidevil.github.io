@@ -118,7 +118,7 @@
                 <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">Компьютеры</a></li>
                 <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">Компьютеры</a></li>
                 <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">Компьютеры</a></li>
-                <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">test</a></li>
+                <li class="breadcrumbs-list__item"><span>test</span></li>
             </ul>
         </div>
     </div>
@@ -127,8 +127,8 @@
             <div class="catalog__content">
                 <h1 class="catalog__title page-title">Электроника</h1>
                 <div class="catalog__content__left-side">
-                    <span class="filter-link open"><i class="icon icon-filter"></i> Фильтр <i class="icon icon-down-open-mini"></i></span>
-                    <ul class="product-filters-block" style="display: block;">
+                    <span class="filter-link"><i class="icon icon-filter"></i> Фильтр <i class="icon icon-down-open-mini"></i></span>
+                    <ul class="product-filters-block" style="display: none;">
                         <li class="list-group-item">
                             <div id="sw_content_113_category" class="filter-item-name cm-combination-filter_113_category cm-save-state cm-ss-reverse cursor-pointer open">
                                 <i class="product-filter-switch-icon pull-right switch-icon glyphicon glyphicon-triangle-bottom icon icon-down-open-mini"></i>
@@ -175,39 +175,26 @@
                             </ul>
                         </li>
                         <li class="list-group-item">
-                            <div id="sw_elm_filter_8" class="filter-item-name ty-horizontal-product-filters-dropdown__wrapper cm-combination open">
+                            <div class="filter-item-name ty-horizontal-product-filters-dropdown__wrapper cm-combination open">
                                 <i class="product-filter-switch-icon pull-right switch-icon glyphicon glyphicon-triangle-bottom icon icon-down-open-mini"></i>
                                 <h5 class="product-filters-title">Цена, Р</h5>
                             </div>
-                            <div id="elm_filter_8" class="cm-popup-box ty-horizontal-product-filters-dropdown__content cm-horizontal-filters-content" style="">
+                            <div class="product-filter price-filter cm-popup-box ty-horizontal-product-filters-dropdown__content cm-horizontal-filters-content" style="">
                                 <div class="ypi-product-filters__tools clearfix">
                                     <a class="ty-btn cm-external-click " data-ca-external-click-id="sw_elm_filter_8" style="height:auto!important; line-height:100%!important"></a>
                                 </div>
                                 <div id="content_181_8" class="cm-product-filters-checkbox-container ty-price-slider">
-                                    <p class="ty-price-slider__inputs">
-                                        <bdi class="ty-price-slider__bidi-container">
+                                    <!-- slider range -->
+                                    <div class="ty-price-slider__inputs">
+                                        <div class="ty-price-slider__bidi-container">
                                             <span class="ty-price-slider__filter-prefix">от</span>
-                                            <input type="text" class="ty-price-slider__input-text" id="slider_181_8_left" name="left_181_8" value="4755.15" disabled="">
-                                        </bdi>
-                                        &nbsp;–&nbsp;
-                                        <bdi class="ty-price-slider__bidi-container">
+                                            <input type="text" class="ty-price-slider__input-text" id="slider_181_8_left" name="left_181_8" value="4755" disabled="">
+                                        </div>
+                                        <div class="ty-price-slider__bidi-container">
                                             <span class="ty-price-slider__filter-prefix">до</span>
                                             <input type="text" class="ty-price-slider__input-text" id="slider_181_8_right" name="right_181_8" value="22500" disabled="">
-                                        </bdi>
-                                    </p>
-                                    <div id="slider_181_8" class="ty-range-slider cm-range-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
-                                        <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 21.134%; width: 78.866%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 21.134%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span>
+                                        </div>
                                     </div>
-                                    <input id="elm_checkbox_slider_181_8" data-ca-filter-id="8" class="cm-product-filters-checkbox hidden" type="checkbox" name="product_filters[8]" value="4755.15-22500-GBP">
-                                    <input type="hidden" id="slider_181_8_json" value="{
-                                    &quot;disabled&quot;: false,
-                                    &quot;min&quot;: 0,
-                                    &quot;max&quot;: 22500,
-                                    &quot;left&quot;: 4755.15,
-                                    &quot;right&quot;: 22500,
-                                    &quot;step&quot;: 0.01,
-                                    &quot;extra&quot;: &quot;GBP&quot;
-                                }">
                                 </div>
                             </div>
                         </li>
@@ -295,49 +282,56 @@
                                 <i class="product-filter-switch-icon pull-right switch-icon glyphicon glyphicon-triangle-bottom icon icon-down-open-mini"></i>
                                 <h5 class="product-filters-title">Цвет</h5>
                             </div>
-                            <ul class="product-filter list-unstyled" id="content_113_category" style="display: block;">
+                            <ul class="product-filter color-list" id="content_113_category" style="display: block;">
                                 <li class="product-filters-item-more">
                                     <ul id="ranges_113_category" style="max-height: 20em;" class="product-filter-variants list-unstyled cm-filter-table" data-ca-input-id="elm_search_113_category" data-ca-clear-id="elm_search_clear_113_category" data-ca-empty-id="elm_search_empty_113_category">
                                         <li class="checkbox">
                                             <label>
+                                                <span class="color-icon" style="background-color: #000;"></span>
                                                 <input class="cm-product-filters-checkbox" type="checkbox" name="stories_filters[category]" data-ca-filter-id="category" value="1" id="elm_checkbox_113_category_1">
-                                                <span class="color-icon" style="background-color: #000;"></span> Чёрный
+                                                Чёрный
                                             </label>
                                         </li>
                                         <li class="checkbox">
-                                            <label>
+                                            <label class="icon-inverted">
+                                                <span class="color-icon icon-inverted" style="background-color: #fff;"></span>
                                                 <input class="cm-product-filters-checkbox" type="checkbox" name="stories_filters[category]" data-ca-filter-id="category" value="2" id="elm_checkbox_113_category_2">
-                                                <span class="color-icon" style="background-color: #fff;"></span> Белый
+                                                Белый
                                             </label>
                                         </li>
                                         <li class="checkbox">
                                             <label>
+                                                <span class="color-icon" style="background-color: red;"></span>
                                                 <input class="cm-product-filters-checkbox" type="checkbox" name="stories_filters[category]" data-ca-filter-id="category" value="3" id="elm_checkbox_113_category_3">
-                                                <span class="color-icon" style="background-color: red;"></span> Красный
+                                                Красный
                                             </label>
                                         </li>
                                         <li class="checkbox">
                                             <label>
+                                                <span class="color-icon" style="background-color: blue;"></span>
                                                 <input class="cm-product-filters-checkbox" type="checkbox" name="stories_filters[category]" data-ca-filter-id="category" value="4" id="elm_checkbox_113_category_4">
-                                                <span class="color-icon" style="background-color: blue;"></span> Синий
+                                                Синий
                                             </label>
                                         </li>
                                         <li class="checkbox">
                                             <label>
+                                                <span class="color-icon" style="background-color: green;"></span>
                                                 <input class="cm-product-filters-checkbox" type="checkbox" name="stories_filters[category]" data-ca-filter-id="category" value="5" id="elm_checkbox_113_category_5">
-                                                <span class="color-icon" style="background-color: green;"></span> Зелёный
+                                                Зелёный
+                                            </label>
+                                        </li>
+                                        <li class="checkbox">
+                                            <label class="icon-inverted">
+                                                <span class="color-icon" style="background-color: yellow;"></span>
+                                                <input class="cm-product-filters-checkbox" type="checkbox" name="stories_filters[category]" data-ca-filter-id="category" value="5" id="elm_checkbox_113_category_5">
+                                                Жёлтый
                                             </label>
                                         </li>
                                         <li class="checkbox">
                                             <label>
+                                                <span class="color-icon" style="background-color: saddlebrown;"></span>
                                                 <input class="cm-product-filters-checkbox" type="checkbox" name="stories_filters[category]" data-ca-filter-id="category" value="5" id="elm_checkbox_113_category_5">
-                                                <span class="color-icon" style="background-color: yellow;"></span> Жёлтый
-                                            </label>
-                                        </li>
-                                        <li class="checkbox">
-                                            <label>
-                                                <input class="cm-product-filters-checkbox" type="checkbox" name="stories_filters[category]" data-ca-filter-id="category" value="5" id="elm_checkbox_113_category_5">
-                                                <span class="color-icon" style="background-color: saddlebrown;"></span> Коричневый
+                                                Коричневый
                                             </label>
                                         </li>
                                     </ul>
@@ -352,80 +346,80 @@
                         <ul class="category-menu__list owl-carousel">
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="Компьютеры" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="Компьютеры" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">Компьютеры</span>
                                 </a>
                             </li>
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="Автомобильная электроника" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="Автомобильная электроника" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">Автомобильная электроника</span>
                                 </a>
                             </li>
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="ТВ и видео" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="ТВ и видео" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">ТВ и видео</span>
                                 </a>
                             </li>
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="Сотовые телефоны" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="Сотовые телефоны" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">Сотовые телефоны</span>
                                 </a>
                             </li>
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="MP3 плееры" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="MP3 плееры" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">MP3 плееры</span>
                                 </a>
                             </li>
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="Камеры и фото" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="Камеры и фото" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">Камеры и фото</span>
                                 </a>
                             </li>
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="Категория 1" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="Категория 1" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">Категория 1</span>
                                 </a>
                             </li>
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="Категория 2" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="Категория 2" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">Категория 2</span>
                                 </a>
                             </li>
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="Категория 3" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="Категория 3" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">Категория 3</span>
                                 </a>
                             </li>
                             <li class="category-menu__item slide-item">
                                 <a href="/" class="category-menu__link">
-                                    <span class="icon">
-            <img src="/" alt="Категория 4" class="item-icon">
+                                    <span class="item-icon">
+            <img src="images/svg/subcategory_image.svg" alt="Категория 4" class="icon" width="50px" height="50px">
         </span>
                                     <span class="item-title">Категория 4</span>
                                 </a>
@@ -435,47 +429,54 @@
                     <div class="catalog__filter">
                         <div class="catalog__filter__sort">
                             <form action="" class="sort-form">
-                                <span>Сортировать:</span>
+                                <span class="filter-name">Сортировать:</span>
                                 <div class="input-group">
                                     <label for="sort-price">
-                                        <input id="sort-price" type="radio" name="price" data-type="ASC">
+                                        <input id="sort-price" type="radio" name="sorttype" value="price" data-type="ASC">
                                         <span>по цене</span>
                                     </label>
-                                    <label for="sort-price">
-                                        <input id="sort-popular" type="radio" name="popular" data-type="ASC">
+                                </div>
+                                <div class="input-group">
+                                    <label for="sort-popular">
+                                        <input id="sort-popular" type="radio" name="sorttype" value="popular" data-type="ASC">
                                         <span>по популярности</span>
                                     </label>
-                                    <label for="sort-price">
-                                        <input id="sort-abc" type="radio" name="abc" data-type="ASC">
+                                </div>
+                                <div class="input-group">
+                                    <label for="sort-abc">
+                                        <input id="sort-abc" type="radio" name="sorttype" value="abc" data-type="DESC" checked>
                                         <span>по алфавиту</span>
                                     </label>
                                 </div>
                             </form>
                         </div>
                         <div class="catalog__filter__view">
-                            <a href="javascript:void(0);" class="catalog-view-type" data-type="items"></a>
-                            <a href="javascript:void(0);" class="catalog-view-type" data-type="block"></a>
-                            <a href="javascript:void(0);" class="catalog-view-type" data-type="list"></a>
+                            <span class="filter-name">Вид:</span>
+                            <a href="javascript:void(0);" class="catalog-view-type active" data-type="items-view"><i class="icon icon-grid-view"></i></a>
+                            <a href="javascript:void(0);" class="catalog-view-type" data-type="block-view"><i class="icon icon-block-view"></i></a>
+                            <a href="javascript:void(0);" class="catalog-view-type" data-type="list-view"><i class="icon icon-list-view"></i></a>
                         </div>
                     </div>
-                    <div class="catalog__list">
+                    <div class="catalog-list">
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная большая" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная большая</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -485,21 +486,23 @@
                         </div>
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная какая то" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная какая то</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -509,21 +512,23 @@
                         </div>
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -533,21 +538,23 @@
                         </div>
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -557,21 +564,23 @@
                         </div>
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -581,21 +590,23 @@
                         </div>
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -605,21 +616,23 @@
                         </div>
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -629,21 +642,23 @@
                         </div>
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -653,21 +668,23 @@
                         </div>
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -677,21 +694,23 @@
                         </div>
                         <div class="catalog-list__item">
                             <div class="image-block">
-                                <a href="/">
-                                    <img src="/" alt="Гитара шестиструнная" class="item-image">
+                                <a class="item-link" href="/">
+                                    <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <div class="price-block">
-                                    <span class="item-price">1500 Р</span>
-                                    <span class="item-oldprice">1500 Р</span>
+                                <div class="item-info">
+                                    <div class="price-block">
+                                        <span class="item-oldprice">1500 Р</span>
+                                        <span class="item-price">1500 Р</span>
+                                    </div>
+                                    <a href="/" class="item-name">Гитара шестиструнная</a>
                                 </div>
-                                <a href="/" class="item-name">Гитара шестиструнная</a>
                                 <form action="" class="addcart-form">
-                                    <div class="input-group">
-                                        <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                        <input type="text" class="count-input" value="1">
-                                        <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                    <div class="input-group count-group" style="display: none;">
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                        <input type="text" class="count-input" value="1" readonly>
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                     </div>
                                     <div class="input-group">
                                         <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -701,13 +720,13 @@
                         </div>
                         <div class="pagination">
                             <ul class="pagination-list">
-                                <li class="pagination-list__item"><a href="#" class="pagination-list__link prev-link"></a></li>
+                                <li class="pagination-list__item"><a href="#" class="pagination-list__link prev-link"><i class="icon icon-left-open"></i></a></li>
                                 <li class="pagination-list__item"><a href="#" class="pagination-list__link">1</a></li>
                                 <li class="pagination-list__item"><a href="#" class="pagination-list__link active">2</a></li>
                                 <li class="pagination-list__item"><a href="#" class="pagination-list__link">3</a></li>
                                 <li class="pagination-list__item"><a href="#" class="pagination-list__link">4</a></li>
                                 <li class="pagination-list__item"><a href="#" class="pagination-list__link">5</a></li>
-                                <li class="pagination-list__item"><a href="#" class="pagination-list__link next-link"></a></li>
+                                <li class="pagination-list__item"><a href="#" class="pagination-list__link next-link"><i class="icon icon-right-open"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -745,6 +764,49 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/libs.js"></script>
     <script src="js/common.js"></script>
+
+    <!-- only on enterprises page -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script>
+        /* map settings */
+        var myMap,
+            cord1,
+            cord2,
+            myPlacemark,
+            mapCenter = [59.858928, 30.440097, 59.862753, 30.445612], // map center desc/mobile
+            mapMarker = [59.858928, 30.440097], // map marker
+            markTitle = "Проспект Александровской фермы 23б"; // adress baloon
+
+        function init() {
+            /* settings on mobile */
+            if ($(window).width() > 640) {
+                cord1 = mapCenter[0];
+                cord2 = mapCenter[1];
+            } else {
+                cord1 = mapCenter[2];
+                cord2 = mapCenter[3];
+            }
+            myMap = new ymaps.Map("yamap", {
+                center: [cord1, cord2],
+                zoom: 16
+            });
+            myPlacemark = new ymaps.Placemark([mapMarker[0], mapMarker[1]], {
+                hintContent: markTitle,
+                balloonContent: '',
+            });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom'); // off scroll wheel
+            myMap.controls.remove('geolocationControl'); // remove controls
+            myMap.controls.remove('searchControl'); // remove controls searchtool
+            myMap.controls.remove('trafficControl'); // remove controls traffic
+            myMap.controls.remove('typeSelector'); // remove controls typetool
+            myMap.controls.remove('fullscreenControl'); // remove controls fullscreen
+            myMap.controls.remove('rulerControl'); // remove controls linetool
+        }
+        if ($("div").is("#yamap")) {
+            ymaps.ready(init);
+        }
+    </script>
 </body>
 
 </html>

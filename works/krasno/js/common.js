@@ -75,6 +75,111 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
+  /* product list replace title function */
+
+  if ($(window).width() >= 1024) {
+    $('.catalog__title').detach().prependTo('.catalog__content__right-side');
+  }
+
+  ;
+  /* product list catalog function */
+
+  $('.catalog-menu').on('click', '.catalog-link', function () {
+    if ($(this).hasClass('open')) {
+      $(this).siblings('.catalog-menu__list').slideUp('fast');
+      $(this).removeClass('open');
+    } else {
+      $(this).siblings('.catalog-menu__list').slideDown('fast');
+      $(this).addClass('open');
+    }
+  });
+  /* product list filter fix function */
+
+  $('.catalog__content .filter-link').on('click', function () {
+    if ($(this).hasClass('open')) {
+      $(this).siblings('.product-filters-block').slideUp('fast');
+      $(this).removeClass('open');
+    } else {
+      $(this).siblings('.product-filters-block').slideDown('fast');
+      $(this).addClass('open');
+    }
+  });
+  $('.product-filters-block .filter-item-name').on('click', function () {
+    if ($(this).hasClass('open')) {
+      $(this).siblings('.product-filter').slideUp('fast');
+      $(this).removeClass('open');
+    } else {
+      $(this).siblings('.product-filter').slideDown('fast');
+      $(this).addClass('open');
+    }
+  });
+  $('.product-filters-block input').on('change', function () {
+    if ($(this).prop('checked') == true) {
+      $(this).parents('li.checkbox').addClass('active');
+    } else {
+      $(this).parents('li.checkbox').removeClass('active');
+    }
+  });
+  /* product list subcategory slider */
+
+  $('.catalog__content .category-menu__list').owlCarousel({
+    loop: true,
+    margin: 20,
+    mouseDrag: false,
+    touchDrag: true,
+    dots: false,
+    nav: true,
+    navText: ['<i class="icon icon-left-open"></i>', '<i class="icon icon-right-open"></i>'],
+    items: 2,
+    responsive: {
+      0: {
+        items: 2
+      },
+      414: {
+        items: 3
+      },
+      640: {
+        items: 4
+      },
+      768: {
+        items: 5
+      },
+      1024: {
+        items: 6
+      }
+    }
+  });
+  /* product list count btn function */
+
+  $('.count-btn').on('click', function () {
+    var curVal = parseInt($(this).siblings('.count-input').val());
+
+    if ($(this).hasClass('minus-btn')) {
+      if (curVal <= 1) {
+        curVal = 1;
+      } else {
+        curVal--;
+      }
+    } else {
+      curVal++;
+    }
+
+    $(this).siblings('.count-input').val(curVal);
+  });
+  /* product list add to cart function */
+
+  $('.add-cart-btn').on('click', function (e) {
+    if (!$(this).hasClass('active')) {
+      e.preventDefault();
+      $(this).addClass('active');
+      $(this).parent().siblings('.count-group').slideDown('fast');
+    }
+  });
+  /* product color change */
+
+  $('.property-color input[name="color"]').on('click', function () {
+    $(this).parents('.property-color').find('.property-value').text($(this).val());
+  });
   /* product slider */
 
   $('#slickSlider-main').slick({
@@ -88,10 +193,24 @@ document.addEventListener('DOMContentLoaded', function () {
     slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '#slickSlider-main',
-    dots: true,
+    dots: false,
     focusOnSelect: true,
-    nextArrow: '<span class="slick-arrow-btn next-btn"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve"><g><g><path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12 C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084 c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864 l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"/></g></g></svg></span>',
-    prevArrow: '<span class="slick-arrow-btn prev-btn"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve"><g><g><path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12 C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084 c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864 l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"/></g></g></svg></span>'
+    vertical: true,
+    responsive: [{
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 4,
+        vertical: false
+      }
+    }, {
+      breakpoint: 413,
+      settings: {
+        slidesToShow: 3,
+        vertical: false
+      }
+    }],
+    nextArrow: '<i class="icon icon-right-open next-btn"></i>',
+    prevArrow: '<i class="icon icon-left-open prev-btn"></i>'
   }); // Remove active class from all thumbnail slides
 
   $('#slickSlider-thumb .slide-item').removeClass('slide-active'); // Set active class to first thumbnail slides
@@ -102,6 +221,151 @@ document.addEventListener('DOMContentLoaded', function () {
     var mySlideNumber = nextSlide;
     $('#slickSlider-thumb .slide-item').removeClass('slide-active');
     $('#slickSlider-thumb .slide-item').eq(mySlideNumber).addClass('slide-active');
+  });
+  /* product add sliders */
+
+  $('.addproducts__content').owlCarousel({
+    loop: true,
+    margin: 20,
+    mouseDrag: false,
+    touchDrag: true,
+    dots: false,
+    nav: true,
+    navText: ['<i class="icon icon-left-open"></i>', '<i class="icon icon-right-open"></i>'],
+    items: 2,
+    responsive: {
+      0: {
+        items: 1
+      },
+      414: {
+        items: 2
+      },
+      576: {
+        items: 3,
+        margin: 15
+      },
+      768: {
+        items: 4,
+        margin: 15
+      },
+      1024: {
+        items: 5
+      },
+      1200: {
+        items: 6
+      }
+    }
+  });
+  /* product answers/questions tabs */
+
+  $('.questions__menu .question-type-link').on('click', function () {
+    var curType = $(this).attr('data-type');
+    $('.questions__menu .question-type-link').removeClass('active');
+    $(this).addClass('active');
+    $('.questions__content .questions__content__tab').removeClass('active').slideUp('fast');
+    $('.questions__content .questions__content__tab[data-type="' + curType + '"]').addClass('active').slideDown('fast');
+  });
+  $('.product-comments a').on('click', function () {
+    if ($(this).attr('data-type') == 'questions') {
+      $('.questions__menu .question-type-link[data-type="questions"]').click();
+    }
+
+    if ($(this).attr('data-type') == 'reviews') {
+      $('.questions__menu .question-type-link[data-type="reviews"]').click();
+    }
+  });
+  /* product answers photos slider */
+
+  $('.photo-block').owlCarousel({
+    loop: true,
+    margin: 20,
+    mouseDrag: false,
+    touchDrag: true,
+    dots: false,
+    nav: true,
+    navText: ['<i class="icon icon-left-open"></i>', '<i class="icon icon-right-open"></i>'],
+    items: 2,
+    responsive: {
+      0: {
+        items: 3
+      },
+      414: {
+        items: 3
+      },
+      576: {
+        items: 5
+      },
+      640: {
+        items: 6
+      },
+      768: {
+        items: 7
+      },
+      960: {
+        items: 9
+      },
+      1024: {
+        items: 11
+      },
+      1200: {
+        items: 13
+      }
+    }
+  });
+  /* product answers photo modal */
+
+  $('.questions__content .photo-block').each(function () {
+    $(this).magnificPopup({
+      delegate: 'a',
+      preload: [0, 2],
+      type: 'image',
+      tClose: 'Закрыть',
+      tLoading: 'Загрузка...',
+      mainClass: 'my-mfp-zoom-in',
+      gallery: {
+        enabled: true,
+        tPrev: 'Назад',
+        tNext: 'Вперед',
+        tCounter: '' // markup of counter || '%curr% of %total%'
+
+      },
+      image: {
+        tError: 'Невозможно загрузить :('
+      },
+      ajax: {
+        tError: 'Невозможно загрузить :('
+      }
+    });
+  });
+  /* stocks page enterprises mobile fix */
+
+  if ($(window).width() <= 1024) {
+    $('.enterprises-stocks__content__item .enterprise-link').on('click', function (e) {
+      if (!$(this).hasClass('active')) {
+        e.preventDefault();
+        $('.enterprises-stocks__content__item .enterprise-link').removeClass('active');
+        $(this).addClass('active');
+      }
+    });
+  }
+  /* resize functions */
+
+
+  $(window).resize(function () {
+    if ($(window).width() >= 1024) {
+      $('.catalog__title').detach().prependTo('.catalog__content__right-side');
+    } else {
+      $('.catalog__title').detach().prependTo('.catalog__content');
+    }
+  });
+  /* scroll to block */
+
+  $("body").on('click', '.go_to', function (e) {
+    var fixed_offset = 65;
+    $('html,body').stop().animate({
+      scrollTop: $(this.hash).offset().top - fixed_offset
+    }, 1000);
+    e.preventDefault();
   });
   /* scroll top TOP */
 

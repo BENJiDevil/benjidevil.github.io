@@ -85,13 +85,13 @@
             </div>
         </div>
     </header>
-    <section class="product-page catalog-header">
+    <section class="product-page catalog-header lazyload" data-bgset="images/bg/mobile/catalog_bg.jpg [(max-width: 575px)] | images/bg/pad/catalog_bg.jpg [(max-width: 1024px)] | images/bg/desk/catalog_bg.jpg [(min-width: 1025px)]">
         <div class="container">
-            <h2 class="catalog-header__title"></h2>
+            <h2 class="catalog-header__title">Товары г. Красногорска</h2>
             <form action="" class="search-form">
                 <div class="input-group">
-                    <button type="submit" class="search-btn"></button>
-                    <input type="text" class="search-input">
+                    <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                    <input type="text" class="search-input" placeholder="Поиск">
                 </div>
             </form>
         </div>
@@ -118,7 +118,7 @@
                 <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">Компьютеры</a></li>
                 <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">Компьютеры</a></li>
                 <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">Компьютеры</a></li>
-                <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">test</a></li>
+                <li class="breadcrumbs-list__item"><span>test</span></li>
             </ul>
         </div>
     </div>
@@ -128,33 +128,39 @@
                 <h1 class="product-title page-title">Гитара шестиструнная</h1>
                 <div class="product-comments">
                     <div class="product-rating">
-                        <i class="ty-stars__icon ty-icon-star"></i>
-                        <i class="ty-stars__icon ty-icon-star"></i>
-                        <i class="ty-stars__icon ty-icon-star"></i>
-                        <i class="ty-stars__icon ty-icon-star"></i>
-                        <i class="ty-stars__icon ty-icon-star"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star-half-alt"></i>
+                        <i class="icon icon-star-empty"></i>
                     </div>
-                    <div class="product-answers"><span>12</span> отзывов</div>
-                    <div class="product-questions"><span>12</span> вопросов</div>
+                    <a href="#questions" data-type="reviews" class="product-answers go_to"><span>120</span> отзывов</a>
+                    <a href="#questions" data-type="questions" class="product-questions go_to"><span>120</span> вопросов</a>
                 </div>
                 <div class="product__content__left-side">
                     <div class="slider-block">
-                        <div id="slickSlider-thumb" class="slick-slider">
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
+                        <div id="slickSlider-thumb" class="slick-slider slick-thumbs">
+                            <div class="slide-item"><img src="images/main/product_thumb.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_thumb.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_thumb.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_thumb.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_thumb.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_thumb.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_thumb.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_thumb.jpg" alt="slide-image" class="slide-image"></div>
                         </div>
-                        <div id="slickSlider-main" class="slick-slider">
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
-                            <div class="slide-item"><img src="#" alt="slide-image" class="slide-image"></div>
+                        <div id="slickSlider-main" class="slick-slider slick-main">
+                            <div class="slide-item"><img src="images/main/product_image.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_image.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_image.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_image.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_image.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_image.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_image.jpg" alt="slide-image" class="slide-image"></div>
+                            <div class="slide-item"><img src="images/main/product_image.jpg" alt="slide-image" class="slide-image"></div>
                         </div>
                     </div>
-                    <div class="descr-block">
+                    <div class="descr-block" style="display: none;">
                         <ul class="descr-list">
                             <li class="descr-list__item"><span>Артикул:</span><span>123456789</span></li>
                             <li class="descr-list__item"><span>Тип:</span><span>Акустическая гитара</span></li>
@@ -163,7 +169,7 @@
                             <li class="descr-list__item"><span>Материал струн:</span><span>нейлон</span></li>
                             <li class="descr-list__item"><span>Количество ладов:</span><span>19</span></li>
                         </ul>
-                        <a href="javascript:void(0);" class="more-descr-link">Eще характеристики</a>
+                        <a href="#properties" class="go_to more-descr-link">Eще характеристики</a>
                     </div>
                 </div>
                 <div class="product__content__right-side">
@@ -173,65 +179,74 @@
                     </div>
                     <div class="properties-block">
                         <div class="properties-block__item property-color">
-                            <span class="property__title">Цвет <span class="property-value">коричневый</span></span>
-                            <div class="properties-list">
+                            <span class="property__title">Цвет: <span class="property-value">коричневый</span></span>
+                            <div class="property__list">
                                 <div class="input-group">
                                     <label>
-                                        <img src="/" alt="color" class="color-icon">
+                                        <img src="images/main/properties_color.jpg" alt="color" class="color-icon">
                                         <input type="radio" name="color" value="коричневый" checked>
+                                        <span class="border-line"></span>
                                     </label>
                                 </div>
                                 <div class="input-group">
                                     <label>
-                                        <img src="/" alt="color" class="color-icon">
-                                        <input type="radio" name="color" value="коричневый">
+                                        <img src="images/main/properties_color.jpg" alt="color" class="color-icon">
+                                        <input type="radio" name="color" value="белый">
+                                        <span class="border-line"></span>
                                     </label>
                                 </div>
                                 <div class="input-group">
                                     <label>
-                                        <img src="/" alt="color" class="color-icon">
-                                        <input type="radio" name="color" value="коричневый">
+                                        <img src="images/main/properties_color.jpg" alt="color" class="color-icon">
+                                        <input type="radio" name="color" value="синий">
+                                        <span class="border-line"></span>
                                     </label>
                                 </div>
                                 <div class="input-group">
                                     <label>
-                                        <img src="/" alt="color" class="color-icon">
-                                        <input type="radio" name="color" value="коричневый">
+                                        <img src="images/main/properties_color.jpg" alt="color" class="color-icon">
+                                        <input type="radio" name="color" value="красный">
+                                        <span class="border-line"></span>
                                     </label>
                                 </div>
                             </div>
                         </div>
                         <div class="properties-block__item property-size">
                             <span class="property__title">Таблица размеров:</span>
-                            <div class="properties-list">
+                            <div class="property__list">
                                 <div class="input-group">
                                     <label>
                                         <span>XS</span>
                                         <input type="radio" name="size" value="XS" checked>
+                                        <span class="border-line"></span>
                                     </label>
                                 </div>
                                 <div class="input-group">
                                     <label>
                                         <span>S</span>
                                         <input type="radio" name="size" value="S">
+                                        <span class="border-line"></span>
                                     </label>
                                 </div>
                                 <div class="input-group">
                                     <label>
                                         <span>M</span>
                                         <input type="radio" name="size" value="M" disabled>
+                                        <span class="border-line"></span>
                                     </label>
                                 </div>
                                 <div class="input-group">
                                     <label>
                                         <span>L</span>
                                         <input type="radio" name="size" value="L">
+                                        <span class="border-line"></span>
                                     </label>
                                 </div>
                                 <div class="input-group">
                                     <label>
                                         <span>XL</span>
                                         <input type="radio" name="size" value="XL">
+                                        <span class="border-line"></span>
                                     </label>
                                 </div>
                             </div>
@@ -239,21 +254,21 @@
                     </div>
                     <div class="addcart-block">
                         <form action="" class="addcart-form">
-                            <div class="input-group">
-                                <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
+                            <div class="input-group count-group">
+                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
                                 <input type="text" class="count-input" value="1">
-                                <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                             </div>
                             <div class="input-group">
                                 <button type="submit" class="add-cart-btn btn-border-style"><span>Добавить в корзину</span></button>
+                                <a href="javascript:void(0);" class="addfavorite-link"><i class="icon icon-heart-empty"></i></a>
                             </div>
                         </form>
-                        <a href="javascript:void(0);" class="addfavorite-link"></a>
                     </div>
-                    <div class="info-block">
+                    <div class="seller-info-block">
                         <span class="delivery">Доставка: <span>1-3 октября</span></span>
                         <span class="seller">Продавец: <a href="#">ИП Иванов ИИ</a></span>
-                        <img src="#" alt="seller" class="seller-icon">
+                        <img src="images/main/seller_icon.jpg" alt="seller" class="seller-icon">
                     </div>
                 </div>
                 <div class="product__content__full">
@@ -264,29 +279,8 @@
                         </div>
                     </div>
                     <div class="descr-row properties">
-                        <div class="descr-row__title product-section-title">ХАРАКТЕРИСТИКИ</div>
+                        <div id="properties" class="descr-row__title product-section-title">ХАРАКТЕРИСТИКИ</div>
                         <div class="descr-row__content">
-                            <div class="properties__column">
-                                <ul class="descr-list">
-                                    <li class="descr-list__item"><span>Артикул:</span><span>123456789</span></li>
-                                    <li class="descr-list__item"><span>Тип:</span><span>Акустическая гитара</span></li>
-                                    <li class="descr-list__item"><span>Размер инструмента:</span><span>38"</span></li>
-                                    <li class="descr-list__item"><span>Количество струн:</span><span>6</span></li>
-                                    <li class="descr-list__item"><span>Материал струн:</span><span>нейлон</span></li>
-                                    <li class="descr-list__item"><span>Количество ладов:</span><span>19</span></li>
-                                </ul>
-                            </div>
-                            <div class="properties__column">
-                                <ul class="descr-list">
-                                    <li class="descr-list__item"><span>Артикул:</span><span>123456789</span></li>
-                                    <li class="descr-list__item"><span>Тип:</span><span>Акустическая гитара</span></li>
-                                    <li class="descr-list__item"><span>Размер инструмента:</span><span>38"</span></li>
-                                    <li class="descr-list__item"><span>Количество струн:</span><span>6</span></li>
-                                    <li class="descr-list__item"><span>Материал струн:</span><span>нейлон</span></li>
-                                    <li class="descr-list__item"><span>Количество ладов:</span><span>19</span></li>
-                                </ul>
-                            </div>
-                            <!-- TMP -->
                             <div class="properties__column">
                                 <ul class="descr-list">
                                     <li class="descr-list__item"><span>Артикул:</span><span>123456789</span></li>
@@ -316,21 +310,23 @@
                 <div class="addproducts__content owl-carousel">
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная большая" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная большая</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -340,21 +336,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная какая то" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная какая то</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -364,21 +362,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -388,21 +388,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -412,21 +414,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -436,21 +440,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -460,21 +466,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -484,21 +492,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -508,21 +518,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -532,21 +544,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -561,21 +575,23 @@
                 <div class="addproducts__content owl-carousel">
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная большая" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная большая</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -585,21 +601,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная какая то" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная какая то</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -609,21 +627,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -633,21 +653,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -657,21 +679,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -681,21 +705,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -705,21 +731,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -729,21 +757,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -753,21 +783,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -777,21 +809,23 @@
                     </div>
                     <div class="catalog-list__item">
                         <div class="image-block">
-                            <a href="/">
-                                <img src="/" alt="Гитара шестиструнная" class="item-image">
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <div class="price-block">
-                                <span class="item-price">1500 Р</span>
-                                <span class="item-oldprice">1500 Р</span>
+                            <div class="item-info">
+                                <div class="price-block">
+                                    <span class="item-oldprice">1500 Р</span>
+                                    <span class="item-price">1500 Р</span>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
                             </div>
-                            <a href="/" class="item-name">Гитара шестиструнная</a>
                             <form action="" class="addcart-form">
-                                <div class="input-group">
-                                    <a href="javascript:void(0);" class="count-btn minus-btn">-</a>
-                                    <input type="text" class="count-input" value="1">
-                                    <a href="javascript:void(0);" class="count-btn plus-btn">+</a>
+                                <div class="input-group count-group" style="display: none;">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
                                 </div>
                                 <div class="input-group">
                                     <button type="submit" class="add-cart-btn btn-border-style"><span>В корзину</span></button>
@@ -803,7 +837,7 @@
             </div>
         </div>
     </main>
-    <section class="product-page questions">
+    <section id="questions" class="product-page questions">
         <div class="container">
             <h2 class="questions__title product-section-title">ОТЗЫВЫ И ВОПРОСЫ</h2>
             <div class="questions__menu">
@@ -811,157 +845,79 @@
                 <a href="javascript:void(0);" class="question-type-link" data-type="questions"><span>12</span> вопросов</a>
             </div>
             <div class="questions__content">
-                <div class="questions__content__tab active" data-type="reviews" style="display: block;">
-                    <a href="#" class="addlink btn-border-style">Добавить отзыв</a>
+                <div class="questions__content__tab active" data-type="reviews">
+                    <a href="#" class="addlink btn-border-style"><span>Добавить отзыв</span></a>
+                    <span class="photo-block__title">Фотографии покупателей</span>
                     <div class="photo-block owl-carousel">
                         <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
+                            <a href="images/main/answers_photo.jpg" class="gallery-link">
+                                <img src="images/main/answers_photo.jpg" alt="photo">
                             </a>
                         </div>
                         <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
+                            <a href="images/main/answers_photo.jpg" class="gallery-link">
+                                <img src="images/main/answers_photo.jpg" alt="photo">
                             </a>
                         </div>
                         <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
+                            <a href="images/main/answers_photo.jpg" class="gallery-link">
+                                <img src="images/main/answers_photo.jpg" alt="photo">
                             </a>
                         </div>
                         <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
+                            <a href="images/main/answers_photo.jpg" class="gallery-link">
+                                <img src="images/main/answers_photo.jpg" alt="photo">
                             </a>
                         </div>
                         <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
+                            <a href="images/main/answers_photo.jpg" class="gallery-link">
+                                <img src="images/main/answers_photo.jpg" alt="photo">
                             </a>
                         </div>
                         <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
+                            <a href="images/main/answers_photo.jpg" class="gallery-link">
+                                <img src="images/main/answers_photo.jpg" alt="photo">
                             </a>
                         </div>
                         <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
-                            </a>
-                        </div>
-                        <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
-                            </a>
-                        </div>
-                        <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
-                            </a>
-                        </div>
-                        <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
-                            </a>
-                        </div>
-                        <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
-                            </a>
-                        </div>
-                        <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
-                            </a>
-                        </div>
-                        <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
-                            </a>
-                        </div>
-                        <div class="photo-block__item slide-item">
-                            <a href="#" class="gallery-link">
-                                <img src="#" alt="photo">
+                            <a href="images/main/answers_photo.jpg" class="gallery-link">
+                                <img src="images/main/answers_photo.jpg" alt="photo">
                             </a>
                         </div>
                     </div>
                     <div class="tab-content">
                         <div class="ty-pagination-container cm-pagination-container" id="pagination_contents_comments_305">
-                            <nav class="ty-product-review-reviews-navigation">
-                                <div class="ty-sort-dropdown">
+                            <nav class="product-review-reviews-navigation">
+                                <div class="sort-dropdown">
                                     <div class="ut2-sort-label">Сортировать по:</div>
-                                    <a id="sw_elm_sort_fields" class="ty-sort-dropdown__wrapper cm-combination"><span>Новые выше</span><i class="ut2-icon-outline-expand_more"></i></a>
-                                    <ul id="elm_sort_fields" class="ty-sort-dropdown__content cm-popup-box hidden">
-                                        <li class="sort-by-product_review_timestamp-asc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=product_review_timestamp&amp;sort_order=asc" rel="nofollow">
-                                                Старые выше
-                                            </a>
-                                        </li>
-                                        <li class="sort-by-helpfulness-asc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=helpfulness&amp;sort_order=asc" rel="nofollow">
-                                                Полезные ниже
-                                            </a>
-                                        </li>
-                                        <li class="sort-by-helpfulness-desc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=helpfulness&amp;sort_order=desc" rel="nofollow">
-                                                Полезные выше
-                                            </a>
-                                        </li>
-                                        <li class="sort-by-rating_value-asc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=rating_value&amp;sort_order=asc" rel="nofollow">
-                                                С низким рейтингом
-                                            </a>
-                                        </li>
-                                        <li class="sort-by-rating_value-desc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=rating_value&amp;sort_order=desc" rel="nofollow">
-                                                C высоким рейтингом
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <a id="sw_elm_sort_fields" class="ty-sort-dropdown__wrapper cm-combination"><span>Новые выше</span></a>
                                 </div>
-                                <label class="ty-product-review-reviews-navigation__filter">
-                                    <input id="product_review_with_images" type="checkbox" name="product_review_with_images" class="cm-external-click ty-product-review-reviews-navigation__filter-checkbox" data-ca-external-click-id="product_review_with_images_link" />
-                                    <a id="product_review_with_images_link" href="index.php?dispatch=products.view&amp;product_id=305&amp;with_images=1&amp;selected_section=product_reviews#product_reviews" class="ty-product-review-reviews-navigation__filter-link cm-ajax" data-ca-target-id="pagination_contents_comments_305" rel="nofollow">
-                                        С фото
-                                    </a>
-                                </label>
                             </nav>
-                            <div class="ty-product-review-view__posts">
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
+                            <div class="product-review-view__posts">
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
                                                 By Mark
                                             </h6>
                                         </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
                                             02/08/2021, 19:57
                                         </time>
                                     </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="4" data-ca-product-review-reviews-stars-full="4" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 4 из 5 звёзд"></div>
-                                        </header>
-
+                                    <section class="product-review-post__content ty-dialog-caret">
                                         <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
                                             <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
                                                 <dd class="ty-product-review-post-message-section__body ty-dd">
                                                     <div class="ty-content-more" data-ca-elem="contentMore">
                                                         <div class="ty-content-more__text" data-ca-elem="contentMoreText">
                                                             When it comes to others being able to hear you in noisy environments Nothing beats plantronics 5200 headsets. Only others comparable would be the fast food order taker style headset like the parrot ones.
                                                             As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
                                                             perfectly fine and you get the greatness of audio also.
-                                                        </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
                                                         </div>
                                                     </div>
                                                 </dd>
@@ -973,13 +929,7 @@
 
                                             <div class="ty-product-review-post-footer__secondary">
                                                 <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=187&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_187" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>2</span>
-                                                    </a>
 
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=187&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_187" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
 
                                                     <!--product_review-post_votes_187-->
                                                 </div>
@@ -987,151 +937,24 @@
                                         </footer>
                                     </section>
                                 </article>
-
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
-                                                Sam Colt
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
+                                                By Mark
                                             </h6>
                                         </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2021-02-08T19:56:46">
-                                            02/08/2021, 19:56
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                            02/08/2021, 19:57
                                         </time>
                                     </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="5" data-ca-product-review-reviews-stars-full="5" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 5 из 5 звёзд"></div>
-                                        </header>
-
-                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_186">
+                                    <section class="product-review-post__content ty-dialog-caret">
+                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
                                             <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
-                                                <dd class="ty-product-review-post-message-section__body ty-dd">
-                                                    <div class="ty-content-more" data-ca-elem="contentMore">
-                                                        <div class="ty-content-more__text" data-ca-elem="contentMoreText">
-                                                            The answers here are funny, but the real answer is that the dangling part is the battery. The nice thing about this Pro version is that the battery is much shorter -- the original AirPods looked like snot
-                                                            was hanging out of your ear. These are much more compact and subtle than that.
-                                                        </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                        </blockquote>
-
-                                        <footer class="ty-product-review-post-footer">
-                                            <div class="ty-product-review-post-footer__primary"></div>
-
-                                            <div class="ty-product-review-post-footer__secondary">
-                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_186">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=186&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_186" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>2</span>
-                                                    </a>
-
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=186&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_186" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
-
-                                                    <!--product_review-post_votes_186-->
-                                                </div>
-                                            </div>
-                                        </footer>
-                                    </section>
-                                </article>
-
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
-                                                By J. Stephen
-                                            </h6>
-                                        </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2020-12-22T12:44:00">
-                                            12/22/2020, 12:44
-                                        </time>
-                                    </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="4" data-ca-product-review-reviews-stars-full="4" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 4 из 5 звёзд"></div>
-                                        </header>
-
-                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_183">
-                                            <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
-                                                <dd class="ty-product-review-post-message-section__body ty-dd">
-                                                    <div class="ty-content-more" data-ca-elem="contentMore">
-                                                        <div class="ty-content-more__text" data-ca-elem="contentMoreText">
-                                                            The answers here are funny, but the real answer is that the dangling part is the battery. The nice thing about this Pro version is that the battery is much shorter -- the original AirPods looked like snot
-                                                            was hanging out of your ear. These are much more compact and subtle than that.
-                                                        </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                        </blockquote>
-
-                                        <footer class="ty-product-review-post-footer">
-                                            <div class="ty-product-review-post-footer__primary"></div>
-
-                                            <div class="ty-product-review-post-footer__secondary">
-                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_183">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=183&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_183" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>1</span>
-                                                    </a>
-
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=183&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_183" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
-
-                                                    <!--product_review-post_votes_183-->
-                                                </div>
-                                            </div>
-                                        </footer>
-                                    </section>
-                                </article>
-
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
-                                                By mark
-                                            </h6>
-                                        </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2020-12-21T12:45:00">
-                                            12/21/2020, 12:45
-                                        </time>
-                                    </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="5" data-ca-product-review-reviews-stars-full="5" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 5 из 5 звёзд"></div>
-                                        </header>
-
-                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_184">
-                                            <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
                                                 <dd class="ty-product-review-post-message-section__body ty-dd">
                                                     <div class="ty-content-more" data-ca-elem="contentMore">
                                                         <div class="ty-content-more__text" data-ca-elem="contentMoreText">
@@ -1139,11 +962,6 @@
                                                             As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
                                                             perfectly fine and you get the greatness of audio also.
                                                         </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
-                                                        </div>
                                                     </div>
                                                 </dd>
                                             </dl>
@@ -1153,56 +971,39 @@
                                             <div class="ty-product-review-post-footer__primary"></div>
 
                                             <div class="ty-product-review-post-footer__secondary">
-                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_184">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=184&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_184" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>1</span>
-                                                    </a>
+                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
 
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=184&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_184" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
 
-                                                    <!--product_review-post_votes_184-->
+                                                    <!--product_review-post_votes_187-->
                                                 </div>
                                             </div>
                                         </footer>
                                     </section>
                                 </article>
-
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
-                                                J. Doe
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
+                                                By Mark
                                             </h6>
                                         </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2020-12-20T11:45:00">
-                                            12/20/2020, 11:45
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                            02/08/2021, 19:57
                                         </time>
                                     </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="3" data-ca-product-review-reviews-stars-full="3" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 3 из 5 звёзд"></div>
-                                        </header>
-
-                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_185">
+                                    <section class="product-review-post__content ty-dialog-caret">
+                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
                                             <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
                                                 <dd class="ty-product-review-post-message-section__body ty-dd">
                                                     <div class="ty-content-more" data-ca-elem="contentMore">
                                                         <div class="ty-content-more__text" data-ca-elem="contentMoreText">
-                                                            No it is not. Sound cancellation is only good for minor noises. It can cancel people speaking, regular noises in the house like air-condition running and the such. Basically, it cancels normal noise. If
-                                                            it canceled a mower or anything louder it would be considered unsafe. You must be able to hear certain noises.
-                                                        </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
+                                                            When it comes to others being able to hear you in noisy environments Nothing beats plantronics 5200 headsets. Only others comparable would be the fast food order taker style headset like the parrot ones.
+                                                            As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
+                                                            perfectly fine and you get the greatness of audio also.
                                                         </div>
                                                     </div>
                                                 </dd>
@@ -1213,14 +1014,96 @@
                                             <div class="ty-product-review-post-footer__primary"></div>
 
                                             <div class="ty-product-review-post-footer__secondary">
-                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_185">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=185&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_185" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>0</span>
-                                                    </a>
+                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
 
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=185&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_185" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
+
+                                                    <!--product_review-post_votes_187-->
+                                                </div>
+                                            </div>
+                                        </footer>
+                                    </section>
+                                </article>
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
+                                                By Mark
+                                            </h6>
+                                        </address>
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                            02/08/2021, 19:57
+                                        </time>
+                                    </section>
+                                    <section class="product-review-post__content ty-dialog-caret">
+                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
+                                            <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
+                                                <dd class="ty-product-review-post-message-section__body ty-dd">
+                                                    <div class="ty-content-more" data-ca-elem="contentMore">
+                                                        <div class="ty-content-more__text" data-ca-elem="contentMoreText">
+                                                            When it comes to others being able to hear you in noisy environments Nothing beats plantronics 5200 headsets. Only others comparable would be the fast food order taker style headset like the parrot ones.
+                                                            As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
+                                                            perfectly fine and you get the greatness of audio also.
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </blockquote>
+
+                                        <footer class="ty-product-review-post-footer">
+                                            <div class="ty-product-review-post-footer__primary"></div>
+
+                                            <div class="ty-product-review-post-footer__secondary">
+                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
+
+
+                                                    <!--product_review-post_votes_187-->
+                                                </div>
+                                            </div>
+                                        </footer>
+                                    </section>
+                                </article>
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
+                                                By Mark
+                                            </h6>
+                                        </address>
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                            02/08/2021, 19:57
+                                        </time>
+                                    </section>
+                                    <section class="product-review-post__content ty-dialog-caret">
+                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
+                                            <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
+                                                <dd class="ty-product-review-post-message-section__body ty-dd">
+                                                    <div class="ty-content-more" data-ca-elem="contentMore">
+                                                        <div class="ty-content-more__text" data-ca-elem="contentMoreText">
+                                                            When it comes to others being able to hear you in noisy environments Nothing beats plantronics 5200 headsets. Only others comparable would be the fast food order taker style headset like the parrot ones.
+                                                            As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
+                                                            perfectly fine and you get the greatness of audio also.
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </blockquote>
+
+                                        <footer class="ty-product-review-post-footer">
+                                            <div class="ty-product-review-post-footer__primary"></div>
+
+                                            <div class="ty-product-review-post-footer__secondary">
+                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
+
+
+                                                    <!--product_review-post_votes_187-->
                                                 </div>
                                             </div>
                                         </footer>
@@ -1230,85 +1113,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="questions__content__tab" data-type="questions">
+                <div class="questions__content__tab" data-type="questions" style="display: none;">
                     <a href="#" class="addlink btn-border-style">Задать вопрос</a>
                     <div class="tab-content">
                         <div class="ty-pagination-container cm-pagination-container" id="pagination_contents_comments_305">
-                            <nav class="ty-product-review-reviews-navigation">
-                                <div class="ty-sort-dropdown">
+                            <nav class="product-review-reviews-navigation">
+                                <div class="sort-dropdown">
                                     <div class="ut2-sort-label">Сортировать по:</div>
-                                    <a id="sw_elm_sort_fields" class="ty-sort-dropdown__wrapper cm-combination"><span>Новые выше</span><i class="ut2-icon-outline-expand_more"></i></a>
-                                    <ul id="elm_sort_fields" class="ty-sort-dropdown__content cm-popup-box hidden">
-                                        <li class="sort-by-product_review_timestamp-asc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=product_review_timestamp&amp;sort_order=asc" rel="nofollow">
-                                                Старые выше
-                                            </a>
-                                        </li>
-                                        <li class="sort-by-helpfulness-asc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=helpfulness&amp;sort_order=asc" rel="nofollow">
-                                                Полезные ниже
-                                            </a>
-                                        </li>
-                                        <li class="sort-by-helpfulness-desc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=helpfulness&amp;sort_order=desc" rel="nofollow">
-                                                Полезные выше
-                                            </a>
-                                        </li>
-                                        <li class="sort-by-rating_value-asc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=rating_value&amp;sort_order=asc" rel="nofollow">
-                                                С низким рейтингом
-                                            </a>
-                                        </li>
-                                        <li class="sort-by-rating_value-desc ty-sort-dropdown__content-item">
-                                            <a class="cm-ajax ty-sort-dropdown__content-item-a" data-ca-target-id="pagination_contents_comments_305" href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/elektronika/apple-airpods-pro-with-wireless-charging-case/?sort_by=rating_value&amp;sort_order=desc" rel="nofollow">
-                                                C высоким рейтингом
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <a id="sw_elm_sort_fields" class="ty-sort-dropdown__wrapper cm-combination"><span>Новые выше</span></a>
                                 </div>
-                                <label class="ty-product-review-reviews-navigation__filter">
-                                    <input id="product_review_with_images" type="checkbox" name="product_review_with_images" class="cm-external-click ty-product-review-reviews-navigation__filter-checkbox" data-ca-external-click-id="product_review_with_images_link" />
-                                    <a id="product_review_with_images_link" href="index.php?dispatch=products.view&amp;product_id=305&amp;with_images=1&amp;selected_section=product_reviews#product_reviews" class="ty-product-review-reviews-navigation__filter-link cm-ajax" data-ca-target-id="pagination_contents_comments_305" rel="nofollow">
-                                        С фото
-                                    </a>
-                                </label>
                             </nav>
-                            <div class="ty-product-review-view__posts">
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
+                            <div class="product-review-view__posts">
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
                                                 By Mark
                                             </h6>
                                         </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
                                             02/08/2021, 19:57
                                         </time>
                                     </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="4" data-ca-product-review-reviews-stars-full="4" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 4 из 5 звёзд"></div>
-                                        </header>
-
+                                    <section class="product-review-post__content ty-dialog-caret">
                                         <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
                                             <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
                                                 <dd class="ty-product-review-post-message-section__body ty-dd">
                                                     <div class="ty-content-more" data-ca-elem="contentMore">
                                                         <div class="ty-content-more__text" data-ca-elem="contentMoreText">
                                                             When it comes to others being able to hear you in noisy environments Nothing beats plantronics 5200 headsets. Only others comparable would be the fast food order taker style headset like the parrot ones.
                                                             As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
                                                             perfectly fine and you get the greatness of audio also.
-                                                        </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
                                                         </div>
                                                     </div>
                                                 </dd>
@@ -1320,13 +1159,7 @@
 
                                             <div class="ty-product-review-post-footer__secondary">
                                                 <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=187&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_187" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>2</span>
-                                                    </a>
 
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=187&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_187" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
 
                                                     <!--product_review-post_votes_187-->
                                                 </div>
@@ -1334,151 +1167,24 @@
                                         </footer>
                                     </section>
                                 </article>
-
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
-                                                Sam Colt
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
+                                                By Mark
                                             </h6>
                                         </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2021-02-08T19:56:46">
-                                            02/08/2021, 19:56
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                            02/08/2021, 19:57
                                         </time>
                                     </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="5" data-ca-product-review-reviews-stars-full="5" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 5 из 5 звёзд"></div>
-                                        </header>
-
-                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_186">
+                                    <section class="product-review-post__content ty-dialog-caret">
+                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
                                             <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
-                                                <dd class="ty-product-review-post-message-section__body ty-dd">
-                                                    <div class="ty-content-more" data-ca-elem="contentMore">
-                                                        <div class="ty-content-more__text" data-ca-elem="contentMoreText">
-                                                            The answers here are funny, but the real answer is that the dangling part is the battery. The nice thing about this Pro version is that the battery is much shorter -- the original AirPods looked like snot
-                                                            was hanging out of your ear. These are much more compact and subtle than that.
-                                                        </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                        </blockquote>
-
-                                        <footer class="ty-product-review-post-footer">
-                                            <div class="ty-product-review-post-footer__primary"></div>
-
-                                            <div class="ty-product-review-post-footer__secondary">
-                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_186">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=186&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_186" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>2</span>
-                                                    </a>
-
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=186&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_186" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
-
-                                                    <!--product_review-post_votes_186-->
-                                                </div>
-                                            </div>
-                                        </footer>
-                                    </section>
-                                </article>
-
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
-                                                By J. Stephen
-                                            </h6>
-                                        </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2020-12-22T12:44:00">
-                                            12/22/2020, 12:44
-                                        </time>
-                                    </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="4" data-ca-product-review-reviews-stars-full="4" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 4 из 5 звёзд"></div>
-                                        </header>
-
-                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_183">
-                                            <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
-                                                <dd class="ty-product-review-post-message-section__body ty-dd">
-                                                    <div class="ty-content-more" data-ca-elem="contentMore">
-                                                        <div class="ty-content-more__text" data-ca-elem="contentMoreText">
-                                                            The answers here are funny, but the real answer is that the dangling part is the battery. The nice thing about this Pro version is that the battery is much shorter -- the original AirPods looked like snot
-                                                            was hanging out of your ear. These are much more compact and subtle than that.
-                                                        </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                        </blockquote>
-
-                                        <footer class="ty-product-review-post-footer">
-                                            <div class="ty-product-review-post-footer__primary"></div>
-
-                                            <div class="ty-product-review-post-footer__secondary">
-                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_183">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=183&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_183" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>1</span>
-                                                    </a>
-
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=183&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_183" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
-
-                                                    <!--product_review-post_votes_183-->
-                                                </div>
-                                            </div>
-                                        </footer>
-                                    </section>
-                                </article>
-
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
-                                                By mark
-                                            </h6>
-                                        </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2020-12-21T12:45:00">
-                                            12/21/2020, 12:45
-                                        </time>
-                                    </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="5" data-ca-product-review-reviews-stars-full="5" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 5 из 5 звёзд"></div>
-                                        </header>
-
-                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_184">
-                                            <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
                                                 <dd class="ty-product-review-post-message-section__body ty-dd">
                                                     <div class="ty-content-more" data-ca-elem="contentMore">
                                                         <div class="ty-content-more__text" data-ca-elem="contentMoreText">
@@ -1486,11 +1192,6 @@
                                                             As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
                                                             perfectly fine and you get the greatness of audio also.
                                                         </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
-                                                        </div>
                                                     </div>
                                                 </dd>
                                             </dl>
@@ -1500,56 +1201,39 @@
                                             <div class="ty-product-review-post-footer__primary"></div>
 
                                             <div class="ty-product-review-post-footer__secondary">
-                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_184">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=184&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_184" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>1</span>
-                                                    </a>
+                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
 
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=184&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_184" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
 
-                                                    <!--product_review-post_votes_184-->
+                                                    <!--product_review-post_votes_187-->
                                                 </div>
                                             </div>
                                         </footer>
                                     </section>
                                 </article>
-
-                                <article class="ty-product-review-post">
-                                    <section class="ty-product-review-post-customer">
-                                        <address class="ty-product-review-post-customer__address ty-address">
-                                            <h6 class="ty-product-review-post-customer__name">
-                                                J. Doe
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
+                                                By Mark
                                             </h6>
                                         </address>
-
-                                        <time class="ty-product-review-post-customer__date" datetime="2020-12-20T11:45:00">
-                                            12/20/2020, 11:45
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                            02/08/2021, 19:57
                                         </time>
                                     </section>
-
-                                    <section class="ty-product-review-post__content ty-dialog-caret">
-                                        <header class="ty-product-review-post-header">
-                                            <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-rating="3" data-ca-product-review-reviews-stars-full="3" data-ca-product-review-reviews-stars-is-half="" title="Этот товар оценивают на 3 из 5 звёзд"></div>
-                                        </header>
-
-                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_185">
+                                    <section class="product-review-post__content ty-dialog-caret">
+                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
                                             <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
-                                                <dt class="ty-product-review-post-message-section__title ty-dt ty-strong">
-                                                    Комментарий
-                                                </dt>
-
                                                 <dd class="ty-product-review-post-message-section__body ty-dd">
                                                     <div class="ty-content-more" data-ca-elem="contentMore">
                                                         <div class="ty-content-more__text" data-ca-elem="contentMoreText">
-                                                            No it is not. Sound cancellation is only good for minor noises. It can cancel people speaking, regular noises in the house like air-condition running and the such. Basically, it cancels normal noise. If
-                                                            it canceled a mower or anything louder it would be considered unsafe. You must be able to hear certain noises.
-                                                        </div>
-                                                        <div class="ty-content-more__btn-wrapper hidden" data-ca-elem="contentMoreBtnWrapper">
-                                                            <button type="button" class="ty-content-more__btn" data-ca-elem="contentMoreBtn">
-                                                                Показать больше
-                                                            </button>
+                                                            When it comes to others being able to hear you in noisy environments Nothing beats plantronics 5200 headsets. Only others comparable would be the fast food order taker style headset like the parrot ones.
+                                                            As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
+                                                            perfectly fine and you get the greatness of audio also.
                                                         </div>
                                                     </div>
                                                 </dd>
@@ -1560,14 +1244,96 @@
                                             <div class="ty-product-review-post-footer__primary"></div>
 
                                             <div class="ty-product-review-post-footer__secondary">
-                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_185">
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.up&amp;product_review_id=185&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__up" rel="nofollow" data-ca-target-id="product_review-post_votes_185" title="Голосовать за">
-                                                        <i class="ty-icon-arrow-up"></i><span>0</span>
-                                                    </a>
+                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
 
-                                                    <a href="https://demo.cs-cart.ru/stores/1c6f30c7cb5b100e/index.php?dispatch=product_reviews.vote.down&amp;product_review_id=185&amp;return_url=index.php%3Fdispatch%3Dproducts.view%26product_id%3D305" class="ty-btn cm-ajax ty-btn__text cm-post cm-ajax-full-render ty-product-review-post-votes__down" rel="nofollow" data-ca-target-id="product_review-post_votes_185" title="Голосовать против">
-                                                        <i class="ty-icon-arrow-down"></i><span>0</span>
-                                                    </a>
+
+                                                    <!--product_review-post_votes_187-->
+                                                </div>
+                                            </div>
+                                        </footer>
+                                    </section>
+                                </article>
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
+                                                By Mark
+                                            </h6>
+                                        </address>
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                            02/08/2021, 19:57
+                                        </time>
+                                    </section>
+                                    <section class="product-review-post__content ty-dialog-caret">
+                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
+                                            <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
+                                                <dd class="ty-product-review-post-message-section__body ty-dd">
+                                                    <div class="ty-content-more" data-ca-elem="contentMore">
+                                                        <div class="ty-content-more__text" data-ca-elem="contentMoreText">
+                                                            When it comes to others being able to hear you in noisy environments Nothing beats plantronics 5200 headsets. Only others comparable would be the fast food order taker style headset like the parrot ones.
+                                                            As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
+                                                            perfectly fine and you get the greatness of audio also.
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </blockquote>
+
+                                        <footer class="ty-product-review-post-footer">
+                                            <div class="ty-product-review-post-footer__primary"></div>
+
+                                            <div class="ty-product-review-post-footer__secondary">
+                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
+
+
+                                                    <!--product_review-post_votes_187-->
+                                                </div>
+                                            </div>
+                                        </footer>
+                                    </section>
+                                </article>
+                                <article class="product-review-post">
+                                    <section class="product-review-post-customer">
+                                        <address class="product-review-post-customer__address ty-address">
+                                            <span class="review-stars">
+                                            <i class="icon icon-star"></i>
+                                            <span>5</span>
+                                            </span>
+                                            <h6 class="product-review-post-customer__name">
+                                                By Mark
+                                            </h6>
+                                        </address>
+                                        <time class="product-review-post-customer__date" datetime="2021-02-08T19:57:10">
+                                            02/08/2021, 19:57
+                                        </time>
+                                    </section>
+                                    <section class="product-review-post__content ty-dialog-caret">
+                                        <blockquote class="ty-product-review-post-message ty-blockquote" id="post_187">
+                                            <dl class="ty-product-review-post-message-section ty-dl" data-ca-product-review="postMessageSection">
+                                                <dd class="ty-product-review-post-message-section__body ty-dd">
+                                                    <div class="ty-content-more" data-ca-elem="contentMore">
+                                                        <div class="ty-content-more__text" data-ca-elem="contentMoreText">
+                                                            When it comes to others being able to hear you in noisy environments Nothing beats plantronics 5200 headsets. Only others comparable would be the fast food order taker style headset like the parrot ones.
+                                                            As far as sound quality for you as the wearer absolutely amazing. If you want people to hear you noisy environments Plantronics is better if you just want to be heard in quiet environments these will do
+                                                            perfectly fine and you get the greatness of audio also.
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </blockquote>
+
+                                        <footer class="ty-product-review-post-footer">
+                                            <div class="ty-product-review-post-footer__primary"></div>
+
+                                            <div class="ty-product-review-post-footer__secondary">
+                                                <div class="ty-product-review-post-votes" id="product_review-post_votes_187">
+
+
+                                                    <!--product_review-post_votes_187-->
                                                 </div>
                                             </div>
                                         </footer>
@@ -1610,6 +1376,49 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/libs.js"></script>
     <script src="js/common.js"></script>
+
+    <!-- only on enterprises page -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script>
+        /* map settings */
+        var myMap,
+            cord1,
+            cord2,
+            myPlacemark,
+            mapCenter = [59.858928, 30.440097, 59.862753, 30.445612], // map center desc/mobile
+            mapMarker = [59.858928, 30.440097], // map marker
+            markTitle = "Проспект Александровской фермы 23б"; // adress baloon
+
+        function init() {
+            /* settings on mobile */
+            if ($(window).width() > 640) {
+                cord1 = mapCenter[0];
+                cord2 = mapCenter[1];
+            } else {
+                cord1 = mapCenter[2];
+                cord2 = mapCenter[3];
+            }
+            myMap = new ymaps.Map("yamap", {
+                center: [cord1, cord2],
+                zoom: 16
+            });
+            myPlacemark = new ymaps.Placemark([mapMarker[0], mapMarker[1]], {
+                hintContent: markTitle,
+                balloonContent: '',
+            });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom'); // off scroll wheel
+            myMap.controls.remove('geolocationControl'); // remove controls
+            myMap.controls.remove('searchControl'); // remove controls searchtool
+            myMap.controls.remove('trafficControl'); // remove controls traffic
+            myMap.controls.remove('typeSelector'); // remove controls typetool
+            myMap.controls.remove('fullscreenControl'); // remove controls fullscreen
+            myMap.controls.remove('rulerControl'); // remove controls linetool
+        }
+        if ($("div").is("#yamap")) {
+            ymaps.ready(init);
+        }
+    </script>
 </body>
 
 </html>
