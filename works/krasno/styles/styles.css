@@ -1046,14 +1046,12 @@ screen and (max-height:300px) {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap
 }
-.input-group {
+.input-group.dlabel {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  margin: 20px 0
-}
-.input-group.dlabel {
+  margin: 20px 0;
   position: relative
 }
 .input-group.dlabel input,
