@@ -51,44 +51,42 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <a href="/" class="logo-link"><span>GO!</span>Krasnogorsk</a>
-                <button class="hamburger hamburger--slider" data-menu="mmenu" type="button">
-                    <span class="hamburger-box">
+        <div class="header__content">
+            <a href="/" class="logo-link"><span>GO!</span>Krasnogorsk</a>
+            <button class="hamburger hamburger--slider" data-menu="mmenu" type="button">
+                <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                <nav class="main-menu" data-menu="mmenu" style="display: none;">
-                    <ul class="main-menu__list">
-                        <li class="main-menu__item"><a href="/" class="main-menu__link">Главная</a></li>
-                        <li class="main-menu__item"><a href="/enterprises.html" class="main-menu__link">Наши предприятия</a></li>
-                        <li class="main-menu__item"><a href="/promo.html" class="main-menu__link">Промоакции</a></li>
-                        <li class="main-menu__item"><a href="/contacts.html" class="main-menu__link">Контакты</a></li>
-                        <li class="main-menu__item phone"><a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></li>
+                </span>
+            </button>
+            <nav class="main-menu" data-menu="mmenu" style="display: none;">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item"><a href="/" class="main-menu__link">Главная</a></li>
+                    <li class="main-menu__item"><a href="/enterprises.html" class="main-menu__link">Наши предприятия</a></li>
+                    <li class="main-menu__item"><a href="/promo.html" class="main-menu__link">Промоакции</a></li>
+                    <li class="main-menu__item"><a href="/contacts.html" class="main-menu__link">Контакты</a></li>
+                    <li class="main-menu__item phone"><a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+74955405497" class="phone-link" style="display: none;">+7 (495) 540-54-97</a>
+            <div class="account">
+                <a href="/cart.html" class="cart-link">
+                    <span class="cart-count">3</span>
+                    <i class="icon icon-cart"></i>
+                </a>
+                <div class="account-menu">
+                    <span class="account-link"><i class="icon icon-user"></i></span>
+                    <ul class="account-menu__list" style="display: none;">
+                        <li class="account-menu__item"><a href="#" class="account-menu__link">Профиль</a></li>
+                        <li class="account-menu__item"><a href="#" class="account-menu__link">Выйти</a></li>
                     </ul>
-                </nav>
-                <a href="tel:+74955405497" class="phone-link" style="display: none;">+7 (495) 540-54-97</a>
-                <div class="account">
-                    <a href="/cart.html" class="cart-link">
-                        <span class="cart-count">3</span>
-                        <i class="icon icon-cart"></i>
-                    </a>
-                    <div class="account-menu">
-                        <span class="account-link"><i class="icon icon-user"></i></span>
-                        <ul class="account-menu__list" style="display: none;">
-                            <li class="account-menu__item"><a href="#" class="account-menu__link">Профиль</a></li>
-                            <li class="account-menu__item"><a href="#" class="account-menu__link">Выйти</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </header>
     <!-- main content -->
-    <main class="main-page main-block lazyload" data-bgset="images/bg/mobile/main_bg.jpg [(max-width: 575px)] | images/bg/pad/main_bg.jpg [(max-width: 1024px)] | images/bg/desk/main_bg.jpg [(min-width: 1025px)]">
+    <main class="main-page main-block full-page lazyload" data-bgset="images/bg/mobile/main_bg.jpg [(max-width: 575px)] | images/bg/pad/main_bg.jpg [(max-width: 1024px)] | images/bg/desk/main_bg.jpg [(min-width: 1025px)]">
         <div class="container">
-            <div class="main-block__content">
+            <div class="main-block__content full-page__content">
                 <h2 class="main-block__subtitle wow krasnoFadeIn">#покупайместное</h2>
                 <h1 class="main-block__title wow krasnoFadeIn" data-wow-delay=".5s">#СДЕЛАНОвКРАСНОГОРСКЕ</h1>
                 <div class="main-block__descr wow fadeIn" data-wow-delay="1s">
@@ -110,7 +108,7 @@
                     <div class="why-block__descr">
                         <p class="wow krasnoFadeIn" data-wow-delay=".5s">Лучшее соотношение цена-качество</p>
                         <p class="wow krasnoFadeIn" data-wow-delay="1s">Сохранение рабочих мест</p>
-                        <p class="wow krasnoFadeIn" data-wow-delay="1.5s">Гарантия качества – <br> местные компании берегут свою репутацию</p>
+                        <p class="wow krasnoFadeIn" data-wow-delay="1.5s">Гарантия качества – местные компании берегут свою репутацию</p>
                         <p class="wow krasnoFadeIn" data-wow-delay="2s">Доступность – не нужно никуда ехать</p>
                     </div>
                 </div>
@@ -118,45 +116,43 @@
         </div>
     </section>
     <section class="main-page about-block">
-        <div class="container">
-            <div class="about-block__row">
-                <div class="about-block__row__left-side">
-                    <div class="descr-block wow krasnoFadeIn">
-                        <h2 class="about-block__title">О проекте <span>#СДЕЛАНОвКРАСНОГОРСКЕ</span></h2>
-                        <div class="about-block__descr">
-                            <p><span>Н</span>аш проект призван объединить жителей г.Красногорск в непростых условиях эпидемии и кризиса, помочь найти нужные товары и услуги рядом с домом.</p>
-                        </div>
+        <div class="about-block__row">
+            <div class="about-block__row__left-side">
+                <div class="descr-block wow krasnoFadeIn">
+                    <h2 class="about-block__title">О проекте <span>#СДЕЛАНОвКРАСНОГОРСКЕ</span></h2>
+                    <div class="about-block__descr">
+                        <p><span>Н</span>аш проект призван объединить жителей г. Красногорск в непростых условиях эпидемии и кризиса, помочь найти нужные товары и услуги рядом с домом.</p>
                     </div>
-                </div>
-                <div class="about-block__row__right-side">
-                    <img src="images/main/about_image1.jpg" alt="about" class="about-image lazyload">
                 </div>
             </div>
-            <div class="about-block__row">
-                <div class="about-block__row__left-side">
-                    <div class="descr-block wow krasnoFadeIn">
-                        <div class="about-block__descr">
-                            <p>C появлением COVID-19 наша привычная жизнь изменилась. Мы больше не ездим в торговые центры, не отмечаем праздники в кафе, не можем делать множество привычных и любимых дел. А в двух шагах, на соседней улице продолжают трудиться те, кто может обеспечить нам привычный комфорт и поднять настроение. Вы знаете о них?</p>
-                            <p>Небольшое ателье, где шьют не хуже известных брендов находится в квартале от вас. Семейный ресторанчик, обувная мастерская, продукты «у дома», овощные палатки, автосервисы «за углом» – всё это малый бизнес, готовый прийти на помощь соседям, когда большие магазины не справляются.</p>
-                        </div>
+            <div class="about-block__row__right-side">
+                <img src="images/main/about_image1.jpg" alt="about" class="about-image lazyload">
+            </div>
+        </div>
+        <div class="about-block__row">
+            <div class="about-block__row__left-side">
+                <div class="descr-block wow krasnoFadeIn">
+                    <div class="about-block__descr">
+                        <p>C появлением COVID-19 наша привычная жизнь изменилась. Мы больше не ездим в торговые центры, не отмечаем праздники в кафе, не можем делать множество привычных и любимых дел. А в двух шагах, на соседней улице продолжают трудиться те, кто может обеспечить нам привычный комфорт и поднять настроение. Вы знаете о них?</p>
+                        <p>Небольшое ателье, где шьют не хуже известных брендов находится в квартале от вас. Семейный ресторанчик, обувная мастерская, продукты «у дома», овощные палатки, автосервисы «за углом» – всё это малый бизнес, готовый прийти на помощь соседям, когда большие магазины не справляются.</p>
                     </div>
-                </div>
-                <div class="about-block__row__right-side">
-                    <img src="images/main/about_image2.jpg" alt="about" class="about-image lazyload">
                 </div>
             </div>
-            <div class="about-block__row">
-                <div class="about-block__row__left-side">
-                    <div class="descr-block wow krasnoFadeIn">
-                        <div class="about-block__descr">
-                            <p><span>H</span>аш проект создан для того, чтобы, несмотря на самоизоляцию, каждый товар нашёл своего покупателя, а клиент – нужную именно ему услугу.</p>
-                            <p>Поддерживая друг друга, мы сможем противостоять кризису и улучшить качество жизни здесь и сейчас.</p>
-                        </div>
+            <div class="about-block__row__right-side">
+                <img src="images/main/about_image2.jpg" alt="about" class="about-image lazyload">
+            </div>
+        </div>
+        <div class="about-block__row">
+            <div class="about-block__row__left-side">
+                <div class="descr-block wow krasnoFadeIn">
+                    <div class="about-block__descr">
+                        <p><span>H</span>аш проект создан для того, чтобы, несмотря на самоизоляцию, каждый товар нашёл своего покупателя, а клиент – нужную именно ему услугу.</p>
+                        <p>Поддерживая друг друга, мы сможем противостоять кризису и улучшить качество жизни здесь и сейчас.</p>
                     </div>
                 </div>
-                <div class="about-block__row__right-side">
-                    <img src="images/main/about_image3.jpg" alt="about" class="about-image lazyload">
-                </div>
+            </div>
+            <div class="about-block__row__right-side">
+                <img src="images/main/about_image3.jpg" alt="about" class="about-image lazyload">
             </div>
         </div>
     </section>
@@ -179,7 +175,7 @@
                     <img src="images/main/team_image.jpg" alt="team" class="team-image">
                 </div>
                 <div class="team-block__full-side">
-                    <h2 class="team-block__subtitle wow fadeInLeft" data-wow-delay="2.5s">то ПРИСОЕДИНЯЙТЕСЬ <br> к нашей команде.</h2>
+                    <h2 class="team-block__subtitle wow fadeInLeft" data-wow-delay="2.5s">то <span>присоединяйтесь</span> к нашей команде.</h2>
                     <p class="wow fadeIn" data-wow-delay="3s">Вместе мы справимся с любыми трудностями!</p>
                     <a href="#" class="join-btn btn-border-style wow krasnoFadeIn" data-wow-offset="0" data-wow-delay="3.5s"><span>Присоединиться к проекту</span></a>
                 </div>

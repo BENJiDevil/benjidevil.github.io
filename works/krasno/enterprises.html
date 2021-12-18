@@ -51,56 +51,54 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <a href="/" class="logo-link"><span>GO!</span>Krasnogorsk</a>
-                <button class="hamburger hamburger--slider" data-menu="mmenu" type="button">
-                    <span class="hamburger-box">
+        <div class="header__content">
+            <a href="/" class="logo-link"><span>GO!</span>Krasnogorsk</a>
+            <button class="hamburger hamburger--slider" data-menu="mmenu" type="button">
+                <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                <nav class="main-menu" data-menu="mmenu" style="display: none;">
-                    <ul class="main-menu__list">
-                        <li class="main-menu__item"><a href="/" class="main-menu__link">Главная</a></li>
-                        <li class="main-menu__item"><a href="/enterprises.html" class="main-menu__link">Наши предприятия</a></li>
-                        <li class="main-menu__item"><a href="/promo.html" class="main-menu__link">Промоакции</a></li>
-                        <li class="main-menu__item"><a href="/contacts.html" class="main-menu__link">Контакты</a></li>
-                        <li class="main-menu__item phone"><a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></li>
+                </span>
+            </button>
+            <nav class="main-menu" data-menu="mmenu" style="display: none;">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item"><a href="/" class="main-menu__link">Главная</a></li>
+                    <li class="main-menu__item"><a href="/enterprises.html" class="main-menu__link">Наши предприятия</a></li>
+                    <li class="main-menu__item"><a href="/promo.html" class="main-menu__link">Промоакции</a></li>
+                    <li class="main-menu__item"><a href="/contacts.html" class="main-menu__link">Контакты</a></li>
+                    <li class="main-menu__item phone"><a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+74955405497" class="phone-link" style="display: none;">+7 (495) 540-54-97</a>
+            <div class="account">
+                <a href="/cart.html" class="cart-link">
+                    <span class="cart-count">3</span>
+                    <i class="icon icon-cart"></i>
+                </a>
+                <div class="account-menu">
+                    <span class="account-link"><i class="icon icon-user"></i></span>
+                    <ul class="account-menu__list" style="display: none;">
+                        <li class="account-menu__item"><a href="#" class="account-menu__link">Профиль</a></li>
+                        <li class="account-menu__item"><a href="#" class="account-menu__link">Выйти</a></li>
                     </ul>
-                </nav>
-                <a href="tel:+74955405497" class="phone-link" style="display: none;">+7 (495) 540-54-97</a>
-                <div class="account">
-                    <a href="/cart.html" class="cart-link">
-                        <span class="cart-count">3</span>
-                        <i class="icon icon-cart"></i>
-                    </a>
-                    <div class="account-menu">
-                        <span class="account-link"><i class="icon icon-user"></i></span>
-                        <ul class="account-menu__list" style="display: none;">
-                            <li class="account-menu__item"><a href="#" class="account-menu__link">Профиль</a></li>
-                            <li class="account-menu__item"><a href="#" class="account-menu__link">Выйти</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="enterprises-page enterprises-header lazyload" data-bgset="images/bg/mobile/enter_bg.jpg [(max-width: 575px)] | images/bg/pad/enter_bg.jpg [(max-width: 1024px)] | images/bg/desk/enter_bg.jpg [(min-width: 1025px)]">
+    <section class="enterprises-page enterprises-main lazyload" data-bgset="images/bg/mobile/enter_bg.jpg [(max-width: 575px)] | images/bg/pad/enter_bg.jpg [(max-width: 1024px)] | images/bg/desk/enter_bg.jpg [(min-width: 1025px)]">
         <div class="container">
-            <div class="enterprises-header__content">
-                <h2 class="enterprises-header__title">Предприятия г. Красногорска</h2>
-                <form action="" class="search-form">
-                    <div class="input-group">
-                        <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
-                        <input type="text" class="search-input" placeholder="Поиск">
-                    </div>
-                </form>
+            <div class="enterprises-main__content">
+                <h2 class="enterprises-main__title wow krasnoFadeIn" data-wow-offset="0">Предприятия г. Красногорска</h2>
             </div>
         </div>
     </section>
     <main class="enterprises-page enterprises">
         <div class="container">
-            <div class="enterprises__menu">
+            <form action="" class="search-form wow krasnoFadeIn" data-wow-offset="0">
+                <div class="input-group">
+                    <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                    <input type="text" class="search-input" placeholder="Поиск">
+                </div>
+            </form>
+            <div class="enterprises__menu owl-carousel">
                 <a href="javascript:void(0);" class="enterprises__menu__item">
                     <img src="images/svg/enter_type1.svg" width="45" height="45" alt="icon" class="menu-icon">
                     <span class="menu-title">Все</span>
@@ -137,9 +135,9 @@
                 </a>
             </div>
             <div class="enterprises__category">
-                <a href="javascript:void(0);" class="enterprises__category__item" data-type="dental">Стоматологические клиники</a>
-                <a href="javascript:void(0);" class="enterprises__category__item" data-type="adult">Поликлиники для взрослых</a>
-                <a href="javascript:void(0);" class="enterprises__category__item" data-type="child">Поликлиники для детей</a>
+                <a href="javascript:void(0);" class="enterprises__category__item" data-type="dental"><span>Стоматологические клиники</span></a>
+                <a href="javascript:void(0);" class="enterprises__category__item" data-type="adult"><span>Поликлиники для взрослых</span></a>
+                <a href="javascript:void(0);" class="enterprises__category__item" data-type="child"><span>Поликлиники для детей</span></a>
             </div>
         </div>
         <div class="enterprises__map">
@@ -147,101 +145,177 @@
             <div class="container">
                 <div class="enterprises__content">
                     <div class="enterprises__filter">
-                        <a href="javascript:void(0);" class="enterprises__filter__type" data-type="price">Ценовая категория</a>
-                        <a href="javascript:void(0);" class="enterprises__filter__type" data-type="procedure">Процедуры</a>
-                        <a href="javascript:void(0);" class="enterprises__filter__type" data-type="illness">Болезни</a>
-                        <a href="javascript:void(0);" class="enterprises__filter__type" data-type="other">Другие фильтры</a>
+                        <a href="javascript:void(0);" class="enterprises__filter__type" data-type="price"><span>Ценовая категория</span></a>
+                        <a href="javascript:void(0);" class="enterprises__filter__type" data-type="procedure"><span>Процедуры</span></a>
+                        <a href="javascript:void(0);" class="enterprises__filter__type" data-type="illness"><span>Болезни</span></a>
+                        <a href="javascript:void(0);" class="enterprises__filter__type" data-type="other"><span>Другие фильтры</span></a>
                     </div>
                     <div class="enterprises__list">
-                        <div class="enterprises__list__item" data-coord="#">
-                            <div class="item-image">
-                                <img src="/" alt="enterprise-image">
-                            </div>
-                            <div class="item-descr">
-                                <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
-                                <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
-                                <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
-                                <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
-                                <div class="enterprise-addinfo">
-                                    <div class="enterprise-rating">
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
+                        <div class="enterprises__list__item active" data-coord="#">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="images/main/enter_image.jpg" alt="enterprise-image">
+                                </div>
+                                <div class="item-descr">
+                                    <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
+                                    <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
+                                    <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
+                                    <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
+                                    <div class="enterprise-addinfo">
+                                        <div class="enterprise-rating">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                        <div class="enterprise-mark">5.0</div>
+                                        <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
-                                    <div class="enterprise-mark">5.0</div>
-                                    <div class="enterprise-answers">2 отзыва</div>
-                                    <p class="enterprise-lastreview">Отличный санаторий. Все понравилось!</p>
                                 </div>
                             </div>
                         </div>
                         <div class="enterprises__list__item" data-coord="#">
-                            <div class="item-image">
-                                <img src="/" alt="enterprise-image">
-                            </div>
-                            <div class="item-descr">
-                                <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
-                                <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
-                                <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
-                                <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
-                                <div class="enterprise-addinfo">
-                                    <div class="enterprise-rating">
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="images/main/enter_image.jpg" alt="enterprise-image">
+                                </div>
+                                <div class="item-descr">
+                                    <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
+                                    <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
+                                    <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
+                                    <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
+                                    <div class="enterprise-addinfo">
+                                        <div class="enterprise-rating">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                        <div class="enterprise-mark">5.0</div>
+                                        <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
-                                    <div class="enterprise-mark">5.0</div>
-                                    <div class="enterprise-answers">2 отзыва</div>
-                                    <p class="enterprise-lastreview">Отличный санаторий. Все понравилось!</p>
                                 </div>
                             </div>
                         </div>
                         <div class="enterprises__list__item" data-coord="#">
-                            <div class="item-image">
-                                <img src="/" alt="enterprise-image">
-                            </div>
-                            <div class="item-descr">
-                                <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
-                                <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
-                                <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
-                                <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
-                                <div class="enterprise-addinfo">
-                                    <div class="enterprise-rating">
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="images/main/enter_image.jpg" alt="enterprise-image">
+                                </div>
+                                <div class="item-descr">
+                                    <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
+                                    <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
+                                    <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
+                                    <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
+                                    <div class="enterprise-addinfo">
+                                        <div class="enterprise-rating">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                        <div class="enterprise-mark">5.0</div>
+                                        <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
-                                    <div class="enterprise-mark">5.0</div>
-                                    <div class="enterprise-answers">2 отзыва</div>
-                                    <p class="enterprise-lastreview">Отличный санаторий. Все понравилось!</p>
                                 </div>
                             </div>
                         </div>
                         <div class="enterprises__list__item" data-coord="#">
-                            <div class="item-image">
-                                <img src="/" alt="enterprise-image">
-                            </div>
-                            <div class="item-descr">
-                                <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
-                                <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
-                                <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
-                                <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
-                                <div class="enterprise-addinfo">
-                                    <div class="enterprise-rating">
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
-                                        <i class="icon icon-star"></i>
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="images/main/enter_image.jpg" alt="enterprise-image">
+                                </div>
+                                <div class="item-descr">
+                                    <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
+                                    <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
+                                    <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
+                                    <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
+                                    <div class="enterprise-addinfo">
+                                        <div class="enterprise-rating">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                        <div class="enterprise-mark">5.0</div>
+                                        <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
-                                    <div class="enterprise-mark">5.0</div>
-                                    <div class="enterprise-answers">2 отзыва</div>
-                                    <p class="enterprise-lastreview">Отличный санаторий. Все понравилось!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="enterprises__list__item" data-coord="#">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="images/main/enter_image.jpg" alt="enterprise-image">
+                                </div>
+                                <div class="item-descr">
+                                    <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
+                                    <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
+                                    <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
+                                    <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
+                                    <div class="enterprise-addinfo">
+                                        <div class="enterprise-rating">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                        <div class="enterprise-mark">5.0</div>
+                                        <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="enterprises__list__item" data-coord="#">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="images/main/enter_image.jpg" alt="enterprise-image">
+                                </div>
+                                <div class="item-descr">
+                                    <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
+                                    <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
+                                    <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
+                                    <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
+                                    <div class="enterprise-addinfo">
+                                        <div class="enterprise-rating">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                        <div class="enterprise-mark">5.0</div>
+                                        <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="enterprises__list__item" data-coord="#">
+                            <div class="item-content">
+                                <div class="item-image">
+                                    <img src="images/main/enter_image.jpg" alt="enterprise-image">
+                                </div>
+                                <div class="item-descr">
+                                    <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
+                                    <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
+                                    <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
+                                    <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
+                                    <div class="enterprise-addinfo">
+                                        <div class="enterprise-rating">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                        <div class="enterprise-mark">5.0</div>
+                                        <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

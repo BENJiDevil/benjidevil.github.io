@@ -51,51 +51,49 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <a href="/" class="logo-link"><span>GO!</span>Krasnogorsk</a>
-                <button class="hamburger hamburger--slider" data-menu="mmenu" type="button">
-                    <span class="hamburger-box">
+        <div class="header__content">
+            <a href="/" class="logo-link"><span>GO!</span>Krasnogorsk</a>
+            <button class="hamburger hamburger--slider" data-menu="mmenu" type="button">
+                <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                <nav class="main-menu" data-menu="mmenu" style="display: none;">
-                    <ul class="main-menu__list">
-                        <li class="main-menu__item"><a href="/" class="main-menu__link">Главная</a></li>
-                        <li class="main-menu__item"><a href="/enterprises.html" class="main-menu__link">Наши предприятия</a></li>
-                        <li class="main-menu__item"><a href="/promo.html" class="main-menu__link">Промоакции</a></li>
-                        <li class="main-menu__item"><a href="/contacts.html" class="main-menu__link">Контакты</a></li>
-                        <li class="main-menu__item phone"><a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></li>
+                </span>
+            </button>
+            <nav class="main-menu" data-menu="mmenu" style="display: none;">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item"><a href="/" class="main-menu__link">Главная</a></li>
+                    <li class="main-menu__item"><a href="/enterprises.html" class="main-menu__link">Наши предприятия</a></li>
+                    <li class="main-menu__item"><a href="/promo.html" class="main-menu__link">Промоакции</a></li>
+                    <li class="main-menu__item"><a href="/contacts.html" class="main-menu__link">Контакты</a></li>
+                    <li class="main-menu__item phone"><a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+74955405497" class="phone-link" style="display: none;">+7 (495) 540-54-97</a>
+            <div class="account">
+                <a href="/cart.html" class="cart-link">
+                    <span class="cart-count">3</span>
+                    <i class="icon icon-cart"></i>
+                </a>
+                <div class="account-menu">
+                    <span class="account-link"><i class="icon icon-user"></i></span>
+                    <ul class="account-menu__list" style="display: none;">
+                        <li class="account-menu__item"><a href="#" class="account-menu__link">Профиль</a></li>
+                        <li class="account-menu__item"><a href="#" class="account-menu__link">Выйти</a></li>
                     </ul>
-                </nav>
-                <a href="tel:+74955405497" class="phone-link" style="display: none;">+7 (495) 540-54-97</a>
-                <div class="account">
-                    <a href="/cart.html" class="cart-link">
-                        <span class="cart-count">3</span>
-                        <i class="icon icon-cart"></i>
-                    </a>
-                    <div class="account-menu">
-                        <span class="account-link"><i class="icon icon-user"></i></span>
-                        <ul class="account-menu__list" style="display: none;">
-                            <li class="account-menu__item"><a href="#" class="account-menu__link">Профиль</a></li>
-                            <li class="account-menu__item"><a href="#" class="account-menu__link">Выйти</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <main class="contacts-page contacts lazyload" data-bgset="images/bg/mobile/contacts_bg.jpg [(max-width: 575px)] | images/bg/pad/contacts_bg.jpg [(max-width: 1024px)] | images/bg/desk/contacts_bg.jpg [(min-width: 1025px)]">
+    <main class="contacts-page contacts single-page lazyload" data-bgset="images/bg/mobile/contacts_bg.jpg [(max-width: 575px)] | images/bg/pad/contacts_bg.jpg [(max-width: 1024px)] | images/bg/desk/contacts_bg.jpg [(min-width: 1025px)]">
         <div class="container">
-            <div class="contacts__content">
+            <div class="contacts__content single-page__content">
                 <h1 class="contacts__title contact-title wow krasnoFadeIn">Свяжитесь с нами</h1>
                 <div class="contacts__links">
-                    <p>Телефон:<a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></p>
-                    <p>E-mail:<a href="mailto:info@gokrasnogorsk.ru" class="email-link">info@gokrasnogorsk.ru</a></p>
+                    <p class="wow fadeIn" data-wow-delay=".5s">Телефон:<a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></p>
+                    <p class="wow fadeIn" data-wow-delay=".5s">E-mail:<a href="mailto:info@gokrasnogorsk.ru" class="email-link">info@gokrasnogorsk.ru</a></p>
                 </div>
                 <div class="contacts__form">
-                    <h2 class="form-title contact-title wow krasnoFadeIn">Напишите нам</h2>
-                    <form action="">
+                    <h2 class="form-title contact-title wow krasnoFadeIn" data-wow-delay="1s">Напишите нам</h2>
+                    <form action="" class="contacts-form wow fadeIn" data-wow-delay="1.5s">
                         <div class="input-row">
                             <div class="input-group dlabel">
                                 <input id="contacts_name" type="text" name="name" required>
