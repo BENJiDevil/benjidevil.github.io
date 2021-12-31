@@ -73,6 +73,8 @@
                     <span class="cart-count">3</span>
                     <i class="icon icon-cart"></i>
                 </a>
+            </div>
+            <div class="account">
                 <div class="account-menu">
                     <span class="account-link"><i class="icon icon-user"></i></span>
                     <ul class="account-menu__list" style="display: none;">
@@ -83,21 +85,22 @@
             </div>
         </div>
     </header>
+    <!-- TODO SCROLL SEARCH FORM -->
     <section class="enterprises-page enterprises-main lazyload" data-bgset="images/bg/mobile/enter_bg.jpg [(max-width: 575px)] | images/bg/pad/enter_bg.jpg [(max-width: 1024px)] | images/bg/desk/enter_bg.jpg [(min-width: 1025px)]">
         <div class="container">
             <div class="enterprises-main__content">
-                <h2 class="enterprises-main__title wow krasnoFadeIn" data-wow-offset="0">Предприятия г. Красногорска</h2>
+                <h1 class="enterprises-main__title wow krasnoFadeIn" data-wow-offset="0">Предприятия <span>г. Красногорска</span></h1>
+                <form action="" class="search-form wow krasnoFadeIn" data-wow-offset="0">
+                    <div class="input-group">
+                        <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        <input type="text" class="search-input" placeholder="Поиск">
+                    </div>
+                </form>
             </div>
         </div>
     </section>
     <main class="enterprises-page enterprises">
         <div class="container">
-            <form action="" class="search-form wow krasnoFadeIn" data-wow-offset="0">
-                <div class="input-group">
-                    <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
-                    <input type="text" class="search-input" placeholder="Поиск">
-                </div>
-            </form>
             <div class="enterprises__menu owl-carousel">
                 <a href="javascript:void(0);" class="enterprises__menu__item">
                     <img src="images/svg/enter_type1.svg" width="45" height="45" alt="icon" class="menu-icon">
@@ -173,6 +176,7 @@
                                         <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
                                 </div>
+                                <div class="item-map"></div>
                             </div>
                         </div>
                         <div class="enterprises__list__item" data-coord="#">
@@ -197,6 +201,7 @@
                                         <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
                                 </div>
+                                <div class="item-map"></div>
                             </div>
                         </div>
                         <div class="enterprises__list__item" data-coord="#">
@@ -221,6 +226,7 @@
                                         <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
                                 </div>
+                                <div class="item-map"></div>
                             </div>
                         </div>
                         <div class="enterprises__list__item" data-coord="#">
@@ -245,6 +251,7 @@
                                         <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
                                 </div>
+                                <div class="item-map"></div>
                             </div>
                         </div>
                         <div class="enterprises__list__item" data-coord="#">
@@ -269,6 +276,7 @@
                                         <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
                                 </div>
+                                <div class="item-map"></div>
                             </div>
                         </div>
                         <div class="enterprises__list__item" data-coord="#">
@@ -293,6 +301,7 @@
                                         <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
                                 </div>
+                                <div class="item-map"></div>
                             </div>
                         </div>
                         <div class="enterprises__list__item" data-coord="#">
@@ -317,6 +326,7 @@
                                         <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
                                     </div>
                                 </div>
+                                <div class="item-map"></div>
                             </div>
                         </div>
                     </div>
@@ -332,7 +342,7 @@
                     <div class="menu-column">
                         <ul class="fmenu-list">
                             <li class="fmenu-list__item"><a href="/about.html" class="fmenu-list__link">О проекте</a></li>
-                            <li class="fmenu-list__item"><a href="/" class="fmenu-list__link">Присоединиться к проекту</a></li>
+                            <li class="fmenu-list__item"><a href="#partner_modal" class="fmenu-list__link modal-win">Присоединиться к проекту</a></li>
                         </ul>
                     </div>
                     <div class="menu-column">
@@ -351,6 +361,97 @@
             <a href="javascript:void(0);" class="topBtn toTop" style="display: none;"><span><i class="icon icon-up"></i></span></a>
         </div>
     </footer>
+    <div id="partner_modal" class="zoom-anim-dialog mfp-hide modal-form-style partner_form">
+        <div class="modal-body">
+            <div class="modal-info">
+                <div class="modal-title">Стать партнёром программы <span>#СДЕЛАНОвКРАСНОГОРСКЕ</span></div>
+            </div>
+            <div class="modal-form">
+                <form action="" class="partner-form">
+                    <div class="input-group dlabel">
+                        <input id="p_name" type="text" name="p_name" required>
+                        <label for="p_name">Название Вашего предприятия <span>*</span></label>
+                    </div>
+                    <div class="input-group dlabel">
+                        <input id="p_view" type="text" name="p_view" required>
+                        <label for="p_view">Вид деятельности <span>*</span></label>
+                    </div>
+                    <div class="input-group dlabel">
+                        <input id="p_client-phone" type="text" name="p_client-phone" required>
+                        <label for="p_client-phone">Телефон для клиентов <span>*</span></label>
+                    </div>
+                    <div class="input-group dlabel">
+                        <input id="p_adress" type="text" name="p_adress" required>
+                        <label for="p_adress">Адрес местонахождения <span>*</span></label>
+                    </div>
+                    <div class="input-group dlabel">
+                        <input id="p_mail" type="email" name="p_mail" required>
+                        <label for="p_mail">Эл. почта ответственного лица <span>*</span></label>
+                    </div>
+                    <div class="input-group dlabel">
+                        <input id="p_phone" type="text" name="p_phone" required>
+                        <label for="p_phone">Телефон ответственного лица <span>*</span></label>
+                    </div>
+                    <div class="input-group btn-group">
+                        <button type="submit" class="btn-border-style white-style"><span>Войти</span></button>
+                    </div>
+                    <div class="input-group agree-group">
+                        <p>Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="login_modal" class="zoom-anim-dialog mfp-hide modal-form-style login_form">
+        <div class="modal-body">
+            <div class="modal-info">
+                <div class="login-title">Вход</div>
+            </div>
+            <div class="modal-form">
+                <form action="" class="login-form">
+                    <div class="input-group dlabel">
+                        <input id="log_phone" type="text" name="log_phone" required>
+                        <label for="log_phone">Телефон или эл. почта <span>*</span></label>
+                    </div>
+                    <div class="input-group dlabel">
+                        <input id="log_pass" type="text" name="log_pass" required>
+                        <label for="log_pass">Пароль <span>*</span></label>
+                    </div>
+                    <div class="input-group check-group">
+                        <input id="log_remember" type="checkbox" name="log_remember">
+                        <label for="log_remember">Запомнить пароль</label>
+                    </div>
+                    <div class="input-group btn-group">
+                        <button type="submit" class="btn-border-style white-style"><span>Войти</span></button>
+                    </div>
+                    <div class="input-group social-group">
+                        <p>или продолжить через</p>
+                        <ul class="social-links">
+                            <li class="social-links__item"><a href="#" target="_blank" class="social-links__link"><i class="icon icon-vkontakte"></i></a></li>
+                            <li class="social-links__item"><a href="#" target="_blank" class="social-links__link"><i class="icon icon-facebook"></i></a></li>
+                            <li class="social-links__item"><a href="#" target="_blank" class="social-links__link"><i class="icon icon-odnoklassniki"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="input-group change-form">
+                        <a href="#" class="forgot-pass">Восстановить пароль</a>
+                        <a href="#" class="register">Зарегистрироваться</a>
+                    </div>
+                    <div class="input-group agree-group">
+                        <p>Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="thanks_modal" class="zoom-anim-dialog mfp-hide modal-form-style thanks_modal">
+        <div class="thanks_content">
+            <div class="modal-title">Спасибо, что выбрали нас!</div>
+            <div class="modal-subtitle">Мы свяжемся с Вами в ближайшее время.</div>
+        </div>
+    </div>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="js/libs.js"></script>
     <script src="js/common.js"></script>

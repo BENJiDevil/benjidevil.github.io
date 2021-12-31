@@ -12713,7 +12713,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
           var s = mfp._getScrollbarSize();
 
           if (s) {
-            windowStyles.marginRight = s;
+            windowStyles.marginRight = 8;
           }
         }
       }

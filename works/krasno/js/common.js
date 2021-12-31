@@ -12,18 +12,23 @@ $('.enterprises__menu').owlCarousel({
   items: 2,
   responsive: {
     0: {
-      items: 2
+      items: 2,
+      margin: 10
     },
     576: {
-      items: 2,
-      margin: 15
-    },
-    768: {
       items: 3,
       margin: 15
     },
+    640: {
+      items: 4,
+      margin: 15
+    },
+    768: {
+      items: 5,
+      margin: 15
+    },
     1024: {
-      items: 4
+      items: 6
     },
     1200: {
       items: 8,
@@ -31,43 +36,24 @@ $('.enterprises__menu').owlCarousel({
     }
   }
 });
-$('.enterprises__list').slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  dots: false,
-  focusOnSelect: true,
-  vertical: true,
-  responsive: [{
-    breakpoint: 576,
-    settings: {
-      slidesToShow: 4
-    }
-  }, {
-    breakpoint: 413,
-    settings: {
-      slidesToShow: 3
-    }
-  }],
-  nextArrow: '<i class="icon icon-right-open next-btn"></i>',
-  prevArrow: '<i class="icon icon-left-open prev-btn"></i>'
-});
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
 
-  if (scroll > 0) {
-    if (!$('.enterprises-main .search-form').hasClass('scroll')) {
-      $('.enterprises-main .search-form').addClass('scroll');
-      var search_height = $('.enterprises-main .search-form').height(),
-          distance = $('.enterprises-page.enterprises').offset().top - $('.enterprises-main .search-form').offset().top - $('.enterprises-main .search-form').height();
-      console.log($('.enterprises-page.enterprises').offset().top);
-      console.log($('.enterprises-main .search-form').offset().top);
-      console.log($('.enterprises-main .search-form').height());
-      console.log(distance);
-      $('.enterprises-main .search-form').css('transform', 'translateY(' + distance + 'px)');
-      $('.enterprises-page.enterprises').css('padding-top', search_height);
-    }
-  } else {}
+if ($(window).width() >= 1024) {
+  $('.enterprises__list').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    focusOnSelect: true,
+    vertical: true,
+    nextArrow: '<i class="icon icon-right-open next-btn"></i>',
+    prevArrow: '<i class="icon icon-left-open prev-btn"></i>'
+  });
+}
+
+$('.enterprises__list__item').on('click', function () {
+  $('.enterprises__list__item').removeClass('active');
+  $(this).addClass('active');
 });
+/* TODO scroll */
 
 },{}],2:[function(require,module,exports){
 "use strict";
@@ -366,7 +352,7 @@ $('.catalog__content .category-menu__list').owlCarousel({
   dots: false,
   nav: true,
   navText: ['<i class="icon icon-left-open"></i>', '<i class="icon icon-right-open"></i>'],
-  items: 2,
+  items: 6,
   responsive: {
     0: {
       items: 2
@@ -491,6 +477,24 @@ document.addEventListener('DOMContentLoaded', function () {
       scrollTop: 0
     }, 1000);
     e.preventDefault();
+  });
+  /* modals */
+
+  $('.modal-win').magnificPopup({
+    type: 'inline',
+    fixedContentPos: true,
+    fixedBgPos: true,
+    closeBtnInside: false,
+    midClick: true,
+    removalDelay: 300,
+    tClose: 'Закрыть',
+    mainClass: 'my-mfp-zoom-in',
+    image: {
+      tError: 'Невозможно загрузить :('
+    },
+    ajax: {
+      tError: 'Невозможно загрузить :('
+    }
   });
 });
 

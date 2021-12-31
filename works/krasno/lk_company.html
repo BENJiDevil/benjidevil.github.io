@@ -85,27 +85,102 @@
             </div>
         </div>
     </header>
-    <!-- simple page -->
-    <section class="simple-page">
+
+    <main class="lk-company">
         <div class="container">
-            <h1 class="simple-page__title">Текстовая страница</h1>
-            <div class="simple-page__content">
-                <h2>Заголовок h2</h2>
-                <h3>Заголовок h3</h3>
-                <h4>Заголовок h4</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid commodi corporis, cupiditate debitis deserunt, doloremque ea esse eum hic iure necessitatibus nostrum nulla, placeat recusandae sint sunt veritatis vitae!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid commodi corporis, cupiditate debitis deserunt, doloremque ea esse eum hic iure necessitatibus nostrum nulla, placeat recusandae sint sunt veritatis vitae!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid commodi corporis, cupiditate debitis deserunt, doloremque ea esse eum hic iure necessitatibus nostrum nulla, placeat recusandae sint sunt veritatis vitae!</p>
-                <ul>
-                    <li>list item</li>
-                    <li>list item</li>
-                    <li>list item</li>
-                    <li>list item</li>
-                    <li>list item</li>
-                </ul>
+            <div class="lk-company__content">
+                <div class="lk-company__content__left-side">
+                    <h1 class="lk-company__title">Центр школьника "ОЛИМПИЯ"</h1>
+                    <ul class="lk-company__menu">
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">Общая информация</a></li>
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">Описание</a></li>
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">Интернет-ресурсы</a></li>
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">COVID-19</a></li>
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">Услуги</a></li>
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">Товары</a></li>
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">Акции</a></li>
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">Блог</a></li>
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">Фотографии</a></li>
+                        <li class="lk-company__menu__item"><a href="#" class="lk-company__menu__link">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="lk-company__content__right-side">
+                    <h2 class="lk-company__pagetitle">Общая информация</h2>
+                    <div class="lk-company__info">
+                        <form action="">
+                            <div class="input-group">
+                                <input id="company_name" name="company_name" type="text" value="Центр школьника ОЛИМПИЯ">
+                                <label for="company_name">Название</label>
+                            </div>
+                            <div class="input-group">
+                                <input id="company_client-phone" name="company_client-phone" type="text" value="8 (910) 456-78-98">
+                                <label for="company_client-phone">Телефон для клиентов</label>
+                            </div>
+                            <div class="input-group">
+                                <input id="company_main-phone" name="company_main-phone" type="text" value="8 (910) 456-78-98">
+                                <label for="company_main-phone">Телефон ответственного лица</label>
+                            </div>
+                            <div class="input-group">
+                                <input id="company_mail" name="company_mail" type="email" value="a@mai.ru">
+                                <label for="company_mail">Эл. почта ответственного лица</label>
+                            </div>
+                            <div class="input-group">
+                                <input id="company_adress" type="text" value="Россия, Московская область, г. Красногорск, ул. Успенская, д.8" name="company_adress">
+                                <label for="company_adress"></label>
+                            </div>
+                            <div id="cmap" class="map-block"></div>
+                            <div class="input-row">
+                                <span class="input-title">Режим работы</span>
+                                <div class="input-group">
+                                    <input id="company_worktype1" type="radio" name="company_worktype" value="По расписанию" checked>
+                                    <label for="company_worktype1">По расписанию</label>
+                                </div>
+                                <div class="input-group">
+                                    <input id="company_worktype2" type="radio" name="company_worktype" value="Круглосуточно">
+                                    <label for="company_worktype2">Круглосуточно</label>
+                                </div>
+                                <div class="input-group">
+                                    <input id="company_worktype3" type="radio" name="company_worktype" value="Другое">
+                                    <label for="company_worktype3">Другое</label>
+                                </div>
+                            </div>
+                            <div class="input-content" data-type="1">
+                                <div class="input-group select-group">
+                                    <select name="work-days">
+                                        <option value="Пн,Вт,Ср,Чт,Пт,Сб,Вс">Пн Вт Ср Чт Пт Сб Вс</option>
+                                        <option value="Пн,Вт,Ср,Чт,Пт,Сб,Вс">Пн Вт Ср Чт Пт Сб Вс</option>
+                                        <option value="Пн,Вт,Ср,Чт,Пт,Сб,Вс">Пн Вт Ср Чт Пт Сб Вс</option>
+                                        <option value="Пн,Вт,Ср,Чт,Пт,Сб,Вс">Пн Вт Ср Чт Пт Сб Вс</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="ftime">
+                                    <span>-</span>
+                                    <input type="text" name="ltime">
+                                </div>
+                                <div class="input-group">
+                                    <a href="javascript:void(0);" class="addbtn">+</a>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <input id="last-client" type="checkbox" name="last-client">
+                                <label for="last-client">до последнего клиента</label>
+                            </div>
+                            <div class="input-group">
+                                <input id="company_work" name="company_work" type="text" value="Перерыв на обед с 12:00 до 13:00 ">
+                                <label for="company_work">Особенности режима работы (если есть) </label>
+                            </div>
+                            <div class="input-group btn-group">
+                                <button type="submit" class="btn-style"><span>Сохранить</span></button>
+                                <a href="#" class="cancel btn-style"><span>Отменить</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
