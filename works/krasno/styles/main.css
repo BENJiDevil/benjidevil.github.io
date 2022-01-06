@@ -34,30 +34,6 @@ body {
 }
 @font-face {
   font-family: Montserrat;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/MontserratMedium/MontserratMedium.eot);
-  src: url(../fonts/MontserratMedium/MontserratMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratMedium/MontserratMedium.woff) format("woff"),url(../fonts/MontserratMedium/MontserratMedium.woff2) format("woff2"),url(../fonts/MontserratMedium/MontserratMedium.ttf) format("truetype")
-}
-@font-face {
-  font-family: Montserrat;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/MontserratRegular/MontserratRegular.eot);
-  src: url(../fonts/MontserratRegular/MontserratRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratRegular/MontserratRegular.woff) format("woff"),url(../fonts/MontserratRegular/MontserratRegular.woff2) format("woff2"),url(../fonts/MontserratRegular/MontserratRegular.ttf) format("truetype")
-}
-@font-face {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/MontserratSemiBold/MontserratSemiBold.eot);
-  src: url(../fonts/MontserratSemiBold/MontserratSemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratSemiBold/MontserratSemiBold.woff) format("woff"),url(../fonts/MontserratSemiBold/MontserratSemiBold.woff2) format("woff2"),url(../fonts/MontserratSemiBold/MontserratSemiBold.ttf) format("truetype")
-}
-@font-face {
-  font-family: Montserrat;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -71,6 +47,38 @@ body {
   font-display: swap;
   src: url(../fonts/MontserratLight/MontserratLight.eot);
   src: url(../fonts/MontserratLight/MontserratLight.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratLight/MontserratLight.woff) format("woff"),url(../fonts/MontserratLight/MontserratLight.woff2) format("woff2"),url(../fonts/MontserratLight/MontserratLight.ttf) format("truetype")
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/MontserratRegular/MontserratRegular.eot);
+  src: url(../fonts/MontserratRegular/MontserratRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratRegular/MontserratRegular.woff) format("woff"),url(../fonts/MontserratRegular/MontserratRegular.woff2) format("woff2"),url(../fonts/MontserratRegular/MontserratRegular.ttf) format("truetype")
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/MontserratMedium/MontserratMedium.eot);
+  src: url(../fonts/MontserratMedium/MontserratMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratMedium/MontserratMedium.woff) format("woff"),url(../fonts/MontserratMedium/MontserratMedium.woff2) format("woff2"),url(../fonts/MontserratMedium/MontserratMedium.ttf) format("truetype")
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/MontserratSemiBold/MontserratSemiBold.eot);
+  src: url(../fonts/MontserratSemiBold/MontserratSemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratSemiBold/MontserratSemiBold.woff) format("woff"),url(../fonts/MontserratSemiBold/MontserratSemiBold.woff2) format("woff2"),url(../fonts/MontserratSemiBold/MontserratSemiBold.ttf) format("truetype")
+}
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot);
+  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot?#iefix) format("embedded-opentype"),url(../fonts/SourceSansProBold/SourceSansProBold.woff) format("woff"),url(../fonts/SourceSansProBold/SourceSansProBold.woff2) format("woff2"),url(../fonts/SourceSansProBold/SourceSansProBold.ttf) format("truetype")
 }
 @font-face {
   font-family: SourceSansPro;
@@ -95,14 +103,6 @@ body {
   font-display: swap;
   src: url(../fonts/SourceSansProSemiBold/SourceSansProSemiBold.eot);
   src: url(../fonts/SourceSansProSemiBold/SourceSansProSemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/SourceSansProSemiBold/SourceSansProSemiBold.woff) format("woff"),url(../fonts/SourceSansProSemiBold/SourceSansProSemiBold.woff2) format("woff2"),url(../fonts/SourceSansProSemiBold/SourceSansProSemiBold.ttf) format("truetype")
-}
-@font-face {
-  font-family: SourceSansPro;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot);
-  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot?#iefix) format("embedded-opentype"),url(../fonts/SourceSansProBold/SourceSansProBold.woff) format("woff"),url(../fonts/SourceSansProBold/SourceSansProBold.woff2) format("woff2"),url(../fonts/SourceSansProBold/SourceSansProBold.ttf) format("truetype")
 }
 @font-face {
   font-family: Fontello;
@@ -527,7 +527,6 @@ body.overflow {
 .header__content .account .cart-link {
   position: relative;
   display: inline-block;
-  margin-right: 20px;
   padding-right: 10px
 }
 .header__content .account .cart-link .cart-count {
@@ -1005,7 +1004,8 @@ body.overflow {
 .catalog__content__right-side .category-menu {
   margin: 15px 0
 }
-.catalog__content__right-side .category-menu__list {
+.catalog__content__right-side .category-menu__list,
+.enterprises__menu {
   position: relative;
   padding: 0 20px
 }
@@ -2342,7 +2342,11 @@ body.overflow {
   font-size: 45px;
   line-height: 45px;
   display: inline-block;
-  text-transform: uppercase
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s
 }
 @media (max-width:1170px) {
   .header__content .logo-link {
@@ -2385,7 +2389,11 @@ body.overflow {
 }
 .enterprises-main .search-form {
   width: 100%;
-  margin: 10px 0 0
+  margin: 10px 0 0;
+  border: 1px solid transparent;
+  -webkit-transition: border-color .3s,-webkit-transform .8s;
+  transition: transform .8s,border-color .3s,-webkit-transform .8s;
+  -o-transition: transform .8s,border-color .3s
 }
 .enterprises-main .search-form .input-group {
   background-color: rgba(255,255,255,.9);
@@ -2478,10 +2486,11 @@ body.overflow {
   -ms-transition: opacity .3s ease;
   transition: opacity .3s
 }
-.enterprises__menu {
-  position: relative;
-  padding: 0 20px;
-  margin-top: 20px
+.enterprises-main .search-form.addmenu {
+  border-color: #999
+}
+.enterprises {
+  padding-top: 20px
 }
 .enterprises__menu__item {
   display: block;

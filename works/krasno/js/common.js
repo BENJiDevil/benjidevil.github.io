@@ -1,6 +1,83 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 
+$('.company-page #company-slider').owlCarousel({
+  loop: true,
+  margin: 0,
+  mouseDrag: false,
+  touchDrag: true,
+  dots: true,
+  nav: true,
+  navText: ['<i class="icon icon-left-open"></i>', '<i class="icon icon-right-open"></i>'],
+  items: 1
+});
+/* product list filter fix function */
+
+$('.company-products__content .filter-link').on('click', function () {
+  if ($(this).hasClass('open')) {
+    $(this).siblings('.product-filters-block').slideUp('fast');
+    $(this).removeClass('open');
+  } else {
+    $(this).siblings('.product-filters-block').slideDown('fast');
+    $(this).addClass('open');
+  }
+});
+/* stocks list slider */
+
+$('#company-stocks-slider').owlCarousel({
+  loop: true,
+  margin: 20,
+  mouseDrag: false,
+  touchDrag: true,
+  dots: false,
+  nav: true,
+  navText: ['<i class="icon icon-left-open"></i>', '<i class="icon icon-right-open"></i>'],
+  items: 6,
+  responsive: {
+    0: {
+      items: 2
+    },
+    640: {
+      items: 3
+    },
+    768: {
+      items: 4
+    },
+    1024: {
+      items: 5
+    }
+  }
+});
+/* news list slider */
+
+$('#company-news-slider').owlCarousel({
+  loop: true,
+  margin: 20,
+  mouseDrag: false,
+  touchDrag: true,
+  dots: false,
+  nav: true,
+  navText: ['<i class="icon icon-left-open"></i>', '<i class="icon icon-right-open"></i>'],
+  items: 6,
+  responsive: {
+    0: {
+      items: 2
+    },
+    640: {
+      items: 3
+    },
+    768: {
+      items: 4
+    },
+    1024: {
+      items: 5
+    }
+  }
+});
+
+},{}],2:[function(require,module,exports){
+"use strict";
+
 $('.enterprises__menu').owlCarousel({
   loop: true,
   margin: 20,
@@ -44,18 +121,37 @@ if ($(window).width() >= 1024) {
     dots: false,
     focusOnSelect: true,
     vertical: true,
+    infinite: false,
     nextArrow: '<i class="icon icon-right-open next-btn"></i>',
     prevArrow: '<i class="icon icon-left-open prev-btn"></i>'
   });
 }
+/* scroll search */
 
-$('.enterprises__list__item').on('click', function () {
-  $('.enterprises__list__item').removeClass('active');
-  $(this).addClass('active');
-});
-/* TODO scroll */
 
-},{}],2:[function(require,module,exports){
+if ($(window).width() >= 1024) {
+  var enterprisesPadding = parseInt($('.enterprises-page.enterprises').css('padding-top')),
+      searchHeight = parseInt($('.enterprises-main__content .search-form').height()),
+      mainPadding = parseInt($('.enterprises-main__content').css('padding-bottom'));
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 0) {
+      if (!$('.enterprises-page.enterprises').hasClass('addmenu')) {
+        $('.enterprises-page.enterprises').addClass('addmenu').css('padding-top', searchHeight + mainPadding + 'px');
+        var transformValue = searchHeight + searchHeight + mainPadding + 2;
+        $('.enterprises-main__content .search-form').addClass('addmenu').css('transform', 'translateY(' + transformValue + 'px)');
+        $('.enterprises-main__content .enterprises-main__title').addClass('addmenu').css('transform', 'translateY(' + searchHeight + 'px)');
+      }
+    } else {
+      $('.enterprises-page.enterprises').removeClass('addmenu').css('padding-top', enterprisesPadding + 'px');
+      $('.enterprises-main__content .search-form').removeClass('addmenu').css('transform', 'translateY(0)');
+      $('.enterprises-main__content .enterprises-main__title').removeClass('addmenu').css('transform', 'translateY(0)');
+    }
+  });
+}
+
+},{}],3:[function(require,module,exports){
 "use strict";
 
 /* on scroll function */
@@ -132,7 +228,7 @@ $(document).click(function (e) {
   }
 });
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 "use strict";
 
 /* product color change */
@@ -295,7 +391,7 @@ $('.questions__content .photo-block').each(function () {
   });
 });
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 "use strict";
 
 /* product list replace title function */
@@ -423,7 +519,7 @@ $('.filter-quantity__list__type').on('click', function () {
   $(this).parents('.filter-quantity__list').slideUp('fast').siblings('.filter-quantity__link').removeClass('active');
 });
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 "use strict";
 
 /* stocks page enterprises mobile fix */
@@ -437,7 +533,7 @@ if ($(window).width() <= 1024) {
   });
 }
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -451,6 +547,8 @@ document.addEventListener('DOMContentLoaded', function () {
   require('./_pages/_stocks');
 
   require('./_pages/_enterprises');
+
+  require('./_pages/_company');
   /* resize functions */
 
 
@@ -498,6 +596,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-},{"./_pages/_enterprises":1,"./_pages/_main":2,"./_pages/_product":3,"./_pages/_product_list":4,"./_pages/_stocks":5}]},{},[6])
+},{"./_pages/_company":1,"./_pages/_enterprises":2,"./_pages/_main":3,"./_pages/_product":4,"./_pages/_product_list":5,"./_pages/_stocks":6}]},{},[7])
 
 //# sourceMappingURL=common.js.map
