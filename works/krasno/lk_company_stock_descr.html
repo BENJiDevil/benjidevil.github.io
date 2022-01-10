@@ -86,6 +86,7 @@
         </div>
     </header>
 
+    <!-- TODO tags -->
     <main class="lk-company">
         <div class="container">
             <div class="lk-company__content">
@@ -108,21 +109,21 @@
                     <h2 class="lk-company__pagetitle">Описание</h2>
                     <div class="lk-company__edit">
                         <form action="">
-                            <div class="input-group dlabel">
+                            <div class="input-group">
                                 <textarea name="company_descr-short" id="company_descr-short" value="Развивающие занятия для детей рядом с домом."></textarea>
                                 <label for="company_descr-short">Короткий текст о Вашем бизнесе в Красногорске, не более 200 символов </label>
                             </div>
-                            <div class="input-group dlabel">
+                            <div class="input-group">
                                 <textarea name="company_descr" id="company_descr" value="Занятия для детей от 6-ти лет. Хор, вокал, фортепиано. Театральная студия - 2 спектакля в год. Подготовка к школе от 5-ти лет. Брейк данс. Акробатика, гимнастика. Шахматы. ТРИЗ. Спочан фехтование. Олимпиадная математика. Живопись академическая (подготовка к худ.школе). Правополушарное рисование для детей и взрослых. Логопед. Психолог. Нейропсихолог. "></textarea>
                                 <label for="company_descr">Подробное описание Вашего предприятия</label>
                             </div>
-                            <div class="input-group dlabel">
+                            <div class="input-group">
                                 <input id="company_type" type="text" name="company_type">
                                 <label for="company_type">Вид деятельности</label>
                             </div>
-                            <div class="input-group btns-group">
-                                <button type="submit" class="btn-style"><span>Сохранить</span></button>
-                                <a href="#" class="cancel-btn btn-style"><span>Отменить</span></a>
+                            <div class="input-group btn-group">
+                                <button type="submit" class="btn-border-style"><span>Сохранить</span></button>
+                                <a href="#" class="cancel-btn btn-border-style"><span>Отменить</span></a>
                             </div>
                         </form>
                     </div>
@@ -140,6 +141,7 @@
                         <ul class="fmenu-list">
                             <li class="fmenu-list__item"><a href="/about.html" class="fmenu-list__link">О проекте</a></li>
                             <li class="fmenu-list__item"><a href="#partner_modal" class="fmenu-list__link modal-win">Присоединиться к проекту</a></li>
+                            <li class="fmenu-list__item"><a href="#login_modal" class="fmenu-list__link modal-win">Тест вход</a></li>
                         </ul>
                     </div>
                     <div class="menu-column">
@@ -203,7 +205,7 @@
     <div id="login_modal" class="zoom-anim-dialog mfp-hide modal-form-style login_form">
         <div class="modal-body">
             <div class="modal-info">
-                <div class="login-title">Вход</div>
+                <div class="modal-title">Вход</div>
             </div>
             <div class="modal-form">
                 <form action="" class="login-form">
@@ -232,6 +234,7 @@
                     </div>
                     <div class="input-group change-form">
                         <a href="#" class="forgot-pass">Восстановить пароль</a>
+                        <hr>
                         <a href="#" class="register">Зарегистрироваться</a>
                     </div>
                     <div class="input-group agree-group">

@@ -113,17 +113,20 @@
     </nav>
     <section class="cart-main">
         <div class="container">
-            <h1 class="cart-main__title page-title">Корзина</h1>
+            <h1 class="cart-main__title page-title">Корзина <span class="count">3</span></h1>
             <form action="" class="cart-main__content">
                 <div class="cart-main__content__left-side">
-                    <a href="javascript:void(0);" class="allcheck">Выбрать все</a>
+                    <a href="javascript:void(0);" class="cart-check-btn allcheck">Выбрать все</a>
                     <div class="cart-list">
                         <div class="cart-list__item">
                             <div class="item-check">
-                                <input type="checkbox" name="product" value="product1">
+                                <label>
+                                    <input type="checkbox" name="product" value="product1">
+                                    <span></span>
+                                </label>
                             </div>
                             <div class="item-image">
-                                <img src="images/main/product.jpg" alt="product-image" class="product-image">
+                                <img src="images/main/catalog_item.jpg" alt="product-image" class="product-image">
                             </div>
                             <div class="item-descr">
                                 <a href="#" class="item-title">Гитара шестиструнная</a>
@@ -133,11 +136,73 @@
                                 </div>
                                 <div class="item-enterprise"><a href="#" class="enterprise-link">ООО "Фирма1"</a></div>
                                 <div class="item-btns">
-                                    <a href="#" class="add-favorite">В избранное</a>
-                                    <a href="#" class="remove-item">Удалить</a>
+                                    <a href="#" class="add-favorite"><i class="icon icon-heart"></i>В избранное</a>
+                                    <a href="#" class="remove-item"><i class="icon icon-cancel"></i>Удалить</a>
                                 </div>
                             </div>
-                            <div class="item-info">
+                            <div class="item-info addcart-form">
+                                <div class="input-group count-group">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1">
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                </div>
+                                <span class="item-price">1500 Р</span>
+                            </div>
+                        </div>
+                        <div class="cart-list__item">
+                            <div class="item-check">
+                                <label>
+                                    <input type="checkbox" name="product" value="product1">
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="item-image">
+                                <img src="images/main/catalog_item.jpg" alt="product-image" class="product-image">
+                            </div>
+                            <div class="item-descr">
+                                <a href="#" class="item-title">Гитара шестиструнная</a>
+                                <div class="item-properties">
+                                    <div class="item-properties__item">Цвет: красный</div>
+                                    <div class="item-properties__item">Размер: 19</div>
+                                </div>
+                                <div class="item-enterprise"><a href="#" class="enterprise-link">ООО "Фирма1"</a></div>
+                                <div class="item-btns">
+                                    <a href="#" class="add-favorite"><i class="icon icon-heart"></i>В избранное</a>
+                                    <a href="#" class="remove-item"><i class="icon icon-cancel"></i>Удалить</a>
+                                </div>
+                            </div>
+                            <div class="item-info addcart-form">
+                                <div class="input-group count-group">
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    <input type="text" class="count-input" value="1">
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                </div>
+                                <span class="item-price">1500 Р</span>
+                            </div>
+                        </div>
+                        <div class="cart-list__item">
+                            <div class="item-check">
+                                <label>
+                                    <input type="checkbox" name="product" value="product1">
+                                    <span></span>
+                                </label>
+                            </div>
+                            <div class="item-image">
+                                <img src="images/main/catalog_item.jpg" alt="product-image" class="product-image">
+                            </div>
+                            <div class="item-descr">
+                                <a href="#" class="item-title">Гитара шестиструнная</a>
+                                <div class="item-properties">
+                                    <div class="item-properties__item">Цвет: красный</div>
+                                    <div class="item-properties__item">Размер: 19</div>
+                                </div>
+                                <div class="item-enterprise"><a href="#" class="enterprise-link">ООО "Фирма1"</a></div>
+                                <div class="item-btns">
+                                    <a href="#" class="add-favorite"><i class="icon icon-heart"></i>В избранное</a>
+                                    <a href="#" class="remove-item"><i class="icon icon-cancel"></i>Удалить</a>
+                                </div>
+                            </div>
+                            <div class="item-info addcart-form">
                                 <div class="input-group count-group">
                                     <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
                                     <input type="text" class="count-input" value="1">
@@ -176,659 +241,663 @@
             </form>
         </div>
     </section>
-    <div class="addproducts">
-        <h2 class="addproducts__title product-section-title">Рекомендуем</h2>
-        <div class="addproducts__content owl-carousel">
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
-                        </div>
-                    </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная большая" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+    <section class="cart-popular">
+        <div class="container">
+            <div class="addproducts">
+                <h2 class="addproducts__title product-section-title">Рекомендуем</h2>
+                <div class="addproducts__content owl-carousel">
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
                             </div>
-                            <div class="item-answers">(5)</div>
-                        </div>
-                        <a href="/" class="item-name">Гитара шестиструнная большая</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
-                        </div>
-                    </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
                             </div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная большая" class="item-image">
+                            </a>
                         </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
-                        </div>
-                    </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная какая то" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная большая</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
                             </div>
-                            <div class="item-answers">(5)</div>
-                        </div>
-                        <a href="/" class="item-name">Гитара шестиструнная какая то</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
                             </div>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
-                        </div>
-                    </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная c длинным названием" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
                             </div>
-                            <div class="item-answers">(5)</div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная какая то" class="item-image">
+                            </a>
                         </div>
-                        <a href="/" class="item-name">Гитара шестиструнная c длинным названием</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
-                        </div>
-                    </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная какая то</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
                             </div>
-                            <div class="item-answers">(5)</div>
-                        </div>
-                        <a href="/" class="item-name">Гитара шестиструнная</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
-                        </div>
-                    </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
                             </div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная c длинным названием" class="item-image">
+                            </a>
                         </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
-                        </div>
-                    </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная c длинным названием</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
                             </div>
-                            <div class="item-answers">(5)</div>
-                        </div>
-                        <a href="/" class="item-name">Гитара шестиструнная</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
                             </div>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
-                        </div>
-                    </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
                             </div>
-                            <div class="item-answers">(5)</div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
+                            </a>
                         </div>
-                        <a href="/" class="item-name">Гитара шестиструнная</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
-                        </div>
-                    </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
                             </div>
-                            <div class="item-answers">(5)</div>
-                        </div>
-                        <a href="/" class="item-name">Гитара шестиструнная</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
-                        </div>
-                    </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
                             </div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
+                            </a>
                         </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
-                        </div>
-                    </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
                             </div>
-                            <div class="item-answers">(5)</div>
-                        </div>
-                        <a href="/" class="item-name">Гитара шестиструнная</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
                             </div>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
-                        </div>
-                    </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
                             </div>
-                            <div class="item-answers">(5)</div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
+                            </a>
                         </div>
-                        <a href="/" class="item-name">Гитара шестиструнная</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
-                        </div>
-                    </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
                             </div>
-                            <div class="item-answers">(5)</div>
-                        </div>
-                        <a href="/" class="item-name">Гитара шестиструнная</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
-                        </div>
-                    </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
                             </div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
+                            </a>
                         </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
-                        </div>
-                    </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
                             </div>
-                            <div class="item-answers">(5)</div>
-                        </div>
-                        <a href="/" class="item-name">Гитара шестиструнная</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
                             </div>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="catalog-list__item product-item">
-                <div class="image-block">
-                    <div class="stickers">
-                        <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
-                        <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
-                        <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
-                    </div>
-                    <div class="additem-btns" style="display: none;">
-                        <div class="additem-btns__list">
-                            <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
-                        </div>
-                    </div>
-                    <a class="item-link" href="/">
-                        <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
-                    </a>
-                </div>
-                <div class="descr-block">
-                    <div class="item-info">
-                        <div class="item-marks">
-                            <div class="item-rating">
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star"></i>
-                                <i class="icon icon-star-half-alt"></i>
-                                <i class="icon icon-star-empty"></i>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
                             </div>
-                            <div class="item-answers">(5)</div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
+                            </a>
                         </div>
-                        <a href="/" class="item-name">Гитара шестиструнная</a>
-                        <div class="item-price">
-                            <span class="item-oldprice">1500 ₽</span>
-                            <span class="item-price">1500 ₽</span>
-                        </div>
-                        <div class="item-available">
-                            <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
-                            <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
+                            </div>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <form action="" class="addcart-form">
-                        <div class="input-group count-group">
-                            <input type="text" class="count-input" value="1" readonly>
-                            <div class="btns">
-                                <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
-                                <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
                             </div>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
+                            </div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
+                            </a>
                         </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
+                            </div>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
+                            </div>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
+                            </div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
+                            </a>
+                        </div>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
+                            </div>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
+                            </div>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
+                            </div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
+                            </a>
+                        </div>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
+                            </div>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="catalog-list__item product-item">
+                        <div class="image-block">
+                            <div class="stickers">
+                                <span class="stickers__item discount" style="background-color: #ffb300;">-6%</span>
+                                <span class="stickers__item new" style="background-color: #00aa52;">Новинка</span>
+                                <span class="stickers__item popular" style="background-color: #8e7cc3;">Популярный</span>
+                            </div>
+                            <div class="additem-btns" style="display: none;">
+                                <div class="additem-btns__list">
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-eye"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-heart"></i></a>
+                                    <a href="#" class="additem-btns__link"><i class="icon icon-chart-bar"></i></a>
+                                </div>
+                            </div>
+                            <a class="item-link" href="/">
+                                <img src="images/main/catalog_item.jpg" alt="Гитара шестиструнная" class="item-image">
+                            </a>
+                        </div>
+                        <div class="descr-block">
+                            <div class="item-info">
+                                <div class="item-marks">
+                                    <div class="item-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star-half-alt"></i>
+                                        <i class="icon icon-star-empty"></i>
+                                    </div>
+                                    <div class="item-answers">(5)</div>
+                                </div>
+                                <a href="/" class="item-name">Гитара шестиструнная</a>
+                                <div class="item-price">
+                                    <span class="item-oldprice">1500 ₽</span>
+                                    <span class="item-price">1500 ₽</span>
+                                </div>
+                                <div class="item-available">
+                                    <span class="ok"><i class="icon icon-ok-circled"></i>в наличии</span>
+                                    <span class="not" style="display: none;"><i class="icon icon-clock"></i>предзаказ</span>
+                                </div>
+                            </div>
+                            <form action="" class="addcart-form">
+                                <div class="input-group count-group">
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <div class="btns">
+                                        <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                        <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                    </div>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="add-cart-btn btn-border-style black-style"><span>В корзину</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -839,6 +908,7 @@
                         <ul class="fmenu-list">
                             <li class="fmenu-list__item"><a href="/about.html" class="fmenu-list__link">О проекте</a></li>
                             <li class="fmenu-list__item"><a href="#partner_modal" class="fmenu-list__link modal-win">Присоединиться к проекту</a></li>
+                            <li class="fmenu-list__item"><a href="#login_modal" class="fmenu-list__link modal-win">Тест вход</a></li>
                         </ul>
                     </div>
                     <div class="menu-column">
@@ -902,7 +972,7 @@
     <div id="login_modal" class="zoom-anim-dialog mfp-hide modal-form-style login_form">
         <div class="modal-body">
             <div class="modal-info">
-                <div class="login-title">Вход</div>
+                <div class="modal-title">Вход</div>
             </div>
             <div class="modal-form">
                 <form action="" class="login-form">
@@ -931,6 +1001,7 @@
                     </div>
                     <div class="input-group change-form">
                         <a href="#" class="forgot-pass">Восстановить пароль</a>
+                        <hr>
                         <a href="#" class="register">Зарегистрироваться</a>
                     </div>
                     <div class="input-group agree-group">

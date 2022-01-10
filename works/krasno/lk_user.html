@@ -86,7 +86,7 @@
         </div>
     </header>
 
-    <main class="lk-user lk-user-header">
+    <main class="lk-user">
         <div class="lk-user-header lazyload" data-bgset="images/bg/mobile/catalog_bg.jpg [(max-width: 575px)] | images/bg/pad/catalog_bg.jpg [(max-width: 1024px)] | images/bg/desk/catalog_bg.jpg [(min-width: 1025px)]">
             <div class="container">
                 <h1 class="lk-user-header__title">Иванов Григорий</h1>
@@ -101,23 +101,23 @@
                                 <span>Личная информация</span>
                             </div>
                             <div class="input-group dlabel">
-                                <input id="lk_name" type="text" name="lk_name">
+                                <input id="lk_name" type="text" name="lk_name" required>
                                 <label for="lk_name">Имя <span>*</span></label>
                             </div>
                             <div class="input-group dlabel">
-                                <input id="lk_lname" type="text" name="lk_lname">
+                                <input id="lk_lname" type="text" name="lk_lname" required>
                                 <label for="lk_lname">Фамилия <span>*</span></label>
                             </div>
                             <div class="input-group dlabel">
-                                <input id="lk_date" type="date" name="lk_date">
+                                <input id="lk_date" type="date" name="lk_date" required>
                                 <label for="lk_date">Дата рождения <span>*</span></label>
                             </div>
                             <div class="input-group dlabel">
-                                <input id="lk_phone" type="text" name="lk_phone">
+                                <input id="lk_phone" type="text" name="lk_phone" required>
                                 <label for="lk_phone">Телефон <span>*</span></label>
                             </div>
                             <div class="input-group btn-group">
-                                <button type="submit" class="btn-style"><span>Сохранить</span></button>
+                                <button type="submit" class="btn-border-style black-style"><span>Сохранить</span></button>
                             </div>
                         </form>
                     </div>
@@ -128,18 +128,18 @@
                             </div>
                             <div class="input-group dlabel">
                                 <input id="lk_pass" type="text" name="lk_pass" required>
-                                <label for="lk_pass">Старый пароль</label>
+                                <label for="lk_pass">Старый пароль <span>*</span></label>
                             </div>
                             <div class="input-group dlabel">
                                 <input id="lk_newpass" type="text" name="lk_newpass" required>
-                                <label for="lk_newpass">Новый пароль</label>
+                                <label for="lk_newpass">Новый пароль <span>*</span></label>
                             </div>
                             <div class="input-group dlabel">
                                 <input id="lk_repeatpass" type="text" name="lk_repeatpass" required>
-                                <label for="lk_repeatpass">Новый пароль еще раз</label>
+                                <label for="lk_repeatpass">Новый пароль еще раз <span>*</span></label>
                             </div>
                             <div class="input-group btn-group">
-                                <button type="submit" class="btn-style"><span>Сохранить</span></button>
+                                <button type="submit" class="btn-border-style black-style"><span>Сохранить</span></button>
                             </div>
                         </form>
                     </div>
@@ -154,20 +154,20 @@
                             <div class="input-group form-name">
                                 <span>Настройка уведомлений</span>
                             </div>
-                            <div class="input-group">
+                            <div class="input-group check-group">
                                 <input id="notify_answer" type="checkbox" name="notify_answer" checked>
                                 <label for="notify_answer">Кто-то ответил на мой комментарий</label>
                             </div>
-                            <div class="input-group">
-                                <input id="notify_comment" type="checkbox" name="notify_comment" checked>
+                            <div class="input-group check-group">
+                                <input id="notify_comment" type="checkbox" name="notify_comment">
                                 <label for="notify_comment">Мой друг из соцсети написал комментарий в GO!Krasnogorsk</label>
                             </div>
-                            <div class="input-group">
-                                <input id="notify_other" type="checkbox" name="notify_other" checked>
+                            <div class="input-group check-group">
+                                <input id="notify_other" type="checkbox" name="notify_other">
                                 <label for="notify_other">Прочие уведомления</label>
                             </div>
                             <div class="input-group btn-group">
-                                <button type="submit" class="btn-style"><span>Сохранить</span></button>
+                                <button type="submit" class="btn-border-style black-style"><span>Сохранить</span></button>
                             </div>
                         </form>
                     </div>
@@ -353,7 +353,34 @@
                             <div class="item-map"></div>
                         </div>
                     </div>
-                    <a href="#" class="see-more btn-style"><span>Развернуть</span></a>
+                    <div class="enterprises__list__item" data-coord="#">
+                        <div class="item-content">
+                            <div class="item-image">
+                                <img src="images/main/enter_image.jpg" alt="enterprise-image">
+                            </div>
+                            <div class="item-descr">
+                                <a href="#" class="enterprise-favorite"><i class="icon icon-heart"></i></a>
+                                <p class="enterprise-name">ФГБУ "Центральный военный клинический санаторий "Архангельское"</p>
+                                <p class="enterprise-caregories">Санатории, Физиотерапия, Массаж</p>
+                                <p class="enterprise-address">г. Красногорск, ул. Ленина, дом 3</p>
+                                <div class="enterprise-addinfo">
+                                    <div class="enterprise-rating">
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                        <i class="icon icon-star"></i>
+                                    </div>
+                                    <div class="enterprise-mark">5.0</div>
+                                    <div class="enterprise-answers"><a href="#" class="answers-link">2 отзыва</a></div>
+                                </div>
+                            </div>
+                            <div class="item-map"></div>
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <a href="#" class="see-more btn-border-style black-style"><span>Развернуть</span></a>
+                    </div>
                 </div>
 
             </div>
@@ -878,6 +905,7 @@
                         <ul class="fmenu-list">
                             <li class="fmenu-list__item"><a href="/about.html" class="fmenu-list__link">О проекте</a></li>
                             <li class="fmenu-list__item"><a href="#partner_modal" class="fmenu-list__link modal-win">Присоединиться к проекту</a></li>
+                            <li class="fmenu-list__item"><a href="#login_modal" class="fmenu-list__link modal-win">Тест вход</a></li>
                         </ul>
                     </div>
                     <div class="menu-column">
@@ -941,7 +969,7 @@
     <div id="login_modal" class="zoom-anim-dialog mfp-hide modal-form-style login_form">
         <div class="modal-body">
             <div class="modal-info">
-                <div class="login-title">Вход</div>
+                <div class="modal-title">Вход</div>
             </div>
             <div class="modal-form">
                 <form action="" class="login-form">
@@ -970,6 +998,7 @@
                     </div>
                     <div class="input-group change-form">
                         <a href="#" class="forgot-pass">Восстановить пароль</a>
+                        <hr>
                         <a href="#" class="register">Зарегистрироваться</a>
                     </div>
                     <div class="input-group agree-group">
