@@ -28,10 +28,6 @@ body {
   background-size: cover;
   background-color: #4e4846
 }
-.contacts__links p:last-child,
-.header__content .account .account-menu__item:last-child {
-  margin-bottom: 0
-}
 @font-face {
   font-family: Montserrat;
   font-weight: 700;
@@ -74,19 +70,19 @@ body {
 }
 @font-face {
   font-family: SourceSansPro;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot);
-  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot?#iefix) format("embedded-opentype"),url(../fonts/SourceSansProBold/SourceSansProBold.woff) format("woff"),url(../fonts/SourceSansProBold/SourceSansProBold.woff2) format("woff2"),url(../fonts/SourceSansProBold/SourceSansProBold.ttf) format("truetype")
-}
-@font-face {
-  font-family: SourceSansPro;
   font-weight: 200;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/SourceSansProLight/SourceSansProLight.eot);
   src: url(../fonts/SourceSansProLight/SourceSansProLight.eot?#iefix) format("embedded-opentype"),url(../fonts/SourceSansProLight/SourceSansProLight.woff) format("woff"),url(../fonts/SourceSansProLight/SourceSansProLight.woff2) format("woff2"),url(../fonts/SourceSansProLight/SourceSansProLight.ttf) format("truetype")
+}
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot);
+  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot?#iefix) format("embedded-opentype"),url(../fonts/SourceSansProBold/SourceSansProBold.woff) format("woff"),url(../fonts/SourceSansProBold/SourceSansProBold.woff2) format("woff2"),url(../fonts/SourceSansProBold/SourceSansProBold.ttf) format("truetype")
 }
 @font-face {
   font-family: SourceSansPro;
@@ -124,6 +120,11 @@ body {
   text-align: center;
   font-variant: normal;
   text-transform: none
+}
+.main-block__subtitle,
+.main-block__title {
+  font-family: Montserrat,sans-serif;
+  display: inline-block
 }
 .icon-star-empty:before {
   content: "\e800"
@@ -350,11 +351,6 @@ body.overflow {
   margin: 0 auto;
   max-width: 1170px
 }
-.contacts__links p,
-.main-block__descr p,
-.main-block__title {
-  margin-bottom: 10px
-}
 @media (min-width:415px) {
   .container {
     padding: 0 30px
@@ -368,7 +364,7 @@ body.overflow {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 999;
   padding: 20px 15px;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -525,7 +521,8 @@ body.overflow {
 }
 .header__content .account .icon {
   font-size: 25px;
-  line-height: 25px
+  line-height: 25px;
+  color: #fe323d
 }
 .header__content .account .cart-link {
   position: relative;
@@ -533,6 +530,7 @@ body.overflow {
   padding-right: 10px
 }
 .header__content .account .cart-link .cart-count {
+  color: #fe323d;
   position: absolute;
   top: -2px;
   right: -12px;
@@ -551,17 +549,85 @@ body.overflow {
 .header__content .account .account-menu__list {
   position: absolute;
   top: calc(100% + 12px);
-  right: 0;
+  right: -62px;
   background-color: rgba(26,26,26,.97);
   padding: 10px;
-  border-radius: 5px
+  border-radius: 5px;
+  width: calc(100vw - 6px)
 }
-.header__content .account .account-menu__item {
-  margin-bottom: 5px
+.header__content .account .account-menu__list .ty-account-info__name {
+  padding-bottom: 5px;
+  color: #fff;
+  border-bottom: 1px solid #fe323d
+}
+.header__content .account .account-menu__list .ty-account-info__item {
+  margin-bottom: 8px
+}
+.header__content .account .account-menu__list .ty-account-info__a {
+  color: #999;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s
+}
+.header__content .account .account-menu__list .ty-account-info__a:hover {
+  color: #fff
+}
+.header__content .account .account-menu__list .ty-account-info__orders {
+  padding: 5px 0
+}
+.header__content .account .account-menu__list .ty-account-info__orders-txt {
+  color: #fff
+}
+.header__content .account .account-menu__list .ty-account-info__buttons {
+  margin-top: 5px;
+  padding: 0;
+  background: 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around
 }
 .contacts__form form .input-group.btn-group button,
 .header__content .main-menu__item.phone .phone-link {
   margin: 0 auto
+}
+.header__content .account .account-menu__list .ty-account-info__buttons:after,
+.header__content .account .account-menu__list .ty-account-info__buttons:before {
+  display: none
+}
+.header__content .account .account-menu__list .ty-account-info__buttons .ty-btn {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: 100%;
+  display: block
+}
+.header__content .account .account-menu__list .ty-account-info__buttons .ty-btn + .ty-btn {
+  margin-left: 5px
+}
+.header__content .account .account-menu__list .ty-account-info__buttons .ty-btn__primary {
+  display: block;
+  width: 100%;
+  background-color: #fe323d;
+  color: #fff;
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s
+}
+.header__content .account .account-menu__list .ty-account-info__buttons .ty-btn__primary:hover,
+.header__content .account .ty-dropdown-box__content .ty-btn__primary:hover {
+  background-color: #bb3737
 }
 .header__content .account .account-menu__link {
   font-size: 14px;
@@ -578,7 +644,18 @@ body.overflow {
 .header__content .account .account-menu__link:hover {
   color: #fff
 }
+.header__content .account .ty-dropdown-box__content {
+  top: calc(100% + 15px)
+}
+.header__content .account .ty-dropdown-box__content .ty-btn__primary {
+  background-color: #fe323d;
+  color: #fff;
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s
+}
 .header__content .phone-link {
+  font-family: SourceSansPro,sans-serif;
   color: #fff;
   font-weight: 600;
   font-size: 22px;
@@ -647,11 +724,7 @@ body.overflow {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: #fff;
   padding: 15px 0;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 20px;
   text-align: center
 }
 .catalog__content__right-side .category-menu__link,
@@ -673,17 +746,27 @@ body.overflow {
   border-bottom: none
 }
 .header__content .main-menu__link {
+  font-family: SourceSansPro,sans-serif;
   display: inline-block;
   -webkit-transition: color .3s;
   -o-transition: color .3s;
-  transition: color .3s
+  transition: color .3s;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px
 }
-.header + main,
-.header + section {
+.main-block .enterprises-link,
+.main-block__descr p {
+  font-family: SourceSansPro,sans-serif;
+  line-height: 20px;
+  color: #fff
+}
+.header + div > .fblock {
   padding-top: 80px
 }
-.header + .full-page,
-.header + .single-page {
+.header + div > .full-page,
+.header + div > .single-page {
   padding-top: 110px
 }
 .enterprises-main,
@@ -728,36 +811,36 @@ body.overflow {
   padding-bottom: 60px
 }
 .main-block__subtitle {
-  font-family: Montserrat,sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  display: inline-block;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  color: #fff
 }
-.contacts .contact-title,
 .main-block__title {
+  font-weight: 600;
   font-size: 45px;
-  font-family: Montserrat,sans-serif;
-  font-weight: 600
-}
-.main-block__title {
   line-height: 45px;
-  display: inline-block
+  margin-bottom: 10px;
+  color: #fff
 }
 .main-block__descr {
-  font-size: 19px;
   margin-bottom: 30px
+}
+.main-block__descr p {
+  margin-bottom: 10px;
+  font-size: 19px;
+  padding: 0
 }
 .main-block .enterprises-link {
   display: block;
   width: 100%;
+  font-size: 16px;
   border: 1px solid #aaa;
   padding: 15px 0;
   font-weight: 600;
   letter-spacing: .5px;
   text-align: center;
-  color: #fff;
   position: relative;
   overflow: hidden;
   -webkit-transition: border-color .3s;
@@ -765,6 +848,13 @@ body.overflow {
   transition: border-color .3s;
   text-transform: uppercase;
   background-color: rgba(0,0,0,.4)
+}
+.contacts .contact-title,
+.enterprises-main__title,
+.stocks-header__title {
+  font-family: Montserrat,sans-serif;
+  font-weight: 600;
+  text-transform: uppercase
 }
 .main-block .enterprises-link span {
   position: relative;
@@ -837,13 +927,19 @@ body.overflow {
   display: -ms-flexbox
 }
 .contacts .contact-title {
-  text-transform: uppercase;
+  font-size: 45px;
   line-height: 55px
 }
 .contacts__links {
   margin: 30px 0;
   font-size: 18px;
   line-height: 20px
+}
+.contacts__links p {
+  margin-bottom: 10px
+}
+.contacts__links p:last-child {
+  margin-bottom: 0
 }
 .contacts__links p a {
   display: inline-block;
@@ -860,6 +956,10 @@ body.overflow {
   margin-top: 20px
 }
 @media (min-width:576px) {
+  .header__content .account .account-menu__list {
+    width: 300px;
+    right: -5px
+  }
   .contacts__form form {
     max-width: 420px
   }
@@ -903,6 +1003,10 @@ body.overflow {
     margin: 30px 20px
   }
 }
+.contacts__form form .input-group input,
+.contacts__form form .input-group textarea {
+  border-bottom: 1px solid #b3b3b3
+}
 @media (min-width:768px) {
   .contacts__form form .input-group.checkgroup {
     margin: 40px 10px
@@ -913,6 +1017,10 @@ body.overflow {
 }
 .contacts__form form .input-group.btn-group {
   margin: 0
+}
+.contacts__form form label {
+  color: #b3b3b3;
+  font-weight: 100
 }
 .stocks-header__content {
   position: relative;
@@ -940,9 +1048,6 @@ body.overflow {
   padding-bottom: 60px
 }
 .stocks-header__title {
-  text-transform: uppercase;
-  font-family: Montserrat,sans-serif;
-  font-weight: 600;
   font-size: 45px;
   line-height: 45px;
   display: inline-block;
@@ -1319,7 +1424,7 @@ body.overflow {
 .product__content .product-answers,
 .product__content .product-questions {
   display: inline-block;
-  color: #1a1a1a;
+  color: #fe323d;
   -webkit-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s;
@@ -2340,12 +2445,9 @@ body.overflow {
   padding-left: 5px
 }
 .enterprises-main__title {
-  font-family: Montserrat,sans-serif;
-  font-weight: 600;
   font-size: 45px;
   line-height: 45px;
   display: inline-block;
-  text-transform: uppercase;
   -webkit-transition: -webkit-transform .3s;
   transition: transform .3s;
   -o-transition: transform .3s;
@@ -2370,7 +2472,7 @@ body.overflow {
     font-size: calc(18px + 27 *((100vw - 320px)/ 850));
     line-height: calc(24px + 21 *((100vw - 320px)/ 850))
   }
-  .main-block__descr {
+  .main-block__descr p {
     font-size: calc(14px + 5 *((100vw - 320px)/ 850))
   }
   .contacts .contact-title {

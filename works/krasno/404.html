@@ -86,15 +86,17 @@
         </div>
     </header>
     <!-- simple page -->
-    <section class="error-page single-page lazyload" data-bgset="images/bg/mobile/main_bg.jpg [(max-width: 575px)] | images/bg/pad/main_bg.jpg [(max-width: 1024px)] | images/bg/desk/main_bg.jpg [(min-width: 1025px)]">
-        <div class="container">
-            <div class="error-page__content single-page__content">
-                <h1 class="error-page__title">404</h1>
-                <p>Извините, по Вашему запросу ничего не найдено.</p>
-                <a href="/">Главная страница</a>
+    <div class="tygh-header clearfix page-header">
+        <section class="error-page single-page lazyload" data-bgset="images/bg/mobile/main_bg.jpg [(max-width: 575px)] | images/bg/pad/main_bg.jpg [(max-width: 1024px)] | images/bg/desk/main_bg.jpg [(min-width: 1025px)]">
+            <div class="container">
+                <div class="error-page__content single-page__content">
+                    <h1 class="error-page__title">404</h1>
+                    <p>Извините, по Вашему запросу ничего не найдено.</p>
+                    <a href="/">Главная страница</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -116,9 +118,9 @@
                     </div>
                 </div>
                 <a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a>
-            </div>
-            <div class="footer__copyright">
-                <p>© 2020 - 2021 г. Политика конфиденциальности</p>
+                <div class="footer__copyright">
+                    <p>© 2020 - 2021 г. Политика конфиденциальности</p>
+                </div>
             </div>
             <a href="javascript:void(0);" class="topBtn toTop" style="display: none;"><span><i class="icon icon-up"></i></span></a>
         </div>
@@ -254,6 +256,7 @@
                 yOffset = 0.0090;
                 xOffset = -0.0007;
             }
+
             map = new ymaps.Map("yamap", {
                 center: [enterprises[0]['coord'][0] - xOffset, enterprises[0]['coord'][1] - yOffset],
                 zoom: 16
@@ -308,8 +311,8 @@
                         type: 'Rectangle',
                         // Прямоугольник описывается в виде двух точек - верхней левой и нижней правой.
                         coordinates: [
-                            [-25, -25],
-                            [25, 25]
+                            [0, -100],
+                            [200, 0]
                         ]
                     }
                 });
@@ -326,6 +329,7 @@
                 });
             })
             map.behaviors.disable('scrollZoom'); // off scroll wheel
+
             map.controls.remove('geolocationControl'); // remove controls
             map.controls.remove('searchControl'); // remove controls searchtool
             map.controls.remove('trafficControl'); // remove controls traffic
@@ -386,7 +390,8 @@
         /* marker */
         .marker-body {
             max-width: 250px;
-            padding: 30px 0 0px 18px;
+            padding: 0px 0 0px 15px;
+            margin: 20px auto 0;
         }
 
         .marker-body__image img {

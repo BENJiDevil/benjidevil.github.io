@@ -142,21 +142,7 @@ $('.enterprises__menu').owlCarousel({
     }
   }
 });
-
-if ($(window).width() >= 1024) {
-  $('.enterprises__list').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    dots: false,
-    focusOnSelect: true,
-    vertical: true,
-    infinite: false,
-    nextArrow: '<i class="icon icon-right-open next-btn"></i>',
-    prevArrow: '<i class="icon icon-left-open prev-btn"></i>'
-  });
-}
 /* scroll search */
-
 
 if ($(window).width() >= 1024) {
   var enterprisesPadding = parseInt($('.enterprises-page.enterprises').css('padding-top')),

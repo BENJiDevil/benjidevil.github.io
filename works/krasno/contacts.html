@@ -85,47 +85,49 @@
             </div>
         </div>
     </header>
-    <main class="contacts-page contacts single-page lazyload" data-bgset="images/bg/mobile/contacts_bg.jpg [(max-width: 575px)] | images/bg/pad/contacts_bg.jpg [(max-width: 1024px)] | images/bg/desk/contacts_bg.jpg [(min-width: 1025px)]">
-        <div class="container">
-            <div class="contacts__content single-page__content">
-                <h1 class="contacts__title contact-title wow krasnoFadeIn">Свяжитесь с нами</h1>
-                <div class="contacts__links">
-                    <p class="wow fadeIn" data-wow-delay=".5s">Телефон:<a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></p>
-                    <p class="wow fadeIn" data-wow-delay=".5s">E-mail:<a href="mailto:info@gokrasnogorsk.ru" class="email-link">info@gokrasnogorsk.ru</a></p>
-                </div>
-                <div class="contacts__form">
-                    <h2 class="form-title contact-title wow krasnoFadeIn" data-wow-delay="1s">Напишите нам</h2>
-                    <form action="" class="contacts-form wow fadeIn" data-wow-delay="1.5s">
-                        <div class="input-row">
-                            <div class="input-group dlabel">
-                                <input id="contacts_name" type="text" name="name" required>
-                                <label for="contacts_name">Имя <span>*</span></label>
+    <div class="tygh-header clearfix page-header">
+        <main class="contacts-page fblock contacts single-page lazyload" data-bgset="images/bg/mobile/contacts_bg.jpg [(max-width: 575px)] | images/bg/pad/contacts_bg.jpg [(max-width: 1024px)] | images/bg/desk/contacts_bg.jpg [(min-width: 1025px)]">
+            <div class="container">
+                <div class="contacts__content single-page__content">
+                    <h1 class="contacts__title contact-title wow krasnoFadeIn">Свяжитесь с нами</h1>
+                    <div class="contacts__links">
+                        <p class="wow fadeIn" data-wow-delay=".5s">Телефон:<a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a></p>
+                        <p class="wow fadeIn" data-wow-delay=".5s">E-mail:<a href="mailto:info@gokrasnogorsk.ru" class="email-link">info@gokrasnogorsk.ru</a></p>
+                    </div>
+                    <div class="contacts__form">
+                        <h2 class="form-title contact-title wow krasnoFadeIn" data-wow-delay="1s">Напишите нам</h2>
+                        <form action="" class="contacts-form wow fadeIn" data-wow-delay="1.5s">
+                            <div class="input-row">
+                                <div class="input-group dlabel">
+                                    <input id="contacts_name" type="text" name="name" required>
+                                    <label for="contacts_name">Имя <span>*</span></label>
+                                </div>
+                                <div class="input-group dlabel">
+                                    <input id="contacts_email" type="text" name="email" required>
+                                    <label for="contacts_email">Эл.почта <span>*</span></label>
+                                </div>
+                                <div class="input-group dlabel">
+                                    <input id="contacts_phone" type="text" name="phone" required>
+                                    <label for="contacts_phone">Телефон <span>*</span></label>
+                                </div>
                             </div>
                             <div class="input-group dlabel">
-                                <input id="contacts_email" type="text" name="email" required>
-                                <label for="contacts_email">Эл.почта <span>*</span></label>
+                                <textarea id="contacts_message" name="message" required style="height: 41px"></textarea>
+                                <label for="contacts_message">Сообщение <span>*</span></label>
                             </div>
-                            <div class="input-group dlabel">
-                                <input id="contacts_phone" type="text" name="phone" required>
-                                <label for="contacts_phone">Телефон <span>*</span></label>
+                            <div class="input-group checkgroup">
+                                <input id="contacts_check" type="checkbox">
+                                <label for="contacts_check">Я не робот <span>*</span></label>
                             </div>
-                        </div>
-                        <div class="input-group dlabel">
-                            <textarea id="contacts_message" name="message" required style="height: 41px"></textarea>
-                            <label for="contacts_message">Сообщение <span>*</span></label>
-                        </div>
-                        <div class="input-group checkgroup">
-                            <input id="contacts_check" type="checkbox">
-                            <label for="contacts_check">Я не робот <span>*</span></label>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="btn-border-style white-style"><span>Отправить</span></button>
-                        </div>
-                    </form>
+                            <div class="input-group btn-group">
+                                <button type="submit" class="btn-border-style white-style"><span>Отправить</span></button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -147,9 +149,9 @@
                     </div>
                 </div>
                 <a href="tel:+74955405497" class="phone-link">+7 (495) 540-54-97</a>
-            </div>
-            <div class="footer__copyright">
-                <p>© 2020 - 2021 г. Политика конфиденциальности</p>
+                <div class="footer__copyright">
+                    <p>© 2020 - 2021 г. Политика конфиденциальности</p>
+                </div>
             </div>
             <a href="javascript:void(0);" class="topBtn toTop" style="display: none;"><span><i class="icon icon-up"></i></span></a>
         </div>
@@ -285,6 +287,7 @@
                 yOffset = 0.0090;
                 xOffset = -0.0007;
             }
+
             map = new ymaps.Map("yamap", {
                 center: [enterprises[0]['coord'][0] - xOffset, enterprises[0]['coord'][1] - yOffset],
                 zoom: 16
@@ -339,8 +342,8 @@
                         type: 'Rectangle',
                         // Прямоугольник описывается в виде двух точек - верхней левой и нижней правой.
                         coordinates: [
-                            [-25, -25],
-                            [25, 25]
+                            [0, -100],
+                            [200, 0]
                         ]
                     }
                 });
@@ -357,6 +360,7 @@
                 });
             })
             map.behaviors.disable('scrollZoom'); // off scroll wheel
+
             map.controls.remove('geolocationControl'); // remove controls
             map.controls.remove('searchControl'); // remove controls searchtool
             map.controls.remove('trafficControl'); // remove controls traffic
@@ -417,7 +421,8 @@
         /* marker */
         .marker-body {
             max-width: 250px;
-            padding: 30px 0 0px 18px;
+            padding: 0px 0 0px 15px;
+            margin: 20px auto 0;
         }
 
         .marker-body__image img {
