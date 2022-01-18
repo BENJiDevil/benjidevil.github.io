@@ -30,6 +30,14 @@ body {
 }
 @font-face {
   font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/MontserratMedium/MontserratMedium.eot);
+  src: url(../fonts/MontserratMedium/MontserratMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratMedium/MontserratMedium.woff) format("woff"),url(../fonts/MontserratMedium/MontserratMedium.woff2) format("woff2"),url(../fonts/MontserratMedium/MontserratMedium.ttf) format("truetype")
+}
+@font-face {
+  font-family: Montserrat;
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -46,11 +54,11 @@ body {
 }
 @font-face {
   font-family: Montserrat;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/MontserratMedium/MontserratMedium.eot);
-  src: url(../fonts/MontserratMedium/MontserratMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratMedium/MontserratMedium.woff) format("woff"),url(../fonts/MontserratMedium/MontserratMedium.woff2) format("woff2"),url(../fonts/MontserratMedium/MontserratMedium.ttf) format("truetype")
+  src: url(../fonts/MontserratSemiBold/MontserratSemiBold.eot);
+  src: url(../fonts/MontserratSemiBold/MontserratSemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratSemiBold/MontserratSemiBold.woff) format("woff"),url(../fonts/MontserratSemiBold/MontserratSemiBold.woff2) format("woff2"),url(../fonts/MontserratSemiBold/MontserratSemiBold.ttf) format("truetype")
 }
 @font-face {
   font-family: Montserrat;
@@ -59,22 +67,6 @@ body {
   font-display: swap;
   src: url(../fonts/MontserratRegular/MontserratRegular.eot);
   src: url(../fonts/MontserratRegular/MontserratRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratRegular/MontserratRegular.woff) format("woff"),url(../fonts/MontserratRegular/MontserratRegular.woff2) format("woff2"),url(../fonts/MontserratRegular/MontserratRegular.ttf) format("truetype")
-}
-@font-face {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/MontserratSemiBold/MontserratSemiBold.eot);
-  src: url(../fonts/MontserratSemiBold/MontserratSemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratSemiBold/MontserratSemiBold.woff) format("woff"),url(../fonts/MontserratSemiBold/MontserratSemiBold.woff2) format("woff2"),url(../fonts/MontserratSemiBold/MontserratSemiBold.ttf) format("truetype")
-}
-@font-face {
-  font-family: SourceSansPro;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot);
-  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot?#iefix) format("embedded-opentype"),url(../fonts/SourceSansProBold/SourceSansProBold.woff) format("woff"),url(../fonts/SourceSansProBold/SourceSansProBold.woff2) format("woff2"),url(../fonts/SourceSansProBold/SourceSansProBold.ttf) format("truetype")
 }
 @font-face {
   font-family: SourceSansPro;
@@ -91,6 +83,14 @@ body {
   font-display: swap;
   src: url(../fonts/SourceSansProRegular/SourceSansProRegular.eot);
   src: url(../fonts/SourceSansProRegular/SourceSansProRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/SourceSansProRegular/SourceSansProRegular.woff) format("woff"),url(../fonts/SourceSansProRegular/SourceSansProRegular.woff2) format("woff2"),url(../fonts/SourceSansProRegular/SourceSansProRegular.ttf) format("truetype")
+}
+@font-face {
+  font-family: SourceSansPro;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot);
+  src: url(../fonts/SourceSansProBold/SourceSansProBold.eot?#iefix) format("embedded-opentype"),url(../fonts/SourceSansProBold/SourceSansProBold.woff) format("woff"),url(../fonts/SourceSansProBold/SourceSansProBold.woff2) format("woff2"),url(../fonts/SourceSansProBold/SourceSansProBold.ttf) format("truetype")
 }
 @font-face {
   font-family: SourceSansPro;
