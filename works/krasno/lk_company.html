@@ -341,7 +341,7 @@
 
             map = new ymaps.Map("yamap", {
                 center: [enterprises[0]['coord'][0] - xOffset, enterprises[0]['coord'][1] - yOffset],
-                zoom: 16
+                zoom: 14
             });
 
             var squareLayout = ymaps.templateLayoutFactory.createClass('<div class="placemark_layout_container">' +
@@ -455,10 +455,9 @@
             $('.enterprises__list__item').removeClass('active');
             $(this).addClass('active');
 
-            map.panTo([enterprises[curIndex]['coord'][0] - xOffset, enterprises[curIndex]['coord'][1] - yOffset], 16).then(function(e) {
-                map.setZoom(16, {
-                    duration: 300
-                });
+
+            map.panTo([enterprises[curIndex]['coord'][0] - xOffset, enterprises[curIndex]['coord'][1] - yOffset]).then(function(e) {
+                // map.setZoom(16, {duration: 300});
                 placemarks[curIndex].balloon.open();
             });
 
