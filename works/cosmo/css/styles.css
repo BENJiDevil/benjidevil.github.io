@@ -388,6 +388,12 @@
   font-size: 32px;
   line-height: 38px
 }
+@media (max-width:379px) {
+  .page-title {
+    font-size: 30px;
+    line-height: 35px
+  }
+}
 @media (min-width:1200px) {
   .page-title {
     font-size: 50px;
@@ -802,6 +808,11 @@
   font-size: 12px;
   line-height: 14px;
   text-align: left
+}
+@media (max-width:360px) {
+  .product-style .descr-block .addinfo__table {
+    font-size: 11px
+  }
 }
 .product-style .descr-block .addinfo__table th {
   color: #367de7;
@@ -2311,6 +2322,14 @@
   padding-left: 18px;
   font-weight: 500
 }
+@media (max-width:379px) {
+  .main-about__advantages__item .descr-block {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% - 50px);
+    flex: 0 0 calc(100% - 50px);
+    max-width: calc(100% - 50px)
+  }
+}
 @media (min-width:960px) {
   .main-about__advantages__item .descr-block {
     -webkit-box-flex: 0;
@@ -3304,6 +3323,14 @@
 .section-page__btns-row .view-row .choices__inner {
   padding: 5px 5px 6px
 }
+@media (max-width:379px) {
+  .section-page__btns-row .view-row {
+    max-width: 50%
+  }
+  .section-page__btns-row .view-row .choices__inner {
+    padding: 5px 5px 3px
+  }
+}
 @media (min-width:960px) {
   .section-page__btns-row .filter-link {
     display: none
@@ -3603,6 +3630,17 @@
 }
 .brand-single-page__btns-row .view-row .choices__inner {
   padding: 5px 5px 6px
+}
+@media (max-width:379px) {
+  .brand-single-page__btns-row .view-row {
+    max-width: 50%
+  }
+  .brand-single-page__btns-row .view-row .choices__inner {
+    padding: 5px 5px 3px
+  }
+  .product-page__content__right-side .product-info__item div {
+    font-size: 15px
+  }
 }
 @media (min-width:960px) {
   .brand-single-page__btns-row .filter-link {
@@ -4870,6 +4908,11 @@
 .fav-page .view-row .choices__inner {
   padding: 5px 5px 6px
 }
+@media (max-width:379px) {
+  .fav-page .view-row .choices__inner {
+    padding: 5px 5px 3px
+  }
+}
 .fav-page .view-row .choices__list--single {
   padding: 4px 25px 4px 4px
 }
@@ -5054,6 +5097,11 @@
 .profile-page__content {
   margin-top: 40px
 }
+.profile-page__content__menu {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 20px
+}
 @media (min-width:576px) {
   .profile-page__content {
     display: -webkit-box;
@@ -5065,20 +5113,6 @@
     -ms-flex-align: start;
     align-items: flex-start
   }
-}
-@media (min-width:768px) {
-  .profile-page__content {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end
-  }
-}
-.profile-page__content__menu {
-  background-color: #eee;
-  border-radius: 5px;
-  padding: 20px
-}
-@media (min-width:576px) {
   .profile-page__content__menu {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -5455,6 +5489,15 @@
   max-width: calc(50% - 10px);
   margin: 0 20px 10px 0
 }
+@media (max-width:379px) {
+  .profile-page__content__info .profile-data .input-group {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 0 10px
+  }
+}
 .profile-page__content__info .profile-data .input-group:nth-of-type(2n) {
   margin-right: 0
 }
@@ -5541,6 +5584,14 @@
   -ms-flex: 0 0 calc(50% - 10px);
   flex: 0 0 calc(50% - 10px);
   max-width: calc(50% - 10px)
+}
+@media (max-width:369px) {
+  .profile-page__content__info .profile-data .btn-row .input-group.btn-group {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%
+  }
 }
 @media (min-width:576px) {
   .profile-page__content__info .profile-data .btn-row .input-group.btn-group {
@@ -6116,6 +6167,11 @@
 .order-page__content .order-form__step .type-wrapper .choices__inner {
   padding: 5px 5px 6px;
   border-color: #367de7
+}
+@media (max-width:379px) {
+  .order-page__content .order-form__step .type-wrapper .choices__inner {
+    padding: 5px 5px 3px
+  }
 }
 .order-page__content .order-form__step .type-wrapper .choices__list--single {
   padding: 4px 25px 4px 8px;
@@ -7110,6 +7166,12 @@
   margin-top: 23px;
   padding-left: 25px
 }
+@media (max-width:379px) {
+  .footer__content .footer-menu__column.info-column .phone-link,
+  .order-page__content .order-form__step .type-wrapper .input-group input[type=radio]+span {
+    font-size: 15px
+  }
+}
 @media (min-width:576px) {
   .footer__content .footer-menu__column.info-column .phone-link {
     margin-top: 5px
@@ -7199,6 +7261,15 @@
 .footer__content .footer-menu__column.info-column .backcall-link {
   display: inline-block;
   margin-top: 20px
+}
+@media (max-width:379px) {
+  .footer__content .footer-menu__column.info-column .backcall-link {
+    padding: 10px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-left: auto
+  }
 }
 @media (min-width:576px) {
   .footer__content .footer-menu__column.info-column .mail-link:before {

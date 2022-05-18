@@ -635,6 +635,16 @@ textarea.error {
   position: relative;
   z-index: 5
 }
+@media (max-width:379px) {
+  .header__content__top .logo-link {
+    max-width: 120px
+  }
+  .header__content__top .logo-link .logo-image {
+    display: block;
+    width: auto;
+    max-width: 100%
+  }
+}
 .header__content__top .backcall-link {
   display: inline-block;
   margin: 0 5px 0 auto;
@@ -1114,6 +1124,14 @@ textarea.error {
 .header__content__mobile .menu-wrapper__main-info .product-links__item:nth-of-type(1) {
   margin-right: 38px
 }
+@media (max-width:379px) {
+  .header__content__mobile .menu-wrapper__main-info .product-links__item {
+    margin-top: 10px
+  }
+  .header__content__mobile .menu-wrapper__main-info .product-links__item:nth-of-type(1) {
+    margin-top: 0
+  }
+}
 .header__content__mobile .menu-wrapper__main-info .product-links__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1350,6 +1368,17 @@ textarea.error {
   -o-transition: color .3s;
   transition: color .3s
 }
+@media (max-width:379px) {
+  .header__content__mobile .menu-wrapper__main-info .catalog-links__link {
+    font-size: 14px
+  }
+  .header__content__mobile .menu-wrapper__main-info .backcall-links__left-side .phone-link {
+    font-size: 15px
+  }
+  .header__content__mobile .menu-wrapper__main-info .backcall-links__right-side {
+    text-align: right
+  }
+}
 .header__content__mobile .menu-wrapper__main-info .backcall-links__left-side .phone-link:before {
   content: "\e80a";
   font-family: Fontello;
@@ -1422,6 +1451,19 @@ textarea.error {
   -webkit-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s
+}
+@media (max-width:379px) {
+  .header__content__mobile .menu-wrapper__main-info .backcall-links__right-side .backcall-link {
+    font-size: 14px;
+    padding: 10px
+  }
+  .header__content__mobile .menu-wrapper__main-info .info-links__link {
+    font-size: 14px
+  }
+  .header__content__mobile .menu-wrapper__profile .profile-link {
+    font-size: 14px;
+    padding: 10px
+  }
 }
 .header__content__mobile .menu-wrapper__main-info .info-links__link:hover {
   color: #ffa300
