@@ -6785,6 +6785,70 @@
 .error-page__descr a:hover {
   color: #ffa300
 }
+.thanks-page {
+  padding: 60px 0
+}
+@media (min-width:1200px) {
+  .error-page__descr {
+    max-width: 100%
+  }
+  .thanks-page {
+    padding: 92px 0
+  }
+}
+.thanks-page__content {
+  text-align: center;
+  background-color: #eee;
+  border-radius: 5px;
+  max-width: 960px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 40px 20px 20px
+}
+@media (min-width:768px) {
+  .thanks-page__content {
+    font-size: 18px;
+    line-height: 22px
+  }
+}
+.thanks-page__content br {
+  display: none
+}
+.thanks-page__content .back-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px
+}
+@media (min-width:576px) {
+  .thanks-page__content br {
+    display: block
+  }
+  .thanks-page__content .back-btn {
+    max-width: 200px;
+    margin: 20px auto
+  }
+}
+@media (min-width:1200px) {
+  .thanks-page__content {
+    border-radius: 10px;
+    padding: 60px;
+    font-size: 24px;
+    line-height: 28px
+  }
+  .thanks-page__content .back-btn {
+    margin: 40px auto 0;
+    padding: 15px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700
+  }
+}
+.thanks-page + .footer {
+  margin-top: auto
+}
 .footer {
   background-color: #367de7;
   margin-top: 60px
@@ -7281,9 +7345,6 @@
   z-index: 10
 }
 @media (min-width:1200px) {
-  .error-page__descr {
-    max-width: 100%
-  }
   .footer .scrollbtn {
     font-size: 14px;
     line-height: 14px;
@@ -8740,41 +8801,33 @@ button.swiper-pagination-bullet {
 }
 @-webkit-keyframes mmslideIn {
   from {
-    -webkit-transform: translateY(-15%);
-    transform: translateY(-15%)
+    opacity: 0
   }
   to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
+    opacity: 1
   }
 }
 @keyframes mmslideIn {
   from {
-    -webkit-transform: translateY(-15%);
-    transform: translateY(-15%)
+    opacity: 0
   }
   to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
+    opacity: 1
   }
 }
 @-webkit-keyframes mmslideOut {
   from {
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
+    opacity: 0
   }
   to {
-    -webkit-transform: translateY(10%);
-    transform: translateY(10%)
+    opacity: 1
   }
 }
 @keyframes mmslideOut {
   from {
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
+    opacity: 0
   }
   to {
-    -webkit-transform: translateY(10%);
-    transform: translateY(10%)
+    opacity: 1
   }
 }
