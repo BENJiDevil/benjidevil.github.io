@@ -468,7 +468,7 @@ textarea.error {
   border-color: red
 }
 .header {
-  position: fixed;
+  position: relative;
   z-index: 10;
   top: 0;
   left: 0;
@@ -1526,17 +1526,6 @@ textarea.error {
   display: inline-block;
   margin-top: 6px
 }
-.header.scroll .header__content {
-  padding: 5px 0
-}
-.header.scroll .header__content__mobile .menu-wrapper {
-  padding-top: 57px
-}
-.header + div,
-.header + main,
-.header + section {
-  margin-top: 80px
-}
 .main-filter {
   padding-top: 60px
 }
@@ -1546,11 +1535,6 @@ textarea.error {
   }
 }
 @media (min-width:1200px) {
-  .header + div,
-  .header + main,
-  .header + section {
-    margin-top: 145px
-  }
   .main-filter {
     padding-top: 58px
   }
