@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="405"
+   height="405"
+   viewBox="0 0 405 405"
+   fill="none"
+   version="1.1"
+   id="svg21"
+   sodipodi:docname="product_mobile_bg.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview23"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.1397059"
+     inkscape:cx="179.93127"
+     inkscape:cy="204"
+     inkscape:window-width="2400"
+     inkscape:window-height="1321"
+     inkscape:window-x="4791"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg21" />
+  <g
+     id="g845"
+     transform="translate(36.007103,-6.4403057)">
+    <path
+       d="M 200.262,315.394 C 168.167,316.082 116.418,305.818 83.524,280.607 38.0957,245.788 46.2133,195.364 72.583,152.589 c 41.906,-67.975 80.963,-51.995 157.762,-44.333 80.341,8.016 111.668,98.936 79.184,144.585 -23.593,33.155 -63.783,61.577 -109.267,62.553 z"
+       stroke="#fa8200"
+       stroke-opacity="0.5"
+       id="path2" />
+    <path
+       d="M 136.507,318.716 C 113.555,296.993 81.9422,251.17 70.7104,204.298 55.1988,139.566 84.8355,97.3464 123.711,75.116 c 61.779,-35.3277 81.734,7.075 132.239,67.893 52.835,63.623 31.799,171.793 -12.75,192.491 -32.355,15.032 -74.167,14 -106.693,-16.784 z"
+       stroke="#fa8200"
+       stroke-opacity="0.5"
+       id="path4" />
+    <g
+       filter="url(#filter0_f_231_1264)"
+       id="g8">
+      <path
+         d="M 305.888,323.195 C 275.698,392.464 199.674,348.606 129.028,300.207 58.3815,251.807 -3.58596,194.632 21.4974,137.08 46.5808,79.5279 169.508,38.0717 242.771,69.6727 c 73.264,31.6013 88.2,195.9703 63.117,253.5223 z"
+         fill="#fbbd17"
+         fill-opacity="0.18"
+         id="path6" />
+    </g>
+    <path
+       d="M 293.377,306.587 C 267.176,366.704 199.33,327.836 136.218,285.055 73.106,242.274 17.6215,191.917 39.3909,141.969 61.1602,92.0207 169.903,56.9289 235.194,85.0911 300.485,113.253 315.147,256.639 293.377,306.587 Z"
+       fill="#fbbd17"
+       fill-opacity="0.22"
+       id="path10" />
+  </g>
+  <defs
+     id="defs19">
+    <filter
+       id="filter0_f_231_1264"
+       x="-32.183601"
+       y="10.7563"
+       width="397.353"
+       height="396.36801"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood12" />
+      <feBlend
+         mode="normal"
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend14" />
+      <feGaussianBlur
+         stdDeviation="24"
+         result="effect1_foregroundBlur_231_1264"
+         id="feGaussianBlur16" />
+    </filter>
+  </defs>
+</svg>
