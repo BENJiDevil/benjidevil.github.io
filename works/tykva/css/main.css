@@ -16,19 +16,19 @@
 }
 @font-face {
   font-family: Gilroy;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/GilroyRegular/GilroyRegular.eot);
-  src: url(../fonts/GilroyRegular/GilroyRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/GilroyRegular/GilroyRegular.woff) format("woff"),url(../fonts/GilroyRegular/GilroyRegular.woff2) format("woff2"),url(../fonts/GilroyRegular/GilroyRegular.ttf) format("truetype")
-}
-@font-face {
-  font-family: Gilroy;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/GilroyMedium/GilroyMedium.eot);
   src: url(../fonts/GilroyMedium/GilroyMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/GilroyMedium/GilroyMedium.woff) format("woff"),url(../fonts/GilroyMedium/GilroyMedium.woff2) format("woff2"),url(../fonts/GilroyMedium/GilroyMedium.ttf) format("truetype")
+}
+@font-face {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/GilroyRegular/GilroyRegular.eot);
+  src: url(../fonts/GilroyRegular/GilroyRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/GilroyRegular/GilroyRegular.woff) format("woff"),url(../fonts/GilroyRegular/GilroyRegular.woff2) format("woff2"),url(../fonts/GilroyRegular/GilroyRegular.ttf) format("truetype")
 }
 @font-face {
   font-family: Gilroy;
@@ -199,16 +199,19 @@ body.overflow {
   top: -3px
 }
 @media (min-width:1200px) {
+  .header__content {
+    padding: 15px 0
+  }
   .header__content .logo-link {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 74px;
-    flex: 0 0 74px;
-    max-width: 74px
+    -ms-flex: 0 0 75px;
+    flex: 0 0 75px;
+    max-width: 75px
   }
   .header__content .logo-link .logo-image {
-    width: 74px!important;
+    width: 61px!important;
     height: auto!important;
-    top: 2px
+    top: 3px
   }
 }
 .header__content .logo-link .logo-image rect {
@@ -260,14 +263,14 @@ body.overflow {
     -ms-flex-pack: start;
     justify-content: flex-start;
     background-color: transparent;
-    padding: 0;
+    padding: 0 0 0 35px;
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 calc(100% - 80px);
-    flex: 1 1 calc(100% - 80px);
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
     width: 100%
   }
   .header__content .main-menu__list {
-    margin: 0 10% 0 auto;
+    margin: 0 auto;
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
@@ -279,9 +282,9 @@ body.overflow {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 }
 .header__content .main-menu__item {
@@ -292,7 +295,6 @@ body.overflow {
   margin-top: 0
 }
 .header__content .main-menu__link {
-  text-transform: uppercase;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: .03em;
@@ -341,7 +343,7 @@ body.overflow {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #fa8a02
+  color: #fff
 }
 .header__content .main-menu:after {
   content: "";
@@ -361,28 +363,35 @@ body.overflow {
 }
 @media (min-width:1200px) {
   .header__content .main-menu__item {
-    margin: 0 22px
+    margin: 0 38px
   }
   .header__content .main-menu__link {
-    color: #fff;
-    font-size: 21px;
-    line-height: 24px
+    color: #fff
+  }
+  .header__content .main-menu .langs-links {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 110px;
+    flex: 0 0 110px;
+    max-width: 110px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
   }
   .header__content .main-menu .langs-links__item {
-    margin: 0 0 0 20px
+    margin: 0 0 0 25px
   }
   .header__content .main-menu .langs-links__link {
-    color: #fff;
-    font-size: 20px;
-    line-height: 24px;
+    color: #e4e4e4;
+    font-size: 18px;
+    line-height: 21px;
     letter-spacing: .02em
   }
   .header__content .main-menu .langs-links__link:hover {
-    color: #fa8a02
+    color: #fff
   }
   .header__content .main-menu .langs-links__link.active {
-    font-size: 20px;
-    line-height: 24px
+    font-size: 18px;
+    line-height: 21px
   }
   .header__content .main-menu:after {
     display: none
@@ -541,8 +550,8 @@ body.overflow {
   background-position: center;
   color: #fff;
   text-align: center;
-  padding-bottom: 80px;
-  position: relative
+  position: relative;
+  padding: 0!important
 }
 .main-block .video-wrapper {
   position: absolute;
@@ -560,22 +569,43 @@ body.overflow {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,.3)
+  background-color: rgba(0,0,0,.45)
 }
 .main-block .video-wrapper .video-item {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   margin-right: -50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%)
 }
+@media (min-width:1600px) {
+  .main-block .video-wrapper .video-item {
+    width: 100%;
+    height: auto
+  }
+}
 .main-block .container {
   position: relative;
-  z-index: 1
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  z-index: 1;
+  min-height: 632px;
+  padding-bottom: 80px
 }
 .main-block__title {
   font-family: Moiamova1,sans-serif;
@@ -602,15 +632,18 @@ body.overflow {
   .header.black .header__content .main-menu__link.active {
     color: #fa8a02
   }
-  .main-block {
-    text-align: left;
-    padding-bottom: 120px
+  .main-block .container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    min-height: 92.35vh;
+    padding-bottom: 95px
   }
   .main-block__title {
-    font-size: 110px;
-    line-height: 110px;
-    letter-spacing: .05em;
-    font-family: Moiamova3,sans-serif
+    font-family: Moiamova3,sans-serif;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: .05em
   }
 }
 .main-block__subtitle {
@@ -671,15 +704,17 @@ body.overflow {
 }
 @media (min-width:1200px) {
   .main-block__subtitle {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 21px;
+    line-height: 21px;
     letter-spacing: .015em;
-    margin: 12px 0 20px
+    margin: 17px 0 20px
   }
   .main-block .backcall-modal {
-    font-size: 23px;
-    line-height: 23px;
-    padding: 18px 66px
+    margin-top: 13px;
+    font-size: 19px;
+    line-height: 18px;
+    padding: 18px 47px;
+    letter-spacing: .05em
   }
   .advantages-block {
     padding: 80px 0 0
@@ -770,7 +805,8 @@ body.overflow {
   }
   .advantages-block__item .descr-block p {
     font-size: 18px;
-    line-height: 31px
+    line-height: 31px;
+    letter-spacing: .01em
   }
 }
 .advantages-block__item .descr-block p b {
