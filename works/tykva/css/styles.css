@@ -1143,7 +1143,7 @@ textarea {
     width: 600px;
     height: 600px;
     position: absolute;
-    left: 115px;
+    right: calc(50% + 242px);
     top: -355px;
     -webkit-transform: rotate(-180deg) scale(.9,-.9);
     -ms-transform: rotate(-180deg) scale(.9,-.9);
@@ -1156,7 +1156,7 @@ textarea {
     height: 660px;
     position: absolute;
     top: -35px;
-    right: -30px;
+    left: calc(50% + 200px);
     background-image: url(../images/main/about/leafs.png);
     background-repeat: no-repeat;
     background-position: center;
