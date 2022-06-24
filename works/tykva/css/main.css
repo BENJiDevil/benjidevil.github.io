@@ -534,7 +534,7 @@ body.overflow {
   padding: 0 10px
 }
 .header.black {
-  background-color: rgba(254,235,182,.5)
+  background-color: #ffd15c
 }
 .header.black .header__content .logo-link .logo-image rect {
   fill: #fa8a02
@@ -553,15 +553,7 @@ body.overflow {
   position: relative;
   padding: 0!important
 }
-.main-block .video-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden
-}
-.main-block .video-wrapper:after {
+.main-block:after {
   content: "";
   display: block;
   width: 100%;
@@ -569,7 +561,21 @@ body.overflow {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,.45)
+  background: rgba(0,0,0,.45);
+  z-index: 1
+}
+.main-block.video-block:after {
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(.52%,rgba(0,0,0,.46)),color-stop(32.25%,rgba(0,0,0,0)),color-stop(42.18%,rgba(0,0,0,.29)),color-stop(55.51%,rgba(0,0,0,.49)),color-stop(87.83%,rgba(0,0,0,.73)));
+  background: -o-linear-gradient(top,rgba(0,0,0,.46) .52%,rgba(0,0,0,0) 32.25%,rgba(0,0,0,.29) 42.18%,rgba(0,0,0,.49) 55.51%,rgba(0,0,0,.73) 87.83%);
+  background: linear-gradient(180deg,rgba(0,0,0,.46) .52%,rgba(0,0,0,0) 32.25%,rgba(0,0,0,.29) 42.18%,rgba(0,0,0,.49) 55.51%,rgba(0,0,0,.73) 87.83%)
+}
+.main-block .video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
 }
 .main-block .video-wrapper .video-item {
   position: absolute;
@@ -603,7 +609,7 @@ body.overflow {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  z-index: 1;
+  z-index: 2;
   min-height: 632px;
   padding-bottom: 80px
 }
@@ -630,7 +636,7 @@ body.overflow {
   }
   .header.black .header__content .main-menu .langs-links__link.active,
   .header.black .header__content .main-menu__link.active {
-    color: #fa8a02
+    color: #fff
   }
   .main-block .container {
     -webkit-box-align: start;
