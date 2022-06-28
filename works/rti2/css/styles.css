@@ -273,8 +273,7 @@
     align-items: stretch;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: flex-start;
-    margin-top: 10px
+    justify-content: flex-start
   }
 }
 @media (min-width:768px) {
@@ -293,18 +292,22 @@
   }
 }
 .main-services__content__item {
-  margin-top: 35px
+  margin-top: 55px
 }
 @media (min-width:340px) {
   .main-services__content__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(50% - 5px);
-    flex: 0 0 calc(50% - 5px);
-    max-width: calc(50% - 5px);
-    margin: 35px 10px 0 0
+    -ms-flex: 0 0 calc(50% - 14px);
+    flex: 0 0 calc(50% - 14px);
+    max-width: calc(50% - 14px);
+    margin: 55px 28px 0 0
   }
   .main-services__content__item:nth-of-type(2n) {
     margin-right: 0
+  }
+  .main-services__content__item .descr-block p {
+    font-size: 11px;
+    line-height: 16px
   }
 }
 @media (min-width:576px) {
@@ -313,10 +316,10 @@
   }
   .main-services__content__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(50% - 10px);
-    flex: 0 0 calc(50% - 10px);
-    max-width: calc(50% - 10px);
-    margin: 35px 20px 0 0
+    -ms-flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin: 35px 40px 0 0
   }
 }
 @media (min-width:768px) {
@@ -365,9 +368,9 @@
 }
 .main-services__content__item .image-block {
   margin: 0 auto;
-  max-width: 90px;
-  height: 90px;
-  border: 2px solid #000;
+  max-width: 80px;
+  height: 80px;
+  border: 1px solid #000;
   border-radius: 50%;
   padding: 18px
 }
@@ -421,7 +424,8 @@
 @media (min-width:576px) {
   .main-services__content__item .image-block {
     max-width: 110px;
-    height: 110px
+    height: 110px;
+    border: 2px solid #000
   }
   .main-services__content__item .descr-block .item-title {
     font-size: 16px
@@ -452,15 +456,9 @@
 .main-services__content__item .descr-block p {
   display: inline-block;
   margin-top: 15px;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: 11px;
+  line-height: 16px;
   font-family: OpenSans,sans-serif
-}
-@media (min-width:340px) {
-  .main-services__content__item .descr-block p {
-    font-size: 12px;
-    line-height: 16px
-  }
 }
 @media (min-width:400px) {
   .main-services__content__item .descr-block p {
@@ -1573,11 +1571,6 @@
 .services-page .container {
   padding: 0 8px
 }
-@media (min-width:576px) {
-  .services-page .container {
-    padding: 0 15px
-  }
-}
 @media (min-width:340px) {
   .services-page__content {
     display: -webkit-box;
@@ -1591,7 +1584,6 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-top: 10px;
     padding-bottom: 50px
   }
 }
@@ -1617,20 +1609,36 @@
   }
 }
 .services-page__content__item {
-  margin-top: 35px;
+  margin-top: 55px;
   position: relative;
   padding-bottom: 35px
 }
 @media (min-width:340px) {
   .services-page__content__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(50% - 5px);
-    flex: 0 0 calc(50% - 5px);
-    max-width: calc(50% - 5px);
-    margin: 35px 10px 0 0
+    -ms-flex: 0 0 calc(50% - 14px);
+    flex: 0 0 calc(50% - 14px);
+    max-width: calc(50% - 14px);
+    margin: 55px 28px 0 0
   }
   .services-page__content__item:nth-of-type(2n) {
     margin-right: 0
+  }
+  .services-page__content__item .descr-block p {
+    font-size: 11px;
+    line-height: 16px
+  }
+}
+@media (min-width:576px) {
+  .services-page .container {
+    padding: 0 15px
+  }
+  .services-page__content__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin: 35px 40px 0 0
   }
 }
 @media (min-width:768px) {
@@ -1694,9 +1702,9 @@
 }
 .services-page__content__item .image-block {
   margin: 0 auto;
-  max-width: 90px;
-  height: 90px;
-  border: 2px solid #000;
+  max-width: 80px;
+  height: 80px;
+  border: 1px solid #000;
   border-radius: 50%;
   padding: 18px
 }
@@ -1723,17 +1731,12 @@
   color: #fff;
   position: relative;
   overflow: hidden;
-  padding: 5px 15px 5px 5px;
+  padding: 5px 25px 5px 5px;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 20px;
   font-weight: 600;
   min-height: 50px
-}
-@media (min-width:400px) {
-  .services-page__content__item .descr-block .item-title {
-    font-size: 14px
-  }
 }
 @media (min-width:480px) {
   .services-page__content__item .descr-block .item-title {
@@ -1755,7 +1758,8 @@
 @media (min-width:576px) {
   .services-page__content__item .image-block {
     max-width: 110px;
-    height: 110px
+    height: 110px;
+    border: 2px solid #000
   }
   .services-page__content__item .descr-block .item-title {
     font-size: 16px
@@ -1786,15 +1790,9 @@
 .services-page__content__item .descr-block p {
   display: inline-block;
   margin-top: 15px;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: 11px;
+  line-height: 16px;
   font-family: OpenSans,sans-serif
-}
-@media (min-width:340px) {
-  .services-page__content__item .descr-block p {
-    font-size: 12px;
-    line-height: 16px
-  }
 }
 @media (min-width:400px) {
   .services-page__content__item .descr-block p {
@@ -1843,8 +1841,7 @@
     justify-content: flex-start;
     font-size: 20px;
     line-height: 25px;
-    min-height: 75px;
-    padding: 10px 40px 10px 20px
+    min-height: 75px
   }
   .services-page__content__item .descr-block .item-title:before {
     right: 20px
@@ -1859,6 +1856,29 @@
   position: absolute;
   bottom: 0;
   left: 0
+}
+@media (min-width:1400px) {
+  .services-page__content__item .descr-block .item-title {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 6px 50px 8px 18px;
+    min-height: 60px
+  }
+  .services-page__content__item .descr-block .item-title:before {
+    -webkit-transform: skewX(-32deg);
+    -ms-transform: skewX(-32deg);
+    transform: skewX(-32deg);
+    right: 25px
+  }
+  .services-page__content__item .descr-block p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 15px;
+    padding-right: 30px
+  }
+  .services-page__content__item .link-block {
+    left: 32px
+  }
 }
 .services-page__content__item .link-block .item-link {
   display: -webkit-inline-box;
@@ -1887,17 +1907,6 @@
     font-size: 16px
   }
 }
-@media (min-width:576px) {
-  .services-page__content__item .link-block .item-link {
-    font-size: 18px
-  }
-}
-@media (min-width:1200px) {
-  .services-page__content__item .link-block .item-link {
-    font-size: 22px;
-    line-height: 24px
-  }
-}
 .services-page__content__item .link-block .item-link .icon {
   font-size: 15px;
   line-height: 24px;
@@ -1907,41 +1916,6 @@
   transition: transform .3s;
   -o-transition: transform .3s;
   transition: transform .3s,-webkit-transform .3s
-}
-@media (min-width:576px) {
-  .services-page__content__item .link-block .item-link .icon {
-    font-size: 18px
-  }
-}
-@media (min-width:1400px) {
-  .services-page__content__item .descr-block .item-title {
-    height: 60px;
-    min-height: auto
-  }
-  .services-page__content__item .descr-block .item-title:before {
-    -webkit-transform: skewX(-32deg);
-    -ms-transform: skewX(-32deg);
-    transform: skewX(-32deg);
-    right: 25px
-  }
-  .services-page__content__item .descr-block p {
-    font-size: 18px;
-    line-height: 24px;
-    margin-top: 15px;
-    padding-right: 30px
-  }
-  .services-page__content__item .link-block {
-    left: 32px
-  }
-  .services-page__content__item .link-block .item-link {
-    font-size: 20px;
-    line-height: 24px
-  }
-  .services-page__content__item .link-block .item-link .icon {
-    font-size: 22px;
-    line-height: 24px;
-    margin-left: 18px
-  }
 }
 .services-page__content__item .link-block .item-link:hover {
   color: #bf0c0c
@@ -1958,6 +1932,10 @@
   padding-bottom: 30px
 }
 @media (min-width:576px) {
+  .services-page__content__item .link-block .item-link,
+  .services-page__content__item .link-block .item-link .icon {
+    font-size: 18px
+  }
   .info-page__content {
     font-size: 16px;
     line-height: 22px
@@ -1990,6 +1968,10 @@
   }
 }
 @media (min-width:1200px) {
+  .services-page__content__item .link-block .item-link {
+    font-size: 22px;
+    line-height: 24px
+  }
   .info-page__content {
     font-size: 20px;
     line-height: 28px;
@@ -2000,6 +1982,15 @@
   }
 }
 @media (min-width:1400px) {
+  .services-page__content__item .link-block .item-link {
+    font-size: 20px;
+    line-height: 24px
+  }
+  .services-page__content__item .link-block .item-link .icon {
+    font-size: 22px;
+    line-height: 24px;
+    margin-left: 18px
+  }
   .info-page__content img {
     margin: 30px 0
   }

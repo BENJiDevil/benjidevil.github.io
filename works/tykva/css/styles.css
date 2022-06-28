@@ -319,10 +319,10 @@ textarea {
 }
 @media (min-width:1200px) {
   .forwhom-block {
-    margin-top: 105px;
-    padding: 90px 0;
-    background-size: 100% auto;
-    background-position: 100px -64px
+    margin-top: 125px;
+    padding: 150px 0 25px;
+    background-size: cover;
+    background-position: 50%
   }
 }
 .forwhom-block__list {
@@ -1086,6 +1086,11 @@ textarea {
 .recipes-block + .footer {
   margin-top: 75px
 }
+.about-block {
+  padding-top: 55px;
+  position: relative;
+  overflow: hidden
+}
 @media (min-width:1200px) {
   .recipes-block__content .slide-item .recipe-link .recipe-name {
     font-size: 24px;
@@ -1107,11 +1112,9 @@ textarea {
   .recipes-block + .footer {
     margin-top: 132px
   }
-}
-.about-block {
-  margin-top: 55px;
-  position: relative;
-  overflow: hidden
+  .about-block {
+    padding-top: 88px
+  }
 }
 .about-block:before {
   content: "";
@@ -1129,43 +1132,6 @@ textarea {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg)
 }
-@media (min-width:1200px) {
-  .about-block {
-    margin-top: 88px;
-    overflow: visible
-  }
-  .about-block:before {
-    content: "";
-    background-image: url(../images/main/about/leafs.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    right: calc(50% + 242px);
-    top: -355px;
-    -webkit-transform: rotate(-180deg) scale(.9,-.9);
-    -ms-transform: rotate(-180deg) scale(.9,-.9);
-    transform: rotate(-180deg) scale(.9,-.9)
-  }
-  .about-block:after {
-    content: "";
-    display: block;
-    width: 789px;
-    height: 660px;
-    position: absolute;
-    top: -35px;
-    left: calc(50% + 200px);
-    background-image: url(../images/main/about/leafs.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0)
-  }
-}
 .about-block__descr {
   position: relative;
   z-index: 1;
@@ -1178,6 +1144,37 @@ textarea {
   margin-top: 18px
 }
 @media (min-width:1200px) {
+  .about-block:before {
+    content: "";
+    background-image: url(../images/main/about/leafs.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: calc(50% + 242px);
+    top: -270px;
+    -webkit-transform: rotate(-180deg) scale(.9,-.9);
+    -ms-transform: rotate(-180deg) scale(.9,-.9);
+    transform: rotate(-180deg) scale(.9,-.9)
+  }
+  .about-block:after {
+    content: "";
+    display: block;
+    width: 789px;
+    height: 660px;
+    position: absolute;
+    top: 55px;
+    left: calc(50% + 210px);
+    background-image: url(../images/main/about/leafs.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0)
+  }
   .about-block__descr {
     max-width: 1035px;
     margin: 83px 0 0 102px;
@@ -1366,11 +1363,11 @@ textarea {
   .achievements-block__content {
     padding: 0;
     max-width: 996px;
-    margin: 84px auto 0
+    margin: 100px auto 0
   }
   .achievements-block__content .slide-item {
     width: 100%!important;
-    max-width: calc(50% - 10px);
+    max-width: 385px;
     margin: 0 20px 20px 0!important
   }
   .achievements-block__content .slide-item:nth-of-type(2n) {
@@ -1422,10 +1419,10 @@ textarea {
   .achievements-block .achiev-info {
     display: block!important;
     text-align: center;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 30px;
     letter-spacing: .01em;
-    margin: 30px 0
+    margin: 40px 0 30px
   }
 }
 .achievements-block + .footer {
@@ -2974,7 +2971,6 @@ textarea {
   margin-top: 0
 }
 .footer__menu .footer-menu__link {
-  text-transform: uppercase;
   font-size: 12px;
   line-height: 14px;
   color: #000;
