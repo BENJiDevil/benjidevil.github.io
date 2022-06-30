@@ -266,7 +266,7 @@
 .main-services .container {
   padding: 0 8px
 }
-@media (max-width:400px) {
+@media (max-width:420px) {
   .main-services__content {
     padding: 0 18px
   }
@@ -832,7 +832,7 @@
 .main-business .container {
   padding: 0 8px
 }
-@media (max-width:400px) {
+@media (max-width:420px) {
   .main-business__content {
     padding: 0 18px
   }
@@ -1625,7 +1625,7 @@
 .services-page .container {
   padding: 0 8px
 }
-@media (max-width:400px) {
+@media (max-width:420px) {
   .services-page {
     padding-top: 80px!important
   }
