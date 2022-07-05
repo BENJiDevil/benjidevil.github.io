@@ -65,56 +65,274 @@
                 <a href="/" class="logo-link">
                     <img src="images/main/svg/logo.svg" width="137px" alt="VERY NEAT" class="logo-image">
                 </a>
-                <a href="javascript:void(0);" class="city-link" style="display: none;">Москва</a>
+                <a href="javascript:void(0);" class="city-link" data-micromodal-trigger="modal-cities" style="display: none;">Москва</a>
                 <nav class="hmain-menu" style="position: absolute; transform: translateX(-100vw);">
                     <div class="hmain-menu__header">
                         <a href="#" class="b2b-link">B2B</a>
                         <a href="#" class="favorite-link"><i class="icon icon-heart"></i></a>
                     </div>
-                    <ul class="hmain-menu__list">
-                        <li class="hmain-menu__item">
-                            <a href="javascript:void(0);" data-category="category1" class="hmain-menu__link">
-                                <img src="images/main/main_page/menu/category_image1.jpg" alt="category" class="category-image">
-                                <span>Повседневная одежда</span>
-                            </a>
-                        </li>
-                        <li class="hmain-menu__item">
-                            <a href="javascript:void(0);" data-category="category2" class="hmain-menu__link">
-                                <img src="images/main/main_page/menu/category_image2.jpg" alt="category" class="category-image">
-                                <span>Домашняя одежда</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="hmain-menu__wrapper">
-                        <ul class="submenu__list show" data-category="category1">
-                            <li class="submenu__item"><a href="#" class="submenu__link">Базовый гардероб</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Вся одежда</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Куртки и жилеты</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Платья и комбинезоны</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link active">Брюки и шорты</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Джинсы</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Топы и боди</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Футболки</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Жакеты</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Рубашки и блузы</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Толстовки</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Юбки</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Шапки, шарфы, перчатки</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Белье</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Купальники</a></li>
+                    <div class="hmain-menu__categories">
+                        <ul class="categories-list">
+                            <li class="categories-list__item active">
+                                <a href="#" data-category="category1" class="categories-list__link" style="background-image: url('images/main/main_page/menu/category_image1.jpg')">
+                                    <span>Повседневная одежда</span>
+                                </a>
+                            </li>
+                            <li class="categories-list__item">
+                                <a href="#" data-category="category2" class="categories-list__link" style="background-image: url('images/main/main_page/menu/category_image2.jpg')">
+                                    <span>Домашняя одежда</span>
+                                </a>
+                            </li>
                         </ul>
-                        <ul class="submenu__list" data-category="category2">
-                            <li class="submenu__item"><a href="#" class="submenu__link">Рубашки и блузы</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Толстовки</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Юбки</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Шапки, шарфы, перчатки</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Белье</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__link">Купальники</a></li>
+                    </div>
+                    <div class="hmain-menu__subcategories">
+                        <ul class="subcategories-list show" data-category="category1">
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link active">Новинки</a>
+                                <ul class="submenu-list show">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link active">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Одежда</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Аксессуары</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Дисконт</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Коллекции</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Вдохновение</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="subcategories-list" data-category="category2">
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link active">Новинки (категория 2)</a>
+                                <ul class="submenu-list show">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Одежда</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Аксессуары</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Дисконт</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Коллекции</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
+                            <li class="subcategories-list__item submenu">
+                                <a href="#" class="subcategories-list__link">Вдохновение</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Платья и комбинезоны</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Брюки и шорты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Джинсы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Топы и боди</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Футболки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Жакеты</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Рубашки и блузы</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Толстовки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Юбки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Шапки, шарфы, перчатки</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Белье</a></li>
+                                    <li class="submenu-list__item"><a href="#" class="submenu-list__link">Купальники</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div class="hmain-menu__footer">
                         <a href="tel:88005111340" class="phone-link">8 (800) 511-13-40</a>
-                        <a href="javascript:void(0);" class="city-link">Москва</a>
+                        <a href="javascript:void(0);" data-micromodal-trigger="modal-cities" class="city-link">Москва</a>
                     </div>
                 </nav>
                 <a href="tel:88005111340" class="phone-link" style="display: none;">8 (800) 511-13-40</a>
@@ -224,20 +442,6 @@
                 </ul>
             </div>
         </div>
-        <div class="header__bottom" style="display: none;">
-            <div class="container">
-                <nav class="hbottom-menu">
-                    <ul class="hbottom-menu__list">
-                        <li class="hbottom-menu__item"><a href="#" class="hbottom-menu__link">Новинки</a></li>
-                        <li class="hbottom-menu__item"><a href="#" class="hbottom-menu__link">Одежда</a></li>
-                        <li class="hbottom-menu__item"><a href="#" class="hbottom-menu__link">Аксессуары</a></li>
-                        <li class="hbottom-menu__item"><a href="#" class="hbottom-menu__link">Дисконт</a></li>
-                        <li class="hbottom-menu__item"><a href="#" class="hbottom-menu__link">Коллекции</a></li>
-                        <li class="hbottom-menu__item"><a href="#" class="hbottom-menu__link">Вдохновение</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
     </header>
     <main class="mpage-main">
         <div id="main-slider" class="main-slider swiper">
@@ -249,12 +453,17 @@
                             <h3 class="slide-subtitle">Lorem ipsum is placeholder text commonly used -20%</h3>
                         </div>
                         <div class="slide-links">
-                            <a href="#" class="slide-btn">Повседневная одежда</a>
+                            <a href="javascript:void(0);" class="slide-btn" data-micromodal-trigger="modal-cities">Повседневная одежда</a>
                             <a href="#" class="slide-btn">Домашняя одежда</a>
                         </div>
                     </div>
                 </div>
-                <div class="slide-item swiper-slide lazyload" data-bgset="images/main/main_page/main_slider/mobile/main_slide2.jpg [(max-width: 575px)] | images/main/main_page/main_slider/pad/main_slide2.jpg [(max-width: 1024px)] | images/main/main_page/main_slider/main_slide2.jpg [(min-width: 1025px)]">
+                <div class="slide-item swiper-slide video-slide">
+                    <div class="video-wrapper">
+                        <video class="video-item" autoplay="autoplay" loop="loop" muted="muted" playsinline="1" preload="1" poster="">
+                            <source src="assets/videos/1.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <div class="container">
                         <div class="slide-info">
                             <h2 class="slide-title">Зимняя коллекция</h2>
@@ -325,6 +534,72 @@
         <div class="catalog-section__content">
             <div class="catalog-slider swiper">
                 <div class="swiper-wrapper">
+                    <div class="slide-item swiper-slide colors-item">
+                        <div class="image-block">
+                            <div class="colors-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                        <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                        <img src="images/main/main_page/catalogs/product_image2.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                        <img src="images/main/main_page/catalogs/product_image3.jpg" alt="product" class="product-image">
+                                    </a>
+                                </div>
+                                <div class="colors-navigation">
+                                    <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors">
+                                <div class="colors-pagination"></div>
+                                <span class="product-colors__all">+19 цветов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item swiper-slide colors-item">
+                        <div class="image-block">
+                            <div class="colors-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                        <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                        <img src="images/main/main_page/catalogs/product_image2.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                        <img src="images/main/main_page/catalogs/product_image3.jpg" alt="product" class="product-image">
+                                    </a>
+                                </div>
+                                <div class="colors-navigation">
+                                    <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors">
+                                <div class="colors-pagination"></div>
+                                <span class="product-colors__all">+19 цветов</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
@@ -338,32 +613,7 @@
                         <div class="descr-block">
                             <a href="#" class="product-name">Жакет женский</a>
                             <span class="product-price">1 749 ₽</span>
-                            <div class="product-colors">
-                                <span class="product-colors__item active" style="background-color: #AEB9A9;"></span>
-                                <span class="product-colors__item" style="background-color: #8ACAFF;"></span>
-                                <span class="product-colors__item" style="background-color: #252426;"></span>
-                                <span class="product-colors__all">+19 цветов</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-item swiper-slide">
-                        <div class="image-block">
-                            <a href="#" class="product-link">
-                                <img src="images/main/main_page/catalogs/product_image2.jpg" alt="product" class="product-image">
-                            </a>
-                            <div class="product-btns">
-                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                            </div>
-                        </div>
-                        <div class="descr-block">
-                            <a href="#" class="product-name">Жакет женский</a>
-                            <span class="product-price">1 749 ₽</span>
-                            <div class="product-colors">
-                                <span class="product-colors__item active" style="background-color: #AEB9A9;"></span>
-                                <span class="product-colors__item" style="background-color: #8ACAFF;"></span>
-                                <span class="product-colors__item" style="background-color: #252426;"></span>
-                            </div>
+                            <div class="product-colors"></div>
                         </div>
                     </div>
                     <div class="slide-item swiper-slide">
@@ -382,6 +632,22 @@
                             <div class="product-colors">
                                 <span class="product-colors__all">+19 цветов</span>
                             </div>
+                        </div>
+                    </div>
+                    <div class="slide-item swiper-slide">
+                        <div class="image-block">
+                            <a href="#" class="product-link">
+                                <img src="images/main/main_page/catalogs/product_image2.jpg" alt="product" class="product-image">
+                            </a>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors"></div>
                         </div>
                     </div>
                     <div class="slide-item swiper-slide">
@@ -428,6 +694,72 @@
         <div class="catalog-section__content">
             <div class="catalog-slider swiper">
                 <div class="swiper-wrapper">
+                    <div class="slide-item swiper-slide colors-item">
+                        <div class="image-block">
+                            <div class="colors-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                        <img src="images/main/main_page/catalogs/product_image21.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                        <img src="images/main/main_page/catalogs/product_image22.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                        <img src="images/main/main_page/catalogs/product_image23.jpg" alt="product" class="product-image">
+                                    </a>
+                                </div>
+                                <div class="colors-navigation">
+                                    <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors">
+                                <div class="colors-pagination"></div>
+                                <span class="product-colors__all">+19 цветов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item swiper-slide colors-item">
+                        <div class="image-block">
+                            <div class="colors-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                        <img src="images/main/main_page/catalogs/product_image21.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                        <img src="images/main/main_page/catalogs/product_image22.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                        <img src="images/main/main_page/catalogs/product_image23.jpg" alt="product" class="product-image">
+                                    </a>
+                                </div>
+                                <div class="colors-navigation">
+                                    <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors">
+                                <div class="colors-pagination"></div>
+                                <span class="product-colors__all">+19 цветов</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
@@ -441,32 +773,7 @@
                         <div class="descr-block">
                             <a href="#" class="product-name">Жакет женский</a>
                             <span class="product-price">1 749 ₽</span>
-                            <div class="product-colors">
-                                <span class="product-colors__item active" style="background-color: #AEB9A9;"></span>
-                                <span class="product-colors__item" style="background-color: #8ACAFF;"></span>
-                                <span class="product-colors__item" style="background-color: #252426;"></span>
-                                <span class="product-colors__all">+19 цветов</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-item swiper-slide">
-                        <div class="image-block">
-                            <a href="#" class="product-link">
-                                <img src="images/main/main_page/catalogs/product_image22.jpg" alt="product" class="product-image">
-                            </a>
-                            <div class="product-btns">
-                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                            </div>
-                        </div>
-                        <div class="descr-block">
-                            <a href="#" class="product-name">Жакет женский</a>
-                            <span class="product-price">1 749 ₽</span>
-                            <div class="product-colors">
-                                <span class="product-colors__item active" style="background-color: #AEB9A9;"></span>
-                                <span class="product-colors__item" style="background-color: #8ACAFF;"></span>
-                                <span class="product-colors__item" style="background-color: #252426;"></span>
-                            </div>
+                            <div class="product-colors"></div>
                         </div>
                     </div>
                     <div class="slide-item swiper-slide">
@@ -490,7 +797,23 @@
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
-                                <img src="images/main/main_page/catalogs/product_image24.jpg" alt="product" class="product-image">
+                                <img src="images/main/main_page/catalogs/product_image22.jpg" alt="product" class="product-image">
+                            </a>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors"></div>
+                        </div>
+                    </div>
+                    <div class="slide-item swiper-slide">
+                        <div class="image-block">
+                            <a href="#" class="product-link">
+                                <img src="images/main/main_page/catalogs/product_image21.jpg" alt="product" class="product-image">
                             </a>
                             <div class="product-btns">
                                 <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
@@ -530,6 +853,72 @@
         <div class="catalog-section__content">
             <div class="catalog-slider swiper">
                 <div class="swiper-wrapper">
+                    <div class="slide-item swiper-slide colors-item">
+                        <div class="image-block">
+                            <div class="colors-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                        <img src="images/main/main_page/catalogs/product_image21.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                        <img src="images/main/main_page/catalogs/product_image22.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                        <img src="images/main/main_page/catalogs/product_image23.jpg" alt="product" class="product-image">
+                                    </a>
+                                </div>
+                                <div class="colors-navigation">
+                                    <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors">
+                                <div class="colors-pagination"></div>
+                                <span class="product-colors__all">+19 цветов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item swiper-slide colors-item">
+                        <div class="image-block">
+                            <div class="colors-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                        <img src="images/main/main_page/catalogs/product_image21.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                        <img src="images/main/main_page/catalogs/product_image22.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                        <img src="images/main/main_page/catalogs/product_image23.jpg" alt="product" class="product-image">
+                                    </a>
+                                </div>
+                                <div class="colors-navigation">
+                                    <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors">
+                                <div class="colors-pagination"></div>
+                                <span class="product-colors__all">+19 цветов</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
@@ -543,32 +932,7 @@
                         <div class="descr-block">
                             <a href="#" class="product-name">Жакет женский</a>
                             <span class="product-price">1 749 ₽</span>
-                            <div class="product-colors">
-                                <span class="product-colors__item active" style="background-color: #AEB9A9;"></span>
-                                <span class="product-colors__item" style="background-color: #8ACAFF;"></span>
-                                <span class="product-colors__item" style="background-color: #252426;"></span>
-                                <span class="product-colors__all">+19 цветов</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-item swiper-slide">
-                        <div class="image-block">
-                            <a href="#" class="product-link">
-                                <img src="images/main/main_page/catalogs/product_image22.jpg" alt="product" class="product-image">
-                            </a>
-                            <div class="product-btns">
-                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                            </div>
-                        </div>
-                        <div class="descr-block">
-                            <a href="#" class="product-name">Жакет женский</a>
-                            <span class="product-price">1 749 ₽</span>
-                            <div class="product-colors">
-                                <span class="product-colors__item active" style="background-color: #AEB9A9;"></span>
-                                <span class="product-colors__item" style="background-color: #8ACAFF;"></span>
-                                <span class="product-colors__item" style="background-color: #252426;"></span>
-                            </div>
+                            <div class="product-colors"></div>
                         </div>
                     </div>
                     <div class="slide-item swiper-slide">
@@ -592,7 +956,23 @@
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
-                                <img src="images/main/main_page/catalogs/product_image24.jpg" alt="product" class="product-image">
+                                <img src="images/main/main_page/catalogs/product_image22.jpg" alt="product" class="product-image">
+                            </a>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors"></div>
+                        </div>
+                    </div>
+                    <div class="slide-item swiper-slide">
+                        <div class="image-block">
+                            <a href="#" class="product-link">
+                                <img src="images/main/main_page/catalogs/product_image21.jpg" alt="product" class="product-image">
                             </a>
                             <div class="product-btns">
                                 <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
@@ -668,6 +1048,72 @@
         <div class="catalog-section__content">
             <div class="catalog-slider swiper">
                 <div class="swiper-wrapper">
+                    <div class="slide-item swiper-slide colors-item">
+                        <div class="image-block">
+                            <div class="colors-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                        <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                        <img src="images/main/main_page/catalogs/product_image32.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                        <img src="images/main/main_page/catalogs/product_image33.jpg" alt="product" class="product-image">
+                                    </a>
+                                </div>
+                                <div class="colors-navigation">
+                                    <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors">
+                                <div class="colors-pagination"></div>
+                                <span class="product-colors__all">+19 цветов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item swiper-slide colors-item">
+                        <div class="image-block">
+                            <div class="colors-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                        <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                        <img src="images/main/main_page/catalogs/product_image32.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                        <img src="images/main/main_page/catalogs/product_image33.jpg" alt="product" class="product-image">
+                                    </a>
+                                </div>
+                                <div class="colors-navigation">
+                                    <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                                </div>
+                            </div>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors">
+                                <div class="colors-pagination"></div>
+                                <span class="product-colors__all">+19 цветов</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
@@ -681,32 +1127,7 @@
                         <div class="descr-block">
                             <a href="#" class="product-name">Жакет женский</a>
                             <span class="product-price">1 749 ₽</span>
-                            <div class="product-colors">
-                                <span class="product-colors__item active" style="background-color: #AEB9A9;"></span>
-                                <span class="product-colors__item" style="background-color: #8ACAFF;"></span>
-                                <span class="product-colors__item" style="background-color: #252426;"></span>
-                                <span class="product-colors__all">+19 цветов</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-item swiper-slide">
-                        <div class="image-block">
-                            <a href="#" class="product-link">
-                                <img src="images/main/main_page/catalogs/product_image32.jpg" alt="product" class="product-image">
-                            </a>
-                            <div class="product-btns">
-                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                            </div>
-                        </div>
-                        <div class="descr-block">
-                            <a href="#" class="product-name">Жакет женский</a>
-                            <span class="product-price">1 749 ₽</span>
-                            <div class="product-colors">
-                                <span class="product-colors__item active" style="background-color: #AEB9A9;"></span>
-                                <span class="product-colors__item" style="background-color: #8ACAFF;"></span>
-                                <span class="product-colors__item" style="background-color: #252426;"></span>
-                            </div>
+                            <div class="product-colors"></div>
                         </div>
                     </div>
                     <div class="slide-item swiper-slide">
@@ -730,7 +1151,23 @@
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
-                                <img src="images/main/main_page/catalogs/product_image34.jpg" alt="product" class="product-image">
+                                <img src="images/main/main_page/catalogs/product_image32.jpg" alt="product" class="product-image">
+                            </a>
+                            <div class="product-btns">
+                                <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                                <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                            </div>
+                        </div>
+                        <div class="descr-block">
+                            <a href="#" class="product-name">Жакет женский</a>
+                            <span class="product-price">1 749 ₽</span>
+                            <div class="product-colors"></div>
+                        </div>
+                    </div>
+                    <div class="slide-item swiper-slide">
+                        <div class="image-block">
+                            <a href="#" class="product-link">
+                                <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
                             </a>
                             <div class="product-btns">
                                 <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
@@ -788,33 +1225,39 @@
             <div class="footer__menu">
                 <div class="footer__menu__column">
                     <span class="column-title">Помощь</span>
-                    <ul class="fmenu-list" style="height: 0;">
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Мой аккаунт</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link disabled">Где мой заказ</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Доставка и оплата</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Правила возврата</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Найти магазин</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Подобрать размер</a></li>
-                    </ul>
+                    <div class="fmenu-wrapper">
+                        <ul class="fmenu-list">
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Мой аккаунт</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link disabled">Где мой заказ</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Доставка и оплата</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Правила возврата</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Найти магазин</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Подобрать размер</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer__menu__column">
                     <span class="column-title">Каталог</span>
-                    <ul class="fmenu-list" style="height: 0;">
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Распродажа</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Новинки</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Повседневная одежда</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Домашняя одежда</a></li>
-                    </ul>
+                    <div class="fmenu-wrapper">
+                        <ul class="fmenu-list">
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Распродажа</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Новинки</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Повседневная одежда</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Домашняя одежда</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer__menu__column">
                     <span class="column-title">Компания</span>
-                    <ul class="fmenu-list" style="height: 0;">
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">О нас</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Философия бренда</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Блог</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Контакты</a></li>
-                        <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">FAQ</a></li>
-                    </ul>
+                    <div class="fmenu-wrapper">
+                        <ul class="fmenu-list">
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">О нас</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Философия бренда</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Блог</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">Контакты</a></li>
+                            <li class="fmenu-list__item"><a href="#" class="fmenu-list__link">FAQ</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <a id="lang-link" href="javascript:void(0);" class="lang-link">Язык: <span>Русский</span></a>
@@ -826,6 +1269,45 @@
         </div>
         <a href="javascript:void(0);" id="scrlBtn" class="scroll-btn" style="transform: translateY(100px)"><i class="icon icon-select_arrow"></i></a>
     </footer>
+    <div class="modal modal-cities" id="modal-cities" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
+                <header class="modal__header">
+                    <h2 class="modal__title">Выберите ваш город</h2>
+                </header>
+                <div class="modal__search">
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" name="search-input" placeholder="Поиск города">
+                        </div>
+                    </form>
+                </div>
+                <main class="modal__content">
+                    <ul class="cities-list">
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Санкт-петербург</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Москва</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Екатеринбург</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Краснодар</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Сочи</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Нижний новгород</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Самара</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Казань</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Новосибирск</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Уфа</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Красноярск</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Ростов-на-дону</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Челябинск</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Пермь</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Воронеж</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Саратов</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Иркутск</a></li>
+                        <li class="cities-list__item"><a href="#" class="cities-list__link">Тюмень</a></li>
+                    </ul>
+                </main>
+            </div>
+        </div>
+    </div>
     <link rel="stylesheet" href="css/styles.min.css">
     <script defer src="js/common.min.js"></script>
 </body>
