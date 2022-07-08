@@ -1149,8 +1149,9 @@ function get_groups(groups_array){
         $(this).addClass('active');
         get_shades($(this).attr('data-group'), groups_array);
         setTimeout(function () {
-            $('.tab-type[data-type="group"]').slideUp(300);
-            $('.tab-type[data-type="shade"]').slideDown(300);
+            $('.tab-type[data-type="group"]').css('display', 'none');
+            $('.tab-type[data-type="shade"]').css('display', 'block');
+
             $('.interier__descriptions').css('opacity', 1);
         }, 500);
     });
@@ -1214,8 +1215,8 @@ $(document).click(function (e) {
 /* shades close function */
 $('#shade-close').click(function (){
     /* open/close tabs */
-    $('.tab-type[data-type="group"]').slideDown(300);
-    $('.tab-type[data-type="shade"]').slideUp(300);
+    $('.tab-type[data-type="group"]').css('display', 'block');
+    $('.tab-type[data-type="shade"]').css('display', 'none');
     $('.interier__descriptions').css('opacity', 0);
     $('#price-info').slideUp();
     $('#order-btn').slideUp();
