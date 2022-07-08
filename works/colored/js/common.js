@@ -15,6 +15,7 @@ $(document).ready(function() {
 /* slider */
 const swiper = new Swiper('#color-slider', {
     speed: 800,
+    loop: true,
     slidesPerView: 'auto',
     // If we need pagination
     pagination: {
