@@ -1152,7 +1152,6 @@ function get_groups(groups_array){
         setTimeout(function () {
             $('.tab-type[data-type="group"]').css('display', 'none');
             $('.tab-type[data-type="shade"]').css('display', 'block');
-
             $('.interier__descriptions').css('opacity', 1);
         }, 500);
     });
@@ -1182,11 +1181,12 @@ function get_shades(current_group, groups_array) {
 
 /* sides click */
 $('.interier__layout svg g').click(function (e){
-    var curPoint = e.currentTarget.getAttribute('id'),
+
+    var curPoint = e.currentTarget.getAttribute('data-side'),
         curColor = $('.shade-item.active').attr('data-color'),
         curCode = $('.shade-item.active').attr('data-code');
     if (curColor){
-        $('#'+curPoint).css('fill', curColor).css('stroke', curColor);
+        $('.interier__layout svg g[data-side="'+ curPoint +'"]').css('fill', curColor).css('stroke', curColor);
         $('.interier__description[data-side="'+ curPoint +'"]').find('.interier__description-color').css('background-color', curColor);
         $('.interier__description[data-side="'+ curPoint +'"]').find('span').html(curCode);
     }
