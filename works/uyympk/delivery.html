@@ -201,17 +201,22 @@
                             <i class="icon icon-cart"></i>
                         </span>
                             <span class="cart-info">
-                            <span class="count">15 товаров:</span>
+                            <span class="count">15 <span>товаров:</span></span>
                             <span class="price-result">585 000 ₽ </span>
                             </span>
                         </a>
                     </div>
+                    <button id="hamburger" class="hamburger hamburger--slider" type="button" style="display: none;">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
         <div class="header__content__menu">
             <div class="container">
-                <nav class="main-menu">
+                <nav id="mmenu" class="main-menu">
                     <ul class="main-menu__list">
                         <li class="main-menu__item submenu-item catalog-item">
                             <a href="#" class="main-menu__link">Каталог товаров</a>
@@ -915,7 +920,7 @@
                         <h2 class="payment-section__title page-title">Способы <span>оплаты</span></h2>
                         <div class="payment-section__descr">
                             <h3>Оплата производится безналичным расчетом.</h3>
-                            <ul class="payments-list">
+                            <ul id="req_text" class="payments-list">
                                 <li class="payments-list__item"><span>Юридический адрес:</span><span>142598, Россия, Челябинск, Ул. Баныкина 28, стр 258</span></li>
                                 <li class="payments-list__item"><span>Фактический адрес:</span><span>Московская область, Марушкинское, дер.Большое Покровское</span></li>
                                 <li class="payments-list__item"><span>ИНН:</span><span>987654321</span></li>
@@ -926,7 +931,7 @@
                                 <li class="payments-list__item"><span>р/сч:</span><span>407 000 100 200 300 400 60</span></li>
                                 <li class="payments-list__item"><span>к/сч:</span><span>407 000 100 200 300</span></li>
                             </ul>
-                            <a href="javascript:void(0);" class="copy-link btn-style">Скопировать реквизиты</a>
+                            <a id="req_copy" href="javascript:void(0);" data-title="Скопировано" class="copy-link btn-style">Скопировать реквизиты</a>
                         </div>
                     </div>
                     <div class="backcall-section">

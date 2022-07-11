@@ -201,17 +201,22 @@
                             <i class="icon icon-cart"></i>
                         </span>
                             <span class="cart-info">
-                            <span class="count">15 товаров:</span>
+                            <span class="count">15 <span>товаров:</span></span>
                             <span class="price-result">585 000 ₽ </span>
                             </span>
                         </a>
                     </div>
+                    <button id="hamburger" class="hamburger hamburger--slider" type="button" style="display: none;">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
         <div class="header__content__menu">
             <div class="container">
-                <nav class="main-menu">
+                <nav id="mmenu" class="main-menu">
                     <ul class="main-menu__list">
                         <li class="main-menu__item submenu-item catalog-item">
                             <a href="#" class="main-menu__link">Каталог товаров</a>
@@ -861,7 +866,7 @@
                                 <h3 class="item-title">Телефон:</h3>
                                 <a href="tel:+88001475865" class="phone-link">+8 (800) 147-58-65</a>
                                 <a href="tel:+88001475865" class="phone-link">+8 (800) 147-58-65</a>
-                                <a href="#backcall_modal" class="backcall-modal">Заказать звонок</a>
+                                <a href="javascript:void(0);" data-micromodal-trigger="backcall_modal" class="backcall-modal">Заказать звонок</a>
                             </div>
                             <div class="contacts-info__item">
                                 <h3 class="item-title">Часы работы:</h3>
@@ -875,7 +880,7 @@
                         <div class="contacts-info__requisites">
                             <h2 class="requisites-title page-title"><span>Реквизиты</span> компании</h2>
                             <h4>Оплата производится безналичным расчетом.</h4>
-                            <ul class="requisites-list">
+                            <ul id="req_text" class="requisites-list">
                                 <li class="requisites-list__item"><span>Юридический адрес:</span><span>142598, Россия, Челябинск, Ул. Баныкина 28, стр 258</span></li>
                                 <li class="requisites-list__item"><span>Фактический адрес:</span><span>Московская область, Марушкинское, дер.Большое Покровское</span></li>
                                 <li class="requisites-list__item"><span>ИНН:</span><span>987654321</span></li>
@@ -886,24 +891,24 @@
                                 <li class="requisites-list__item"><span>р/сч:</span><span>407 000 100 200 300 400 60</span></li>
                                 <li class="requisites-list__item"><span>к/сч:</span><span>407 000 100 200 300</span></li>
                             </ul>
-                            <a href="javascript:void(0);" class="copy-link btn-style">Скопировать реквизиты</a>
+                            <a id="req_copy" href="javascript:void(0);" data-title="Скопировано" class="copy-link btn-style">Скопировать реквизиты</a>
                         </div>
                     </div>
                     <div class="facade-section">
                         <h2 class="facade-section__title page-title">Фасад <span>предприятия</span></h2>
                         <div class="facade-section__content">
                             <div class="facade-section__item">
-                                <a href="images/main/blocks/facade/facade_image1.jpg" class="modal-gallery">
+                                <a href="images/main/blocks/facade/facade_image1.jpg" data-fancybox="gallery" class="modal-gallery">
                                     <img src="images/main/blocks/facade/facade_image1.jpg" alt="facade" class="facade-image">
                                 </a>
                             </div>
                             <div class="facade-section__item">
-                                <a href="images/main/blocks/facade/facade_image1.jpg" class="modal-gallery">
+                                <a href="images/main/blocks/facade/facade_image1.jpg" data-fancybox="gallery" class="modal-gallery">
                                     <img src="images/main/blocks/facade/facade_image1.jpg" alt="facade" class="facade-image">
                                 </a>
                             </div>
                             <div class="facade-section__item">
-                                <a href="images/main/blocks/facade/facade_image1.jpg" class="modal-gallery">
+                                <a href="images/main/blocks/facade/facade_image1.jpg" data-fancybox="gallery" class="modal-gallery">
                                     <img src="images/main/blocks/facade/facade_image1.jpg" alt="facade" class="facade-image">
                                 </a>
                             </div>

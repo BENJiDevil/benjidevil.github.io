@@ -201,17 +201,22 @@
                             <i class="icon icon-cart"></i>
                         </span>
                             <span class="cart-info">
-                            <span class="count">15 товаров:</span>
+                            <span class="count">15 <span>товаров:</span></span>
                             <span class="price-result">585 000 ₽ </span>
                             </span>
                         </a>
                     </div>
+                    <button id="hamburger" class="hamburger hamburger--slider" type="button" style="display: none;">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
         <div class="header__content__menu">
             <div class="container">
-                <nav class="main-menu">
+                <nav id="mmenu" class="main-menu">
                     <ul class="main-menu__list">
                         <li class="main-menu__item submenu-item catalog-item">
                             <a href="#" class="main-menu__link">Каталог товаров</a>
@@ -802,6 +807,7 @@
             <ul class="catalog-layout__content">
                 <h1 class="calculate__title page-title"><span>Калькулятор</span> металлопроката</h1>
                 <aside class="catalog-layout__content__left-side">
+                    <span id="mside-menu" class="left-side-menu-title" style="display: none;">Меню</span>
                     <nav class="catalog-aside__menu">
                         <span class="aside-menu__title calc-menu-title">Выберите металлопрокат:</span>
                         <ul class="calc-menu__list">
@@ -907,9 +913,9 @@
                                     </div>
                                     <div class="input-group result-group">
                                         <div class="input-group select-group">
-                                            <select name="type">
+                                            <select name="type" class="choice-select">
                                                 <option value="Углеродистая сталь">Углеродистая сталь</option>
-                                                <option value="Углеродистая сталь 2">Углеродистая сталь 2</option>
+                                                <option value="Углеродистая сталь 2">Углеродистая сталь другая</option>
                                             </select>
                                         </div>
                                         <div class="input-group number-group">
@@ -947,43 +953,34 @@
                             </div>
                             <div class="tab-item" data-tab="reference">
                                 <form action="" class="calc-form">
-                                    <div class="input-group">
-                                        <label for="">ГОСТ, ТУ, Справочник</label>
-                                        <select name="" id="">
-                                            <option value="">ГОСТ 103-06, Стальной горячекатаный полосовой прокат</option>
-                                            <option value="">ГОСТ 103-06, Стальной горячекатаный полосовой прокат 2</option>
-                                            <option value="">ГОСТ 103-06, Стальной горячекатаный полосовой прокат 3</option>
+                                    <div class="input-group select-group">
+                                        <label for="gost_s">ГОСТ, ТУ, Справочник</label>
+                                        <select id="gost_s" name="gost_s" class="choice-select">
+                                            <option value="1">ГОСТ 103-06, Стальной горячекатаный полосовой прокат</option>
+                                            <option value="2">ГОСТ 103-06, Стальной горячекатаный полосовой прокат 2</option>
+                                            <option value="3">ГОСТ 103-06, Стальной горячекатаный полосовой прокат 3</option>
                                         </select>
                                     </div>
-                                    <div class="input-group">
-                                        <label for="">Материал</label>
-                                        <select name="" id="">
-                                            <option value="">Углеродистая сталь — 7850</option>
-                                            <option value="">Углеродистая сталь — 7850 2</option>
-                                            <option value="">Углеродистая сталь — 7850 3</option>
+                                    <div class="input-group select-group">
+                                        <label for="material_s">Материал</label>
+                                        <select id="material_s" name="material_s" class="choice-select">
+                                            <option value="1">Углеродистая сталь — 7850</option>
+                                            <option value="2">Углеродистая сталь — 7850 2</option>
+                                            <option value="3">Углеродистая сталь — 7850 3</option>
                                         </select>
                                     </div>
-                                    <div class="input-group">
-                                        <label for="">Сортамент / наименование проката</label>
-                                        <select name="" id="">
-                                            <option value="">25×11</option>
-                                            <option value="">25×11 2</option>
-                                            <option value="">25×11 3</option>
+                                    <div class="input-group select-group">
+                                        <label for="name_s">Сортамент / наименование проката</label>
+                                        <select name="name_s" id="name_s" class="choice-select">
+                                            <option value="0">25×11</option>
+                                            <option value="1">25×11 2</option>
+                                            <option value="2">25×11 3</option>
                                         </select>
                                     </div>
                                     <div class="input-group btn-group">
                                         <button type="submit" class="btn-style">Рассчитать</button>
                                     </div>
                                     <div class="result-group">
-                                        <div class="input-group">
-                                            <select name="type">
-                                                <option value="Углеродистая сталь">Углеродистая сталь</option>
-                                                <option value="Углеродистая сталь 2">Углеродистая сталь 2</option>
-                                            </select>
-                                        </div>
-                                        <div class="input-group">
-                                            <input type="text" name="density" placeholder="Плотность, кг/м3">
-                                        </div>
                                         <div class="input-group half-group">
                                             <input type="text" name="length" placeholder="Длина, м">
                                         </div>
