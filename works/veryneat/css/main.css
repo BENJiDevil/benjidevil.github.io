@@ -8,14 +8,6 @@
 }
 @font-face {
   font-family: Montserrat;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/MontserratBold/MontserratBold.eot);
-  src: url(../fonts/MontserratBold/MontserratBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratBold/MontserratBold.woff) format("woff"),url(../fonts/MontserratBold/MontserratBold.woff2) format("woff2"),url(../fonts/MontserratBold/MontserratBold.ttf) format("truetype")
-}
-@font-face {
-  font-family: Montserrat;
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -24,11 +16,11 @@
 }
 @font-face {
   font-family: Montserrat;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/MontserratMedium/MontserratMedium.eot);
-  src: url(../fonts/MontserratMedium/MontserratMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratMedium/MontserratMedium.woff) format("woff"),url(../fonts/MontserratMedium/MontserratMedium.woff2) format("woff2"),url(../fonts/MontserratMedium/MontserratMedium.ttf) format("truetype")
+  src: url(../fonts/MontserratBold/MontserratBold.eot);
+  src: url(../fonts/MontserratBold/MontserratBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratBold/MontserratBold.woff) format("woff"),url(../fonts/MontserratBold/MontserratBold.woff2) format("woff2"),url(../fonts/MontserratBold/MontserratBold.ttf) format("truetype")
 }
 @font-face {
   font-family: Montserrat;
@@ -37,6 +29,14 @@
   font-display: swap;
   src: url(../fonts/MontserratRegular/MontserratRegular.eot);
   src: url(../fonts/MontserratRegular/MontserratRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratRegular/MontserratRegular.woff) format("woff"),url(../fonts/MontserratRegular/MontserratRegular.woff2) format("woff2"),url(../fonts/MontserratRegular/MontserratRegular.ttf) format("truetype")
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/MontserratMedium/MontserratMedium.eot);
+  src: url(../fonts/MontserratMedium/MontserratMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratMedium/MontserratMedium.woff) format("woff"),url(../fonts/MontserratMedium/MontserratMedium.woff2) format("woff2"),url(../fonts/MontserratMedium/MontserratMedium.ttf) format("truetype")
 }
 @font-face {
   font-family: Montserrat;
