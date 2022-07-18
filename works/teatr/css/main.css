@@ -66,18 +66,18 @@
 @font-face {
   font-family: PlayfairDisplay;
   font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-  src: url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.eot);
-  src: url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.eot?#iefix) format("embedded-opentype"),url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.woff) format("woff"),url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.woff2) format("woff2"),url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.ttf) format("truetype")
-}
-@font-face {
-  font-family: PlayfairDisplay;
-  font-weight: 500;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/PlayfairDisplayMedium/PlayfairDisplayMedium.eot);
   src: url(../fonts/PlayfairDisplayMedium/PlayfairDisplayMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/PlayfairDisplayMedium/PlayfairDisplayMedium.woff) format("woff"),url(../fonts/PlayfairDisplayMedium/PlayfairDisplayMedium.woff2) format("woff2"),url(../fonts/PlayfairDisplayMedium/PlayfairDisplayMedium.ttf) format("truetype")
+}
+@font-face {
+  font-family: PlayfairDisplay;
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.eot);
+  src: url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.eot?#iefix) format("embedded-opentype"),url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.woff) format("woff"),url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.woff2) format("woff2"),url(../fonts/PlayfairDisplayMediumItalic/PlayfairDisplayMediumItalic.ttf) format("truetype")
 }
 @font-face {
   font-family: PlayfairDisplay;
@@ -190,7 +190,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  scrollbar-face-color: #41b2ff;
+  scrollbar-face-color: #25acf5;
   scrollbar-track-color: #e4f5fe
 }
 body::-webkit-scrollbar {
@@ -199,13 +199,13 @@ body::-webkit-scrollbar {
   border-radius: 0
 }
 body::-webkit-scrollbar-thumb {
-  background: #41b2ff;
+  background: #25acf5;
   border-radius: 0;
   -webkit-transition: background-color .3s;
   transition: background-color .3s
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: #25acf5
+  background: #009bef
 }
 body::-webkit-scrollbar-track {
   background: #e4f5fe;
@@ -250,14 +250,14 @@ body.overflow {
 }
 @media (max-width:420px) {
   .main-page {
-    padding: 2.5vh 0
+    padding: 80px 0 2.5vh
   }
 }
 .main-content__wrapper {
   padding: 50px 60px;
-  background: rgba(37,172,245,.25);
-  -webkit-backdrop-filter: blur(43.32px);
-  backdrop-filter: blur(43.32px);
+  background: rgba(0,155,239,.02);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
   max-width: 835px
 }
 @media (max-width:1024px) {
@@ -457,7 +457,7 @@ body.overflow {
   height: 30px;
   background-color: #fff;
   border-radius: 50%;
-  color: #41b2ff;
+  color: #25acf5;
   -webkit-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s;
@@ -473,7 +473,7 @@ body.overflow {
   }
 }
 .main-content .audio-wrapper__item .download__link:hover {
-  color: #25acf5
+  color: #009bef
 }
 .main-content .audio-wrapper__item .play-pause-btn {
   display: -webkit-inline-box;
@@ -485,7 +485,7 @@ body.overflow {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #25acf5;
+  background-color: #009bef;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -498,7 +498,7 @@ body.overflow {
   transition: background-color .3s
 }
 .main-content .audio-wrapper__item .play-pause-btn:hover {
-  background-color: #41b2ff
+  background-color: #25acf5
 }
 .main-content .audio-wrapper__item .play-pause-btn .icon-play {
   position: relative;
@@ -536,7 +536,7 @@ body.overflow {
   display: block;
   width: 100%;
   max-width: 240px;
-  background-color: #25acf5;
+  background-color: #009bef;
   -webkit-transition: background-color .3s;
   -o-transition: background-color .3s;
   transition: background-color .3s;
@@ -551,7 +551,7 @@ body.overflow {
   }
 }
 .main-content .btns-row .btn-style:hover {
-  background-color: #41b2ff
+  background-color: #25acf5
 }
 .main-content .btns-row .btn-style + .btn-style {
   margin-left: 30px
@@ -578,9 +578,9 @@ body.overflow {
 }
 .error-page__wrapper {
   padding: 60px;
-  background: rgba(37,172,245,.25);
-  -webkit-backdrop-filter: blur(43.32px);
-  backdrop-filter: blur(43.32px);
+  background: rgba(0,155,239,.02);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
   max-width: 835px;
   text-align: center;
   margin: 0 auto
@@ -617,7 +617,7 @@ body.overflow {
   width: 100%;
   max-width: 240px;
   margin: 60px auto 0;
-  background-color: #25acf5;
+  background-color: #009bef;
   -webkit-transition: background-color .3s;
   -o-transition: background-color .3s;
   transition: background-color .3s;
@@ -626,7 +626,7 @@ body.overflow {
   padding: 12px 10px
 }
 .error-page .btn-style:hover {
-  background-color: #41b2ff
+  background-color: #25acf5
 }
 .footer {
   padding: 33px 0;
@@ -673,7 +673,7 @@ body.overflow {
 }
 .footer__content .mail-link:hover,
 .footer__content .phone-link:hover {
-  color: #25acf5
+  color: #009bef
 }
 .footer__content .copyright {
   display: inline-block;
@@ -758,7 +758,7 @@ body.overflow {
   overflow-y: auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  scrollbar-face-color: #41b2ff;
+  scrollbar-face-color: #25acf5;
   scrollbar-track-color: #e4f5fe
 }
 .modal__container::-webkit-scrollbar {
@@ -767,13 +767,13 @@ body.overflow {
   border-radius: 0
 }
 .modal__container::-webkit-scrollbar-thumb {
-  background: #41b2ff;
+  background: #25acf5;
   border-radius: 0;
   -webkit-transition: background-color .3s;
   transition: background-color .3s
 }
 .modal__container::-webkit-scrollbar-thumb:hover {
-  background: #25acf5
+  background: #009bef
 }
 .modal__container::-webkit-scrollbar-track {
   background: #e4f5fe;
@@ -826,7 +826,7 @@ body.overflow {
   margin-top: 23px
 }
 .modal__content form .input-group.check-group a {
-  color: #41b2ff;
+  color: #25acf5;
   text-decoration: none
 }
 .modal__content form .input-group.check-group label input {
@@ -840,7 +840,7 @@ body.overflow {
 }
 .modal__content form .input-group.check-group label input:checked + span:before {
   color: #fff;
-  background-color: #41b2ff
+  background-color: #25acf5
 }
 .modal__content form .input-group.check-group label span {
   display: block;
@@ -862,7 +862,7 @@ body.overflow {
   height: 18px;
   border-radius: 3px;
   background-color: transparent;
-  border: 1px solid #41b2ff;
+  border: 1px solid #25acf5;
   position: absolute;
   top: -2px;
   left: 1px;
@@ -892,7 +892,7 @@ body.overflow {
   font-weight: 400;
   color: #06283d;
   padding: 14px;
-  border: 1px solid #25acf5;
+  border: 1px solid #009bef;
   border-radius: 5px;
   background-color: transparent;
   -webkit-transition: border-color .3s,color .3s;
@@ -950,7 +950,7 @@ body.overflow {
   color: #fff;
   display: block;
   width: 100%;
-  background-color: #25acf5;
+  background-color: #009bef;
   -webkit-transition: background-color .3s;
   -o-transition: background-color .3s;
   transition: background-color .3s;
@@ -961,7 +961,7 @@ body.overflow {
   border: none
 }
 .modal__content form .input-group button:hover {
-  background-color: #41b2ff
+  background-color: #25acf5
 }
 .about_modal .modal__container {
   max-width: 620px;
@@ -982,7 +982,7 @@ body.overflow {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #41b2ff;
+  background-color: #25acf5;
   position: absolute;
   bottom: -15px;
   left: 0
@@ -1028,7 +1028,7 @@ body.overflow {
   width: 100%;
   max-width: 240px;
   margin: 30px auto 0;
-  background-color: #25acf5;
+  background-color: #009bef;
   -webkit-transition: background-color .3s;
   -o-transition: background-color .3s;
   transition: background-color .3s;
@@ -1039,7 +1039,7 @@ body.overflow {
   border: none
 }
 .thanks_modal .thanks-button:hover {
-  background-color: #41b2ff
+  background-color: #25acf5
 }
 @-webkit-keyframes mmfadeIn {
   from {
