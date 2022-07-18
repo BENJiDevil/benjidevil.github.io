@@ -255,9 +255,9 @@ body.overflow {
 }
 .main-content__wrapper {
   padding: 50px 60px;
-  background: rgba(0,155,239,.02);
-  -webkit-backdrop-filter: blur(7px);
-  backdrop-filter: blur(7px);
+  background: rgba(0,155,239,.18);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   max-width: 835px
 }
 @media (max-width:1024px) {
@@ -578,9 +578,9 @@ body.overflow {
 }
 .error-page__wrapper {
   padding: 60px;
-  background: rgba(0,155,239,.02);
-  -webkit-backdrop-filter: blur(7px);
-  backdrop-filter: blur(7px);
+  background: rgba(0,155,239,.18);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   max-width: 835px;
   text-align: center;
   margin: 0 auto
