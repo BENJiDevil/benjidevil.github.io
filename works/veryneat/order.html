@@ -579,578 +579,274 @@
             </div>
         </div>
     </header>
-    <main class="catalog-page">
-        <div class="breadcrumbs">
-            <div class="container">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-                    <li class="breadcrumbs__item"><span class="breadcrumbs__current">FAQ</span></li>
-                </ul>
-            </div>
-        </div>
+    <main class="order-page">
         <div class="container">
-            <h1 class="catalog-page__title page-title">Повседневная одежда</h1>
-            <div class="catalog-page__filter">
-                <a href="javascript:void(0);" class="size-link">Определить свой размер</a>
-                <a href="javascript:void(0);" class="reset-filter-link" style="display: none;">Сбросить фильтры</a>
-                <a href="javascript:void(0);" class="filter-link">Фильтры <i class="icon icon-filter"></i></a>
-                <a href="javascript:void(0);" class="sort-link">Сортировка <i class="icon icon-sort"></i></a>
-                <div class="filter-block">
-                    <form class="filter-form" style="display: none;">
-                        <span class="filter-form__title">Фильтры</span>
-                        <div class="filter-form__checked">
-                            <span class="checked-value">Рубашки</span>
-                            <span class="checked-value">Свитера</span>
-                            <span class="checked-value">Куртки</span>
-                            <span class="checked-value">M</span>
-                            <span class="checked-value">Коричневый</span>
+            <h1 class="order-page__title page-title">Корзина</h1>
+            <div class="order-page__list">
+                <div class="order-page__list__item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <a href="#" class="product-name">Сорочка</a>
+                        <span class="article">АРТ 7002950M</span>
+                    </div>
+                    <div class="properties">
+                        <span class="properties__item">XL</span>
+                        <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                    </div>
+                    <div class="count-block">
+                        <div class="input-group count-group">
+                            <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-count_arrow"></i></a>
+                            <input type="text" class="count-input" readonly value="100">
+                            <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-count_arrow"></i></a>
                         </div>
-                        <div class="filter-form__section">
-                            <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Категории</a>
-                            <div class="section-list">
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Костюмы">
-                                        <span class="checkbox-name">Костюмы</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Блейзеры">
-                                        <span class="checkbox-name">Блейзеры</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Рубашки">
-                                        <span class="checkbox-name">Рубашки</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Футболки поло">
-                                        <span class="checkbox-name">Футболки поло</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Футболки">
-                                        <span class="checkbox-name">Футболки</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Толстовки">
-                                        <span class="checkbox-name">Толстовки</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Свитера">
-                                        <span class="checkbox-name">Свитера</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Кардиганы">
-                                        <span class="checkbox-name">Кардиганы</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Пальто">
-                                        <span class="checkbox-name">Пальто</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Куртки">
-                                        <span class="checkbox-name">Куртки</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Брюки">
-                                        <span class="checkbox-name">Брюки</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Джинсы">
-                                        <span class="checkbox-name">Джинсы</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Шорты">
-                                        <span class="checkbox-name">Шорты</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Жилетки">
-                                        <span class="checkbox-name">Жилетки</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Пляжная одежда">
-                                        <span class="checkbox-name">Пляжная одежда</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Нижнее белье">
-                                        <span class="checkbox-name">Нижнее белье</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="category" value="Домашняя одежда">
-                                        <span class="checkbox-name">Домашняя одежда</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                            </div>
+                        <a href="#" class="favorite-link"><i class="icon icon-heart_fill"></i></a>
+                    </div>
+                    <div class="price-block">
+                        <span class="price">1 749 ₽</span>
+                        <span class="oldprice">1 749 ₽</span>
+                    </div>
+                    <div class="delete-block">
+                        <a href="#" class="delete-product"><i class="icon icon-trash"></i></a>
+                    </div>
+                </div>
+                <div class="order-page__list__item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <a href="#" class="product-name">Сорочка</a>
+                        <span class="article">АРТ 7002950M</span>
+                    </div>
+                    <div class="properties">
+                        <span class="properties__item">XL</span>
+                        <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                    </div>
+                    <div class="count-block">
+                        <div class="input-group count-group">
+                            <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-count_arrow"></i></a>
+                            <input type="text" class="count-input" readonly>
+                            <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-count_arrow"></i></a>
                         </div>
-                        <div class="filter-form__section">
-                            <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Размер</a>
-                            <div class="section-list">
-                                <a href="javascript:void(0);" class="size-link"><i class="icon icon-info"></i> Как определить свой размер?</a>
-                                <div class="input-group size-group">
-                                    <label>
-                                        <input class="size-input" type="checkbox" value="XS">
-                                        <span class="size-name">XS</span>
-                                    </label>
-                                </div>
-                                <div class="input-group size-group">
-                                    <label>
-                                        <input class="size-input" type="checkbox" value="S">
-                                        <span class="size-name">S</span>
-                                    </label>
-                                </div>
-                                <div class="input-group size-group">
-                                    <label>
-                                        <input class="size-input" type="checkbox" value="M">
-                                        <span class="size-name">M</span>
-                                    </label>
-                                </div>
-                                <div class="input-group size-group">
-                                    <label>
-                                        <input class="size-input" type="checkbox" value="L">
-                                        <span class="size-name">L</span>
-                                    </label>
-                                </div>
-                                <div class="input-group size-group">
-                                    <label>
-                                        <input class="size-input" type="checkbox" value="XL">
-                                        <span class="size-name">XL</span>
-                                    </label>
-                                </div>
-                            </div>
+                        <a href="#" class="favorite-link"><i class="icon icon-heart_fill"></i></a>
+                    </div>
+                    <div class="price-block">
+                        <span class="price">1 749 ₽</span>
+                        <span class="oldprice">1 749 ₽</span>
+                    </div>
+                    <div class="delete-block">
+                        <a href="#" class="delete-product"><i class="icon icon-trash"></i></a>
+                    </div>
+                </div>
+                <div class="order-page__list__item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <a href="#" class="product-name">Сорочка</a>
+                        <span class="article">АРТ 7002950M</span>
+                    </div>
+                    <div class="properties">
+                        <span class="properties__item">XL</span>
+                        <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                    </div>
+                    <div class="count-block">
+                        <div class="input-group count-group">
+                            <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-count_arrow"></i></a>
+                            <input type="text" class="count-input" readonly>
+                            <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-count_arrow"></i></a>
                         </div>
-                        <div class="filter-form__section">
-                            <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Цена</a>
-                            <div class="section-list">
-                                <div class="input-group price-group">
-                                    <input type="text" class="price-input">
-                                </div>
-                            </div>
+                        <a href="#" class="favorite-link"><i class="icon icon-heart_fill"></i></a>
+                    </div>
+                    <div class="price-block">
+                        <span class="price">1 749 ₽</span>
+                        <span class="oldprice">1 749 ₽</span>
+                    </div>
+                    <div class="delete-block">
+                        <a href="#" class="delete-product"><i class="icon icon-trash"></i></a>
+                    </div>
+                </div>
+                <div class="order-page__list__item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <a href="#" class="product-name">Сорочка</a>
+                        <span class="article">АРТ 7002950M</span>
+                    </div>
+                    <div class="properties">
+                        <span class="properties__item">XL</span>
+                        <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                    </div>
+                    <div class="count-block">
+                        <div class="input-group count-group">
+                            <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-count_arrow"></i></a>
+                            <input type="text" class="count-input" readonly>
+                            <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-count_arrow"></i></a>
                         </div>
-                        <div class="filter-form__section">
-                            <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Цвет</a>
-                            <div class="section-list">
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Бежевый">
-                                        <span class="color-name">Бежевый</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Желтый">
-                                        <span class="color-name">Желтый</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Коричневый">
-                                        <span class="color-name">Коричневый</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Серый">
-                                        <span class="color-name">Серый</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Фиолетовый">
-                                        <span class="color-name">Фиолетовый</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Черный">
-                                        <span class="color-name">Черный</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Белый">
-                                        <span class="color-name">Белый</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Зеленый">
-                                        <span class="color-name">Зеленый</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Розовый">
-                                        <span class="color-name">Розовый</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Синий">
-                                        <span class="color-name">Синий</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group color-group">
-                                    <label>
-                                        <input class="color-input" type="checkbox" name="color" value="Хаки">
-                                        <span class="color-name">Хаки</span>
-                                        <span class="color-count">25</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-form__section">
-                            <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Сезон</a>
-                            <div class="section-list">
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="season" value="Зима">
-                                        <span class="checkbox-name">Зима</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="season" value="Весна">
-                                        <span class="checkbox-name">Весна</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="season" value="Осень">
-                                        <span class="checkbox-name">Осень</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="season" value="лето">
-                                        <span class="checkbox-name">лето</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-form__section">
-                            <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Материал (ткань)</a>
-                            <div class="section-list">
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="material" value="Искусственная кожа">
-                                        <span class="checkbox-name">Искусственная кожа</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="material" value="Искусственная замша">
-                                        <span class="checkbox-name">Искусственная замша</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="material" value="Кашемир">
-                                        <span class="checkbox-name">Кашемир</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="material" value="Лайкара">
-                                        <span class="checkbox-name">Лайкара</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="material" value="Лен">
-                                        <span class="checkbox-name">Лен</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="material" value="Микрофибра">
-                                        <span class="checkbox-name">Микрофибра</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                                <div class="input-group check-group">
-                                    <label>
-                                        <input class="check-input" type="checkbox" name="material" value="Натуральная замша">
-                                        <span class="checkbox-name">Натуральная замша</span>
-                                        <span class="checkbox-count">25</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-form__btn-section">
-                            <button class="filter-btn" type="submit">Применить</button>
-                        </div>
-                    </form>
+                        <a href="#" class="favorite-link"><i class="icon icon-heart_fill"></i></a>
+                    </div>
+                    <div class="price-block">
+                        <span class="price">1 749 ₽</span>
+                        <span class="oldprice">1 749 ₽</span>
+                    </div>
+                    <div class="delete-block">
+                        <a href="#" class="delete-product"><i class="icon icon-trash"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="catalog-page__content">
-                <div class="catalog-page__content__item product-item colors-item">
-                    <div class="image-block">
-                        <div class="colors-slider swiper">
-                            <div class="product-tags">
-                                <div class="product-tags__item sale-item">Sale — 20%</div>
-                                <div class="product-tags__item new-item">New</div>
-                            </div>
-                            <div class="swiper-wrapper">
-                                <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
-                                    <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
-                                </a>
-                                <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
-                                    <img src="images/main/main_page/catalogs/product_image2.jpg" alt="product" class="product-image">
-                                </a>
-                                <a href="#" class="product-link swiper-slide" data-color="#252426">
-                                    <img src="images/main/main_page/catalogs/product_image3.jpg" alt="product" class="product-image">
-                                </a>
-                            </div>
-                            <div class="colors-navigation">
-                                <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
-                                <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
-                            </div>
-                        </div>
-                        <div class="product-btns">
-                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                        </div>
-                    </div>
-                    <div class="descr-block">
-                        <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
-                        <div class="product-colors">
-                            <div class="colors-pagination"></div>
-                            <span class="product-colors__all">+19 цветов</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog-page__content__item product-item">
-                    <div class="image-block">
-                        <div class="product-tags">
-                            <div class="product-tags__item sale-item">Sale — 20%</div>
-                            <div class="product-tags__item new-item">New</div>
-                        </div>
-                        <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
-                        </a>
-                        <div class="product-btns">
-                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                        </div>
-                    </div>
-                    <div class="descr-block">
-                        <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
-                        <div class="product-colors">
-                            <div class="colors-pagination"></div>
-                            <span class="product-colors__all">+19 цветов</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog-page__content__item product-item">
-                    <div class="image-block">
-                        <div class="product-tags">
-                            <div class="product-tags__item sale-item">Sale — 20%</div>
-                            <div class="product-tags__item new-item">New</div>
-                        </div>
-                        <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
-                        </a>
-                        <div class="product-btns">
-                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                        </div>
-                    </div>
-                    <div class="descr-block">
-                        <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
-                        <div class="product-colors">
-                            <div class="colors-pagination"></div>
-                            <span class="product-colors__all">+19 цветов</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog-page__content__item product-item">
-                    <div class="image-block">
-                        <div class="product-tags">
-                            <div class="product-tags__item sale-item">Sale — 20%</div>
-                            <div class="product-tags__item new-item">New</div>
-                        </div>
-                        <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
-                        </a>
-                        <div class="product-btns">
-                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                        </div>
-                    </div>
-                    <div class="descr-block">
-                        <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
-                        <div class="product-colors">
-                            <div class="colors-pagination"></div>
-                            <span class="product-colors__all">+19 цветов</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog-page__content__item product-item">
-                    <div class="image-block">
-                        <div class="product-tags">
-                            <div class="product-tags__item sale-item">Sale — 20%</div>
-                            <div class="product-tags__item new-item">New</div>
-                        </div>
-                        <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
-                        </a>
-                        <div class="product-btns">
-                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                        </div>
-                    </div>
-                    <div class="descr-block">
-                        <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
-                        <div class="product-colors">
-                            <div class="colors-pagination"></div>
-                            <span class="product-colors__all">+19 цветов</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog-page__content__item product-item">
-                    <div class="image-block">
-                        <div class="product-tags">
-                            <div class="product-tags__item sale-item">Sale — 20%</div>
-                            <div class="product-tags__item new-item">New</div>
-                        </div>
-                        <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
-                        </a>
-                        <div class="product-btns">
-                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                        </div>
-                    </div>
-                    <div class="descr-block">
-                        <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
-                        <div class="product-colors">
-                            <div class="colors-pagination"></div>
-                            <span class="product-colors__all">+19 цветов</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog-page__content__pagination">
-                    <ul class="pagination-list">
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link active">01</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link">02</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link">03</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link">04</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link">05</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link">…</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link">24</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link"><i class="icon icon-pagination_arrow"></i></a></li>
-                    </ul>
-                </div>
+            <div class="order-page__links">
+                <a href="javascript:void(0);" data-micromodal-trigger="promocode" class="promo-link">Ввести промокод</a>
+                <a href="javascript:void(0);" class="clean-cart">Очистить корзину</a>
             </div>
-        </div>
-    </main>
-    <section class="catalog-subscribe subscribe-section">
-        <div class="container">
-            <div class="subscribe-section__content">
-                <h2 class="form-title">Присоединяйтесь к нам!</h2>
-                <form action="" class="subscribe-form">
+            <div class="order-page__checkout">
+                <h2 class="checkout__title page-title">Оформление заказа</h2>
+                <form action="" class="checkout-form">
                     <div class="input-group">
-                        <input type="email" name="email" placeholder="Ваш e-mail">
-                    </div>
-                    <div class="input-group check-group">
                         <label>
-                            <input type="checkbox" name="check" required>
-                            <span>СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ, С <a href="#">ДОГОВОРОМ ПУБЛИЧНОЙ ОФЕРТЫ</a> И <a href="#">ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ</a> ОЗНАКОМЛЕН И ПРИНИМАЮ</span>
+                            <span class="label-name">E-mail*</span>
+                            <input type="email" name="email" class="input-style required" required>
                         </label>
                     </div>
-                    <div class="input-group btn-group">
-                        <button type="submit" class="btn-fill-style black-style">Подписаться</button>
+                    <div class="input-group">
+                        <label>
+                            <span class="label-name">Имя*</span>
+                            <input type="text" name="fname" class="input-style name-input required" required>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label-name">Фамилия*</span>
+                            <input type="text" name="sname" class="input-style name-input required" required>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label-name">Телефон*</span>
+                            <input type="text" name="phone" class="input-style phone-input required" required>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label-name">Населенный пункт*</span>
+                            <input type="text" name="address" class="input-style required" required>
+                        </label>
+                    </div>
+                    <div class="input-group delivery-group">
+                        <span class="label-name">Способ доставки</span>
+                        <div class="group-side">
+                            <div class="input-group">
+                                <label>
+                                    <input type="radio" name="delivery" value="Курьером" checked>
+                                    <span class="label-name">Курьером — Бесплатно (1-4 рабочих дня)</span>
+                                    <span class="delivery-descr">
+                                    <p>Take a deep dive and try our list of over 40 unique generators, find placeholder images for your next design, or add a lorem ipsum plugin to the CMS or text editor of your choice.</p>
+                                </span>
+                                </label>
+                            </div>
+                            <div class="input-group">
+                                <label>
+                                    <input type="radio" name="delivery" value="Пункты выдачи CDEK, BoxBerry">
+                                    <span class="label-name">Пункты выдачи CDEK, BoxBerry — 190 ₽ (2-3 рабочих дня)</span>
+                                    <span class="delivery-descr">
+                                    <p>Take a deep dive and try our list of over 40 unique generators, find placeholder images for your next design, or add a lorem ipsum plugin to the CMS or text editor of your choice.</p>
+                                </span>
+                                </label>
+                            </div>
+                            <div class="input-group">
+                                <label>
+                                    <input type="radio" name="delivery" value="Самовывоз из магазина">
+                                    <span class="label-name">Самовывоз из магазина — бесплатно (2-3 рабочих дня)</span>
+                                    <span class="delivery-descr">
+                                    <p>Take a deep dive and try our list of over 40 unique generators, find placeholder images for your next design, or add a lorem ipsum plugin to the CMS or text editor of your choice.</p>
+                                </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label-name">Улица*</span>
+                            <input type="text" name="street" class="input-style required" required>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <span class="label-name">Улица*</span>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <input type="text" name="house" class="input-style" placeholder="Дом/корпус">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="float" class="input-style" placeholder="Квартира/офис">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group payment-group">
+                        <span class="label-name">Способ оплаты</span>
+                        <div class="group-side">
+                            <div class="input-group">
+                                <label>
+                                    <input type="radio" name="payment" value="Банковской картой" checked>
+                                    <span class="label-name">Банковской картой</span>
+                                    <span class="delivery-descr">
+                                    <p>Take a deep dive and try our list of over 40 unique generators, find placeholder images for your next design, or add a lorem ipsum plugin to the CMS or text editor of your choice.</p>
+                                </span>
+                                </label>
+                            </div>
+                            <div class="input-group">
+                                <label>
+                                    <input type="radio" name="payment" value="Наличными при получении">
+                                    <span class="label-name">Наличными при получении</span>
+                                    <span class="delivery-descr">
+                                    <p>Take a deep dive and try our list of over 40 unique generators, find placeholder images for your next design, or add a lorem ipsum plugin to the CMS or text editor of your choice.</p>
+                                </span>
+                                </label>
+                            </div>
+                            <div class="input-group">
+                                <label>
+                                    <input type="radio" name="payment" value="Банковской картой при получении">
+                                    <span class="label-name">Банковской картой при получении</span>
+                                    <span class="delivery-descr">
+                                    <p>Take a deep dive and try our list of over 40 unique generators, find placeholder images for your next design, or add a lorem ipsum plugin to the CMS or text editor of your choice.</p>
+                                </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label-name">Комментарий</span>
+                            <textarea name="message"></textarea>
+                        </label>
+                    </div>
+                    <div class="input-group result-group">
+                        <div class="result-group__summ">
+                            <span>Сумма заказа: <span class="value">5 916 ₽</span></span>
+                        </div>
+                        <div class="result-group__delivery">
+                            <span>Доставка: <span class="value">Бесплатно</span></span>
+                        </div>
+                        <div class="result-group__discount">
+                            <span>Скидка: <span class="value">0 ₽</span></span>
+                        </div>
+                        <div class="result-group__btn">
+                            <span>Итого: <span class="value">5 916 ₽</span></span>
+                            <button type="submit" class="btn-fill-style">Оформить заказ</button>
+                        </div>
                     </div>
                 </form>
             </div>
-            <div class="subscribe-section__social">
-                <ul class="social-list">
-                    <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-youtube"></i></a></li>
-                    <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk"></i></a></li>
-                    <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-inst"></i></a></li>
-                    <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tg"></i></a></li>
-                </ul>
-            </div>
         </div>
-    </section>
+    </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__menu">
