@@ -1633,7 +1633,8 @@
     margin-top: 62px
   }
   .fullpage-slider__wrapper > section .container {
-    min-height: calc(100vh - 62px)
+    min-height: calc(100vh - 62px);
+    min-height: calc(var(--vh,1vh) * 100 - 62px)
   }
   .fullpage-slider .video-section__title {
     margin-bottom: 15px
@@ -2448,6 +2449,7 @@
 @media (max-width:960px) {
   .text-page {
     height: calc(100vh - 62px);
+    height: calc(var(--vh,1vh) * 100 - 62px);
     margin-top: 62px
   }
 }

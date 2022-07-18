@@ -261,6 +261,11 @@ body.overflow {
   width: auto;
   max-width: 100%
 }
+@media (max-width:360px) {
+  .header__content .logo-link .logo-image {
+    max-width: 100px
+  }
+}
 .header__content .add-link {
   display: inline-block;
   color: #fff;
@@ -278,12 +283,9 @@ body.overflow {
     margin-left: 28px
   }
 }
-@media (max-width:360px) {
+@media (max-width:380px) {
   .header__content .logo-link:after {
     margin: 5px 0 5px 15px
-  }
-  .header__content .logo-link .logo-image {
-    max-width: 100px
   }
   .header__content .add-link {
     margin-left: 15px
@@ -741,7 +743,8 @@ body.overflow {
 @media (max-width:960px) {
   .main-banner {
     margin-top: 62px;
-    height: calc(100vh - 62px)
+    height: calc(100vh - 62px);
+    height: calc(var(--vh,1vh) * 100 - 62px)
   }
 }
 .main-banner .container {
