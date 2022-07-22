@@ -8,14 +8,6 @@
 }
 @font-face {
   font-family: Montserrat;
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/MontserratLight/MontserratLight.eot);
-  src: url(../fonts/MontserratLight/MontserratLight.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratLight/MontserratLight.woff) format("woff"),url(../fonts/MontserratLight/MontserratLight.woff2) format("woff2"),url(../fonts/MontserratLight/MontserratLight.ttf) format("truetype")
-}
-@font-face {
-  font-family: Montserrat;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -24,11 +16,11 @@
 }
 @font-face {
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/MontserratRegular/MontserratRegular.eot);
-  src: url(../fonts/MontserratRegular/MontserratRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratRegular/MontserratRegular.woff) format("woff"),url(../fonts/MontserratRegular/MontserratRegular.woff2) format("woff2"),url(../fonts/MontserratRegular/MontserratRegular.ttf) format("truetype")
+  src: url(../fonts/MontserratLight/MontserratLight.eot);
+  src: url(../fonts/MontserratLight/MontserratLight.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratLight/MontserratLight.woff) format("woff"),url(../fonts/MontserratLight/MontserratLight.woff2) format("woff2"),url(../fonts/MontserratLight/MontserratLight.ttf) format("truetype")
 }
 @font-face {
   font-family: Montserrat;
@@ -37,6 +29,14 @@
   font-display: swap;
   src: url(../fonts/MontserratMedium/MontserratMedium.eot);
   src: url(../fonts/MontserratMedium/MontserratMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratMedium/MontserratMedium.woff) format("woff"),url(../fonts/MontserratMedium/MontserratMedium.woff2) format("woff2"),url(../fonts/MontserratMedium/MontserratMedium.ttf) format("truetype")
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/MontserratRegular/MontserratRegular.eot);
+  src: url(../fonts/MontserratRegular/MontserratRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratRegular/MontserratRegular.woff) format("woff"),url(../fonts/MontserratRegular/MontserratRegular.woff2) format("woff2"),url(../fonts/MontserratRegular/MontserratRegular.ttf) format("truetype")
 }
 @font-face {
   font-family: Montserrat;
@@ -56,19 +56,19 @@
 }
 @font-face {
   font-family: Roboto;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/RobotoMedium/RobotoMedium.eot);
-  src: url(../fonts/RobotoMedium/RobotoMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoMedium/RobotoMedium.woff) format("woff"),url(../fonts/RobotoMedium/RobotoMedium.woff2) format("woff2"),url(../fonts/RobotoMedium/RobotoMedium.ttf) format("truetype")
-}
-@font-face {
-  font-family: Roboto;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/RobotoRegular/RobotoRegular.eot);
   src: url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(../fonts/RobotoRegular/RobotoRegular.woff2) format("woff2"),url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/RobotoMedium/RobotoMedium.eot);
+  src: url(../fonts/RobotoMedium/RobotoMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoMedium/RobotoMedium.woff) format("woff"),url(../fonts/RobotoMedium/RobotoMedium.woff2) format("woff2"),url(../fonts/RobotoMedium/RobotoMedium.ttf) format("truetype")
 }
 [class*=" icon-"]:before,
 [class^=icon-]:before {
@@ -292,7 +292,7 @@ body.overflow:after {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1
+  z-index: 9
 }
 .container {
   width: 100%;
@@ -345,9 +345,7 @@ body.overflow:after {
   }
 }
 .header__main {
-  background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.4)),to(rgba(0,0,0,0)));
-  background: -o-linear-gradient(top,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 100%);
-  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 100%);
+  background: rgba(86,86,86,.98);
   -webkit-transition: background .3s;
   -o-transition: background .3s;
   transition: background .3s;
@@ -816,6 +814,7 @@ body.overflow:after {
     width: 100vw;
     height: 48px;
     border-top: 1px solid rgba(242,242,242,.2);
+    background-color: rgba(86,86,86,.98);
     -webkit-transition: background .3s;
     -o-transition: background .3s;
     transition: background .3s
@@ -2190,7 +2189,8 @@ body.overflow:after {
   background-color: #565656;
   color: #fff;
   font-size: 16px;
-  line-height: 16px
+  line-height: 16px;
+  z-index: 1
 }
 .header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .image-block .product-btns .product-btn.addcart-link span {
   display: none
@@ -2232,11 +2232,35 @@ body.overflow:after {
   }
 }
 .header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .descr-block .product-price {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  width: 100%;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
   margin-bottom: 10px
+}
+.header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .descr-block .product-price .price {
+  color: #565656
+}
+.header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .descr-block .product-price .oldprice {
+  text-decoration: line-through;
+  color: #a8a8a8;
+  margin-left: 15px
+}
+.header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .descr-block .product-price .oldprice + .price {
+  color: #f25b30
 }
 .header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .descr-block .product-colors {
   text-align: center;
@@ -2646,6 +2670,15 @@ body.overflow:after {
 .header.scroll .header__main .hmain-menu__subcategories {
   background: rgba(86,86,86,.98)
 }
+.header.scroll .header__bottom {
+  padding: 10px 0;
+  background: rgba(86,86,86,.98)
+}
+.header.main-page-header .header__main {
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.4)),to(rgba(0,0,0,0)));
+  background: -o-linear-gradient(top,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 100%);
+  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 100%)
+}
 @media (min-width:1200px) {
   .header.scroll .header__main .hmain-menu__categories {
     margin-top: 0
@@ -2656,9 +2689,14 @@ body.overflow:after {
   .header.scroll .header__main .hmain-menu__wrapper:before {
     background-color: rgba(86,86,86,.98)
   }
+  .header.main-page-header .header__main .hmain-menu__subcategories {
+    background: 0 0
+  }
+  .header.main-page-header.scroll .hmain-menu__subcategories {
+    background: rgba(86,86,86,.98)
+  }
 }
-.header.scroll .header__bottom {
-  padding: 10px 0;
+.header.main-page-header.scroll .header__main {
   background: rgba(86,86,86,.98)
 }
 .mpage-main {

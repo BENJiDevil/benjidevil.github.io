@@ -582,31 +582,35 @@
     <main class="profile-page">
         <div class="container">
             <h1 class="profile-page__title page-title">Мои профиль</h1>
-            <div class="profile-page__info">
-                <div class="profile-page__info__item">
-                    <h3 class="item-title">Контакты</h3>
-                    <div class="item-content">
-                        <span class="phone">+7 999 999-99-99</span>
+            <div class="profile-page__profile-info">
+                <a href="javascript:void(0);" class="profile-info-link">ЛИЧНАЯ ИНФОРМАЦИЯ</a>
+                <div class="info-list">
+                    <div class="info-list__item">
+                        <h3 class="item-title">Контакты</h3>
+                        <div class="item-content">
+                            <span class="phone">+7 999 999-99-99</span>
+                        </div>
+                    </div>
+                    <div class="info-list__item">
+                        <h3 class="item-title">Адрес доставки</h3>
+                        <div class="item-content">
+                            <span class="adress">г. Москва, ул. Революции</span>
+                        </div>
+                    </div>
+                    <div class="info-list__item">
+                        <h3 class="item-title">Дата рождения</h3>
+                        <div class="item-content">
+                            <span class="date">17.02.1990</span>
+                        </div>
+                    </div>
+                    <div class="info-list__item">
+                        <h3 class="item-title">Бонусы</h3>
+                        <div class="item-content">
+                            <span class="bonus">102</span>
+                        </div>
                     </div>
                 </div>
-                <div class="profile-page__info__item">
-                    <h3 class="item-title">Адрес доставки</h3>
-                    <div class="item-content">
-                        <span class="adress">г. Москва, ул. Революции</span>
-                    </div>
-                </div>
-                <div class="profile-page__info__item">
-                    <h3 class="item-title">Дата рождения</h3>
-                    <div class="item-content">
-                        <span class="date">17.02.1990</span>
-                    </div>
-                </div>
-                <div class="profile-page__info__item">
-                    <h3 class="item-title">Бонусы</h3>
-                    <div class="item-content">
-                        <span class="bonus">102</span>
-                    </div>
-                </div>
+                <a href="javascript:void(0);" class="profile-info-link arrow-link"><i class="icon icon-select_arrow"></i></a>
             </div>
             <div class="profile-page__content">
                 <div class="profile-page__content__left-side">
@@ -614,7 +618,7 @@
                         <ul class="profile-menu__list">
                             <li class="profile-menu__item"><a href="#" class="profile-menu__link">Личные данные</a></li>
                             <li class="profile-menu__item"><a href="#" class="profile-menu__link">Заказы</a></li>
-                            <li class="profile-menu__item"><a href="#" class="profile-menu__link active">Избранное</a></li>
+                            <li class="profile-menu__item active"><a href="#" class="profile-menu__link">Избранное</a></li>
                             <li class="profile-menu__item"><a href="#" class="profile-menu__link">Выйти</a></li>
                         </ul>
                     </nav>
@@ -628,15 +632,19 @@
                         <div class="favorite-list__item">
                             <div class="image-block">
                                 <a href="#" class="product-link">
-                                    <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                                    <img src="images/main/favorite_page/favorite_item.jpg" alt="product-image" class="product-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <a href="#" class="product-name">Сорочка</a>
-                                <span class="article">АРТ 7002950M</span>
-                                <div class="properties">
-                                    <span class="properties__item">XL</span>
-                                    <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                <div class="info-block">
+                                    <a href="#" class="product-name">Сорочка</a>
+                                    <span class="article">АРТ 7002950M</span>
+                                    <div class="properties">
+                                        <span class="properties__item">XL</span>
+                                        <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                    </div>
+                                </div>
+                                <div class="size-block">
                                     <select name="size-select">
                                         <option value="Размер">Размер</option>
                                         <option value="Размер">Размер2</option>
@@ -649,21 +657,26 @@
                                 <span class="price">1 749 ₽</span>
                             </div>
                             <div class="btn-block">
-                                <a href="#" class="addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                                <a href="#" class="remove-link"><i class="icon-close"></i></a>
+                                <a href="#" class="addcart-link btn-fill-style"><i class="icon icon-cart"></i><span>В корзину</span></a>
                             </div>
                         </div>
                         <div class="favorite-list__item">
                             <div class="image-block">
                                 <a href="#" class="product-link">
-                                    <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                                    <img src="images/main/favorite_page/favorite_item.jpg" alt="product-image" class="product-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <a href="#" class="product-name">Сорочка</a>
-                                <span class="article">АРТ 7002950M</span>
-                                <div class="properties">
-                                    <span class="properties__item">XL</span>
-                                    <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                <div class="info-block">
+                                    <a href="#" class="product-name">Сорочка</a>
+                                    <span class="article">АРТ 7002950M</span>
+                                    <div class="properties">
+                                        <span class="properties__item">XL</span>
+                                        <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                    </div>
+                                </div>
+                                <div class="size-block">
                                     <select name="size-select">
                                         <option value="Размер">Размер</option>
                                         <option value="Размер">Размер2</option>
@@ -676,21 +689,26 @@
                                 <span class="price">1 749 ₽</span>
                             </div>
                             <div class="btn-block">
-                                <a href="#" class="addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                                <a href="#" class="remove-link"><i class="icon-close"></i></a>
+                                <a href="#" class="addcart-link btn-fill-style"><i class="icon icon-cart"></i><span>В корзину</span></a>
                             </div>
                         </div>
                         <div class="favorite-list__item">
                             <div class="image-block">
                                 <a href="#" class="product-link">
-                                    <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                                    <img src="images/main/favorite_page/favorite_item.jpg" alt="product-image" class="product-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <a href="#" class="product-name">Сорочка</a>
-                                <span class="article">АРТ 7002950M</span>
-                                <div class="properties">
-                                    <span class="properties__item">XL</span>
-                                    <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                <div class="info-block">
+                                    <a href="#" class="product-name">Сорочка</a>
+                                    <span class="article">АРТ 7002950M</span>
+                                    <div class="properties">
+                                        <span class="properties__item">XL</span>
+                                        <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                    </div>
+                                </div>
+                                <div class="size-block">
                                     <select name="size-select">
                                         <option value="Размер">Размер</option>
                                         <option value="Размер">Размер2</option>
@@ -703,21 +721,26 @@
                                 <span class="price">1 749 ₽</span>
                             </div>
                             <div class="btn-block">
-                                <a href="#" class="addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                                <a href="#" class="remove-link"><i class="icon-close"></i></a>
+                                <a href="#" class="addcart-link btn-fill-style"><i class="icon icon-cart"></i><span>В корзину</span></a>
                             </div>
                         </div>
                         <div class="favorite-list__item">
                             <div class="image-block">
                                 <a href="#" class="product-link">
-                                    <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                                    <img src="images/main/favorite_page/favorite_item.jpg" alt="product-image" class="product-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <a href="#" class="product-name">Сорочка</a>
-                                <span class="article">АРТ 7002950M</span>
-                                <div class="properties">
-                                    <span class="properties__item">XL</span>
-                                    <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                <div class="info-block">
+                                    <a href="#" class="product-name">Сорочка</a>
+                                    <span class="article">АРТ 7002950M</span>
+                                    <div class="properties">
+                                        <span class="properties__item">XL</span>
+                                        <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                    </div>
+                                </div>
+                                <div class="size-block">
                                     <select name="size-select">
                                         <option value="Размер">Размер</option>
                                         <option value="Размер">Размер2</option>
@@ -730,21 +753,26 @@
                                 <span class="price">1 749 ₽</span>
                             </div>
                             <div class="btn-block">
-                                <span class="unavailable">Закончилось/<span>Предзаказ</span></span>
+                                <a href="#" class="remove-link"><i class="icon-close"></i></a>
+                                <a href="#" class="addcart-link btn-fill-style"><i class="icon icon-cart"></i><span>В корзину</span></a>
                             </div>
                         </div>
                         <div class="favorite-list__item">
                             <div class="image-block">
                                 <a href="#" class="product-link">
-                                    <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                                    <img src="images/main/favorite_page/favorite_item.jpg" alt="product-image" class="product-image">
                                 </a>
                             </div>
                             <div class="descr-block">
-                                <a href="#" class="product-name">Сорочка</a>
-                                <span class="article">АРТ 7002950M</span>
-                                <div class="properties">
-                                    <span class="properties__item">XL</span>
-                                    <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                <div class="info-block">
+                                    <a href="#" class="product-name">Сорочка</a>
+                                    <span class="article">АРТ 7002950M</span>
+                                    <div class="properties">
+                                        <span class="properties__item">XL</span>
+                                        <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                    </div>
+                                </div>
+                                <div class="size-block">
                                     <select name="size-select">
                                         <option value="Размер">Размер</option>
                                         <option value="Размер">Размер2</option>
@@ -757,7 +785,8 @@
                                 <span class="price">1 749 ₽</span>
                             </div>
                             <div class="btn-block">
-                                <a href="#" class="addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                                <a href="#" class="remove-link"><i class="icon-close"></i></a>
+                                <a href="#" class="addcart-link btn-fill-style"><i class="icon icon-cart"></i><span>В корзину</span></a>
                             </div>
                         </div>
                     </div>
@@ -774,6 +803,10 @@
                     <div class="swiper-wrapper">
                         <div class="slide-item swiper-slide colors-item">
                             <div class="image-block">
+                                <div class="product-tags">
+                                    <div class="product-tags__item sale-item">M, S — 20%</div>
+                                    <div class="product-tags__item new-item">New</div>
+                                </div>
                                 <div class="colors-slider swiper">
                                     <div class="swiper-wrapper">
                                         <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
@@ -798,7 +831,10 @@
                             </div>
                             <div class="descr-block">
                                 <a href="#" class="product-name">Жакет женский</a>
-                                <span class="product-price">1 749 ₽</span>
+                                <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                <span class="price">1 749 ₽</span>
+                                </span>
                                 <div class="product-colors">
                                     <div class="colors-pagination"></div>
                                     <span class="product-colors__all">+19 цветов</span>
@@ -831,7 +867,10 @@
                             </div>
                             <div class="descr-block">
                                 <a href="#" class="product-name">Жакет женский</a>
-                                <span class="product-price">1 749 ₽</span>
+                                <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                <span class="price">1 749 ₽</span>
+                                </span>
                                 <div class="product-colors">
                                     <div class="colors-pagination"></div>
                                     <span class="product-colors__all">+19 цветов</span>
@@ -840,6 +879,10 @@
                         </div>
                         <div class="slide-item swiper-slide">
                             <div class="image-block">
+                                <div class="product-tags">
+                                    <div class="product-tags__item sale-item">M, S — 20%</div>
+                                    <div class="product-tags__item new-item">New</div>
+                                </div>
                                 <a href="#" class="product-link">
                                     <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
                                 </a>
@@ -850,7 +893,10 @@
                             </div>
                             <div class="descr-block">
                                 <a href="#" class="product-name">Жакет женский</a>
-                                <span class="product-price">1 749 ₽</span>
+                                <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                <span class="price">1 749 ₽</span>
+                                </span>
                                 <div class="product-colors"></div>
                             </div>
                         </div>
@@ -866,7 +912,10 @@
                             </div>
                             <div class="descr-block">
                                 <a href="#" class="product-name">Жакет женский</a>
-                                <span class="product-price">1 749 ₽</span>
+                                <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                <span class="price">1 749 ₽</span>
+                                </span>
                                 <div class="product-colors">
                                     <span class="product-colors__all">+19 цветов</span>
                                 </div>
@@ -884,7 +933,10 @@
                             </div>
                             <div class="descr-block">
                                 <a href="#" class="product-name">Жакет женский</a>
-                                <span class="product-price">1 749 ₽</span>
+                                <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                <span class="price">1 749 ₽</span>
+                                </span>
                                 <div class="product-colors"></div>
                             </div>
                         </div>
@@ -900,7 +952,10 @@
                             </div>
                             <div class="descr-block">
                                 <a href="#" class="product-name">Жакет женский</a>
-                                <span class="product-price">1 749 ₽</span>
+                                <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                <span class="price">1 749 ₽</span>
+                                </span>
                                 <div class="product-colors">
                                     <span class="product-colors__all">+19 цветов</span>
                                 </div>
@@ -965,32 +1020,121 @@
         </div>
         <a href="javascript:void(0);" id="scrlBtn" class="scroll-btn" style="transform: translateY(100px)"><i class="icon icon-select_arrow"></i></a>
     </footer>
-    <div id="cookie-modal" class="cookie-modal" style="transform: translateX(100vw);">
-        <div class="modal__content">
-            <h3 class="modal-title">Этот сайт использует cookies</h3>
-            <div class="modal-info">
-                <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic if you have given your consent.</p>
-            </div>
-            <div class="modal-btn">
-                <a href="javascript:void(0);" id="cookie-close" class="cookie-close-btn btn-outline-style">Понятно</a>
+    <div class="modal modal-sizes-table" id="modal-sizes" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Таблица размеров</h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                </header>
+                <main class="modal__content">
+                    <table class="sizes-table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>xs</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>2XL</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>3XL</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>4XL</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                    </table>
+                    <table class="sizes-parameters" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>Параметры</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Полуобхват груди</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Длина рукава</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Длина по центру спинки</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Длина плеча</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                    </table>
+                    <p class="info">Рукава измеряются: реглан — от воротника, втачной — от плечевого шва</p>
+                </main>
             </div>
         </div>
     </div>
     <div class="modal modal-cities" id="modal-cities" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
                 <header class="modal__header">
                     <h2 class="modal__title">Выберите ваш город</h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
                 </header>
-                <div class="modal__search">
+                <main class="modal__content">
                     <form action="" class="search-form">
                         <div class="input-group">
                             <input type="text" name="search-input" placeholder="Поиск города">
                         </div>
                     </form>
-                </div>
-                <main class="modal__content">
                     <ul class="cities-list">
                         <li class="cities-list__item"><a href="#" class="cities-list__link">Санкт-петербург</a></li>
                         <li class="cities-list__item"><a href="#" class="cities-list__link">Москва</a></li>
@@ -1018,7 +1162,9 @@
     <div class="modal modal-pass" id="modal-changepass" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                </header>
                 <main class="modal__content">
                     <form action="" class="change-pass">
                         <div class="input-group">
@@ -1041,22 +1187,81 @@
             </div>
         </div>
     </div>
+    <div class="modal modal-delete-product" id="modal-delete" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h2 class="modal__title">Удалить товар из корзины?</h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                </header>
+                <main class="modal__content">
+                    <a href="#" class="favorite-link btn-fill-style">Перенести в избранное</a>
+                    <a href="#" class="delete-link btn-outline-style">Удалить</a>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-remember-product" id="modal-remember" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                </header>
+                <main class="modal__content">
+                    <h2 class="modal__title">ПОЖАЛУЙСТА, СООБЩИТЕ МНЕ, КОГДА БУДЕТ ДОСТУПЕН МОЙ РАЗМЕР</h2>
+                    <p class="modal__subtitle">Если ваш размер станет доступен, мы уведомим вас по электронной почте. К сожалению, не все стили будут доступны после распродажи.</p>
+                    <div class="product-price">
+                        <span class="price-title">Цена</span>
+                        <span class="oldprice">1 199 ₽</span>
+                        <span class="price">1 199 ₽</span>
+                    </div>
+                    <form action="" class="remember-form">
+                        <div class="input-group">
+                            <label>
+                                <span class="label-name">Выберите свой размер</span>
+                                <select name="size">
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                <span class="label-name">ФИО*</span>
+                                <input type="text" name="name" class="input-style name-input required" required>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                <span class="label-name">E-mail*</span>
+                                <input type="email" name="mail" class="input-style required" required>
+                            </label>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-fill-style">Отправить</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
     <div class="modal modal-product" id="modal-product" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
                 <main class="modal__content">
                     <div class="modal__content__left-side">
-                        <img src="images/main/product/modal/product_image.jpg" alt="product-image" class="product-image">
-                        <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                        <img src="images/main/modal_image.jpg" alt="product-image" class="product-image">
+                        <a href="#" class="product-btn favorite-link"><i class="icon icon-heart_fill"></i></a>
                     </div>
                     <div class="modal__content__right-side">
                         <h2 class="product-title">Жакет женский</h2>
                         <span class="article">АРТ 7002950M</span>
                         <div class="product-price">
                             <span class="price-title">Цена</span>
-                            <span class="price">1 199 ₽</span>
                             <span class="oldprice">1 199 ₽</span>
+                            <span class="price">1 199 ₽</span>
                         </div>
                         <div class="product-properties">
                             <div class="product-properties__item properties-style">
@@ -1093,7 +1298,7 @@
                             </div>
                             <div class="product-properties__item properties-color">
                                 <span class="property-name">Цвет</span>
-                                <span class="property-value color-value">Белый</span>
+                                <span class="property-value color-value"><span style="background-color: #F3DE6E;"></span>Белый</span>
                             </div>
                             <div class="product-properties__item properties-color-list">
                                 <span class="property-name">Другой цвет</span>
@@ -1107,37 +1312,37 @@
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #D1A5A5;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #C8D1A5;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #A5CED1;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #B0A5D1;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Белый" checked>
-                                            <span class="color-item" style="background-color: #fff;"></span>
+                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #565656;"></span>
                                         </label>
                                     </div>
                                 </div>
@@ -1154,17 +1359,14 @@
             </div>
         </div>
     </div>
-    <div class="modal modal-delete-product" id="modal-delete" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
-                <header class="modal__header">
-                    <h2 class="modal__title">Удалить товар из корзины?</h2>
-                </header>
-                <main class="modal__content">
-                    <a href="#" class="favorite-link btn-fill-style">Перенести в избранное</a>
-                    <a href="#" class="delete-link btn-outline-style">Удалить</a>
-                </main>
+    <div id="cookie-modal" class="cookie-modal" style="transform: translateX(100vw);">
+        <div class="modal__content">
+            <h3 class="modal-title">Этот сайт использует cookies</h3>
+            <div class="modal-info">
+                <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic if you have given your consent.</p>
+            </div>
+            <div class="modal-btn">
+                <a href="javascript:void(0);" id="cookie-close" class="cookie-close-btn btn-outline-style">Понятно</a>
             </div>
         </div>
     </div>

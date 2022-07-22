@@ -583,28 +583,44 @@
         <div class="container">
             <div class="product-page__content">
                 <div class="product-page__content__left-side">
+                    <a href="/" class="catalog-link"><i class="icon icon-pagination_arrow"></i></a>
                     <div id="product-slider" class="swiper product-slider">
                         <div class="swiper-wrapper">
                             <div class="slide-item swiper-slide">
-                                <img src="images/main/product/main_image1.jpg" alt="product-image" class="product-image">
+                                <a href="images/main/product_page/product_image1.jpg" data-link="gallery" class="gallery-link">
+                                    <img src="images/main/product_page/product_image1.jpg" alt="product-image" class="product-image">
+                                </a>
                             </div>
                             <div class="slide-item swiper-slide">
-                                <video class="video-item" preload="1" poster="">
-                                    <source src="assets/videos/1.mp4" type="video/mp4">
-                                </video>
+                                <div class="video-wrapper">
+                                    <a href="javascript:void(0);" class="video-link">
+                                        <video class="video-item" preload="1" muted="muted" poster="images/main/product_page/product_image2.jpg">
+                                            <source src="assets/videos/1.mp4" type="video/mp4">
+                                        </video>
+                                    </a>
+                                </div>
                             </div>
                             <div class="slide-item swiper-slide">
-                                <img src="images/main/product/main_image1.jpg" alt="product-image" class="product-image">
+                                <a href="images/main/product_page/product_image2.jpg" data-link="gallery" class="gallery-link">
+                                    <img src="images/main/product_page/product_image2.jpg" alt="product-image" class="product-image">
+                                </a>
+                            </div>
+                            <div class="slide-item swiper-slide">
+                                <a href="images/main/product_page/product_image3.jpg" data-link="gallery" class="gallery-link">
+                                    <img src="images/main/product_page/product_image3.jpg" alt="product-image" class="product-image">
+                                </a>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <div class="product-page__content__right-side">
                     <div class="breadcrumbs">
                         <div class="container">
                             <ul class="breadcrumbs__list">
-                                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-                                <li class="breadcrumbs__item"><span class="breadcrumbs__current">FAQ</span></li>
+                                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">…</a></li>
+                                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">ПОВСЕДНЕВНАЯ ОДЕЖДА</a></li>
+                                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">МАЙКИ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -627,79 +643,84 @@
                                 </div>
                                 <div class="input-group count-group">
                                     <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-count_arrow"></i></a>
-                                    <input type="text" class="count-input" readonly>
+                                    <input type="text" class="count-input" value="1" readonly>
                                     <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-count_arrow"></i></a>
-                                    <a href="#" class="favorite-link"><i class="icon icon-heart_fill"></i></a>
                                 </div>
+                                <a href="#" class="favorite-link"><i class="icon icon-heart_fill"></i></a>
                             </form>
                         </div>
                     </div>
                     <div class="product-properties">
-                        <div class="product-properties__item properties-style">
+                        <div class="product-properties__item">
                             <span class="property-name">Стиль</span>
                             <span class="property-value">Платье</span>
                         </div>
-                        <div class="product-properties__item properties-consist">
+                        <div class="product-properties__item">
                             <span class="property-name">Состав</span>
                             <span class="property-value">Шерсть</span>
                         </div>
                         <div class="product-properties__item properties-size">
-                            <span class="property-name">Размер</span>
-                            <div class="input-group select-group">
-                                <select name="size">
-                                    <option value="1">Выбрать размер</option>
-                                    <option value="1">Выбрать размер</option>
-                                    <option value="1">Выбрать размер</option>
-                                </select>
-                                <a href="javascript:void(0);" class="size-info-link">Инфо о размере</a>
+                            <div class="select-row">
+                                <span class="property-name">Размер</span>
+                                <div class="input-group select-group">
+                                    <select name="size">
+                                        <option value="1">Выбрать размер</option>
+                                        <option value="1">Выбрать размер</option>
+                                        <option value="1">Выбрать размер</option>
+                                    </select>
+                                    <a href="javascript:void(0);" class="size-info-link">Инфо о размере</a>
+                                </div>
                             </div>
+                            <a href="javascript:void(0);" class="product-add-link btn-fill-style">В корзину</a>
                         </div>
                         <div class="product-properties__item properties-color">
                             <span class="property-name">Цвет</span>
-                            <span class="property-value color-value">Белый</span>
+                            <span class="property-value color-value"><span style="background-color: #fff;"></span>Белый</span>
                         </div>
                         <div class="product-properties__item properties-color-slider">
                             <div id="product-colors" class="product-colors swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slide-item">
                                         <a href="javascript:void(0);" class="slide-link">
-                                            <img src="images/main/product/colors/color_image1.jpg" alt="color" class="slide-image">
+                                            <img src="images/main/product_page/color_image.jpg" alt="color" class="slide-image">
                                             <span class="slide-title">Белый</span>
                                         </a>
                                     </div>
                                     <div class="swiper-slide slide-item">
                                         <a href="javascript:void(0);" class="slide-link active">
-                                            <img src="images/main/product/colors/color_image1.jpg" alt="color" class="slide-image">
+                                            <img src="images/main/product_page/color_image.jpg" alt="color" class="slide-image">
                                             <span class="slide-title">Розовый</span>
                                         </a>
                                     </div>
                                     <div class="swiper-slide slide-item">
-                                        <a href="javascript:void(0);" class="slide-link disabled ">
-                                            <img src="images/main/product/colors/color_image1.jpg" alt="color" class="slide-image">
+                                        <a href="javascript:void(0);" class="slide-link disabled">
+                                            <img src="images/main/product_page/color_image.jpg" alt="color" class="slide-image">
                                             <span class="slide-title">Черный</span>
                                         </a>
                                     </div>
                                     <div class="swiper-slide slide-item">
                                         <a href="javascript:void(0);" class="slide-link">
-                                            <img src="images/main/product/colors/color_image1.jpg" alt="color" class="slide-image">
+                                            <img src="images/main/product_page/color_image.jpg" alt="color" class="slide-image">
                                             <span class="slide-title">Зеленый</span>
                                         </a>
                                     </div>
                                     <div class="swiper-slide slide-item">
                                         <a href="javascript:void(0);" class="slide-link">
-                                            <img src="images/main/product/colors/color_image1.jpg" alt="color" class="slide-image">
+                                            <img src="images/main/product_page/color_image.jpg" alt="color" class="slide-image">
                                             <span class="slide-title">Синий</span>
                                         </a>
                                     </div>
                                     <div class="swiper-slide slide-item">
                                         <a href="javascript:void(0);" class="slide-link">
-                                            <img src="images/main/product/colors/color_image1.jpg" alt="color" class="slide-image">
+                                            <img src="images/main/product_page/color_image.jpg" alt="color" class="slide-image">
                                             <span class="slide-title">Серый</span>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-navigation"></div>
-                                <div class="swiper-pagination"></div>
+                                <div class="swiper-navigation" style="display: none;">
+                                    <div class="nav-btn btn-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="nav-btn btn-next"><i class="icon icon-slider_arrow"></i></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -707,12 +728,13 @@
                         <div class="descr-tab">
                             <h3 class="tab-title">Описание товара</h3>
                             <div class="tab-content">
-                            </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores consectetur corporis deleniti dolorem doloremque enim est, et eveniet exercitationem facere labore laboriosam libero optio placeat ratione repellat repudiandae sequi!</span><span>Aliquam asperiores cumque distinctio excepturi fugit ipsum molestias quidem voluptate. Alias, cupiditate ex facere itaque iure maiores sed similique voluptatem? Delectus ea exercitationem mollitia nostrum saepe. A blanditiis facilis molestiae!</span><span>Aspernatur consectetur maiores, placeat quam quibusdam ratione. Aperiam at consectetur dolor eaque eius, est fuga fugiat iusto neque numquam obcaecati provident quasi repudiandae sapiente soluta tempora totam velit veritatis voluptas.</span><span>Delectus deserunt earum exercitationem illum magni neque reiciendis sint voluptas. Aperiam assumenda autem ducimus eos et ex explicabo iste itaque necessitatibus neque nulla quaerat, quas quia, rerum sequi veritatis voluptatum?</span><span>Aliquam aliquid animi autem blanditiis consequatur deleniti dignissimos eos est et excepturi hic illum labore laboriosam laudantium, magnam mollitia nemo neque perferendis quis similique suscipit totam voluptate. Consequuntur, dolorum odit?</span><span>Beatae corporis deleniti eligendi excepturi, praesentium quae quibusdam quidem sapiente. Ab accusamus ad amet dolorum, esse et, fugiat labore molestias nostrum omnis qui quia quidem reiciendis rerum sed suscipit voluptas!</span><span>A amet animi delectus et exercitationem illum nam neque nobis nulla optio qui quia, quis quisquam repellat sunt veniam voluptatibus voluptatum. Aspernatur cum id provident ratione, sequi tempora ut voluptatum?</span><span>Accusamus animi aut blanditiis eaque explicabo fuga, fugiat ipsam labore laborum libero modi perspiciatis provident quis quos rem reprehenderit sint voluptas voluptates voluptatibus voluptatum. Doloremque ex labore molestiae possimus quos?</span><span>Incidunt molestias quae quas voluptas? Et fugiat ipsa necessitatibus porro reiciendis sint veniam veritatis! Accusantium alias asperiores blanditiis consequatur eos optio reprehenderit, rerum voluptates! Cupiditate dolorem similique tenetur! Libero, vero.</span><span>At eveniet itaque, libero nihil non numquam placeat quaerat, quis reiciendis, ut vitae voluptas? Accusantium aliquam at aut deserunt, dolorem excepturi nostrum nulla numquam perferendis, possimus temporibus totam voluptas voluptate?</p>
                         </div>
-                        <div class="descr-tab">
-                            <h3 class="tab-title">Таблица размеров</h3>
-                            <div class="tab-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur autem delectus deserunt doloremque doloribus, eius facilis fugiat hic ipsa magnam maiores molestias mollitia obcaecati reprehenderit tempora tenetur vero!</span><span>Distinctio doloremque esse, illo ipsa iste magnam, nostrum odit quam ratione saepe tempora tempore voluptas. Error esse in iusto molestiae natus officiis optio, quae quidem quo quos rem, repellendus voluptas.</span><span>Debitis, eaque error inventore ipsum iste natus neque nesciunt quis sed unde. Ducimus exercitationem hic impedit ipsam provident quod rem reprehenderit unde. Aperiam architecto consequuntur error reiciendis unde? Aspernatur, ea.</span><span>Aliquid autem commodi consequatur cupiditate dolorem eum numquam. Amet corporis debitis eligendi impedit molestiae officiis, suscipit. Ad eligendi esse incidunt laboriosam molestiae natus nisi omnis, quaerat quos tempore tenetur, ut.</span><span>Amet aspernatur consectetur consequuntur culpa dignissimos, dolore ea eaque esse harum hic magnam magni maxime molestias mollitia nostrum optio pariatur praesentium, quos reprehenderit tempora vel voluptas voluptate. Impedit odio, voluptas?</span><span>Asperiores aspernatur atque exercitationem fugit ipsam iusto nulla quasi recusandae, repellendus repudiandae sunt velit veniam voluptate. Accusamus deleniti modi placeat quo recusandae. Consequatur, corporis et impedit optio quisquam ratione vel!</span><span>Eos in pariatur ratione similique voluptas. Dolore incidunt maxime officiis placeat! Aliquam consectetur cupiditate deserunt dolorem eaque error fugit id iure laboriosam minus nobis perferendis possimus ratione repudiandae, unde. Laboriosam.</span><span>A commodi fugit harum hic nostrum perferendis quia? Aliquid aut deserunt eveniet explicabo id illo, perspiciatis recusandae repudiandae sed. Dolorem illo illum ipsam iste necessitatibus obcaecati quia rem similique voluptatibus.</span><span>Aut beatae cum delectus deleniti dignissimos ducimus facere impedit in itaque maiores nihil nobis nulla odit omnis optio pariatur perspiciatis quidem sequi similique vel vitae voluptas, voluptatem! Architecto, necessitatibus, tempora.</span><span>Ad, adipisci aliquid assumenda atque aut blanditiis consequatur culpa cumque debitis eaque, esse expedita fugiat ipsa minima, nihil numquam obcaecati perspiciatis quia quis quisquam reprehenderit velit veritatis voluptate. Tempore, veniam.</p>
+                    </div>
+                    <div class="descr-tab">
+                        <h3 class="tab-title">Таблица размеров</h3>
+                        <div class="tab-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur autem delectus deserunt doloremque doloribus, eius facilis fugiat hic ipsa magnam maiores molestias mollitia obcaecati reprehenderit tempora tenetur vero!</span><span>Distinctio doloremque esse, illo ipsa iste magnam, nostrum odit quam ratione saepe tempora tempore voluptas. Error esse in iusto molestiae natus officiis optio, quae quidem quo quos rem, repellendus voluptas.</span><span>Debitis, eaque error inventore ipsum iste natus neque nesciunt quis sed unde. Ducimus exercitationem hic impedit ipsam provident quod rem reprehenderit unde. Aperiam architecto consequuntur error reiciendis unde? Aspernatur, ea.</span><span>Aliquid autem commodi consequatur cupiditate dolorem eum numquam. Amet corporis debitis eligendi impedit molestiae officiis, suscipit. Ad eligendi esse incidunt laboriosam molestiae natus nisi omnis, quaerat quos tempore tenetur, ut.</span><span>Amet aspernatur consectetur consequuntur culpa dignissimos, dolore ea eaque esse harum hic magnam magni maxime molestias mollitia nostrum optio pariatur praesentium, quos reprehenderit tempora vel voluptas voluptate. Impedit odio, voluptas?</span><span>Asperiores aspernatur atque exercitationem fugit ipsam iusto nulla quasi recusandae, repellendus repudiandae sunt velit veniam voluptate. Accusamus deleniti modi placeat quo recusandae. Consequatur, corporis et impedit optio quisquam ratione vel!</span><span>Eos in pariatur ratione similique voluptas. Dolore incidunt maxime officiis placeat! Aliquam consectetur cupiditate deserunt dolorem eaque error fugit id iure laboriosam minus nobis perferendis possimus ratione repudiandae, unde. Laboriosam.</span><span>A commodi fugit harum hic nostrum perferendis quia? Aliquid aut deserunt eveniet explicabo id illo, perspiciatis recusandae repudiandae sed. Dolorem illo illum ipsam iste necessitatibus obcaecati quia rem similique voluptatibus.</span><span>Aut beatae cum delectus deleniti dignissimos ducimus facere impedit in itaque maiores nihil nobis nulla odit omnis optio pariatur perspiciatis quidem sequi similique vel vitae voluptas, voluptatem! Architecto, necessitatibus, tempora.</span><span>Ad, adipisci aliquid assumenda atque aut blanditiis consequatur culpa cumque debitis eaque, esse expedita fugiat ipsa minima, nihil numquam obcaecati perspiciatis quia quis quisquam reprehenderit velit veritatis voluptate. Tempore, veniam.</p>
                         </div>
                     </div>
                     <div class="descr-tab">
@@ -727,7 +749,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis eum quaerat sequi sit tenetur veritatis, voluptate. Accusamus commodi, eos iste itaque magnam nisi provident repellendus repudiandae sit! Et, perspiciatis!</span><span>Aperiam deserunt dolorum eligendi impedit ipsam libero maiores minus nesciunt, obcaecati optio quae quos ratione, repudiandae sit voluptas. Architecto delectus dolor doloribus et id itaque magnam necessitatibus quam reiciendis temporibus.</span><span>Aliquam asperiores aut cum cupiditate dolorum eos error illo ipsum, iste, quaerat recusandae rerum soluta voluptas? Ad aperiam facilis fugiat incidunt iusto laboriosam minima omnis, quam quia, quis rem voluptatem!</span><span>Accusamus asperiores consequuntur cumque dicta dolorem, esse et exercitationem fuga id ipsum neque nobis nulla numquam officiis optio pariatur perspiciatis, porro quae qui, quo repellendus temporibus ullam voluptate! Ipsum, voluptatem!</span><span>Accusamus distinctio harum hic, molestiae odit temporibus voluptates? Asperiores atque aut consequuntur eaque molestiae nam, natus nemo neque praesentium quae quam quo reiciendis reprehenderit sunt suscipit, ullam vero vitae voluptatum?</span><span>Blanditiis dolorum ducimus ipsum laudantium libero obcaecati perferendis provident ratione, repudiandae sapiente, soluta veniam. Asperiores blanditiis, cumque cupiditate doloremque earum, eius eum neque nobis nulla placeat, quaerat sed ut vero?</span><span>Amet corporis cupiditate eum repellendus ullam. Aspernatur et non omnis sit temporibus ut vero! Consectetur cumque illo incidunt iste labore neque nisi non perspiciatis quas, ratione similique temporibus ut voluptas?</span><span>Accusamus adipisci assumenda at consequatur, corporis dolor doloribus eius in ipsam iure laboriosam libero non numquam perferendis perspiciatis reiciendis veniam voluptatem? Aliquam cupiditate dignissimos et quam quidem quo ratione voluptatem.</span><span>Ducimus fuga molestiae natus quisquam sapiente. Amet atque autem cupiditate dolorem, fugit minima tempore velit voluptates. Ad at dicta fuga iure molestiae optio possimus rem rerum sint ullam. Excepturi, perspiciatis!</span><span>Alias dolores ea eius ipsa laboriosam nobis officiis, quidem repellat tempora totam. Cum cumque delectus exercitationem id illum, ipsum laudantium, modi necessitatibus nobis pariatur recusandae repellat sapiente tempora totam voluptatibus.</p>
                         </div>
                     </div>
-                    <div class="descr-tab">
+                    <div class="descr-tab active">
                         <h3 class="tab-title">Условия доставки</h3>
                         <div class="tab-content">
                             <p>Бесплатная доставка при заказе от 3 000 руб.</p>
@@ -735,7 +757,7 @@
                             <div class="delivery-info">
                                 <div class="delivery-info__item">
                                     <div class="icon-block">
-                                        <img src="images/main/delivery_icon1.svg" alt="icon" class="delivery-icon">
+                                        <img src="images/main/svg/delivery_icon1.svg" alt="icon" class="delivery-icon">
                                     </div>
                                     <div class="descr-block">
                                         <p>Курьерская доставка.</p>
@@ -744,7 +766,7 @@
                                 </div>
                                 <div class="delivery-info__item">
                                     <div class="icon-block">
-                                        <img src="images/main/delivery_icon2.svg" alt="icon" class="delivery-icon">
+                                        <img src="images/main/svg/delivery_icon2.svg" alt="icon" class="delivery-icon">
                                     </div>
                                     <div class="descr-block">
                                         <p>Пункты выдачи заказов и постаматы.</p>
@@ -753,7 +775,7 @@
                                 </div>
                                 <div class="delivery-info__item">
                                     <div class="icon-block">
-                                        <img src="images/main/delivery_icon3.svg" alt="icon" class="delivery-icon">
+                                        <img src="images/main/svg/delivery_icon3.svg" alt="icon" class="delivery-icon">
                                     </div>
                                     <div class="descr-block">
                                         <p>Самовывозом из магазина.</p>
@@ -772,30 +794,79 @@
     <div class="container">
         <h2 class="product-complete__title section-title">Завершите образ</h2>
         <div class="product-complete__content">
-            <div class="product-complete__content__left-side">
-                <img src="images/main/product/complete_main.jpg" alt="complete" class="main-image">
+            <div class="product-complete__content__left-side" style="display: none;">
+                <img src="images/main/product_page/complete_image.jpg" alt="complete" class="main-image">
             </div>
             <div class="product-complete__content__right-side">
-                <div class="complete-list">
-                    <div class="complete-list__item">
+                <div id="complete-slider" class="complete-list swiper">
+                    <div class="swiper-wrapper">
+                        <div class="complete-list__item swiper-slide colors-item slide-item">
+                            <div class="image-block">
+                                <div class="colors-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                            <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
+                                        </a>
+                                        <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                            <img src="images/main/main_page/catalogs/product_image32.jpg" alt="product" class="product-image">
+                                        </a>
+                                        <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                            <img src="images/main/main_page/catalogs/product_image33.jpg" alt="product" class="product-image">
+                                        </a>
+                                    </div>
+                                    <div class="colors-navigation">
+                                        <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                        <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="descr-block">
+                                <div class="info-block">
+                                    <a href="#" class="product-name">Жакет женский</a>
+                                    <span class="article">АРТ 7002950M</span>
+                                <div class="product-colors">
+                                    <div class="colors-pagination"></div>
+                                    <span class="product-colors__all">+19 цветов</span>
+                                </div>
+                            </div>
+                            <div class="size-block">
+                                <select name="size-select">
+                                    <option value="Размер">Размер</option>
+                                    <option value="Размер">Размер2</option>
+                                    <option value="Размер">Размер3</option>
+                                </select>
+                            </div>
+                            <div class="price-block">
+                                <span class="price-title">Цена</span>
+                                <span class="oldprice">1 749 ₽</span>
+                                <span class="price">1 749 ₽</span>
+                            </div>
+                            <div class="btn-block">
+                                <a href="#" class="addcart-link btn-fill-style">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complete-list__item swiper-slide slide-item">
                         <div class="image-block">
                             <a href="#" class="product-link">
-                                <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
+                                <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product-image" class="product-image">
                             </a>
                         </div>
                         <div class="descr-block">
-                            <a href="#" class="product-name">Сорочка</a>
-                            <span class="article">АРТ 7002950M</span>
-                                <div class="properties">
-                                    <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                            <div class="info-block">
+                                <a href="#" class="product-name">Жакет женский</a>
+                                <span class="article">АРТ 7002950M</span>
+                                <div class="product-colors">
+                                    <span class="product-colors__item single-color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                    <span class="product-colors__all">+19 цветов</span>
                                 </div>
-                                <div class="size-block">
-                                    <select name="size-select">
-                                        <option value="Размер">Размер</option>
-                                        <option value="Размер">Размер2</option>
-                                        <option value="Размер">Размер3</option>
-                                    </select>
-                                </div>
+                            </div>
+                            <div class="size-block">
+                                <select name="size-select">
+                                    <option value="Размер">Размер</option>
+                                    <option value="Размер">Размер2</option>
+                                    <option value="Размер">Размер3</option>
+                                </select>
                             </div>
                             <div class="price-block">
                                 <span class="price-title">Цена</span>
@@ -803,57 +874,45 @@
                                 <span class="price">1 749 ₽</span>
                             </div>
                             <div class="btn-block">
-                                <a href="#" class="addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                                <a href="#" class="addcart-link btn-fill-style">В корзину</a>
                             </div>
                         </div>
-                        <div class="complete-list__item">
-                            <div class="image-block">
-                                <a href="#" class="product-link">
-                                    <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
-                                </a>
-                            </div>
-                            <div class="descr-block">
-                                <a href="#" class="product-name">Сорочка</a>
-                                <span class="article">АРТ 7002950M</span>
-                                <div class="properties">
-                                    <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                    </div>
+                    <div class="complete-list__item swiper-slide colors-item slide-item">
+                        <div class="image-block">
+                            <div class="colors-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                        <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                        <img src="images/main/main_page/catalogs/product_image32.jpg" alt="product" class="product-image">
+                                    </a>
+                                    <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                        <img src="images/main/main_page/catalogs/product_image33.jpg" alt="product" class="product-image">
+                                    </a>
                                 </div>
-                                <div class="size-block">
-                                    <select name="size-select">
-                                        <option value="Размер">Размер</option>
-                                        <option value="Размер">Размер2</option>
-                                        <option value="Размер">Размер3</option>
-                                    </select>
+                                <div class="colors-navigation">
+                                    <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                    <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
                                 </div>
-                            </div>
-                            <div class="price-block">
-                                <span class="price-title">Цена</span>
-                                <span class="oldprice">1 749 ₽</span>
-                                <span class="price">1 749 ₽</span>
-                            </div>
-                            <div class="btn-block">
-                                <a href="#" class="addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
                             </div>
                         </div>
-                        <div class="complete-list__item">
-                            <div class="image-block">
-                                <a href="#" class="product-link">
-                                    <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
-                                </a>
-                            </div>
-                            <div class="descr-block">
-                                <a href="#" class="product-name">Сорочка</a>
+                        <div class="descr-block">
+                            <div class="info-block">
+                                <a href="#" class="product-name">Жакет женский</a>
                                 <span class="article">АРТ 7002950M</span>
-                                <div class="properties">
-                                    <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                <div class="product-colors">
+                                    <div class="colors-pagination"></div>
+                                    <span class="product-colors__all">+19 цветов</span>
                                 </div>
-                                <div class="size-block">
-                                    <select name="size-select">
-                                        <option value="Размер">Размер</option>
-                                        <option value="Размер">Размер2</option>
-                                        <option value="Размер">Размер3</option>
-                                    </select>
-                                </div>
+                            </div>
+                            <div class="size-block">
+                                <select name="size-select">
+                                    <option value="Размер">Размер</option>
+                                    <option value="Размер">Размер2</option>
+                                    <option value="Размер">Размер3</option>
+                                </select>
                             </div>
                             <div class="price-block">
                                 <span class="price-title">Цена</span>
@@ -861,28 +920,31 @@
                                 <span class="price">1 749 ₽</span>
                             </div>
                             <div class="btn-block">
-                                <a href="#" class="addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                                <a href="#" class="addcart-link btn-fill-style">В корзину</a>
                             </div>
                         </div>
-                        <div class="complete-list__item">
-                            <div class="image-block">
-                                <a href="#" class="product-link">
-                                    <img src="images/main/main_page/search/item_image.jpg" alt="product-image" class="product-image">
-                                </a>
-                            </div>
-                            <div class="descr-block">
-                                <a href="#" class="product-name">Сорочка</a>
+                    </div>
+                    <div class="complete-list__item swiper-slide slide-item">
+                        <div class="image-block">
+                            <a href="#" class="product-link">
+                                <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product-image" class="product-image">
+                            </a>
+                        </div>
+                        <div class="descr-block">
+                            <div class="info-block">
+                                <a href="#" class="product-name">Жакет женский</a>
                                 <span class="article">АРТ 7002950M</span>
-                                <div class="properties">
-                                    <span class="properties__color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                <div class="product-colors">
+                                    <span class="product-colors__item single-color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                    <span class="product-colors__all">+19 цветов</span>
                                 </div>
-                                <div class="size-block">
-                                    <select name="size-select">
-                                        <option value="Размер">Размер</option>
-                                        <option value="Размер">Размер2</option>
-                                        <option value="Размер">Размер3</option>
-                                    </select>
-                                </div>
+                            </div>
+                            <div class="size-block">
+                                <select name="size-select">
+                                    <option value="Размер">Размер</option>
+                                    <option value="Размер">Размер2</option>
+                                    <option value="Размер">Размер3</option>
+                                </select>
                             </div>
                             <div class="price-block">
                                 <span class="price-title">Цена</span>
@@ -890,12 +952,51 @@
                                 <span class="price">1 749 ₽</span>
                             </div>
                             <div class="btn-block">
-                                <a href="#" class="addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                                <a href="#" class="addcart-link btn-fill-style">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complete-list__item swiper-slide slide-item">
+                        <div class="image-block">
+                            <a href="#" class="product-link">
+                                <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product-image" class="product-image">
+                            </a>
+                        </div>
+                        <div class="descr-block">
+                            <div class="info-block">
+                                <a href="#" class="product-name">Жакет женский</a>
+                                <span class="article">АРТ 7002950M</span>
+                                <div class="product-colors">
+                                    <span class="product-colors__item single-color"><span style="background-color: #8A8972;"></span>Хаки</span>
+                                    <span class="product-colors__all">+19 цветов</span>
+                                </div>
+                            </div>
+                            <div class="size-block">
+                                <select name="size-select">
+                                    <option value="Размер">Размер</option>
+                                    <option value="Размер">Размер2</option>
+                                    <option value="Размер">Размер3</option>
+                                </select>
+                            </div>
+                            <div class="price-block">
+                                <span class="price-title">Цена</span>
+                                <span class="oldprice">1 749 ₽</span>
+                                <span class="price">1 749 ₽</span>
+                            </div>
+                            <div class="btn-block">
+                                <a href="#" class="addcart-link btn-fill-style">В корзину</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-navigation">
+                    <div class="nav-btn btn-prev"><i class="icon icon-slider_arrow"></i></div>
+                    <div class="nav-btn btn-next"><i class="icon icon-slider_arrow"></i></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
+        </div>
+        </div>
         </div>
         </section>
         <section class="recently-products product-similar">
@@ -906,6 +1007,10 @@
                         <div class="swiper-wrapper">
                             <div class="slide-item swiper-slide colors-item">
                                 <div class="image-block">
+                                    <div class="product-tags">
+                                        <div class="product-tags__item sale-item">M, S — 20%</div>
+                                        <div class="product-tags__item new-item">New</div>
+                                    </div>
                                     <div class="colors-slider swiper">
                                         <div class="swiper-wrapper">
                                             <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
@@ -930,7 +1035,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors">
                                         <div class="colors-pagination"></div>
                                         <span class="product-colors__all">+19 цветов</span>
@@ -963,7 +1071,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors">
                                         <div class="colors-pagination"></div>
                                         <span class="product-colors__all">+19 цветов</span>
@@ -972,6 +1083,10 @@
                             </div>
                             <div class="slide-item swiper-slide">
                                 <div class="image-block">
+                                    <div class="product-tags">
+                                        <div class="product-tags__item sale-item">M, S — 20%</div>
+                                        <div class="product-tags__item new-item">New</div>
+                                    </div>
                                     <a href="#" class="product-link">
                                         <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
                                     </a>
@@ -982,7 +1097,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors"></div>
                                 </div>
                             </div>
@@ -998,7 +1116,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors">
                                         <span class="product-colors__all">+19 цветов</span>
                                     </div>
@@ -1016,7 +1137,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors"></div>
                                 </div>
                             </div>
@@ -1032,7 +1156,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors">
                                         <span class="product-colors__all">+19 цветов</span>
                                     </div>
@@ -1056,6 +1183,10 @@
                         <div class="swiper-wrapper">
                             <div class="slide-item swiper-slide colors-item">
                                 <div class="image-block">
+                                    <div class="product-tags">
+                                        <div class="product-tags__item sale-item">M, S — 20%</div>
+                                        <div class="product-tags__item new-item">New</div>
+                                    </div>
                                     <div class="colors-slider swiper">
                                         <div class="swiper-wrapper">
                                             <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
@@ -1080,7 +1211,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors">
                                         <div class="colors-pagination"></div>
                                         <span class="product-colors__all">+19 цветов</span>
@@ -1113,7 +1247,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors">
                                         <div class="colors-pagination"></div>
                                         <span class="product-colors__all">+19 цветов</span>
@@ -1122,6 +1259,10 @@
                             </div>
                             <div class="slide-item swiper-slide">
                                 <div class="image-block">
+                                    <div class="product-tags">
+                                        <div class="product-tags__item sale-item">M, S — 20%</div>
+                                        <div class="product-tags__item new-item">New</div>
+                                    </div>
                                     <a href="#" class="product-link">
                                         <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
                                     </a>
@@ -1132,7 +1273,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors"></div>
                                 </div>
                             </div>
@@ -1148,7 +1292,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors">
                                         <span class="product-colors__all">+19 цветов</span>
                                     </div>
@@ -1166,7 +1313,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors"></div>
                                 </div>
                             </div>
@@ -1182,7 +1332,10 @@
                                 </div>
                                 <div class="descr-block">
                                     <a href="#" class="product-name">Жакет женский</a>
-                                    <span class="product-price">1 749 ₽</span>
+                                    <span class="product-price">
+                                <span class="oldprice">1 749 ₽</span>
+                                    <span class="price">1 749 ₽</span>
+                                    </span>
                                     <div class="product-colors">
                                         <span class="product-colors__all">+19 цветов</span>
                                     </div>
@@ -1247,32 +1400,121 @@
             </div>
             <a href="javascript:void(0);" id="scrlBtn" class="scroll-btn" style="transform: translateY(100px)"><i class="icon icon-select_arrow"></i></a>
         </footer>
-        <div id="cookie-modal" class="cookie-modal" style="transform: translateX(100vw);">
-            <div class="modal__content">
-                <h3 class="modal-title">Этот сайт использует cookies</h3>
-                <div class="modal-info">
-                    <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic if you have given your consent.</p>
-                </div>
-                <div class="modal-btn">
-                    <a href="javascript:void(0);" id="cookie-close" class="cookie-close-btn btn-outline-style">Понятно</a>
+        <div class="modal modal-sizes-table" id="modal-sizes" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true">
+                    <header class="modal__header">
+                        <h2 class="modal__title">Таблица размеров</h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                    </header>
+                    <main class="modal__content">
+                        <table class="sizes-table" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>xs</td>
+                                <td>42</td>
+                                <td>84/164-170</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>42</td>
+                                <td>84/164-170</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>42</td>
+                                <td>84/164-170</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>42</td>
+                                <td>84/164-170</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td>42</td>
+                                <td>84/164-170</td>
+                            </tr>
+                            <tr>
+                                <td>2XL</td>
+                                <td>42</td>
+                                <td>84/164-170</td>
+                            </tr>
+                            <tr>
+                                <td>3XL</td>
+                                <td>42</td>
+                                <td>84/164-170</td>
+                            </tr>
+                            <tr>
+                                <td>4XL</td>
+                                <td>42</td>
+                                <td>84/164-170</td>
+                            </tr>
+                        </table>
+                        <table class="sizes-parameters" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>Параметры</td>
+                                <td>42</td>
+                                <td>44</td>
+                                <td>46</td>
+                                <td>48</td>
+                                <td>50</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td>Полуобхват груди</td>
+                                <td>42</td>
+                                <td>44</td>
+                                <td>46</td>
+                                <td>48</td>
+                                <td>50</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td>Длина рукава</td>
+                                <td>42</td>
+                                <td>44</td>
+                                <td>46</td>
+                                <td>48</td>
+                                <td>50</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td>Длина по центру спинки</td>
+                                <td>42</td>
+                                <td>44</td>
+                                <td>46</td>
+                                <td>48</td>
+                                <td>50</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td>Длина плеча</td>
+                                <td>42</td>
+                                <td>44</td>
+                                <td>46</td>
+                                <td>48</td>
+                                <td>50</td>
+                                <td>52</td>
+                            </tr>
+                        </table>
+                        <p class="info">Рукава измеряются: реглан — от воротника, втачной — от плечевого шва</p>
+                    </main>
                 </div>
             </div>
         </div>
         <div class="modal modal-cities" id="modal-cities" aria-hidden="true">
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
                     <header class="modal__header">
                         <h2 class="modal__title">Выберите ваш город</h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
                     </header>
-                    <div class="modal__search">
+                    <main class="modal__content">
                         <form action="" class="search-form">
                             <div class="input-group">
                                 <input type="text" name="search-input" placeholder="Поиск города">
                             </div>
                         </form>
-                    </div>
-                    <main class="modal__content">
                         <ul class="cities-list">
                             <li class="cities-list__item"><a href="#" class="cities-list__link">Санкт-петербург</a></li>
                             <li class="cities-list__item"><a href="#" class="cities-list__link">Москва</a></li>
@@ -1300,7 +1542,9 @@
         <div class="modal modal-pass" id="modal-changepass" aria-hidden="true">
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
+                    <header class="modal__header">
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                    </header>
                     <main class="modal__content">
                         <form action="" class="change-pass">
                             <div class="input-group">
@@ -1323,22 +1567,81 @@
                 </div>
             </div>
         </div>
+        <div class="modal modal-delete-product" id="modal-delete" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <header class="modal__header">
+                        <h2 class="modal__title">Удалить товар из корзины?</h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                    </header>
+                    <main class="modal__content">
+                        <a href="#" class="favorite-link btn-fill-style">Перенести в избранное</a>
+                        <a href="#" class="delete-link btn-outline-style">Удалить</a>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-remember-product" id="modal-remember" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true">
+                    <header class="modal__header">
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                    </header>
+                    <main class="modal__content">
+                        <h2 class="modal__title">ПОЖАЛУЙСТА, СООБЩИТЕ МНЕ, КОГДА БУДЕТ ДОСТУПЕН МОЙ РАЗМЕР</h2>
+                        <p class="modal__subtitle">Если ваш размер станет доступен, мы уведомим вас по электронной почте. К сожалению, не все стили будут доступны после распродажи.</p>
+                        <div class="product-price">
+                            <span class="price-title">Цена</span>
+                            <span class="oldprice">1 199 ₽</span>
+                            <span class="price">1 199 ₽</span>
+                        </div>
+                        <form action="" class="remember-form">
+                            <div class="input-group">
+                                <label>
+                                    <span class="label-name">Выберите свой размер</span>
+                                    <select name="size">
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="input-group">
+                                <label>
+                                    <span class="label-name">ФИО*</span>
+                                    <input type="text" name="name" class="input-style name-input required" required>
+                                </label>
+                            </div>
+                            <div class="input-group">
+                                <label>
+                                    <span class="label-name">E-mail*</span>
+                                    <input type="email" name="mail" class="input-style required" required>
+                                </label>
+                            </div>
+                            <div class="input-group btn-group">
+                                <button type="submit" class="btn-fill-style">Отправить</button>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
         <div class="modal modal-product" id="modal-product" aria-hidden="true">
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                     <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
                     <main class="modal__content">
                         <div class="modal__content__left-side">
-                            <img src="images/main/product/modal/product_image.jpg" alt="product-image" class="product-image">
-                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                            <img src="images/main/modal_image.jpg" alt="product-image" class="product-image">
+                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart_fill"></i></a>
                         </div>
                         <div class="modal__content__right-side">
                             <h2 class="product-title">Жакет женский</h2>
                             <span class="article">АРТ 7002950M</span>
                             <div class="product-price">
                                 <span class="price-title">Цена</span>
-                                <span class="price">1 199 ₽</span>
                                 <span class="oldprice">1 199 ₽</span>
+                                <span class="price">1 199 ₽</span>
                             </div>
                             <div class="product-properties">
                                 <div class="product-properties__item properties-style">
@@ -1375,7 +1678,7 @@
                                 </div>
                                 <div class="product-properties__item properties-color">
                                     <span class="property-name">Цвет</span>
-                                    <span class="property-value color-value">Белый</span>
+                                    <span class="property-value color-value"><span style="background-color: #F3DE6E;"></span>Белый</span>
                                 </div>
                                 <div class="product-properties__item properties-color-list">
                                     <span class="property-name">Другой цвет</span>
@@ -1389,37 +1692,37 @@
                                         <div class="input-group">
                                             <label>
                                                 <input type="radio" name="color" value="Желтый">
-                                                <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                                <span class="color-item" style="background-color: #D1A5A5;"></span>
                                             </label>
                                         </div>
                                         <div class="input-group">
                                             <label>
                                                 <input type="radio" name="color" value="Желтый">
-                                                <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                                <span class="color-item" style="background-color: #C8D1A5;"></span>
                                             </label>
                                         </div>
                                         <div class="input-group">
                                             <label>
                                                 <input type="radio" name="color" value="Желтый">
-                                                <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                                <span class="color-item" style="background-color: #A5CED1;"></span>
                                             </label>
                                         </div>
                                         <div class="input-group">
                                             <label>
                                                 <input type="radio" name="color" value="Желтый">
-                                                <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                                <span class="color-item" style="background-color: #B0A5D1;"></span>
                                             </label>
                                         </div>
                                         <div class="input-group">
                                             <label>
                                                 <input type="radio" name="color" value="Белый" checked>
-                                                <span class="color-item" style="background-color: #fff;"></span>
+                                                <span class="color-item" style="background-color: #F3DE6E;"></span>
                                             </label>
                                         </div>
                                         <div class="input-group">
                                             <label>
                                                 <input type="radio" name="color" value="Желтый">
-                                                <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                                <span class="color-item" style="background-color: #565656;"></span>
                                             </label>
                                         </div>
                                     </div>
@@ -1436,17 +1739,14 @@
                 </div>
             </div>
         </div>
-        <div class="modal modal-delete-product" id="modal-delete" aria-hidden="true">
-            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
-                    <header class="modal__header">
-                        <h2 class="modal__title">Удалить товар из корзины?</h2>
-                    </header>
-                    <main class="modal__content">
-                        <a href="#" class="favorite-link btn-fill-style">Перенести в избранное</a>
-                        <a href="#" class="delete-link btn-outline-style">Удалить</a>
-                    </main>
+        <div id="cookie-modal" class="cookie-modal" style="transform: translateX(100vw);">
+            <div class="modal__content">
+                <h3 class="modal-title">Этот сайт использует cookies</h3>
+                <div class="modal-info">
+                    <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic if you have given your consent.</p>
+                </div>
+                <div class="modal-btn">
+                    <a href="javascript:void(0);" id="cookie-close" class="cookie-close-btn btn-outline-style">Понятно</a>
                 </div>
             </div>
         </div>

@@ -591,21 +591,25 @@
         <div class="container">
             <h1 class="catalog-page__title page-title">Повседневная одежда</h1>
             <div class="catalog-page__filter">
-                <a href="javascript:void(0);" class="size-link">Определить свой размер</a>
-                <a href="javascript:void(0);" class="reset-filter-link" style="display: none;">Сбросить фильтры</a>
-                <a href="javascript:void(0);" class="filter-link">Фильтры <i class="icon icon-filter"></i></a>
-                <a href="javascript:void(0);" class="sort-link">Сортировка <i class="icon icon-sort"></i></a>
-                <div class="filter-block">
-                    <form class="filter-form" style="display: none;">
-                        <span class="filter-form__title">Фильтры</span>
-                        <div class="filter-form__checked">
-                            <span class="checked-value">Рубашки</span>
-                            <span class="checked-value">Свитера</span>
-                            <span class="checked-value">Куртки</span>
-                            <span class="checked-value">M</span>
-                            <span class="checked-value">Коричневый</span>
-                        </div>
-                        <div class="filter-form__section">
+                <div class="container">
+                    <a href="javascript:void(0);" class="size-link" style="display: none;">Определить свой размер</a>
+                    <a href="javascript:void(0);" class="reset-filter-link" style="display: none;">Сбросить фильтры</a>
+                    <a href="javascript:void(0);" class="filter-btn filter-link">Фильтры <span>(5)</span> <i class="icon icon-filter"></i></a>
+                    <a href="javascript:void(0);" class="filter-btn sort-link">Сортировка <i class="icon icon-sort"></i></a>
+                </div>
+            </div>
+            <div id="filter-block" class="filter-block">
+                <form class="filter-form">
+                    <span class="filter-form__title">Фильтры</span>
+                    <div class="filter-form__checked">
+                        <span class="checked-value">Рубашки</span>
+                        <span class="checked-value">Свитера</span>
+                        <span class="checked-value">Куртки</span>
+                        <span class="checked-value">M</span>
+                        <span class="checked-value">Коричневый</span>
+                    </div>
+                    <div class="filter-form__main">
+                        <div class="filter-form__section active">
                             <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Категории</a>
                             <div class="section-list">
                                 <div class="input-group check-group">
@@ -729,10 +733,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="filter-form__section">
+                        <div class="filter-form__section active">
                             <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Размер</a>
-                            <div class="section-list">
-                                <a href="javascript:void(0);" class="size-link"><i class="icon icon-info"></i> Как определить свой размер?</a>
+                            <div class="section-list size-list">
+                                <a href="javascript:void(0);" class="size-link"><i class="icon icon-info"></i> <span>Как определить свой размер?</span></a>
                                 <div class="input-group size-group">
                                     <label>
                                         <input class="size-input" type="checkbox" value="XS">
@@ -765,97 +769,105 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="filter-form__section">
+                        <div class="filter-form__section active">
                             <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Цена</a>
                             <div class="section-list">
                                 <div class="input-group price-group">
-                                    <input type="text" class="price-input">
+                                    <div id="price-slider" class="price-slider" data-min="0" data-max="90000"></div>
+                                    <div class="price-handler price_from">
+                                        <input id="price_from" type="text" class="number-input" name="price_from">
+                                        <span id="price_from__value"></span>
+                                    </div>
+                                    <div class="price-handler price_to">
+                                        <input id="price_to" type="text" class="number-input" name="price_to">
+                                        <span id="price_to__value"></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="filter-form__section">
+                        <div class="filter-form__section active">
                             <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Цвет</a>
                             <div class="section-list">
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Бежевый">
-                                        <span class="color-name">Бежевый</span>
+                                        <span class="color-name"><span style="background-color: #D0C4A4;"></span>Бежевый</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Желтый">
-                                        <span class="color-name">Желтый</span>
+                                        <span class="color-name"><span style="background-color: #F3DE6E;"></span>Желтый</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Коричневый">
-                                        <span class="color-name">Коричневый</span>
+                                        <span class="color-name"><span style="background-color: #624126;"></span>Коричневый</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Серый">
-                                        <span class="color-name">Серый</span>
+                                        <span class="color-name"><span style="background-color: #000;"></span>Серый</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Фиолетовый">
-                                        <span class="color-name">Фиолетовый</span>
+                                        <span class="color-name"><span style="background-color: #000;"></span>Фиолетовый</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Черный">
-                                        <span class="color-name">Черный</span>
+                                        <span class="color-name"><span style="background-color: #000;"></span>Черный</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Белый">
-                                        <span class="color-name">Белый</span>
+                                        <span class="color-name"><span style="background-color: #000;"></span>Белый</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Зеленый">
-                                        <span class="color-name">Зеленый</span>
+                                        <span class="color-name"><span style="background-color: #000;"></span>Зеленый</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Розовый">
-                                        <span class="color-name">Розовый</span>
+                                        <span class="color-name"><span style="background-color: #000;"></span>Розовый</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Синий">
-                                        <span class="color-name">Синий</span>
+                                        <span class="color-name"><span style="background-color: #000;"></span>Синий</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                                 <div class="input-group color-group">
                                     <label>
                                         <input class="color-input" type="checkbox" name="color" value="Хаки">
-                                        <span class="color-name">Хаки</span>
+                                        <span class="color-name"><span style="background-color: #000;"></span>Хаки</span>
                                         <span class="color-count">25</span>
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="filter-form__section">
+                        <div class="filter-form__section active">
                             <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Сезон</a>
                             <div class="section-list">
                                 <div class="input-group check-group">
@@ -888,7 +900,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="filter-form__section">
+                        <div class="filter-form__section active">
                             <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Материал (ткань)</a>
                             <div class="section-list">
                                 <div class="input-group check-group">
@@ -942,29 +954,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="filter-form__btn-section">
-                            <button class="filter-btn" type="submit">Применить</button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <a id="filter-close-btn" href="javascript:void(0);" class="filter-close-btn btn-fill-style">Закрыть фильтры</a>
+                </form>
             </div>
             <div class="catalog-page__content">
                 <div class="catalog-page__content__item product-item colors-item">
                     <div class="image-block">
-                        <div class="colors-slider swiper">
+                        <div class="colors-slider-catalog swiper">
                             <div class="product-tags">
-                                <div class="product-tags__item sale-item">Sale — 20%</div>
+                                <div class="product-tags__item sale-item">M, S — 20%</div>
                                 <div class="product-tags__item new-item">New</div>
                             </div>
                             <div class="swiper-wrapper">
                                 <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
-                                    <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
+                                    <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
                                 </a>
                                 <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
-                                    <img src="images/main/main_page/catalogs/product_image2.jpg" alt="product" class="product-image">
+                                    <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
                                 </a>
                                 <a href="#" class="product-link swiper-slide" data-color="#252426">
-                                    <img src="images/main/main_page/catalogs/product_image3.jpg" alt="product" class="product-image">
+                                    <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
                                 </a>
                             </div>
                             <div class="colors-navigation">
@@ -979,8 +989,35 @@
                     </div>
                     <div class="descr-block">
                         <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
+                        <div class="product-colors">
+                            <div class="colors-pagination"></div>
+                            <span class="product-colors__all">+19 цветов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-page__content__item product-item">
+                    <div class="image-block">
+                        <div class="product-tags">
+                            <div class="product-tags__item new-item">New</div>
+                        </div>
+                        <a href="#" class="product-link swiper-slide">
+                            <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
+                        </a>
+                        <div class="product-btns">
+                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                        </div>
+                    </div>
+                    <div class="descr-block">
+                        <a href="#" class="product-name">Жакет женский</a>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
                         <div class="product-colors">
                             <div class="colors-pagination"></div>
                             <span class="product-colors__all">+19 цветов</span>
@@ -994,7 +1031,7 @@
                             <div class="product-tags__item new-item">New</div>
                         </div>
                         <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
+                            <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
                         </a>
                         <div class="product-btns">
                             <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
@@ -1003,8 +1040,10 @@
                     </div>
                     <div class="descr-block">
                         <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
                         <div class="product-colors">
                             <div class="colors-pagination"></div>
                             <span class="product-colors__all">+19 цветов</span>
@@ -1018,7 +1057,7 @@
                             <div class="product-tags__item new-item">New</div>
                         </div>
                         <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
+                            <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
                         </a>
                         <div class="product-btns">
                             <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
@@ -1027,8 +1066,10 @@
                     </div>
                     <div class="descr-block">
                         <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
                         <div class="product-colors">
                             <div class="colors-pagination"></div>
                             <span class="product-colors__all">+19 цветов</span>
@@ -1042,7 +1083,7 @@
                             <div class="product-tags__item new-item">New</div>
                         </div>
                         <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
+                            <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
                         </a>
                         <div class="product-btns">
                             <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
@@ -1051,8 +1092,10 @@
                     </div>
                     <div class="descr-block">
                         <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
                         <div class="product-colors">
                             <div class="colors-pagination"></div>
                             <span class="product-colors__all">+19 цветов</span>
@@ -1066,7 +1109,7 @@
                             <div class="product-tags__item new-item">New</div>
                         </div>
                         <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
+                            <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
                         </a>
                         <div class="product-btns">
                             <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
@@ -1075,8 +1118,50 @@
                     </div>
                     <div class="descr-block">
                         <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
+                        <div class="product-colors">
+                            <div class="colors-pagination"></div>
+                            <span class="product-colors__all">+19 цветов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-page__content__item product-item colors-item">
+                    <div class="image-block">
+                        <div class="colors-slider-catalog swiper">
+                            <div class="product-tags">
+                                <div class="product-tags__item sale-item">M, S — 20%</div>
+                                <div class="product-tags__item new-item">New</div>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                    <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
+                                </a>
+                                <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                    <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
+                                </a>
+                                <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                    <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
+                                </a>
+                            </div>
+                            <div class="colors-navigation">
+                                <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                            </div>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                        </div>
+                    </div>
+                    <div class="descr-block">
+                        <a href="#" class="product-name">Жакет женский</a>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
                         <div class="product-colors">
                             <div class="colors-pagination"></div>
                             <span class="product-colors__all">+19 цветов</span>
@@ -1086,11 +1171,10 @@
                 <div class="catalog-page__content__item product-item">
                     <div class="image-block">
                         <div class="product-tags">
-                            <div class="product-tags__item sale-item">Sale — 20%</div>
                             <div class="product-tags__item new-item">New</div>
                         </div>
                         <a href="#" class="product-link swiper-slide">
-                            <img src="images/main/main_page/catalogs/product_image1.jpg" alt="product" class="product-image">
+                            <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
                         </a>
                         <div class="product-btns">
                             <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
@@ -1099,8 +1183,75 @@
                     </div>
                     <div class="descr-block">
                         <a href="#" class="product-name">Жакет женский</a>
-                        <span class="product-price">1 749 ₽</span>
-                        <span class="product-oldprice">1 749 ₽</span>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
+                        <div class="product-colors">
+                            <div class="colors-pagination"></div>
+                            <span class="product-colors__all">+19 цветов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-page__content__item product-item colors-item">
+                    <div class="image-block">
+                        <div class="colors-slider-catalog swiper">
+                            <div class="product-tags">
+                                <div class="product-tags__item sale-item">M, S — 20%</div>
+                                <div class="product-tags__item new-item">New</div>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
+                                    <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
+                                </a>
+                                <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
+                                    <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
+                                </a>
+                                <a href="#" class="product-link swiper-slide" data-color="#252426">
+                                    <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
+                                </a>
+                            </div>
+                            <div class="colors-navigation">
+                                <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
+                                <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
+                            </div>
+                        </div>
+                        <div class="product-btns">
+                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                        </div>
+                    </div>
+                    <div class="descr-block">
+                        <a href="#" class="product-name">Жакет женский</a>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
+                        <div class="product-colors">
+                            <div class="colors-pagination"></div>
+                            <span class="product-colors__all">+19 цветов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-page__content__item product-item">
+                    <div class="image-block">
+                        <div class="product-tags">
+                            <div class="product-tags__item new-item">New</div>
+                        </div>
+                        <a href="#" class="product-link swiper-slide">
+                            <img src="images/main/catalog_page/catalog_image.jpg" alt="product" class="product-image">
+                        </a>
+                        <div class="product-btns">
+                            <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                            <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
+                        </div>
+                    </div>
+                    <div class="descr-block">
+                        <a href="#" class="product-name">Жакет женский</a>
+                        <span class="product-price">
+                        <span class="oldprice">1 749 ₽</span>
+                        <span class="price">1 749 ₽</span>
+                        </span>
                         <div class="product-colors">
                             <div class="colors-pagination"></div>
                             <span class="product-colors__all">+19 цветов</span>
@@ -1112,11 +1263,9 @@
                         <li class="pagination-list__item"><a href="#" class="pagination-list__link active">01</a></li>
                         <li class="pagination-list__item"><a href="#" class="pagination-list__link">02</a></li>
                         <li class="pagination-list__item"><a href="#" class="pagination-list__link">03</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link">04</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link">05</a></li>
                         <li class="pagination-list__item"><a href="#" class="pagination-list__link">…</a></li>
                         <li class="pagination-list__item"><a href="#" class="pagination-list__link">24</a></li>
-                        <li class="pagination-list__item"><a href="#" class="pagination-list__link"><i class="icon icon-pagination_arrow"></i></a></li>
+                        <li class="pagination-list__item last-item"><a href="#" class="pagination-list__link"><i class="icon icon-pagination_arrow"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -1200,32 +1349,121 @@
         </div>
         <a href="javascript:void(0);" id="scrlBtn" class="scroll-btn" style="transform: translateY(100px)"><i class="icon icon-select_arrow"></i></a>
     </footer>
-    <div id="cookie-modal" class="cookie-modal" style="transform: translateX(100vw);">
-        <div class="modal__content">
-            <h3 class="modal-title">Этот сайт использует cookies</h3>
-            <div class="modal-info">
-                <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic if you have given your consent.</p>
-            </div>
-            <div class="modal-btn">
-                <a href="javascript:void(0);" id="cookie-close" class="cookie-close-btn btn-outline-style">Понятно</a>
+    <div class="modal modal-sizes-table" id="modal-sizes" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Таблица размеров</h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                </header>
+                <main class="modal__content">
+                    <table class="sizes-table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>xs</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>2XL</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>3XL</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                        <tr>
+                            <td>4XL</td>
+                            <td>42</td>
+                            <td>84/164-170</td>
+                        </tr>
+                    </table>
+                    <table class="sizes-parameters" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>Параметры</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Полуобхват груди</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Длина рукава</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Длина по центру спинки</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>Длина плеча</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                        </tr>
+                    </table>
+                    <p class="info">Рукава измеряются: реглан — от воротника, втачной — от плечевого шва</p>
+                </main>
             </div>
         </div>
     </div>
     <div class="modal modal-cities" id="modal-cities" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
                 <header class="modal__header">
                     <h2 class="modal__title">Выберите ваш город</h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
                 </header>
-                <div class="modal__search">
+                <main class="modal__content">
                     <form action="" class="search-form">
                         <div class="input-group">
                             <input type="text" name="search-input" placeholder="Поиск города">
                         </div>
                     </form>
-                </div>
-                <main class="modal__content">
                     <ul class="cities-list">
                         <li class="cities-list__item"><a href="#" class="cities-list__link">Санкт-петербург</a></li>
                         <li class="cities-list__item"><a href="#" class="cities-list__link">Москва</a></li>
@@ -1253,7 +1491,9 @@
     <div class="modal modal-pass" id="modal-changepass" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                </header>
                 <main class="modal__content">
                     <form action="" class="change-pass">
                         <div class="input-group">
@@ -1276,22 +1516,81 @@
             </div>
         </div>
     </div>
+    <div class="modal modal-delete-product" id="modal-delete" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h2 class="modal__title">Удалить товар из корзины?</h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                </header>
+                <main class="modal__content">
+                    <a href="#" class="favorite-link btn-fill-style">Перенести в избранное</a>
+                    <a href="#" class="delete-link btn-outline-style">Удалить</a>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-remember-product" id="modal-remember" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-size_backarrow"></i></button>
+                </header>
+                <main class="modal__content">
+                    <h2 class="modal__title">ПОЖАЛУЙСТА, СООБЩИТЕ МНЕ, КОГДА БУДЕТ ДОСТУПЕН МОЙ РАЗМЕР</h2>
+                    <p class="modal__subtitle">Если ваш размер станет доступен, мы уведомим вас по электронной почте. К сожалению, не все стили будут доступны после распродажи.</p>
+                    <div class="product-price">
+                        <span class="price-title">Цена</span>
+                        <span class="oldprice">1 199 ₽</span>
+                        <span class="price">1 199 ₽</span>
+                    </div>
+                    <form action="" class="remember-form">
+                        <div class="input-group">
+                            <label>
+                                <span class="label-name">Выберите свой размер</span>
+                                <select name="size">
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                <span class="label-name">ФИО*</span>
+                                <input type="text" name="name" class="input-style name-input required" required>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                <span class="label-name">E-mail*</span>
+                                <input type="email" name="mail" class="input-style required" required>
+                            </label>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-fill-style">Отправить</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
     <div class="modal modal-product" id="modal-product" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
                 <main class="modal__content">
                     <div class="modal__content__left-side">
-                        <img src="images/main/product/modal/product_image.jpg" alt="product-image" class="product-image">
-                        <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
+                        <img src="images/main/modal_image.jpg" alt="product-image" class="product-image">
+                        <a href="#" class="product-btn favorite-link"><i class="icon icon-heart_fill"></i></a>
                     </div>
                     <div class="modal__content__right-side">
                         <h2 class="product-title">Жакет женский</h2>
                         <span class="article">АРТ 7002950M</span>
                         <div class="product-price">
                             <span class="price-title">Цена</span>
-                            <span class="price">1 199 ₽</span>
                             <span class="oldprice">1 199 ₽</span>
+                            <span class="price">1 199 ₽</span>
                         </div>
                         <div class="product-properties">
                             <div class="product-properties__item properties-style">
@@ -1328,7 +1627,7 @@
                             </div>
                             <div class="product-properties__item properties-color">
                                 <span class="property-name">Цвет</span>
-                                <span class="property-value color-value">Белый</span>
+                                <span class="property-value color-value"><span style="background-color: #F3DE6E;"></span>Белый</span>
                             </div>
                             <div class="product-properties__item properties-color-list">
                                 <span class="property-name">Другой цвет</span>
@@ -1342,37 +1641,37 @@
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #D1A5A5;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #C8D1A5;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #A5CED1;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #B0A5D1;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Белый" checked>
-                                            <span class="color-item" style="background-color: #fff;"></span>
+                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">
                                         <label>
                                             <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <span class="color-item" style="background-color: #565656;"></span>
                                         </label>
                                     </div>
                                 </div>
@@ -1389,17 +1688,14 @@
             </div>
         </div>
     </div>
-    <div class="modal modal-delete-product" id="modal-delete" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                <button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="icon icon-close"></i></button>
-                <header class="modal__header">
-                    <h2 class="modal__title">Удалить товар из корзины?</h2>
-                </header>
-                <main class="modal__content">
-                    <a href="#" class="favorite-link btn-fill-style">Перенести в избранное</a>
-                    <a href="#" class="delete-link btn-outline-style">Удалить</a>
-                </main>
+    <div id="cookie-modal" class="cookie-modal" style="transform: translateX(100vw);">
+        <div class="modal__content">
+            <h3 class="modal-title">Этот сайт использует cookies</h3>
+            <div class="modal-info">
+                <p>We use cookies to personalise content and ads, to provide social media features and to analyse our traffic if you have given your consent.</p>
+            </div>
+            <div class="modal-btn">
+                <a href="javascript:void(0);" id="cookie-close" class="cookie-close-btn btn-outline-style">Понятно</a>
             </div>
         </div>
     </div>
