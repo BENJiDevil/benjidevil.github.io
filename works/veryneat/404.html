@@ -46,10 +46,10 @@
     <link rel="preload" href="/fonts/RobotoBold/RobotoBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoMedium/RobotoMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoRegular/RobotoRegular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.min.css?v=24">
 </head>
 <body>
-    <header class="header">
+    <header class="header main-page-header">
         <div class="header__stock">
             <div class="container">
                 <p>Lorem ipsum is placeholder text commonly used -20%</p>
@@ -89,8 +89,8 @@
                         <ul class="subcategories-list show" data-category="category1">
                             <li class="subcategories-list__item submenu">
                                 <a href="#" class="subcategories-list__link active">Новинки</a>
-                                <div class="submenu-wrapper show">
-                                    <ul class="submenu-list">
+                                <div class="submenu-wrapper">
+                                    <ul class="submenu-list show">
                                         <li class="submenu-list__item"><a href="#" class="submenu-list__link">Базовый гардероб</a></li>
                                         <li class="submenu-list__item"><a href="#" class="submenu-list__link">Вся одежда</a></li>
                                         <li class="submenu-list__item"><a href="#" class="submenu-list__link">Куртки и жилеты</a></li>
@@ -440,7 +440,7 @@
                     <a href="#" class="b2b-link">B2B</a>
                 </div>
                 <ul class="profile-links">
-                    <li class="profile-links__item ">
+                    <li class="profile-links__item">
                         <a id="minicart-link" href="javascript:void(0);" class="profile-links__link"><i class="icon icon-cart_fill"></i></a>
                         <div id="minicart" class="minicart-content" style="transform: translateX(100vw); position: absolute;">
                             <a id="minicart-close" href="javascript:void(0);" class="minicart-close-link"><i class="icon icon-close"></i></a>
@@ -865,7 +865,7 @@
                         <div class="input-group">
                             <label>
                                 <span class="label-name">Выберите свой размер</span>
-                                <select name="size">
+                                <select name="size" class="choice-select">
                                     <option value="M">M</option>
                                     <option value="L">L</option>
                                     <option value="XL">XL</option>
@@ -1016,7 +1016,7 @@
             </div>
         </div>
     </div>
-    <link rel="stylesheet" href="css/styles.min.css">
-    <script defer src="js/common.min.js"></script>
+    <link rel="stylesheet" href="css/styles.min.css?v=24">
+    <script defer src="js/common.min.js?v=24"></script>
 </body>
 </html>
