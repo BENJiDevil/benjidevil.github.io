@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>exeed</title>
+    <meta name="description" content="exeed">
+    <meta name="keywords" content="exeed">
+    <meta name="author" content="exeed">
+    <meta name="image" content="images/preview.jpg">
+    <!-- OG -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="exeed">
+    <meta property="og:title" content="exeed">
+    <meta property="og:description" content="exeed">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://irkut-exeed.ru">
+    <!-- canonical -->
+    <link rel="canonical" href="https://irkut-exeed.ru">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <!-- app icon -->
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- app icon -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- browser settings -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!-- preload fonts -->
+    <link rel="preload" href="/fonts/MontserratBold/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MontserratLight/MontserratLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- critical styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <a href="/" class="logo-link">
+                <img src="images/main/svg/logo.svg" alt="exeed" class="logo-image">
+            </a>
+            <a href="#" class="add-link">AVTOGRAD EXEED</a>
+            <div id="mmenu" class="mobile-menu">
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">LX</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">TXL</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">TXL 2.0</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">VX</a></li>
+                    </ul>
+                </nav>
+                <div class="backcall-block">
+                    <a href="tel:+74822797987" class="phone-link">+7 (401-25) 6-58-03</a>
+                    <a href="#" class="add-link" style="display: none;">AVTOGRAD EXEED</a>
+                    <a href="#" class="profile-link" data-name="Личный кабинет"><i class="icon icon-user-icon"></i></a>
+                    <a href="javascript:void(0);" data-micromodal-trigger="modal-drive" class="test-link">Тест-драйв</a>
+                </div>
+            </div>
+            <button id="hamburger" class="hamburger hamburger--slider" type="button" style="display: none;">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+    <!-- main content -->
+    <div class="fullpage-slider">
+        <nav id="slider-menu" class="fullpage-slider__menu" style="transform: translateX(-100vw)">
+            <ul class="slider-menu__list"></ul>
+        </nav>
+        <div class="fullpage-slider__wrapper">
+            <section class="slider-item model-banner lazyload" data-bgset="images/bg/mobile/buy_image.jpg [(max-width: 575px)] | images/bg/pad/buy_image.jpg [(max-width: 1024px)] | images/bg/desk/buy_image.jpg [(min-width: 1025px)]">
+                <div class="video_wrapper">
+                    <video class="video-item" autoplay="autoplay" loop="loop" muted="muted" playsinline="1" preload="1" poster="">
+                        <source src="assets/videos/vx_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="container">
+                    <h1 class="model-banner__title">EXEED VX</h1>
+                    <span class="model-banner__price">от 4 879 000 ₽*</span>
+                    <a href="javascript:void(0);" class="model-btn btn-style btn-stroke-style white-style">Узнать больше</a>
+                </div>
+                <a href="javascript:void(0);" class="scroll-btn"><i class="icon icon-arrow-icon"></i></a>
+            </section>
+            <section data-name="Характеристики" class="slider-item features-section lazyload" data-bgset="images/bg/mobile/vx/vx_image.jpeg [(max-width: 575px)] | images/bg/pad/vx/vx_image.jpeg [(max-width: 1024px)] | images/bg/desk/vx/vx_image.jpeg [(min-width: 1025px)]">
+                <div class="container">
+                    <img src="images/main/vx/garant_icon.png" alt="garant" class="garant-image">
+                    <div class="features-section__car">
+                        <img src="images/main/vx/car.png" alt="car" class="car-image">
+                    </div>
+                    <div class="features-section__content">
+                        <div class="features-section__content__item">
+                            <div class="icon-block">
+                                <img src="images/main/svg/prop_icon32.svg" alt="icon" class="icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-descr">Полноразмерный внедорожник, мм <span class="number-update" data-step="70" data-value="4970">4970</span></h3>
+                            </div>
+                        </div>
+                        <div class="features-section__content__item">
+                            <div class="icon-block">
+                                <img src="images/main/svg/prop_icon33.svg" alt="icon" class="icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-descr">полноценных мест <span class="number-update" data-step="1" data-value="7">7</span></h3>
+                            </div>
+                        </div>
+                        <div class="features-section__content__item">
+                            <div class="icon-block">
+                                <img src="images/main/svg/ex_icon1.svg" alt="icon" class="icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-descr">Мощность, л. с. <span class="number-update" data-step="1" data-value="249">249</span></h3>
+                            </div>
+                        </div>
+                        <div class="features-section__content__item">
+                            <div class="icon-block">
+                                <img src="images/main/svg/ex_icon3.svg" alt="icon" class="icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-descr">Разгон до 100 км/ч, с <span class="number-update" data-step="0.5" data-value="8.5">8,5</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-name="Дизайн" class="slider-item info-section design-section">
+                <div class="video_wrapper">
+                    <video class="video-item" autoplay="autoplay" loop="loop" muted="muted" playsinline="1" preload="1" poster="">
+                        <source src="assets/videos/vx_design.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="container">
+                    <div class="info-section__content" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="1000">
+                        <h2 class="info-section__title section-title">ПРОГРЕССИВНЫЙ ДИЗАЙН</h2>
+                        <div class="info-section__descr">
+                            <p>Яркая и мощная внешность EXEED VX проглядывается в каждом элементе, выполненном с соблюдением эстетических догм автомобильного дизайна. А удлиненный силуэт автомобиля делает его стремительным и солидным.</p>
+                        </div>
+                        <a href="javascript:void(0);" data-micromodal-trigger="modal-design" class="modal-link btn-style btn-fill-style white-style">В деталях</a>
+                    </div>
+                </div>
+            </section>
+            <section data-name="Технологии" class="slider-item info-section technology-section">
+                <div class="video_wrapper">
+                    <video class="video-item" autoplay="autoplay" loop="loop" muted="muted" playsinline="1" preload="1" poster="">
+                        <source src="assets/videos/vx_tech.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="container">
+                    <div class="info-section__content" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="1000">
+                        <h2 class="info-section__title section-title">Флагманские технологии</h2>
+                        <div class="info-section__descr">
+                            <p>Добро пожаловать в Центр управления «полетом». Качество, удобство, смарт-технологии в передовом оснащении салона.</p>
+                        </div>
+                        <a href="javascript:void(0);" data-micromodal-trigger="modal-tech" class="modal-link btn-style btn-fill-style white-style">В деталях</a>
+                    </div>
+                </div>
+            </section>
+            <section data-name="Безопасность" class="slider-item info-section security-section lazyload" data-bgset="images/bg/mobile/vx/vx_image2.jpg [(max-width: 575px)] | images/bg/pad/vx/vx_image2.jpg [(max-width: 1024px)] | images/bg/desk/vx/vx_image2.jpg [(min-width: 1025px)]">
+                <div class="container">
+                    <div class="info-section__content" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="1000">
+                        <h2 class="info-section__title section-title">ПОЛНАЯ БЕЗОПАСНОСТЬ</h2>
+                        <div class="info-section__descr">
+                            <p>Прочная стальная капсула и «умные» системы активной безопасности последнего поколения обеспечивают EXEED VX настоящую флагманскую защиту в любых нештатных ситуациях.</p>
+                            <p><b>Наивысшая оценка C-NCAP.</b></p>
+                        </div>
+                        <a href="javascript:void(0);" data-micromodal-trigger="modal-security" class="modal-link btn-style btn-fill-style white-style">В деталях</a>
+                    </div>
+                </div>
+            </section>
+            <section data-name="Комфорт" class="slider-item info-section style-section lazyload" data-bgset="images/bg/mobile/vx/vx_image3.jpeg [(max-width: 575px)] | images/bg/pad/vx/vx_image3.jpeg [(max-width: 1024px)] | images/bg/desk/vx/vx_image3.jpeg [(min-width: 1025px)]">
+                <div class="container">
+                    <div class="info-section__content" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="1000">
+                        <h2 class="info-section__title section-title">ПРЕМИАЛЬНЫЙ КОМФОРТ</h2>
+                        <div class="info-section__descr">
+                            <p>EXEED VX создан для максимального погружения в атмосферу комфорта. Каждый пассажир ощущает удобство комфортабельных сидений, впечатляющее пространство для головы и ног, и высокое качество отделочных материалов. Конфигурация и возможности трансформации салона позволяют получить максимальное удовольствие на любых дорогах и в любой ситуации.</p>
+                        </div>
+                        <a href="javascript:void(0);" data-micromodal-trigger="modal-style" class="modal-link btn-style btn-fill-style white-style">В деталях</a>
+                    </div>
+                </div>
+            </section>
+            <section data-name="Динамика" class="slider-item info-section dynamics-section lazyload" data-bgset="images/bg/mobile/vx/vx_image4.jpeg [(max-width: 575px)] | images/bg/pad/vx/vx_image4.jpeg [(max-width: 1024px)] | images/bg/desk/vx/vx_image4.jpeg [(min-width: 1025px)]">
+                <div class="container">
+                    <div class="info-section__content" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="1000">
+                        <h2 class="info-section__title section-title">Динамика</h2>
+                        <div class="info-section__descr">
+                            <p>Синергия и мощь основных элементов создает автомобиль с превосходными динамическими характеристиками, отличной геометрической проходимостью и высочайшим уровнем комфорта.</p>
+                        </div>
+                        <a href="javascript:void(0);" data-micromodal-trigger="modal-dynamic" class="modal-link btn-style btn-fill-style white-style">В деталях</a>
+                    </div>
+                </div>
+            </section>
+            <section class="slider-item drive-section lazyload" data-bgset="images/bg/mobile/test_image.jpg [(max-width: 575px)] | images/bg/pad/test_image.jpg [(max-width: 1024px)] | images/bg/desk/test_image.jpg [(min-width: 1025px)]">
+                <div class="container">
+                    <div class="drive-section__content" data-swiper-parallax="-100%" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="1000">
+                        <h2 class="drive-section__title section-title">Пройдите тест-драйв</h2>
+                        <div class="drive-section__descr">
+                            <p>Попробуйте новый полноразмерный внедорожник EXEED VX в деле! Запишитесь на пробную поездку в ближайший официальный дилерский центр и получите персональное предложение на покупку на особых условиях.</p>
+                        </div>
+                        <a href="#" class="test-link btn-style btn-stroke-style white-style">запись на тест-драйв</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="scroll-btn"><i class="icon icon-arrow-icon"></i></a>
+            </section>
+            <section class="slider-item auto-section">
+                <div class="container">
+                    <div class="auto-section__content">
+                        <div class="auto-section__content__item">
+                            <h2 class="item-title section-title">EXEED VX LUXURY</h2>
+                            <div class="image-block">
+                                <img src="images/main/vx/vx_auto1.jpg" alt="image" class="item-image">
+                            </div>
+                            <div class="descr-block">
+                                <span class="price">от 4 879 900 ₽*</span>
+                            </div>
+                        </div>
+                        <div class="auto-section__content__item">
+                            <h2 class="item-title section-title">EXEED VX PRESIDENT</h2>
+                            <div class="image-block">
+                                <img src="images/main/vx/vx_auto2.jpg" alt="image" class="item-image">
+                            </div>
+                            <div class="descr-block">
+                                <span class="price">от 5 249 900 ₽*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auto-section__btns">
+                        <a href="#" class="more-link btn-style btn-fill-style black-style">Узнать больше</a>
+                    </div>
+                    <div class="auto-section__info">
+                        <p>* Максимальная цена перепродажи с учетом маркетинговых акций. Не оферта. Подробности уточняйте у официальных дилеров ЭКСИД.</p>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer slider-item">
+                <div class="container">
+                    <div class="footer__top">
+                        <a href="/" class="logo-link">
+                            <img src="images/main/svg/logo.svg" alt="exeed" class="logo-image">
+                        </a>
+                        <a href="#" class="add-link">AVTOGRAD EXEED</a>
+                        <nav class="footer-menu">
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">LX</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">TXL</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">TXL 2.0</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">VX</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__bottom">
+                        <a href="tel:+74012565803" class="phone-link"><span>Телефон:</span>+7 (401-25) 6-58-03</a>
+                        <address>
+                            <span>Адрес салона:</span>
+                            Калининград, ул. Большая окружная, 9
+                        </address>
+                        <ul class="social-list">
+                            <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-inst-icon"></i></a></li>
+                            <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk-icon"></i></a></li>
+                            <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-fb-icon"></i></a></li>
+                            <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-yt-icon"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__copyright">
+                        <p>© 2022 AVTOGRAD EXEED. Официальный дилерский центр EXEED в Калининграде.</p>
+                        <a href="#" class="privacy-link">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="fullpage-slider__scroll"></div>
+    </div>
+    <!-- main end content -->
+    <!-- modals -->
+    <div class="modal micromodal-slide" id="modal-design" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Яркий дизайн</h2>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <div class="modal-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image1.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Спортивный стиль</h3>
+                                    <div class="slide-descr">
+                                        <p>Спортивный стиль LX подчеркивает эффектный динамичный силуэт и яркие элементы внешней отделки.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image2.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Светодиодная оптика</h3>
+                                    <div class="slide-descr">
+                                        <p>Все исполнения премиального внедорожника оснащены полностью светодиодной головной оптикой. С электрической регулировкой светового потока по высоте. По LED-технологии выполнены и интегрированные в блок-фару дневные ходовые огни.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image3.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Большая панорамная крыша</h3>
+                                    <div class="slide-descr">
+                                        <p>Панорамная крыша подчеркивает ощущение пространства и света. Площадь остекления составляет около 1 м². Шторка крыши защищает от нагрева, затемняет салон.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image4.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Интересные детали и шины 19»</h3>
+                                    <div class="slide-descr">
+                                        <p>19» литые двухцветные диски, расширители колесных арок, эффектная решетка радиатора создают спортивный образ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-navigation">
+                            <span class="nav-btn btn-prev"><i class="icon icon-arrow-icon"></i></span>
+                            <span class="nav-btn btn-next"><i class="icon icon-arrow-icon"></i></span>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-style" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Яркий дизайн</h2>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <div class="modal-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image1.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Спортивный стиль</h3>
+                                    <div class="slide-descr">
+                                        <p>Спортивный стиль LX подчеркивает эффектный динамичный силуэт и яркие элементы внешней отделки.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image2.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Светодиодная оптика</h3>
+                                    <div class="slide-descr">
+                                        <p>Все исполнения премиального внедорожника оснащены полностью светодиодной головной оптикой. С электрической регулировкой светового потока по высоте. По LED-технологии выполнены и интегрированные в блок-фару дневные ходовые огни.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image3.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Большая панорамная крыша</h3>
+                                    <div class="slide-descr">
+                                        <p>Панорамная крыша подчеркивает ощущение пространства и света. Площадь остекления составляет около 1 м². Шторка крыши защищает от нагрева, затемняет салон.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image4.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Интересные детали и шины 19»</h3>
+                                    <div class="slide-descr">
+                                        <p>19» литые двухцветные диски, расширители колесных арок, эффектная решетка радиатора создают спортивный образ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-navigation">
+                            <span class="nav-btn btn-prev"><i class="icon icon-arrow-icon"></i></span>
+                            <span class="nav-btn btn-next"><i class="icon icon-arrow-icon"></i></span>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-security" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Яркий дизайн</h2>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <div class="modal-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image1.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Спортивный стиль</h3>
+                                    <div class="slide-descr">
+                                        <p>Спортивный стиль LX подчеркивает эффектный динамичный силуэт и яркие элементы внешней отделки.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image2.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Светодиодная оптика</h3>
+                                    <div class="slide-descr">
+                                        <p>Все исполнения премиального внедорожника оснащены полностью светодиодной головной оптикой. С электрической регулировкой светового потока по высоте. По LED-технологии выполнены и интегрированные в блок-фару дневные ходовые огни.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image3.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Большая панорамная крыша</h3>
+                                    <div class="slide-descr">
+                                        <p>Панорамная крыша подчеркивает ощущение пространства и света. Площадь остекления составляет около 1 м². Шторка крыши защищает от нагрева, затемняет салон.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image4.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Интересные детали и шины 19»</h3>
+                                    <div class="slide-descr">
+                                        <p>19» литые двухцветные диски, расширители колесных арок, эффектная решетка радиатора создают спортивный образ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-navigation">
+                            <span class="nav-btn btn-prev"><i class="icon icon-arrow-icon"></i></span>
+                            <span class="nav-btn btn-next"><i class="icon icon-arrow-icon"></i></span>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-dynamic" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Яркий дизайн</h2>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <div class="modal-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image1.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Спортивный стиль</h3>
+                                    <div class="slide-descr">
+                                        <p>Спортивный стиль LX подчеркивает эффектный динамичный силуэт и яркие элементы внешней отделки.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image2.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Светодиодная оптика</h3>
+                                    <div class="slide-descr">
+                                        <p>Все исполнения премиального внедорожника оснащены полностью светодиодной головной оптикой. С электрической регулировкой светового потока по высоте. По LED-технологии выполнены и интегрированные в блок-фару дневные ходовые огни.</p>
+                                        <p>Все исполнения премиального внедорожника оснащены полностью светодиодной головной оптикой. С электрической регулировкой светового потока по высоте. По LED-технологии выполнены и интегрированные в блок-фару дневные ходовые огни.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image3.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Большая панорамная крыша</h3>
+                                    <div class="slide-descr">
+                                        <p>Панорамная крыша подчеркивает ощущение пространства и света. Площадь остекления составляет около 1 м². Шторка крыши защищает от нагрева, затемняет салон.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image4.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Интересные детали и шины 19»</h3>
+                                    <div class="slide-descr">
+                                        <p>19» литые двухцветные диски, расширители колесных арок, эффектная решетка радиатора создают спортивный образ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-navigation">
+                            <span class="nav-btn btn-prev"><i class="icon icon-arrow-icon"></i></span>
+                            <span class="nav-btn btn-next"><i class="icon icon-arrow-icon"></i></span>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-tech" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Яркий дизайн</h2>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <div class="modal-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image1.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Спортивный стиль</h3>
+                                    <div class="slide-descr">
+                                        <p>Спортивный стиль LX подчеркивает эффектный динамичный силуэт и яркие элементы внешней отделки.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image2.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Светодиодная оптика</h3>
+                                    <div class="slide-descr">
+                                        <p>Все исполнения премиального внедорожника оснащены полностью светодиодной головной оптикой. С электрической регулировкой светового потока по высоте. По LED-технологии выполнены и интегрированные в блок-фару дневные ходовые огни.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image3.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Большая панорамная крыша</h3>
+                                    <div class="slide-descr">
+                                        <p>Панорамная крыша подчеркивает ощущение пространства и света. Площадь остекления составляет около 1 м². Шторка крыши защищает от нагрева, затемняет салон.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <div class="image-block">
+                                    <img src="images/main/modals/modal_image4.jpg" alt="design" class="modal-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="slide-title">Интересные детали и шины 19»</h3>
+                                    <div class="slide-descr">
+                                        <p>19» литые двухцветные диски, расширители колесных арок, эффектная решетка радиатора создают спортивный образ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-navigation">
+                            <span class="nav-btn btn-prev"><i class="icon icon-arrow-icon"></i></span>
+                            <span class="nav-btn btn-next"><i class="icon icon-arrow-icon"></i></span>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide simple-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Заказать обратный звонок</h2>
+                    <h3 class="modal__subtitle">Модели EXEED в рассрочку от 0%! Звоните! <br> В наличии у официальных дилеров.</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Заказать</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide simple-modal" id="modal-price" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Получите лучшее предложение на EXEED <br> прямо сейчас!</h2>
+                    <h3 class="modal__subtitle">Получите лучшее предложение!</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Получить</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide simple-modal" id="modal-credit" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Получите лучшее предложение на EXEED <br> прямо сейчас!</h2>
+                    <h3 class="modal__subtitle">Рассчитайте кредит с лучшими условиями!</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Рассчитать</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide simple-modal" id="modal-insurance" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Получите лучшее предложение на EXEED <br> прямо сейчас!</h2>
+                    <h3 class="modal__subtitle">Оформите страховку по выгодным условиям!</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Оформить</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide simple-modal" id="modal-drive" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Получите лучшее предложение на EXEED <br> прямо сейчас!</h2>
+                    <h3 class="modal__subtitle">Записывайтесь на тест-драйв!</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Записаться</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css?v=2">
+    <!-- js -->
+    <script defer src="js/common.js"></script>
+</body>
+</html>
