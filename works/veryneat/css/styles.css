@@ -1005,6 +1005,7 @@ select {
   position: relative
 }
 .catalog-section .catalog-slider .slide-item.colors-item .image-block .colors-navigation {
+  display: none!important;
   position: absolute;
   top: calc(50% - 10px);
   left: 0;
@@ -1828,6 +1829,7 @@ select {
   position: relative
 }
 .recently-products__content .slide-item.colors-item .image-block .colors-navigation {
+  display: none!important;
   position: absolute;
   top: calc(50% - 10px);
   left: 0;
@@ -3156,11 +3158,11 @@ select {
   position: relative
 }
 .catalog-page__content__item.colors-item .image-block .colors-navigation {
+  display: none!important;
   position: absolute;
   top: calc(50% - 10px);
   left: 0;
   z-index: 1;
-  display: none!important;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4713,13 +4715,11 @@ select {
   position: relative
 }
 .product-complete__content__right-side .complete-list__item.colors-item .image-block .colors-navigation {
+  display: none!important;
   position: absolute;
   top: calc(50% - 10px);
   left: 0;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
