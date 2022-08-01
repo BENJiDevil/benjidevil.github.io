@@ -16,19 +16,19 @@
 }
 @font-face {
   font-family: Montserrat;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/MontserratMedium/MontserratMedium.eot);
-  src: url(../fonts/MontserratMedium/MontserratMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratMedium/MontserratMedium.woff) format("woff"),url(../fonts/MontserratMedium/MontserratMedium.woff2) format("woff2"),url(../fonts/MontserratMedium/MontserratMedium.ttf) format("truetype")
-}
-@font-face {
-  font-family: Montserrat;
   font-weight: 200;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/MontserratLight/MontserratLight.eot);
   src: url(../fonts/MontserratLight/MontserratLight.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratLight/MontserratLight.woff) format("woff"),url(../fonts/MontserratLight/MontserratLight.woff2) format("woff2"),url(../fonts/MontserratLight/MontserratLight.ttf) format("truetype")
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/MontserratMedium/MontserratMedium.eot);
+  src: url(../fonts/MontserratMedium/MontserratMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratMedium/MontserratMedium.woff) format("woff"),url(../fonts/MontserratMedium/MontserratMedium.woff2) format("woff2"),url(../fonts/MontserratMedium/MontserratMedium.ttf) format("truetype")
 }
 @font-face {
   font-family: Montserrat;
@@ -48,19 +48,19 @@
 }
 @font-face {
   font-family: Roboto;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/RobotoBold/RobotoBold.eot);
-  src: url(../fonts/RobotoBold/RobotoBold.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoBold/RobotoBold.woff) format("woff"),url(../fonts/RobotoBold/RobotoBold.woff2) format("woff2"),url(../fonts/RobotoBold/RobotoBold.ttf) format("truetype")
-}
-@font-face {
-  font-family: Roboto;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/RobotoMedium/RobotoMedium.eot);
   src: url(../fonts/RobotoMedium/RobotoMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoMedium/RobotoMedium.woff) format("woff"),url(../fonts/RobotoMedium/RobotoMedium.woff2) format("woff2"),url(../fonts/RobotoMedium/RobotoMedium.ttf) format("truetype")
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/RobotoBold/RobotoBold.eot);
+  src: url(../fonts/RobotoBold/RobotoBold.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoBold/RobotoBold.woff) format("woff"),url(../fonts/RobotoBold/RobotoBold.woff2) format("woff2"),url(../fonts/RobotoBold/RobotoBold.ttf) format("truetype")
 }
 @font-face {
   font-family: Roboto;
@@ -187,6 +187,15 @@
 }
 .icon-size_backarrow:before {
   content: "\e823"
+}
+:root {
+  --app-height: 100%
+}
+@media not all and (hover:hover) {
+  body,
+  html {
+    height: var(--app-height)
+  }
 }
 * {
   -webkit-box-sizing: border-box;
@@ -3051,3 +3060,4 @@ body.overflow:after {
     margin-top: calc(15px + 17 *((100vw - 340px)/ 850))
   }
 }
+/*# sourceMappingURL=main.css.map */
