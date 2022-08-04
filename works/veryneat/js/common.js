@@ -33470,6 +33470,20 @@ document.addEventListener('DOMContentLoaded', function () {
         pass_input.type = "password";
       }
     });
+  } // revover form
+
+
+  if (document.querySelector('.auth-page')) {
+    document.querySelectorAll('.auth-page .recover-link').forEach(function (lnk) {
+      lnk.addEventListener('click', function () {
+        document.querySelectorAll('.auth-form__content__tabs .tab-item').forEach(function (tab) {
+          tab.classList.remove('active');
+          tab.style.display = 'none';
+        });
+        document.querySelector('.auth-form__content__tabs .tab-item[data-type="recover"]').classList.add('active');
+        document.querySelector('.auth-form__content__tabs .tab-item[data-type="recover"]').style.display = 'block';
+      });
+    });
   }
   /* recently slider */
 
