@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>tzinker</title>
+    <meta name="description" content="tzinker">
+    <meta name="keywords" content="tzinker">
+    <meta name="author" content="tzinker">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="tzinker">
+    <meta property="og:title" content="tzinker">
+    <meta property="og:description" content="tzinker">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://tzinker.com/">
+    <link rel="canonical" href="https://tzinker.com/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/GraphikLCGLight/GraphikLCGLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GraphikLCGMedium/GraphikLCGMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GraphikLCGRegular/GraphikLCGRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GraphikLCGThin/GraphikLCGThin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="tz-header">
+        <div class="container">
+            <div class="tz-header__content">
+                <div class="top-links">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/logo.png" alt="tzinker" class="logo-image">
+                    </a>
+                    <button id="hamburger" data-menu="main-menu" class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                        </span>
+                        <span class="text-box">Menu</span>
+                    </button>
+                </div>
+                <div class="menu-block">
+                    <div class="menu-block__top">
+                        <a href="#" class="login-link">Login <span>|</span> Register</a>
+                        <a href="mailto:daniel@tzinker.com" class="email-link" style="display: none;">daniel@tzinker.com</a>
+                        <a href="tel:+7862349898" class="phone-link">(786) 234-9898</a>
+                    </div>
+                    <div class="menu-block__bottom">
+                        <nav id="main-menu" class="main-menu" style="position: absolute; transform: translateX(100vw);">
+                            <a id="close-btn" href="javascript:void(0);" class="close-btn"><i class="icon icon-close"></i></a>
+                            <ul class="main-menu__list">
+                                <li class="main-menu__item"><a href="#" class="main-menu__link">Neighborhoods</a></li>
+                                <li class="main-menu__item"><a href="#" class="main-menu__link">Luxury Condo</a></li>
+                                <li class="main-menu__item"><a href="#" class="main-menu__link">Search</a></li>
+                                <li class="main-menu__item"><a href="#" class="main-menu__link">About</a></li>
+                                <li class="main-menu__item"><a href="#" class="main-menu__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <a href="#" class="request-link" style="display: none;">Leave a request</a>
+                        <ul class="socials-menu" style="display: none;">
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-facebook"></i></a></li>
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-twitter"></i></a></li>
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-instagram"></i></a></li>
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-linkedin"></i></a></li>
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="tz-main lazyload" data-bgset="images/bg/mobile/main/main_bg.jpg [(max-width: 575px)] | images/bg/pad/main/main_bg.jpg [(max-width: 1024px)] | images/bg/desk/main/main_bg.jpg [(min-width: 1025px)]">
+        <div class="container">
+            <h1 class="tz-main__title">Best selling buildings in Miami</h1>
+            <h2 class="tz-main__subtitle">Homes 5M+</h2>
+            <h2 class="tz-main__subtitle">New developments</h2>
+            <div class="main-links">
+                <a href="#" class="main-links__item btn-style">I Want To Buy</a>
+                <a href="#" class="main-links__item btn-style">I Want To Sell</a>
+            </div>
+            <div class="search-block">
+                <form action="" class="search-form">
+                    <div class="input-group sale-group">
+                        <select name="type">
+                            <option value="sale" selected>For sale</option>
+                            <option value="rent">For rent</option>
+                        </select>
+                    </div>
+                    <div class="input-group content-group">
+                        <input type="text" name="content" required>
+                        <span class="placeholder">Enter an address, city, zip code or MLS number</span>
+                    </div>
+                    <div class="input-group btn-group">
+                        <button type="submit"><i class="icon icon-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="who-block">
+                <span class="name">Daniel Tzinker</span>
+                <span class="descr">Luxury Real Estate Advisor</span>
+            </div>
+        </div>
+    </main>
+    <section class="tz-records">
+        <div class="container">
+            <div class="tz-records__title-row">
+                <h2 class="tz-records__title section-title"><b>Latest record</b> breaking deal</h2>
+                <img src="images/common/logo_circle.png" alt="Tzinker" class="logo-image">
+            </div>
+            <div class="tz-records__content">
+                <div class="tz-records__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/deals/deal_1.jpg" alt="deal" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <div class="descr-wrapper">
+                            <div class="descr-block__name">
+                                <span class="price">$20,000,000</span>
+                                <span class="name">Norh Bay Road House</span>
+                            </div>
+                            <div class="descr-block__status">
+                                <i class="icon icon-check"></i>
+                                <span>Sold</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tz-records__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/deals/deal_2.jpg" alt="deal" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <div class="descr-wrapper">
+                            <div class="descr-block__name">
+                                <span class="price">$14,000,000</span>
+                                <span class="name">Miami Beach <br> Edition Penthouse</span>
+                            </div>
+                            <div class="descr-block__status">
+                                <i class="icon icon-check"></i>
+                                <span>Sold</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tz-records__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/deals/deal_3.jpg" alt="deal" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <div class="descr-wrapper">
+                            <div class="descr-block__name">
+                                <span class="price">$3,500,000</span>
+                                <span class="name">One Paraiso Penthouse</span>
+                            </div>
+                            <div class="descr-block__status">
+                                <i class="icon icon-check"></i>
+                                <span>Sold</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tz-records__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/deals/deal_4.jpg" alt="deal" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <div class="descr-wrapper">
+                            <div class="descr-block__name">
+                                <span class="price">$25,600,000</span>
+                                <span class="name">Indian creek land</span>
+                            </div>
+                            <div class="descr-block__status">
+                                <i class="icon icon-check"></i>
+                                <span>Sold</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tz-records__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/deals/deal_5.jpg" alt="deal" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <div class="descr-wrapper">
+                            <div class="descr-block__name">
+                                <span class="price">$9,000,000</span>
+                                <span class="name">Faena House</span>
+                            </div>
+                            <div class="descr-block__status">
+                                <i class="icon icon-check"></i>
+                                <span>Sold</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tz-records__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/deals/deal_6.jpg" alt="deal" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <div class="descr-wrapper">
+                            <div class="descr-block__name">
+                                <span class="price">$3,500,000</span>
+                                <span class="name">W Penthouse</span>
+                            </div>
+                            <div class="descr-block__status">
+                                <i class="icon icon-check"></i>
+                                <span>Sold</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tz-featured">
+        <div class="container">
+            <div class="tz-featured__title-row">
+                <h2 class="tz-featured__title section-title"><b>Featured</b> Listings</h2>
+                <div class="tz-featured__descr">
+                    <p>Daniel Tzinker is committed to helping you find the most advantageous options. <br> <b>Choose a property you like and we will take care of the rest.</b></p>
+                </div>
+            </div>
+            <div class="tz-featured__content">
+                <div class="tz-featured__content__item">
+                    <a href="#" class="item-link"></a>
+                    <img src="images/common/main/featured/featured_1.jpg" alt="item-image" class="item-image">
+                    <div class="item-descr">
+                        <h3 class="price">$3,900,000</h3>
+                        <ul class="parameters">
+                            <li class="parameters__item">3 Bed (s)</li>
+                            <li class="parameters__item">2 Beth (s)</li>
+                            <li class="parameters__item">2041 Sq.Ft (312 m²)</li>
+                        </ul>
+                        <address class="address">15701 Collins Av #1202, Miami Beach, FL 33139</address>
+                    </div>
+                </div>
+                <div class="tz-featured__content__item">
+                    <a href="#" class="item-link"></a>
+                    <img src="images/common/main/featured/featured_2.jpg" alt="item-image" class="item-image">
+                    <div class="item-descr">
+                        <h3 class="price">$8,200,000</h3>
+                        <ul class="parameters">
+                            <li class="parameters__item">5 Bed (s)</li>
+                            <li class="parameters__item">5 Beth (s)</li>
+                            <li class="parameters__item">3088 Sq.Ft (452 m²)</li>
+                        </ul>
+                        <address class="address">1 Collins Ave #607, Miami Beach, FL 33139</address>
+                    </div>
+                </div>
+                <div class="tz-featured__content__item">
+                    <a href="#" class="item-link"></a>
+                    <img src="images/common/main/featured/featured_3.jpg" alt="item-image" class="item-image">
+                    <div class="item-descr">
+                        <h3 class="price">$6,900,000</h3>
+                        <ul class="parameters">
+                            <li class="parameters__item">3 Bed (s)</li>
+                            <li class="parameters__item">2 Beth (s)</li>
+                            <li class="parameters__item">2041 Sq.Ft (312 m²)</li>
+                        </ul>
+                        <address class="address">15701 Collins Av #1202, Miami Beach, FL 33139</address>
+                    </div>
+                </div>
+                <div class="tz-featured__content__item">
+                    <a href="#" class="item-link"></a>
+                    <img src="images/common/main/featured/featured_4.jpg" alt="item-image" class="item-image">
+                    <div class="item-descr">
+                        <h3 class="price">$6,200,000</h3>
+                        <ul class="parameters">
+                            <li class="parameters__item">5 Bed (s)</li>
+                            <li class="parameters__item">5 Beth (s)</li>
+                            <li class="parameters__item">3088 Sq.Ft (452 m²)</li>
+                        </ul>
+                        <address class="address">1 Collins Ave #607, Miami Beach, FL 33139</address>
+                    </div>
+                </div>
+                <div class="tz-featured__content__btn-item">
+                    <a href="#" class="see-all btn-style black-style">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tz-video">
+        <div class="container">
+            <div class="tz-video__wrapper">
+                <video src="https://24e3d2766e918fc4369a-2005f80a01533296a927e19ca48f1dcf.ssl.cf1.rackcdn.com/tzinker/ARMANI-WEB-HEADER-1920.m4v" autoplay="" muted="" loop="" playsinline=""></video>
+            </div>
+            <h2 class="tz-video__title"><b>We love what we do and we know everything about</b> the luxury real estate market in Miami. We are here to get you the best property.</h2>
+        </div>
+    </section>
+    <div class="tz-contact">
+        <div class="container">
+            <div class="tz-contact__content">
+                <h2 class="tz-contact__title">Whether you need to buy or sell, <b>we surely will save you time and money.</b></h2>
+                <a href="#" class="contact-link btn-style black-style">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <section class="tz-agency">
+        <div class="container">
+            <div class="tz-agency__title-row">
+                <h2 class="tz-agency__title section-title">The agency</h2>
+                <img src="images/common/agency_logo.jpg" alt="agency" class="agency-logo">
+            </div>
+            <div class="tz-agency__content">
+                <div class="tz-agency__content__item">
+                    <div class="number-block">01</div>
+                    <div class="descr-block">
+                        <span class="item-value">48+</span>
+                        <div class="item-title">
+                            <p>Offices Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tz-agency__content__item">
+                    <div class="number-block">02</div>
+                    <div class="descr-block">
+                        <span class="item-value">$30</span>
+                        <div class="item-title">
+                            <p>Billion in Total Sales Volume in 9 Years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tz-agency__content__item">
+                    <div class="number-block">03</div>
+                    <div class="descr-block">
+                        <span class="item-value">$1.754</span>
+                        <div class="item-title">
+                            <p>Million Average Sales Price in 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tz-agency__content__item">
+                    <div class="number-block">04</div>
+                    <div class="descr-block">
+                        <span class="item-value">$6.57</span>
+                        <div class="item-title">
+                            <p>Billion in 2020 Sales Volume</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tz-agency__content__item">
+                    <div class="number-block">05</div>
+                    <div class="descr-block">
+                        <span class="item-value">6</span>
+                        <div class="item-title">
+                            <p>Consecutive Years Among <b>Inc. 5000’s</b> Fasted-Growing Private Companies in America</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tz-neighborhoods">
+        <div class="container">
+            <div class="tz-neighborhoods__title-row">
+                <h2 class="tz-neighborhoods__title section-title">Our best <b>Neighborhoods</b></h2>
+                <div class="tz-neighborhoods__descr">
+                    <p>Choose the area in which you would like to buy real estate and we <b>will show all the current offers</b>.</p>
+                </div>
+            </div>
+            <div class="tz-neighborhoods__content">
+                <div class="tz-neighborhoods__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/neighborhoods/neighborhood_1.jpg" alt="item-image" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <span class="explore">Explore</span>
+                        <h3 class="item-name">North Bay Road</h3>
+                        <span class="watch">Watch</span>
+                    </div>
+                </div>
+                <div class="tz-neighborhoods__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/neighborhoods/neighborhood_2.jpg" alt="item-image" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <span class="explore">Explore</span>
+                        <h3 class="item-name">Sunset Islands</h3>
+                        <span class="watch">Watch</span>
+                    </div>
+                </div>
+                <div class="tz-neighborhoods__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/neighborhoods/neighborhood_3.jpg" alt="item-image" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <span class="explore">Explore</span>
+                        <h3 class="item-name">Sunset Islands <br> (1,2,3 and 4)</h3>
+                        <span class="watch">Watch</span>
+                    </div>
+                </div>
+                <div class="tz-neighborhoods__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/neighborhoods/neighborhood_4.jpg" alt="item-image" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <span class="explore">Explore</span>
+                        <h3 class="item-name">Venetian Islands</h3>
+                        <span class="watch">Watch</span>
+                    </div>
+                </div>
+                <div class="tz-neighborhoods__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/neighborhoods/neighborhood_5.jpg" alt="item-image" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <span class="explore">Explore</span>
+                        <h3 class="item-name">Fisher Island</h3>
+                        <span class="watch">Watch</span>
+                    </div>
+                </div>
+                <div class="tz-neighborhoods__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/neighborhoods/neighborhood_6.jpg" alt="item-image" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <span class="explore">Explore</span>
+                        <h3 class="item-name">Bal Harbour</h3>
+                        <span class="watch">Watch</span>
+                    </div>
+                </div>
+                <div class="tz-neighborhoods__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/neighborhoods/neighborhood_7.jpg" alt="item-image" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <span class="explore">Explore</span>
+                        <h3 class="item-name">Star Island</h3>
+                        <span class="watch">Watch</span>
+                    </div>
+                </div>
+                <div class="tz-neighborhoods__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/neighborhoods/neighborhood_8.jpg" alt="item-image" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <span class="explore">Explore</span>
+                        <h3 class="item-name">Golden Beach</h3>
+                        <span class="watch">Watch</span>
+                    </div>
+                </div>
+                <div class="tz-neighborhoods__content__btn-item">
+                    <a href="#" class="see-all btn-style">All Neighborhoods</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tz-projects">
+        <div class="container">
+            <div class="tz-projects__title-row">
+                <h2 class="tz-projects__title section-title">New development <b>projects in Miami</b></h2>
+                <div class="tz-projects__descr">
+                    <p>Daniel Tzinker helps clients find the best luxury new development options. <b>A database of available penthouses and luxury condos is continuously updated, so don’t miss out on the latest best offers!</b></p>
+                </div>
+            </div>
+            <div class="tz-projects__content">
+                <div id="projects-slider" class="projects-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide tz-projects-item">
+                            <a href="#" class="item-link"></a>
+                            <div class="image-block">
+                                <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-name">Residences by Armani Casa</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tz-projects-item">
+                            <a href="#" class="item-link"></a>
+                            <div class="image-block">
+                                <img src="images/common/main/projects/project_2.jpg" alt="project" class="project-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-name">Ritz Carlton Sunny Isles</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tz-projects-item">
+                            <a href="#" class="item-link"></a>
+                            <div class="image-block">
+                                <img src="images/common/main/projects/project_3.jpg" alt="project" class="project-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-name">Turnberry Ocean Club</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-btn swiper-btn__prev"><i class="icon icon-slider-arrow"></i></div>
+                    <div class="swiper-btn swiper-btn__next"><i class="icon icon-slider-arrow"></i></div>
+                </div>
+            </div>
+            <div class="tz-projects__btn-row">
+                <a href="#" class="see-all btn-style">View All</a>
+            </div>
+        </div>
+    </section>
+    <section class="tz-profile">
+        <div class="container">
+            <div class="tz-profile__content lazyload" data-bgset="images/bg/mobile/main/profile_bg.jpg [(max-width: 575px)] | images/bg/pad/main/profile_bg.jpg [(max-width: 1024px)] | images/bg/desk/main/profile_bg.jpg [(min-width: 1025px)]">
+                <div class="title-wrapper">
+                    <h2 class="tz-profile__title"><b>Daniel</b> Tzinker</h2>
+                    <img src="images/common/logo_circle_white.png" alt="Tzinker" class="logo-image">
+                </div>
+            </div>
+            <div class="tz-profile__descr">
+                <h2>High-end luxury real estate consultant with 10+ years of experience</h2>
+                <ul>
+                    <li>*Record breaking deals in most of Miami luxury neighborhoods</li>
+                    <li>*¼ billion in career sales</li>
+                    <li>*Trilingual speaker (English, Russian, Hebrew).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="tz-contact">
+        <div class="container">
+            <div class="tz-contact__content">
+                <h2 class="tz-contact__title">Specializing in luxury sales, Daniel serves a broad client base both nationally and internationally <b>with new development, condominium and penthouse purchases.</b></h2>
+                <a href="#" class="contact-link btn-style black-style">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <section class="tz-testimonials">
+        <div class="container">
+            <div class="tz-testimonials__title-row">
+                <h2 class="tz-testimonials__title section-title">Our Clients <b>Testimonials</b></h2>
+                <img src="images/common/logo_black.png" alt="tzinker" class="logo-image" style="display: none;">
+            </div>
+            <div class="tz-testimonials__content">
+                <div id="testimonials-slider" class="testimonials-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials-item">
+                            <div class="image-block">
+                                <img src="images/common/testimonial.jpg" alt="testimonial" class="testimonials-image">
+                            </div>
+                            <span class="name">Vera Babaeva</span>
+                            <div class="descr-block">
+                                <p>Daniel Tzinker helped me sell an investment property, i’m So happy! Ge is very professional. He came to our first meeting enthusiastic and well prepared, and every interaction I had with him after that was the same. He proposed an efficient sale process, arranged for the staging and photographs, gave me good and thoughtfully critical advice on finishing the house. The sale went very well–he brought in 9 offers, all way above asking price. I can’t wait to work with him again. <b>Thank you dear Daniel</b>.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="image-block">
+                                <img src="images/common/testimonial.jpg" alt="testimonial" class="testimonials-image">
+                            </div>
+                            <span class="name">Vera Babaeva</span>
+                            <div class="descr-block">
+                                <p>Daniel Tzinker helped me sell an investment property, i’m So happy! Ge is very professional. He came to our first meeting enthusiastic and well prepared, and every interaction I had with him after that was the same. He proposed an efficient sale process, arranged for the staging and photographs, gave me good and thoughtfully critical advice on finishing the house. The sale went very well–he brought in 9 offers, all way above asking price. I can’t wait to work with him again. <b>Thank you dear Daniel</b>.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="image-block">
+                                <img src="images/common/testimonial.jpg" alt="testimonial" class="testimonials-image">
+                            </div>
+                            <span class="name">Vera Babaeva</span>
+                            <div class="descr-block">
+                                <p>Daniel Tzinker helped me sell an investment property, i’m So happy! Ge is very professional. He came to our first meeting enthusiastic and well prepared, and every interaction I had with him after that was the same. He proposed an efficient sale process, arranged for the staging and photographs, gave me good and thoughtfully critical advice on finishing the house. The sale went very well–he brought in 9 offers, all way above asking price. I can’t wait to work with him again. <b>Thank you dear Daniel</b>.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="image-block">
+                                <img src="images/common/testimonial.jpg" alt="testimonial" class="testimonials-image">
+                            </div>
+                            <span class="name">Vera Babaeva</span>
+                            <div class="descr-block">
+                                <p>Daniel Tzinker helped me sell an investment property, i’m So happy! Ge is very professional. He came to our first meeting enthusiastic and well prepared, and every interaction I had with him after that was the same. He proposed an efficient sale process, arranged for the staging and photographs, gave me good and thoughtfully critical advice on finishing the house. The sale went very well–he brought in 9 offers, all way above asking price. I can’t wait to work with him again. <b>Thank you dear Daniel</b>.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="image-block">
+                                <img src="images/common/testimonial.jpg" alt="testimonial" class="testimonials-image">
+                            </div>
+                            <span class="name">Vera Babaeva</span>
+                            <div class="descr-block">
+                                <p>Daniel Tzinker helped me sell an investment property, i’m So happy! Ge is very professional. He came to our first meeting enthusiastic and well prepared, and every interaction I had with him after that was the same. He proposed an efficient sale process, arranged for the staging and photographs, gave me good and thoughtfully critical advice on finishing the house. The sale went very well–he brought in 9 offers, all way above asking price. I can’t wait to work with him again. <b>Thank you dear Daniel</b>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <div class="tz-partners">
+        <div id="partners-slider" class="partners-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide partners-item">
+                    <img src="images/common/main/partners/partner_logo.jpg" alt="partner" class="partner-image">
+                </div>
+                <div class="swiper-slide partners-item">
+                    <img src="images/common/main/partners/partner_logo.jpg" alt="partner" class="partner-image">
+                </div>
+                <div class="swiper-slide partners-item">
+                    <img src="images/common/main/partners/partner_logo.jpg" alt="partner" class="partner-image">
+                </div>
+                <div class="swiper-slide partners-item">
+                    <img src="images/common/main/partners/partner_logo.jpg" alt="partner" class="partner-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="tz-connect">
+        <div class="container">
+            <div class="tz-connect__title-row">
+                <h2 class="tz-connect__title section-title">Let’s <b>connect</b></h2>
+                <div class="tz-connect__descr">
+                    <p>Explore our official Instagram account and find more best options in the <b>luxury real estate market, including off-market deals</b>.</p>
+                </div>
+            </div>
+            <div class="tz-connect__content">
+                <div class="tz-connect__content__item">
+                    <a href="#" target="_blank" class="item-link">
+                        <img src="images/common/main/inst_test.jpg" alt="instagramm" class="item-image">
+                    </a>
+                </div>
+                <div class="tz-connect__content__item">
+                    <a href="#" target="_blank" class="item-link">
+                        <img src="images/common/main/inst_test.jpg" alt="instagramm" class="item-image">
+                    </a>
+                </div>
+                <div class="tz-connect__content__item">
+                    <a href="#" target="_blank" class="item-link">
+                        <img src="images/common/main/inst_test.jpg" alt="instagramm" class="item-image">
+                    </a>
+                </div>
+                <div class="tz-connect__content__item">
+                    <a href="#" target="_blank" class="item-link">
+                        <img src="images/common/main/inst_test.jpg" alt="instagramm" class="item-image">
+                    </a>
+                </div>
+                <div class="tz-connect__content__item">
+                    <a href="#" target="_blank" class="item-link">
+                        <img src="images/common/main/inst_test.jpg" alt="instagramm" class="item-image">
+                    </a>
+                </div>
+                <div class="tz-connect__content__item">
+                    <a href="#" target="_blank" class="item-link">
+                        <img src="images/common/main/inst_test.jpg" alt="instagramm" class="item-image">
+                    </a>
+                </div>
+                <div class="tz-connect__content__btn-item">
+                    <a href="#" target="_blank" class="see-all btn-style black-style">View Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/logo.png" alt="tzinker" class="logo-image">
+                </a>
+                <a href="#" class="agency-link">
+                    <img src="images/common/agency_logo.jpg" alt="agency" class="agency-image">
+                </a>
+                <button id="hamburger_footer" data-menu="main-menu" class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="text-box">Menu</span>
+                </button>
+                <div class="menu-block">
+                    <div class="menu-block__top">
+                        <nav class="footer-menu">
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Terms and Conditions</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Privacy</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Accessibility</a></li>
+                            </ul>
+                        </nav>
+                        <div class="links-row">
+                            <a href="mailto:daniel@tzinker.com" class="email-link">daniel@tzinker.com</a>
+                            <a href="tel:+7862349898" class="phone-link">(786) 234-9898</a>
+                        </div>
+                    </div>
+                    <div class="menu-block__bottom">
+                        <span class="copyright">© Copyright 2022</span>
+                        <ul class="socials-menu">
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-facebook"></i></a></li>
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-twitter"></i></a></li>
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-instagram"></i></a></li>
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-linkedin"></i></a></li>
+                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__privacy">
+                <p>Privacy — Equal Housing Opportunity. All material presented herein is intended for information purposes only. While this information is believed to be correct, it is represented subject to errors, omissions, changes or withdrawal without notice. All property information, including, but not limited to square footage, room count, number of bedrooms and the school district in property listings are deemed reliable, but should be verified by your own attorney, architect or zoning expert. If your property is currently listed with another real estate broker, please disregard this offer. It is not our intention to solicit the offerings of other real estate brokers. We cooperate with them fully.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title"></h2>
+                    <h3 class="modal__subtitle"></h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Заказать</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
