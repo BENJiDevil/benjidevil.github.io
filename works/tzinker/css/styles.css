@@ -1280,7 +1280,8 @@
 .tz-agency {
   margin-top: 35px;
   position: relative;
-  border-bottom: 100px solid #ff1820
+  border-bottom: 100px solid #ff1820;
+  overflow: hidden
 }
 @media (min-width:1200px) {
   .tz-contact__title {

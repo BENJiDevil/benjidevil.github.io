@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Goodman</title>
+    <meta name="description" content="Goodman">
+    <meta name="keywords" content="Goodman">
+    <meta name="author" content="Goodman">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Goodman">
+    <meta property="og:title" content="Goodman">
+    <meta property="og:description" content="Goodman">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://site-url.ru/">
+    <link rel="canonical" href="https://site-url.ru/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/MontserratBlack/MontserratBlack.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratBold/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratLight/MontserratLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="container">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="goodman" class="logo-img">
+                    <img src="images/common/svg/logo_text.svg" alt="goodman" class="logo-txt" style="display: none;">
+                </a>
+                <div class="delivery-block">
+                    <a href="tel:+74952101210" class="phone-link">+7 (495) 210-1-210</a>
+                    <time style="display: none;">ДОСТАВКА 11:00 — 23:00</time>
+                </div>
+                <div class="booking-block" style="display: none;">
+                    <a href="tel:+74952101210" class="phone-link">+7 (495) 210-3-210</a>
+                    <time>РЕЗЕРВ 11:00 — 23:00</time>
+                </div>
+                <div class="cart-block">
+                    <a href="#" class="cart-link">
+                        <i class="icon icon-cart"></i>
+                        <span class="cart-value">3</span>
+                        <span class="price-value">5200₽</span>
+                    </a>
+                </div>
+                <button id="hamburger_pc" data-menu="mmenu-list" class="hamburger hamburger--slider" type="button" style="display: none;">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <nav class="main-menu">
+                    <a href="#" class="main-menu__map"><i class="icon icon-marker"></i></a>
+                    <button id="hamburger" data-menu="mmenu-list" class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box" style="display: none;">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                        <span class="text-box">Меню</span>
+                    </button>
+                    <a href="#" class="main-menu__cart"><i class="icon icon-cart_btn"></i></a>
+                </nav>
+                <ul id="mmenu-list" class="mmenu__list" style="position: absolute; transform: translateX(100vw);">
+                    <a href="javascript:void(0);" class="close-btn"><i class="icon icon-close"></i></a>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">О НАС</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">Адреса</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">МЕНЮ РЕСТОРАНА</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">МЕНЮ ДОСТАВКИ</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">Бронь</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">КЕЙТЕРИНГ</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">мастер-класс</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">Good Taste Club</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">Подарочная карта</a></li>
+                    <li class="mmenu__item"><a href="#" class="mmenu__link">Вход/Регистрация</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav class="main-btns">
+        <div class="container">
+            <ul class="main-btns__list">
+                <li class="main-btns__item">
+                    <a href="#" class="main-btns__link btn-style">Заказать доставку</a>
+                </li>
+                <li class="main-btns__item">
+                    <a href="#" class="main-btns__link btn-style">Забронировать столик</a>
+                </li>
+                <li class="main-btns__item">
+                    <a href="#" class="main-btns__link btn-style">
+                        <img src="images/common/svg/good_taste.svg" alt="goodtaste" class="goodtaste">
+                        Списать / накопить баллы
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-banner">
+        <div class="container">
+            <h1 class="main-banner__title">Акции</h1>
+            <div id="main-banner" class="swiper main-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide banner-slide lazyload" data-bgset="images/bg/mobile/main/main_slider.jpg [(max-width: 575px)] | images/bg/desk/main/main_slider.jpg [(min-width: 576px)]">
+                        <a href="#" class="mslider-link"></a>
+                    </div>
+                    <div class="swiper-slide banner-slide lazyload" data-bgset="images/bg/mobile/main/main_slider.jpg [(max-width: 575px)] | images/bg/desk/main/main_slider.jpg [(min-width: 576px)]">
+                        <a href="#" class="mslider-link"></a>
+                    </div>
+                    <div class="swiper-slide banner-slide lazyload" data-bgset="images/bg/mobile/main/main_slider.jpg [(max-width: 575px)] | images/bg/desk/main/main_slider.jpg [(min-width: 576px)]">
+                        <a href="#" class="mslider-link"></a>
+                    </div>
+                    <div class="swiper-slide banner-slide lazyload" data-bgset="images/bg/mobile/main/main_slider.jpg [(max-width: 575px)] | images/bg/desk/main/main_slider.jpg [(min-width: 576px)]">
+                        <a href="#" class="mslider-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-navigation">
+                <div class="swiper-btn swiper-btn__prev"><i class="icon icon-slider_arrow"></i></div>
+                <div class="swiper-btn swiper-btn__next"><i class="icon icon-slider_arrow"></i></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+    <section class="main-sections">
+        <div class="container">
+            <div class="main-sections__content">
+                <div class="main-sections__content__item">
+                    <a href="#" class="section-link lazyload" data-bgset="images/bg/mobile/main/sections/section_image1.jpg [(max-width: 575px)] | images/bg/desk/main/sections/section_image1.jpg [(min-width: 576px)]">
+                        <h2 class="section-name">КУЛИНАРНАЯ АКАДЕМИЯ</h2>
+                    </a>
+                </div>
+                <div class="main-sections__content__item">
+                    <a href="#" class="section-link lazyload" data-bgset="images/bg/mobile/main/sections/section_image2.jpg [(max-width: 575px)] | images/bg/desk/main/sections/section_image2.jpg [(min-width: 576px)]">
+                        <h2 class="section-name">GOODMAN КЕЙТЕРИНГ</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-categories">
+        <div class="container">
+            <h2 class="main-categories__title section-title">Меню доставки</h2>
+            <div class="main-categories__content">
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category1.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Бизнес-ланч</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category2.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Салаты</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category3.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Супы</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category4.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Стейки</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category5.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Гарниры</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category6.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Горячее</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category7.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Бургеры</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category8.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Закуски</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category9.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Хлеб</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category10.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Соусы</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category11.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Десерты</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category12.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Напитки</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category13.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Подарок</h3>
+                    </a>
+                </div>
+                <div class="main-categories__content__item">
+                    <a href="#" class="category-link">
+                        <img src="images/common/categories/category14.jpg" alt="category" class="category-image">
+                        <h3 class="category-name">Фуршетный набор</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-title section-title">Адреса ресторанов гудман</h2>
+            <div class="footer__content">
+                <div class="footer__content__item">
+                    <h3>Трубная площадь, 2</h3>
+                    <time>Время работы: 12:00 — 00:00</time>
+                </div>
+                <div class="footer__content__item">
+                    <h3>Павелецкая пл. 2, стр. 1</h3>
+                    <time>Время работы: 11:00 — 00:00</time>
+                    <time>Выходные дни: 12:00 — 00:00</time>
+                </div>
+                <div class="footer__content__item">
+                    <h3>Кировоградская ул., 13А, ТРЦ «COLUMBUS», 4 этаж</h3>
+                    <time>Время работы: 11:00 — 00:00</time>
+                </div>
+                <div class="footer__content__item">
+                    <h3>Ленинский, 57</h3>
+                    <time>Время работы: 12:00 — 00:00</time>
+                </div>
+                <div class="footer__content__item">
+                    <h3>Охотный ряд, 2 ТГ «Модный сезон»</h3>
+                    <time>Время работы: 12:00 — 00:00</time>
+                    <span>Цены и меню отличаются</span>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__info__item">
+                    <ul class="socials-list">
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-whatsapp"></i></a></li>
+                    </ul>
+                    <a href="/" class="logo-link">
+                        <img src="images/common/svg/goodman.svg" alt="goodman" class="logo-image">
+                    </a>
+                    <span class="copyright">2022</span>
+                </div>
+                <div class="footer__info__item">
+                    <a href="#" target="_blank" class="privacy-link">Политика конфиденциальности данных</a>
+                    <a href="mailto:cc@zvonok.services" class="email-link">cc@zvonok.services</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal info-modal" id="product_add" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close"></i></button>
+                    <h2 class="modal__title">Добавлено <span id="product-name">Рибай 350 г.</span></h2>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="modal info-modal" id="order_add" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close"></i></button>
+                    <h2 class="order-title">
+                        Спасибо! <br>
+                    Ваш стол забронирован. <br>
+                    Мы свяжемся с Вами для подтверждения.
+                    </h2>
+                </header>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
