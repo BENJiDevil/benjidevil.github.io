@@ -47,36 +47,87 @@
     <header class="tz-header">
         <div class="container">
             <div class="tz-header__content">
-                <div class="top-links">
-                    <a href="/" class="logo-link">
-                        <img src="images/common/logo.png" alt="tzinker" class="logo-image">
-                    </a>
-                    <button id="hamburger" data-menu="main-menu" class="hamburger hamburger--slider" type="button">
-                        <span class="hamburger-box">
+                <a href="/" class="logo-link">
+                    <img src="images/common/logo.png" alt="tzinker" class="logo-image">
+                </a>
+                <button id="hamburger" data-menu="main-menu" class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
-                        </span>
-                        <span class="text-box">Menu</span>
-                    </button>
-                </div>
+                    </span>
+                    <span class="text-box">Menu</span>
+                </button>
                 <div class="menu-block">
-                    <div class="menu-block__top">
+                    <div class="login-wrapper">
                         <a href="#" class="login-link">Login <span>|</span> Register</a>
-                        <a href="mailto:daniel@tzinker.com" class="email-link" style="display: none;">daniel@tzinker.com</a>
+                    </div>
+                    <div class="email-wrapper" style="display: none;">
+                        <a href="mailto:daniel@tzinker.com" class="email-link">daniel@tzinker.com</a>
+                    </div>
+                    <div class="phone-wrapper">
                         <a href="tel:+7862349898" class="phone-link">(786) 234-9898</a>
                     </div>
-                    <div class="menu-block__bottom">
-                        <nav id="main-menu" class="main-menu" style="position: absolute; transform: translateX(100vw);">
+                    <div class="menu-wrapper">
+                        <nav id="main-menu" class="main-menu" style="position: fixed; transform: translateX(100vw);">
                             <a id="close-btn" href="javascript:void(0);" class="close-btn"><i class="icon icon-close"></i></a>
                             <ul class="main-menu__list">
-                                <li class="main-menu__item"><a href="#" class="main-menu__link">Neighborhoods</a></li>
-                                <li class="main-menu__item"><a href="#" class="main-menu__link">Luxury Condo</a></li>
+                                <li class="main-menu__item submenu-item">
+                                    <a href="#" class="main-menu__link">Neighborhoods</a>
+                                    <a href="javascript:void(0);" class="submenu-arrow"><i class="icon icon-select-arrow"></i></a>
+                                    <ul class="submenu-list js-submenu">
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/allison-island/">Allison Island</a>
+                                        </li>
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/bay-harbor-islands/">Bay Harbor Islands</a>
+                                        </li>
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/golden-beach/">Golden Beach</a>
+                                        </li>
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/indian-creek/">Indian Creek</a>
+                                        </li>
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/la-gorce-island/">La Gorce Island</a>
+                                        </li>
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/north-bay-road/">North Bay Road</a>
+                                        </li>
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/palm-islands/">Palm Islands</a>
+                                        </li>
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/sunset-islands/">Sunset Islands</a>
+                                        </li>
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/venetian-islands/">Venetian Islands</a>
+                                        </li>
+                                        <li class="submenu-list__item">
+                                            <a class="submenu-list__link" href="/neighborhoods">All Neighborhoods</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="main-menu__item submenu-item">
+                                    <a href="#" class="main-menu__link">Luxury Condo</a>
+                                    <a href="javascript:void(0);" class="submenu-arrow"><i class="icon icon-select-arrow"></i></a>
+                                    <ul class="submenu-list js-submenu">
+                                        <li class="submenu-list__item"><a class="submenu-list__link" href="/building/residences-by-armani-casa/">Residences by Armani Casa</a></li>
+                                        <li class="submenu-list__item"><a class="submenu-list__link" href="/building/the-ritz-carlton-sunny-isles-beach/">Ritz Carlton Sunny Isles</a></li>
+                                        <li class="submenu-list__item"><a class="submenu-list__link" href="/building/turnberry-ocean-club/">Turnberry Ocean Club</a></li>
+                                        <li class="submenu-list__item"><a class="submenu-list__link" href="/building/the-estates-at-acqualina/">The Estates at Acqualina</a></li>
+                                        <li class="submenu-list__item"><a class="submenu-list__link" href="/luxury-condos">All Condos</a></li>
+                                    </ul>
+                                </li>
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">Search</a></li>
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">About</a></li>
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">Contact</a></li>
                             </ul>
                         </nav>
-                        <a href="#" class="request-link" style="display: none;">Leave a request</a>
-                        <ul class="socials-menu" style="display: none;">
+                    </div>
+                    <div class="request-wrapper" style="display: none;">
+                        <a href="#" class="request-link">Leave a request</a>
+                    </div>
+                    <div class="socials-wrapper" style="display: none;">
+                        <ul class="socials-menu">
                             <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-facebook"></i></a></li>
                             <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-twitter"></i></a></li>
                             <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-instagram"></i></a></li>
@@ -124,7 +175,7 @@
         <div class="container">
             <div class="tz-records__title-row">
                 <h2 class="tz-records__title section-title"><b>Latest record</b> breaking deal</h2>
-                <img src="images/common/logo_circle.png" alt="Tzinker" class="logo-image">
+                <span class="logo-icon"></span>
             </div>
             <div class="tz-records__content">
                 <div class="tz-records__content__item">
@@ -325,7 +376,7 @@
         <div class="container">
             <div class="tz-agency__title-row">
                 <h2 class="tz-agency__title section-title">The agency</h2>
-                <img src="images/common/agency_logo.jpg" alt="agency" class="agency-logo">
+                <span class="agency-logo"></span>
             </div>
             <div class="tz-agency__content">
                 <div class="tz-agency__content__item">
@@ -385,7 +436,7 @@
                 </div>
             </div>
             <div class="tz-neighborhoods__content">
-                <div class="tz-neighborhoods__content__item">
+                <div class="tz-neighborhoods__content__item grid-type1">
                     <a href="#" class="item-link"></a>
                     <div class="image-block">
                         <img src="images/common/main/neighborhoods/neighborhood_1.jpg" alt="item-image" class="item-image">
@@ -396,7 +447,7 @@
                         <span class="watch">Watch</span>
                     </div>
                 </div>
-                <div class="tz-neighborhoods__content__item">
+                <div class="tz-neighborhoods__content__item grid-type2">
                     <a href="#" class="item-link"></a>
                     <div class="image-block">
                         <img src="images/common/main/neighborhoods/neighborhood_2.jpg" alt="item-image" class="item-image">
@@ -407,7 +458,7 @@
                         <span class="watch">Watch</span>
                     </div>
                 </div>
-                <div class="tz-neighborhoods__content__item">
+                <div class="tz-neighborhoods__content__item grid-type3">
                     <a href="#" class="item-link"></a>
                     <div class="image-block">
                         <img src="images/common/main/neighborhoods/neighborhood_3.jpg" alt="item-image" class="item-image">
@@ -418,7 +469,7 @@
                         <span class="watch">Watch</span>
                     </div>
                 </div>
-                <div class="tz-neighborhoods__content__item">
+                <div class="tz-neighborhoods__content__item grid-type4">
                     <a href="#" class="item-link"></a>
                     <div class="image-block">
                         <img src="images/common/main/neighborhoods/neighborhood_4.jpg" alt="item-image" class="item-image">
@@ -429,7 +480,7 @@
                         <span class="watch">Watch</span>
                     </div>
                 </div>
-                <div class="tz-neighborhoods__content__item">
+                <div class="tz-neighborhoods__content__item grid-type5">
                     <a href="#" class="item-link"></a>
                     <div class="image-block">
                         <img src="images/common/main/neighborhoods/neighborhood_5.jpg" alt="item-image" class="item-image">
@@ -440,7 +491,7 @@
                         <span class="watch">Watch</span>
                     </div>
                 </div>
-                <div class="tz-neighborhoods__content__item">
+                <div class="tz-neighborhoods__content__item grid-type6">
                     <a href="#" class="item-link"></a>
                     <div class="image-block">
                         <img src="images/common/main/neighborhoods/neighborhood_6.jpg" alt="item-image" class="item-image">
@@ -451,7 +502,7 @@
                         <span class="watch">Watch</span>
                     </div>
                 </div>
-                <div class="tz-neighborhoods__content__item">
+                <div class="tz-neighborhoods__content__item grid-type7">
                     <a href="#" class="item-link"></a>
                     <div class="image-block">
                         <img src="images/common/main/neighborhoods/neighborhood_7.jpg" alt="item-image" class="item-image">
@@ -462,7 +513,7 @@
                         <span class="watch">Watch</span>
                     </div>
                 </div>
-                <div class="tz-neighborhoods__content__item">
+                <div class="tz-neighborhoods__content__item grid-type8">
                     <a href="#" class="item-link"></a>
                     <div class="image-block">
                         <img src="images/common/main/neighborhoods/neighborhood_8.jpg" alt="item-image" class="item-image">
@@ -517,6 +568,33 @@
                                 <h3 class="item-name">Turnberry Ocean Club</h3>
                             </div>
                         </div>
+                        <div class="swiper-slide tz-projects-item">
+                            <a href="#" class="item-link"></a>
+                            <div class="image-block">
+                                <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-name">Residences by Armani Casa</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tz-projects-item">
+                            <a href="#" class="item-link"></a>
+                            <div class="image-block">
+                                <img src="images/common/main/projects/project_2.jpg" alt="project" class="project-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-name">Ritz Carlton Sunny Isles</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tz-projects-item">
+                            <a href="#" class="item-link"></a>
+                            <div class="image-block">
+                                <img src="images/common/main/projects/project_3.jpg" alt="project" class="project-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-name">Turnberry Ocean Club</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-navigation">
@@ -534,16 +612,20 @@
             <div class="tz-profile__content lazyload" data-bgset="images/bg/mobile/main/profile_bg.jpg [(max-width: 575px)] | images/bg/pad/main/profile_bg.jpg [(max-width: 1024px)] | images/bg/desk/main/profile_bg.jpg [(min-width: 1025px)]">
                 <div class="title-wrapper">
                     <h2 class="tz-profile__title"><b>Daniel</b> Tzinker</h2>
-                    <img src="images/common/logo_circle_white.png" alt="Tzinker" class="logo-image">
+                    <span class="logo-icon"></span>
                 </div>
             </div>
             <div class="tz-profile__descr">
-                <h2>High-end luxury real estate consultant with 10+ years of experience</h2>
-                <ul>
-                    <li>*Record breaking deals in most of Miami luxury neighborhoods</li>
-                    <li>*¼ billion in career sales</li>
-                    <li>*Trilingual speaker (English, Russian, Hebrew).</li>
-                </ul>
+                <div class="descr-lside">
+                    <h2>High-end luxury real estate consultant with 10+ years of experience</h2>
+                </div>
+                <div class="descr-rside">
+                    <ul>
+                        <li>*Record breaking deals in most of Miami luxury neighborhoods</li>
+                        <li>*¼ billion in career sales</li>
+                        <li>*Trilingual speaker (English, Russian, Hebrew).</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -559,7 +641,7 @@
         <div class="container">
             <div class="tz-testimonials__title-row">
                 <h2 class="tz-testimonials__title section-title">Our Clients <b>Testimonials</b></h2>
-                <img src="images/common/logo_circle.png" alt="tzinker" class="logo-image" style="display: none;">
+                <span class="logo-icon" style="display: none;"></span>
             </div>
             <div class="tz-testimonials__content">
                 <div id="testimonials-slider" class="testimonials-slider swiper">
@@ -681,42 +763,46 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <a href="/" class="logo-link">
-                    <img src="images/common/logo.png" alt="tzinker" class="logo-image">
-                </a>
-                <a href="#" class="agency-link">
-                    <img src="images/common/agency_logo.jpg" alt="agency" class="agency-image">
-                </a>
-                <button id="hamburger_footer" data-menu="main-menu" class="hamburger hamburger--slider" type="button">
-                    <span class="hamburger-box">
+                <div class="logo-wrapper">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/logo.png" alt="tzinker" class="logo-image">
+                    </a>
+                </div>
+                <div class="agency-wrapper">
+                    <a href="#" class="agency-link">
+                        <img src="images/common/agency_logo.jpg" alt="agency" class="agency-image">
+                    </a>
+                </div>
+                <div class="btn-wrapper">
+                    <button id="hamburger_footer" data-menu="main-menu" class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
-                    </span>
-                    <span class="text-box">Menu</span>
-                </button>
-                <div class="menu-block">
-                    <div class="menu-block__top">
-                        <nav class="footer-menu">
-                            <ul class="footer-menu__list">
-                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Terms and Conditions</a></li>
-                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Privacy</a></li>
-                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Accessibility</a></li>
-                            </ul>
-                        </nav>
-                        <div class="links-row">
-                            <a href="mailto:daniel@tzinker.com" class="email-link">daniel@tzinker.com</a>
-                            <a href="tel:+7862349898" class="phone-link">(786) 234-9898</a>
-                        </div>
-                    </div>
-                    <div class="menu-block__bottom">
-                        <span class="copyright">© Copyright 2022</span>
-                        <ul class="socials-menu">
-                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-facebook"></i></a></li>
-                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-twitter"></i></a></li>
-                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-instagram"></i></a></li>
-                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-linkedin"></i></a></li>
-                            <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-youtube-play"></i></a></li>
+                        </span>
+                        <span class="text-box">Menu</span>
+                    </button>
+                </div>
+                <div class="footer-wrapper">
+                    <nav class="footer-menu">
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Terms and Conditions</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Privacy</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Accessibility</a></li>
                         </ul>
+                    </nav>
+                    <div class="email-wrapper">
+                        <a href="mailto:daniel@tzinker.com" class="email-link">daniel@tzinker.com</a>
                     </div>
+                    <div class="phone-wrapper">
+                        <a href="tel:+7862349898" class="phone-link">(786) 234-9898</a>
+                    </div>
+                    <div class="copyright">© Copyright 2022</div>
+                    <ul class="socials-menu">
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-facebook"></i></a></li>
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-twitter"></i></a></li>
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-instagram"></i></a></li>
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-linkedin"></i></a></li>
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-youtube-play"></i></a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer__privacy">
