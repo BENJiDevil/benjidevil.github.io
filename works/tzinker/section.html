@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>tzinker</title>
+    <meta name="description" content="tzinker">
+    <meta name="keywords" content="tzinker">
+    <meta name="author" content="tzinker">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="tzinker">
+    <meta property="og:title" content="tzinker">
+    <meta property="og:description" content="tzinker">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://tzinker.com/">
+    <link rel="canonical" href="https://tzinker.com/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/GraphikLCGLight/GraphikLCGLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GraphikLCGMedium/GraphikLCGMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GraphikLCGRegular/GraphikLCGRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GraphikLCGThin/GraphikLCGThin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="tz-header black">
+        <div class="container">
+            <div class="tz-header__content">
+                <div class="logo-wrapper">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/logo.png" alt="tzinker" class="logo-image">
+                    </a>
+                </div>
+                <div class="btn-wrapper">
+                    <button id="hamburger" data-menu="main-menu" class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                        </span>
+                        <span class="text-box">Menu</span>
+                    </button>
+                </div>
+                <div class="menu-block">
+                    <div class="login-wrapper">
+                        <a href="#" class="login-link">Login <span>|</span> Register</a>
+                    </div>
+                    <div class="email-wrapper" style="display: none;">
+                        <a href="mailto:daniel@tzinker.com" class="email-link">daniel@tzinker.com</a>
+                    </div>
+                    <div class="phone-wrapper">
+                        <a href="tel:+7862349898" class="phone-link">(786) 234-9898</a>
+                    </div>
+                    <div class="menu-block__bottom">
+                        <div class="menu-wrapper">
+                            <nav id="main-menu" class="main-menu" style="position: fixed; transform: translateX(100vw);">
+                                <a id="close-btn" href="javascript:void(0);" class="close-btn"><i class="icon icon-close"></i></a>
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__item submenu-item">
+                                        <a href="#" class="main-menu__link">Neighborhoods</a>
+                                        <a href="javascript:void(0);" class="submenu-arrow"><i class="icon icon-select-arrow"></i></a>
+                                        <ul class="submenu-list js-submenu">
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/allison-island/">Allison Island</a>
+                                            </li>
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/bay-harbor-islands/">Bay Harbor Islands</a>
+                                            </li>
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/golden-beach/">Golden Beach</a>
+                                            </li>
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/indian-creek/">Indian Creek</a>
+                                            </li>
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/la-gorce-island/">La Gorce Island</a>
+                                            </li>
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/north-bay-road/">North Bay Road</a>
+                                            </li>
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/palm-islands/">Palm Islands</a>
+                                            </li>
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/sunset-islands/">Sunset Islands</a>
+                                            </li>
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/venetian-islands/">Venetian Islands</a>
+                                            </li>
+                                            <li class="submenu-list__item">
+                                                <a class="submenu-list__link" href="/neighborhoods">All Neighborhoods</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-menu__item submenu-item">
+                                        <a href="#" class="main-menu__link">Luxury Condo</a>
+                                        <a href="javascript:void(0);" class="submenu-arrow"><i class="icon icon-select-arrow"></i></a>
+                                        <ul class="submenu-list js-submenu">
+                                            <li class="submenu-list__item"><a class="submenu-list__link" href="/building/residences-by-armani-casa/">Residences by Armani Casa</a></li>
+                                            <li class="submenu-list__item"><a class="submenu-list__link" href="/building/the-ritz-carlton-sunny-isles-beach/">Ritz Carlton Sunny Isles</a></li>
+                                            <li class="submenu-list__item"><a class="submenu-list__link" href="/building/turnberry-ocean-club/">Turnberry Ocean Club</a></li>
+                                            <li class="submenu-list__item"><a class="submenu-list__link" href="/building/the-estates-at-acqualina/">The Estates at Acqualina</a></li>
+                                            <li class="submenu-list__item"><a class="submenu-list__link" href="/luxury-condos">All Condos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">Search</a></li>
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">About</a></li>
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="request-wrapper" style="display: none;">
+                            <a href="#" class="request-link">Leave a request</a>
+                        </div>
+                        <div class="socials-wrapper" style="display: none;">
+                            <ul class="socials-menu">
+                                <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-facebook"></i></a></li>
+                                <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-twitter"></i></a></li>
+                                <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-instagram"></i></a></li>
+                                <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-linkedin"></i></a></li>
+                                <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="tz-section lazyload" data-bgset="images/bg/mobile/section/section_bg.jpg [(max-width: 575px)] | images/bg/pad/section/section_bg.jpg [(max-width: 1024px)] | images/bg/desk/section/section_bg.jpg [(min-width: 1025px)]">
+        <div class="container">
+            <h1 class="tz-section__title">Luxury Condo</h1>
+            <nav class="section-menu">
+                <ul class="section-menu__list">
+                    <li class="section-menu__item"><a href="javascript:void(0);" data-section="north_beaches" class="section-menu__link">North Beaches</a></li>
+                    <li class="section-menu__item"><a href="javascript:void(0);" data-section="bal_harbour" class="section-menu__link">Bal Harbour & Surfside</a></li>
+                    <li class="section-menu__item"><a href="javascript:void(0);" data-section="sunny_ises" class="section-menu__link">Sunny Ises</a></li>
+                    <li class="section-menu__item"><a href="javascript:void(0);" data-section="aventura" class="section-menu__link">Aventura</a></li>
+                    <li class="section-menu__item"><a href="javascript:void(0);" data-section="edgewater" class="section-menu__link">Edgewater</a></li>
+                    <li class="section-menu__item"><a href="javascript:void(0);" data-section="fisher_island" class="section-menu__link">Fisher Island</a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <section id="north_beaches" class="tz-section-part">
+        <div class="container">
+            <div class="tz-section-part__title-row">
+                <h2 class="tz-section-part__title">North Beaches</h2>
+                <span class="logo-icon" style="display: none;"></span>
+            </div>
+            <div class="tz-section-part__content">
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">The Bath Club</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">The Carillon Hotel & Spa South Tower</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bal_harbour" class="tz-section-part">
+        <div class="container">
+            <div class="tz-section-part__title-row">
+                <h2 class="tz-section-part__title">Bal Harbour & Surfside</h2>
+                <span class="logo-icon" style="display: none;"></span>
+            </div>
+            <div class="tz-section-part__content">
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sunny_ises" class="tz-section-part">
+        <div class="container">
+            <div class="tz-section-part__title-row">
+                <h2 class="tz-section-part__title">Sunny Ises</h2>
+                <span class="logo-icon" style="display: none;"></span>
+            </div>
+            <div class="tz-section-part__content">
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="aventura" class="tz-section-part">
+        <div class="container">
+            <div class="tz-section-part__title-row">
+                <h2 class="tz-section-part__title">Aventura</h2>
+                <span class="logo-icon" style="display: none;"></span>
+            </div>
+            <div class="tz-section-part__content">
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="edgewater" class="tz-section-part">
+        <div class="container">
+            <div class="tz-section-part__title-row">
+                <h2 class="tz-section-part__title">Edgewater</h2>
+                <span class="logo-icon" style="display: none;"></span>
+            </div>
+            <div class="tz-section-part__content">
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fisher_island" class="tz-section-part">
+        <div class="container">
+            <div class="tz-section-part__title-row">
+                <h2 class="tz-section-part__title">Fisher Island</h2>
+                <span class="logo-icon" style="display: none;"></span>
+            </div>
+            <div class="tz-section-part__content">
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+                <div class="tz-section-part__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/main/projects/project_1.jpg" alt="project" class="project-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Residences by Armani Casa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="logo-wrapper">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/logo.png" alt="tzinker" class="logo-image">
+                    </a>
+                </div>
+                <div class="agency-wrapper">
+                    <a href="#" class="agency-link">
+                        <img src="images/common/agency_logo.jpg" alt="agency" class="agency-image">
+                    </a>
+                </div>
+                <div class="btn-wrapper">
+                    <button id="hamburger_footer" data-menu="main-menu" class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                        <span class="text-box">Menu</span>
+                    </button>
+                </div>
+                <div class="footer-wrapper">
+                    <nav class="footer-menu">
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Terms and Conditions</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Privacy</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Accessibility</a></li>
+                        </ul>
+                    </nav>
+                    <div class="email-wrapper">
+                        <a href="mailto:daniel@tzinker.com" class="email-link">daniel@tzinker.com</a>
+                    </div>
+                    <div class="phone-wrapper">
+                        <a href="tel:+7862349898" class="phone-link">(786) 234-9898</a>
+                    </div>
+                    <div class="copyright">© Copyright 2022</div>
+                    <ul class="socials-menu">
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-facebook"></i></a></li>
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-twitter"></i></a></li>
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-instagram"></i></a></li>
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-linkedin"></i></a></li>
+                        <li class="socials-menu__item"><a href="#" target="_blank" class="socials-menu__link"><i class="icon icon-youtube-play"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__privacy">
+                <p>Privacy — Equal Housing Opportunity. All material presented herein is intended for information purposes only. While this information is believed to be correct, it is represented subject to errors, omissions, changes or withdrawal without notice. All property information, including, but not limited to square footage, room count, number of bedrooms and the school district in property listings are deemed reliable, but should be verified by your own attorney, architect or zoning expert. If your property is currently listed with another real estate broker, please disregard this offer. It is not our intention to solicit the offerings of other real estate brokers. We cooperate with them fully.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title"></h2>
+                    <h3 class="modal__subtitle"></h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Заказать</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
