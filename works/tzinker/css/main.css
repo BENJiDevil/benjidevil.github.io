@@ -526,32 +526,14 @@ body.overflow .tz-header:before {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 18px 0 17px;
-  -webkit-transition: padding .3s;
-  -o-transition: padding .3s;
-  transition: padding .3s
-}
-@media (min-width:768px) {
-  .tz-header__content .menu-block .login-wrapper {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.3%;
-    flex: 0 0 33.3%;
-    max-width: 33.3%
-  }
-}
-.tz-header__content .menu-block .login-wrapper .login-link {
-  display: inline-block;
-  color: #fff;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 13px;
-  padding-left: 20px;
+  padding: 13px 0 13px 20px;
+  -webkit-transition: padding .3s,color .3s;
+  -o-transition: padding .3s,color .3s;
+  transition: padding .3s,color .3s;
   position: relative;
-  -webkit-transition: color .3s;
-  -o-transition: color .3s;
-  transition: color .3s
+  color: #fff
 }
-.tz-header__content .menu-block .login-wrapper .login-link:before {
+.tz-header__content .menu-block .login-wrapper:before {
   content: "\e800";
   font-family: Fontello;
   font-style: normal;
@@ -564,16 +546,28 @@ body.overflow .tz-header:before {
   font-variant: normal;
   text-transform: none;
   position: absolute;
-  top: -1px;
+  top: calc(50% - 8px);
   left: 0;
   font-size: 16px;
-  line-height: 16px
+  line-height: 16px;
+  -webkit-transition: top .3s;
+  -o-transition: top .3s;
+  transition: top .3s
 }
-.tz-header__content .menu-block .login-wrapper .login-link span {
-  display: inline-block;
-  margin: 0 5px
+@media (min-width:768px) {
+  .tz-header__content .menu-block .login-wrapper {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%
+  }
 }
 @media (min-width:1200px) {
+  .tz-header__content .menu-block .login-wrapper:before {
+    font-size: 18px;
+    line-height: 18px;
+    top: calc(50% - 3px)
+  }
   .tz-header__content .menu-block .login-wrapper {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 auto;
@@ -581,18 +575,97 @@ body.overflow .tz-header:before {
     max-width: 100%;
     width: auto;
     margin: 0 auto 0 38px;
-    padding: 32px 0 25px
+    padding: 32px 0 20px 32px
   }
-  .tz-header__content .menu-block .login-wrapper .login-link {
-    font-size: 18px;
-    line-height: 18px;
-    padding-left: 32px
-  }
-  .tz-header__content .menu-block .login-wrapper .login-link:before {
+}
+.tz-header__content .menu-block .login-wrapper.log-in {
+  padding-left: 0!important
+}
+.tz-header__content .menu-block .login-wrapper.log-in span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #4b4b4b;
+  width: 30px;
+  height: 30px;
+  margin: -4px 10px -4px 0;
+  border-radius: 50%;
+  text-transform: uppercase
+}
+.tz-header__content .menu-block .login-wrapper.log-in:before {
+  display: none
+}
+.tz-header__content .menu-block .login-wrapper .profile-link {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s
+}
+@media (min-width:1200px) {
+  .tz-header__content .menu-block .login-wrapper .profile-link {
     font-size: 18px;
     line-height: 18px
   }
-  .tz-header__content .menu-block .login-wrapper .login-link span {
+  .tz-header__content .menu-block .login-wrapper .profile-link span {
+    font-size: 16px;
+    line-height: 16px
+  }
+}
+.tz-header__content .menu-block .login-wrapper .profile-link:after {
+  content: "\e808";
+  font-family: Fontello;
+  font-style: normal;
+  font-weight: 400;
+  speak: never;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s
+}
+.tz-header__content .menu-block .login-wrapper .profile-link:hover:after {
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  transform: translateX(5px)
+}
+.tz-header__content .menu-block .login-wrapper .login-link {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  position: relative;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s
+}
+.tz-header__content .menu-block .login-wrapper span {
+  display: inline-block;
+  margin: 0 5px
+}
+@media (min-width:1200px) {
+  .tz-header__content .menu-block .login-wrapper .login-link {
+    font-size: 18px;
+    line-height: 18px
+  }
+  .tz-header__content .menu-block .login-wrapper span {
     margin: 0 7px
   }
 }
@@ -1173,7 +1246,9 @@ body.overflow .tz-header:before {
 .tz-header.black .tz-header__content .menu-block:before {
   background-color: rgba(0,0,0,.25)
 }
-.tz-header.black .tz-header__content .menu-block .login-wrapper .login-link {
+.tz-header.black .tz-header__content .menu-block .login-wrapper,
+.tz-header.black .tz-header__content .menu-block .login-wrapper .login-link,
+.tz-header.black .tz-header__content .menu-block .login-wrapper .profile-link {
   color: #000
 }
 .tz-header.black .tz-header__content .menu-block .email-wrapper:after,
@@ -1343,9 +1418,11 @@ body.overflow .tz-header:before {
   background-color: rgba(0,0,0,.25)
 }
 .tz-header.scroll .tz-header__content .menu-block .login-wrapper {
-  padding: 15px 0
+  color: #000;
+  padding: 10px 0 10px 20px
 }
-.tz-header.scroll .tz-header__content .menu-block .login-wrapper .login-link {
+.tz-header.scroll .tz-header__content .menu-block .login-wrapper .login-link,
+.tz-header.scroll .tz-header__content .menu-block .login-wrapper .profile-link {
   color: #000
 }
 .tz-header.scroll .tz-header__content .menu-block .email-wrapper:after,
@@ -1354,7 +1431,10 @@ body.overflow .tz-header:before {
 }
 @media (min-width:1200px) {
   .tz-header.scroll .tz-header__content .menu-block .login-wrapper {
-    padding: 20px 0
+    padding: 18px 0 18px 32px
+  }
+  .tz-header.scroll .tz-header__content .menu-block .login-wrapper:before {
+    top: calc(50% - 9px)
   }
   .tz-header.scroll .tz-header__content .menu-block .email-wrapper {
     padding: 18px 0

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- meta tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>tzinker</title>
@@ -8,13 +9,16 @@
     <meta name="keywords" content="tzinker">
     <meta name="author" content="tzinker">
     <meta name="image" content="images/preview.jpg">
+    <!-- OG -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="tzinker">
     <meta property="og:title" content="tzinker">
     <meta property="og:description" content="tzinker">
     <meta property="og:image" content="images/preview.jpg">
     <meta property="og:url" content="https://tzinker.com/">
+    <!-- canonical -->
     <link rel="canonical" href="https://tzinker.com/">
+    <!-- favicon -->
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -30,17 +34,22 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/manifest.json">
+    <!-- app icon -->
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+    <!-- app icon -->
     <meta name="apple-mobile-web-app-title" content="">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- browser settings -->
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
+    <!-- preload fonts -->
     <link rel="preload" href="fonts/GraphikLCGLight/GraphikLCGLight.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/GraphikLCGMedium/GraphikLCGMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/GraphikLCGRegular/GraphikLCGRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/GraphikLCGThin/GraphikLCGThin.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- critical styles -->
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -61,8 +70,18 @@
                     </button>
                 </div>
                 <div class="menu-block">
+                    <!-- if login -> add class log-in -->
                     <div class="login-wrapper">
-                        <a href="#" class="login-link">Login <span>|</span> Register</a>
+                        <!-- if not login -->
+                        <a href="#" class="login-link">Login</a>
+                        <span>|</span>
+                        <a href="#" class="login-link">Register</a>
+                        <!-- if login
+                    <a href="#" class="profile-link">
+                        <span>KZ</span>
+                        Profile
+                    </a>
+                    -->
                     </div>
                     <div class="email-wrapper" style="display: none;">
                         <a href="mailto:daniel@tzinker.com" class="email-link">daniel@tzinker.com</a>
@@ -145,6 +164,7 @@
             </div>
         </div>
     </header>
+    <!-- main content -->
     <main class="tz-sell lazyload" data-bgset="images/bg/mobile/sell/sell_bg.jpg [(max-width: 575px)] | images/bg/pad/sell/sell_bg.jpg [(max-width: 1024px)] | images/bg/desk/sell/sell_bg.jpg [(min-width: 1025px)]">
         <div class="container">
             <h1 class="tz-sell__title"><b>Looking to sell</b> your home?</h1>
@@ -158,6 +178,7 @@
             </div>
         </div>
     </main>
+    <!-- main end content -->
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -232,8 +253,10 @@
             </div>
         </div>
     </div>
+    <!-- styles -->
     <link rel="stylesheet" href="css/styles.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- js -->
     <script defer src="js/common.min.js"></script>
 </body>
 </html>
