@@ -1224,18 +1224,38 @@ $('#shade-close').click(function (){
     /* open/close tabs */
     $('.tab-type[data-type="group"]').css('display', 'block');
     $('.tab-type[data-type="shade"]').css('display', 'none');
-    $('.interier__descriptions').css('opacity', 0);
-    $('#price-info').slideUp();
-    $('#order-btn').slideUp();
+    // $('.interier__descriptions').css('opacity', 0);
+    // $('#price-info').slideUp();
+    // $('#order-btn').slideUp();
     /* clean svg */
-    $('.interier__vector').removeClass('active');
-    $('.interier__descriptions').each(function (){
+    // $('.interier__vector').removeClass('active');
+    /*
+       $('.interier__descriptions').each(function (){
         $(this).find('.interier__description-color').css('background-color','rgb(255, 255, 255)');
         $(this).find('span').html('Нет цвета');
     })
+    */
+    /*
+        $('.interier__layout svg g').each(function (){
+
+            $(this).css('fill', 'transparent').css('stroke', 'transparent');
+        })
+    */
+    /* clean group */
+    $('.tab-type[data-type="group"] .group-list .group-item').removeClass('active');
+    /* clean shade */
+    $('.tab-type[data-type="shade"] .shade-list .shade-item').removeClass('active');
+});
+$('#clean-lnk').on('click', function (){
+    $('#price-info').slideUp();
+    $('#order-btn').slideUp();
+    $('.interier__descriptions').each(function (){
+        $(this).find('.interier__description-color').css('background-color','rgb(255, 255, 255)');
+        $(this).find('span').html('Нет цвета');
+    });
     $('.interier__layout svg g').each(function (){
         $(this).css('fill', 'transparent').css('stroke', 'transparent');
-    })
+    });
     /* clean group */
     $('.tab-type[data-type="group"] .group-list .group-item').removeClass('active');
     /* clean shade */
