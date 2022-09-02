@@ -1138,9 +1138,6 @@ body.overflow {
   background-size: contain;
   position: relative
 }
-.services-block .container {
-  background-color: rgba(0,0,0,.8)
-}
 .services-block:after {
   content: "";
   display: block;
