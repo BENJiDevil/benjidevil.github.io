@@ -83,7 +83,7 @@
                             <img src="images/common/2000.jpg" class="giftcard_image" id="giftcard_1">
                             <div class="btns-row">
                                 <button class="count-btn minus" type="button"><i class="icon icon-minus"></i></button>
-                                <input class="count-input quantity_number" id="quantity_1" name="quantity_1" type="number" min="0" max="20" step="1" value="1">
+                                <input class="count-input quantity_number" id="quantity_1" name="quantity_1" type="text" readonly min="0" max="20" step="1" value="0">
                                 <button class="count-btn plus" type="button"><i class="icon icon-plus"></i></button>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                             <img src="images/common/5000.jpg" class="giftcard_image" id="giftcard_2">
                             <div class="btns-row">
                                 <button class="count-btn minus" type="button"><i class="icon icon-minus"></i></button>
-                                <input class="count-input quantity_number" id="quantity_2" name="quantity_2" type="number" min="0" max="20" step="1" value="1">
+                                <input class="count-input quantity_number" id="quantity_2" name="quantity_2" type="text" readonly min="0" max="20" step="1" value="0">
                                 <button class="count-btn plus" type="button"><i class="icon icon-plus"></i></button>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                             <img src="images/common/10000.jpg" class="giftcard_image" id="giftcard_3">
                             <div class="btns-row">
                                 <button class="count-btn minus" type="button"><i class="icon icon-minus"></i></button>
-                                <input class="count-input quantity_number" id="quantity_3" name="quantity_3" type="number" min="0" max="20" step="1" value="1">
+                                <input class="count-input quantity_number" id="quantity_3" name="quantity_3" type="text" readonly min="0" max="20" step="1" value="0">
                                 <button class="count-btn plus" type="button"><i class="icon icon-plus"></i></button>
                             </div>
                         </div>
@@ -205,7 +205,7 @@
                     <p class="copyright">© 2022 Special Barbershop</p>
                 </div>
                 <div class="footer__content__right-side">
-                    <iframe src="" frameborder="0"></iframe>
+                    <div id="map" class="map-block"></div>
                 </div>
             </div>
         </div>
@@ -237,6 +237,28 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script>
+        var Map,
+            Placemark;
+        function init() {
+            Map = new ymaps.Map("map", {
+                center: [59.954394, 30.286646],
+                zoom: 13,
+                controls: []
+            });
+            Map.behaviors.disable('scrollZoom');
+            Placemark = new ymaps.Placemark([59.954394, 30.286646], {
+                balloonContentBody: "Special Barbershop<br>ул. Ждановская, 1/2",
+                balloonContentFooter: "Всегда доступна парковка."
+            }, {
+                preset: 'islands#redDotIcon'
+            });
+            Map.geoObjects.add(Placemark);
+            Placemark.balloon.open();
+        }
+        ymaps.ready(init);
+    </script>
     <script defer src="js/common.min.js"></script>
 </body>
 </html>
