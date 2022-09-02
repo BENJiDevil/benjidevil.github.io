@@ -1306,21 +1306,11 @@ body.overflow {
 .giftcart-block .container {
   position: relative;
   z-index: 1;
-  margin-top: 220px
-}
-@media (min-width:576px) {
-  .giftcart-block .container {
-    margin-top: 180px
-  }
-}
-@media (min-width:1024px) {
-  .giftcart-block .container {
-    margin-top: 220px
-  }
+  margin-top: 60px
 }
 @media (min-width:1200px) {
   .giftcart-block .container {
-    margin-top: 260px
+    margin-top: 120px
   }
 }
 .giftcart-block .gift-form {
