@@ -955,7 +955,8 @@ body.overflow {
   -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
   max-width: 33.3%;
-  border: 1px solid #000
+  border: 1px solid #000;
+  overflow: hidden
 }
 .about-block__content__right-side .barbergram-wrapper .inst-link:nth-of-type(1) {
   border-left: 1px solid transparent
@@ -966,7 +967,16 @@ body.overflow {
 .about-block__content__right-side .barbergram-wrapper .inst-link img {
   display: block;
   width: auto;
-  max-width: 100%
+  max-width: 100%;
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s
+}
+.about-block__content__right-side .barbergram-wrapper .inst-link:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2)
 }
 .info-block {
   color: #fff
