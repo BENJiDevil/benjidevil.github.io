@@ -382,3 +382,59 @@
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp
 }
+@-webkit-keyframes rightmover {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+  80% {
+    opacity: .8
+  }
+  to {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+    opacity: .6
+  }
+}
+@keyframes rightmover {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+  80% {
+    opacity: .8
+  }
+  to {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+    opacity: .6
+  }
+}
+@-webkit-keyframes leftmover {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+  80% {
+    opacity: .8
+  }
+  to {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    opacity: .6
+  }
+}
+@keyframes leftmover {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+  80% {
+    opacity: .8
+  }
+  to {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    opacity: .6
+  }
+}
