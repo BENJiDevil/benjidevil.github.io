@@ -38,8 +38,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <link rel="preload" href="fonts/MontserratBold/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoCondensedBold/RobotoCondensedBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff2" as="font" type="font/woff2" crossorigin>
@@ -146,8 +146,8 @@
                         <div class="input-group">
                             <input class="input-style" type="email" name="mail" placeholder="E-mail">
                         </div>
-                        <div class="input-group">
-                            <textarea class="input-style" name="message" placeholder="Опишите вашу задачу"></textarea>
+                        <div class="input-group message-group">
+                            <textarea class="input-style height-js" name="message" placeholder="Опишите вашу задачу"></textarea>
                         </div>
                         <div class="input-group btn-group">
                             <button type="submit" class="btn-style green-style">Отправить</button>
@@ -728,7 +728,9 @@
                 });
             });
         }
-        ymaps.ready(init);
+        if ($('#map').length > 0) {
+            ymaps.ready(init);
+        }
     </script>
     <script defer src="js/common.min.js"></script>
 </body>

@@ -1026,6 +1026,9 @@
   .main-projects__content .project-menu__list {
     max-width: 100%
   }
+  .contacts-block .form-block .input-group textarea {
+    max-height: 112px
+  }
 }
 @media (min-width:1200px) {
   .main-projects__content .project-menu__list {
@@ -3115,6 +3118,9 @@
     max-width: 100%;
     margin-top: 45px
   }
+  .fullpage-form .input-group.message-group textarea {
+    max-height: 25px
+  }
 }
 .fullpage-form .input-group {
   margin-top: 30px
@@ -3173,6 +3179,10 @@
   width: 100%;
   max-width: 100%
 }
+.fullpage-form .input-group.message-group {
+  position: relative;
+  min-height: 23px
+}
 .fullpage-form.project_single-form {
   width: calc(100% + 30px);
   margin: 40px -15px;
@@ -3216,6 +3226,14 @@
     font-size: 14px;
     line-height: 22px;
     padding: 0
+  }
+  .fullpage-form .input-group.message-group textarea {
+    max-height: 112px;
+    min-height: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0
   }
   .fullpage-form.project_single-form {
     padding: 22px 30px 28px
