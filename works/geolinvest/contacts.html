@@ -38,8 +38,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <link rel="preload" href="fonts/MontserratBold/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoCondensedBold/RobotoCondensedBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff2" as="font" type="font/woff2" crossorigin>
@@ -684,6 +684,11 @@
                 [55.687086, 37.529789], '', 'Геологический отчет по результатам проведения геологоразведочных раб', '', '', ''
             ]
         ];
+        /* regions array from back */
+        regionsArray = [
+            ['RU-MAG', '#', 'TEST2 Технико-экономическое обоснование постоянных разведочных кондиций', 'для открытого способа отработки месторождения россыпного золота Нера-Талалах.', '2012', 'Золото'],
+            ['RU-ALT', '#', 'TEST3 Алтай Технико-экономическое обоснование постоянных разведочных кондиций', 'для открытого способа отработки месторождения россыпного золота Нера-Талалах.', '2012', 'Золото']
+        ];
         function init() {
             Map = new ymaps.Map("map", {
                 center: mapCenter,
@@ -722,7 +727,52 @@
                 if (index + 1 == markOpen) {
                     Placemark.balloon.open();
                 }
-            })
+            });
+            ymaps.borders.load('RU', {
+                lang: 'ru',
+                quality: 1
+            }).then(function(geojson) {
+                var objectManager = new ymaps.ObjectManager();
+                var regions = geojson.features.reduce(function(acc, feature) {
+                    var iso = feature.properties.iso3166;
+                    feature.id = iso;
+                    acc[iso] = feature;
+                    return acc;
+                }, {});
+                regionsArray.forEach(function(element) {
+                    var baloonHeader = (element[1] && element[1] != '') ? '<a href="$[properties.balloonContentLink]" class="baloon-header link-active">$[properties.balloonContentName]</a>' : '<h3 class="baloon-header">$[properties.balloonContentName]</h3>',
+                        baloonDescr = (element[3] && element[3] != '') ? '<p class="info-list">$[properties.balloonContentDescr]</p>' : '',
+                        baloonYear = (element[4] && element[4] != '') ? '<p class="info-year">$[properties.balloonContentYear]</p>' : '',
+                        baloonGear = (element[5] && element[5] != '') ? '<p class="info-gear">$[properties.balloonContentGear]</p>' : '';
+                    MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                        '<div class="custom-baloon">' +
+                        baloonHeader +
+                        '<div class="baloon-descr">' +
+                        baloonDescr +
+                        baloonYear +
+                        baloonGear +
+                        '</div>' +
+                        '</div>'
+                    );
+                    var polygon = new ymaps.Polygon([
+                        regions[element[0]].geometry.coordinates[0]
+                    ], {
+                        balloonContentLink: '' + element[1],
+                        balloonContentName: '' + element[2],
+                        balloonContentDescr: '' + element[3],
+                        balloonContentYear: '' + element[4],
+                        balloonContentGear: '' + element[5],
+                    }, {
+                        balloonLayout: MyBalloonContentLayout,
+                        hideIconOnBalloonOpen: false,
+                        fillColor: '#C40829',
+                        interactivityModel: 'default#transparent',
+                        strokeWidth: 0,
+                        opacity: 0.4
+                    });
+                    Map.geoObjects.add(polygon);
+                });
+            });
         }
         ymaps.ready(init);
     </script>
