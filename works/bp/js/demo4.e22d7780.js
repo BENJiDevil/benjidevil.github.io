@@ -6314,7 +6314,7 @@ var ButtonCtrl = /*#__PURE__*/function (_EventEmitter) {
       // size/position
       this.rect = this.DOM.el.getBoundingClientRect(); // the movement will take place when the distance from the mouse to the center of the button is lower than this value
 
-      this.distanceToTrigger = this.rect.width * 0.7;
+      this.distanceToTrigger = this.rect.width * 0.5;
     }
   }, {
     key: "initEvents",
