@@ -2498,12 +2498,105 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   margin: 19px 0 0
 }
 .catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 17px
 }
 .catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item:nth-of-type(1) {
   margin-top: 0
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .icon {
+  display: inline-block;
+  margin: 0 0 0 auto;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  font-size: 10px;
+  line-height: 20px;
+  -webkit-transition: color .3s,-webkit-transform .3s;
+  transition: transform .3s,color .3s,-webkit-transform .3s;
+  -o-transition: transform .3s,color .3s
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .icon:hover {
+  color: #bd2f2f
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu {
+  display: none;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  width: 100%;
+  padding: 20px 0 0
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu__list {
+  padding: 0 0 0 20px;
+  list-style-type: none;
+  margin: 0
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 10px
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu__item:nth-of-type(1) {
+  margin-top: 0
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu__item .aside__submenu {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  width: 100%
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu__item .aside__submenu__list {
+  padding: 0 0 15px 20px
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu__item.show > .icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu__item.show > .aside__submenu {
+  display: block
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu__link {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item .aside__submenu__link:hover {
+  color: #bd2f2f
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item.show > .icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+.catalog-layout__content__left-side .catalog-aside__menu .aside-menu__item.show > .aside__submenu {
+  display: block
 }
 .catalog-layout__content__left-side .catalog-aside__menu .aside-menu__link {
   font-size: 16px;
@@ -2511,7 +2604,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   color: #fff;
   -webkit-transition: color .3s;
   -o-transition: color .3s;
-  transition: color .3s
+  transition: color .3s;
+  display: inline-block
 }
 .catalog-layout__content__left-side .catalog-aside__menu .aside-menu__link:hover {
   color: #bd2f2f
@@ -6993,6 +7087,20 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 .error-page .back-link {
   margin-top: 30px
+}
+@media (min-width:770px) and (max-width:960px) {
+  .header__content__top .phone-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  .header__content__center .backcall-btn {
+    display: none
+  }
 }
 .footer {
   margin-top: auto;
