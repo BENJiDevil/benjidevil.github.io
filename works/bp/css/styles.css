@@ -1794,46 +1794,49 @@
   }
 }
 .backcall-block .backcall-bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  height: 15vw;
   position: absolute;
-  bottom: 54px;
   left: 0;
-  width: 100vw;
-  height: 40px;
+  bottom: 54px;
+  width: 100%;
+  overflow: hidden
+}
+.backcall-block .backcall-bg .txt {
+  width: 160vw;
+  height: calc(20vw - 6px);
   overflow: hidden;
   background-image: url(../images/common/svg/call_text.svg);
   background-repeat: repeat-x;
-  background-size: auto 40px;
-  -webkit-animation: 18s linear infinite footer_text;
-  animation: 18s linear infinite footer_text
-}
-@media (min-width:1024px) {
-  .backcall-block .backcall-bg {
-    height: 60px;
-    background-size: auto 60px
-  }
+  background-size: 160vw calc(20vw - 6px);
+  -webkit-animation: 5s linear infinite footer_text;
+  animation: 5s linear infinite footer_text
 }
 .service-block {
   margin: 35px 0 100px
 }
 @media (min-width:768px) {
+  .backcall-block .backcall-bg {
+    height: 12vw;
+    bottom: 15px
+  }
+  .backcall-block .backcall-bg .txt {
+    width: 120vw;
+    height: calc(12vw - 6px);
+    background-size: 120vw calc(12vw - 6px)
+  }
   .service-block {
     margin: 35px 0
   }
 }
 @media (min-width:1200px) {
   .backcall-block .backcall-bg {
-    height: 115px;
-    background-size: auto 115px;
-    bottom: 190px
+    height: 110px;
+    bottom: 150px
+  }
+  .backcall-block .backcall-bg .txt {
+    width: 100vw;
+    height: 110px;
+    background-size: 95vw 110px
   }
   .service-block {
     margin: 0
@@ -4073,7 +4076,7 @@
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    margin: -357px 0 25px
+    margin: -360px 0 0
   }
   .about-team__content__right-side .team-slider .slide-item .descr-block,
   .about-team__content__right-side .team-slider .slide-item .image-block {
@@ -4856,7 +4859,8 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  width: 100%
+  width: 100%;
+  overflow-x: hidden
 }
 @media (min-width:768px) {
   .modal.backcall-modal .modal__container,
@@ -5694,28 +5698,12 @@
   top: auto;
   right: 28px
 }
-@-webkit-keyframes footer_text {
-  0% {
-    background-position: 0 0
-  }
-  100% {
-    background-position: -1784px 0
-  }
-}
-@keyframes footer_text {
-  0% {
-    background-position: 0 0
-  }
-  100% {
-    background-position: -1784px 0
-  }
-}
 @-webkit-keyframes bp_mobile {
   0% {
     background-position: 0 0
   }
   100% {
-    background-position: -1250px 0
+    background-position: 260vw 0
   }
 }
 @keyframes bp_mobile {
@@ -5723,7 +5711,43 @@
     background-position: 0 0
   }
   100% {
-    background-position: -1250px 0
+    background-position: 260vw 0
+  }
+}
+@media (min-width:768px) {
+  @-webkit-keyframes bp_mobile {
+    0% {
+      background-position: 0 0
+    }
+    100% {
+      background-position: 215vw 0
+    }
+  }
+  @keyframes bp_mobile {
+    0% {
+      background-position: 0 0
+    }
+    100% {
+      background-position: 215vw 0
+    }
+  }
+}
+@media (min-width:1024px) {
+  @-webkit-keyframes bp_mobile {
+    0% {
+      background-position: 0 0
+    }
+    100% {
+      background-position: 125vw 0
+    }
+  }
+  @keyframes bp_mobile {
+    0% {
+      background-position: 0 0
+    }
+    100% {
+      background-position: 125vw 0
+    }
   }
 }
 @-webkit-keyframes bobrova_text {
@@ -5731,7 +5755,7 @@
     background-position: 0 0
   }
   100% {
-    background-position: 0 2100px
+    background-position: 0 -1350px
   }
 }
 @keyframes bobrova_text {
@@ -5739,7 +5763,7 @@
     background-position: 0 0
   }
   100% {
-    background-position: 0 2100px
+    background-position: 0 -1350px
   }
 }
 @-webkit-keyframes pavlova_text {
@@ -5747,7 +5771,7 @@
     background-position: 0 0
   }
   100% {
-    background-position: 0 1880px
+    background-position: 0 1215px
   }
 }
 @keyframes pavlova_text {
@@ -5755,10 +5779,60 @@
     background-position: 0 0
   }
   100% {
-    background-position: 0 1880px
+    background-position: 0 1215px
+  }
+}
+@-webkit-keyframes footer_text {
+  0% {
+    background-position: 0 0
+  }
+  100% {
+    background-position: -160vw 0
+  }
+}
+@keyframes footer_text {
+  0% {
+    background-position: 0 0
+  }
+  100% {
+    background-position: -160vw 0
+  }
+}
+@media (min-width:768px) {
+  @-webkit-keyframes footer_text {
+    0% {
+      background-position: 0 0
+    }
+    100% {
+      background-position: -120vw 0
+    }
+  }
+  @keyframes footer_text {
+    0% {
+      background-position: 0 0
+    }
+    100% {
+      background-position: -120vw 0
+    }
   }
 }
 @media (min-width:1200px) {
+  @-webkit-keyframes footer_text {
+    0% {
+      background-position: 0 0
+    }
+    100% {
+      background-position: -95vw 0
+    }
+  }
+  @keyframes footer_text {
+    0% {
+      background-position: 0 0
+    }
+    100% {
+      background-position: -95vw 0
+    }
+  }
   [show-animation=main_block] .main-block__content__left-side .logo-image {
     opacity: 0;
     -webkit-transform: translateX(-50%);
