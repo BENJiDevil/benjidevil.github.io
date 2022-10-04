@@ -8,19 +8,19 @@
 }
 @font-face {
   font-family: Gotham;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/GothamMedium/GothamMedium.eot);
-  src: url(../fonts/GothamMedium/GothamMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/GothamMedium/GothamMedium.woff) format("woff"),url(../fonts/GothamMedium/GothamMedium.woff2) format("woff2"),url(../fonts/GothamMedium/GothamMedium.ttf) format("truetype")
-}
-@font-face {
-  font-family: Gotham;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/GothamBook/GothamBook.eot);
   src: url(../fonts/GothamBook/GothamBook.eot?#iefix) format("embedded-opentype"),url(../fonts/GothamBook/GothamBook.woff) format("woff"),url(../fonts/GothamBook/GothamBook.woff2) format("woff2"),url(../fonts/GothamBook/GothamBook.ttf) format("truetype")
+}
+@font-face {
+  font-family: Gotham;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/GothamMedium/GothamMedium.eot);
+  src: url(../fonts/GothamMedium/GothamMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/GothamMedium/GothamMedium.woff) format("woff"),url(../fonts/GothamMedium/GothamMedium.woff2) format("woff2"),url(../fonts/GothamMedium/GothamMedium.ttf) format("truetype")
 }
 @font-face {
   font-family: SFUIDisplay;
