@@ -768,7 +768,7 @@
     width: auto;
     min-width: 50%
   }
-  .price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr span {
+  .price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr .label-text {
     max-width: 48vw
   }
 }
@@ -797,15 +797,10 @@
   font-size: 20px;
   line-height: 20px;
   position: relative;
-  top: 2px
+  top: 2px;
+  cursor: pointer
 }
-.price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr .icon-info:hover + span {
-  display: block;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0)
-}
-.price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr span {
+.price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr .label-text {
   display: none;
   position: absolute;
   top: calc(100% + 5px);
@@ -820,22 +815,18 @@
   color: rgba(30,30,30,.8);
   padding: 8px 10px;
   font-size: 12px;
-  line-height: 19px;
-  -webkit-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  transform: translateX(10px);
-  -webkit-transition: -webkit-transform .3s;
-  transition: transform .3s;
-  -o-transition: transform .3s;
-  transition: transform .3s,-webkit-transform .3s
+  line-height: 19px
 }
 @media (min-width:1024px) {
   .price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group {
     width: auto
   }
-  .price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr span {
+  .price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr .label-text {
     max-width: 300px
   }
+}
+.price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr.show .label-text {
+  display: block
 }
 .price-block__content__right-side .price-slider .slide-item .slide-content .input-group.square-group {
   max-width: calc(100% - 22px);
@@ -866,7 +857,7 @@
     min-width: 38%;
     margin: 0 25px 15px 15px
   }
-  .price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr span {
+  .price-block__content__right-side .price-slider .slide-item .slide-content .input-row .input-group.info-group .label-descr .label-text {
     max-width: 400px;
     font-size: 14px;
     line-height: 20px;
@@ -2288,7 +2279,13 @@
   width: 100%;
   padding: 10px 0;
   border-bottom: 1px solid #e4e4e4;
-  margin-top: 2px
+  margin-top: 2px;
+  -webkit-transition: border-color .3s;
+  -o-transition: border-color .3s;
+  transition: border-color .3s
+}
+.service-projects .projects-list__item:hover {
+  border-color: #1e1e1e
 }
 .service-projects .projects-list__item:nth-of-type(1) {
   margin-top: 0
@@ -2321,8 +2318,18 @@
   flex: 0 0 auto;
   width: auto;
   margin: 0 7px 0 auto;
+  padding-left: 10px;
   position: relative;
-  top: -1px
+  top: -1px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s
+}
+.service-projects .projects-list__link:hover .icon-arrow {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px)
 }
 .service-projects .see-more {
   display: inline-block;
@@ -2516,21 +2523,11 @@
   -o-transition: color .3s;
   transition: color .3s
 }
-@media (min-width:1200px) {
-  .service-packs .packs-slider .slide-item .pack-list__item {
-    margin-top: 20px
-  }
-  .service-packs .packs-slider .slide-item .pack-list__item:before {
-    height: 5px;
-    width: 5px;
-    top: 10px
-  }
-  .service-packs .packs-slider .slide-item .pack-list__item h5 {
-    font-size: 18px;
-    line-height: 26px
-  }
+.service-packs .packs-slider .slide-item .pack-list__item .label-descr {
+  display: inline-block;
+  margin-left: 5px
 }
-.service-packs .packs-slider .slide-item .pack-list__item .icon-info {
+.service-packs .packs-slider .slide-item .pack-list__item .label-descr .icon-info {
   font-size: 20px;
   line-height: 18px;
   color: rgba(30,30,30,.5);
@@ -2540,18 +2537,19 @@
   margin-left: 5px;
   display: inline-block;
   position: relative;
+  cursor: pointer;
   top: 2px
 }
-.service-packs .packs-slider .slide-item .pack-list__item .icon-info:hover {
+.service-packs .packs-slider .slide-item .pack-list__item .label-descr .icon-info:hover {
   color: #1e1e1e
 }
-.service-packs .packs-slider .slide-item .pack-list__item .icon-info:hover + .item-descr {
+.service-packs .packs-slider .slide-item .pack-list__item .label-descr .icon-info:hover + .item-descr {
   display: block;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0)
 }
-.service-packs .packs-slider .slide-item .pack-list__item .item-descr {
+.service-packs .packs-slider .slide-item .pack-list__item .label-descr .label-text {
   display: none;
   position: absolute;
   top: calc(100% + 5px);
@@ -2566,14 +2564,10 @@
   color: rgba(30,30,30,.8);
   padding: 8px 10px;
   font-size: 12px;
-  line-height: 19px;
-  -webkit-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  transform: translateX(10px);
-  -webkit-transition: -webkit-transform .3s;
-  transition: transform .3s;
-  -o-transition: transform .3s;
-  transition: transform .3s,-webkit-transform .3s
+  line-height: 19px
+}
+.service-packs .packs-slider .slide-item .pack-list__item .label-descr.show .label-text {
+  display: block
 }
 .service-packs .packs-slider .slide-item .choose-link {
   position: absolute;
@@ -2613,7 +2607,19 @@
   margin-top: -82px
 }
 @media (min-width:1200px) {
-  .service-packs .packs-slider .slide-item .pack-list__item .item-descr {
+  .service-packs .packs-slider .slide-item .pack-list__item {
+    margin-top: 20px
+  }
+  .service-packs .packs-slider .slide-item .pack-list__item:before {
+    height: 5px;
+    width: 5px;
+    top: 10px
+  }
+  .service-packs .packs-slider .slide-item .pack-list__item h5 {
+    font-size: 18px;
+    line-height: 26px
+  }
+  .service-packs .packs-slider .slide-item .pack-list__item .label-descr .label-text {
     font-size: 18px;
     line-height: 26px;
     padding: 24px
