@@ -4868,9 +4868,33 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   position: absolute;
-  bottom: 0
+  bottom: 0;
+  scrollbar-face-color: rgba(30,30,30,.5);
+  scrollbar-track-color: #e4e4e4
+}
+.modal.backcall-modal .modal__container::-webkit-scrollbar,
+.modal.price-modal .modal__container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  border-radius: 0
+}
+.modal.backcall-modal .modal__container::-webkit-scrollbar-thumb,
+.modal.price-modal .modal__container::-webkit-scrollbar-thumb {
+  background: rgba(30,30,30,.5);
+  border-radius: 0;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s
+}
+.modal.backcall-modal .modal__container::-webkit-scrollbar-thumb:hover,
+.modal.price-modal .modal__container::-webkit-scrollbar-thumb:hover {
+  background: #1e1e1e
+}
+.modal.backcall-modal .modal__container::-webkit-scrollbar-track,
+.modal.price-modal .modal__container::-webkit-scrollbar-track {
+  background: #e4e4e4;
+  border-radius: 0
 }
 @media (min-width:768px) {
   .modal.backcall-modal .modal__container,
