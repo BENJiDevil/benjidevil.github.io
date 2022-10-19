@@ -1996,6 +1996,7 @@
         </div>
     </div>
     <div class="modal modal-remember-product" id="modal-remember" aria-hidden="true">
+        <input type="hidden" name="product_name" value="">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true">
                 <header class="modal__header">
@@ -2012,12 +2013,8 @@
                     <form action="" class="remember-form">
                         <div class="input-group">
                             <label>
-                                <span class="label-name">Выберите свой размер</span>
-                                <select name="size" class="choice-select">
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
-                                </select>
+                                <span class="label-name">Размер</span>
+                                <input type="text" name="product_size" class="input-style" readonly value="">
                             </label>
                         </div>
                         <div class="input-group">
@@ -2092,15 +2089,15 @@
                             </div>
                             <div class="product-properties__item properties-color">
                                 <span class="property-name">Цвет</span>
-                                <span class="property-value color-value"><span style="background-color: #F3DE6E;"></span>Белый</span>
+                                <span class="property-value color-value"><span style="background-color: #ffffff;"></span>Белый</span>
                             </div>
                             <div class="product-properties__item properties-color-list">
                                 <span class="property-name">Другой цвет</span>
                                 <div class="input-row">
                                     <div class="input-group">
                                         <label>
-                                            <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <input type="radio" name="color" value="Белый">
+                                            <span class="color-item" style="background-color: #ffffff;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">

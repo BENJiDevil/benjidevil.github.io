@@ -82,8 +82,8 @@
                     </div>
                     <div class="hmain-menu__categories">
                         <ul class="categories-list">
-                            <li class="categories-list__item active">
-                                <a href="javascript:void(0);" data-category="category1" class="categories-list__link" style="background-image: url('images/main/main_page/menu/category_image1.jpg')">
+                            <li class="categories-list__item">
+                                <a href="javascript:void(0);" data-category="category1" class="categories-list__link active" style="background-image: url('images/main/main_page/menu/category_image1.jpg')">
                                     <span>Повседневная одежда</span>
                                 </a>
                             </li>
@@ -224,7 +224,7 @@
                         </ul>
                         <ul class="subcategories-list" data-category="category2">
                             <li class="subcategories-list__item submenu">
-                                <a href="#" class="subcategories-list__link active">Новинки (категория 2)</a>
+                                <a href="#" class="subcategories-list__link">Новинки (категория 2)</a>
                                 <div class="submenu-wrapper show">
                                     <ul class="submenu-list">
                                         <li class="submenu-list__item"><a href="#" class="submenu-list__link">Новинки list</a></li>
@@ -520,7 +520,7 @@
                 </div>
                 <ul class="profile-links">
                     <li class="profile-links__item ">
-                        <a id="minicart-link" href="javascript:void(0);" class="profile-links__link"><i class="icon icon-cart_fill"></i></a>
+                        <a id="minicart-link" href="javascript:void(0);" class="profile-links__link cart-link"><i class="icon icon-cart_fill"></i> <span id="cart-value" class="cart-value">12</span></a>
                         <div id="minicart" class="minicart-content" style="transform: translateX(100vw); position: absolute;">
                             <a id="minicart-close" href="javascript:void(0);" class="minicart-close-link"><i class="icon icon-close"></i></a>
                             <!-- if cart is empty
@@ -1249,6 +1249,7 @@
         </div>
     </div>
     <div class="modal modal-remember-product" id="modal-remember" aria-hidden="true">
+        <input type="hidden" name="product_name" value="">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true">
                 <header class="modal__header">
@@ -1265,12 +1266,8 @@
                     <form action="" class="remember-form">
                         <div class="input-group">
                             <label>
-                                <span class="label-name">Выберите свой размер</span>
-                                <select name="size" class="choice-select">
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
-                                </select>
+                                <span class="label-name">Размер</span>
+                                <input type="text" name="product_size" class="input-style" readonly value="">
                             </label>
                         </div>
                         <div class="input-group">
@@ -1345,15 +1342,15 @@
                             </div>
                             <div class="product-properties__item properties-color">
                                 <span class="property-name">Цвет</span>
-                                <span class="property-value color-value"><span style="background-color: #F3DE6E;"></span>Белый</span>
+                                <span class="property-value color-value"><span style="background-color: #ffffff;"></span>Белый</span>
                             </div>
                             <div class="product-properties__item properties-color-list">
                                 <span class="property-name">Другой цвет</span>
                                 <div class="input-row">
                                     <div class="input-group">
                                         <label>
-                                            <input type="radio" name="color" value="Желтый">
-                                            <span class="color-item" style="background-color: #F3DE6E;"></span>
+                                            <input type="radio" name="color" value="Белый">
+                                            <span class="color-item" style="background-color: #ffffff;"></span>
                                         </label>
                                     </div>
                                     <div class="input-group">

@@ -8,19 +8,19 @@
 }
 @font-face {
   font-family: Montserrat;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/MontserratBold/MontserratBold.eot);
-  src: url(../fonts/MontserratBold/MontserratBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratBold/MontserratBold.woff) format("woff"),url(../fonts/MontserratBold/MontserratBold.woff2) format("woff2"),url(../fonts/MontserratBold/MontserratBold.ttf) format("truetype")
-}
-@font-face {
-  font-family: Montserrat;
   font-weight: 200;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/MontserratLight/MontserratLight.eot);
   src: url(../fonts/MontserratLight/MontserratLight.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratLight/MontserratLight.woff) format("woff"),url(../fonts/MontserratLight/MontserratLight.woff2) format("woff2"),url(../fonts/MontserratLight/MontserratLight.ttf) format("truetype")
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/MontserratBold/MontserratBold.eot);
+  src: url(../fonts/MontserratBold/MontserratBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratBold/MontserratBold.woff) format("woff"),url(../fonts/MontserratBold/MontserratBold.woff2) format("woff2"),url(../fonts/MontserratBold/MontserratBold.ttf) format("truetype")
 }
 @font-face {
   font-family: Montserrat;
@@ -308,7 +308,7 @@ body.overflow:after {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10
+  z-index: 12
 }
 .header .container {
   max-width: 1440px
@@ -348,11 +348,22 @@ body.overflow:after {
   }
 }
 .header__main {
-  background: rgba(86,86,86,.98);
+  background: #565656;
   -webkit-transition: background .3s;
   -o-transition: background .3s;
   transition: background .3s;
   padding: 16px 0
+}
+@media (min-width:1200px) {
+  .header__main {
+    padding: 14px 0
+  }
+  .header__main.hover {
+    background: #565656!important
+  }
+  .header__main.hover .hmain-menu__subcategories {
+    background-color: #565656!important
+  }
 }
 .header__main .container {
   display: -webkit-box;
@@ -400,9 +411,6 @@ body.overflow:after {
   margin: 0 16px 0 0
 }
 @media (min-width:1200px) {
-  .header__main {
-    padding: 14px 0
-  }
   .header__main .hamburger {
     display: none
   }
@@ -741,6 +749,47 @@ body.overflow:after {
   transition: padding .3s;
   max-width: 150px
 }
+@media (min-width:1200px) {
+  .header__main .hmain-menu__categories .categories-list__link {
+    min-height: auto;
+    width: auto;
+    height: auto;
+    background-image: none!important;
+    position: relative
+  }
+  .header__main .hmain-menu__categories .categories-list__link span {
+    position: relative;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px;
+    color: #aaa;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s
+  }
+  .header__main .hmain-menu__categories .categories-list__link span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 0;
+    max-width: calc(100% - 20px);
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s
+  }
+  .header__main .hmain-menu__categories .categories-list__link.active span,
+  .header__main .hmain-menu__categories .categories-list__link:hover span {
+    color: #fff
+  }
+  .header__main .hmain-menu__categories .categories-list__link.active span:before {
+    width: 100%
+  }
+}
 .header__main .hmain-menu__categories .categories-list__link:after {
   content: "";
   display: block;
@@ -755,24 +804,6 @@ body.overflow:after {
   -webkit-transition: background .3s;
   -o-transition: background .3s;
   transition: background .3s
-}
-@media (min-width:1200px) {
-  .header__main .hmain-menu__categories .categories-list__link {
-    min-height: auto;
-    width: auto;
-    height: auto;
-    background-image: none!important
-  }
-  .header__main .hmain-menu__categories .categories-list__link span {
-    position: relative;
-    max-width: 100%;
-    font-size: 14px;
-    line-height: 14px;
-    padding: 10px
-  }
-  .header__main .hmain-menu__categories .categories-list__link:after {
-    display: none!important
-  }
 }
 .header__main .hmain-menu__subcategories {
   overflow-y: scroll;
@@ -806,6 +837,9 @@ body.overflow:after {
   border-radius: 0
 }
 @media (min-width:1200px) {
+  .header__main .hmain-menu__categories .categories-list__link:after {
+    display: none!important
+  }
   .header__main .hmain-menu__subcategories {
     padding: 0;
     min-height: auto;
@@ -817,7 +851,7 @@ body.overflow:after {
     width: 100vw;
     height: 48px;
     border-top: 1px solid rgba(242,242,242,.2);
-    background-color: rgba(86,86,86,.98);
+    background-color: #565656;
     -webkit-transition: background .3s;
     -o-transition: background .3s;
     transition: background .3s
@@ -981,7 +1015,7 @@ body.overflow:after {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-    background-color: rgba(86,86,86,.98);
+    background-color: #565656;
     width: 100vw;
     padding: 20px calc((100vw - 1190px)/ 2 + 15px)
   }
@@ -1123,11 +1157,12 @@ body.overflow:after {
   justify-content: flex-start;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  padding: 11px 12px;
+  padding: 11px 12px 11px 40px;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 calc(100% - 40px);
   flex: 1 1 calc(100% - 40px);
-  max-width: calc(100% - 40px)
+  max-width: calc(100% - 40px);
+  position: relative
 }
 @media (min-width:1200px) {
   .header__main .search-block {
@@ -1146,7 +1181,7 @@ body.overflow:after {
     -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     max-width: 100%;
-    padding: 9px 10px;
+    padding: 9px 10px 9px 40px;
     border: none
   }
 }
@@ -1170,7 +1205,9 @@ body.overflow:after {
   color: #565656;
   font-size: 20px;
   line-height: 20px;
-  margin-right: 6px
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 12px
 }
 .header__main .search-block__form .input-group input {
   -webkit-box-flex: 1;
@@ -1861,7 +1898,8 @@ body.overflow:after {
 }
 .header__main .profile-links__item .minicart-content__list .minicart-content__item:last-child {
   padding-bottom: 0;
-  border-bottom: none
+  border-bottom: none;
+  margin-bottom: 24px
 }
 .header__main .profile-links__item .minicart-content__list .minicart-content__item .image-block {
   -webkit-box-flex: 0;
@@ -2023,6 +2061,7 @@ body.overflow:after {
   transition: color .3s;
   margin-left: 12px
 }
+.header__main .profile-links__item .minicart-content__list .minicart-content__item .descr-block .count-block .favorite-link.active,
 .header__main .profile-links__item .minicart-content__list .minicart-content__item .descr-block .count-block .favorite-link:hover {
   color: #565656
 }
@@ -2264,6 +2303,10 @@ body.overflow:after {
 .header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .image-block .product-btns .product-btn.favorite-link {
   -webkit-filter: drop-shadow(0 100px 80px rgba(0, 0, 0, .04)) drop-shadow(0 41.7776px 33.4221px rgba(0, 0, 0, .0287542)) drop-shadow(0 22.3363px 17.869px rgba(0, 0, 0, .0238443)) drop-shadow(0 12.5216px 10.0172px rgba(0, 0, 0, .02)) drop-shadow(0 6.6501px 5.32008px rgba(0, 0, 0, .0161557)) drop-shadow(0 2.76726px 2.21381px rgba(0, 0, 0, .0112458));
   filter: drop-shadow(0 100px 80px rgba(0, 0, 0, .04)) drop-shadow(0 41.7776px 33.4221px rgba(0, 0, 0, .0287542)) drop-shadow(0 22.3363px 17.869px rgba(0, 0, 0, .0238443)) drop-shadow(0 12.5216px 10.0172px rgba(0, 0, 0, .02)) drop-shadow(0 6.6501px 5.32008px rgba(0, 0, 0, .0161557)) drop-shadow(0 2.76726px 2.21381px rgba(0, 0, 0, .0112458))
+}
+.header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .image-block .product-btns .product-btn.favorite-link.active .icon:before,
+.header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .image-block .product-btns .product-btn.favorite-link:hover .icon:before {
+  content: "\e80d"
 }
 .header__main .profile-links__item .minicart-content__added .minicart-content__more .minicart-slider .slide-item .descr-block {
   position: relative;
@@ -2649,6 +2692,35 @@ body.overflow:after {
 .header__main .profile-links__link:hover {
   color: rgba(255,255,255,.5)
 }
+.header__main .profile-links__link.cart-link {
+  display: inline-block;
+  position: relative
+}
+.header__main .profile-links__link.cart-link .cart-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -8px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  font-size: 10px;
+  line-height: normal;
+  padding: 5px 0;
+  color: #fff;
+  background-color: #f25b30;
+  border: 1px solid #f25b30;
+  font-weight: 700
+}
 .header__main .profile-links__link .icon-cart_fill {
   font-size: 22px;
   line-height: 24px;
@@ -2661,7 +2733,7 @@ body.overflow:after {
 }
 .header.scroll .header__main {
   padding: 10px 0;
-  background: rgba(86,86,86,.98)
+  background: #565656
 }
 .header.scroll .header__main .hmain-menu {
   padding: 11px 14px 0 0
@@ -2727,11 +2799,11 @@ body.overflow:after {
   margin-top: 11px
 }
 .header.scroll .header__main .hmain-menu__subcategories {
-  background: rgba(86,86,86,.98)
+  background: #565656
 }
 .header.scroll .header__bottom {
   padding: 10px 0;
-  background: rgba(86,86,86,.98)
+  background: #565656
 }
 .header.main-page-header .header__main {
   background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.4)),to(rgba(0,0,0,0)));
@@ -2746,17 +2818,17 @@ body.overflow:after {
     top: 90px
   }
   .header.scroll .header__main .hmain-menu__wrapper:before {
-    background-color: rgba(86,86,86,.98)
+    background-color: #565656
   }
   .header.main-page-header .header__main .hmain-menu__subcategories {
     background: 0 0
   }
   .header.main-page-header.scroll .hmain-menu__subcategories {
-    background: rgba(86,86,86,.98)
+    background: #565656
   }
 }
 .header.main-page-header.scroll .header__main {
-  background: rgba(86,86,86,.98)
+  background: #565656
 }
 .mpage-main {
   overflow: hidden
@@ -3054,4 +3126,3 @@ body.overflow:after {
     margin-top: calc(15px + 17 *((100vw - 340px)/ 850))
   }
 }
-/*# sourceMappingURL=main.css.map */
