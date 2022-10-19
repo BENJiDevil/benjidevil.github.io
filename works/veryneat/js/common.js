@@ -33242,11 +33242,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
-  /* product page complete slider */
-
-  if (window.innerWidth < 1200) {
-    var completeSlider = new swiper__WEBPACK_IMPORTED_MODULE_4__["default"]('#complete-slider', {
-      modules: [swiper__WEBPACK_IMPORTED_MODULE_4__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_4__.Navigation],
+  /* product page complete slider
+  if(window.innerWidth < 1200){
+      const completeSlider = new Swiper('#complete-slider', {
+      modules: [Pagination, Navigation],
       preloadImages: false,
       lazy: true,
       speed: 800,
@@ -33254,27 +33253,28 @@ document.addEventListener('DOMContentLoaded', function () {
       slidesPerView: "auto",
       spaceBetween: 16,
       pagination: {
-        el: '#complete-slider .swiper-pagination',
-        clickable: true
+          el: '#complete-slider .swiper-pagination',
+          clickable: true
       },
       navigation: {
-        nextEl: '#complete-slider .swiper-navigation .nav-btn.btn-next',
-        prevEl: '#complete-slider .swiper-navigation .nav-btn.btn-prev'
+          nextEl: '#complete-slider .swiper-navigation .nav-btn.btn-next',
+          prevEl: '#complete-slider .swiper-navigation .nav-btn.btn-prev',
       },
       breakpoints: {
-        769: {
-          spaceBetween: 24,
-          centeredSlides: false,
-          loop: true,
-          loopAdditionalSlides: 5
-        }
-      }
-    });
+          769: {
+              spaceBetween: 24,
+              centeredSlides: false,
+              loop: true,
+              loopAdditionalSlides: 5
+          }
+      },
+  });
   }
+   */
+
   /* product page gallery */
 
   /* about-page sertificate gallery*/
-
 
   if (window.innerWidth >= 1200) {
     _fancyapps_ui_src_Fancybox_Fancybox_js__WEBPACK_IMPORTED_MODULE_7__.Fancybox.bind('#product-slider a[data-link="gallery"]', {
@@ -33286,7 +33286,7 @@ document.addEventListener('DOMContentLoaded', function () {
       infinite: false,
       Thumbs: {
         Carousel: {
-          preload: 1,
+          preload: 10,
           slidesPerPage: 4
         }
       }
@@ -33508,35 +33508,38 @@ document.addEventListener('DOMContentLoaded', function () {
   /* recently slider */
 
 
-  document.querySelectorAll('.recently-slider').forEach(function (rs) {
-    var recentlySlider = new swiper__WEBPACK_IMPORTED_MODULE_4__["default"]('.recently-slider', {
-      modules: [swiper__WEBPACK_IMPORTED_MODULE_4__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_4__.Navigation],
-      preloadImages: false,
-      lazy: true,
-      speed: 800,
-      centeredSlides: false,
-      slidesPerView: "auto",
-      spaceBetween: 16,
-      pagination: {
-        el: rs.parentElement.querySelector('.swiper-pagination'),
-        clickable: true
-      },
-      navigation: {
-        nextEl: rs.querySelector('.swiper-navigation .nav-btn.btn-next'),
-        prevEl: rs.querySelector('.swiper-navigation .nav-btn.btn-prev')
-      },
-      breakpoints: {
-        769: {
-          spaceBetween: 24,
-          centeredSlides: false,
-          loop: true,
-          loopAdditionalSlides: 5
+  if (window.innerWidth >= 1200) {
+    document.querySelectorAll('.recently-slider').forEach(function (rs) {
+      var recentlySlider = new swiper__WEBPACK_IMPORTED_MODULE_4__["default"]('.recently-slider', {
+        modules: [swiper__WEBPACK_IMPORTED_MODULE_4__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_4__.Navigation],
+        preloadImages: false,
+        lazy: true,
+        speed: 800,
+        centeredSlides: false,
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        pagination: {
+          el: rs.parentElement.querySelector('.swiper-pagination'),
+          clickable: true
+        },
+        navigation: {
+          nextEl: rs.querySelector('.swiper-navigation .nav-btn.btn-next'),
+          prevEl: rs.querySelector('.swiper-navigation .nav-btn.btn-prev')
+        },
+        breakpoints: {
+          769: {
+            spaceBetween: 24,
+            centeredSlides: false,
+            loop: true,
+            loopAdditionalSlides: 5
+          }
         }
-      }
+      });
     });
-  });
+  }
   /* profile page */
   // show profile info
+
 
   document.querySelectorAll('.profile-info-link').forEach(function (lnk) {
     lnk.addEventListener('click', function () {
@@ -33703,7 +33706,7 @@ document.addEventListener('DOMContentLoaded', function () {
           preloadImages: false,
           lazy: true,
           speed: 800,
-          allowTouchMove: false,
+          allowTouchMove: true,
           slidesPerView: 1,
           spaceBetween: 15,
           navigation: {

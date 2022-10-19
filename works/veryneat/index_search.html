@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -10,16 +9,13 @@
     <meta name="keywords" content="VERY NEAT">
     <meta name="author" content="VERY NEAT">
     <meta name="image" content="images/preview.jpg">
-    <!-- OG -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="VERY NEAT">
     <meta property="og:title" content="VERY NEAT">
     <meta property="og:description" content="VERY NEAT">
     <meta property="og:image" content="images/preview.jpg">
     <meta property="og:url" content="https://veryneat.ru/">
-    <!-- canonical -->
     <link rel="canonical" href="https://veryneat.ru/">
-    <!-- favicon -->
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -35,27 +31,22 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/manifest.json">
-    <!-- app icon -->
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="msapplication-TileColor" content="#565656">
     <meta name="theme-color" content="#565656">
-    <!-- app icon -->
     <meta name="apple-mobile-web-app-title" content="">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- browser settings -->
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
-    <!-- preload fonts -->
     <link rel="preload" href="/fonts/MontserratBold/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/MontserratLight/MontserratLight.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoBold/RobotoBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoMedium/RobotoMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoRegular/RobotoRegular.woff2" as="font" type="font/woff2" crossorigin>
-    <!-- critical styles -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     <header class="header main-page-header">
@@ -539,12 +530,6 @@
                         <a id="minicart-link" href="javascript:void(0);" class="profile-links__link"><i class="icon icon-cart_fill"></i></a>
                         <div id="minicart" class="minicart-content" style="transform: translateX(100vw); position: absolute;">
                             <a id="minicart-close" href="javascript:void(0);" class="minicart-close-link"><i class="icon icon-close"></i></a>
-                            <!-- if cart is empty
-                        <div class="minicart-content__empty">
-                            <p>Ваша корзина пуста</p>
-                        </div>
-                        -->
-                            <!-- if cart is not empty -->
                             <div class="minicart-content__list">
                                 <div class="minicart-title">Корзина <span id="products-count">5 товаров</span></div>
                                 <div class="product-list">
@@ -674,188 +659,6 @@
                                     <a href="#" class="order-link btn-fill-style">Оформить заказ</a>
                                 </div>
                             </div>
-                            <!-- if added to cart
-                        <div class="minicart-content__added">
-                            <div class="minicart-title">Корзина <span id="products-count">5 товаров</span></div>
-                                <div class="info-list">
-                                <div class="minicart-content__result">
-                                <div class="price-group">Итого: <span id="result-total">1 749 ₽</span></div>
-                                <a href="#" class="order-link btn-fill-style">Перейти в корзину</a>
-                            </div>
-                                <div class="minicart-content__message">
-                                <h3>Отличный выбор!</h3>
-                                <p>Товар добавлен в вашу корзину.</p>
-                            </div>
-                                <div class="minicart-content__more">
-                                <h2 class="more-title">Вам может понравится</h2>
-                                <div id="minicart-slider" class="minicart-slider swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="slide-item swiper-slide colors-item">
-                                            <div class="image-block">
-                                                <div class="colors-slider swiper">
-                                                    <div class="swiper-wrapper">
-                                                        <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
-                                                            <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
-                                                        </a>
-                                                        <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
-                                                            <img src="images/main/main_page/catalogs/product_image32.jpg" alt="product" class="product-image">
-                                                        </a>
-                                                        <a href="#" class="product-link swiper-slide" data-color="#252426">
-                                                            <img src="images/main/main_page/catalogs/product_image33.jpg" alt="product" class="product-image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="colors-navigation">
-                                                        <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
-                                                        <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-btns">
-                                                    <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                                    <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="descr-block">
-                                                <a href="#" class="product-name">Жакет женский</a>
-                                                <span class="product-price">
-                                <span class="oldprice">1 749 ₽</span>
-                                <span class="price">1 749 ₽</span>
-                            </span>
-                                                <div class="product-colors">
-                                                    <div class="colors-pagination"></div>
-                                                    <span class="product-colors__all">+19 цветов</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slide-item swiper-slide colors-item">
-                                            <div class="image-block">
-                                                <div class="colors-slider swiper">
-                                                    <div class="swiper-wrapper">
-                                                        <a href="#" class="product-link swiper-slide" data-color="#AEB9A9">
-                                                            <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
-                                                        </a>
-                                                        <a href="#" class="product-link swiper-slide" data-color="#8ACAFF">
-                                                            <img src="images/main/main_page/catalogs/product_image32.jpg" alt="product" class="product-image">
-                                                        </a>
-                                                        <a href="#" class="product-link swiper-slide" data-color="#252426">
-                                                            <img src="images/main/main_page/catalogs/product_image33.jpg" alt="product" class="product-image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="colors-navigation">
-                                                        <div class="colors-btn color-prev"><i class="icon icon-slider_arrow"></i></div>
-                                                        <div class="colors-btn color-next"><i class="icon icon-slider_arrow"></i></div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-btns">
-                                                    <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                                    <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="descr-block">
-                                                <a href="#" class="product-name">Жакет женский</a>
-                                                <span class="product-price">
-                                <span class="oldprice">1 749 ₽</span>
-                                <span class="price">1 749 ₽</span>
-                            </span>
-                                                <div class="product-colors">
-                                                    <div class="colors-pagination"></div>
-                                                    <span class="product-colors__all">+19 цветов</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slide-item swiper-slide">
-                                            <div class="image-block">
-                                                <a href="#" class="product-link">
-                                                    <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
-                                                </a>
-                                                <div class="product-btns">
-                                                    <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                                    <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="descr-block">
-                                                <a href="#" class="product-name">Жакет женский</a>
-                                                <span class="product-price">
-                                <span class="oldprice">1 749 ₽</span>
-                                <span class="price">1 749 ₽</span>
-                            </span>
-                                                <div class="product-colors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="slide-item swiper-slide">
-                                            <div class="image-block">
-                                                <a href="#" class="product-link">
-                                                    <img src="images/main/main_page/catalogs/product_image33.jpg" alt="product" class="product-image">
-                                                </a>
-                                                <div class="product-btns">
-                                                    <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                                    <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="descr-block">
-                                                <a href="#" class="product-name">Жакет женский</a>
-                                                <span class="product-price">
-                                <span class="oldprice">1 749 ₽</span>
-                                <span class="price">1 749 ₽</span>
-                            </span>
-                                                <div class="product-colors">
-                                                    <span class="product-colors__all">+19 цветов</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slide-item swiper-slide">
-                                            <div class="image-block">
-                                                <a href="#" class="product-link">
-                                                    <img src="images/main/main_page/catalogs/product_image32.jpg" alt="product" class="product-image">
-                                                </a>
-                                                <div class="product-btns">
-                                                    <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                                    <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="descr-block">
-                                                <a href="#" class="product-name">Жакет женский</a>
-                                                <span class="product-price">
-                                <span class="oldprice">1 749 ₽</span>
-                                <span class="price">1 749 ₽</span>
-                            </span>
-                                                <div class="product-colors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="slide-item swiper-slide">
-                                            <div class="image-block">
-                                                <a href="#" class="product-link">
-                                                    <img src="images/main/main_page/catalogs/product_image31.jpg" alt="product" class="product-image">
-                                                </a>
-                                                <div class="product-btns">
-                                                    <a href="#" class="product-btn favorite-link"><i class="icon icon-heart"></i></a>
-                                                    <a href="#" class="product-btn addcart-link"><i class="icon icon-cart"></i><span>В корзину</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="descr-block">
-                                                <a href="#" class="product-name">Жакет женский</a>
-                                                <span class="product-price">
-                                <span class="oldprice">1 749 ₽</span>
-                                <span class="price">1 749 ₽</span>
-                            </span>
-                                                <div class="product-colors">
-                                                    <span class="product-colors__all">+19 цветов</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                    <div class="swiper-navigation">
-                                        <div class="nav-btn btn-prev"><i class="icon icon-slider_arrow"></i></div>
-                                        <div class="nav-btn btn-next"><i class="icon icon-slider_arrow"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="minicart-content__continue">
-                                <a href="javascript:void(0);" class="continue-link btn-outline-style">Продолжить покупки</a>
-                            </div>
-                        </div>
-                        -->
                         </div>
                     </li>
                     <li class="profile-links__item" style="display: none;">
@@ -874,7 +677,6 @@
             </div>
         </div>
     </header>
-    <!-- main content -->
     <main class="mpage-main">
         <div id="main-slider" class="main-slider swiper">
             <div class="swiper-wrapper">
@@ -966,7 +768,6 @@
         <div class="catalog-section__content">
             <div class="catalog-slider swiper">
                 <div class="swiper-wrapper">
-                    <!-- if colors-slider -->
                     <div class="slide-item swiper-slide colors-item">
                         <div class="image-block">
                             <div class="product-tags">
@@ -1043,7 +844,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end colors-slider -->
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <div class="product-tags">
@@ -1154,7 +954,6 @@
         <div class="catalog-section__content">
             <div class="catalog-slider swiper">
                 <div class="swiper-wrapper">
-                    <!-- if colors-slider -->
                     <div class="slide-item swiper-slide colors-item">
                         <div class="image-block">
                             <div class="colors-slider swiper">
@@ -1231,7 +1030,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end colors-slider -->
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
@@ -1341,7 +1139,6 @@
         <div class="catalog-section__content">
             <div class="catalog-slider swiper">
                 <div class="swiper-wrapper">
-                    <!-- if colors-slider -->
                     <div class="slide-item swiper-slide colors-item">
                         <div class="image-block">
                             <div class="product-tags">
@@ -1418,7 +1215,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end colors-slider -->
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
@@ -1564,7 +1360,6 @@
         <div class="catalog-section__content">
             <div class="catalog-slider swiper">
                 <div class="swiper-wrapper">
-                    <!-- if colors-slider -->
                     <div class="slide-item swiper-slide colors-item">
                         <div class="image-block">
                             <div class="product-tags">
@@ -1641,7 +1436,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end colors-slider -->
                     <div class="slide-item swiper-slide">
                         <div class="image-block">
                             <a href="#" class="product-link">
@@ -1764,7 +1558,6 @@
             </div>
         </div>
     </section>
-    <!-- main end content -->
     <footer class="footer">
         <div class="container">
             <div class="footer__menu">
@@ -2161,9 +1954,7 @@
             </div>
         </div>
     </div>
-    <!-- styles -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- js -->
-    <script defer src="js/common.js"></script>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/common.min.js"></script>
 </body>
 </html>
