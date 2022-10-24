@@ -1565,7 +1565,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.custom-phone').forEach(input => {
     var phoneInput = intl_tel_input__WEBPACK_IMPORTED_MODULE_0__(input, {
-      utilsScript: '/js/utils.js',
+      utilsScript: 'utils.js',
       separateDialCode: true,
       defaultCountry: 'auto',
       preferredCountries: ['ru'],
