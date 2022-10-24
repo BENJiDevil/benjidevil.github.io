@@ -515,6 +515,9 @@ body::-webkit-scrollbar-track {
   margin: 0 0 0 20px
 }
 @media (max-width:1024px) {
+  .cheader__main .profile-links .personal-block {
+    margin-left: 40px
+  }
   .cheader__main .hamburger {
     display: block!important
   }
@@ -943,3 +946,4 @@ body::-webkit-scrollbar-track {
 .cmain-block__social .social-tg:hover {
   color: #08c
 }
+/*# sourceMappingURL=main.css.map */
