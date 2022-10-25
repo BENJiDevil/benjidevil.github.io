@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- meta tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Englishmaria</title>
@@ -9,16 +8,13 @@
     <meta name="keywords" content="Englishmaria">
     <meta name="author" content="Englishmaria">
     <meta name="image" content="images/preview.jpg">
-    <!-- OG -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Englishmaria">
     <meta property="og:title" content="Englishmaria">
     <meta property="og:description" content="Englishmaria">
     <meta property="og:image" content="images/preview.jpg">
     <meta property="og:url" content="https://site-url.ru/">
-    <!-- canonical -->
     <link rel="canonical" href="https://site-url.ru/">
-    <!-- favicon -->
     <link rel="shortcut icon" href="https://englishmaria.com/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="https://englishmaria.com/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://englishmaria.com/img/favicon/apple-icon-60x60.png">
@@ -34,25 +30,20 @@
     <link rel="icon" type="image/png" sizes="96x96" href="https://englishmaria.com/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://englishmaria.com/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="https://englishmaria.com/img/favicon/manifest.json">
-    <!-- app icon -->
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <!-- app icon -->
     <meta name="apple-mobile-web-app-title" content="">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- browser settings -->
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
-    <!-- preload fonts -->
     <link rel="preload" href="fonts/DroidSansBold/DroidSansBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/DroidSansRegular/DroidSansRegular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/RobotoBlack/RobotoBlack.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoBold/RobotoBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoBlack/RobotoBlack.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/DroidSansRegular/DroidSansRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoMedium/RobotoMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoRegular/RobotoRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/VelesBold/VelesBold.woff2" as="font" type="font/woff2" crossorigin>
-    <!-- critical styles -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -69,7 +60,7 @@
                 <a href="#" class="logo-link">
                     <img src="images/common/svg/logo.svg" alt="logo" class="logo-img">
                 </a>
-                <nav class="mmenu">
+                <nav id="mmenu" class="mmenu">
                     <ul class="mmenu-list">
                         <li class="mmenu-list__item">
                             <a href="#" class="mmenu-list__link">Комплексное обучение</a>
@@ -129,7 +120,7 @@
                         <a href="#" class="sing-in-link">Зарегистрироваться</a>
                     </div>
                 </div>
-                <button id="hamburger" class="hamburger hamburger--slider" type="button" style="display: none;">
+                <button id="hamburger" data-menu="mmenu" class="hamburger hamburger--slider" type="button" style="display: none;">
                     <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                     </span>
@@ -137,7 +128,6 @@
             </div>
         </div>
     </header>
-    <!-- main content -->
     <main class="cmain-block">
         <div class="ccontainer">
             <h1 class="cmain-block__title">What a pleasure, joy and fun, studying English with Maria Batkhan</h1>
@@ -174,16 +164,6 @@
                                 <img src="images/common/main/mslider/video_slide3.jpg" alt="slide" class="slide-image">
                                 <a href="#" class="slide-link"><i class="icon icon-play"></i></a>
                             </div>
-                            <!--
-                        <div class="slider-item swiper-slide">
-                            <img src="images/common/main/mslider/video_slide2.jpg" alt="slide" class="slide-image">
-                            <a href="#" class="slide-link"><i class="icon icon-play"></i></a>
-                        </div>
-                        <div class="slider-item swiper-slide">
-                            <img src="images/common/main/mslider/video_slide3.jpg" alt="slide" class="slide-image">
-                            <a href="#" class="slide-link"><i class="icon icon-play"></i></a>
-                        </div>
-                        -->
                         </div>
                         <div class="cmain-pagination"></div>
                     </div>
@@ -565,7 +545,6 @@
             </form>
         </div>
     </section>
-    <!-- main end content -->
     <footer class="cfooter">
         <div class="cfooter__top">
             <div class="ccontainer">
@@ -710,7 +689,6 @@
             </div>
         </div>
     </footer>
-    <!-- tmp for fix js NEED TO REMOVE -->
     <div class="js-present-form" style="display: none;">
         <button type="submit"></button>
     </div>
@@ -738,11 +716,9 @@
             </div>
         </div>
     </div>
-    <!-- styles -->
     <link rel="stylesheet" href="css/app.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
