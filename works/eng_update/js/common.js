@@ -1593,62 +1593,141 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+  /* init sliders */
+
+
+  function init_sliders() {
+    /* main page sliders */
+    var mainSlider = new Swiper('#mslider', {
+      speed: 800,
+      direction: 'horizontal',
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.cmain-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        768: {
+          spaceBetween: 0,
+          direction: 'vertical'
+        }
+      }
+    });
+    const cardsSlider = new Swiper('#ccards-slider', {
+      speed: 800,
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      centeredSlides: true,
+      allowTouchMove: true,
+      navigation: {
+        nextEl: '.ccards-block .slider-btn.next-slide',
+        prevEl: '.ccards-block .slider-btn.prev-slide'
+      }
+    });
+    const answersSlider = new Swiper('#canswers-slider', {
+      speed: 800,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      allowTouchMove: true,
+      navigation: {
+        nextEl: '.canswers-block .slider-btn.next-slide',
+        prevEl: '.canswers-block .slider-btn.prev-slide'
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        769: {
+          slidesPerView: 4
+        },
+        641: {
+          slidesPerView: 3
+        },
+        421: {
+          slidesPerView: 2
+        },
+        0: {
+          slidesPerView: 1
+        }
+      }
+    });
+    /* learning page programm slider */
+
+    if (window.innerWidth <= 640) {
+      $('#programm-slider .mslider-wrapper').addClass('swiper-wrapper');
+      setTimeout(function () {
+        let programmSlider = new Swiper('#programm-slider', {
+          speed: 800,
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: false,
+          pagination: {
+            el: '.clearn-programm__content .cprogramm-pagination',
+            clickable: true
+          }
+        });
+      }, 300);
+    } else {
+      $('#programm-slider .mslider-wrapper').removeClass('swiper-wrapper');
+    }
+  }
+  /* init navigation */
+
+
+  function menu_check() {
+    var scroll_top = $(document).scrollTop(),
+        footer_offset = $('footer').position().top;
+    $('.section-navigation .navigation-list .navigation-list__item').each(function () {
+      var target = $('.' + $(this).attr('data-section') + '');
+
+      if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+        $('.section-navigation .navigation-list .navigation-list__item.active').removeClass("active");
+        $(this).addClass("active");
+      } else {
+        $(this).removeClass("active");
+      }
+    });
+
+    if (scroll_top >= footer_offset) {
+      $('.section-navigation').removeClass('show');
+    } else {
+      $('.section-navigation').addClass('show');
+    }
+  }
+
+  function section_nav() {
+    if ($('.section-navigation').length > 0) {
+      if (window.innerWidth >= 1200) {
+        $('.section-navigation .navigation-list').html('');
+        $('<li class="navigation-list__item" data-section="' + $('main').attr('class') + '"></li>').appendTo($('.section-navigation .navigation-list'));
+        $('section').each(function () {
+          $('<li class="navigation-list__item" data-section="' + $(this).attr('class') + '"></li>').appendTo($('.section-navigation .navigation-list'));
+        });
+        menu_check();
+        setTimeout(function () {
+          $('.section-navigation').addClass('show');
+        }, 500);
+        $(document).on("scroll", menu_check);
+        $('.section-navigation .navigation-list .navigation-list__item').click(function () {
+          var target = $('.' + $(this).attr('data-section') + ''),
+              header_height = parseInt(document.documentElement.style.getPropertyValue('--headerhalf-height'));
+          console.log(header_height);
+          $("html, body").animate({
+            scrollTop: target.offset().top - header_height
+          });
+        });
+      } else {
+        $('.section-navigation .navigation-list').html('');
+      }
+    }
+  }
 
   change_menu();
+  init_sliders();
+  section_nav();
   window.addEventListener('resize', change_menu);
-  var mainSlider = new Swiper('#mslider', {
-    speed: 800,
-    direction: 'horizontal',
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: '.cmain-pagination',
-      clickable: true
-    },
-    breakpoints: {
-      // when window width is >= 320px
-      768: {
-        spaceBetween: 0,
-        direction: 'vertical'
-      }
-    }
-  });
-  const cardsSlider = new Swiper('#ccards-slider', {
-    speed: 800,
-    slidesPerView: 'auto',
-    spaceBetween: 0,
-    centeredSlides: true,
-    allowTouchMove: true,
-    navigation: {
-      nextEl: '.ccards-block .slider-btn.next-slide',
-      prevEl: '.ccards-block .slider-btn.prev-slide'
-    }
-  });
-  const answersSlider = new Swiper('#canswers-slider', {
-    speed: 800,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    allowTouchMove: true,
-    navigation: {
-      nextEl: '.canswers-block .slider-btn.next-slide',
-      prevEl: '.canswers-block .slider-btn.prev-slide'
-    },
-    breakpoints: {
-      // when window width is >= 320px
-      769: {
-        slidesPerView: 4
-      },
-      641: {
-        slidesPerView: 3
-      },
-      421: {
-        slidesPerView: 2
-      },
-      0: {
-        slidesPerView: 1
-      }
-    }
-  });
+  window.addEventListener('resize', init_sliders);
+  window.addEventListener('resize', section_nav);
   /* phones select */
 
   document.querySelectorAll('.custom-phone').forEach(input => {
@@ -1686,25 +1765,7 @@ document.addEventListener('DOMContentLoaded', () => {
       $(this).addClass('active');
     }
   });
-  /* learning page programm slider */
-
-  if (window.innerWidth <= 640) {
-    $('#programm-slider .mslider-wrapper').addClass('swiper-wrapper');
-    setTimeout(function () {
-      var programmSlider = new Swiper('#programm-slider', {
-        speed: 800,
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: false,
-        pagination: {
-          el: '.clearn-programm__content .cprogramm-pagination',
-          clickable: true
-        }
-      });
-    }, 300);
-  }
   /* learning page questions */
-
 
   $('.clearn-questions').on('click', '.clearn-questions__content__item .item-title', function () {
     $(this).parent().toggleClass('active');
