@@ -41,8 +41,8 @@
     <link rel="preload" href="/fonts/MontserratBold/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/MontserratLight/MontserratLight.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoBold/RobotoBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoMedium/RobotoMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoRegular/RobotoRegular.woff2" as="font" type="font/woff2" crossorigin>
@@ -766,7 +766,7 @@
                         <div class="filter-form__section active">
                             <a href="javascript:void(0);" class="section-name"><i class="icon icon-select_arrow"></i> Размер</a>
                             <div class="section-list size-list">
-                                <a href="javascript:void(0);" class="size-link"><i class="icon icon-info"></i> <span>Как определить свой размер?</span></a>
+                                <a href="javascript:void(0);" data-micromodal-trigger="modal-sizes" class="size-link"><i class="icon icon-info"></i> <span>Как определить свой размер?</span></a>
                                 <div class="input-group size-group">
                                     <label>
                                         <input class="size-input" type="checkbox" value="XS">
@@ -1026,6 +1026,7 @@
                         <span class="price">1 749 ₽</span>
                         </span>
                         <div class="product-colors">
+                            <a href="#" class="product-colors__item active" data-type="main" style="background-color: #000;"></a>
                             <a href="#" class="product-colors__item" data-type="gray" style="background-color: #AEB9A9;"></a>
                             <a href="#" class="product-colors__item" data-type="blue" style="background-color: #8ACAFF;"></a>
                             <a href="#" class="product-colors__item" data-type="purple" style="background-color: #A88AFF;"></a>

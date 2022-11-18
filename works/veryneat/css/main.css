@@ -1,18 +1,18 @@
 @font-face {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/MontserratBold/MontserratBold.eot);
-  src: url(../fonts/MontserratBold/MontserratBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratBold/MontserratBold.woff) format("woff"),url(../fonts/MontserratBold/MontserratBold.woff2) format("woff2"),url(../fonts/MontserratBold/MontserratBold.ttf) format("truetype")
-}
-@font-face {
   font-family: Fontello;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/fontello/fontello.eot);
   src: url(../fonts/fontello/fontello.eot?#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff) format("woff"),url(../fonts/fontello/fontello.woff2) format("woff2"),url(../fonts/fontello/fontello.ttf) format("truetype")
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/MontserratBold/MontserratBold.eot);
+  src: url(../fonts/MontserratBold/MontserratBold.eot?#iefix) format("embedded-opentype"),url(../fonts/MontserratBold/MontserratBold.woff) format("woff"),url(../fonts/MontserratBold/MontserratBold.woff2) format("woff2"),url(../fonts/MontserratBold/MontserratBold.ttf) format("truetype")
 }
 @font-face {
   font-family: Montserrat;
@@ -349,9 +349,6 @@ body.overflow:after {
 }
 .header__main {
   background: #565656;
-  -webkit-transition: background .3s;
-  -o-transition: background .3s;
-  transition: background .3s;
   padding: 16px 0
 }
 @media (min-width:1200px) {
@@ -836,27 +833,6 @@ body.overflow:after {
   background: rgba(168,168,168,.2);
   border-radius: 0
 }
-@media (min-width:1200px) {
-  .header__main .hmain-menu__categories .categories-list__link:after {
-    display: none!important
-  }
-  .header__main .hmain-menu__subcategories {
-    padding: 0;
-    min-height: auto;
-    margin: 0;
-    overflow: visible;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100vw;
-    height: 48px;
-    border-top: 1px solid rgba(242,242,242,.2);
-    background-color: #565656;
-    -webkit-transition: background .3s;
-    -o-transition: background .3s;
-    transition: background .3s
-  }
-}
 .header__main .hmain-menu__subcategories .subcategories-list {
   padding: 0 0 0 16px;
   -webkit-transform: translateX(-100vw);
@@ -875,6 +851,22 @@ body.overflow:after {
   max-width: calc(100% - 16px)
 }
 @media (min-width:1200px) {
+  .header__main .hmain-menu__categories .categories-list__link:after {
+    display: none!important
+  }
+  .header__main .hmain-menu__subcategories {
+    padding: 0;
+    min-height: auto;
+    margin: 0;
+    overflow: visible;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    height: 48px;
+    border-top: 1px solid rgba(242,242,242,.2);
+    background-color: #565656
+  }
   .header__main .hmain-menu__subcategories .subcategories-list {
     display: none;
     -ms-flex-wrap: wrap;
@@ -992,10 +984,7 @@ body.overflow:after {
 }
 .header__main .hmain-menu__subcategories .subcategories-list__item.submenu .submenu-wrapper {
   max-height: 0;
-  overflow-y: hidden;
-  -webkit-transition: max-height .5s;
-  -o-transition: max-height .5s;
-  transition: max-height .5s
+  overflow-y: hidden
 }
 .header__main .hmain-menu__subcategories .subcategories-list__item.submenu .submenu-wrapper.show {
   max-height: 100vh
@@ -1104,10 +1093,8 @@ body.overflow:after {
 }
 @media (min-width:1200px) {
   .header__main .hmain-menu__subcategories .subcategories-list__item.submenu:hover .submenu-wrapper {
-    max-height: 100vh;
-    -webkit-transition: max-height .5s ease-in-out .3s;
-    -o-transition: max-height .5s ease-in-out .3s;
-    transition: max-height .5s ease-in-out .3s
+    display: block;
+    max-height: 100vh
   }
   .header__main .hmain-menu__footer {
     display: none

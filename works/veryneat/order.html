@@ -41,8 +41,8 @@
     <link rel="preload" href="/fonts/MontserratBold/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/MontserratLight/MontserratLight.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoBold/RobotoBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoMedium/RobotoMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/RobotoRegular/RobotoRegular.woff2" as="font" type="font/woff2" crossorigin>
@@ -757,7 +757,10 @@
                     <div class="input-group">
                         <label>
                             <span class="label-name">E-mail*</span>
-                            <input type="email" name="email" class="input-style required" required>
+                            <div>
+                                <input type="email" name="email" class="input-style required error" required>
+                                <span class="message" style="display: none;">Введите корректный адрес электронной почты</span>
+                            </div>
                         </label>
                     </div>
                     <div class="input-group">
