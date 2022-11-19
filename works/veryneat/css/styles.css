@@ -842,8 +842,8 @@ select {
   content: "\e804"
 }
 .catalog-section .catalog-slider .slide-item .image-block .product-btns .product-btn.favorite-link {
-  -webkit-filter: drop-shadow(0 100px 80px rgba(0, 0, 0, .04)) drop-shadow(0 41.7776px 33.4221px rgba(0, 0, 0, .0287542)) drop-shadow(0 22.3363px 17.869px rgba(0, 0, 0, .0238443)) drop-shadow(0 12.5216px 10.0172px rgba(0, 0, 0, .02)) drop-shadow(0 6.6501px 5.32008px rgba(0, 0, 0, .0161557)) drop-shadow(0 2.76726px 2.21381px rgba(0, 0, 0, .0112458));
-  filter: drop-shadow(0 100px 80px rgba(0, 0, 0, .04)) drop-shadow(0 41.7776px 33.4221px rgba(0, 0, 0, .0287542)) drop-shadow(0 22.3363px 17.869px rgba(0, 0, 0, .0238443)) drop-shadow(0 12.5216px 10.0172px rgba(0, 0, 0, .02)) drop-shadow(0 6.6501px 5.32008px rgba(0, 0, 0, .0161557)) drop-shadow(0 2.76726px 2.21381px rgba(0, 0, 0, .0112458))
+  -webkit-box-shadow: 0 5px 15px -5px rgba(0,0,0,.4);
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,.4)
 }
 .catalog-section .catalog-slider .slide-item .image-block .product-btns .product-btn.favorite-link.active .icon:before,
 .catalog-section .catalog-slider .slide-item .image-block .product-btns .product-btn.favorite-link:hover .icon:before {
@@ -3174,8 +3174,8 @@ select {
   content: "\e804"
 }
 .catalog-page__content__item .image-block .product-btns .product-btn.favorite-link {
-  -webkit-filter: drop-shadow(0 100px 80px rgba(0, 0, 0, .04)) drop-shadow(0 41.7776px 33.4221px rgba(0, 0, 0, .0287542)) drop-shadow(0 22.3363px 17.869px rgba(0, 0, 0, .0238443)) drop-shadow(0 12.5216px 10.0172px rgba(0, 0, 0, .02)) drop-shadow(0 6.6501px 5.32008px rgba(0, 0, 0, .0161557)) drop-shadow(0 2.76726px 2.21381px rgba(0, 0, 0, .0112458));
-  filter: drop-shadow(0 100px 80px rgba(0, 0, 0, .04)) drop-shadow(0 41.7776px 33.4221px rgba(0, 0, 0, .0287542)) drop-shadow(0 22.3363px 17.869px rgba(0, 0, 0, .0238443)) drop-shadow(0 12.5216px 10.0172px rgba(0, 0, 0, .02)) drop-shadow(0 6.6501px 5.32008px rgba(0, 0, 0, .0161557)) drop-shadow(0 2.76726px 2.21381px rgba(0, 0, 0, .0112458));
+  -webkit-box-shadow: 0 5px 15px -5px rgba(0,0,0,.4);
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,.4);
   z-index: 2
 }
 .catalog-page__content__item .image-block .product-btns .product-btn.favorite-link.active .icon:before,
@@ -4942,6 +4942,8 @@ select {
   .product-complete__content__right-side .complete-list .swiper-wrapper {
     overflow-x: scroll;
     -webkit-appearance: none;
+    padding-bottom: 15px;
+    margin-bottom: -15px;
     scrollbar-face-color: #a8a8a8;
     scrollbar-track-color: #e9e9e9
   }
@@ -14123,17 +14125,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .fancybox__slide {
   padding: 0
 }
-.has-image[data-image-fit=contain] .fancybox__image {
-  -webkit-transform: none!important;
-  -ms-transform: none!important;
-  transform: none!important;
-  max-width: 100%!important;
-  max-height: 100%!important
-}
 @media (min-width:1024px) {
   .has-image[data-image-fit=contain] .fancybox__image {
-    width: 100%!important;
-    height: 100%!important
+    -webkit-transform: none!important;
+    -ms-transform: none!important;
+    transform: none!important;
+    max-width: 100%!important;
+    max-height: 100%!important
   }
   .has-image[data-image-fit=contain] .fancybox__content {
     width: 100%!important;
@@ -14633,3 +14631,4 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .choices__placeholder {
   opacity: .5
 }
+/*# sourceMappingURL=styles.css.map */

@@ -32858,9 +32858,17 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (elTop <= headerHeight && containerBottom >= bottomOffset) {
-        document.querySelector('.catalog-page .catalog-page__filter').classList.add('scroll');
+        if (!document.querySelector('.catalog-page .catalog-page__filter').classList.contains('scroll')) {
+          setTimeout(function () {
+            document.querySelector('.catalog-page .catalog-page__filter').classList.add('scroll');
+          }, 400);
+        }
       } else {
-        document.querySelector('.catalog-page .catalog-page__filter').classList.remove('scroll');
+        if (document.querySelector('.catalog-page .catalog-page__filter').classList.contains('scroll')) {
+          setTimeout(function () {
+            document.querySelector('.catalog-page .catalog-page__filter').classList.remove('scroll');
+          }, 400);
+        }
       }
     }
     /* scroll top btn */
@@ -33431,10 +33439,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   _fancyapps_ui_src_Fancybox_Fancybox_js__WEBPACK_IMPORTED_MODULE_7__.Fancybox.bind('.article-page__lookbook a[data-link="gallery"]', {
     groupAll: true,
+    Image: {
+      zoom: false
+    },
     buttons: ["slideShow", "zoom", "fullScreen", "close"],
     loop: true,
     protect: true,
-    infinite: true
+    infinite: true,
+    Thumbs: {
+      Carousel: {
+        preload: 10,
+        slidesPerPage: 4
+      }
+    }
   });
   /* blog page menu */
 
@@ -33706,9 +33723,10 @@ document.addEventListener('DOMContentLoaded', function () {
           preloadImages: false,
           lazy: true,
           speed: 800,
+          loop: false,
           allowTouchMove: true,
           slidesPerView: 1,
-          spaceBetween: 15,
+          spaceBetween: 0,
           navigation: {
             nextEl: product.querySelector('.main-images').querySelector('.color-next'),
             prevEl: product.querySelector('.main-images').querySelector('.color-prev')
