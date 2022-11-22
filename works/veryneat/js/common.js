@@ -32826,9 +32826,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var appHeight = function appHeight() {
     var doc = document.documentElement;
     doc.style.setProperty('--app-height', "".concat(window.innerHeight, "px"));
-  }; // window.addEventListener('resize', appHeight)
+  };
 
-
+  window.addEventListener('resize', appHeight);
   appHeight();
   /* scroll check function */
 
@@ -33613,7 +33613,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function checkMenu() {
     /* remove body overflow if menu is close */
-    if (!document.querySelector('.hmain-menu').classList.contains('show') && !document.querySelector('.filter-block').classList.contains('show')) {
+    if (!document.querySelector('.hmain-menu.show') && !document.querySelector('.filter-block.show')) {
       document.querySelector('body').classList.remove('overflow');
     }
   }
