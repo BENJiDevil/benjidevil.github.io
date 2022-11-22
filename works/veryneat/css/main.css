@@ -56,19 +56,19 @@
 }
 @font-face {
   font-family: Roboto;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/RobotoRegular/RobotoRegular.eot);
-  src: url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(../fonts/RobotoRegular/RobotoRegular.woff2) format("woff2"),url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
-}
-@font-face {
-  font-family: Roboto;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/RobotoMedium/RobotoMedium.eot);
   src: url(../fonts/RobotoMedium/RobotoMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoMedium/RobotoMedium.woff) format("woff"),url(../fonts/RobotoMedium/RobotoMedium.woff2) format("woff2"),url(../fonts/RobotoMedium/RobotoMedium.ttf) format("truetype")
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/RobotoRegular/RobotoRegular.eot);
+  src: url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(../fonts/RobotoRegular/RobotoRegular.woff2) format("woff2"),url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
 }
 [class*=" icon-"]:before,
 [class^=icon-]:before {
