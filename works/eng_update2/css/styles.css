@@ -2187,8 +2187,7 @@
 }
 .help-form {
   padding-top: 75px;
-  position: relative;
-  overflow: hidden
+  position: relative
 }
 @media (min-width:768px) {
   .help-form {
