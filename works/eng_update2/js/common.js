@@ -24549,12 +24549,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // main slider
 
   var mainSlider = new swiper__WEBPACK_IMPORTED_MODULE_5__["default"]('#mslider', {
-    modules: [swiper__WEBPACK_IMPORTED_MODULE_5__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_5__.Lazy],
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_5__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_5__.Lazy, swiper__WEBPACK_IMPORTED_MODULE_5__.Autoplay],
     lazy: true,
     speed: 800,
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    autoplay: {
+      delay: 3000,
+      pauseOnMouseEnter: true
+    },
     pagination: {
       el: '.main-pagination',
       clickable: true
@@ -24587,16 +24591,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }); // answers slider
 
   const answersSlider = new swiper__WEBPACK_IMPORTED_MODULE_5__["default"]('#answers-slider', {
-    modules: [swiper__WEBPACK_IMPORTED_MODULE_5__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_5__.Lazy, swiper__WEBPACK_IMPORTED_MODULE_5__.Autoplay],
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_5__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_5__.Lazy],
     lazy: true,
     speed: 800,
     slidesPerView: 'auto',
     spaceBetween: 0,
     allowTouchMove: true,
-    autoplay: {
-      delay: 3000,
-      pauseOnMouseEnter: true
-    },
     navigation: {
       nextEl: '.answers-block .slider-btn.next-slide',
       prevEl: '.answers-block .slider-btn.prev-slide'
