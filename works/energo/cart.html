@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>energomatika</title>
+    <meta name="description" content="energomatika">
+    <meta name="keywords" content="energomatika">
+    <meta name="author" content="energomatika">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="energomatika">
+    <meta property="og:title" content="energomatika">
+    <meta property="og:description" content="energomatika">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://site-url.ru/">
+    <link rel="canonical" href="https://site-url.ru/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/GilroyMedium/GilroyMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GilroyBold/GilroyBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GilroyRegular/GilroyRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/GilroySemiBold/GilroySemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__search" style="position: fixed; transform: translateY(-100vh)">
+            <div class="container">
+                <form action="" class="search-form">
+                    <input type="text" class="input-style" placeholder="Поиск по каталогу">
+                    <button class="search-submit-btn" type="submit"><i class="icon icon-search"></i></button>
+                    <a href="javascript:void(0);" class="js-close-search close-btn"><i class="icon icon-close"></i></a>
+                </form>
+            </div>
+        </div>
+        <div class="header__top">
+            <div class="container">
+                <div class="logo-block">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/logo.png" alt="logo" class="logo-img">
+                        <span>производственно-коммерческая фирма <br> приборы учёта воды, газа, тепла, инженерные сети</span>
+                    </a>
+                </div>
+                <div class="search-block">
+                    <a href="javascript:void(0);" class="search-btn"><i class="icon icon-search"></i> Поиск</a>
+                </div>
+                <div class="links-block">
+                    <a href="tel:+7 (812) 371-12-73 ">+7 (812) 371-12-73</a>
+                    <a href="tel:+7 (812) 371-12-73 ">+7 (812) 371-13-04</a>
+                    <a href="mailto:energomatica@mail.ru">energomatica@mail.ru</a>
+                </div>
+                <div class="address-block">
+                    <p>г. С-Петербург, ул. Смоленская, д. 33, БЦ «Смоленский»</p>
+                    <span>пн-чт с 09:00 до 17:30</span>
+                    <span>пт с 09:00 до 16:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <a href="/" class="logo-link" style="display: none;">
+                    <img src="images/common/logo.png" alt="logo" class="logo-img">
+                    <span>производственно-коммерческая фирма приборы учёта воды, газа, тепла, инженерные сети</span>
+                </a>
+                <button id="hamburger" class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="txt">Каталог</span>
+                </button>
+                <nav class="main-menu">
+                    <div class="logo-row" style="display: none;">
+                        <a href="/" class="logo-link">
+                            <img src="images/common/logo.png" alt="logo" class="logo-img">
+                        </a>
+                        <a href="javascript:void(0);" class="close-menu-btn"><i class="icon icon-close"></i></a>
+                    </div>
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Главная</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Услуги</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Новости</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Статьи</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+                    </ul>
+                    <div class="phones-block" style="display: none;">
+                        <a href="tel:+78123711273" class="phone-link">+7 (812) 371-12-73</a>
+                        <a href="tel:+7(812)3711304" class="phone-link">+7 (812) 371-13-04</a>
+                    </div>
+                </nav>
+                <div class="add-links">
+                    <a href="javascript:void(0);" class="search-btn add-links__item" style="display: none;"><i class="icon icon-search"></i></a>
+                    <a href="#" class="add-links__item"><i class="icon icon-cart"></i><span class="value">10</span></a>
+                    <a href="#" class="add-links__item"><i class="icon icon-heart"></i><span class="value">10</span></a>
+                </div>
+            </div>
+            <nav class="catalog-menu">
+                <div class="container">
+                    <a href="/" class="main-menu__link" style="display: none;">Каталог</a>
+                    <a href="javascript:void(0);" class="submenu-link" style="display: none;"><i class="icon icon-down-open"></i></a>
+                    <ul class="catalog-menu__list">
+                        <li class="catalog-menu__item">
+                            <a href="#" class="catalog-menu__link">
+                                <span class="image-block">
+                            <img src="images/common/menu/menu_icon1.png" alt="icon" class="menu-icon">
+                        </span>
+                                <span class="descr-block">
+                            <span class="name">Водомерные узлы</span>
+                                <span class="descr">Комплект для одного потока системы водоснабжения, комплект с двумя...</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <a href="#" class="catalog-menu__link">
+                                <span class="image-block">
+                            <img src="images/common/menu/menu_icon2.png" alt="icon" class="menu-icon">
+                        </span>
+                                <span class="descr-block">
+                            <span class="name">Водосчетчики</span>
+                                <span class="descr">Бытовые, коммунальные, промышленные, присоеденительная...</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <a href="#" class="catalog-menu__link">
+                                <span class="image-block">
+                            <img src="images/common/menu/menu_icon3.png" alt="icon" class="menu-icon">
+                        </span>
+                                <span class="descr-block">
+                            <span class="name">Фильтры грубой очистки воды</span>
+                                <span class="descr">Косые — грязевики, магнитно-механические</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <a href="#" class="catalog-menu__link">
+                                <span class="image-block">
+                            <img src="images/common/menu/menu_icon4.png" alt="icon" class="menu-icon">
+                        </span>
+                                <span class="descr-block">
+                            <span class="name">Арматура</span>
+                                <span class="descr">Задвижки, затворы, приводная арматура, краны, клапаны</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <a href="#" class="catalog-menu__link">
+                                <span class="image-block">
+                            <img src="images/common/menu/menu_icon5.png" alt="icon" class="menu-icon">
+                        </span>
+                                <span class="descr-block">
+                            <span class="name">Теплосчетчики КИП и регуляторы</span>
+                                <span class="descr">Регулятор прямого действия, для коммунальных служб</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <a href="#" class="catalog-menu__link">
+                                <span class="image-block">
+                            <img src="images/common/menu/menu_icon6.png" alt="icon" class="menu-icon">
+                        </span>
+                                <span class="descr-block">
+                            <span class="name">Газовое и пожарное оборудование</span>
+                                <span class="descr">Рукава, головки соединительные, стволы ручные, огнетушители ...</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-menu__item">
+                            <a href="#" class="catalog-menu__link">
+                                <span class="image-block">
+                            <img src="images/common/menu/menu_icon7.png" alt="icon" class="menu-icon">
+                        </span>
+                                <span class="descr-block">
+                            <span class="name">Комплектующие водомерных узлов, фасонные части трубопровода</span>
+                                <span class="descr">Тройники, переходы, колена, патрубки, фасонные части, комлекты стяжек ...</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="cart-block">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item"><span>Каталог</span></li>
+                </ul>
+            </div>
+            <h1 class="cart-block__title page-title">Корзина</h1>
+            <div class="cart-block__content">
+                <div class="products-list">
+                    <div class="products-list__item">
+                        <div class="image-block">
+                            <img src="images/common/cart/product_image.jpg" alt="product" class="product-image">
+                        </div>
+                        <div class="descr-block">
+                            <p>Комплект для одного потока системы водоснабжения </p>
+                        </div>
+                        <div class="count-block">
+                            <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                            <input type="text" class="count-input" value="1" readonly>
+                            <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                        </div>
+                        <div class="price-block">16 895 руб.</div>
+                        <div class="delete-block">
+                            <a href="#" class="delete-link"><i class="icon icon-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="products-list__item">
+                        <div class="image-block">
+                            <img src="images/common/cart/product_image.jpg" alt="product" class="product-image">
+                        </div>
+                        <div class="descr-block">
+                            <p>Комплект для одного потока системы водоснабжения </p>
+                        </div>
+                        <div class="count-block">
+                            <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                            <input type="text" class="count-input" value="1" readonly>
+                            <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                        </div>
+                        <div class="price-block">16 895 руб.</div>
+                        <div class="delete-block">
+                            <a href="#" class="delete-link"><i class="icon icon-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="products-list__item">
+                        <div class="image-block">
+                            <img src="images/common/cart/product_image.jpg" alt="product" class="product-image">
+                        </div>
+                        <div class="descr-block">
+                            <p>Комплект для одного потока системы водоснабжения </p>
+                        </div>
+                        <div class="count-block">
+                            <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                            <input type="text" class="count-input" value="1" readonly>
+                            <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                        </div>
+                        <div class="price-block">16 895 руб.</div>
+                        <div class="delete-block">
+                            <a href="#" class="delete-link"><i class="icon icon-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-row">Итого: <span>16 895 руб.</span></div>
+                <div class="btn-row">
+                    <a href="#" class="back-link animate-btn">
+                        <span class="circle" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Продолжить покупки</span>
+                    </a>
+                    <button type="submit" class="order-btn btn-style yellow-style">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="logo-block">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/logo.png" alt="logo" class="logo-img">
+                        <span>производственно-коммерческая фирма <br> приборы учёта воды, газа, тепла, инженерные сети</span>
+                    </a>
+                    <div class="copyright">
+                        <p><span>© 2008 — 2022</span> ООО «Энергоматика».</p>
+                        <p>Все права защищены.</p>
+                    </div>
+                </div>
+                <div class="contacts-column">
+                    <h3 class="block-title">Контакты</h3>
+                    <div class="contacts-column__left-side">
+                        <a href="tel:+7 (812) 371-12-73 ">+7 (812) 371-12-73 </a>
+                        <a href="tel:+7 (812) 371-12-73 ">+7 (812) 371-12-73 </a>
+                        <a class="mail-link" href="mailto:energomatica@mail.ru">energomatica@mail.ru</a>
+                    </div>
+                    <div class="contacts-column__right-side">
+                        <span>Пн-Чт: 9:00 — 17:30</span>
+                        <span>Пт: 9:00 — 16:00</span>
+                        <p>г. С-Петербург, ул. Смоленская, д. 33, БЦ «Смоленский»</p>
+                    </div>
+                </div>
+                <div class="nav-block">
+                    <h3 class="block-title">Навигация</h3>
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Главная</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Статьи</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Каталог</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Новости</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Услуги</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">Прайс-лист</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Карта сайта</a>
+                <a href="#" target="_blank" class="websadovnik">Разработка сайта — <img src="images/common/svg/sad_logo.svg" alt="WebSadovnik" class="sad-logo"></a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="scrollBtn" style="display: none;"><i class="icon icon-down-open-big"></i></a>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="backcall_modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Остаьте заявку</h2>
+                    <h3 class="modal__subtitle">Оставьте ваши данные. Наш менеджер свяжется с вами в течении рабочего дня.</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-plus"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="modal-form">
+                        <input type="hidden" name="service_name" value="">
+                        <div class="input-group">
+                            <input class="input-style name-input" type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-group">
+                            <input class="input-style phone-input" type="tel" name="phone" placeholder="Ваш телефон">
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="submit-btn btn-style blue-style">Заказать услугу</button>
+                            <p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных согласно <a href="#">политики конфиденциальности</a></p>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide simple-modal" id="service_modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Заказать услугу</h2>
+                    <h3 class="modal__subtitle">Оставьте ваши данные. Наш менеджер свяжется с вами в течении рабочего дня.</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-plus"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="modal-form">
+                        <input type="hidden" name="service_name" value="">
+                        <div class="input-group">
+                            <input class="input-style name-input" type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-group">
+                            <input class="input-style phone-input" type="tel" name="phone" placeholder="Ваш телефон">
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="submit-btn btn-style blue-style">Заказать услугу</button>
+                            <p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных согласно <a href="#">политики конфиденциальности</a></p>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide simple-modal" id="consultation_modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Заказать консультацию</h2>
+                    <h3 class="modal__subtitle">Оставьте ваши данные. Наш менеджер свяжется с вами в течении рабочего дня.</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-plus"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="modal-form">
+                        <div class="input-group">
+                            <input class="input-style name-input" type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-group">
+                            <input class="input-style phone-input" type="tel" name="phone" placeholder="Ваш телефон">
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" class="input-style" placeholder="Опишите ваш вопрос"></textarea>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="submit-btn btn-style blue-style">Заказать консультацию</button>
+                            <p>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных согласно <a href="#">политики конфиденциальности</a></p>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal micromodal-slide simple-modal addproduct-modal" id="addproduct_modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Товар добавлен в корзину</h2>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-plus"></i></button>
+                </header>
+                <main class="modal__content">
+                    <div class="image-block">
+                        <img src="images/common/cart/product_image.jpg" alt="product" class="product-image">
+                    </div>
+                    <div class="descr-block">
+                        <div class="product-name">Комплект для одного потока системы водоснабжения </div>
+                        <div class="product-price"><span class="count">1</span> х <span class="cost">16 895 руб.</span></div>
+                    </div>
+                </main>
+                <footer class="modal__footer">
+                    <div class="info-row">
+                        <div class="info-row__count">В корзине <span>5 товаров</span></div>
+                        <div class="info-row__total">Стоимость заказа: <span>54 380 руб.</span></div>
+                    </div>
+                    <div class="btns-row">
+                        <a href="#" class="continue-link btn-style stroke-style" data-micromodal-close>Продолжить покупки</a>
+                        <a href="#" class="cart-link btn-style blue-style">Оформить заказ</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
