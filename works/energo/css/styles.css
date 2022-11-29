@@ -1494,7 +1494,7 @@ body.menu-open:after {
 .header__top .logo-block .logo-img {
   display: block;
   width: auto;
-  max-width: 100%;
+  max-width: 238px;
   margin: 0
 }
 .header__top .logo-block span {
@@ -6468,7 +6468,7 @@ body.menu-open:after {
 .footer__content .logo-block .logo-link .logo-img {
   display: block;
   width: auto;
-  max-width: 100%;
+  max-width: 238px;
   margin: 0
 }
 .footer__content .logo-block .logo-link span {

@@ -361,7 +361,7 @@ body.menu-open:after {
 .header__top .logo-block .logo-img {
   display: block;
   width: auto;
-  max-width: 100%;
+  max-width: 238px;
   margin: 0
 }
 .header__top .logo-block span {
