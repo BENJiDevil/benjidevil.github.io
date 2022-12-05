@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Aurora Team</title>
+    <meta name="description" content="Aurora Team">
+    <meta name="keywords" content="Aurora Team">
+    <meta name="author" content="Aurora Team">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Aurora Team">
+    <meta property="og:title" content="Aurora Team">
+    <meta property="og:description" content="Aurora Team">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://site-url.ru/">
+    <link rel="canonical" href="https://site-url.ru/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#272727">
+    <meta name="theme-color" content="#272727">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/MontserratBold/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratLight/MontserratLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/TTAutonomousBold/TTAutonomousBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/TTAutonomousExtraBold/TTAutonomousExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/TTAutonomousRegular/TTAutonomousRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                </a>
+                <a href="#" class="naast-link">
+                    <img src="images/common/naast_logo.png" alt="naast" class="naast-image" height="35px">
+                </a>
+                <a href="tel:88005558893" class="phone-link">8 800 555-88-93</a>
+                <div class="city-check">
+                    <span class="city-check__value js-city-open">Москва</span>
+                    <ul class="city-check__list" style="display: none;">
+                        <li class="city-check__item"><a href="#" class="city-check__link">Москва1</a></li>
+                        <li class="city-check__item"><a href="#" class="city-check__link">Москва2</a></li>
+                        <li class="city-check__item"><a href="#" class="city-check__link">Москва3</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" data-modal="auth_modal" class="profile-link"><i class="icon icon-profile"></i> Личный кабинет</a>
+                <a href="#" class="search-link js-search-open"><i class="icon icon-search"></i> Поиск</a>
+                <a href="#" class="catalog-link">Каталог</a>
+                <button id="hamburger" data-menu="#sommenu" class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="hamburger-text">Меню</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main-page profile-page lazyload" data-bgset="images/bg/mobile/profile_bg2.jpg [(max-width: 575px)] | images/bg/pad/profile_bg2.jpg [(max-width: 1024px)] | images/bg/desk/profile_bg2.jpg [(min-width: 1025px)]">
+        <div class="container">
+            <h1 class="main-page__title">МОЙ КАБИНЕТ</h1>
+            <h2 class="main-page__subtitle">Личный кабинет участника клуба AURORA TEAM</h2>
+            <div class="main-page__navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item"><a href="#" class="navigation-list__link">Новости <br> клуба</a></li>
+                    <li class="navigation-list__item"><a href="#" class="navigation-list__link active">Статус <br> заказа</a></li>
+                    <li class="navigation-list__item"><a href="#" class="navigation-list__link">Доверительный <br> список</a></li>
+                    <li class="navigation-list__item"><a href="#" class="navigation-list__link">ТЕХНИКА <br> В НАЛИЧИИ</a></li>
+                    <li class="navigation-list__item"><a href="#" class="navigation-list__link">Личные <br> данные</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <section class="orders-block">
+        <div class="container">
+            <div class="title-row">
+                <h2 class="orders-block__title section-title">Мои заказы</h2>
+            </div>
+            <div class="orders-block__content">
+                <form action="" class="trace-form">
+                    <span>Отследить технику</span>
+                    <div class="input-group">
+                        <input type="text" name="trace" placeholder="Номер накладной">
+                    </div>
+                    <div class="input-group btn-group">
+                        <button type="submit" class="btn-style">Отследить</button>
+                    </div>
+                </form>
+                <div class="trace-row">
+                    <span class="from">Химки</span>
+                    <div class="trace-line">
+                        <img src="images/common/icons/line_car.png" alt="line-car" class="car-icon">
+                    </div>
+                    <span class="to">Владивосток</span>
+                </div>
+                <div class="info-list">
+                    <div class="info-list__item">
+                        <div class="icon-side"><img src="images/common/icons/order_icon1.png" alt="icon" class="info-icon"></div>
+                        <div class="descr-side">
+                            <p class="item-step">Создан</p>
+                            <p class="item-info">Заказ оформлен, ожидаем поступления от отправителя</p>
+                        </div>
+                    </div>
+                    <div class="info-list__item">
+                        <div class="icon-side"><img src="images/common/icons/order_icon2.png" alt="icon" class="info-icon"></div>
+                        <div class="descr-side">
+                            <p class="item-step">В пути</p>
+                            <p class="item-info">Заказ в процессе доставки</p>
+                            <a href="#" class="more-info">Подробнее ></a>
+                        </div>
+                    </div>
+                    <div class="info-list__item">
+                        <div class="icon-side"><img src="images/common/icons/order_icon3.png" alt="icon" class="info-icon"></div>
+                        <div class="descr-side">
+                            <p class="item-step">Готов к отгрузке</p>
+                            <p class="item-info">Заказ ожидает приема</p>
+                        </div>
+                    </div>
+                    <div class="info-list__item">
+                        <div class="icon-side"><img src="images/common/icons/order_icon4.png" alt="icon" class="info-icon"></div>
+                        <div class="descr-side">
+                            <p class="item-step">Отгружен</p>
+                            <p class="item-info">Поздравляем с приобритением</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="backcall-form">
+        <div class="container">
+            <div class="backcall-form__content">
+                <div class="backcall-form__content__left-side">
+                    <h2 class="backcall-form__title section-title">Напишите нам</h2>
+                    <div class="backcall-form__descr">
+                        <p>Мы знаем о подъемниках буквально все! Заполните форму и мы свяжемся с вами, чтобы дать подробную консультацию.</p>
+                    </div>
+                </div>
+                <div class="backcall-form__content__right-side">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="input-style name-input" name="name" placeholder="ФИО">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="input-style" name="company" placeholder="Компания">
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" class="input-style phone-input" name="phone" placeholder="Телефон">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="input-style" name="email" placeholder="Элетронная почта">
+                        </div>
+                        <div class="input-group message-group">
+                            <textarea name="message" class="input-style" placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="input-group check-group">
+                            <label>
+                                <input type="checkbox" name="check">
+                                <span>Согласен с политикой конфиденциальности</span>
+                            </label>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <div class="item-title">Контактная информация</div>
+                <div class="footer__info__column">
+                    <a href="tel:88005558893" class="phone-link">8 800 555-88-93</a>
+                    <span>Бесплатно по России</span>
+                </div>
+                <div class="footer__info__column">
+                    <a href="mailto:info@aurora-rus.ru" class="mail-link">info@aurora-rus.ru</a>
+                    <span>Электронная почта</span>
+                </div>
+                <div class="footer__info__column social-column">
+                    <ul class="social-list">
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tg"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-yt"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content__column">
+                    <div class="item-title">Каталог</div>
+                    <ul class="menu-list">
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Продажа</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Аренда</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__column">
+                    <div class="item-title">Партнёрам</div>
+                    <ul class="menu-list">
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Закрытый клуб</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Субаренда</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Лизинг</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Aurora-Finance</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Trade-in</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__column about-column">
+                    <div class="item-title">О компании</div>
+                    <ul class="menu-list">
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Новости</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Сервис и запчасти</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Проекты</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Презентации</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Горячая линия</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Регламенты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <span>© 2021, ООО «АВРОРА». <br> Все права защищены.</span>
+                <a href="#" target="_blank">Политика конфиденциальности</a>
+            </div>
+            <a href="javascript:void(0);" class="scrollBtn" style="display: none;"><i class="icon icon-slider_arrow"></i></a>
+        </div>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="auth_modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close"></i></button>
+                <header class="modal__header">
+                    <h2 class="modal__title">АВТОРИЗАЦИЯ</h2>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="auth-form">
+                        <div class="input-group">
+                            <span>e-mail</span>
+                            <input type="text" name="name" class="name-input">
+                        </div>
+                        <div class="input-group">
+                            <span>пароль</span>
+                            <input type="text" name="phone" class="phone-input">
+                        </div>
+                        <div class="input-group check-group">
+                            <label>
+                                <input type="checkbox" name="check">
+                                <span>Запомнить меня на этом компьютере</span>
+                            </label>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Войти</button>
+                        </div>
+                        <div class="input-group link-group">
+                            <a href="#">Забыли свой пароль?</a>
+                            <span>Постараемся восстановить его</span>
+                        </div>
+                        <div class="input-group link-group">
+                            <a href="#">У меня нет пароля, но я хочу стать частью AURORA TEAM</a>
+                            <span>Подать заявку</span>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.0/rangeslider.min.js"></script>
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
