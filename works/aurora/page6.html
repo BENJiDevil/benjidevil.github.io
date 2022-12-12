@@ -45,36 +45,260 @@
     <link rel="preload" href="fonts/TTAutonomousBold/TTAutonomousBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/TTAutonomousExtraBold/TTAutonomousExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/TTAutonomousRegular/TTAutonomousRegular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <a href="/" class="logo-link">
-                    <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
-                </a>
-                <a href="#" class="naast-link">
-                    <img src="images/common/naast_logo.png" alt="naast" class="naast-image" height="35px">
-                </a>
-                <a href="tel:88005558893" class="phone-link">8 800 555-88-93</a>
-                <div class="city-check">
-                    <span class="city-check__value js-city-open">Москва</span>
-                    <ul class="city-check__list" style="display: none;">
-                        <li class="city-check__item"><a href="#" class="city-check__link">Москва1</a></li>
-                        <li class="city-check__item"><a href="#" class="city-check__link">Москва2</a></li>
-                        <li class="city-check__item"><a href="#" class="city-check__link">Москва3</a></li>
-                    </ul>
-                </div>
-                <a href="javascript:void(0);" data-modal="auth_modal" class="profile-link"><i class="icon icon-profile"></i> <span>Личный кабинет</span></a>
-                <a href="#" class="search-link js-search-open"><i class="icon icon-search"></i> <span>Поиск</span></a>
-                <a href="#" class="catalog-link">Каталог</a>
-                <button id="hamburger" data-menu="#sommenu" class="hamburger hamburger--slider" type="button">
-                    <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
+    <header class="header header--fixed">
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="/" class="header__logo logo logo--sticky">
+                        <img src="https://aurora-rus.ru/local/templates/aurora/img/svg/logo-color.svg" width="194" height="24" alt="Логотип Aurora">
+                    </a>
+                    <a href="/" class="header__logo logo logo--initial">
+                        <img src="https://aurora-rus.ru/local/templates/aurora/img/svg/logo.svg" width="194" height="24" alt="Логотип Aurora">
+                    </a>
+                    <div class="naast-logo">
+                        <img class="naast-logo--initial" src="https://aurora-rus.ru/local/templates/aurora/img/svg/logo-naast-min-black.svg" width="54" height="20" alt="Логотип НААСТ">
+                        <img class="naast-logo--sticky" src="https://aurora-rus.ru/local/templates/aurora/img/svg/logo-naast-min.svg" width="54" height="20" alt="Логотип НААСТ">
+                    </div>
+                    <nav class="main-nav header__nav" data-main-nav="">
+                        <div class="main-nav__wrapper" data-nav-block="">
+                            <div class="main-nav__inners">
+                                <div class="main-nav__inner main-nav__inner-border" data-nav-list="">
+                                    <ul class="main-nav__list">
+                                        <li class="main-nav__item">
+                                            <a class="main-nav__link" href="/katalog/" aria-label="Перейти по ссылке">Каталог</a>
+                                            <button class="main-nav__button js-dropdown-toggle" type="button" data-dropdown-toggle="0" aria-label="Раскрыть/Скрыть">
+                                                <span class="main-nav__dropdown-toggle">
+                        <svg width="12" height="7" aria-hidden="true">
+                            <use xlink:href="#icon-bracket-bottom"></use>
+                        </svg>
                     </span>
-                    <span class="hamburger-text">Меню</span>
-                </button>
+                                            </button>
+                                            <div class="main-nav__dropdown" data-dropdown="0" hidden="">
+                                                <div class="main-nav__dropdown-list-wrapper">
+                                                    <a class="main-nav__dropdown-list-title" href="/katalog/arenda/">Аренда</a>
+                                                    <ul class="main-nav__dropdown-list main-nav__dropdown-item-desktop">
+                                                        <li class="main-nav__dropdown-item">
+                                                            <a class="main-nav__dropdown-link" href="/katalog/arenda/podemniki/">
+                                                                Подъемники <span class="main-nav__inner-link-icon">
+                                                <svg width="12" height="7" aria-hidden="true">
+                                                    <use xlink:href="#icon-bracket-bottom"></use>
+                                                </svg>
+                                            </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="main-nav__dropdown-item">
+                                                            <a class="main-nav__dropdown-link" href="/katalog/arenda/skladskoe-oborudovanie/">
+                                                                Складское оборудование <span class="main-nav__inner-link-icon">
+                                                <svg width="12" height="7" aria-hidden="true">
+                                                    <use xlink:href="#icon-bracket-bottom"></use>
+                                                </svg>
+                                            </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="main-nav__dropdown-list-title" href="/katalog/prodazha/">Продажа</a>
+                                                    <ul class="main-nav__dropdown-list main-nav__dropdown-item-desktop">
+                                                        <li class="main-nav__dropdown-item">
+                                                            <a class="main-nav__dropdown-link" href="/katalog/prodazha/podemniki/">
+                                                                Подъемники <span class="main-nav__inner-link-icon">
+                                                <svg width="12" height="7" aria-hidden="true">
+                                                    <use xlink:href="#icon-bracket-bottom"></use>
+                                                </svg>
+                                            </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="main-nav__dropdown-item">
+                                                            <a class="main-nav__dropdown-link" href="/katalog/prodazha/skladskoe-oborudovanie/">
+                                                                Складское оборудование <span class="main-nav__inner-link-icon">
+                                                <svg width="12" height="7" aria-hidden="true">
+                                                    <use xlink:href="#icon-bracket-bottom"></use>
+                                                </svg>
+                                            </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="main-nav__dropdown-list-title" href="/katalog/bu/">Б/У техника</a>
+                                                    <ul class="main-nav__dropdown-list main-nav__dropdown-item-desktop">
+                                                        <li class="main-nav__dropdown-item">
+                                                            <a class="main-nav__dropdown-link" href="/katalog/bu/podemniki/">
+                                                                Подъемники <span class="main-nav__inner-link-icon">
+                                                <svg width="12" height="7" aria-hidden="true">
+                                                    <use xlink:href="#icon-bracket-bottom"></use>
+                                                </svg>
+                                            </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a class="main-nav__link" href="/o-kompanii/" aria-label="Перейти по ссылке">О компании</a>
+                                            <button class="main-nav__button js-dropdown-toggle" type="button" data-dropdown-toggle="1" aria-label="Раскрыть/Скрыть">
+                                                <span class="main-nav__dropdown-toggle">
+                        <svg width="12" height="7" aria-hidden="true">
+                            <use xlink:href="#icon-bracket-bottom"></use>
+                        </svg>
+                    </span>
+                                            </button>
+                                            <div class="main-nav__dropdown" data-dropdown="1" hidden="">
+                                                <div class="main-nav__dropdown-list-wrapper">
+                                                    <a class="main-nav__dropdown-list-title" href="/press-tsentr/">Пресс-центр</a>
+                                                    <a class="main-nav__dropdown-list-title" href="/proekty/">Проекты</a>
+                                                    <a class="main-nav__dropdown-list-title" href="/reglamenty/">Регламенты</a>
+                                                    <a class="main-nav__dropdown-list-title" href="/karera/">Карьера</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a class="main-nav__link" href="/servis/" aria-label="Перейти по ссылке">Сервисное обслуживание</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a class="main-nav__link" href="/zapchasti/" aria-label="Перейти по ссылке">Запасные части</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a class="main-nav__link" href="/goryachaya-liniya/" aria-label="Перейти по ссылке">Горячая линия</a>
+                                        </li>
+                                        <li class="main-nav__item">
+                                            <a class="main-nav__link" href="/kontakty/" aria-label="Перейти по ссылке">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-nav__inner" data-phone-controls="">
+                                    <a class="control control--mobile control--phone" href="tel:88005558893" aria-label="Телефон">
+                                        <div class="control__icon">
+                                            <svg width="20" height="20" aria-hidden="true">
+                                                <use xlink:href="#icon-phone"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="control__content">
+                                            <p class="control__main-info">8 800 555-88-93</p>
+                                        </div>
+                                    </a>
+                                    <div class="custom-select control control--select control--region control--mobile not-empty is-initialized" data-select="" data-validate-type="select" data-name="cities" data-id="cities">
+                                        <span class="custom-select__label" style="">Ваш регион:</span>
+                                        <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                                            <span class="select-icon control__icon">
+            <svg width="16" height="24" aria-hidden="true">
+                <use xlink:href="#icon-geo"></use>
+            </svg>
+        </span>
+                                            <span class="custom-select__text" style="">Москва</span>
+                                            <span class="custom-select__icon">
+            <svg width="14" height="9" aria-hidden="true">
+                <use xlink:href="#icon-caret"></use>
+            </svg>
+        </span>
+                                        </button>
+                                        <ul class="custom-select__list" role="listbox">
+                                            <li class="custom-select__item" tabindex="0" data-select-value="316" aria-selected="true" role="option">Москва</li>
+                                            <li class="custom-select__item" tabindex="0" data-select-value="317" aria-selected="false" role="option">Санкт-Петербург</li>
+                                            <li class="custom-select__item" tabindex="0" data-select-value="318" aria-selected="false" role="option">Ростов-на-Дону</li>
+                                            <li class="custom-select__item" tabindex="0" data-select-value="319" aria-selected="false" role="option">Казань</li>
+                                        </ul>
+                                        <select id="cities" name="cities" tabindex="-1" aria-hidden="true">
+                                            <option value=""></option>
+                                            <option value="316" selected="">Москва</option>
+                                            <option value="317">Санкт-Петербург</option>
+                                            <option value="318">Ростов-на-Дону</option>
+                                            <option value="319">Казань</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-nav__column-right">
+                                <div class="main-nav__img">
+                                    <img src="https://aurora-rus.ru/local/templates/aurora/img/content/avrora-building-small.jpg" srcset="https://aurora-rus.ru/local/templates/aurora/img/content/avrora-building-small@2x.jpg 2x" width="720" height="837" alt="avrora building">
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="header__contents">
+                        <div class="header__controls">
+                            <a class="control control--header control--phone" href="tel:88005558893" aria-label="Телефон">
+                                <div class="control__icon display-tablet">
+                                    <svg width="20" height="20" aria-hidden="true">
+                                        <use xlink:href="#icon-phone"></use>
+                                    </svg>
+                                </div>
+                                <div class="control__content display-desktop">
+                                    <p class="control__main-info">8 800 555-88-93</p>
+                                </div>
+                            </a>
+                            <div class="custom-select control control--select control--header control--region not-empty is-initialized" data-select="" data-validate-type="select" data-name="cities" data-id="cities">
+                                <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                                    <span class="select-icon display-tablet">
+            <svg width="16" height="24" aria-hidden="true">
+                <use xlink:href="#icon-geo"></use>
+            </svg>
+        </span>
+                                    <span class="custom-select__text" style="">Москва</span>
+                                    <span class="custom-select__icon">
+            <svg width="14" height="9" aria-hidden="true">
+                <use xlink:href="#icon-caret"></use>
+            </svg>
+        </span>
+                                </button>
+                                <ul class="custom-select__list" role="listbox">
+                                    <li class="custom-select__item" tabindex="0" data-select-value="316" aria-selected="true" role="option">Москва</li>
+                                    <li class="custom-select__item" tabindex="0" data-select-value="317" aria-selected="false" role="option">Санкт-Петербург</li>
+                                    <li class="custom-select__item" tabindex="0" data-select-value="318" aria-selected="false" role="option">Ростов-на-Дону</li>
+                                    <li class="custom-select__item" tabindex="0" data-select-value="319" aria-selected="false" role="option">Казань</li>
+                                </ul>
+                                <select id="cities" name="cities" tabindex="-1" aria-hidden="true">
+                                    <option value=""></option>
+                                    <option value="316" selected=""></option>
+                                    <option value="317"></option>
+                                    <option value="318"></option>
+                                    <option value="319"></option>
+                                </select>
+                            </div>
+                            <button class="header__search js-search-btn" type="button" aria-label="Поиск по сайту">
+                                <svg width="24" height="23" aria-hidden="true">
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                                <span class="header__search-content">Поиск</span>
+                            </button>
+                            <a class="header__link circle-accent" href="/katalog/" aria-label="Каталог">Каталог</a>
+                        </div>
+                    </div>
+                    <div class="header__menu-toggle-btns">
+                        <button class="header__nav-toggle" type="button" data-nav-open="" aria-label="Открыть меню">
+                            <svg width="32" height="16" aria-hidden="true">
+                                <use xlink:href="#icon-burger"></use>
+                            </svg>
+                            <span class="header__nav-toggle-content display-desktop">Меню</span>
+                        </button>
+                        <button class="header__menu-close" type="button" data-nav-close="" aria-label="Закрыть меню">
+                            <svg width="11" height="11" aria-hidden="true">
+                                <use xlink:href="#icon-close-thin"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container--no-padding-on-mobile">
+            <div class="header__search-wrapper">
+                <div class="search header__search-input js-search-form">
+                    <div class="search__input">
+                        <form action="/search/" method="GET">
+                            <div class="custom-input custom-input--bordered custom-input--icon-first">
+                                <label>
+                                    <input id="search" type="search" name="q" placeholder="Поиск" value="">
+                                    <span class="custom-input__icon">
+                        <svg width="24" height="23" aria-hidden="true">
+                          <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </span>
+                                </label>
+                                <button class="search__input-btn btn hover-red" type="submit" aria-label="Искать">Найти</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -179,12 +403,12 @@
                             </div>
                             <div class="descr-block">
                                 <h4 class="product-name">НОЖНИЧНЫЙ ПОДЪЕМНИК AURORA AR16J (AR52J)</h4>
-                                <ul class="product-info">
-                                    <li class="product-info__item"><span>Тип подъемника</span> коленчатый</li>
-                                    <li class="product-info__item"><span>Рабочая высота</span> 17,7</li>
-                                    <li class="product-info__item"><span>Грузоподъемность</span> 230 кг</li>
-                                    <li class="product-info__item"><span>Двигатель</span> Дизельный</li>
-                                    <li class="product-info__item"><span>Вес</span> 8180</li>
+                                <ul class="product-descr">
+                                    <li class="product-descr__item"><span>Тип подъемника</span> коленчатый</li>
+                                    <li class="product-descr__item"><span>Рабочая высота</span> 17,7</li>
+                                    <li class="product-descr__item"><span>Грузоподъемность</span> 230 кг</li>
+                                    <li class="product-descr__item"><span>Двигатель</span> Дизельный</li>
+                                    <li class="product-descr__item"><span>Вес</span> 8180</li>
                                 </ul>
                                 <div class="btns-row">
                                     <a href="#" class="rent-btn btn-style">АРЕНДОВАТЬ</a>
@@ -198,12 +422,12 @@
                             </div>
                             <div class="descr-block">
                                 <h4 class="product-name">НОЖНИЧНЫЙ ПОДЪЕМНИК AURORA AR16J (AR52J)</h4>
-                                <ul class="product-info">
-                                    <li class="product-info__item"><span>Тип подъемника</span> коленчатый</li>
-                                    <li class="product-info__item"><span>Рабочая высота</span> 17,7</li>
-                                    <li class="product-info__item"><span>Грузоподъемность</span> 230 кг</li>
-                                    <li class="product-info__item"><span>Двигатель</span> Дизельный</li>
-                                    <li class="product-info__item"><span>Вес</span> 8180</li>
+                                <ul class="product-descr">
+                                    <li class="product-descr__item"><span>Тип подъемника</span> коленчатый</li>
+                                    <li class="product-descr__item"><span>Рабочая высота</span> 17,7</li>
+                                    <li class="product-descr__item"><span>Грузоподъемность</span> 230 кг</li>
+                                    <li class="product-descr__item"><span>Двигатель</span> Дизельный</li>
+                                    <li class="product-descr__item"><span>Вес</span> 8180</li>
                                 </ul>
                                 <div class="btns-row">
                                     <a href="#" class="rent-btn btn-style">АРЕНДОВАТЬ</a>
@@ -217,12 +441,12 @@
                             </div>
                             <div class="descr-block">
                                 <h4 class="product-name">НОЖНИЧНЫЙ ПОДЪЕМНИК AURORA AR16J (AR52J)</h4>
-                                <ul class="product-info">
-                                    <li class="product-info__item"><span>Тип подъемника</span> коленчатый</li>
-                                    <li class="product-info__item"><span>Рабочая высота</span> 17,7</li>
-                                    <li class="product-info__item"><span>Грузоподъемность</span> 230 кг</li>
-                                    <li class="product-info__item"><span>Двигатель</span> Дизельный</li>
-                                    <li class="product-info__item"><span>Вес</span> 8180</li>
+                                <ul class="product-descr">
+                                    <li class="product-descr__item"><span>Тип подъемника</span> коленчатый</li>
+                                    <li class="product-descr__item"><span>Рабочая высота</span> 17,7</li>
+                                    <li class="product-descr__item"><span>Грузоподъемность</span> 230 кг</li>
+                                    <li class="product-descr__item"><span>Двигатель</span> Дизельный</li>
+                                    <li class="product-descr__item"><span>Вес</span> 8180</li>
                                 </ul>
                                 <div class="btns-row">
                                     <a href="#" class="rent-btn btn-style">АРЕНДОВАТЬ</a>
@@ -236,12 +460,12 @@
                             </div>
                             <div class="descr-block">
                                 <h4 class="product-name">НОЖНИЧНЫЙ ПОДЪЕМНИК AURORA AR16J (AR52J)</h4>
-                                <ul class="product-info">
-                                    <li class="product-info__item"><span>Тип подъемника</span> коленчатый</li>
-                                    <li class="product-info__item"><span>Рабочая высота</span> 17,7</li>
-                                    <li class="product-info__item"><span>Грузоподъемность</span> 230 кг</li>
-                                    <li class="product-info__item"><span>Двигатель</span> Дизельный</li>
-                                    <li class="product-info__item"><span>Вес</span> 8180</li>
+                                <ul class="product-descr">
+                                    <li class="product-descr__item"><span>Тип подъемника</span> коленчатый</li>
+                                    <li class="product-descr__item"><span>Рабочая высота</span> 17,7</li>
+                                    <li class="product-descr__item"><span>Грузоподъемность</span> 230 кг</li>
+                                    <li class="product-descr__item"><span>Двигатель</span> Дизельный</li>
+                                    <li class="product-descr__item"><span>Вес</span> 8180</li>
                                 </ul>
                                 <div class="btns-row">
                                     <a href="#" class="rent-btn btn-style">АРЕНДОВАТЬ</a>
@@ -257,112 +481,200 @@
             </div>
         </div>
     </section>
-    <section class="backcall-form">
-        <div class="container">
-            <div class="backcall-form__content">
-                <div class="backcall-form__content__left-side">
-                    <h2 class="backcall-form__title section-title">Напишите нам</h2>
-                    <div class="backcall-form__descr">
-                        <p>Мы знаем о подъемниках буквально все! Заполните форму и мы свяжемся с вами, чтобы дать подробную консультацию.</p>
-                    </div>
-                </div>
-                <div class="backcall-form__content__right-side">
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="input-style name-input" name="name" placeholder="ФИО">
-                        </div>
-                        <div class="input-group">
-                            <input type="text" class="input-style" name="company" placeholder="Компания">
-                        </div>
-                        <div class="input-group">
-                            <input type="tel" class="input-style phone-input" name="phone" placeholder="Телефон">
-                        </div>
-                        <div class="input-group">
-                            <input type="email" class="input-style" name="email" placeholder="Элетронная почта">
-                        </div>
-                        <div class="input-group message-group">
-                            <textarea name="message" class="input-style" placeholder="Сообщение"></textarea>
-                        </div>
-                        <div class="input-group check-group">
-                            <label>
-                                <input type="checkbox" name="check" checked>
-                                <span>Согласен с политикой конфиденциальности</span>
-                            </label>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="btn-style">Отправить</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer class="footer">
-        <div class="container">
-            <div class="footer__info">
-                <div class="item-title">Контактная информация</div>
-                <div class="footer__info__column phone-column">
-                    <a href="tel:88005558893" class="phone-link">8 800 555-88-93</a>
-                    <span>Бесплатно по России</span>
-                </div>
-                <div class="footer__info__column mail-column">
-                    <a href="mailto:info@aurora-rus.ru" class="mail-link">info@aurora-rus.ru</a>
-                    <span>Электронная почта</span>
-                </div>
-                <div class="footer__info__column social-column">
-                    <ul class="social-list">
-                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk"></i></a></li>
-                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tg"></i></a></li>
-                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-yt"></i></a></li>
-                    </ul>
-                </div>
+        <div class="footer__inner">
+            <div class="footer__feedback-form">
+                <section class="feedback-block">
+                    <div class="feedback-block__subtitle-wrapper">
+                        <h3 class="feedback-block__title">Напишите нам</h3>
+                        <p class="feedback-block__subtitle">Мы знаем о подъемниках буквально все! Заполните форму и мы свяжемся с вами, чтобы дать подробную консультацию.</p>
+                    </div>
+                    <button class="feedback-block__button btn btn--red" type="button" data-open-modal="feedback-modal">Получить консультацию</button>
+                    <div class="feedback-block__form">
+                        <div class="feedback-form feedback-form--undefined">
+                            <div class="feedback-form__container is-initialized" data-validate="">
+                                <form data-type="ajax" method="post" novalidate="">
+                                    <div class="feedback-form__field feedback-form__field--name" data-validate-type="text">
+                                        <label for="name"></label>
+                                        <input id="name" name="name" type="text" placeholder="ФИО" aria-required="true" aria-invalid="true">
+                                        <span class="feedback-form__warning">Обязательное поле</span>
+                                    </div>
+                                    <div class="feedback-form__field feedback-form__field--company" data-validate-type="text">
+                                        <label for="company"></label>
+                                        <input class="input-company" id="company" name="company" type="text" placeholder="Компания" aria-required="true" aria-invalid="true">
+                                        <span class="feedback-form__warning">Обязательное поле</span>
+                                    </div>
+                                    <div class="feedback-form__field feedback-form__field--phone" data-validate-type="phone">
+                                        <label for="tel"></label>
+                                        <input id="tel" name="phone" type="tel" placeholder="Телефон" maxlength="18" aria-required="true" aria-invalid="true">
+                                        <span class="feedback-form__warning">Обязательное поле</span>
+                                    </div>
+                                    <div class="feedback-form__field feedback-form__field--mail" data-validate-type="email">
+                                        <label for="mail"></label>
+                                        <input id="mail" name="email" type="email" placeholder="Электронная почта" aria-required="true" aria-invalid="true">
+                                        <span class="feedback-form__warning">Некорректная электронная почта</span>
+                                    </div>
+                                    <textarea name="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                                    <div class="custom-toggle is-valid" data-validate-type="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="check" checked="" required="" aria-required="true" aria-invalid="true">
+                                            <span class="custom-toggle__icon"></span>
+                                            <span class="custom-toggle__label">Согласен с <a href="/politika/">политикой конфиденциальности</a></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-wrapper">
+                                        <input type="hidden" name="action_form" value="FEEDBACK_FORM">
+                                        <button class="btn btn--red feedback-form__btn" type="submit">Отправить</button>
+                                    </div>
+                                </form>
+                                <div class="popup-done__overlay"></div>
+                                <div class="popup-done">
+                                    <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal="">
+                                        <svg width="15" height="15" aria-hidden="true">
+                                            <use xlink:href="#icon-close"></use>
+                                        </svg>
+                                    </button>
+                                    Ваше сообщение успешно отправлено!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="footer__content">
-                <div class="footer__content__column">
-                    <div class="item-title">Каталог</div>
-                    <ul class="menu-list">
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Продажа</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Аренда</a></li>
-                    </ul>
-                </div>
-                <div class="footer__content__column">
-                    <div class="item-title">Партнёрам</div>
-                    <ul class="menu-list">
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Закрытый клуб</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Субаренда</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Лизинг</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Aurora-Finance</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Trade-in</a></li>
-                    </ul>
-                </div>
-                <div class="footer__content__column about-column">
-                    <div class="item-title">О компании</div>
-                    <ul class="menu-list">
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Новости</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Сервис и запчасти</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Проекты</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Презентации</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Горячая линия</a></li>
-                        <li class="menu-list__item"><a href="#" class="menu-list__link">Регламенты</a></li>
-                    </ul>
-                </div>
+            <div class="footer__contact-info">
+                <h3 class="footer__list-title footer__list-title--long-underline">Контактная информация</h3>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                        <a class="control control--footer control--phone" href="tel:88005558893" aria-label="Телефон">
+                            <div class="control__content">
+                                <p class="control__main-info">8 800 555-88-93</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <a class="control control--footer control--email" href="mailto:info@aurora-rus.ru" aria-label="Электронная почта">
+                            <div class="control__content">
+                                <p class="control__main-info">info@aurora-rus.ru</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <div class="footer__socials">
+                            <div class="socials">
+                                <ul class="socials__list">
+                                    <li class="socials__item">
+                                        <a class="socials__link socials__link--vk" href="https://vk.com/aurora__rus" aria-label="vk" target="_blank" rel="nofollow noopener">
+                                            <svg class="socials__icon" width="38" height="23" aria-hidden="true">
+                                                <use xlink:href="#icon-vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a class="socials__link socials__link--telegram" href="https://t.me/AURORA_rus" aria-label="telegram" target="_blank" rel="nofollow noopener">
+                                            <svg class="socials__icon" width="34" height="28" aria-hidden="true">
+                                                <use xlink:href="#icon-telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/channel/UCRMPirZFw2aHtvtHGuvuFNw" aria-label="youtube" target="_blank" rel="nofollow noopener">
+                                            <svg class="socials__icon" width="39" height="27" aria-hidden="true">
+                                                <use xlink:href="#icon-youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="footer__copyright">
-                <span>© 2021, ООО «АВРОРА». <br> Все права защищены.</span>
-                <a href="#" target="_blank">Политика конфиденциальности</a>
+            <div class="footer__nav">
+                <h3 class="visually-hidden">Основные разделы сайта</h3>
+                <ul class="footer__nav-list" data-accordion="parent" data-single="" data-destroy="(max-width: 767px)">
+                    <li class="footer__nav-item" data-accordion="element">
+                        <h3 class="footer__nav-item-title" data-accordion="button">
+                            Каталог
+                            <svg width="12" height="7" aria-hidden="true">
+                                <use xlink:href="#icon-bracket-bottom"></use>
+                            </svg>
+                        </h3>
+                        <div class="footer__sublist-wrapper" data-accordion="content" style="max-height: 100%;">
+                            <ul class="footer__sublist">
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/katalog/arenda/">Аренда</a>
+                                </li>
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/katalog/prodazha/">Продажа</a>
+                                </li>
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/katalog/bu/">Б/У техника</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__nav-item footer__nav-item--two-sublist" data-accordion="element">
+                        <h3 class="footer__nav-item-title" data-accordion="button">
+                            О компании
+                            <svg width="12" height="7" aria-hidden="true">
+                                <use xlink:href="#icon-bracket-bottom"></use>
+                            </svg>
+                        </h3>
+                        <div class="footer__sublist-wrapper" data-accordion="content" style="max-height: 100%;">
+                            <ul class="footer__sublist">
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/press-tsentr/">Пресс-центр</a>
+                                </li>
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/proekty/">Проекты</a>
+                                </li>
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/reglamenty/">Регламенты</a>
+                                </li>
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/karera/">Карьера</a>
+                                </li>
+                            </ul>
+                            <ul class="footer__sublist">
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/servis/">Сервисное обслуживание</a>
+                                </li>
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/zapchasti/">Запасные части</a>
+                                </li>
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/goryachaya-liniya/">Горячая линия</a>
+                                </li>
+                                <li class="footer__sublist-item">
+                                    <a class="footer__sublist-link" href="/kontakty/">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <a href="javascript:void(0);" class="scrollBtn" style="display: none;"><i class="icon icon-slider_arrow"></i></a>
+            <div class="footer__policy">
+                <p class="footer__copyright">© 2022, ООО «АВРОРА». <br>Все права защищены.</p><a class="footer__privacy-policy" href="/politika/">Политика конфиденциальности</a>
+                <a href="http://webwork24.ru/" rel="nofollow" target="_blank" class="footer__develop">
+                    <div class="footer__develop-img-container">
+                        <img src="https://aurora-rus.ru/local/templates/aurora/img/content/web-work-logo.png" srcset="https://aurora-rus.ru/local/templates/aurora/img/content/web-work-logo@2x.png 2x" width="99" height="42" alt="Логотип компании Web Work">
+                    </div>
+                    <div class="footer__developer">
+                        <p class="footer__developer-slogan">Создание и продвижение сайтов</p>
+                        <span class="footer__developer-link">Компания Веб Ворк</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </footer>
-    <div class="modal micromodal-slide simple-modal" id="auth_modal" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close"></i></button>
-                <header class="modal__header">
-                    <h2 class="modal__title">АВТОРИЗАЦИЯ</h2>
+    <div class="m_modal micromodal-slide simple-modal" id="auth_modal" aria-hidden="true">
+        <div class="m_modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="m_modal__container" role="dialog" aria-modal="true">
+                <button class="m_modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close"></i></button>
+                <header class="m_modal__header">
+                    <h2 class="m_modal__title">АВТОРИЗАЦИЯ</h2>
                 </header>
-                <main class="modal__content">
+                <main class="m_modal__content">
                     <form action="" class="auth-form">
                         <div class="input-group">
                             <span>e-mail</span>
@@ -394,14 +706,14 @@
             </div>
         </div>
     </div>
-    <div class="modal micromodal-slide simple-modal" id="recover_modal" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close"></i></button>
-                <header class="modal__header">
-                    <h2 class="modal__title">Восстановление пароля</h2>
+    <div class="m_modal micromodal-slide simple-modal" id="recover_modal" aria-hidden="true">
+        <div class="m_modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="m_modal__container" role="dialog" aria-modal="true">
+                <button class="m_modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close"></i></button>
+                <header class="m_modal__header">
+                    <h2 class="m_modal__title">Восстановление пароля</h2>
                 </header>
-                <main class="modal__content">
+                <main class="m_modal__content">
                     <p>МЫ направим ВАМ ВРЕМЕННЫЙ ПАРОЛЬ, который вы можете поменять в личном кабинете</p>
                     <form action="" class="auth-form">
                         <div class="input-group">
@@ -416,8 +728,10 @@
             </div>
         </div>
     </div>
+    <link rel="stylesheet" href="https://aurora-rus.ru/bitrix/cache/css/s1/aurora/template_062395866bc6e74d761d61456dca63db/template_062395866bc6e74d761d61456dca63db_v1.min.css?1670441654377728">
     <link rel="stylesheet" href="css/styles.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://aurora-rus.ru/bitrix/cache/js/s1/aurora/template_e2e6fccdc7d31d068f0dbf6e9946afb3/template_e2e6fccdc7d31d068f0dbf6e9946afb3_v1.min.js?1670441290782984"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.0.0/rangeslider.min.js"></script>
     <script defer src="js/common.min.js"></script>
 </body>
