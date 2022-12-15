@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Pa-stor</title>
+    <meta name="description" content="Pa-stor">
+    <meta name="keywords" content="Pa-stor">
+    <meta name="author" content="Pa-stor">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pa-stor">
+    <meta property="og:title" content="Pa-stor">
+    <meta property="og:description" content="Pa-stor">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://pastor.com/">
+    <link rel="canonical" href="https://pastor.com/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#092f54">
+    <meta name="theme-color" content="#092f54">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/MavenProBold/MavenProBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProMedium/MavenProMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProRegular/MavenProRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProSemiBold/MavenProSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                </a>
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <img src="images/common/menu/menu_icon1.png" alt="menu" class="menu-icon">
+                                <span>Needles cartridges</span>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <img src="images/common/menu/menu_icon2.png" alt="menu" class="menu-icon">
+                                <span>CBD catalog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="links-row">
+                    <a href="#" class="profile-link">
+                        <i class="icon icon-profile"></i>
+                    </a>
+                    <a href="#" class="cart-link">
+                        <i class="icon icon-cart"></i>
+                        <span class="cart-value">23</span>
+                    </a>
+                    <button id="hamburger" data-menu="addmenu" class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <nav class="addmenu" style="position: fixed; transform: translateX(100vw);">
+                    <div class="langs">
+                        <ul class="langs-list">
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link active">
+                                    <img src="images/common/svg/flags/eng.svg" alt="EN" class="lang-icon">
+                                    <span>ENG</span>
+                                </a>
+                            </li>
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link">
+                                    <img src="images/common/svg/flags/ger.svg" alt="GR" class="lang-icon">
+                                    <span>GER</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="addmenu__list">
+                        <li class="addmenu__item"><a href="#" class="addmenu__link active">About Us</a></li>
+                        <li class="addmenu__item"><a href="#" class="addmenu__link">How to buy</a></li>
+                        <li class="addmenu__item"><a href="#" class="addmenu__link">Contacts</a></li>
+                    </ul>
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="" name="search_val">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                    <ul class="socials-list">
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-fb"></i></a></li>
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-tw"></i></a></li>
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-pinterest"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="error-page">
+        <div class="container">
+            <h1 class="error-page__title">404</h1>
+            <h2 class="error-page__subtitle">Ошибка</h2>
+            <p></p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content__main">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                    </a>
+                    <ul class="social-list">
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-fb"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tw"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__mmenu">
+                    <ul class="footer-mmenu">
+                        <li class="footer-mmenu__item">
+                            <a href="#" class="footer-mmenu__link">
+                                <img src="images/common/menu/menu_icon1.png" alt="menu" class="menu-icon">
+                                <span>Needles cartridges</span>
+                            </a>
+                        </li>
+                        <li class="footer-mmenu__item">
+                            <a href="#" class="footer-mmenu__link">
+                                <img src="images/common/menu/menu_icon2.png" alt="menu" class="menu-icon">
+                                <span>CBD catalog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content__addmenu">
+                    <ul class="footer-addmenu">
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">About Us</a></li>
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">How to buy</a></li>
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__links">
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="" name="search_val">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="links-row">
+                        <a href="#" class="profile-link">
+                            <i class="icon icon-profile"></i>
+                        </a>
+                        <a href="#" class="cart-link">
+                            <i class="icon icon-cart"></i>
+                            <span class="cart-value">23</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title"></h2>
+                    <h3 class="modal__subtitle"></h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Заказать</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>

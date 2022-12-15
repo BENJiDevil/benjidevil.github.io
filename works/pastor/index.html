@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Pa-stor</title>
+    <meta name="description" content="Pa-stor">
+    <meta name="keywords" content="Pa-stor">
+    <meta name="author" content="Pa-stor">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pa-stor">
+    <meta property="og:title" content="Pa-stor">
+    <meta property="og:description" content="Pa-stor">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://pastor.com/">
+    <link rel="canonical" href="https://pastor.com/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#092f54">
+    <meta name="theme-color" content="#092f54">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/MavenProBold/MavenProBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProMedium/MavenProMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProRegular/MavenProRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProSemiBold/MavenProSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                </a>
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <img src="images/common/menu/menu_icon1.png" alt="menu" class="menu-icon">
+                                <span>Needles cartridges</span>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <img src="images/common/menu/menu_icon2.png" alt="menu" class="menu-icon">
+                                <span>CBD catalog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="links-row">
+                    <a href="#" class="profile-link">
+                        <i class="icon icon-profile"></i>
+                    </a>
+                    <a href="#" class="cart-link">
+                        <i class="icon icon-cart"></i>
+                        <span class="cart-value">23</span>
+                    </a>
+                    <button id="hamburger" data-menu="addmenu" class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <nav class="addmenu" style="position: fixed; transform: translateX(100vw);">
+                    <div class="langs">
+                        <ul class="langs-list">
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link active">
+                                    <img src="images/common/svg/flags/eng.svg" alt="EN" class="lang-icon">
+                                    <span>ENG</span>
+                                </a>
+                            </li>
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link">
+                                    <img src="images/common/svg/flags/ger.svg" alt="GR" class="lang-icon">
+                                    <span>GER</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="addmenu__list">
+                        <li class="addmenu__item"><a href="#" class="addmenu__link active">About Us</a></li>
+                        <li class="addmenu__item"><a href="#" class="addmenu__link">How to buy</a></li>
+                        <li class="addmenu__item"><a href="#" class="addmenu__link">Contacts</a></li>
+                    </ul>
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="" name="search_val">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                    <ul class="socials-list">
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-fb"></i></a></li>
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-tw"></i></a></li>
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-pinterest"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main-page">
+        <div class="main-page__content">
+            <div class="container">
+                <ul class="social-list">
+                    <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-fb"></i></a></li>
+                    <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tw"></i></a></li>
+                    <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-pinterest"></i></a></li>
+                </ul>
+            </div>
+            <div id="main-slider" class="main-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_bg1.jpg [(max-width: 575px)] | images/bg/pad/main_bg1.jpg [(max-width: 1024px)] | images/bg/desk/main_bg1.jpg [(min-width: 1025px)]">
+                        <div class="container">
+                            <div class="slide-content">
+                                <h1 class="main-page__title section-title"><span>Needles</span> cartridges</h1>
+                                <h2 class="main-page__subtitle section-subtitle">We are the decisive factor behind your success</h2>
+                                <div class="main-page__descr">
+                                    <p>A transparent tip makes easier to see all the ink flow, the needle working, and the remaining ink on the tip.</p>
+                                </div>
+                                <a href="#" class="main-page__link btn-style">Explore products</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_bg2.jpg [(max-width: 575px)] | images/bg/pad/main_bg2.jpg [(max-width: 1024px)] | images/bg/desk/main_bg2.jpg [(min-width: 1025px)]">
+                        <div class="container">
+                            <div class="slide-content">
+                                <h1 class="main-page__title section-title"><span>BulCanna</span> Cosmetics</h1>
+                                <h2 class="main-page__subtitle section-subtitle">Beauty on the Outside <br> & Health on the Inside</h2>
+                                <div class="main-page__descr">
+                                    <p>Protect and renovate your body from the inside out with powerful 100% organic CBD products.</p>
+                                </div>
+                                <a href="#" class="main-page__link btn-style">Explore products</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_bg2.jpg [(max-width: 575px)] | images/bg/pad/main_bg2.jpg [(max-width: 1024px)] | images/bg/desk/main_bg2.jpg [(min-width: 1025px)]">
+                        <div class="container">
+                            <div class="slide-content">
+                                <h1 class="main-page__title section-title"><span>BulCanna</span> Cosmetics</h1>
+                                <h2 class="main-page__subtitle section-subtitle">Beauty on the Outside <br> & Health on the Inside</h2>
+                                <div class="main-page__descr">
+                                    <p>Protect and renovate your body from the inside out with powerful 100% organic CBD products.</p>
+                                </div>
+                                <a href="#" class="main-page__link btn-style">Explore products</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mslider-pagination"></div>
+            </div>
+        </div>
+    </main>
+    <section class="main-production">
+        <div class="container">
+            <h2 class="main-production__title section-title"><span>Our</span> production</h2>
+            <h3 class="main-production__subtitle section-subtitle">A Shortcut to Perfection</h3>
+            <div class="main-production__content">
+                <div class="main-production__content__side">
+                    <p>Vertical Integration and transparency are our favorite words. And we mean it and back it up. We truly control every single step of the process in house because of our versatile holding-structure.</p>
+                </div>
+                <div class="main-production__content__side">
+                    <p>What we are mostly proud about is the fact that we sell products that really work. We also work closely with dermatology experts and occasionally provide studies and researches based on our products in a certain topic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-catalog">
+        <div class="container">
+            <div class="main-catalog__item">
+                <span class="category-subtitle section-title">Category</span>
+                <h2 class="category-title section-subtitle">Needles cartridges</h2>
+                <div class="item-content">
+                    <div class="item-content__left-side">
+                        <div class="category-descr">
+                            <img src="images/common/main/catalog/category_image.jpg" alt="category" class="category-image">
+                            <div class="txt-block">
+                                <p>Vertical Integration and transparency are our favorite words. And we mean it and back it up.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-content__right-side">
+                        <div class="btn-row">
+                            <a href="#" class="shop-btn btn-style stroke-style">Shop now</a>
+                        </div>
+                        <div class="mcatalog-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item1.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item2.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item1.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item2.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item1.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item2.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcatalog-navigation">
+                            <a href="javascript:void(0);" class="nav-link prev-link"><i class="icon icon-slider_arrow"></i></a>
+                            <div class="mcatalog-pagination"></div>
+                            <a href="javascript:void(0);" class="nav-link next-link"><i class="icon icon-slider_arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-catalog__item">
+                <span class="category-subtitle section-title">Category</span>
+                <h2 class="category-title section-subtitle">BulCanna CBD Cosmetics</h2>
+                <div class="item-content">
+                    <div class="item-content__left-side">
+                        <div class="category-descr">
+                            <img src="images/common/main/catalog/category_image2.jpg" alt="category" class="category-image lazyload">
+                            <div class="txt-block">
+                                <p>Protect and renovate your body from the inside out with powerful 100% organic CBD products.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-content__right-side">
+                        <div class="btn-row">
+                            <a href="#" class="shop-btn btn-style stroke-style">Shop now</a>
+                        </div>
+                        <div class="mcatalog-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item21.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item22.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item21.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item22.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item21.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <a href="#" class="item-link"></a>
+                                    <div class="image-block">
+                                        <img src="images/common/main/catalog/catalog_item22.jpg" alt="item" class="slide-image">
+                                    </div>
+                                    <div class="descr-block">
+                                        <span class="item-title">Edge Pro Needle Cartridges Magnum</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mcatalog-navigation">
+                            <a href="javascript:void(0);" class="nav-link prev-link"><i class="icon icon-slider_arrow"></i></a>
+                            <div class="mcatalog-pagination"></div>
+                            <a href="javascript:void(0);" class="nav-link next-link"><i class="icon icon-slider_arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-about">
+        <div class="container">
+            <div class="main-about__content">
+                <div class="descr-block">
+                    <h2 class="main-about__title section-title"><span>About</span> Us</h2>
+                    <h3 class="main-about__subtitle section-subtitle">Store Information</h3>
+                    <div class="info-row">
+                        <div class="info-row__image">
+                            <img src="images/common/main/about/about_image.jpg" alt="image" class="about-image lazyload">
+                            <img src="images/common/main/about/about_item.jpg" alt="image" class="info-image lazyload">
+                        </div>
+                        <div class="info-row__descr">
+                            <p><b>The refreshing formula of the serum contains 8 specially chosen, high quality organic oils. It slows down the premature aging of the skin, giving you visibly younger, smooth and healthy looking skin.</b></p>
+                            <p>The refreshing formula of this face cream contains 19 specially chosen, high quality organic oils. BulCanna is a cosmetic brand focused on providing the highest possible organic products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-how">
+        <div class="container">
+            <h2 class="main-how__title section-title"><span>How</span> to buy</h2>
+            <div class="main-how__content">
+                <div class="main-how__content__item">
+                    <div class="title-row">
+                        <img src="images/common/main/buy/how_image1.jpg" alt="image" class="item-image lazyload">
+                        <h3 class="item-title">Payment</h3>
+                    </div>
+                    <div class="descr-block">
+                        <p>The refreshing formula of the serum contains 8 specially chosen, high quality organic oils. It slows down the premature aging of the skin, giving you visibly younger, smooth and healthy looking skin.</p>
+                    </div>
+                    <a href="#" class="more-link">more <i class="icon icon-menu_arrow"></i></a>
+                </div>
+                <div class="main-how__content__item">
+                    <div class="title-row">
+                        <img src="images/common/main/buy/how_image2.jpg" alt="image" class="item-image lazyload">
+                        <h3 class="item-title">Delivery</h3>
+                    </div>
+                    <div class="descr-block">
+                        <p>The refreshing formula of this face cream contains 19 specially chosen. Formulated to provide protection throughout the day and to restore through the night, the combination of the oils hydrates.</p>
+                    </div>
+                    <a href="#" class="more-link">more <i class="icon icon-menu_arrow"></i></a>
+                </div>
+                <div class="main-how__content__item">
+                    <div class="title-row">
+                        <img src="images/common/main/buy/how_image3.jpg" alt="image" class="item-image lazyload">
+                        <h3 class="item-title">Pickup</h3>
+                    </div>
+                    <div class="descr-block">
+                        <p>Full spectrum CBD oil includes all of the beneficial compounds found in the cannabis plant, even THC. The amounts of THC present in this product are too small to induce any euphoric effects.</p>
+                    </div>
+                    <a href="#" class="more-link">more <i class="icon icon-menu_arrow"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-results">
+        <div class="container">
+            <h2 class="main-results__title section-title"><span>Real</span> Results</h2>
+            <h3 class="main-results__subtitle section-subtitle">What Say About Us?</h3>
+            <div class="main-results__content">
+                <div id="mresults-slider" class="mresults-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image1.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>I had never used CBD products before and I was curious about the Face Cream.</h4>
+                                <p>I’m so impressed by the 19 organic oils it contains. CBD Face Cream has exceptional qualities — smells very nice, it’s extremely light and absorbs quickly into the…</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image2.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>I’m so happy with CBD Face Cream and Hydrating Serum.</h4>
+                                <p>The products combine wonderfully, my face skin has become extremely soft, smooth and moisturized. I don’t forget to use both products every evening. Their use has become a real beauty ritual for me. It’s absolutely worth it!</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image3.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>CBD Full Spectrum oil is one of the best and most effective for my head pain and helps me to fall asleep.</h4>
+                                <p>I’ll keep buying this awesome product over and over again! Thank you for these amazing oil! My life is much…</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image1.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>I had never used CBD products before and I was curious about the Face Cream.</h4>
+                                <p>I’m so impressed by the 19 organic oils it contains. CBD Face Cream has exceptional qualities — smells very nice, it’s extremely light and absorbs quickly into the…</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image1.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>I had never used CBD products before and I was curious about the Face Cream.</h4>
+                                <p>I’m so impressed by the 19 organic oils it contains. CBD Face Cream has exceptional qualities — smells very nice, it’s extremely light and absorbs quickly into the…</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mresults-navigation">
+                        <a href="javascript:void(0);" class="nav-link prev-link"><i class="icon icon-slider_arrow"></i></a>
+                        <div class="mresults-pagination"></div>
+                        <a href="javascript:void(0);" class="nav-link next-link"><i class="icon icon-slider_arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content__main">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                    </a>
+                    <ul class="social-list">
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-fb"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tw"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__mmenu">
+                    <ul class="footer-mmenu">
+                        <li class="footer-mmenu__item">
+                            <a href="#" class="footer-mmenu__link">
+                                <img src="images/common/menu/menu_icon1.png" alt="menu" class="menu-icon">
+                                <span>Needles cartridges</span>
+                            </a>
+                        </li>
+                        <li class="footer-mmenu__item">
+                            <a href="#" class="footer-mmenu__link">
+                                <img src="images/common/menu/menu_icon2.png" alt="menu" class="menu-icon">
+                                <span>CBD catalog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content__addmenu">
+                    <ul class="footer-addmenu">
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">About Us</a></li>
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">How to buy</a></li>
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__links">
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="" name="search_val">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="links-row">
+                        <a href="#" class="profile-link">
+                            <i class="icon icon-profile"></i>
+                        </a>
+                        <a href="#" class="cart-link">
+                            <i class="icon icon-cart"></i>
+                            <span class="cart-value">23</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title"></h2>
+                    <h3 class="modal__subtitle"></h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Заказать</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>

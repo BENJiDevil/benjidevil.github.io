@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Pa-stor</title>
+    <meta name="description" content="Pa-stor">
+    <meta name="keywords" content="Pa-stor">
+    <meta name="author" content="Pa-stor">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pa-stor">
+    <meta property="og:title" content="Pa-stor">
+    <meta property="og:description" content="Pa-stor">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://pastor.com/">
+    <link rel="canonical" href="https://pastor.com/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#092f54">
+    <meta name="theme-color" content="#092f54">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/MavenProBold/MavenProBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProMedium/MavenProMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProRegular/MavenProRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProSemiBold/MavenProSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                </a>
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <img src="images/common/menu/menu_icon1.png" alt="menu" class="menu-icon">
+                                <span>Needles cartridges</span>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <img src="images/common/menu/menu_icon2.png" alt="menu" class="menu-icon">
+                                <span>CBD catalog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="links-row">
+                    <a href="#" class="profile-link">
+                        <i class="icon icon-profile"></i>
+                    </a>
+                    <a href="#" class="cart-link">
+                        <i class="icon icon-cart"></i>
+                        <span class="cart-value">23</span>
+                    </a>
+                    <button id="hamburger" data-menu="addmenu" class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <nav class="addmenu" style="position: fixed; transform: translateX(100vw);">
+                    <div class="langs">
+                        <ul class="langs-list">
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link active">
+                                    <img src="images/common/svg/flags/eng.svg" alt="EN" class="lang-icon">
+                                    <span>ENG</span>
+                                </a>
+                            </li>
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link">
+                                    <img src="images/common/svg/flags/ger.svg" alt="GR" class="lang-icon">
+                                    <span>GER</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="addmenu__list">
+                        <li class="addmenu__item"><a href="#" class="addmenu__link active">About Us</a></li>
+                        <li class="addmenu__item"><a href="#" class="addmenu__link">How to buy</a></li>
+                        <li class="addmenu__item"><a href="#" class="addmenu__link">Contacts</a></li>
+                    </ul>
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="" name="search_val">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                    <ul class="socials-list">
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-fb"></i></a></li>
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-tw"></i></a></li>
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-pinterest"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="catalog-page">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">home</a></li>
+                <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">catalog</a></li>
+                <li class="breadcrumbs-list__item"><span class="breadcrumbs-list__last">Needles cartridges</span></li>
+            </ul>
+            <h1 class="catalog-page__title page-title">Needles cartridges</h1>
+            <img src="images/common/catalog/catalog_image.jpg" alt="image" class="catalog-image lazyload">
+            <div class="catalog-page__descr">
+                <p>A transparent tip makes easier to see all the ink flow, the needle working, and the remaining ink on the tip. A side grip helps the adherence when handling the cartridges with gloves.</p>
+                <p>Much more easier to put on and out the needles at the machine.</p>
+            </div>
+        </div>
+    </main>
+    <section class="catalog-page__content">
+        <div class="container">
+            <div class="catalog-page__content__top-row">
+                <form action="" class="filter-form">
+                    <span class="filter-form__title js-list-link" style="display: none;">Filter</span>
+                    <div class="filter-form__content js-list-block">
+                        <div class="filter-form__item">
+                            <span class="item-value js-list-link">Configuration</span>
+                            <div class="item-list js-list-block" style="display: none;">
+                                <label>
+                                    <input type="checkbox" name="conf_value">
+                                    <span class="label">1</span>
+                                    <span class="count">5</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="conf_value" checked>
+                                    <span class="label">3</span>
+                                    <span class="count">3</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="conf_value">
+                                    <span class="label">4</span>
+                                    <span class="count">3</span>
+                                </label>
+                                <a href="javascript:void(0);" class="submit-link">apply <i class="icon icon-menu_arrow"></i></a>
+                            </div>
+                        </div>
+                        <div class="filter-form__item">
+                            <span class="item-value js-list-link">Number of needles</span>
+                            <div class="item-list js-list-block" style="display: none;">
+                                <label>
+                                    <input type="checkbox" name="conf_value">
+                                    <span class="label">1</span>
+                                    <span class="count">5</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="conf_value" checked>
+                                    <span class="label">3</span>
+                                    <span class="count">3</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="conf_value">
+                                    <span class="label">4</span>
+                                    <span class="count">3</span>
+                                </label>
+                                <a href="javascript:void(0);" class="submit-link">apply <i class="icon icon-menu_arrow"></i></a>
+                            </div>
+                        </div>
+                        <div class="filter-form__item">
+                            <span class="item-value js-list-link">Sharpening thickness 5</span>
+                            <div class="item-list js-list-block" style="display: none;">
+                                <label>
+                                    <input type="checkbox" name="conf_value">
+                                    <span class="label">1</span>
+                                    <span class="count">5</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="conf_value" checked>
+                                    <span class="label">3</span>
+                                    <span class="count">3</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="conf_value">
+                                    <span class="label">4</span>
+                                    <span class="count">3</span>
+                                </label>
+                                <a href="javascript:void(0);" class="submit-link">apply <i class="icon icon-menu_arrow"></i></a>
+                            </div>
+                        </div>
+                        <div class="filter-form__item">
+                            <span class="item-value js-list-link">in stock</span>
+                            <div class="item-list js-list-block" style="display: none;">
+                                <label>
+                                    <input type="checkbox" name="conf_value">
+                                    <span class="label">1</span>
+                                    <span class="count">5</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="conf_value" checked>
+                                    <span class="label">3</span>
+                                    <span class="count">3</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="conf_value">
+                                    <span class="label">4</span>
+                                    <span class="count">3</span>
+                                </label>
+                                <a href="javascript:void(0);" class="submit-link">apply <i class="icon icon-menu_arrow"></i></a>
+                            </div>
+                        </div>
+                        <a href="#" class="close-link"><i class="icon icon-close"></i></a>
+                    </div>
+                </form>
+                <div class="sort-form">
+                    <div class="sort-form__value js-list-link" data-type="asc">Price <i class="icon icon-sort"></i></div>
+                    <ul class="sort-form__list js-list-block" style="display: none;">
+                        <li class="sort-form__item"><a href="#" data-type="desc" data-value="price" class="sort-form__link">Price <i class="icon icon-sort"></i></a></li>
+                        <li class="sort-form__item"><a href="#" data-type="asc" data-value="price" class="sort-form__link">Popular <i class="icon icon-sort"></i></a></li>
+                        <li class="sort-form__item"><a href="#" data-type="desc" data-value="price" class="sort-form__link">Popular <i class="icon icon-sort"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-page__content__product-list">
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="image-block">
+                        <a href="#" class="product-link">
+                            <img src="images/common/catalog/catalog_item1.jpg" alt="image" class="product-image">
+                        </a>
+                    </div>
+                    <div class="descr-block">
+                        <span class="product-name">Edge Pro <br> Needle Cartridges <br> Magnum</span>
+                        <span class="product-price">€31.92 — €51.97</span>
+                        <a href="#" class="product-link btn-style">Select options</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-row">
+                <a href="#" class="show-more btn-style stroke-style">show more</a>
+            </div>
+        </div>
+    </section>
+    <section class="main-results">
+        <div class="container">
+            <h2 class="main-results__title section-title"><span>Real</span> Results</h2>
+            <h3 class="main-results__subtitle section-subtitle">What Say About Us?</h3>
+            <div class="main-results__content">
+                <div id="mresults-slider" class="mresults-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image1.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>I had never used CBD products before and I was curious about the Face Cream.</h4>
+                                <p>I’m so impressed by the 19 organic oils it contains. CBD Face Cream has exceptional qualities — smells very nice, it’s extremely light and absorbs quickly into the…</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image2.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>I’m so happy with CBD Face Cream and Hydrating Serum.</h4>
+                                <p>The products combine wonderfully, my face skin has become extremely soft, smooth and moisturized. I don’t forget to use both products every evening. Their use has become a real beauty ritual for me. It’s absolutely worth it!</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image3.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>CBD Full Spectrum oil is one of the best and most effective for my head pain and helps me to fall asleep.</h4>
+                                <p>I’ll keep buying this awesome product over and over again! Thank you for these amazing oil! My life is much…</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image1.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>I had never used CBD products before and I was curious about the Face Cream.</h4>
+                                <p>I’m so impressed by the 19 organic oils it contains. CBD Face Cream has exceptional qualities — smells very nice, it’s extremely light and absorbs quickly into the…</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-item__top">
+                                <div class="image-block">
+                                    <img src="images/common/main/answers/answer_image1.jpg" alt="image" class="answer-image">
+                                </div>
+                                <div class="info-block">
+                                    <span class="date">29 November 2020</span>
+                                    <div class="mark-list">
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_fill"></i>
+                                        <i class="icon icon-star_stroke"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-item__bottom">
+                                <h4>I had never used CBD products before and I was curious about the Face Cream.</h4>
+                                <p>I’m so impressed by the 19 organic oils it contains. CBD Face Cream has exceptional qualities — smells very nice, it’s extremely light and absorbs quickly into the…</p>
+                                <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mresults-navigation">
+                        <a href="javascript:void(0);" class="nav-link prev-link"><i class="icon icon-slider_arrow"></i></a>
+                        <div class="mresults-pagination"></div>
+                        <a href="javascript:void(0);" class="nav-link next-link"><i class="icon icon-slider_arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content__main">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                    </a>
+                    <ul class="social-list">
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-fb"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tw"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__mmenu">
+                    <ul class="footer-mmenu">
+                        <li class="footer-mmenu__item">
+                            <a href="#" class="footer-mmenu__link">
+                                <img src="images/common/menu/menu_icon1.png" alt="menu" class="menu-icon">
+                                <span>Needles cartridges</span>
+                            </a>
+                        </li>
+                        <li class="footer-mmenu__item">
+                            <a href="#" class="footer-mmenu__link">
+                                <img src="images/common/menu/menu_icon2.png" alt="menu" class="menu-icon">
+                                <span>CBD catalog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content__addmenu">
+                    <ul class="footer-addmenu">
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">About Us</a></li>
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">How to buy</a></li>
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__links">
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="" name="search_val">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="links-row">
+                        <a href="#" class="profile-link">
+                            <i class="icon icon-profile"></i>
+                        </a>
+                        <a href="#" class="cart-link">
+                            <i class="icon icon-cart"></i>
+                            <span class="cart-value">23</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title"></h2>
+                    <h3 class="modal__subtitle"></h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Заказать</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
