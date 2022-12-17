@@ -16,19 +16,19 @@
 }
 @font-face {
   font-family: Inter;
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/InterSemiBold/InterSemiBold.eot);
-  src: url(../fonts/InterSemiBold/InterSemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/InterSemiBold/InterSemiBold.woff) format("woff"),url(../fonts/InterSemiBold/InterSemiBold.woff2) format("woff2"),url(../fonts/InterSemiBold/InterSemiBold.ttf) format("truetype")
-}
-@font-face {
-  font-family: Inter;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/InterRegular/InterRegular.eot);
   src: url(../fonts/InterRegular/InterRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/InterRegular/InterRegular.woff) format("woff"),url(../fonts/InterRegular/InterRegular.woff2) format("woff2"),url(../fonts/InterRegular/InterRegular.ttf) format("truetype")
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/InterSemiBold/InterSemiBold.eot);
+  src: url(../fonts/InterSemiBold/InterSemiBold.eot?#iefix) format("embedded-opentype"),url(../fonts/InterSemiBold/InterSemiBold.woff) format("woff"),url(../fonts/InterSemiBold/InterSemiBold.woff2) format("woff2"),url(../fonts/InterSemiBold/InterSemiBold.ttf) format("truetype")
 }
 @font-face {
   font-family: Play;
@@ -347,6 +347,43 @@ body.overflow {
 .header__content .main-menu {
   margin: 0 auto
 }
+@media (max-width:1024px) {
+  .header__content .main-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    height: calc(100vh - var(--header-height));
+    width: 300px;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s;
+    -o-transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+    background-color: rgba(23,23,23,.8);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  .header__content .main-menu.show {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+  }
+}
+@media (max-width:420px) {
+  .header__content .main-menu {
+    width: 100%
+  }
+}
 .header__content .main-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,29 +396,6 @@ body.overflow {
   justify-content: flex-start
 }
 @media (max-width:1024px) {
-  .header__content .main-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 300px;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: -webkit-transform .3s;
-    transition: transform .3s;
-    -o-transition: transform .3s;
-    transition: transform .3s,-webkit-transform .3s;
-    background-color: rgba(23,23,23,.6);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    z-index: 10
-  }
-  .header__content .main-menu.show {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0)
-  }
   .header__content .main-menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
