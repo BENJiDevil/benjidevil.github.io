@@ -314,7 +314,7 @@ body.overflow .header {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: auto;
-  margin-left: 50px
+  margin-left: 70px
 }
 @media (max-width:420px) {
   .header__content .main-menu__item {
@@ -322,7 +322,7 @@ body.overflow .header {
     -ms-flex: 0 0 calc(50% - 10px);
     flex: 0 0 calc(50% - 10px);
     max-width: calc(50% - 10px);
-    margin-left: 20px
+    margin-left: 40px
   }
 }
 .header__content .main-menu__item:nth-of-type(1) {
@@ -343,41 +343,13 @@ body.overflow .header {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  position: relative;
-  padding-right: 28px
+  position: relative
 }
 @media (max-width:1024px) {
   .header__content .main-menu__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
-  }
-}
-.header__content .main-menu__link:after {
-  content: "\e805";
-  font-family: Fontello;
-  font-style: normal;
-  font-weight: 400;
-  speak: never;
-  display: block;
-  margin: 0;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  font-size: 20px;
-  line-height: 20px;
-  color: #cea300;
-  position: absolute;
-  right: 0;
-  top: calc(50% - 10px)
-}
-@media (max-width:420px) {
-  .header__content .main-menu__link {
-    padding-right: 0
-  }
-  .header__content .main-menu__link:after {
-    display: none
   }
 }
 .header__content .main-menu__link .menu-icon {
