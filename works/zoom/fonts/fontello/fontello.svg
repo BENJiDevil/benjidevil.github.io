@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="btn_arrow" unicode="&#xe800;" d="M469-119c-12 12-18 27-19 45 0 18 5 33 17 45l315 315h-718c-18 0-33 6-46 18-12 13-18 28-18 46 0 18 6 34 18 46 13 12 28 18 46 18h718l-315 315c-12 12-17 27-17 45 1 18 7 33 19 45 12 12 27 17 45 17 18 0 33-5 45-17l423-424c7-5 11-12 14-20 3-8 4-16 4-25 0-9-1-17-4-24-3-8-7-14-14-21l-423-424c-12-12-27-17-45-17-18 0-33 5-45 17z" horiz-adv-x="1000" />
+
+<glyph glyph-name="menu_arrow" unicode="&#xe801;" d="M583-150l578 1000h-1155z" horiz-adv-x="1167" />
+
+<glyph glyph-name="slider_arrow" unicode="&#xe802;" d="M732 806a25 25 0 0 1-36 0l-428-438a25 25 0 0 1 0-35l428-439a25 25 0 0 1 36 0 25 25 0 0 1 0 35l-411 421 411 421a25 25 0 0 1 0 35z" horiz-adv-x="1000" />
+
+<glyph glyph-name="close" unicode="&#xe804;" d="M63-88l875 876m0-876l-875 876m0 31a31 31 0 0 1-23-9 31 31 0 0 1 0-45l416-415-416-415a31 31 0 0 1 0-45 31 31 0 0 1 45 0l415 416 415-416a31 31 0 0 1 45 0 31 31 0 0 1 0 45l-416 415 416 415a31 31 0 0 1 0 45 31 31 0 0 1-45 0l-415-416-415 416a31 31 0 0 1-22 9z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>РОСТРЕЙД</title>
+    <meta name="description" content="РОСТРЕЙД">
+    <meta name="keywords" content="РОСТРЕЙД">
+    <meta name="author" content="РОСТРЕЙД">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="РОСТРЕЙД">
+    <meta property="og:title" content="РОСТРЕЙД">
+    <meta property="og:description" content="РОСТРЕЙД">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://site-url.ru/">
+    <link rel="canonical" href="https://site-url.ru/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/MontserratBold/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratMedium/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratRegular/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontserratSemiBold/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="RT" class="logo-image">
+                </a>
+                <nav class="main-menu js-main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Акционный товар</a>
+                        </li>
+                        <li class="main-menu__item submenu-item">
+                            <a href="#" class="main-menu__link">Каталог</a>
+                            <a href="javascript:void(0);" class="submenu-link js-submenu-link" style="display: none;"><i class="icon icon-menu_arrow"></i></a>
+                            <ul class="submenu-list" style="display: none;">
+                                <li class="submenu-list__item"><a href="#" class="submenu-list__link">Мобильные краны</a></li>
+                                <li class="submenu-list__item"><a href="#" class="submenu-list__link">Складская техника</a></li>
+                                <li class="submenu-list__item"><a href="#" class="submenu-list__link">Буровые установки</a></li>
+                                <li class="submenu-list__item"><a href="#" class="submenu-list__link">Подъемники</a></li>
+                                <li class="submenu-list__item"><a href="#" class="submenu-list__link">Бетононасосы</a></li>
+                                <li class="submenu-list__item"><a href="#" class="submenu-list__link">Экскаваторы</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">О компании</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="backcall-block">
+                        <a href="tel:+79697902020" class="phone-link">+7 (969) 790-20-20</a>
+                        <a href="javascript:void(0);" data-micromodal-trigger="backcall_modal" class="backcall-btn js-modal-btn">Заказать звонок</a>
+                    </div>
+                </nav>
+                <button id="hamburger" class="hamburger hamburger--slider" type="button" style="display: none;">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="category-page">
+        <div class="container">
+            <div class="category-page__banner">
+                <div class="image-block lazyload" data-bgset="images/bg/mobile/main_slide2.jpg [(max-width: 575px)] | images/bg/pad/main_slide2.jpg [(max-width: 1024px)] | images/bg/desk/main_slide2.jpg [(min-width: 1025px)]"></div>
+                <div class="descr-block">
+                    <h1 class="category-page__title main-title">Складская техника <span>Zoomlion</span></h1>
+                    <h2 class="category-page__subtitle">В лизинг с авансом от 0% и бесплатной доставкой по России</h2>
+                    <a href="javascript:void(0);" data-modal="consultation_modal" class="category-btn btn-style js-modal-btn">Получить консультацию</a>
+                </div>
+            </div>
+            <div class="category-page__types thin-block">
+                <ul class="categories-list">
+                    <li class="categories-list__item gift-item">
+                        <a href="#" class="categories-list__link">
+                            <img src="images/common/catalog/category_image1.jpg" alt="category" class="item-image">
+                            <span class="item-name">Акционный товар</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item">
+                        <a href="#" class="categories-list__link">
+                            <img src="images/common/catalog/category_image2.jpg" alt="category" class="item-image">
+                            <span class="item-name">Мобильные краны</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item">
+                        <a href="#" class="categories-list__link active">
+                            <img src="images/common/catalog/category_image3.jpg" alt="category" class="item-image">
+                            <span class="item-name">Складская техника</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item">
+                        <a href="#" class="categories-list__link">
+                            <img src="images/common/catalog/category_image4.jpg" alt="category" class="item-image">
+                            <span class="item-name">Буровые установки</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item">
+                        <a href="#" class="categories-list__link">
+                            <img src="images/common/catalog/category_image5.jpg" alt="category" class="item-image">
+                            <span class="item-name">Подъемники</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item">
+                        <a href="#" class="categories-list__link">
+                            <img src="images/common/catalog/category_image6.jpg" alt="category" class="item-image">
+                            <span class="item-name">Бетононасосы</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item">
+                        <a href="#" class="categories-list__link">
+                            <img src="images/common/catalog/category_image7.jpg" alt="category" class="item-image">
+                            <span class="item-name">Экскаваторы</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="category-page__product-list thin-block">
+                <div class="category-page__product-list__item product-item">
+                    <div class="image-block">
+                        <img src="images/common/catalog/product_image.jpg" alt="product" class="product-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Zomlion FD30-38Z</h3>
+                        <ul class="item-info">
+                            <li class="item-info__item">
+                                <span>Грузоподъемность</span>
+                                <span>4000 — 5000 кг</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Тип двигателя</span>
+                                <span>дизельный</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Высота подъема</span>
+                                <span>3 — 6 метров</span>
+                            </li>
+                            <li class="item-info__item price-item">
+                                <span>Стоимость</span>
+                                <span>По запросу</span>
+                            </li>
+                        </ul>
+                        <div class="btn-row">
+                            <a href="#" class="btn-stroke">Подробней</a>
+                            <a href="#" class="btn-style">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-page__product-list__item product-item">
+                    <div class="image-block">
+                        <img src="images/common/catalog/product_image.jpg" alt="product" class="product-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Zomlion FD30-38Z</h3>
+                        <ul class="item-info">
+                            <li class="item-info__item">
+                                <span>Грузоподъемность</span>
+                                <span>4000 — 5000 кг</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Тип двигателя</span>
+                                <span>дизельный</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Высота подъема</span>
+                                <span>3 — 6 метров</span>
+                            </li>
+                            <li class="item-info__item price-item">
+                                <span>Стоимость</span>
+                                <span>По запросу</span>
+                            </li>
+                        </ul>
+                        <div class="btn-row">
+                            <a href="#" class="btn-stroke">Подробней</a>
+                            <a href="#" class="btn-style">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-page__product-list__item product-item">
+                    <div class="image-block">
+                        <img src="images/common/catalog/product_image.jpg" alt="product" class="product-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Zomlion FD30-38Z</h3>
+                        <ul class="item-info">
+                            <li class="item-info__item">
+                                <span>Грузоподъемность</span>
+                                <span>4000 — 5000 кг</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Тип двигателя</span>
+                                <span>дизельный</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Высота подъема</span>
+                                <span>3 — 6 метров</span>
+                            </li>
+                            <li class="item-info__item price-item">
+                                <span>Стоимость</span>
+                                <span>По запросу</span>
+                            </li>
+                        </ul>
+                        <div class="btn-row">
+                            <a href="#" class="btn-stroke">Подробней</a>
+                            <a href="#" class="btn-style">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-page__product-list__item product-item">
+                    <div class="image-block">
+                        <img src="images/common/catalog/product_image.jpg" alt="product" class="product-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Zomlion FD30-38Z</h3>
+                        <ul class="item-info">
+                            <li class="item-info__item">
+                                <span>Грузоподъемность</span>
+                                <span>4000 — 5000 кг</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Тип двигателя</span>
+                                <span>дизельный</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Высота подъема</span>
+                                <span>3 — 6 метров</span>
+                            </li>
+                            <li class="item-info__item price-item">
+                                <span>Стоимость</span>
+                                <span>По запросу</span>
+                            </li>
+                        </ul>
+                        <div class="btn-row">
+                            <a href="#" class="btn-stroke">Подробней</a>
+                            <a href="#" class="btn-style">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-page__product-list__item product-item">
+                    <div class="image-block">
+                        <img src="images/common/catalog/product_image.jpg" alt="product" class="product-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Zomlion FD30-38Z</h3>
+                        <ul class="item-info">
+                            <li class="item-info__item">
+                                <span>Грузоподъемность</span>
+                                <span>4000 — 5000 кг</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Тип двигателя</span>
+                                <span>дизельный</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Высота подъема</span>
+                                <span>3 — 6 метров</span>
+                            </li>
+                            <li class="item-info__item price-item">
+                                <span>Стоимость</span>
+                                <span>По запросу</span>
+                            </li>
+                        </ul>
+                        <div class="btn-row">
+                            <a href="#" class="btn-stroke">Подробней</a>
+                            <a href="#" class="btn-style">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-page__product-list__item product-item">
+                    <div class="image-block">
+                        <img src="images/common/catalog/product_image.jpg" alt="product" class="product-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Zomlion FD30-38Z</h3>
+                        <ul class="item-info">
+                            <li class="item-info__item">
+                                <span>Грузоподъемность</span>
+                                <span>4000 — 5000 кг</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Тип двигателя</span>
+                                <span>дизельный</span>
+                            </li>
+                            <li class="item-info__item">
+                                <span>Высота подъема</span>
+                                <span>3 — 6 метров</span>
+                            </li>
+                            <li class="item-info__item price-item">
+                                <span>Стоимость</span>
+                                <span>По запросу</span>
+                            </li>
+                        </ul>
+                        <div class="btn-row">
+                            <a href="#" class="btn-stroke">Подробней</a>
+                            <a href="#" class="btn-style">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="form-block thin-block">
+            <div class="container">
+                <h2 class="form-block__title section-title">Не знаете, какая складская техника Zoomlion вам подойдет лучше всего?</h2>
+                <div class="form-block__content">
+                    <div class="form-block__content__left-side">
+                        <img src="images/common/form_image2.jpg" alt="form" class="form-image">
+                    </div>
+                    <div class="form-block__content__right-side">
+                        <form action="">
+                            <h3 class="form-title">Оставьте заявку и получите бесплатный подбор от наших специалистов</h3>
+                            <div class="input-group">
+                                <input type="text" name="name" class="input-style" placeholder="Ваше имя">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="phone" class="input-style" placeholder="Номер телефона">
+                            </div>
+                            <div class="input-group">
+                                <textarea name="" class="input-style" placeholder="Расскажите что вы ищете (необязательное поле)"></textarea>
+                            </div>
+                            <div class="input-group btn-group">
+                                <button type="submit" class="btn-style">Подобрать решение</button>
+                            </div>
+                            <div class="input-group check-group">
+                                <p>Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a> и <a href="#">обработкой персональных данных</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container thin-block">
+            <div class="footer__content">
+                <div class="footer__content__column main-column">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/svg/logo.svg" alt="RT" class="logo-image">
+                    </a>
+                    <p>© 2022, ООО «Рострейд». <br> Все права защищены.</p>
+                </div>
+                <div class="footer__content__column menu-column">
+                    <a href="#" class="item-link">Каталог</a>
+                    <ul class="menu-list">
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Акционный товар</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Складская техника</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Мобильные краны</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Складская техника</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Подъемники</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Бетононасосы</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Экскаваторы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__column menu-column">
+                    <a href="#" class="item-link">Информация</a>
+                    <ul class="menu-list">
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">О компании</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__column phones-column">
+                    <a href="tel:+79697902020" class="phone-link">+7 (969) 790-20-20</a>
+                    <a href="tel:+79095848005" class="phone-link">+7 (909) 584-80-05</a>
+                    <p>Наши специалисты помогут вам с любым вопросом</p>
+                    <a href="javascript:void(0);" data-micromodal-trigger="backcall_modal" class="backcall-btn btn-style js-modal-btn">Заказать звонок</a>
+                    <a href="mailto:info@ros-trade.com" class="mail-link">info@ros-trade.com</a>
+                    <p>График работы: с 8:00 до 20:00, без выходных</p>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <a href="#" class="privacy-link">Политика конфиденциальности</a>
+                <a href="#" class="websad-link">Создание и продвижение сайтов — WebSadovnik</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="backcall_modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close"></i></button>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Заказать обратный звонок</h2>
+                    <h3 class="modal__subtitle">Оставьте ваши данные. Наш менеджер свяжется с вами в течении рабочего дня.</h3>
+                </header>
+                <main class="modal__content">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Ваше имя" class="input-border-style" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Ваш телефон" class="input-border-style" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style">Отправить заявку</button>
+                        </div>
+                        <div class="input-group check-group">
+                            <p>Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a> и <a href="#">обработкой персональных данных</a></p>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
