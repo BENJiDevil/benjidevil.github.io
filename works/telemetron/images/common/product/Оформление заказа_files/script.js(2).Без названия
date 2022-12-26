@@ -1,0 +1,1453 @@
+/**
+ * Vue Sticky directive
+ * @directive
+ * @example
+ * {
+ *   directives: {
+ *     Sticky,
+ *   },
+ *   template: `<div v-sticky="{ offset: 0, isSticky: true }"></div>`,
+ * }
+ */
+
+ const maskVueInternationalPhone = (form, callback) => {
+  const hashContainer = document.querySelector(`${form}`);
+  const countryPhone = hashContainer.querySelector('.validator__country-phone');
+  const firstPhoneMask = hashContainer.querySelector('.validator__country-mask').getAttribute('data-mask');
+  const toBeValidNumber = (firstPhoneMask.match(/9/g) || []).length;
+  const dynamicMask = firstPhoneMask.match(/\[(.*?)\]/g, '');
+  
+  countryPhone.setAttribute('data-mask', dynamicMask[0].replace(/[^9]/g, ''));
+ 
+  // const test1 = firstPhoneMask.replace(/[^9]/g, '');
+
+  let phoneMask = new Inputmask(firstPhoneMask, {
+    autoUnmask: true,
+    "oncomplete": callback
+  });
+
+  phoneMask.mask(countryPhone);
+
+  const options = [];
+
+  const optionsData = hashContainer.querySelectorAll('.validator__country-mask');
+
+  optionsData.forEach((option, index) => {
+    options.push({
+      value: option.getAttribute('data-value'),
+      label: option.getAttribute('data-country'),
+      id: index,
+      customProperties: {
+        indx: index,
+        mask: option.getAttribute('data-mask'),
+        flag: option.getAttribute('data-flag'),
+      },
+    });
+  });
+
+  const choicesSelect = hashContainer.querySelector('.validator__country-select');
+
+  const choicesNolint = new Choices(choicesSelect, {
+    searchEnabled: true,
+    itemSelectText: '',
+    shouldSort: false,
+    choices: options,
+    classNames: {
+      containerOuter: 'choices validator__countries',
+    },
+    callbackOnCreateTemplates(template) {
+      return {
+        item(classNames, data) {
+
+          return template(`
+            <div class="${classNames.item} ${data.highlighted ? classNames.highlightedState : classNames.itemSelectable}
+            ${data.placeholder ? classNames.placeholder : ''}"
+            data-item data-id="${data.id}" data-value="${data.value}" ${data.active ? 'aria-selected="true"' : ''}
+            ${data.disabled ? 'aria-disabled="true"' : ''}>
+            <p class='choices__flag' style='background-image: url(${options[(data.customProperties.indx)].customProperties.flag})'></p>
+            ${data.label}
+            </div>
+          `);
+        },
+        choice(classNames, data) {
+          return template(`
+            <div class="${classNames.item} ${classNames.itemChoice}
+            ${data.disabled ? classNames.itemDisabled : classNames.itemSelectable}"
+            data-select-text="${this.config.itemSelectText}" data-choice
+            ${data.disabled ? 'data-choice-disabled aria-disabled="true"' : 'data-choice-selectable'}
+            data-id="${data.id}" data-value="${data.value}"
+            ${data.groupId > 0 ? 'role="treeitem"' : 'role="option"'}>
+            <p class='choices__flag' style='background-image: url(${options[(data.customProperties.indx)].customProperties.flag})'></p>
+            ${data.label}
+            </div>
+          `);
+        },
+      };
+    },
+  });
+
+  choicesSelect.addEventListener('choice', (evt) => {
+    const dynamicMask = evt.detail.choice.customProperties.mask.match(/\[(.*?)\]/g, '');
+
+    countryPhone.setAttribute('data-mask', dynamicMask[0].replace(/[^9]/g, ''));
+    countryPhone.inputmask.remove();
+    countryPhone.value = '';
+    countryPhone.focus();
+    countryPhone.blur();
+    phoneMask = new Inputmask(evt.detail.choice.customProperties.mask, {
+      autoUnmask: true,
+      "oncomplete": callback
+    });
+    phoneMask.mask(countryPhone);
+    const newToBeValidNumber = (evt.detail.choice.customProperties.mask.match(/9/g) || []).length;
+
+  });
+};
+
+function date_castom(serverTime,time,thisDay) {
+	if(thisDay == true) {
+
+		serverTime = serverTime.split(':');
+		var currentD = new Date();
+		currentD.setHours(serverTime[0],serverTime[1],0); // 5.30 pm
+
+		time = time.replace(/[\D]+/g, '');
+		var end = new Date();
+		end.setHours(time[0]+time[1],time[2]+time[3],0);
+
+
+		console.log(currentD);
+		console.log(end);
+		// time = time.replace(/[\D]+/g, '')
+		// var currentD = new Date();
+		//
+		// var end = new Date();
+		// end.setHours(time[0] + time[1], time[2] + time[3], 0); // 6.30 pm
+		//
+		if (currentD >= end) {
+			return false;
+		} else {
+			return true;
+		}
+	}else{
+		return true;
+	}
+}
+
+const Sticky = {
+	bind(el, binding) {
+		setStyle(el, binding.value);
+	},
+	componentUpdated(el, binding) {
+		setStyle(el, binding.value);
+	},
+};
+
+const setStyle = (el, values) => {
+	const defaults = {
+		isSticky: true,
+		offset: 80,
+	};
+
+	const isSticky = values && values.isSticky !== undefined
+		? values.isSticky
+		: defaults.isSticky;
+
+	if (isSticky) {
+		const offset = values && values.offset || defaults.offset;
+
+		el.style.top = `${offset}px`;
+		el.style.position = 'sticky';
+		el.style.position = '-webkit-sticky'; /* Safari */
+	} else {
+		el.style.cssText = null;
+	}
+};
+
+window.addEventListener("DOMContentLoaded", function(event) {
+	/**
+	 * Components
+	 */
+
+	$('#catalog-request').show();
+
+	Vue.component('date-picker', {
+		template: '<input class="form-group__input js-datetimepicker ORDER_PROP_9" name="ORDER_PROP_9" type="text" autocomplete="off" required readonly/>',
+		// props: [ 'disableDates' ],
+		mounted() {
+			console.log('one');
+			$('.js-datetimepicker').datetimepicker('destroy');
+			var self = this;
+			$.datetimepicker.setLocale('ru');
+			$(this.$el).datetimepicker({
+				format:'d.m.Y',
+				disabledDates: window.checkout_js_data.DISABLE_DATES_DELIVERY,
+				minDate: 0,
+				dayOfWeekStart: 1,
+				minTime: 0,
+				timepicker: false,
+				//maxDate:'+1970/04/01',
+				//maxDate:'2021/07/31',
+				scrollMonth: false,
+				validateOnBlur:true,
+				onSelectDate:function(ct, $i){
+					var date = vueCheckout.dateToYMD(ct);
+					self.$emit('update-date', date);
+				},
+				onShow:function(current_time,$input){
+					$input.prop('readonly', true);
+				}
+			});
+			$(this.$el).datetimepicker('reset')
+
+                        //Google Analytics
+                        var arProducts = [];
+                        for (key in window.checkout_js_data.GRID.ROWS) {
+                            arProducts.push({
+                                'name': window.checkout_js_data.GRID.ROWS[key].data.NAME,
+                                'id': window.checkout_js_data.GRID.ROWS[key].id,
+                                'price': window.checkout_js_data.GRID.ROWS[key].data.PRICE,
+                                'brand': 'MonBon',
+                                'category': 'Каталог (Онлайн-бутик)/Макароны',
+                                'quantity': window.checkout_js_data.GRID.ROWS[key].data.QUANTITY,
+                            });
+                        };
+
+                        dataLayer.push({
+                            'ecommerce': {
+                                'currencyCode': 'RUB',
+                                'checkout': {
+                                    'actionField': {'step': 3, 'option': 'Курьером'},
+                                    'products': arProducts,
+                                }
+                            },
+                            'event': 'gtm-ee-event',
+                            'gtm-ee-event-category': 'Enhanced Ecommerce',
+                            'gtm-ee-event-action': 'Checkout Step 3',
+                            'gtm-ee-event-non-interaction': 'False',
+                        });
+
+			$(document).find('#user_city').suggestions({
+				token: "833a8fb5a36dccbca870b54f2bf8e30dadeda7cb",
+				type: "ADDRESS",
+				onSelect: function (suggestion) {
+					if(!suggestion.data.house){
+						$(document).find('.error_not_house').show();
+						return false;
+					}else {
+						$(document).find('.error_not_house').hide();
+					}
+
+					$(document).find('#user_city').attr('disabled', 'disabled');
+					$.ajax({
+						url: '/local/ajax/castomdelivery.php',
+						type: "POST",
+						data: {addres: suggestion.data,price: window.checkout_js_data.TOTAL.ORDER_PRICE},
+						success: function(data) {
+							data = JSON.parse(data);
+							$('.address_not_selected').hide();
+							$('.checkout-form__delivery_radio').html(' ')
+							if(data.SUCCESS == true) {
+								$('.address_not_found').hide();
+								$('.error_text_time_custom').hide();
+								data.data.forEach(function (items, indexs) {
+									items = Object.values(items);
+									items.forEach(function (item, index) {
+										$('.checkout-form__delivery_radio').append(item.html);
+										$($('.checkout-form__delivery_radio').find('[name="DELIVERY_ID"]')[0]).prop("checked", true).change();
+									})
+								})
+							}else{
+								$('.address_not_found').html(data.ERROR);
+								$('.address_not_found').show();
+								//нет доставо
+
+							}
+						}
+					});
+					$('.ORDER_PROP_9').datetimepicker({
+						format:'d.m.Y',
+						disabledDates: window.checkout_js_data.DISABLE_DATES_DELIVERY,
+						minDate:'+1970/01/04',
+						dayOfWeekStart: 1,
+						minTime: 0,
+						timepicker: false,
+						//maxDate:'+1970/04/01',
+						//maxDate:'2021/07/31',
+						scrollMonth: false,
+						validateOnBlur:true,
+						onSelectDate:function(ct, $i){
+							var date = vueCheckout.dateToYMD(ct);
+
+							window.vueCheckout.datePickup = date;
+							window.vueCheckout.dateDelivery = date;
+
+						},
+						onShow:function(current_time,$input){
+							$input.prop('readonly', true);
+						}
+					})
+					$('.index_custom').val(suggestion.data.postal_code);
+					window.vueCheckout.city_id = suggestion.value;
+					window.vueCheckout.city_real_id = suggestion.value;
+					window.vueCheckout.city = suggestion.value;
+					window.vueCheckout.city_input = suggestion.value;
+				},
+			});
+			$('.checkout-form__delivery_radio').on('change','input',function () {
+				$('.delivery_name').val($(this).attr('data-name'));
+				$('.delivery_id').val($(this).attr('data-idddelivery'));
+				window.vueCheckout.timeDelivery = null;
+				window.vueCheckout.timeDeliveryValues = null;
+				$(document).find('.ORDER_PROP_9').val('');
+				window.vueCheckout.delivery_id = $(this).val();
+				window.vueCheckout.priceDelivery = $(this).attr('data-price');
+				$('.price_custom').val($(this).attr('data-price'));
+
+				var date = Number($(this).attr('data-data')) + 1;
+
+				var nowork = 0;
+				if($(this).attr('data-nowork')) {
+					nowork = $(this).attr('data-nowork').split(',');
+				}else{
+					nowork = [];
+				}
+
+				if($(this).attr('data-time')) {
+					var timeWork = $(this).attr('data-time').split(',');
+				}else{
+					var timeWork = [];
+				}
+				$('#time').html(' ');
+				timeWork.forEach(function (item,index) {
+					if(item){
+						if(date_castom($(this).attr('data-timeserver'),item)) {
+							//$('#time').append('<option value="' + item + '">' + item + '</option>')
+						}
+					}
+				})
+				if($(this).attr('data-lastday')) {
+					var date_last = '+1970/01/0'+(Number($(this).attr('data-lastday')) + 1);
+				}else{
+					var date_last='+1970/05/01';
+				}
+
+				$('.ORDER_PROP_9').datetimepicker({
+					format:'d.m.Y',
+					disabledDates: nowork,
+					minDate:'+1970/01/0'+date,
+					dayOfWeekStart: 1,
+					minTime: 0,
+					timepicker: false,
+				    maxDate: date_last,
+
+					scrollMonth: false,
+					validateOnBlur:true,
+					onSelectDate:function(ct, $i){
+						var date = vueCheckout.dateToYMD(ct);
+
+						window.vueCheckout.datePickup = date;
+						window.vueCheckout.dateDelivery = date;
+						window.vueCheckout.timeDelivery = null;
+						window.vueCheckout.timeDeliveryValues = null;
+						var currentD = new Date();
+						var dayServer = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-dataserver');
+						var thisDay = true;
+						if(dayServer != date[0]+date[1]){
+							thisDay = false;
+						};
+
+						var castom_date_check = false;
+						if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-castomDate')) {
+							var custom_date_arr = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-castomDate').split(',');
+						}else{
+							var custom_date_arr = [];
+						}
+						custom_date_arr_new = [];
+						custom_date_arr_check = false;
+						custom_date_arr.forEach(function (item,index) {
+							if(item){
+								if(item == date){
+									custom_date_arr_new.push(index);
+									custom_date_arr_check = true;
+								}
+							}
+						})
+
+
+						var custom_time_arr_option = '';
+						if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-castomTime')) {
+							var custom_time_arr = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-castomTime').split(',');
+						}else{
+							var custom_time_arr = [];
+						}
+						custom_time_arr.forEach(function (item,index) {
+							if(item){
+								if(date_castom($(document).find('[name="DELIVERY_ID"]:checked').attr('data-timeserver'),item,thisDay)) {
+									if(custom_date_arr_new.find((i) => i === index) != undefined) {
+										custom_time_arr_option = custom_time_arr_option + '<option value="' + item + '">' + item + '</option>';
+									}
+								}
+							}
+						})
+
+
+						if(custom_date_arr_check == true){
+							$('#time').html(' ');
+							$('#time').append(custom_time_arr_option);
+						}else{
+							if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-time')) {
+								var timeWork = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-time').split(',');
+							}else{
+								var timeWork = [];
+							}
+							$('#time').html(' ');
+							if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-thisDay_interval') && thisDay==true){
+								var timeWork = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-thisDay_interval').split(',');
+								timeWork.forEach(function (item,index) {
+									if(item){
+										if(date_castom($(document).find('[name="DELIVERY_ID"]:checked').attr('data-timeserver'),item,thisDay)) {
+											$('#time').append('<option value="' + item + '">' + item + '</option>')
+										}
+									}
+								})
+							}else {
+								timeWork.forEach(function (item, index) {
+									if (item) {
+										if (date_castom($(document).find('[name="DELIVERY_ID"]:checked').attr('data-timeserver'),item, thisDay)) {
+											$('#time').append('<option value="' + item + '">' + item + '</option>')
+										}
+									}
+								})
+							}
+							if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-tomorrow') == date){
+								if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-deltime')){
+									$('#time').html(' ');
+									if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-deltime')) {
+										var timeWork = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-deltime').split(',');
+									}else {
+										var timeWork = [];
+									}
+									timeWork.forEach(function (item,index) {
+										if(item){
+											if(date_castom($(document).find('[name="DELIVERY_ID"]:checked').attr('data-timeserver'),item,thisDay)) {
+												$('#time').append('<option value="' + item + '">' + item + '</option>')
+											}
+										}
+									})
+								}
+							}
+						}
+						if($('#time').html().length>=10){
+							$('.error_text_time_custom').hide();
+						}else{
+							$('.error_text_time_custom').show();
+							$('.error_text_time_custom').css('color','red');
+						}
+
+					},
+					onShow:function(current_time,$input){
+						$input.prop('readonly', true);
+					}
+				})
+				window.vueCheckout.timeDelivery = null;
+				window.vueCheckout.timeDeliveryValues = null;
+			})
+		}
+	});
+
+	Vue.component('date-picker-pickup', {
+		template: '<input class="form-group__input js-datetimepicker" name="ORDER_PROP_23" type="text" autocomplete="off" required  readonly/>',
+		//props: [ 'dateFormat' ],
+		mounted: function() {
+			console.log('two');
+			$('.js-datetimepicker').datetimepicker('destroy');
+			var self = this;
+			$.datetimepicker.setLocale('ru');
+			$(this.$el).datetimepicker({
+				format:'d.m.Y',
+				disabledDates: window.checkout_js_data.DISABLE_DATES_PICKUP,
+				minDate: '+1970/01/02',
+				dayOfWeekStart: 1,
+				minTime: 0,
+				timepicker: false,
+				//maxDate:'+1970/04/01',
+				//maxDate:'2021/07/31',
+				scrollMonth: false,
+				onSelectDate:function(ct, $i){
+					var date = vueCheckout.dateToYMD(ct);
+					self.$emit('update-date', date);
+				}
+			});
+
+                        //Google Analytics
+                        var arProducts = [];
+                        for (key in window.checkout_js_data.GRID.ROWS) {
+                            arProducts.push({
+                                'name': window.checkout_js_data.GRID.ROWS[key].data.NAME,
+                                'id': window.checkout_js_data.GRID.ROWS[key].id,
+                                'price': window.checkout_js_data.GRID.ROWS[key].data.PRICE,
+                                'brand': 'MonBon',
+                                'category': 'Каталог (Онлайн-бутик)/Макароны',
+                                'quantity': window.checkout_js_data.GRID.ROWS[key].data.QUANTITY,
+                            });
+                        };
+
+                        dataLayer.push({
+                            'ecommerce': {
+                                'currencyCode': 'RUB',
+                                'checkout': {
+                                    'actionField': {'step': 3, 'option': 'Самовывоз'},
+                                    'products': arProducts,
+                                }
+                            },
+                            'event': 'gtm-ee-event',
+                            'gtm-ee-event-category': 'Enhanced Ecommerce',
+                            'gtm-ee-event-action': 'Checkout Step 3',
+                            'gtm-ee-event-non-interaction': 'False',
+                        });
+		}
+	});
+
+	if ($('#checkout').length) {
+		window.vueCheckout = new Vue({
+			el: '#checkout',
+			directives: {
+				Sticky
+			},
+			data: {
+				// Vue
+				isNavSticky: true,
+				isAuth: false,
+				isSms: false,
+				delivery: 'courier', // 'courier', 'pickup'
+				authError: null,
+				mask: '+7 (999) 999-99-99',
+				cities: [],
+				streets: [],
+				timeDeliveryValues: [],
+				timePickupValues: [],
+				pickupPoints: [],
+				terms: false,
+				city_focus: false,
+				street_focus: false,
+				kv_focus: false,
+				dom_focus: false,
+				errors: [],
+				coordinates: null,
+				deliveres: [],
+				doms: [],
+				isDeliveryLoading: false,
+				isCityLoading: false,
+				techDelivery: null,
+				selectedInput: null,
+				smsError: null,
+				showNoCityModal: false,
+				showAuthHelpModal: false,
+				timeout: null,
+
+				// Order
+				jsData: {},
+				phone: null,
+				name: null,
+				idApp: null,
+				sms: null,
+				delivery_id: 0,
+				pickup_id: 0,
+				pickup: null,
+				region: null,
+				city: null,
+				city_input: null,
+				street: null,
+				dom: null,
+				korpus: null,
+				kv: null,
+				priceDelivery: 0,
+				dateDelivery: null,
+				timeDelivery: null,
+				datePickup: null,
+				timePickup: null,
+				city_id: null,
+				city_real_id: null,
+				pay_id: 0,
+				receiverName: null,
+				receiverPhone: null,
+				email: window.checkout_js_data.USER.EMAIL,
+				comment: null
+			},
+			computed: {
+				priceTotal() {
+					return parseInt(this.jsData.TOTAL.ORDER_TOTAL_PRICE) + parseInt(this.priceDelivery);
+				}
+			},
+			created() {
+				this.jsData = Object.assign({}, this.jsData, window.checkout_js_data);
+				/**
+				 * Если только один город
+				 */
+				if (this.jsData.GORODA.length == 1) {
+					this.pickup = this.jsData.GORODA[0].ID;
+				}
+				if (this.jsData.PAY_SYSTEM_FILTERED.length == 1) {
+					this.pay_id = this.jsData.PAY_SYSTEM_FILTERED[0].ID;
+				}
+
+				this.isAuth = this.jsData.IS_AUTHORIZED;
+				if (this.jsData.USER && this.jsData.USER.PERSONAL_PHONE) {
+					this.phone = this.jsData.USER.PERSONAL_PHONE;
+                                    console.log(this.jsData.USER.PERSONAL_PHONE);
+				}
+				if (this.jsData.USER && this.jsData.USER.NAME) {
+					this.name = this.jsData.USER.NAME + ' ' + this.jsData.USER.LAST_NAME;
+				}
+			},
+			mounted () {
+				// var im = new Inputmask(this.mask, {
+				// 	showMaskOnHover: false,
+				// });
+				// im.mask(this.$refs.phone);
+				this.disableAutoComplete();
+        maskVueInternationalPhone('#order_form',this.onBlurPhone);
+			},
+			watch: {
+				delivery_id: function (val) {
+					if (this.deliveres[val])
+					this.priceDelivery = parseInt(this.deliveres[val].PRICE);
+				},
+				dateDelivery: function(val) {
+					axios({
+						method: 'get',
+						url: '/local/ajax/checkout.php',
+						params: {
+							action: 'time_delivery',
+							date: val
+						}
+					}).then(response => {
+						this.timeDeliveryValues = response.data.data;
+					});
+				},
+				datePickup: function(val) {
+					axios({
+						method: 'get',
+						url: '/local/ajax/checkout.php',
+						params: {
+							action: 'time_pickup',
+							date: val
+						}
+					}).then(response => {
+						this.timePickupValues = response.data.data;
+					});
+				},
+				pickup: function(val) {
+					axios({
+						method: 'get',
+						url: '/local/ajax/checkout.php',
+						params: {
+							action: 'pickup_places',
+							city: val
+						}
+					}).then(response => {
+						this.pickupPoints = response.data.data;
+						if (this.pickupPoints.length == 1) {
+							this.pickup_id = this.pickupPoints[0].ID;
+						}
+					});
+				},
+				city: function(val) {
+					//this.deliveres = [];
+					//this.getDeliveres();
+				},
+				street: function(val) {
+					this.deliveres = [];
+					this.getDeliveres();
+				},
+				dom: function(val) {
+					this.deliveres = [];
+					this.getDeliveres();
+				},
+			},
+			methods: {
+				onBlurPhone (event) {
+          const validNumber = event.target.getAttribute('data-mask');
+          // console.log(event.target.value.length);
+          // console.log(validNumber.length);
+
+          if (event.target.value.length === validNumber.length) {
+            Vue.set(this, 'phone', event.target.value)
+          } else {
+            Vue.set(this, 'phone', null)
+          }
+
+					// Vue.set(this, 'phone', event.target.value)
+				},
+				changeNumber() {
+					axios({
+						method: 'get',
+						url: '/local/ajax/checkout.php',
+						params: {
+							action: 'logout'
+						}
+					}).then(response => {
+						console.log(response);
+						if (response.data.status === 'success') {
+							window.location.reload();
+						}
+					});
+				},
+				changeNumberAuth() {
+					this.phone = null;
+					this.isSms = false;
+				},
+				sendPhone() {
+					this.sms = null;
+					this.smsError = null;
+					grecaptcha.ready(function() {
+						grecaptcha.execute('6LdN9csdAAAAAHZihs-My6HTd5rjHljYMOwaJRMw', {action: 'site'}).then(function(token) {
+							document.getElementById('g-recaptcha-response').value=token;
+						});
+					});
+					var captcha = $('#g-recaptcha-response').val();
+					axios({
+						method: 'get',
+						url: '/local/ajax/checkout.php',
+						params: {
+							action: 'send_sms',
+							captcha: captcha,
+							phone: $(document).find('.validator__country-phone')[0].inputmask._valueGet(),
+							sms: null
+						}
+					}).then(response => {
+						if (response.data.status === 'success') {
+							this.isSms = true;
+						}
+					});
+				},
+				checkCode() {
+					this.smsError = null;
+					axios({
+						method: 'get',
+						url: '/local/ajax/checkout.php',
+						params: {
+							action: 'check',
+							phone: $(document).find('.validator__country-phone')[0].inputmask._valueGet(),
+							code: this.sms,
+						}
+					}).then(response => {
+						if (response.data.status === 'success') {
+							if(response.data.relocate === 'goToCart'){
+								document.location.href = "/cart/?show=basketItemOld";
+							}else {
+								window.location.reload();
+							}
+						} else {
+							ym(11265170,'reachGoal','error-order-tel');
+							this.smsError = 'Неверный код';
+						}
+					});
+				},
+				getCity() {
+					// this.isCityLoading = true;
+					// clearTimeout(this.timeout);
+					// this.deliveres = [];
+					// this.timeout = setTimeout(() => {
+					// 	axios({
+					// 		method: 'get',
+					// 		url: '/local/ajax/checkout.php',
+					// 		params: {
+					// 			action: 'city',
+					// 			search: this.city_input,
+					// 			params: 'siteId:s1',
+					// 		}
+					// 	}).then(response => {
+					// 		this.isCityLoading = false;
+					// 		var str =  response.data;
+					// 		console.log(str);
+					// 		if (str && str.length > 0) {
+					// 			str = str.replace(/'/g, '"')
+					// 			obj = JSON.parse(str);
+					//
+					// 			const citiesFiltered = obj.filter(function (e) {
+					// 				return e.NAME.length == 0;
+					// 			});
+					// 			//console.log(millionPlusCities);
+					//
+					// 			this.cities = citiesFiltered;
+					// 		} else {
+					// 			this.cities = [];
+					// 		}
+					// 	});
+					// 	this.city_focus = true;
+					// 	// https://dev.mon-bon.ru/bitrix/components/bitrix/sale.ajax.locations/search.php?search=%u041C%u043E%u0441&params=siteId%3As1
+					// }, 500);
+				},
+				changeEmail() {
+					if(!validateEmail(this.email)) {
+						this.errors.push('Пожалуйста введите корректный Email');
+						$('#user_email').css({'border-bottom': '1px solid #ff5064'});
+					}else{
+						$('#user_email').css({'border-bottom': '1px solid #969696'});
+					}
+				},
+				blurCity() {
+					if (!this.city_id) {
+						//this.city = null;
+					}
+					setTimeout(() => {
+						if (this.cities[0] && this.cities[0].REGION_NAME == this.city) {
+							this.city_id = this.cities[0].ID;
+						}
+						this.cities = [];
+						this.city_focus = false;
+					}, 300);
+				},
+				blurStreet() {
+					setTimeout(() => {
+						this.street_focus = false;
+					}, 300);
+				},
+				blurDom() {
+					setTimeout(() => {
+						this.dom_focus = false
+					}, 300);
+				},
+				chooseCity(item) {
+					this.city = item.REGION_NAME;
+					this.isDeliveryLoading = true;
+					axios({
+						method: 'get',
+						url: '/local/ajax/checkout.php',
+						params: {
+							action: 'get_delivery',
+							search: this.city,
+							params: 'siteId:s1',
+						}
+					}).then(response => {
+						if (!response && response.data.status == 'error_no' || response.data.status == 'error' || response.data.status == 'not_found') {
+							this.deliveres = [];
+							this.deliveres_error = response.data.data;
+							this.isDeliveryLoading = false;
+						} else {
+							//
+							this.techDelivery = response.data.techData;
+							this.street = response.data.street;
+							this.dom = response.data.house;
+							this.kv = response.data.kv;
+							this.korpus = response.data.korpus;
+							this.region = response.data.region;
+							//
+							this.city_id = response.data.data.ID;
+							var formData = new FormData(document.querySelector('#order_form'));
+							formData.append('via_ajax', 'Y');
+							formData.append('soa-action', 'refreshOrderAjax');
+							formData.append('order[location_type]', 'code');
+							formData.append('order[ORDER_PROP_12]', response.data.data.ID);
+							var obj = Object.fromEntries(formData.entries());
+							console.log(response);
+
+                                                    //Google Analytics
+                                                    var arProducts = [];
+                                                    for (key in window.checkout_js_data.GRID.ROWS) {
+                                                        arProducts.push({
+                                                            'name': window.checkout_js_data.GRID.ROWS[key].data.NAME,
+                                                            'id': window.checkout_js_data.GRID.ROWS[key].id,
+                                                            'price': window.checkout_js_data.GRID.ROWS[key].data.PRICE,
+                                                            'brand': 'MonBon',
+                                                            'category': 'Каталог (Онлайн-бутик)/Макароны',
+                                                            'quantity': window.checkout_js_data.GRID.ROWS[key].data.QUANTITY,
+                                                        });
+                                                    };
+
+                                                    dataLayer.push({
+                                                        'ecommerce': {
+                                                            'currencyCode': 'RUB',
+                                                            'checkout': {
+                                                                'actionField': {'step': 2, 'option': 'Адрес'},
+                                                                'products': arProducts,
+                                                            }
+                                                        },
+                                                        'event': 'gtm-ee-event',
+                                                        'gtm-ee-event-category': 'Enhanced Ecommerce',
+                                                        'gtm-ee-event-action': 'Checkout Step 2',
+                                                        'gtm-ee-event-non-interaction': 'False',
+                                                    });
+
+							axios.post('/bitrix/components/bitrix/sale.order.ajax/ajax.php', formData, {
+								params: {},
+								headers: { 'Content-Type': 'multipart/form-data' },
+							}).then(res => {
+								console.log(res.data.order.DELIVERY);
+								this.deliveres = res.data.order.DELIVERY;
+								if (this.deliveres && Object.keys(this.deliveres).length) {
+									var firstKey = Object.keys(vueCheckout.deliveres)[0];
+									this.delivery_id = this.deliveres[firstKey].ID;
+								}
+								this.isDeliveryLoading = false;
+							}).catch(err => {
+								console.log(err)
+								return null
+							})
+						}
+					});
+				},
+				deleteCity() {
+					$(document).find('.address_not_found').hide();
+					$(document).find('#user_city').removeAttr('disabled');
+					$('.checkout-form__delivery_radio').html(' ');
+					$('.ORDER_PROP_9').datetimepicker('destroy');
+					$('.ORDER_PROP_9').val('');
+					
+					this.datePickup = null;
+					this.dateDelivery = null;
+					this.timeDelivery = null;
+					this.timeDeliveryValues = null;
+					this.city = null;
+					this.city_input = null;
+					this.city_id = null;
+					this.cities = [];
+					this.street = null;
+					this.dom = null;
+					this.kv = null;
+					this.korpus = null;
+					this.delivery_id = 0;
+					this.deliveres = [];
+				},
+				deleteStreet() {
+					this.dom = null;
+					this.kv = null;
+					this.korpus = null;
+					this.delivery_id = 0;
+				},
+				deleteDom() {
+					this.kv = null;
+					this.korpus = null;
+					this.delivery_id = 0;
+				},
+				getStreet() {
+					axios({
+						method: 'get',
+						url: '/local/ajax/checkout.php',
+						params: {
+							action: 'street',
+							search: this.city + ' ' + this.street,
+							params: 'siteId:s1',
+						}
+					}).then(response => {
+						var str =  response.data;
+						str = str.replace(/'/g, '"')
+						var citiesFiltered = JSON.parse(str);
+
+						/*var citiesFiltered = obj.filter(function (e) {
+							return e.NAME.length == 0;
+						});*/
+						//console.log(millionPlusCities);
+
+						this.streets = citiesFiltered;
+					});
+					// https://dev.mon-bon.ru/bitrix/components/bitrix/sale.ajax.locations/search.php?search=%u041C%u043E%u0441&params=siteId%3As1
+				},
+				getDom() {
+					axios({
+						method: 'get',
+						url: '/local/ajax/checkout.php',
+						params: {
+							action: 'dom',
+							search: this.city + ' ' + this.street + ' ' + this.dom,
+							params: 'siteId:s1',
+						}
+					}).then(response => {
+						var str =  response.data;
+						str = str.replace(/'/g, '"')
+						var citiesFiltered = JSON.parse(str);
+
+						/*var citiesFiltered = obj.filter(function (e) {
+							return e.NAME.length == 0;
+						});*/
+						//console.log(millionPlusCities);
+
+						this.doms = citiesFiltered;
+					});
+					// https://dev.mon-bon.ru/bitrix/components/bitrix/sale.ajax.locations/search.php?search=%u041C%u043E%u0441&params=siteId%3As1
+				},
+				updateDate: function(date) {
+					this.dateDelivery = date;
+				},
+				updatePickupDate: function(date) {
+					this.datePickup = date;
+				},
+				dateToYMD(date) {
+					var d = date.getDate();
+					var m = date.getMonth() + 1; //Month from 0 to 11
+					var y = date.getFullYear();
+					return '' + (d <= 9 ? '0' + d : d) + '.' + (m<=9 ? '0' + m : m) + '.' + y;
+				},
+				checkForm: function(e) {
+					this.errors = [];
+
+					//if (!this.name) {
+					//	this.errors.push('Требуется указать имя.');
+					//}
+
+                                    //Google Analytics
+                                    var arProducts = [];
+                                    for (key in window.checkout_js_data.GRID.ROWS) {
+                                        arProducts.push({
+                                            'name': window.checkout_js_data.GRID.ROWS[key].data.NAME,
+                                            'id': window.checkout_js_data.GRID.ROWS[key].id,
+                                            'price': window.checkout_js_data.GRID.ROWS[key].data.PRICE,
+                                            'brand': 'MonBon',
+                                            'category': 'Каталог (Онлайн-бутик)/Макароны',
+                                            'quantity': window.checkout_js_data.GRID.ROWS[key].data.QUANTITY,
+                                        });
+                                    };
+
+                                    dataLayer.push({
+                                        'ecommerce': {
+                                            'currencyCode': 'RUB',
+                                            'checkout': {
+                                                'actionField': {'step': 5},
+                                                'products': arProducts,
+                                            }
+                                        },
+                                        'event': 'gtm-ee-event',
+                                        'gtm-ee-event-category': 'Enhanced Ecommerce',
+                                        'gtm-ee-event-action': 'Checkout Step 5',
+                                        'gtm-ee-event-non-interaction': 'False',
+                                    });
+
+
+                                    $('.type_delivery_custom').val(this.delivery);
+					if (this.delivery == 'courier') {
+						if (!this.city) {
+							ym(11265170,'reachGoal','error-order-address');
+							this.errors.push('Пожалуйста, заполните все поля адреса');
+						}
+					}
+
+
+					var result = { };
+					$.each($('#order_form').serializeArray(), function() {
+						result[this.name] = this.value;
+					});
+
+					if (!parseInt(result.DELIVERY_ID)) {
+						ym(11265170,'reachGoal','error-order-delivery');
+						this.errors.push('Пожалуйста, выберите способ доставки');
+					}
+					if (this.delivery != 'pickup' && (!result['ORDER_PROP_9'] || !result['ORDER_PROP_10'])) {
+						ym(11265170,'reachGoal','error-order-delivery-interval');
+						this.errors.push('Пожалуйста, выберите интервал доставки');
+					}
+					if (this.delivery == 'pickup' && (!result['ORDER_PROP_23'] || !result['ORDER_PROP_24'])) {
+						ym(11265170,'reachGoal','error-order-delivery-interval');
+						this.errors.push('Пожалуйста, выберите интервал самовывоза');
+					}
+					if(!validateEmail(this.email)) {
+						this.errors.push('Пожалуйста введите корректный Email');
+						$('#user_email').css({'border-bottom': '1px solid #ff5064'});
+					}else{
+						$('#F_EMAIL_CHECK').val(this.email).change();
+					}
+					
+					if (this.errors.length) {
+						e.preventDefault();
+					}else{
+						e.preventDefault();
+
+						$('.preloader').show();
+						$.ajax({
+							url: '/local/ajax/checkItemInBasket.php',
+							type: "POST",
+							dataType: 'json',
+							success: function(data) {
+								if(data.error == false){
+									var formVars = $('#order_form').serialize();
+									$.ajax({
+										url: '/order/',
+										type: "POST",
+										data: formVars,
+										success: function(data) {
+											if(data.order.REDIRECT_URL) {
+												window.location.href = data.order.REDIRECT_URL;
+											}
+										}
+									});
+								}else{
+									window.location.href = '/cart/?missing_products=y';
+								}
+
+							}
+						});
+					}
+				},
+				disableAutoComplete() {
+					let elements = document.querySelectorAll('[autocomplete="off"]');
+
+					if (!elements) {
+						return;
+					}
+
+					elements.forEach(element => {
+						element.setAttribute("readonly", "readonly");
+						element.style.backgroundColor = "inherit";
+
+						setTimeout(() => {
+							element.removeAttribute("readonly");
+						}, 500);
+					});
+				},
+				chooseStreet(item) {
+					this.street = item.NAME;
+					this.streets = {};
+				},
+				chooseDom(item) {
+					this.dom = item.NAME;
+					this.doms = {};
+				},
+				changePaysystem(item) {
+                                    let name = $(item.target).parent().find('.delivery-radio__wrapper').text();
+                                    //Google Analytics
+                                    var arProducts = [];
+                                    for (key in window.checkout_js_data.GRID.ROWS) {
+                                        arProducts.push({
+                                            'name': window.checkout_js_data.GRID.ROWS[key].data.NAME,
+                                            'id': window.checkout_js_data.GRID.ROWS[key].id,
+                                            'price': window.checkout_js_data.GRID.ROWS[key].data.PRICE,
+                                            'brand': 'MonBon',
+                                            'category': 'Каталог (Онлайн-бутик)/Макароны',
+                                            'quantity': window.checkout_js_data.GRID.ROWS[key].data.QUANTITY,
+                                        });
+                                    };
+
+                                    switch(item.target.value) {
+                                      case '6':
+                                          dataLayer.push({
+                                              'ecommerce': {
+                                                  'currencyCode': 'RUB',
+                                                  'checkout': {
+                                                      'actionField': {'step': 4, 'option': name},
+                                                      'products': arProducts,
+                                                  }
+                                              },
+                                              'event': 'gtm-ee-event',
+                                              'gtm-ee-event-category': 'Enhanced Ecommerce',
+                                              'gtm-ee-event-action': 'Checkout Step 4',
+                                              'gtm-ee-event-non-interaction': 'False',
+                                          });
+                                        break;
+                                      case '18':
+                                          dataLayer.push({
+                                              'ecommerce': {
+                                                  'currencyCode': 'RUB',
+                                                  'checkout': {
+                                                      'actionField': {'step': 4, 'option': name},
+                                                      'products': arProducts,
+                                                  }
+                                              },
+                                              'event': 'gtm-ee-event',
+                                              'gtm-ee-event-category': 'Enhanced Ecommerce',
+                                              'gtm-ee-event-action': 'Checkout Step 4',
+                                              'gtm-ee-event-non-interaction': 'False',
+                                          });
+                                        break;
+                                    }
+				},
+				getDeliveres() { return false;
+					if (this.city && this.isDeliveryLoading == false) {
+						this.isDeliveryLoading = true;
+						setTimeout(() => {
+							axios({
+								method: 'get',
+								url: '/local/ajax/checkout.php',
+								params: {
+									action: 'deliveres',
+									dom: this.dom,
+									street: this.street,
+									city_id: this.city_id
+								}
+							}).then(response => {
+								if (!response && response.data.status == 'error_no' || response.data.status == 'error') {
+									this.deliveres = [];
+									this.deliveres_error = response.data.data;
+									this.isDeliveryLoading = false;
+								} else {
+									//
+									this.techDelivery = response.data.techData;
+									//
+									var formData = new FormData(document.querySelector('#order_form'));
+									formData.append('via_ajax', 'Y');
+									formData.append('soa-action', 'refreshOrderAjax');
+									formData.append('order[location_type]', 'code');
+									formData.append('order[ORDER_PROP_12]', response.data.data.ID);
+									var obj = Object.fromEntries(formData.entries());
+									console.log(response);
+									axios.post('/bitrix/components/bitrix/sale.order.ajax/ajax.php', formData, {
+										params: {},
+										headers: { 'Content-Type': 'multipart/form-data' },
+									}).then(res => {
+										console.log(res.data.order.DELIVERY);
+										this.deliveres = res.data.order.DELIVERY;
+										if (this.deliveres && Object.keys(this.deliveres).length) {
+											var firstKey = Object.keys(vueCheckout.deliveres)[0];
+											this.delivery_id = this.deliveres[firstKey].ID;
+										}
+										this.isDeliveryLoading = false;
+									}).catch(err => {
+										console.log(err)
+										return null
+									})
+								}
+							});
+						}, 300);
+					} else {
+						this.deliveres = [];
+						this.delivery_id = 0;
+					}
+				}
+			}
+		});
+	}
+	$('#user_city').suggestions({
+		token: "833a8fb5a36dccbca870b54f2bf8e30dadeda7cb",
+		type: "ADDRESS",
+		onSelect: function (suggestion) {
+			if(!suggestion.data.house){
+				$('.error_not_house').show();
+				return false;
+			}else {
+				$('.error_not_house').hide();
+			}
+
+			$('#user_city').attr('disabled', 'disabled');
+			$.ajax({
+				url: '/local/ajax/castomdelivery.php',
+				type: "POST",
+				data: {addres: suggestion.data,price: window.checkout_js_data.TOTAL.ORDER_PRICE},
+				success: function(data) {
+					data = JSON.parse(data);
+					$('.address_not_selected').hide();
+					$('.checkout-form__delivery_radio').html(' ')
+					if(data.SUCCESS == true) {
+						$('.address_not_found').hide();
+						data.data.forEach(function (items, indexs) {
+							items = Object.values(items);
+							items.forEach(function (item, index) {
+								$('.checkout-form__delivery_radio').append(item.html);
+								$($('.checkout-form__delivery_radio').find('[name="DELIVERY_ID"]')[0]).prop("checked", true).change();
+							})
+						})
+						$('.error_text_time_custom').hide();
+					}else{
+						$('.address_not_found').html(data.ERROR);
+						$('.address_not_found').show();
+						//нет доставо
+
+					}
+
+				}
+			});
+			$('.ORDER_PROP_9').datetimepicker({
+				format:'d.m.Y',
+				disabledDates: window.checkout_js_data.DISABLE_DATES_DELIVERY,
+				minDate:'+1970/01/04',
+				dayOfWeekStart: 1,
+				minTime: 0,
+				timepicker: false,
+				//maxDate:'+1970/04/01',
+				//maxDate:'2021/07/31',
+				scrollMonth: false,
+				validateOnBlur:true,
+				onSelectDate:function(ct, $i){
+					var date = vueCheckout.dateToYMD(ct);
+
+					window.vueCheckout.datePickup = date;
+					window.vueCheckout.dateDelivery = date;
+
+				},
+				onShow:function(current_time,$input){
+					$input.prop('readonly', true);
+				}
+			})
+			$('.index_custom').val(suggestion.data.postal_code);
+			window.vueCheckout.city_id = suggestion.value;
+			window.vueCheckout.city_real_id = suggestion.value;
+			window.vueCheckout.city = suggestion.value;
+			window.vueCheckout.city_input = suggestion.value;
+		},
+	});
+
+	$('.checkout-form__delivery_radio').on('change','input',function () {
+		$('.delivery_name').val($(this).attr('data-name'));
+		$('.delivery_id').val($(this).attr('data-idddelivery'));
+		window.vueCheckout.delivery_id = $(this).val();
+		window.vueCheckout.priceDelivery = $(this).attr('data-price');
+		$(document).find('.ORDER_PROP_9').val('');
+		$('.price_custom').val($(this).attr('data-price'));
+		var date = Number($(this).attr('data-data')) + 1;
+		window.vueCheckout.timeDelivery = null;
+		window.vueCheckout.timeDeliveryValues = null;
+		var nowork = 0;
+		if($(this).attr('data-nowork')) {
+			nowork = $(this).attr('data-nowork').split(',');
+		}else{
+			nowork = [];
+		}
+
+		if($(this).attr('data-time')) {
+			var timeWork = $(this).attr('data-time').split(',');
+		}else {
+			var timeWork = [];
+		}
+		$('#time').html(' ');
+		timeWork.forEach(function (item,index) {
+			if(item){
+				if(date_castom($(this).attr('data-timeserver'),item)) {
+					//$('#time').append('<option value="' + item + '">' + item + '</option>')
+				}
+			}
+		})
+		if($(this).attr('data-lastday')) {
+			var date_last = '+1970/01/0'+(Number($(this).attr('data-lastday')) + 1);
+		}else{
+			var date_last='+1970/05/01';
+		}
+	
+		$('.ORDER_PROP_9').datetimepicker({
+			format:'d.m.Y',
+			disabledDates: nowork,
+			minDate:'+1970/01/0'+date,
+			dayOfWeekStart: 1,
+			minTime: 0,
+			timepicker: false,
+			maxDate: date_last,
+			scrollMonth: false,
+			validateOnBlur:true,
+			onSelectDate:function(ct, $i){
+				var date = vueCheckout.dateToYMD(ct);
+
+				window.vueCheckout.datePickup = date;
+				window.vueCheckout.dateDelivery = date;
+				window.vueCheckout.timeDelivery = null;
+				window.vueCheckout.timeDeliveryValues = null;
+
+				var currentD = new Date();
+				var thisDay = true;
+				console.log($(document).find('[name="DELIVERY_ID"]:checked').attr('data-dataserver'));
+				console.log(date[0]+date[1]);
+				var dayServer = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-dataserver');
+				if(dayServer != date[0]+date[1]){
+					thisDay = false;
+				};
+
+				var castom_date_check = false;
+				if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-castomDate')) {
+					var custom_date_arr = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-castomDate').split(',');
+				}else{
+					var custom_date_arr = [];
+				}
+				custom_date_arr_new = [];
+				custom_date_arr_check = false;
+				custom_date_arr.forEach(function (item,index) {
+					if(item){
+						if(item == date){
+							custom_date_arr_new.push(index);
+							custom_date_arr_check = true;
+						}
+					}
+				})
+
+
+				var custom_time_arr_option = '';
+				if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-castomTime')) {
+					var custom_time_arr = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-castomTime').split(',');
+				}else{
+					var custom_time_arr = [];
+				}
+				custom_time_arr.forEach(function (item,index) {
+					if(item){
+						if(date_castom($(document).find('[name="DELIVERY_ID"]:checked').attr('data-timeserver'),item,thisDay)) {
+							if(custom_date_arr_new.find((i) => i === index) != undefined) {
+								custom_time_arr_option = custom_time_arr_option + '<option value="' + item + '">' + item + '</option>';
+							}
+						}
+					}
+				})
+
+				if(custom_date_arr_check == true){
+					$('#time').html(' ');
+					$('#time').append(custom_time_arr_option);
+				}else{
+					if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-time')) {
+						var timeWork = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-time').split(',');
+					}else{
+						var timeWork = [];
+					}
+					$('#time').html(' ');
+
+					if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-thisDay_interval') && thisDay==true){
+						var timeWork = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-thisDay_interval').split(',');
+						timeWork.forEach(function (item,index) {
+							if(item){
+								if(date_castom($(document).find('[name="DELIVERY_ID"]:checked').attr('data-timeserver'),item,thisDay)) {
+									$('#time').append('<option value="' + item + '">' + item + '</option>')
+								}
+							}
+						})
+					}else {
+						timeWork.forEach(function (item, index) {
+							if (item) {
+								if (date_castom($(document).find('[name="DELIVERY_ID"]:checked').attr('data-timeserver'),item, thisDay)) {
+									$('#time').append('<option value="' + item + '">' + item + '</option>')
+								}
+							}
+						})
+					}
+
+					if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-tomorrow') == date){
+						if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-deltime')){
+							$('#time').html(' ');
+							if($(document).find('[name="DELIVERY_ID"]:checked').attr('data-deltime')) {
+								var timeWork = $(document).find('[name="DELIVERY_ID"]:checked').attr('data-deltime').split(',');
+							}else{
+								var timeWork=[];
+							}
+							timeWork.forEach(function (item,index) {
+								if(item){
+									if(date_castom($(document).find('[name="DELIVERY_ID"]:checked').attr('data-timeserver'),item,thisDay)) {
+										$('#time').append('<option value="' + item + '">' + item + '</option>')
+									}
+								}
+							})
+						}
+					}
+				}
+
+			if($('#time').html().length>=10){
+				$('.error_text_time_custom').hide();
+			}else{
+				$('.error_text_time_custom').show();
+				$('.error_text_time_custom').css('color','red');
+			}
+
+			},
+			onShow:function(current_time,$input){
+				$input.prop('readonly', true);
+			}
+		})
+		window.vueCheckout.timeDelivery = null;
+		window.vueCheckout.timeDeliveryValues = null;
+	})
+	$('#pickup').click(function () {
+		window.vueCheckout.priceDelivery = 0;
+		window.vueCheckout.deleteCity();
+	})
+	$('#by_courier').click(function () {
+
+
+	})
+
+});
+function validateEmail(email) {
+	var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+	return re.test(String(email).toLowerCase());
+}
+

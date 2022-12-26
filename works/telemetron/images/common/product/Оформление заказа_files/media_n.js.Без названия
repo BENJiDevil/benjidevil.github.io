@@ -1,0 +1,68 @@
+$(document).ready(function() {
+	console.log('script loaded');
+
+	/* add video on PC */
+	if(window.innerWidth > 991){
+		var video = $('.header__video-wrapper').attr('data-video');
+		$('.header__video-wrapper').append('<video class="header-video" muted playsinline autoplay="true" loop><source src="'+ video +'" type="video/mp4"></video>');
+	}
+
+	/* change catalog menu on mobile */
+	if(window.innerWidth <= 767){
+		var links = [];
+		$('.product-tabs__wrapper .product-tabs__btn').each(function(){
+			links.push($(this));
+		});
+		$('.product-tabs__wrapper').html('');
+		$('.product-tabs__wrapper').append('<div class="product-tabs__row first"></div>');
+		$('.product-tabs__wrapper').append('<div class="product-tabs__row second"></div>');
+		for(let i = 0; i < links.length; i++){
+			let item = links[i];
+			if(i % 2){
+				$('.product-tabs__row.second').append(item);
+			}
+			else{
+				$('.product-tabs__row.first').append(item);
+			}
+		}
+	}
+
+	/* show message for catalog on mobile */
+	if(window.innerWidth <= 767 && $('.section-products .product-view-more').length > 0){
+		$(window).scroll(function() {
+			var btn_position = $('.section-products .product-view-more').offset().top,
+				menu_height = $('.footer__menu .b-menu').innerHeight(),
+				scroll = $(this).scrollTop();
+				
+			if((scroll + window.innerHeight - menu_height - 50) >= btn_position){
+				if(!$('.footer__menu .menu-messages .menu-messages__item.catalog-item').hasClass('show')){
+					$('.footer__menu .menu-messages .menu-messages__item.catalog-item').addClass('show');
+				}
+			}
+			else{
+				if($('.footer__menu .menu-messages .menu-messages__item.catalog-item').hasClass('show')){
+					$('.footer__menu .menu-messages .menu-messages__item.catalog-item').removeClass('show');
+				}
+			}
+		});
+	}
+
+	/* info page menu */
+	if(window.innerWidth <= 767 && $('.js-mobile-menu').length > 0){
+		var menuTitle = $('.js-mobile-menu').attr('data-title');
+		$('.js-mobile-menu .js-mobile-menu__list').before('<div class="js-menu-title">'+ menuTitle +'</div>');
+		$('.js-mobile-menu .js-mobile-menu__list').prepend('<div class="js-open-title"><span class="cart-modal__title--mod">Меню</span><a href="javascript:void(0);" class="js-close-menu"></a></div>')
+		
+		$('.js-menu-title').click(function(){
+			$(this).toggleClass('active');
+			$(this).siblings('.js-mobile-menu__list').toggleClass('show');
+			$('.section-tabs').css('display', 'none');
+		})
+		$('.js-close-menu').click(function(){
+			$('.js-mobile-menu__list').removeClass('show');
+			$('.section-tabs').css('display', '');
+		});
+	}
+
+	
+});

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Telemetron</title>
+    <meta name="description" content="Telemetron">
+    <meta name="keywords" content="Telemetron">
+    <meta name="author" content="Telemetron">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Telemetron">
+    <meta property="og:title" content="Telemetron">
+    <meta property="og:description" content="Telemetron">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://telemetron.ru/">
+    <link rel="canonical" href="https://telemetron.ru/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/ProximaNovaBold/ProximaNovaBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ProximaNovaExCnBold/ProximaNovaExCnBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ProximaNovaExCnRegular/ProximaNovaExCnRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ProximaNovaRegular/ProximaNovaRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ProximaNovaSemiBold/ProximaNovaSemibold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoBlack/RobotoBlack.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoBold/RobotoBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoLight/RobotoLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoMedium/RobotoMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoRegular/RobotoRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="langs-block">
+                    <div class="langs">
+                        <div class="cur-lang js-langs-show">
+                            <img src="images/common/svg/flags/flag_ru.svg" alt="ru" class="lang-icon">
+                        </div>
+                        <ul class="langs-list" style="display: none;">
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link">
+                                    <img src="images/common/svg/flags/flag_ru.svg" width="24px" height="16px" alt="ru" class="langs-list__icon"> Русский
+                                </a>
+                            </li>
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link">
+                                    <img src="images/common/svg/flags/flag_uk.svg" width="24px" height="16px" alt="en" class="langs-list__icon"> English
+                                </a>
+                            </li>
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link">
+                                    <img src="images/common/svg/flags/flag_it.svg" width="24px" height="16px" alt="it" class="langs-list__icon"> Italiano
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="tel:88005552632" class="phone-link">8 (800) 555-26-32</a>
+                </div>
+                <div class="search-block">
+                    <form action="" class="search-form js-search-form">
+                        <div class="input-group txt-group">
+                            <input type="text" name="search" placeholder="Поиск" class="search-input">
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="links-block">
+                    <a href="#" class="enter-link">Вход в систему</a>
+                    <a href="#" class="demo-link">Демо-доступ</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <a href="/" class="logo-link">
+                    <svg width="200" height="65" fill="none" xmlns="http://www.w3.org/2000/svg" class="telemetron-logo">
+                        <g id="robot">
+                            <path d="m36.64 36.4 3.191-3.097 6.504 6.586-3.1 3.067z" fill="#000" />
+                            <path d="M41.928 42.806c0 .662-.06 1.353-.091 2.015 1.671 1.564 2.31 2.135 3.981 3.79 3.92-1.595 4.984-7.068.82-9.534-1.914 1.504-2.917 2.226-4.71 3.73z" fill="#000" />
+                            <path d="m38.372 50.024 2.067 1.985 5.41-5.594-2.067-1.985z" fill="#000" />
+                            <path d="M38.342 49.783c.82.15 1.854-.18 2.036 1.143.091.571.183.872.274 1.684.09.842-.122 1.293-1.246 1.534-1.125.24-1.763.39-2.766.601-.638.15-.881.03-.79.962.182 1.985.182 1.835-.334 2.196-.67.45-.943.691-1.58-.451-.457-.812-1.095-1.865-1.581-2.707.668-1.113 2.249-4.15 2.705-5.052 1.124-.03 2.735.06 3.282.09zM9.605 33.352 2.985 39.9l3.072 3.042 6.62-6.548Z" fill="#000" />
+                            <path d="M7.373 42.806c0 .662.06 1.353.09 2.015-1.67 1.564-2.309 2.135-3.98 3.79-3.921-1.595-4.985-7.068-.821-9.534 1.884 1.504 2.887 2.226 4.71 3.73z" fill="#000" />
+                            <path d="m10.929 50.024-2.067 1.985-5.44-5.594 2.067-1.985Z" fill="#000" />
+                            <path d="M10.928 49.783c-.82.15-1.853-.18-2.036 1.143-.091.571-.182.872-.273 1.684-.091.842.121 1.293 1.246 1.534 1.124.24 1.762.39 2.765.601.639.15.882.03.79.962-.182 1.985-.182 1.835.335 2.196.669.45.942.691 1.58-.451.456-.812 1.094-1.865 1.58-2.707-.668-1.113-2.248-4.15-2.704-5.052-1.125-.03-2.705.06-3.283.09zM24.757 3.711h-1.155v7.218h1.155z" fill="#000" />
+                            <path d="M39.314 33.243c-4.802-2.045-9.877-3.007-14.952-2.977v30.163c7.598-7.368 14.375-16.27 14.952-27.186Z" fill="#a1daf8" />
+                            <path d="M34.999 32.972c1.064.542 1.823 1.053 2.553 1.564-3.313 11.97-9.695 17.322-13.16 20.18l.091 3.728s9.209-6.496 11.306-12.901c2.127-6.406 3.495-12 3.495-12-1.185-.51-2.4-1.022-3.586-1.533-.183.24-.365.541-.7.962z" fill="#fff" />
+                            <path d="M38.737 33.724a26.525 26.525 0 0 0-2.918-1.714c1.55.3 2.583.632 4.012 1.263-.79 6.075-3.738 18.615-15.378 27.186l-.152-2.616c7.324-5.263 12.764-12.721 14.436-24.119z" fill="#000" />
+                            <path d="M9.622 33.333c4.802-2.045 9.877-3.097 14.922-3.067l-.091 30.073c-7.142-3.64-13.707-18.285-14.831-27.006Z" fill="#008bd2" />
+                            <path d="M17.067 31.018c2.553-.512 4.438-.692 7.021-.662h.486v4.901l-1.003.121v-4.06c-2.34 0-4.011.18-6.321.662-2.34.451-4.285.812-6.534 1.744.699 6.195 7.294 22.044 13.828 24.119l-.06 2.646c-7.812-4.12-13.89-18.856-14.923-27.156 2.553-1.112 4.771-1.774 7.506-2.315Z" fill="#000" />
+                            <path d="M24.18 37.814c7.922 0 14.344-6.355 14.344-14.194 0-7.84-6.422-14.195-14.345-14.195-7.922 0-14.345 6.355-14.345 14.195s6.423 14.194 14.345 14.194z" fill="#a1daf8" />
+                            <path d="M20.684 13.034c1.155-1.293 5.258-1.805 6.048-1.925 4.984.722 8.236 4.571 9.421 8.45-2.4-3.668-7.993-7.788-15.469-6.525z" fill="#fff" />
+                            <path d="M35.212 26.116s.729-1.414 1.246-2.797c.668-1.835.881-2.165-1.125-3.368-5.197-3.098-13.281-4.09-19.086-2.797 1.854-3.91 7.325-5.203 11.914-5.864-9.118-2.256-17.992 4.15-17.02 14.495.608 6.586 6.869 11.307 13.312 11.307-6.078-2.736-8.48-6.075-9.148-9.864l14.71-.36c-.03 0 5.105-.542 5.197-.752z" fill="#008bd2" />
+                            <path d="M24.18 8.914a14.87 14.87 0 0 1 10.485 4.3c3.16 3.128 5.622 9.413 2.887 15.368 1.124-5.233.243-10.887-3.586-14.676-2.493-2.496-5.957-4.03-9.787-4.03-3.829 0-7.294 1.534-9.786 4.03-3.799 3.79-5.105 9.594-3.616 14.616-2.766-6.075-.365-12.06 2.917-15.307a14.925 14.925 0 0 1 10.485-4.3Z" fill="#000" />
+                            <path d="M14.788 20.432c6.2-2.586 12.704-2.526 18.782.09 2.158.932 2.584.932 2.28 2.737-.03.24-.091.511-.152.812a97.45 97.45 0 0 1-.79 3.458c-.639 2.616-.942 2.225-3.222 1.744-4.285-.932-10.698-.932-15.013 0-2.25.481-2.553.872-3.222-1.744-.273-1.113-.517-2.285-.79-3.458-.517-2.617-.334-2.587 2.127-3.64zM24.18 65c3.92 0 7.11-.571 7.11-1.263s-3.19-1.263-7.11-1.263c-3.921 0-7.112.571-7.112 1.263.03.692 3.221 1.263 7.111 1.263ZM24.331 37.844c3.04-.12 8.024-1.894 10.06-4.15-1.49 3.098-6.838 5.864-10.181 5.954z" fill="#000" />
+                            <path d="M23.541 56.55c0-.933-.122-1.354-.091-2.286-2.644-1.233-4.802-2.767-6.808-6.556 1.945 4.15 4.012 6.977 6.899 8.841zM22.994 19.98c4.194 0 7.233.542 9.209 1.294 1.58.601 2.31.752 1.762 3.007-.425 1.895-.638 2.616-.972 3.79-.152-2.226-.243-3.249-1.033-4.512-1.277-2.105-6.23-2.766-8.966-3.578z" fill="#fff" />
+                            <path d="M12.783 32.19c2.796 3.64 6.96 5.624 11.61 5.624-.031.601-.031 1.173-.062 1.774-5.835-.45-9.239-2.706-12.065-7.067-.03 0 .06.06.516-.33zM24.18 4.944c.911 0 1.67-.752 1.67-1.654 0-.902-.759-1.654-1.67-1.654-.912 0-1.672.752-1.672 1.654 0 .902.76 1.654 1.671 1.654zM19.803 31.318c.152-.15 1.55.993 4.376.963 2.796-.03 4.286-1.113 4.438-.963.304.27-1.368 2.376-4.407 2.346-2.948-.03-4.832-1.925-4.407-2.346zM21.14.945a.29.29 0 0 1 .395-.06c.122.09.152.27.06.39-.425.542-.607 1.233-.637 1.925-.03.752.152 1.504.516 2.165.091.15.03.331-.121.391-.152.09-.335.03-.395-.12-.426-.752-.608-1.594-.608-2.466.06-.782.304-1.564.79-2.225ZM19.378.494a.33.33 0 0 1 .425-.09c.152.09.182.27.091.39a4.727 4.727 0 0 0-.668 2.406c0 .842.212 1.744.547 2.647.06.15-.03.33-.183.36-.152.06-.334-.03-.364-.18-.365-.992-.578-1.925-.608-2.857.03-.902.243-1.804.76-2.676ZM17.615.163c.06-.15.243-.21.395-.12.152.06.213.24.121.39-.425.842-.668 1.745-.668 2.707-.03.992.182 2.045.547 3.097.06.15-.03.331-.182.361-.152.06-.335-.03-.365-.18-.395-1.113-.608-2.226-.578-3.278 0-1.053.244-2.045.73-2.977zM27.462.945a.29.29 0 0 0-.396-.06.283.283 0 0 0-.06.39c.425.542.608 1.233.638 1.925a4.152 4.152 0 0 1-.517 2.165c-.091.15-.03.331.122.391.152.09.334.03.395-.12.425-.752.608-1.594.608-2.466-.061-.782-.304-1.564-.79-2.225ZM29.194.494c-.091-.15-.274-.18-.395-.09-.122.09-.183.27-.091.39.455.782.668 1.594.668 2.406 0 .842-.213 1.744-.547 2.647-.06.15.03.33.182.36.152.06.335-.03.365-.18.365-.992.608-1.925.608-2.857a5.55 5.55 0 0 0-.79-2.676ZM30.987.163c-.06-.15-.243-.21-.395-.12-.152.06-.213.24-.122.39.426.842.669 1.745.669 2.707.03.992-.182 2.045-.547 3.097-.06.15.03.331.182.361.152.06.335-.03.365-.18.395-1.113.608-2.226.577-3.278a7.17 7.17 0 0 0-.729-2.977Z" fill="#000" />
+                        </g>
+                        <g id="text" fill="#000">
+                            <path d="M72.613 27.34h-3.315v13.666H65.64V27.34h-3.377v-3.284h10.351zM83.277 40.975h-8.475V24.056h7.943v3.253h-4.284v3.44h3.69v3.158h-3.69v3.753h4.816zM93.816 40.975h-7.943V24.056h3.658V37.66h4.285zM104.48 40.975h-8.475V24.056h7.943v3.253h-4.285v3.44h3.691v3.158h-3.69v3.753h4.816zM122.711 40.975h-3.502l-.844-13.854h-.063l-2.564 13.854h-2.627l-2.47-13.948h-.063l-.938 13.948h-3.503l1.782-16.919h4.63l1.875 11.165h.062l2.034-11.165h4.534zM133.531 40.975h-8.475V24.056H133v3.253h-4.284v3.44h3.69v3.158h-3.69v3.753h4.815zM145.509 27.34h-3.315v13.666h-3.66V27.34h-3.376v-3.284h10.35zM158.268 40.975h-3.753l-2.94-8.381h-.062v8.38h-3.659V24.057h4.785c.938 0 1.908.188 2.845.563.939.376 1.627.97 2.034 1.783.406.813.593 1.626.593 2.502 0 1.063-.218 1.907-.688 2.595-.438.688-1.188 1.282-2.188 1.845zm-6.724-9.32c1.189 0 1.939-.218 2.252-.687.313-.47.469-1.064.469-1.783 0-1.626-.657-2.439-2.001-2.439h-.751v4.91zM159.894 32.437c0-2.376.25-4.128.782-5.222.531-1.126 1.188-1.97 2.063-2.596.845-.625 1.94-.938 3.253-.938 1.095 0 1.939.188 2.627.532.656.344 1.282.875 1.845 1.563s.97 1.533 1.25 2.533c.25 1.001.407 2.346.407 4.003 0 3.409-.563 5.754-1.72 7.068-1.126 1.282-2.595 1.939-4.41 1.939-1.844 0-3.314-.657-4.409-2.002-1.125-1.344-1.688-3.658-1.688-6.88zm3.878-1.032V32.5c0 1.782.062 2.94.187 3.534.126.563.375 1 .75 1.344.376.313.845.5 1.377.5.437 0 .844-.156 1.188-.468.375-.313.626-.813.751-1.439.156-.656.219-1.782.219-3.44 0-1.47-.063-2.533-.188-3.158-.125-.626-.376-1.126-.75-1.533-.376-.375-.814-.594-1.376-.594-.782 0-1.345.344-1.689 1-.282.626-.469 1.69-.469 3.16zM186.694 40.975h-3.878l-4.315-10.696h-.062v10.696h-3.566v-16.95h4.003l4.253 10.508h.063V24.025h3.471v16.95z" />
+                        </g>
+                    </svg>
+                </a>
+                <div class="menu-block">
+                    <nav class="products-menu">
+                        <ul class="products-menu__list">
+                            <li class="products-menu__item submenu-item">
+                                <a href="#" class="products-menu__link">Телеметрия</a>
+                                <a href="javascript:void(0);" class="submenu-link" style="display: none;"><i class="icon icon-menu-arrow"></i></a>
+                                <ul class="submenu-list" style="display: none;">
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="about/common">Общая информация</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="about/modem">Модем</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="about/lk">Личный кабинет</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="about/telemetron-teleport">Моб. приложение</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="about/compatibility-list">Совместимые автоматы</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="about/price">Цены</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="coffeevending">Телеметрия для настольных кофемашин</a></li>
+                                </ul>
+                            </li>
+                            <li class="products-menu__item">
+                                <a href="#" class="products-menu__link">Фискализация</a>
+                            </li>
+                            <li class="products-menu__item">
+                                <a href="#" class="products-menu__link">Эквайринг</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="main-menu">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item submenu-item">
+                                <a href="#" class="main-menu__link">Каталог</a>
+                                <a href="javascript:void(0);" class="submenu-link" style="display: none;"><i class="icon icon-menu-arrow"></i></a>
+                                <ul class="submenu-list" style="display: none;">
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/equipment/">Оборудование</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/komplektuyushhie/">Комплектующие</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/выездной-сервис">Выездной сервис</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/discount/">Telemetron Discount</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu__item submenu-item">
+                                <a href="#" class="main-menu__link">Компания</a>
+                                <a href="javascript:void(0);" class="submenu-link" style="display: none;"><i class="icon icon-menu-arrow"></i></a>
+                                <ul class="submenu-list" style="display: none;">
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="komanda">Команда</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="company">О компании</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="testimonials/">Отзывы</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="news/">Новости</a></li>
+                                    <li class="submenu-list__item"><a class="submenu-list__link" href="for-partners-and-distributors">Партнерам</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link">Техподдержка</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="#" class="main-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="micromarkers-page">
+        <div class="vending-header">
+            <div class="container">
+                <ul class="breadcrumbs-list">
+                    <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">Телеметрон</a></li>
+                    <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">О системе</a></li>
+                    <li class="breadcrumbs-list__item"><span class="breadcrumbs-list__last">Общая информация</span></li>
+                </ul>
+                <h1 class="vending-header__title page-title">Микромаркеты самообслуживания <span>Вендинг будущего выглядит так</span></h1>
+                <h2 class="vending-header__subtitle page-title">Быстрая окупаемость. Высокая маржа.</h2>
+                <a href="#" class="header-btn btn-style">Скачать бизнес-план <i class="icon icon-btn_arrow"></i></a>
+            </div>
+        </div>
+        <section class="coffee__what">
+            <div class="container">
+                <div class="coffee-page__what__content">
+                    <div class="coffee-page__what__content__left-side">
+                        <img src="images/vendovendi.png" alt="Что это?">
+                    </div>
+                    <div class="coffee-page__what__content__right-side">
+                        <h2 class="coffee-page__what__title section-title">Что это?</h2>
+                        <div class="descr">
+                            <p>Микромаркет — это умный холодильник, морозильный шкаф или кофемашина для продажи свежей готовой еды, напитков и прочих товаров в офисах, бизнес-центрах и других местах общественного пользования.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="coffee__advantages">
+            <div class="container">
+                <h2 class="coffee-page__advantages__title">Преимущества решения</h2>
+                <div class="coffee-page__advantages__content">
+                    <div class="coffee-page__advantages__content__item">
+                        <div class="icon-block">
+                            <img src="/images/serv_icons/icon5.png" alt="Программа лояльности" class="item-icon">
+                        </div>
+                        <div class="descr-block">
+                            <h3 class="item-title">Низкая ставка</h3>
+                            <p>Ставка эквайринга — до 0,7%</p>
+                        </div>
+                    </div>
+                    <div class="coffee-page__advantages__content__item">
+                        <div class="icon-block">
+                            <img src="/images/serv_icons/icon5.png" alt="Программа лояльности" class="item-icon">
+                        </div>
+                        <div class="descr-block">
+                            <h3 class="item-title">Функциональность</h3>
+                            <p>Поддержка динамического QR-кода для быстрой оплаты</p>
+                        </div>
+                    </div>
+                    <div class="coffee-page__advantages__content__item">
+                        <div class="icon-block">
+                            <img src="/images/serv_icons/icon5.png" alt="Программа лояльности" class="item-icon">
+                        </div>
+                        <div class="descr-block">
+                            <h3 class="item-title">Надежность</h3>
+                            <p>Компактное, вандалостойкое устройство</p>
+                        </div>
+                    </div>
+                    <div class="coffee-page__advantages__content__item">
+                        <div class="icon-block">
+                            <img src="/images/serv_icons/icon5.png" alt="Программа лояльности" class="item-icon">
+                        </div>
+                        <div class="descr-block">
+                            <h3 class="item-title">Низкая ставка</h3>
+                            <p>Ставка эквайринга — до 0,7%</p>
+                        </div>
+                    </div>
+                    <div class="coffee-page__advantages__content__item">
+                        <div class="icon-block">
+                            <img src="/images/serv_icons/icon5.png" alt="Программа лояльности" class="item-icon">
+                        </div>
+                        <div class="descr-block">
+                            <h3 class="item-title">Функциональность</h3>
+                            <p>Поддержка динамического QR-кода для быстрой оплаты</p>
+                        </div>
+                    </div>
+                    <div class="coffee-page__advantages__content__item">
+                        <div class="icon-block">
+                            <img src="/images/serv_icons/icon5.png" alt="Программа лояльности" class="item-icon">
+                        </div>
+                        <div class="descr-block">
+                            <h3 class="item-title">Надежность</h3>
+                            <p>Компактное, вандалостойкое устройство</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="coffee__what">
+            <div class="container">
+                <div class="coffee-page__what__content">
+                    <div class="coffee-page__what__content__left-side">
+                        <img src="images/vendovendi.png" alt="Что это?">
+                    </div>
+                    <div class="coffee-page__what__content__right-side">
+                        <h2 class="coffee-page__what__title section-title">Как это работает?</h2>
+                        <div class="descr">
+                            <p dir="ltr">К примеру, оборот магазина в среднем 500 000 рублей в месяц, 70% транзакций — безналичные платежи через терминал со ставкой банка 2%. </p>
+                            <div style="margin: 15px 0;">Магазин платит банку за эквайринг примерно:<br><em>500 000 * 0,7 * 0,02 = 7000</em> рублей в месяц.</div>
+                            <div style="margin: 15px 0;">При оплате через СБП QR-кодом плата за эквайринг составит:<br><em>500 000 * 0,7 * 0,004 = 1400</em> рублей в месяц.</div>
+                            <p><strong>Расходы на эквайринг можно уменьшить в 5 раз!</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vending-page__sphere       sphere-block">
+            <div class="container">
+                <h2 class="sphere-block__title section-title">Куда разместить микромаркет?</h2>
+                <div class="sphere-block__content">
+                    <div class="sphere-block__content__item">
+                        <div class="icon-block">
+                            <img src="images/common/main/sphere/sphere_icon1.jpg" alt="sphere" class="item-icon">
+                        </div>
+                        <div class="descr-block">
+                            <p>QR-платежи</p>
+                        </div>
+                    </div>
+                    <div class="sphere-block__content__item">
+                        <div class="icon-block">
+                            <img src="images/common/main/sphere/sphere_icon1.jpg" alt="sphere" class="item-icon">
+                        </div>
+                        <div class="descr-block">
+                            <p>Телеметрия</p>
+                        </div>
+                    </div>
+                    <div class="sphere-block__content__item">
+                        <div class="icon-block">
+                            <img src="images/common/main/sphere/sphere_icon1.jpg" alt="sphere" class="item-icon">
+                        </div>
+                        <div class="descr-block">
+                            <p>Система лояльности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="micromarkers-page__start">
+            <div class="container">
+                <div class="micromarkers-page__start__content">
+                    <div class="micromarkers-page__start__content__left-side">
+                        <h2 class="micromarkers-page__start__title section-title">С чего начать?</h2>
+                        <div class="descr-block">
+                            <ol>
+                                <li style="font-weight: 400;" aria-level="1"><strong>Выбираем холодильник</strong><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">Нужен компактный холодильник в коворкинг или двухкамерный в большой офис? А может, нужна кофемашина? Поможем определиться с выбором и подобрать оптимальный вариант.</span></li>
+                                <li style="font-weight: 400;" aria-level="1"><strong>Выбираем локацию и поставщиков</strong><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">Расскажем, как подобрать локации, поможем выбрать ассортимент и поставщиков продуктов </span></li>
+                                <li style="font-weight: 400;" aria-level="1"><strong>Заключаем договор</strong><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">Подписываем документы, подключаем эквайринг, определяем сроки отгрузки и устанавливаем микромаркет.</span></li>
+                                <li><strong>Запускаем продажи</strong><strong><br></strong><span style="font-weight: 400;">Загружаете ассортимент в холодильник и начинаете продавать! А мы проконсультируем по продвижению и будем сопровождать на всех этапах работы.</span><span style="font-weight: 400;"><br></span></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="micromarkers-page__start__content__right-side">
+                        <img src="images/Micromarkets/web/briskly-components-new.png" alt="С чего начать?" class="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="micromarkers-page__test">
+            <div class="container">
+                <h2 class="micromarkers-page__test__title section-title">Какой микромаркет подойдёт вам лучше всего? <br> Пройдите тест и узнайте!</h2>
+                <a href="#" class="test-link btn-style">Пройти тест</a>
+            </div>
+        </section>
+        <section class="try-form">
+            <div class="container">
+                <h2 class="try-form__title section-title">Попробуйте Телеметрон</h2>
+                <div class="try-form__content">
+                    <div class="b24-form">
+                        <div id="b24-81004186462238784510081368465618" data-styles-apllied="true" class="">
+                            <div class="b24-form-wrapper b24-form-shadow">
+                                <div class="b24-form-header-padding"></div>
+                                <div class="b24-form-content b24-form-padding-side">
+                                    <form method="post" novalidate="novalidate">
+                                        <div>
+                                            <div class="b24-form-field b24-form-field-name b24-form-control-string">
+                                                <div>
+                                                    <div>
+                                                        <div class="b24-form-control-container b24-form-control-icon-after"><input name="name" autocomplete="given-name" type="string" class="b24-form-control">
+                                                            <div class="b24-form-control-label">
+                                                                Имя
+                                                                <span class="b24-form-control-required">*</span>
+                                                            </div>
+                                                            <div class="b24-form-control-alert-message" style="display: none;">
+                                                                Поле обязательно для заполнения
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="b24-form-field b24-form-field-last-name b24-form-control-string">
+                                                <div>
+                                                    <div>
+                                                        <div class="b24-form-control-container b24-form-control-icon-after"><input name="lastname" autocomplete="family-name" type="string" class="b24-form-control">
+                                                            <div class="b24-form-control-label">
+                                                                Фамилия
+                                                                <span class="b24-form-control-required" style="display: none;">*</span>
+                                                            </div>
+                                                            <div class="b24-form-control-alert-message" style="display: none;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="b24-form-field b24-form-field-company-name b24-form-control-string">
+                                                <div>
+                                                    <div>
+                                                        <div class="b24-form-control-container b24-form-control-icon-after"><input type="string" class="b24-form-control">
+                                                            <div class="b24-form-control-label">
+                                                                Название компании
+                                                                <span class="b24-form-control-required" style="display: none;">*</span>
+                                                            </div>
+                                                            <div class="b24-form-control-alert-message" style="display: none;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="b24-form-field b24-form-field-email b24-form-control-string">
+                                                <div>
+                                                    <div>
+                                                        <div class="b24-form-control-container b24-form-control-icon-after"><input name="email" autocomplete="email" type="email" class="b24-form-control">
+                                                            <div class="b24-form-control-label">
+                                                                E-mail
+                                                                <span class="b24-form-control-required">*</span>
+                                                            </div>
+                                                            <div class="b24-form-control-alert-message" style="display: none;">
+                                                                Поле обязательно для заполнения
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="b24-form-field b24-form-field-phone b24-form-control-string">
+                                                <div>
+                                                    <div>
+                                                        <div class="b24-form-control-container b24-form-control-icon-after"><input name="phone" autocomplete="tel" type="tel" class="b24-form-control">
+                                                            <div class="b24-form-control-label">
+                                                                Телефон
+                                                                <span class="b24-form-control-required">*</span>
+                                                            </div>
+                                                            <div class="b24-form-control-alert-message" style="display: none;">
+                                                                Поле обязательно для заполнения
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="b24-form-field b24-form-field-list b24-form-control-list b24-form-control-group">
+                                                <div>
+                                                    <div>
+                                                        <div class="b24-form-control-container b24-form-control-icon-after"><input readonly="readonly" type="text" class="b24-form-control">
+                                                            <div class="b24-form-control-label">
+                                                                Вас интересует
+                                                                <span class="b24-form-control-required" style="display: none;">*</span>
+                                                            </div>
+                                                            <div class="b24-form-control-alert-message" style="display: none;">
+                                                            </div>
+                                                            <div class="b24-form-dropdown"></div>
+                                                        </div>
+                                                        <div class="b24-form-dropdown"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="b24-form-field b24-form-field-agreement b24-form-control-agreement">
+                                                <div><label class="b24-form-control-container"><input type="checkbox" onclick="this.blur()"> <span class="b24-form-control-desc"><a href="https://telemetron.ru/policy" target="_blank" class="b24-form-field-agreement-link">Нажимая на кнопку "Отправить", я выражаю согласие с политикой в отношении обработки персональных данных</a></span> <span class="b24-form-control-required" style="display: none;">*</span>
+                                                        <div class="b24-form-control-alert-message" style="display: none;">
+                                                        </div>
+                                                    </label> </div>
+                                            </div>
+                                            <div class="v-portal" style="display: none;"></div>
+                                        </div>
+                                        <div class="b24-form-btn-container">
+                                            <div class="b24-form-btn-block"><button type="submit" class="b24-form-btn">
+                                                    Отправить
+                                                </button></div>
+                                        </div> <span style="color: red; display: none;">
+                        Debug: fill fields
+                    </span>
+                                    </form>
+                                </div>
+                                <div class="b24-form-state-container">
+                                    <div class="b24-form-loader" style="display: none;">
+                                        <div class="b24-form-loader-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 174">
+                                                <g transform="translate(52.5,16.5)">
+                                                    <path id="bxSunLines" d="M79,0 C80.6568542,0 82,1.34314575 82,3 L82,22 C82,23.6568542 80.6568542,25 79,25 C77.3431458,25 76,23.6568542 76,22 L76,3 C76,1.34314575 77.3431458,0 79,0 Z M134.861,23.139 C136.032146,24.3104996 136.032146,26.2095004 134.861,27.381 L121.426,40.816 C120.248863,41.9529166 118.377746,41.9366571 117.220544,40.7794557 C116.063343,39.6222543 116.047083,37.7511367 117.184,36.574 L130.619,23.139 C131.7905,21.9678542 133.6895,21.9678542 134.861,23.139 L134.861,23.139 Z M158,79 C158,80.6568542 156.656854,82 155,82 L136,82 C134.343146,82 133,80.6568542 133,79 C133,77.3431458 134.343146,76 136,76 L155,76 C156.656854,76 158,77.3431458 158,79 Z M134.861,134.861 C133.6895,136.032146 131.7905,136.032146 130.619,134.861 L117.184,121.426 C116.40413,120.672777 116.091362,119.557366 116.365909,118.508478 C116.640455,117.45959 117.45959,116.640455 118.508478,116.365909 C119.557366,116.091362 120.672777,116.40413 121.426,117.184 L134.861,130.619 C136.032146,131.7905 136.032146,133.6895 134.861,134.861 Z M79,158 C77.3431458,158 76,156.656854 76,155 L76,136 C76,134.343146 77.3431458,133 79,133 C80.6568542,133 82,134.343146 82,136 L82,155 C82,156.656854 80.6568542,158 79,158 Z M23.139,134.861 C21.9678542,133.6895 21.9678542,131.7905 23.139,130.619 L36.574,117.184 C37.3272234,116.40413 38.4426337,116.091362 39.491522,116.365909 C40.5404103,116.640455 41.3595451,117.45959 41.6340915,118.508478 C41.9086378,119.557366 41.5958698,120.672777 40.816,121.426 L27.381,134.861 C26.2095004,136.032146 24.3104996,136.032146 23.139,134.861 Z M0,79 C0,77.3431458 1.34314575,76 3,76 L22,76 C23.6568542,76 25,77.3431458 25,79 C25,80.6568542 23.6568542,82 22,82 L3,82 C1.34314575,82 0,80.6568542 0,79 L0,79 Z M23.139,23.139 C24.3104996,21.9678542 26.2095004,21.9678542 27.381,23.139 L40.816,36.574 C41.5958698,37.3272234 41.9086378,38.4426337 41.6340915,39.491522 C41.3595451,40.5404103 40.5404103,41.3595451 39.491522,41.6340915 C38.4426337,41.9086378 37.3272234,41.5958698 36.574,40.816 L23.139,27.381 C21.9678542,26.2095004 21.9678542,24.3104996 23.139,23.139 Z" fill="#FFD110" class="bx-sun-lines-animate"></path>
+                                                </g>
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path d="M65.745 160.5l.245-.005c13.047-.261 23.51-10.923 23.51-23.995 0-13.255-10.745-24-24-24-3.404 0-6.706.709-9.748 2.062l-.47.21-.196-.477A19.004 19.004 0 0 0 37.5 102.5c-10.493 0-19 8.507-19 19 0 1.154.103 2.295.306 3.413l.108.6-.609-.01A17.856 17.856 0 0 0 18 125.5C8.335 125.5.5 133.335.5 143s7.835 17.5 17.5 17.5h47.745zM166.5 85.5h69v-.316l.422-.066C251.14 82.73 262.5 69.564 262.5 54c0-17.397-14.103-31.5-31.5-31.5-.347 0-.694.006-1.04.017l-.395.013-.103-.382C226.025 9.455 214.63.5 201.5.5c-15.014 0-27.512 11.658-28.877 26.765l-.047.515-.512-.063a29.296 29.296 0 0 0-3.564-.217c-16.016 0-29 12.984-29 29 0 15.101 11.59 27.643 26.542 28.897l.458.039v.064z" stroke-opacity=".05" stroke="#000" fill="#000"></path>
+                                                    <circle stroke="#FFD110" stroke-width="6" cx="131.5" cy="95.5" r="44.5" class="b24-form-loader-icon-sun-ring"></circle>
+                                                </g>
+                                            </svg></div>
+                                    </div>
+                                    <div class="b24-form-state b24-form-success" style="display: none;">
+                                        <div class="b24-form-state-inner">
+                                            <div class="b24-form-state-icon b24-form-success-icon"></div>
+                                            <div class="b24-form-state-text">
+                                                <p>Отправлено!</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="b24-form-inner-box"></div>
+                                    </div>
+                                    <div class="b24-form-state b24-form-error" style="display: none;">
+                                        <div class="b24-form-state-inner">
+                                            <div class="b24-form-state-icon b24-form-error-icon"></div>
+                                            <div class="b24-form-state-text">
+                                                <p></p>
+                                            </div> <button class="b24-form-btn b24-form-btn-border b24-form-btn-tight">
+                                                Отправить еще раз
+                                            </button>
+                                        </div>
+                                        <div class="b24-form-inner-box"></div>
+                                    </div>
+                                    <div class="b24-form-state b24-form-warning" style="display: none;">
+                                        <div class="b24-form-state-inner">
+                                            <div class="b24-form-state-icon b24-form-warning-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 169 169">
+                                                    <defs>
+                                                        <circle id="a" cx="84.5" cy="84.5" r="65.5"></circle>
+                                                        <filter x="-.8%" y="-.8%" width="101.5%" height="101.5%" filterUnits="objectBoundingBox" id="b">
+                                                            <feGaussianBlur stdDeviation=".5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+                                                            <feOffset dx="-1" dy="-1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+                                                            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+                                                            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0886691434 0" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+                                                            <feGaussianBlur stdDeviation=".5" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+                                                            <feOffset dx="1" dy="1" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+                                                            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+                                                            <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.292285839 0" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+                                                            <feMerge>
+                                                                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                                                                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+                                                            </feMerge>
+                                                        </filter>
+                                                    </defs>
+                                                    <g fill="none" fill-rule="evenodd">
+                                                        <circle stroke-opacity=".05" stroke="#000" fill-opacity=".07" fill="#000" cx="84.5" cy="84.5" r="84"></circle>
+                                                        <use fill="#FFF" xlink:href="#a"></use>
+                                                        <use fill="#000" filter="url(#b)" xlink:href="#a"></use>
+                                                        <path d="M114.29 99.648L89.214 58.376c-1.932-3.168-6.536-3.168-8.427 0L55.709 99.648c-1.974 3.25.41 7.352 4.234 7.352h50.155c3.782 0 6.166-4.103 4.193-7.352zM81.404 72.756c0-1.828 1.48-3.29 3.33-3.29h.452c1.85 0 3.33 1.462 3.33 3.29v12.309c0 1.827-1.48 3.29-3.33 3.29h-.453c-1.85 0-3.33-1.463-3.33-3.29V72.756zm7.77 23.886c0 2.274-1.892 4.143-4.194 4.143s-4.193-1.869-4.193-4.143c0-2.275 1.891-4.144 4.193-4.144 2.302 0 4.193 1.869 4.193 4.144z" fill="#000" opacity=".4"></path>
+                                                    </g>
+                                                </svg></div>
+                                            <div class="b24-form-state-text">
+                                                <p>Форма не актуальна</p>
+                                            </div>
+                                        </div>
+                                        <div class="b24-form-inner-box"></div>
+                                    </div>
+                                </div>
+                                <div class="b24-form-recaptcha">
+                                    <div>
+                                        <div class="grecaptcha-badge" data-style="inline" style="width: 256px; height: 60px; box-shadow: gray 0px 0px 5px;">
+                                            <div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcHcdEUAAAAACBnH9teNrlEpOQb63k7g1tAFpEW&amp;co=aHR0cHM6Ly90ZWxlbWV0cm9uLnJ1OjQ0Mw..&amp;hl=ru&amp;v=5qcenVbrhOy8zihcc2aHOWD4&amp;size=invisible&amp;badge=inline&amp;cb=eckuwviosd37" role="presentation" name="a-isv85kokk87s" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="256" height="60" frameborder="0"></iframe></div>
+                                            <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                        </div><iframe style="display: none;"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer lazyload" data-bgset="images/bg/mobile/footer_bg.jpg [(max-width: 575px)] | images/bg/pad/footer_bg.jpg [(max-width: 1024px)] | images/bg/desk/footer_bg.jpg [(min-width: 1025px)]">
+        <div class="container">
+            <div class="footer__top">
+                <div class="descr-side">
+                    <h3 class="mail-title">Как выжать из торговых автоматов максимум?</h3>
+                    <div class="mail-descr">
+                        <p>Подпишитесь, чтобы узнать.</p>
+                        <p>Пишем только по делу. Не чаще 2 раз в месяц.</p>
+                    </div>
+                </div>
+                <div class="form-side">
+                    <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=61kd194dzot3gwdgo6hh6poxtixd815mucmj35tdbuwoensakow6y" name="subscribtion_form">
+                        <div class="input-group">
+                            <input class="text-input subscribe-form-item__control subscribe-form-item__control--input-email" type="text" name="email" placeholder="E-mail" value="">
+                        </div>
+                        <div class="input-group btn-group">
+                            <input class="btn subscribe-form-item btn-style blue-style subscribe-form-item--btn-submit" type="submit" onclick="ym(47530231,'reachGoal','mailSubmit');  dataLayer.push({'event':'event-to-GA', 'eventCategory':'form', 'eventAction':'fromTheMain'})" value="Подписаться">
+                        </div>
+                        <div class="input-group check-group">
+                            <label>
+                                <input type="checkbox" name="check">
+                                <span class="label">Я согласен с <a href="policy">политикой конфиденциальности и условиями обработки персональных данных</a></span>
+                            </label>
+                        </div>
+                        <input type="hidden" name="charset" value="UTF-8">
+                        <input type="hidden" name="default_list_id" value="3">
+                        <input type="hidden" name="overwrite" value="2">
+                        <input type="hidden" name="is_v5" value="1">
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer-column main-column">
+                    <a href="/" class="logo-link">
+                        <svg width="125" height="20" fill="none" class="telemetron-logo" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.635 4.84H7.32v13.666H3.662V4.84H.285V1.556h10.35Zm10.664 13.635h-8.475V1.556h7.943v3.253h-4.284v3.44h3.69v3.158h-3.69v3.753h4.816zm10.539 0h-7.943V1.556h3.658V15.16h4.285zm10.664 0h-8.476V1.556h7.943v3.253h-4.285v3.44h3.692v3.158h-3.69v3.753h4.816zm18.23 0h-3.501l-.844-13.854h-.063L53.76 18.475h-2.627l-2.47-13.948H48.6l-.939 13.948h-3.503L45.94 1.556h4.63l1.876 11.165h.062L54.54 1.556h4.535zm10.82 0h-8.474V1.556h7.944v3.253h-4.285v3.44h3.69v3.158h-3.69v3.753h4.816zM83.53 4.84h-3.315v13.666h-3.66V4.84H73.18V1.556h10.35zm12.76 13.635h-3.754l-2.94-8.381h-.062v8.38h-3.659V1.557h4.785c.938 0 1.908.188 2.845.563.94.376 1.627.97 2.034 1.783.406.813.593 1.626.593 2.502 0 1.063-.218 1.907-.688 2.595-.438.688-1.188 1.282-2.188 1.845zm-6.725-9.32c1.19 0 1.94-.218 2.252-.687.313-.47.47-1.064.47-1.783 0-1.626-.658-2.439-2.002-2.439h-.75v4.91zm8.35.782c0-2.376.25-4.128.782-5.222.531-1.126 1.188-1.97 2.063-2.596.845-.625 1.94-.938 3.253-.938 1.095 0 1.94.188 2.627.532.656.344 1.282.875 1.845 1.563s.97 1.533 1.25 2.533c.25 1.001.407 2.346.407 4.003 0 3.409-.563 5.754-1.72 7.068-1.126 1.282-2.595 1.939-4.41 1.939-1.844 0-3.314-.657-4.409-2.002-1.125-1.344-1.688-3.658-1.688-6.88zm3.878-1.032V10c0 1.782.062 2.94.187 3.534.126.563.375 1 .75 1.344.376.313.845.5 1.377.5.437 0 .844-.156 1.188-.468.375-.313.626-.813.751-1.439.156-.656.22-1.782.22-3.44 0-1.47-.064-2.533-.189-3.158-.125-.626-.376-1.126-.75-1.533-.376-.375-.814-.594-1.376-.594-.782 0-1.345.344-1.689 1-.282.626-.469 1.69-.469 3.16zm22.922 9.57h-3.878l-4.315-10.696h-.062v10.696h-3.566V1.525h4.003l4.253 10.508h.063V1.525h3.471v16.95z" fill="#fff" />
+                        </svg>
+                    </a>
+                    <div class="phones-list">
+                        <a href="tel:88005552632">8 (800) 555-26-32</a>
+                        <a href="tel:88123132983">8 (812) 313-29-83</a>
+                        <a href="tel:87172640932">8 (717) 264-09-32</a>
+                        <span class="time-info">работаем каждый день с 8-00 до 20-00</span>
+                    </div>
+                    <div class="social-list">
+                        <a href="http://vk.com/telemetron" target="_blank" class="social-list__link"><i class="icon icon-social_vk"></i></a>
+                        <a href="http://www.youtube.com/channel/UCVvPLultxAqK_r5-vIrOV-A" target="_blank" class="social-list__link"><i class="icon icon-social_yt"></i></a>
+                        <a href="https://t.me/telemetron_ru" target="_blank" class="social-list__link"><i class="icon icon-social_tg"></i></a>
+                    </div>
+                    <a href="mailto:info@telemetron.ru" class="mail-link">info@telemetron.ru</a>
+                    <p class="copyright">© 2013-2022 «Телеметрон»,<br> г. Санкт-Петербург, ул. Возрождения, 20а</p>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-column__item">
+                        <span class="column-title">Телеметрия</span>
+                        <a href="javascript:void(0);" class="sublist-link"><i class="icon icon-menu-arrow"></i></a>
+                        <ul class="submenu-list">
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="about/common">Общая информация</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="about/modem">Модем</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="about/lk">Личный кабинет</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="about/telemetron-teleport">Мобильное приложение</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="about/compatibility-list">Совместимые аппараты</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="testimonials/">Отзывы</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="otzyvysotrudnikov">Отзывы сотрудников</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="https://my.telemetron.net/" target="_blank">Кабинет PRO</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="https://lite.telemetron.net" target="_blank">Кабинет LITE</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-column__item">
+                        <a href="#" class="column-title">Каталог</a>
+                        <a href="javascript:void(0);" class="sublist-link"><i class="icon icon-menu-arrow"></i></a>
+                        <ul class="submenu-list">
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/kassyi-i-telemetriya/telemetron-ultra">Ультра</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/kassyi-i-telemetriya/optima">Оптима</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/equiring/">Безналичные платежи</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/ekran-qr-kodov">QR-дисплеи</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/komplektuyushhie/">Комплектующие</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="catalog/modul-perezagruzki/">Модуль перезагрузки</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-column__item">
+                        <a href="#" class="column-title">Эквайринг</a>
+                        <a href="javascript:void(0);" class="sublist-link"><i class="icon icon-menu-arrow"></i></a>
+                        <ul class="submenu-list">
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="acquiring-for-coffemashines">Эквайринг для кофемашин</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="acquiring-for-сoffeecorners">Эквайринг для кофекорнеров</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="acquiring-for-pulse">Эквайринг для импульсных автоматов</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="carwash">Эквайринг для автомоек</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="acquiring-for-watervending">Эквайринг для водоматов</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column__item">
+                        <a href="#" class="column-title">Фискализация</a>
+                        <a href="javascript:void(0);" class="sublist-link"><i class="icon icon-menu-arrow"></i></a>
+                        <ul class="submenu-list">
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="for-partners-and-distributors">Партнёрам</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="company">О компании</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="news/">Новости</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="articles/">Статьи</a></li>
+                            <li class="submenu-list__item"><a class="submenu-list__link" href="oferta">Публичная оферта</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title"></h2>
+                    <h3 class="modal__subtitle"></h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Заказать</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
