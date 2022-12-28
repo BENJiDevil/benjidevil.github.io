@@ -96,6 +96,21 @@
 .icon-tw:before {
   content: "\e80e"
 }
+.icon-caution:before {
+  content: "\e80f"
+}
+.icon-check-list:before {
+  content: "\e810"
+}
+.icon-faq_arrow:before {
+  content: "\e811"
+}
+.icon-minus:before {
+  content: "\e812"
+}
+.icon-plus:before {
+  content: "\e813"
+}
 :root {
   --app-height: 100%
 }
@@ -293,7 +308,7 @@ body.overflow .header {
 }
 @media (max-width:420px) {
   .header__content .main-menu {
-    margin: 55px auto 0
+    margin: 25px auto 0
   }
 }
 .header__content .main-menu__list {
@@ -322,7 +337,7 @@ body.overflow .header {
     -ms-flex: 0 0 calc(50% - 10px);
     flex: 0 0 calc(50% - 10px);
     max-width: calc(50% - 10px);
-    margin-left: 40px
+    margin-left: 20px
   }
 }
 .header__content .main-menu__item:nth-of-type(1) {
@@ -853,4 +868,21 @@ body.overflow .header {
 }
 .header + main:not(.main-page) {
   padding-top: calc(var(--header-height) + 45px)
+}
+.header.dark-style {
+  background: -webkit-gradient(linear,left top,left bottom,from(#092f54),to(#6d7aa7));
+  background: -o-linear-gradient(top,#092f54 0,#6d7aa7 100%);
+  background: linear-gradient(180deg,#092f54 0,#6d7aa7 100%);
+  padding-bottom: 35px
+}
+.header.dark-style + .product-page .product-page__top {
+  margin-top: 25px
+}
+@media (max-width:768px) {
+  .header.dark-style {
+    padding-bottom: 15px
+  }
+  .header.dark-style + .product-page .product-page__top {
+    margin-top: 0
+  }
 }

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Pa-stor</title>
+    <meta name="description" content="Pa-stor">
+    <meta name="keywords" content="Pa-stor">
+    <meta name="author" content="Pa-stor">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pa-stor">
+    <meta property="og:title" content="Pa-stor">
+    <meta property="og:description" content="Pa-stor">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://pastor.com/">
+    <link rel="canonical" href="https://pastor.com/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#092f54">
+    <meta name="theme-color" content="#092f54">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/MavenProBold/MavenProBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProMedium/MavenProMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProRegular/MavenProRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MavenProSemiBold/MavenProSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <header class="header dark-style">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                </a>
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <img src="images/common/menu/menu_icon1.png" alt="menu" class="menu-icon">
+                                <span>Needles cartridges</span>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                <img src="images/common/menu/menu_icon2.png" alt="menu" class="menu-icon">
+                                <span>CBD catalog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="links-row">
+                    <a href="#" class="profile-link">
+                        <i class="icon icon-profile"></i>
+                    </a>
+                    <a href="#" class="cart-link">
+                        <i class="icon icon-cart"></i>
+                        <span class="cart-value">23</span>
+                    </a>
+                    <button id="hamburger" data-menu="addmenu" class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <nav class="addmenu" style="position: fixed; transform: translateX(100vw);">
+                    <div class="langs">
+                        <ul class="langs-list">
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link active">
+                                    <img src="images/common/svg/flags/eng.svg" alt="EN" class="lang-icon">
+                                    <span>ENG</span>
+                                </a>
+                            </li>
+                            <li class="langs-list__item">
+                                <a href="#" class="langs-list__link">
+                                    <img src="images/common/svg/flags/ger.svg" alt="GR" class="lang-icon">
+                                    <span>GER</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="addmenu__list">
+                        <li class="addmenu__item"><a href="#" class="addmenu__link active">About Us</a></li>
+                        <li class="addmenu__item"><a href="#" class="addmenu__link">How to buy</a></li>
+                        <li class="addmenu__item"><a href="#" class="addmenu__link">Contacts</a></li>
+                    </ul>
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="" name="search_val">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                    <ul class="socials-list">
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-fb"></i></a></li>
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-tw"></i></a></li>
+                        <li class="socials-list__item"><a href="#" target="_blank" class="socials-list__link"><i class="icon icon-pinterest"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="product-page">
+        <div class="container">
+            <div class="product-page__top">
+                <ul class="breadcrumbs-list">
+                    <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">home</a></li>
+                    <li class="breadcrumbs-list__item"><a href="#" class="breadcrumbs-list__link">catalog</a></li>
+                    <li class="breadcrumbs-list__item"><span class="breadcrumbs-list__last">Needles cartridges</span></li>
+                </ul>
+                <a href="#" class="vendor-link">
+                    <img src="images/common/product/vendor2.png" alt="vendor" class="vendor-logo">
+                </a>
+            </div>
+            <div class="product-page__content">
+                <div class="product-page__content__left-side">
+                    <div id="product-slider" class="product-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-item">
+                                <img src="images/common/product/product_image.jpg" alt="product" class="product-image">
+                            </div>
+                            <div class="swiper-slide slide-item">
+                                <img src="images/common/product/product_image.jpg" alt="product" class="product-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumb-row">
+                        <div id="thumb-slider" class="thumb-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide-item">
+                                    <img src="images/common/product/thumb_image.jpg" alt="thumb" class="thumb-image">
+                                </div>
+                                <div class="swiper-slide slide-item">
+                                    <img src="images/common/product/thumb_image.jpg" alt="thumb" class="thumb-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumb-slider__navigation">
+                            <a href="javascript:void(0);" class="nav-link prev-link"><i class="icon icon-slider_arrow"></i></a>
+                            <a href="javascript:void(0);" class="nav-link next-link"><i class="icon icon-slider_arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-page__content__right-side">
+                    <h1 class="product-name">Edge Pro Needle Cartridges Magnum</h1>
+                    <form action="" class="product-form">
+                        <div class="product-form__left-side">
+                            <div class="form-item">
+                                <span class="item-title">Needle Type</span>
+                                <div class="input-row">
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="type" value="BugPin Magnum" checked>
+                                            <span class="label">BugPin Magnum</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="type" value="Magnum Long Taper">
+                                            <span class="label">Magnum Long Taper</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <span class="item-title">Needle Gauge</span>
+                                <div class="input-row">
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="gauge" value="0.30" checked>
+                                            <span class="label">0.30</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="gauge" value="0.35">
+                                            <span class="label">0.35</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <span class="item-title">Number of Needles</span>
+                                <div class="input-row">
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="7M" checked>
+                                            <span class="label">7M</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="9M">
+                                            <span class="label">9M</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="11M">
+                                            <span class="label">11M</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="13M">
+                                            <span class="label">13M</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="15M">
+                                            <span class="label">15M</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="17M">
+                                            <span class="label">17M</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="21M">
+                                            <span class="label">21M</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="23M">
+                                            <span class="label">23M</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="27M">
+                                            <span class="label">27M</span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group radio-group">
+                                        <label>
+                                            <input type="radio" name="numbers" value="39M">
+                                            <span class="label">39M</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-form__right-side">
+                            <div class="form-item">
+                                <p>Box of 20 Magnum EDGE Needle Cartridges</p>
+                            </div>
+                            <div class="form-item price-item">
+                                <div class="product-price">€ <span>35.90</span></div>
+                                <div class="input-group count-group">
+                                    <a href="javascript:void(0);" class="count-btn plus-btn"><i class="icon icon-plus"></i></a>
+                                    <input type="text" class="count-input" value="1" readonly>
+                                    <a href="javascript:void(0);" class="count-btn minus-btn"><i class="icon icon-minus"></i></a>
+                                </div>
+                                <div class="input-group btn-group">
+                                    <button type="submit" class="btn-style">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="product-info">
+        <div class="container">
+            <h2 class="product-info__title section-title"><span>Description</span></h2>
+            <h3 class="product-info__subtitle section-subtitle">EDGE Needle Cartridges Magnum</h3>
+            <div class="product-info__content">
+                <div class="product-info__content__side">
+                    <div class="title-row">
+                        <img src="images/common/product/descr_image1.jpg" alt="side" class="side-image">
+                        <h3 class="side-title">Tattoo Needle Cartridge</h3>
+                    </div>
+                    <div class="descr-block">
+                        <p>The EDGE cartridges entered the market bringing in the 3RL measures a high level of detail and precision when tattooing. Developed by the artist Johnny Dots, now the name EDGE Pro has gone beyond the 3RL measurements, with a total of 55 needle configurations, manufactured under special hygienic conditions, sterilized in EO Gas, with a perfect membrane tension to reach high speeds with less machine and power supply wear.</p>
+                        <p>With a unique stabilization system and microscopic technology for aligning the needles with the Tips, the EDGE Pro are the most stable and accurate needles on the market.</p>
+                    </div>
+                </div>
+                <div class="product-info__content__side">
+                    <div class="title-row">
+                        <img src="images/common/product/descr_image2.jpg" alt="side" class="side-image">
+                        <h3 class="side-title">About the Creator of EDGE</h3>
+                    </div>
+                    <div class="descr-block">
+                        <p>João Dias @johnny.dots has been marking the tattoo industry with works that contain the essence and mix of dot work and realism with shadow and texture, achieving results that, in addition to inspiring, take your breath away who sees them .</p>
+                        <p>The search for the ideal needle for the demands of his work led him to create his own brand with the signature of quality and performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-addinfo">
+        <div class="container">
+            <h2 class="product-addinfo__title section-title"><span>Needles</span> cartridges</h2>
+            <h3 class="product-addinfo__subtitle section-subtitle">Additional information</h3>
+            <div class="product-addinfo__content">
+                <div class="product-addinfo__content__side">
+                    <ul>
+                        <li><span>Weight</span><span>0.12 kg</span></li>
+                        <li><span>Dimensions (L x W x H)</span><span>16 × 9 × 3 cm</span></li>
+                        <li><span>Type</span><span>Magnum</span></li>
+                        <li><span>Needle Type</span><span>BugPin Magnum, Magnum Long Taper</span></li>
+                    </ul>
+                </div>
+                <div class="product-addinfo__content__side">
+                    <ul>
+                        <li><span>Needle Gauge</span><span>0.30, 0.35</span></li>
+                        <li><span>Taper</span><span>Extra Long Taper</span></li>
+                        <li><span>Number of Needles</span><span>7M, 13M, 15M, 23M</span></li>
+                        <li><span>The amount</span><span>20</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-about">
+        <div class="container">
+            <div class="main-about__content">
+                <div class="descr-block">
+                    <h2 class="main-about__subtitle section-subtitle">Not sure where to start?</h2>
+                    <div class="info-row">
+                        <div class="info-row__image">
+                            <img src="images/common/product/about_image2.jpg" alt="image" class="about-image lazyload">
+                            <img src="images/common/product/about_item2.jpg" alt="image" class="info-image lazyload">
+                        </div>
+                        <div class="info-row__descr">
+                            <p><b>Our team wellness experts has a 96% customer satisfaction rating. You can talk to them through any medium you choose.</b></p>
+                            <a href="#" class="contact-btn btn-style">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="results-form">
+        <div class="container">
+            <h2 class="results-form__title section-title"><span>Real</span> Results</h2>
+            <h3 class="results-form__subtitle section-subtitle">What people say about us?</h3>
+            <div class="results-form__content">
+                <div class="results-form__content__left-side">
+                    <div class="answer-item">
+                        <div class="answer-item__top">
+                            <div class="image-block">
+                                <img src="images/common/main/answers/answer_image1.jpg" alt="image" class="answer-image">
+                            </div>
+                            <div class="info-block">
+                                <span class="date">29 November 2020</span>
+                                <div class="mark-list">
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="answer-item__bottom">
+                            <h4>I had never used CBD products before and I was curious about the Face Cream.</h4>
+                            <p>I’m so impressed by the 19 organic oils it contains. CBD Face Cream has exceptional qualities — smells very nice, it’s extremely light and absorbs quickly into the…</p>
+                            <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                        </div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="answer-item__top">
+                            <div class="image-block">
+                                <img src="images/common/main/answers/answer_image1.jpg" alt="image" class="answer-image">
+                            </div>
+                            <div class="info-block">
+                                <span class="date">29 November 2020</span>
+                                <div class="mark-list">
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="answer-item__bottom">
+                            <h4>I’m so happy with CBD Face Cream and Hydrating Serum.</h4>
+                            <p>The products combine wonderfully, my face skin has become extremely soft, smooth and moisturized. I don’t forget to use both products every evening. Their use has become a real beauty ritual for me. It’s absolutely worth it!</p>
+                        </div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="answer-item__top">
+                            <div class="image-block">
+                                <img src="images/common/main/answers/answer_image1.jpg" alt="image" class="answer-image">
+                            </div>
+                            <div class="info-block">
+                                <span class="date">29 November 2020</span>
+                                <div class="mark-list">
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_fill"></i>
+                                    <i class="icon icon-star_stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="answer-item__bottom">
+                            <h4>CBD Full Spectrum oil is one of the best and most effective for my head pain and helps me to fall asleep.</h4>
+                            <p>I’ll keep buying this awesome product over and over again! Thank you for these amazing oil! My life is much…</p>
+                            <a href="#" class="more-link"><i class="icon icon-quote"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-form__content__right-side">
+                    <form action="" class="form-content">
+                        <div class="form-title">Add a review</div>
+                        <div class="form-descr">
+                            <p>Your email address will not be published.</p>
+                            <p>Required fields are marked <span>*</span></p>
+                        </div>
+                        <div class="input-group rate-group">
+                            <span class="label-txt required">Your rating</span>
+                            <div class="rate-row">
+                                <label>
+                                    <input type="radio" name="rate" value="5">
+                                    <span class="label"><i class="icon icon-star_stroke"></i></span>
+                                </label>
+                                <label class="active">
+                                    <input type="radio" name="rate" value="4">
+                                    <span class="label"><i class="icon icon-star_stroke"></i></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rate" value="3">
+                                    <span class="label"><i class="icon icon-star_stroke"></i></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rate" value="2">
+                                    <span class="label"><i class="icon icon-star_stroke"></i></span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="rate" value="1">
+                                    <span class="label"><i class="icon icon-star_stroke"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>
+                                    <span class="label-txt required">Name</span>
+                                    <input type="text" name="name" class="input-style" required>
+                                </label>
+                            </div>
+                            <div class="input-group">
+                                <label>
+                                    <span class="label-txt required">Email</span>
+                                    <input type="email" name="email" class="input-style" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                <span class="label-txt required">Your review</span>
+                                <textarea name="message" class="input-style" required></textarea>
+                            </label>
+                        </div>
+                        <div class="input-group check-group">
+                            <label>
+                                <input type="checkbox" name="check" checked>
+                                <span class="label">Save my name, email, and website in this browser for the next time I comment.</span>
+                            </label>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style">Add a review</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content__main">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                    </a>
+                    <ul class="social-list">
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-fb"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tw"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__mmenu">
+                    <ul class="footer-mmenu">
+                        <li class="footer-mmenu__item">
+                            <a href="#" class="footer-mmenu__link">
+                                <img src="images/common/menu/menu_icon1.png" alt="menu" class="menu-icon">
+                                <span>Needles cartridges</span>
+                            </a>
+                        </li>
+                        <li class="footer-mmenu__item">
+                            <a href="#" class="footer-mmenu__link">
+                                <img src="images/common/menu/menu_icon2.png" alt="menu" class="menu-icon">
+                                <span>CBD catalog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content__addmenu">
+                    <ul class="footer-addmenu">
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">About Us</a></li>
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">How to buy</a></li>
+                        <li class="footer-addmenu__item"><a href="#" class="footer-addmenu__link">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__links">
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="" name="search_val">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="links-row">
+                        <a href="#" class="profile-link">
+                            <i class="icon icon-profile"></i>
+                        </a>
+                        <a href="#" class="cart-link">
+                            <i class="icon icon-cart"></i>
+                            <span class="cart-value">23</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal micromodal-slide simple-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title"></h2>
+                    <h3 class="modal__subtitle"></h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Имя*" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style btn-fill-style white-style">Заказать</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
