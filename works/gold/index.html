@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Gold</title>
+    <meta name="description" content="Gold">
+    <meta name="keywords" content="Gold">
+    <meta name="author" content="Gold">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gold">
+    <meta property="og:title" content="Gold">
+    <meta property="og:description" content="Gold">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://site-url.ru/">
+    <link rel="canonical" href="https://site-url.ru/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/MontLight/MontLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontBold/MontBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontRegular/MontRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontSemiBold/MontSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="gold" class="logo-image">
+                </a>
+                <nav id="main-menu" class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Услуги</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Галерея</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Вопрос-ответ</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">О нас</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Отзывы</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+                    </ul>
+                    <ul class="social-menu">
+                        <li class="social-menu__item"><a href="#" class="social-menu__link"><i class="icon icon-vk"></i></a></li>
+                        <li class="social-menu__item"><a href="#" class="social-menu__link"><i class="icon icon-wa"></i></a></li>
+                    </ul>
+                    <div class="backcall-block">
+                        <a href="tel:" class="phone-link">+7 921 976 38 64</a>
+                        <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="backcall-link"><i class="icon icon-phone"></i> Перезвоните мне</a>
+                    </div>
+                </nav>
+                <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="phone-btn" style="display: none;"><i class="icon icon-phone"></i></a>
+                <button id="hamburger" data-menu="main-menu" class="hamburger hamburger--slider" type="button" style="display: none;">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main-section">
+        <div class="container">
+            <div id="main-slider" class="main-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_image.jpg [(max-width: 575px)] | images/bg/pad/main_image.jpg [(max-width: 1024px)] | images/bg/desk/main_image.jpg [(min-width: 1025px)]">
+                        <h1 class="main-title">Профессиональный <span>клининг</span> и <span>подбор</span> домашнего персонала в Санкт-Петербурге и ЛО</h1>
+                        <div class="main-descr">
+                            <p>Наш клинер приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам остаётся только оценить результат.</p>
+                        </div>
+                        <div class="main-btns">
+                            <a href="#" class="btn-style black-style">Оставьте заявку на клининг</a>
+                            <a href="#" class="btn-style border-style">Домашний персонал</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_image.jpg [(max-width: 575px)] | images/bg/pad/main_image.jpg [(max-width: 1024px)] | images/bg/desk/main_image.jpg [(min-width: 1025px)]">
+                        <h1 class="main-title">Профессиональный <span>клининг</span> и <span>подбор</span> домашнего персонала в Санкт-Петербурге и ЛО 2</h1>
+                        <div class="main-descr">
+                            <p>Наш клинер приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам остаётся только оценить результат.</p>
+                        </div>
+                        <div class="main-btns">
+                            <a href="#" class="btn-style black-style">Оставьте заявку на клининг</a>
+                            <a href="#" class="btn-style border-style">Домашний персонал</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_image.jpg [(max-width: 575px)] | images/bg/pad/main_image.jpg [(max-width: 1024px)] | images/bg/desk/main_image.jpg [(min-width: 1025px)]">
+                        <h1 class="main-title">Профессиональный <span>клининг</span> и <span>подбор</span> домашнего персонала в Санкт-Петербурге и ЛО 3</h1>
+                        <div class="main-descr">
+                            <p>Наш клинер приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам остаётся только оценить результат.</p>
+                        </div>
+                        <div class="main-btns">
+                            <a href="#" class="btn-style black-style">Оставьте заявку на клининг</a>
+                            <a href="#" class="btn-style border-style">Домашний персонал</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_image.jpg [(max-width: 575px)] | images/bg/pad/main_image.jpg [(max-width: 1024px)] | images/bg/desk/main_image.jpg [(min-width: 1025px)]">
+                        <h1 class="main-title">Профессиональный <span>клининг</span> и <span>подбор</span> домашнего персонала в Санкт-Петербурге и ЛО 4</h1>
+                        <div class="main-descr">
+                            <p>Наш клинер приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам остаётся только оценить результат.</p>
+                        </div>
+                        <div class="main-btns">
+                            <a href="#" class="btn-style black-style">Оставьте заявку на клининг</a>
+                            <a href="#" class="btn-style border-style">Домашний персонал</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-pagination"></div>
+            </div>
+        </div>
+    </main>
+    <section class="advantages-section">
+        <div class="container">
+            <h2 class="advantages-section__title section-title">Наши преимущества</h2>
+            <div class="advantages-section__content">
+                <div class="advantages-section__content__item">
+                    <div class="descr-block">
+                        <p>Профессиональная <br> техника и химия</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/svg/advantage_icon1.svg" alt="icon" class="item-icon">
+                    </div>
+                </div>
+                <div class="advantages-section__content__item">
+                    <div class="descr-block">
+                        <p>Ваше имущество <br> застраховано</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/svg/advantage_icon2.svg" alt="icon" class="item-icon">
+                    </div>
+                </div>
+                <div class="advantages-section__content__item">
+                    <div class="descr-block">
+                        <p>Надежный персонал</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/svg/advantage_icon6.svg" alt="icon" class="item-icon">
+                    </div>
+                </div>
+                <div class="advantages-section__content__item">
+                    <div class="descr-block">
+                        <p>Оплата после уборки <br> любым способом</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/svg/advantage_icon3.svg" alt="icon" class="item-icon">
+                    </div>
+                </div>
+                <div class="advantages-section__content__item">
+                    <div class="descr-block">
+                        <p>Гарантии и результат</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/svg/advantage_icon5.svg" alt="icon" class="item-icon">
+                    </div>
+                </div>
+                <div class="advantages-section__content__item">
+                    <div class="descr-block">
+                        <p>Цена известна заранее</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/svg/advantage_icon4.svg" alt="icon" class="item-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="think-section">
+        <div class="container">
+            <div class="think-section__content">
+                <div class="think-section__content__left-side">
+                    <h2 class="think-section__title section-title">Продумано до мелочей</h2>
+                    <h3 class="think-section__subtitle">Более 20 лет на рынке</h3>
+                    <a href="#" class="backcalll-btn btn-style black-style">Оставьте заявку</a>
+                </div>
+                <div class="think-section__content__right-side">
+                    <div class="think-section__item">
+                        <div class="descr-block">
+                            <p>Работаем как с частными,
+                                так и с юридическими
+                                лицами по договору</p>
+                        </div>
+                        <div class="image-block">
+                            <img src="images/common/svg/think_icon1.svg" alt="icon" class="item-icon">
+                        </div>
+                    </div>
+                    <div class="think-section__item">
+                        <div class="descr-block">
+                            <p>Бесплатный выезд
+                                на объект</p>
+                        </div>
+                        <div class="image-block">
+                            <img src="images/common/svg/think_icon2.svg" alt="icon" class="item-icon">
+                        </div>
+                    </div>
+                    <div class="think-section__item">
+                        <div class="descr-block">
+                            <p>Предоставляем клинеров
+                                на постоянную уборку
+                                домов, квартир, офисов</p>
+                        </div>
+                        <div class="image-block">
+                            <img src="images/common/svg/think_icon3.svg" alt="icon" class="item-icon">
+                        </div>
+                    </div>
+                    <div class="think-section__item">
+                        <div class="descr-block">
+                            <p>Проверенный клинер со
+                                стажем от 5 лет, прошедший
+                                обучение на безопасность</p>
+                        </div>
+                        <div class="image-block">
+                            <img src="images/common/svg/think_icon4.svg" alt="icon" class="item-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div class="container">
+            <h2 class="services-section__title section-title">Наши услуги клининга</h2>
+            <div class="services-section__descr">
+                <p>Мы выполняем четыре основных типа клининговых работ.</p>
+                <p>Все материалы и уборка входят в стоимость.</p>
+                <p>Выберите подходящую вам уборку</p>
+            </div>
+            <div class="services-section__content">
+                <div id="services-slider" class="services-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <div class="image-block">
+                                    <img src="images/common/services/service_image1.jpg" alt="service" class="item-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-title">Уборка после ремонта</h3>
+                                    <ul class="item-list">
+                                        <li>Комплексная уборка санузлов</li>
+                                        <li>Влажная уборка полов</li>
+                                        <li>Влажная уборка поверхностей</li>
+                                        <li>Удаление строительной пыли сухим способом</li>
+                                        <li>Сухая чистка пылесосом мягкой мебели снаружи и внутри</li>
+                                        <li>Влажная уборка внутренних поверхностей корпусной мебели</li>
+                                        <li>Мытьё стеклянных и зеркальных поверхностей внутри помещения</li>
+                                    </ul>
+                                    <div class="item-price">от <span>150 ₽</span> за м<sup>2</sup></div>
+                                </div>
+                            </div>
+                            <a href="#" class="slide-link btn-style black-style">Заказать</a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <div class="image-block">
+                                    <img src="images/common/services/service_image2.jpg" alt="service" class="item-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-title">Генеральная уборка</h3>
+                                    <ul class="item-list">
+                                        <li>Очистка и дезинфекция сантехники</li>
+                                        <li>Протирка дверей, наличников</li>
+                                        <li>Сбор и вынос мусора</li>
+                                        <li>Чистка парогенератором труднодоступных мест</li>
+                                        <li>Влажная уборка внутренних поверхностей корпусной мебели</li>
+                                        <li>Очистка кафельной плитки, очистка межплиточных швов,</li>
+                                        <li>Мытьё и удаление жира с бытовой техники</li>
+                                    </ul>
+                                    <div class="item-price">от <span>130 ₽</span> за м<sup>2</sup></div>
+                                </div>
+                            </div>
+                            <a href="#" class="slide-link btn-style black-style">Заказать</a>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <div class="image-block">
+                                    <img src="images/common/services/service_image3.jpg" alt="service" class="item-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-title">Поддерживающая уборка</h3>
+                                    <ul class="item-list">
+                                        <li>Мытьё кухонного «фартука»</li>
+                                        <li>Влажная уборка полов</li>
+                                        <li>Чистка ковров / ковролина</li>
+                                        <li>Уборка мебели и подоконников <span>(доступные поверхности)</span></li>
+                                        <li>Сухая уборка пола, чистка ковролина и напольных ковров</li>
+                                        <li>Удаление пыли и загрязнений с внешних поверхностей</li>
+                                        <li>Мытье раковины, унитаза, душевой кабины / ванны</li>
+                                    </ul>
+                                    <div class="item-price">от <span>50 ₽</span> за м<sup>2</sup></div>
+                                </div>
+                            </div>
+                            <a href="#" class="slide-link btn-style black-style">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-slider__navigation">
+                    <a href="javascript:void(0);" class="nav-btn prev-btn"><i class="icon icon-slider_arrow"></i></a>
+                    <a href="javascript:void(0);" class="nav-btn next-btn"><i class="icon icon-slider_arrow"></i></a>
+                </div>
+            </div>
+            <div class="services-section__addservices">
+                <div class="services-section__addservices__item">
+                    <div class="image-block">
+                        <img src="images/common/services/service_image21.jpg" alt="service" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <p>Химчистка мягкой мебели — <span>от 500 ₽</span></p>
+                    </div>
+                </div>
+                <div class="services-section__addservices__item">
+                    <div class="image-block">
+                        <img src="images/common/services/service_image22.jpg" alt="service" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <p>Мойка окон — <br> <span>от 200 ₽</span> створка</p>
+                    </div>
+                </div>
+                <div class="services-section__addservices__item">
+                    <div class="image-block">
+                        <img src="images/common/services/service_image23.jpg" alt="service" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <p>Уборка офисов — <br> <span>от 50 ₽ м<sup>2</sup></span></p>
+                    </div>
+                </div>
+                <div class="services-section__addservices__item">
+                    <div class="image-block">
+                        <img src="images/common/services/service_image24.jpg" alt="service" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <p>Уборка коммерчесаких помещений — <span>от 100 ₽ м<sup>2</sup></span></p>
+                    </div>
+                </div>
+                <div class="services-section__addservices__item">
+                    <div class="image-block">
+                        <img src="images/common/services/service_image25.jpg" alt="service" class="item-image">
+                    </div>
+                    <div class="descr-block">
+                        <p>Промышленный альпинизм — <span>от 5000 ₽</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-section__servlist">
+                <div class="services-section__servlist__item">
+                    <p>Мытье посуды — <span>450 ₽</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Мытье духовки — <span>от 500 ₽</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Смена постельного белья — <span>200 ₽</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Мытье СВЧ печи — <span>от 300 ₽</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Глажка белья — <span>500 ₽ в час</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Мытье холодильника — <span>от 500 ₽ в час</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Уборка кух. шкафов изнутри — <span>250 ₽ шт</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Снятие штор 1 окно — <span>200 ₽</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Чистка швов парогенератором — <span>от 1000 ₽</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Повесить шторы- <span>200 ₽</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Мытье хрустальной люстры — <span>от 350 ₽ 1 шт</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Мытье вытяжки — <span>от 350 ₽</span></p>
+                </div>
+                <div class="services-section__servlist__item">
+                    <p>Мытье посудомойки — <span>300 ₽</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="container">
+            <h2 class="about-section__title section-title">О нашей компании</h2>
+            <div class="about-section__content">
+                <div class="about-section__content__left-side">
+                    <img src="images/common/about/about_image.jpg" alt="about" class="about-image">
+                    <span class="img-descr">Гарантия качества</span>
+                </div>
+                <div class="about-section__content__right-side">
+                    <h3>Gold House — клининговая компания.</h3>
+                    <p>Мы оказываем эффективные клининг-услуги, которые делают жизнь лучше, проще и счастливее. Вместо того, чтобы пытаться очистить пятно с дивана или мыть пол, наши клиенты посвящают время себе, перекладывая сложные задачи на профессионалов.</p>
+                    <p>Вам нужно убрать квартиру после вечеринки? Вымыть пол в супермаркете? Очистить окна от пыли и налёта? Устранить пятна и неприятный запах с мебели? Всего один звонок — мы привезём необходимое оборудование, инвентарь, моющие средства и избавим помещение от загрязнений. Чистота — это просто, убедитесь в этом с Gold House.</p>
+                </div>
+            </div>
+            <div class="about-section__advantages">
+                <div class="about-section__advantages__item">
+                    <div class="image-block"><img src="images/common/svg/about_icon1.svg" alt="icon" class="item-icon"></div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Гарантия качества</h3>
+                        <p>Мы выполняем каждый заказ по строгому регламенту, в случае порчи имущества возмещаем ущерб полностью из собственного резерва</p>
+                    </div>
+                </div>
+                <div class="about-section__advantages__item">
+                    <div class="image-block"><img src="images/common/svg/about_icon2.svg" alt="icon" class="item-icon"></div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Надежный персонал</h3>
+                        <p>Мы тщательно проверяем и обучаем каждого сотрудника. Обращаясь к нам Вы получаете качественную помощь квалифицированных профессионалов.</p>
+                    </div>
+                </div>
+                <div class="about-section__advantages__item">
+                    <div class="image-block"><img src="images/common/svg/about_icon3.svg" alt="icon" class="item-icon"></div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Ценим Ваше время</h3>
+                        <p>Выезжаем на уборку в день заказа, в удобное для Вас время.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="gallery-section__title section-title">Фото с наших объектов</h2>
+            <p>выполнили уборку в более чем 500 объектах СПб и ЛО</p>
+            <div class="gallery-section__content">
+                <div id="gallery-slider" class="gallery-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-item">
+                            <img src="images/common/photo_image.jpg" alt="gallery" class="item-image">
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <img src="images/common/photo_image.jpg" alt="gallery" class="item-image">
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <img src="images/common/photo_image.jpg" alt="gallery" class="item-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-slider__navigation">
+                    <a href="javascript:void(0);" class="nav-btn prev-btn"><i class="icon icon-slider_arrow"></i></a>
+                    <a href="javascript:void(0);" class="nav-btn next-btn"><i class="icon icon-slider_arrow"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="faq-section__title section-title">Часто задаваемые вопросы</h2>
+            <p>наших физичнских и юридических клиентов</p>
+            <div class="faq-section__content">
+                <div class="faq-section__content__item active">
+                    <h3 class="item-title">За сколько дней нужно делать заказ?</h3>
+                    <div class="item-descr">
+                        <p>Мы работаем нон-стоп с 7:00 до 22:00.</p>
+                        <p>Заказать уборку можно за несколько часов до удобного Вам времени. В любом случае, все детали обсуждаются с менеджером.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">Какие гарантии безопасности?</h3>
+                    <div class="item-descr">
+                        <p>Мы заключаем с Вами договор, где подробно говорится об ответственности. Мы дорожим репутацией компании, поэтому гарантируем полную сохранность Ваших вещей.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">Какие чистящие средства используете?</h3>
+                    <div class="item-descr">
+                        <p>Для каждого клиента подбирается определенный набор. Все средства содержат щадящие компоненты и полностью безопасны.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">Вы берете срочные заказы?</h3>
+                    <div class="item-descr">
+                        <p>Да, конечно. Мы не откажем даже в очень срочной работе. Не забудьте уточнить это у менеджера.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">Как осуществляется оплата?</h3>
+                    <div class="item-descr">
+                        <p>Вы оплачиваете работу исключительно после ее принятия.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">Принимаете банковские карты?</h3>
+                    <div class="item-descr">
+                        <p>Да. Порядок оплаты обговаривается при оформлении заказа.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="answers-section">
+        <div class="container">
+            <h2 class="answers-section__title section-title question-title">Что о нас говорят наши клиенты</h2>
+            <p>Ценность нашей компании — это люди и взаимоотношения. <br> Мы за надёжность и уважение как с нашими <br> специалистами, так и с нашими клиентами.</p>
+        </div>
+        <div class="answers-section__content">
+            <div id="answers-slider" class="answers-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-item">
+                        <div class="slide-info">
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-user"></i></div>
+                                <div class="descr-block">
+                                    Клиент
+                                    <span>Игорь Важенин</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-home"></i></div>
+                                <div class="descr-block">
+                                    Объект
+                                    <span>Квартира, 56 м²</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-mark"></i></div>
+                                <div class="descr-block">
+                                    Локация
+                                    <span>г. Санкт-Петербрг</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-check_box"></i></div>
+                                <div class="descr-block">
+                                    Вид уборки
+                                    <span>Экспресс уборка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-descr">
+                            <p>Заказали услугу- генеральная уборка квартиры. 2 девушки и парень за 8 часов отмыли так, что все сияло и блестело!</p>
+                            <p>А когда парогенератором начали радиаторы мыть -мы поняли всю серьезность подхода к делу уборки. Всем рекомендуем!</p>
+                            <div class="marks-row">
+                                <span>Оценка</span>
+                                <ul class="marks-list">
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item">
+                        <div class="slide-info">
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-user"></i></div>
+                                <div class="descr-block">
+                                    Клиент
+                                    <span>Игорь Важенин</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-home"></i></div>
+                                <div class="descr-block">
+                                    Объект
+                                    <span>Квартира, 56 м²</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-mark"></i></div>
+                                <div class="descr-block">
+                                    Локация
+                                    <span>г. Санкт-Петербрг</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-check_box"></i></div>
+                                <div class="descr-block">
+                                    Вид уборки
+                                    <span>Экспресс уборка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-descr">
+                            <p>Заказали услугу- генеральная уборка квартиры. 2 девушки и парень за 8 часов отмыли так, что все сияло и блестело!</p>
+                            <p>А когда парогенератором начали радиаторы мыть -мы поняли всю серьезность подхода к делу уборки. Всем рекомендуем!</p>
+                            <div class="marks-row">
+                                <span>Оценка</span>
+                                <ul class="marks-list">
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item">
+                        <div class="slide-info">
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-user"></i></div>
+                                <div class="descr-block">
+                                    Клиент
+                                    <span>Игорь Важенин</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-home"></i></div>
+                                <div class="descr-block">
+                                    Объект
+                                    <span>Квартира, 56 м²</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-mark"></i></div>
+                                <div class="descr-block">
+                                    Локация
+                                    <span>г. Санкт-Петербрг</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-check_box"></i></div>
+                                <div class="descr-block">
+                                    Вид уборки
+                                    <span>Экспресс уборка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-descr">
+                            <p>Заказали услугу- генеральная уборка квартиры. 2 девушки и парень за 8 часов отмыли так, что все сияло и блестело!</p>
+                            <p>А когда парогенератором начали радиаторы мыть -мы поняли всю серьезность подхода к делу уборки. Всем рекомендуем!</p>
+                            <div class="marks-row">
+                                <span>Оценка</span>
+                                <ul class="marks-list">
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="answers-slider__navigation">
+                <a href="javascript:void(0);" class="nav-btn prev-btn"><i class="icon icon-slider_arrow"></i></a>
+                <a href="javascript:void(0);" class="nav-btn next-btn"><i class="icon icon-slider_arrow"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="clients-section">
+        <div class="container">
+            <h2 class="clients-section__title section-title">Наши клиенты</h2>
+            <div class="clients-section__content">
+                <div class="clients-section__content__item">
+                    <img src="images/common/clients/client_logo1.jpg" alt="client" class="client-logo">
+                </div>
+                <div class="clients-section__content__item">
+                    <img src="images/common/clients/client_logo2.jpg" alt="client" class="client-logo">
+                </div>
+                <div class="clients-section__content__item">
+                    <img src="images/common/clients/client_logo3.jpg" alt="client" class="client-logo">
+                </div>
+                <div class="clients-section__content__item">
+                    <img src="images/common/clients/client_logo4.jpg" alt="client" class="client-logo">
+                </div>
+                <div class="clients-section__content__item">
+                    <img src="images/common/clients/client_logo5.jpg" alt="client" class="client-logo">
+                </div>
+                <div class="clients-section__content__item">
+                    <img src="images/common/clients/client_logo6.jpg" alt="client" class="client-logo">
+                </div>
+                <div class="clients-section__content__item">
+                    <img src="images/common/clients/client_logo7.jpg" alt="client" class="client-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order-section">
+        <div class="container">
+            <h2 class="order-section__title section-title">Заказать уборку</h2>
+            <p>Заполните форму, для заказа услуги по уборке. <br> Наши менеджеры с вами свяжутся в ближайшее время.</p>
+            <div class="order-section__content">
+                <div class="order-section__content__left-side">
+                    <form action="" class="order-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Ваше имя" class="input-style">
+                        </div>
+                        <div class="input-group">
+                            <input type="phone" name="phone" placeholder="Телефорн" class="input-style">
+                        </div>
+                        <div class="input-group">
+                            <select name="type" class="custom-select">
+                                <option value="" selected disabled>Выберите вид услуги</option>
+                                <option value="Уборка после ремонта">Уборка после ремонта</option>
+                                <option value="Генеральная уборка">Генеральная уборка</option>
+                                <option value="Поддерживающая уборка">Поддерживающая уборка</option>
+                                <option value="Химчистка мягкой  мебели">Химчистка мягкой мебели</option>
+                                <option value="Мойка окон">Мойка окон</option>
+                                <option value="Уборка офисов">Уборка офисов</option>
+                                <option value="Уборка коммерческого помещения">Уборка коммерческого помещения</option>
+                            </select>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style yellow-style">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="order-section__content__right-side">
+                    <img src="images/common/order_image__fill.png" alt="order" class="order-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts-section">
+        <div class="container">
+            <h2 class="contacts-section__title section-title">Контакты клининговой компании</h2>
+            <p>Звоните, пишите, мы любим отвечать на сообщения и звонки.</p>
+            <div class="contacts-section__info">
+                <div class="phone-block">
+                    <span>телефон:</span>
+                    <a href="tel:+7 921 976 38 64">+7 921 976 38 64</a>
+                </div>
+                <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="backcall-btn btn-style black-style">Заказать звонок</a>
+                <div class="address-block">
+                    <span>адрес:</span>
+                    <p>г. Всеволжск, <br> Всеволжский проспект, 17</p>
+                </div>
+                <div class="time-block">
+                    <span>часы работы:</span>
+                    <p>с 9:00 до 22:00</p>
+                </div>
+                <div class="mail-block">
+                    <span>e-mail:</span>
+                    <a href="mailto:">gold_house_47@mal.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-section__map">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="gold" class="logo-image">
+                </a>
+                <nav class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Услуги</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Галерея</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Вопрос-ответ</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">О нас</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Отзывы</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+7 921 976 38 64" class="phone-link">+7 921 976 38 64</a>
+                <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="backcall-btn btn-style black-style">Заказать уборку</a>
+            </div>
+            <div class="footer__copyright">
+                <p>© 2021 «Gold House» Клининговые услуги. <a href="#">Политика конфиденциалности</a></p>
+                <ul class="social-list">
+                    <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-vk"></i></a></li>
+                    <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-inst"></i></a></li>
+                    <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-wa"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="fixedbtn" style="display: none;"><i class="icon icon-phone"></i></a>
+    </footer>
+    <div class="modal micromodal-slide simple-modal backcall-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Заполните заявку</h2>
+                    <h3 class="modal__subtitle">наши менеджеры свяжутся <br> с Вами в ближайшее время</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-cancel"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input class="input-style" type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input-style" type="text" name="phone" placeholder="Введите ваш телефон" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style yellow-style">Отправить заявку</button>
+                        </div>
+                        <div class="input-group check-group">
+                            <label>
+                                <input type="checkbox" name="check" checked>
+                                <span class="label">Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></span>
+                            </label>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Gold</title>
+    <meta name="description" content="Gold">
+    <meta name="keywords" content="Gold">
+    <meta name="author" content="Gold">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gold">
+    <meta property="og:title" content="Gold">
+    <meta property="og:description" content="Gold">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://site-url.ru/">
+    <link rel="canonical" href="https://site-url.ru/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/MontLight/MontLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontBold/MontBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontRegular/MontRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/MontSemiBold/MontSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="gold" class="logo-image">
+                </a>
+                <nav id="main-menu" class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Услуги</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Галерея</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Вопрос-ответ</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">О нас</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Отзывы</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+                    </ul>
+                    <ul class="social-menu">
+                        <li class="social-menu__item"><a href="#" class="social-menu__link"><i class="icon icon-vk"></i></a></li>
+                        <li class="social-menu__item"><a href="#" class="social-menu__link"><i class="icon icon-wa"></i></a></li>
+                    </ul>
+                    <div class="backcall-block">
+                        <a href="tel:" class="phone-link">+7 921 976 38 64</a>
+                        <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="backcall-link"><i class="icon icon-phone"></i> Перезвоните мне</a>
+                    </div>
+                </nav>
+                <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="phone-btn" style="display: none;"><i class="icon icon-phone"></i></a>
+                <button id="hamburger" data-menu="main-menu" class="hamburger hamburger--slider" type="button" style="display: none;">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main-section">
+        <div class="container">
+            <div id="main-slider" class="main-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_image2.jpg [(max-width: 575px)] | images/bg/pad/main_image2.jpg [(max-width: 1024px)] | images/bg/desk/main_image2.jpg [(min-width: 1025px)]">
+                        <h1 class="main-title"><span>GOLD HOUSE</span> — ваш надежный партнер по подбору <span>персонала</span></h1>
+                        <div class="main-descr">
+                            <p>Оставьте заявку и наши менеджеры <br> свяжутся с Вами в ближайшее время</p>
+                        </div>
+                        <div class="main-btns">
+                            <a href="#" class="btn-style black-style">Оставьте заявку</a>
+                            <a href="#" class="btn-style border-style">Клининговые услуги</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_image2.jpg [(max-width: 575px)] | images/bg/pad/main_image2.jpg [(max-width: 1024px)] | images/bg/desk/main_image2.jpg [(min-width: 1025px)]">
+                        <h1 class="main-title"><span>GOLD HOUSE</span> — ваш надежный партнер по подбору <span>персонала</span>2</h1>
+                        <div class="main-descr">
+                            <p>Оставьте заявку и наши менеджеры <br> свяжутся с Вами в ближайшее время</p>
+                        </div>
+                        <div class="main-btns">
+                            <a href="#" class="btn-style black-style">Оставьте заявку</a>
+                            <a href="#" class="btn-style border-style">Клининговые услуги</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item lazyload" data-bgset="images/bg/mobile/main_image2.jpg [(max-width: 575px)] | images/bg/pad/main_image2.jpg [(max-width: 1024px)] | images/bg/desk/main_image2.jpg [(min-width: 1025px)]">
+                        <h1 class="main-title"><span>GOLD HOUSE</span> — ваш надежный партнер по подбору <span>персонала</span>3</h1>
+                        <div class="main-descr">
+                            <p>Оставьте заявку и наши менеджеры <br> свяжутся с Вами в ближайшее время</p>
+                        </div>
+                        <div class="main-btns">
+                            <a href="#" class="btn-style black-style">Оставьте заявку</a>
+                            <a href="#" class="btn-style border-style">Клининговые услуги</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-pagination"></div>
+            </div>
+        </div>
+    </main>
+    <section class="advblocks-section">
+        <div class="container">
+            <h2 class="advblocks-section__title section-title">Наши преимущества</h2>
+            <div class="advblocks-section__content">
+                <div class="advblocks-section__content__item">
+                    <div class="descr-block">
+                        <h3 class="item-name">Быстродействие</h3>
+                        <p>Стандартный срок поиска 5-7 дней. Мы не ждем когда кандидат откликнется на вакансию, а сразу начинаем прозвон соискателей </p>
+                    </div>
+                    <div class="icon-block">
+                        <img src="images/common/svg/advantage_icon21.svg" alt="icon" class="item-icon">
+                    </div>
+                </div>
+                <div class="advblocks-section__content__item">
+                    <div class="descr-block">
+                        <h3 class="item-name">Выбираем лучших</h3>
+                        <p>Мы не просто ищем резюме, мы
+                            внимательно исследуем потенциал
+                            кандидатов, их сильные и слабые
+                            стороны</p>
+                    </div>
+                    <div class="icon-block"><img src="images/common/svg/advantage_icon22.svg" alt="icon" class="item-icon"></div>
+                </div>
+                <div class="advblocks-section__content__item">
+                    <div class="descr-block">
+                        <h3 class="item-name">Конфиденциальность</h3>
+                        <p>В процессе подбора персонала
+                            разглашается только разрешенная
+                            информация о компании, что позволяет
+                            сохранить компанию инкогнито</p>
+                    </div>
+                    <div class="icon-block"><img src="images/common/svg/advantage_icon23.svg" alt="icon" class="item-icon"></div>
+                </div>
+                <div class="advblocks-section__content__item">
+                    <div class="descr-block">
+                        <h3 class="item-name">Гарантии</h3>
+                        <p>Мы уверены в качестве подобранных
+                            специалистов, поэтому предлагаем
+                            рекрутинговые услуги с гарантией</p>
+                    </div>
+                    <div class="icon-block"><img src="images/common/svg/advantage_icon24.svg" alt="icon" class="item-icon"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="personal-section">
+        <div class="container">
+            <h2 class="personal-section__title section-title">Подбираем персонал</h2>
+            <p>Благодаря большому опыту и знаниям мы четко определяем, какой сотрудник нужен <br>
+            именно Вам. К каждому клиенту используется только индивидуальный подход, мы стремимся <br>
+            максимально вникнуть в ситуацию, чтобы был эффективный результат нашего сотрудничества.</p>
+            <div class="personal-section__content">
+                <div id="personal-slider" class="personal-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/personal/personal_image1.jpg" alt="image" class="item-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Домработницы</h3>
+                                <div class="item-descr">
+                                    <p>Найти умелую помощницу — ответственная задача. Компания Gold house поможет найти квалифицированных помощниц по дому, соответствующих вашим требованиям и современным стандартам.</p>
+                                </div>
+                                <div class="item-price">
+                                    <p>от <b>50.000 ₽</b> <span>(месяц)</span></p>
+                                    <p>от <b>3.000 ₽</b> <span>(день)</span></p>
+                                </div>
+                                <a href="#" class="order-btn btn-style black-style">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/personal/personal_image2.jpg" alt="image" class="item-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Няни</h3>
+                                <div class="item-descr">
+                                    <p>Предлагаем помощь няни для ухода за вашим малышом. Наши няни ответственны, пунктуальны и действительно любят детей! Потому выбрать няню — занятие непростое, агенство Gold house поможет вам в этом.</p>
+                                </div>
+                                <div class="item-price">
+                                    <p>от <b>300 ₽</b> <span>(час)</span></p>
+                                </div>
+                                <a href="#" class="order-btn btn-style black-style">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/personal/personal_image3.jpg" alt="image" class="item-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Сиделки</h3>
+                                <div class="item-descr">
+                                    <p>Профессиональная забота о пожилом или за тяжело больным человеком очень трудна и требует много свободного времени. Gold house станет для Вас надежной опорой, сможет разгрузить Вас и окружить родного человека заботой и комфортом.</p>
+                                </div>
+                                <div class="item-price">
+                                    <p>от <b>300 ₽</b> <span>(час)</span></p>
+                                    <p>от <b>50.000 ₽</b> <span>(месяц)</span></p>
+                                </div>
+                                <a href="#" class="order-btn btn-style black-style">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/personal/personal_image3.jpg" alt="image" class="item-image">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Семейные пары</h3>
+                                <div class="item-descr">
+                                    <p>Менеджеры нашего агентства Gold house помогут подобрать вам семейную пару для помощи по хозяйству. Все наши соискатели на эту вакансию — хорошие профессионалы, имеют специальное образование.</p>
+                                </div>
+                                <div class="item-price">
+                                    <p>от <b>80.000 ₽</b> <span>(месяц)</span></p>
+                                </div>
+                                <a href="#" class="order-btn btn-style black-style">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-slider__navigation">
+                    <a href="javascript:void(0);" class="nav-btn prev-btn"><i class="icon icon-slider_arrow"></i></a>
+                    <a href="javascript:void(0);" class="nav-btn next-btn"><i class="icon icon-slider_arrow"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="container">
+            <h2 class="about-section__title section-title">О нашей компании</h2>
+            <div class="about-section__content">
+                <div class="about-section__content__left-side">
+                    <img src="images/common/about/about_image2.jpg" alt="about" class="about-image">
+                    <span class="img-descr">Гарантия качества</span>
+                </div>
+                <div class="about-section__content__right-side">
+                    <p>Занимаемся трудоустройством и подбором персонала с 2002 года по г. Санкт — Петербургу, Ленинградской области и Всеволожскому району. Более 18 лет на рынке труда! Огромный опыт и профессионализм наших менеджеров помогут в кратчайшие сроки подобрать подходящую кандидатуру. Все кандидаты проходят проверку на безопасность, имеют медицинские справки в том числе психиатра и нарколога, рекомендации тщательно проверяются, а так же работники обеспечиваются униформой</p>
+                </div>
+            </div>
+            <div class="about-section__advantages">
+                <div class="about-section__advantages__item">
+                    <div class="image-block"><img src="images/common/svg/about_icon21.svg" alt="icon" class="item-icon"></div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Репутация</h3>
+                        <p>Сотрудничаем со многими кадровыми агентствами Санкт — Петербурга.</p>
+                    </div>
+                </div>
+                <div class="about-section__advantages__item">
+                    <div class="image-block"><img src="images/common/svg/about_icon22.svg" alt="icon" class="item-icon"></div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Обучение</h3>
+                        <p>Персонал проходит предварительное собеседование и обучение при необходимости, сопровождение на весь период действия договора</p>
+                    </div>
+                </div>
+                <div class="about-section__advantages__item">
+                    <div class="image-block"><img src="images/common/svg/about_icon23.svg" alt="icon" class="item-icon"></div>
+                    <div class="descr-block">
+                        <h3 class="item-name">Ответственность</h3>
+                        <p>Удовлетворим пожелания самого требовательного клиента!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="types-section">
+        <div class="container">
+            <h2 class="types-section__title section-title">Основные этапы работы</h2>
+            <p>выполнили уборку в более чем 500 объектах СПб и ЛО</p>
+            <div class="types-section__content">
+                <div id="types-slider" class="types-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/svg/step_icon1.svg" alt="icon" class="item-icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Заявка</h3>
+                                <p>Оставьте заявку на сайте или позвоните. Мы подробно расскажем о наших услугах и подборе персонала.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/svg/step_icon2.svg" alt="icon" class="item-icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Мы подбираем персонал</h3>
+                                <p>Разрабатываем индивидуальный план действий по подбору специалиста в компанию и согласовываем его. Из базы резюме специалист отбирает
+                                    кандидатов, соответствующих Вашим
+                                    условиям. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/svg/step_icon3.svg" alt="icon" class="item-icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Оплата работы</h3>
+                                <p>Вы определяетесь с выбором и принимаете
+                                    решение нанять одного из кандидатов
+                                    после собеседования с ним, приглашаете
+                                    его на работу. После подписания Акта
+                                    выполненных работ вносите оплату за
+                                    оказанную услугу.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/svg/step_icon1.svg" alt="icon" class="item-icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Заявка</h3>
+                                <p>Оставьте заявку на сайте или позвоните. Мы подробно расскажем о наших услугах и подборе персонала.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/svg/step_icon2.svg" alt="icon" class="item-icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Мы подбираем персонал</h3>
+                                <p>Разрабатываем индивидуальный план действий по подбору специалиста в компанию и согласовываем его. Из базы резюме специалист отбирает
+                                    кандидатов, соответствующих Вашим
+                                    условиям. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/svg/step_icon3.svg" alt="icon" class="item-icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Оплата работы</h3>
+                                <p>Вы определяетесь с выбором и принимаете
+                                    решение нанять одного из кандидатов
+                                    после собеседования с ним, приглашаете
+                                    его на работу. После подписания Акта
+                                    выполненных работ вносите оплату за
+                                    оказанную услугу.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/svg/step_icon1.svg" alt="icon" class="item-icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Заявка</h3>
+                                <p>Оставьте заявку на сайте или позвоните. Мы подробно расскажем о наших услугах и подборе персонала.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/svg/step_icon2.svg" alt="icon" class="item-icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Мы подбираем персонал</h3>
+                                <p>Разрабатываем индивидуальный план действий по подбору специалиста в компанию и согласовываем его. Из базы резюме специалист отбирает
+                                    кандидатов, соответствующих Вашим
+                                    условиям. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="image-block">
+                                <img src="images/common/svg/step_icon3.svg" alt="icon" class="item-icon">
+                            </div>
+                            <div class="descr-block">
+                                <h3 class="item-title">Оплата работы</h3>
+                                <p>Вы определяетесь с выбором и принимаете
+                                    решение нанять одного из кандидатов
+                                    после собеседования с ним, приглашаете
+                                    его на работу. После подписания Акта
+                                    выполненных работ вносите оплату за
+                                    оказанную услугу.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="types-slider__navigation">
+                    <a href="javascript:void(0);" class="nav-btn prev-btn"><i class="icon icon-slider_arrow"></i></a>
+                    <a href="javascript:void(0);" class="nav-btn next-btn"><i class="icon icon-slider_arrow"></i></a>
+                </div>
+            </div>
+            <div class="types-section__descr">
+                <div class="types-section__descr__left-side">
+                    <h3>Работаем без предоплат </h3>
+                    <ul>
+                        <li>Работаем без предоплат по факту выхода на работу сотрудника</li>
+                        <li>Отсутствие ограничений по количеству предоставленных кандидатов, в том числе и на замены</li>
+                        <li>При необходимости — бесплатный выезд менеджера на собеседование к Заказчику.</li>
+                        <li>В стоимость договора Заказчика с Агентством входит: подбор соискателей в соответствии с требованиями заказчика, сбор и проверка информации предоставленной соискателями, инструктаж и подготовка соискателя к работе, организация собеседования, при необходимости — гарантийная замена работника в течение срока найма Работника, психологическая поддержка.</li>
+                    </ul>
+                </div>
+                <div class="types-section__descr__right-side">
+                    <img src="images/common/work_image.jpg" alt="types" class="types-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="faq-section__title section-title">Часто задаваемые вопросы</h2>
+            <p>наших физичнских и юридических клиентов</p>
+            <div class="faq-section__content">
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">А если сотрудник уйдет через неделю работы?</h3>
+                    <div class="item-descr">
+                        <p>На такой случай мы внедрили гарантии — бесплатная замена сотрудника в течение 30 дней.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">А если не найдете подходящего мне кандидата?</h3>
+                    <div class="item-descr">
+                        <p>Мы работаем до закрытия вакансии. Оплачиваете Вы только за принятого в штат сотрудника. Из-под земли достанем, но найдём.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">А если мне никто не понравится?</h3>
+                    <div class="item-descr">
+                        <p>Для этого мы проводим БЕСПЛАТНУЮ диагностику, где собираем портрет вашего идеального сотрудника, после чего предоставляем до 10 подходящих под портрет кандидатов. А также согласовываем все резюме перед итоговым собеседованием.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">А если мы все же с Вами не сработаемся?</h3>
+                    <div class="item-descr">
+                        <p>Вернём предоплату в 100% размере. Хотя уверенны, что такого не случится.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">А если я найду сам быстрее?</h3>
+                    <div class="item-descr">
+                        <p>Зачастую быстрый набор обуславливает текучку кадров. Мы за долгосрочных работников, именно поэтому у нас большая воронка найма, которая позволяет выбрать кандидата на долгое и эффективное сотрудничество.</p>
+                    </div>
+                </div>
+                <div class="faq-section__content__item">
+                    <h3 class="item-title">Я сам не знаю, кто мне нужен</h3>
+                    <div class="item-descr">
+                        <p>Для этого мы проводим БЕСПЛАТНУЮ диагностику, где выясняем потребности вашего бизнеса и ориентируем Вас по необходимым специалистам.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="answers-section">
+        <div class="container">
+            <h2 class="answers-section__title section-title question-title">Что о нас говорят наши клиенты</h2>
+        </div>
+        <div class="answers-section__content">
+            <div id="answers-slider" class="answers-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-item">
+                        <div class="slide-info">
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-user"></i></div>
+                                <div class="descr-block">
+                                    Клиент
+                                    <span>Игорь Важенин</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-home"></i></div>
+                                <div class="descr-block">
+                                    Объект
+                                    <span>Квартира, 56 м²</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-mark"></i></div>
+                                <div class="descr-block">
+                                    Локация
+                                    <span>г. Санкт-Петербрг</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-check_box"></i></div>
+                                <div class="descr-block">
+                                    Вид уборки
+                                    <span>Экспресс уборка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-descr">
+                            <p>Заказали услугу- генеральная уборка квартиры. 2 девушки и парень за 8 часов отмыли так, что все сияло и блестело!</p>
+                            <p>А когда парогенератором начали радиаторы мыть -мы поняли всю серьезность подхода к делу уборки. Всем рекомендуем!</p>
+                            <div class="marks-row">
+                                <span>Оценка</span>
+                                <ul class="marks-list">
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item">
+                        <div class="slide-info">
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-user"></i></div>
+                                <div class="descr-block">
+                                    Клиент
+                                    <span>Игорь Важенин</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-home"></i></div>
+                                <div class="descr-block">
+                                    Объект
+                                    <span>Квартира, 56 м²</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-mark"></i></div>
+                                <div class="descr-block">
+                                    Локация
+                                    <span>г. Санкт-Петербрг</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-check_box"></i></div>
+                                <div class="descr-block">
+                                    Вид уборки
+                                    <span>Экспресс уборка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-descr">
+                            <p>Заказали услугу- генеральная уборка квартиры. 2 девушки и парень за 8 часов отмыли так, что все сияло и блестело!</p>
+                            <p>А когда парогенератором начали радиаторы мыть -мы поняли всю серьезность подхода к делу уборки. Всем рекомендуем!</p>
+                            <div class="marks-row">
+                                <span>Оценка</span>
+                                <ul class="marks-list">
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-item">
+                        <div class="slide-info">
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-user"></i></div>
+                                <div class="descr-block">
+                                    Клиент
+                                    <span>Игорь Важенин</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-home"></i></div>
+                                <div class="descr-block">
+                                    Объект
+                                    <span>Квартира, 56 м²</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-mark"></i></div>
+                                <div class="descr-block">
+                                    Локация
+                                    <span>г. Санкт-Петербрг</span>
+                                </div>
+                            </div>
+                            <div class="slide-info__item">
+                                <div class="icon-block"><i class="icon icon-check_box"></i></div>
+                                <div class="descr-block">
+                                    Вид уборки
+                                    <span>Экспресс уборка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-descr">
+                            <p>Заказали услугу- генеральная уборка квартиры. 2 девушки и парень за 8 часов отмыли так, что все сияло и блестело!</p>
+                            <p>А когда парогенератором начали радиаторы мыть -мы поняли всю серьезность подхода к делу уборки. Всем рекомендуем!</p>
+                            <div class="marks-row">
+                                <span>Оценка</span>
+                                <ul class="marks-list">
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                    <li class="marks-list__item"><i class="icon icon-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="answers-slider__navigation">
+                <a href="javascript:void(0);" class="nav-btn prev-btn"><i class="icon icon-slider_arrow"></i></a>
+                <a href="javascript:void(0);" class="nav-btn next-btn"><i class="icon icon-slider_arrow"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="order-section">
+        <div class="container">
+            <h2 class="order-section__title section-title">Оставить заявку</h2>
+            <p>Свяжитесь с нашим агентством и получите подробную <br> информацию о сроках, условиях подбора персонала, оплате.</p>
+            <div class="order-section__content">
+                <div class="order-section__content__left-side">
+                    <form action="" class="order-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Ваше имя" class="input-style">
+                        </div>
+                        <div class="input-group">
+                            <input type="phone" name="phone" placeholder="Телефорн" class="input-style">
+                        </div>
+                        <div class="input-group">
+                            <select name="type" class="custom-select">
+                                <option value="">Выберите вид услуги</option>
+                                <option value="Уборка после ремонта">Уборка после ремонта</option>
+                                <option value="Генеральная уборка">Генеральная уборка</option>
+                                <option value="Поддерживающая уборка">Поддерживающая уборка</option>
+                                <option value="Химчистка мягкой  мебели">Химчистка мягкой мебели</option>
+                                <option value="Мойка окон">Мойка окон</option>
+                                <option value="Уборка офисов">Уборка офисов</option>
+                                <option value="Уборка коммерческого помещения">Уборка коммерческого помещения</option>
+                            </select>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style yellow-style">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="order-section__content__right-side">
+                    <img src="images/common/woman_image__fill.png" alt="order" class="order-image second-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts-section">
+        <div class="container">
+            <h2 class="contacts-section__title section-title">Контакты компании</h2>
+            <p>Звоните, пишите, мы любим отвечать на сообщения и звонки.</p>
+            <div class="contacts-section__info">
+                <div class="phone-block">
+                    <span>телефон:</span>
+                    <a href="tel:+7 921 976 38 64">+7 921 976 38 64</a>
+                </div>
+                <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="backcall-btn btn-style black-style">Заказать звонок</a>
+                <div class="address-block">
+                    <span>адрес:</span>
+                    <p>г. Всеволжск, <br> Всеволжский проспект, 17</p>
+                </div>
+                <div class="time-block">
+                    <span>часы работы:</span>
+                    <p>с 9:00 до 22:00</p>
+                </div>
+                <div class="mail-block">
+                    <span>e-mail:</span>
+                    <a href="mailto:">gold_house_47@mal.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-section__map">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="gold" class="logo-image">
+                </a>
+                <nav class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Услуги</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Галерея</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Вопрос-ответ</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">О нас</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Отзывы</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+7 921 976 38 64" class="phone-link">+7 921 976 38 64</a>
+                <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="backcall-btn btn-style black-style">Заказать уборку</a>
+            </div>
+            <div class="footer__copyright">
+                <p>© 2021 «Gold House» Клининговые услуги. <a href="#">Политика конфиденциалности</a></p>
+                <ul class="social-list">
+                    <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-vk"></i></a></li>
+                    <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-inst"></i></a></li>
+                    <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-wa"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="javascript:void(0);" data-micromodal-trigger="modal-backcall" class="fixedbtn" style="display: none;"><i class="icon icon-phone"></i></a>
+    </footer>
+    <div class="modal micromodal-slide simple-modal backcall-modal" id="modal-backcall" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1">
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <h2 class="modal__title">Заполните заявку</h2>
+                    <h3 class="modal__subtitle">наши менеджеры свяжутся <br> с Вами в ближайшее время</h3>
+                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-cancel"></i></button>
+                </header>
+                <main class="modal__content">
+                    <form action="" class="backcall-form">
+                        <div class="input-group">
+                            <input class="input-style" type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input-style" type="text" name="phone" placeholder="Введите ваш телефон" required>
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="btn-style yellow-style">Отправить заявку</button>
+                        </div>
+                        <div class="input-group check-group">
+                            <label>
+                                <input type="checkbox" name="check" checked>
+                                <span class="label">Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></span>
+                            </label>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
