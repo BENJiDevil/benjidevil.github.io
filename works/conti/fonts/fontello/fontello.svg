@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2023 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="arrow" unicode="&#xe800;" d="M625 725a63 63 0 0 1-44-18l-357-357 357-357a63 63 0 0 1 88 0 63 63 0 0 1 0 89l-268 268 268 268a63 63 0 0 1 0 89 63 63 0 0 1-44 18z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow_line" unicode="&#xe801;" d="M469 725a63 63 0 0 1-44-18l-357-357 357-357a63 63 0 0 1 88 0 63 63 0 0 1 0 89l-268 268 268 268a63 63 0 0 1 0 89 63 63 0 0 1-44 18z m-250-312a63 63 0 0 1-63-63 63 63 0 0 1 63-62h625a63 63 0 0 1 62 62 63 63 0 0 1-62 63z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow_select" unicode="&#xe802;" d="M833 475l-333-333-333 333" horiz-adv-x="1000" />
+
+<glyph glyph-name="check" unicode="&#xe803;" d="M855 646a63 63 0 0 1-88-3l-359-387-173 198a63 63 0 0 1-89 6 63 63 0 0 1-5-89l264-302 453 488a63 63 0 0 1-3 89z" horiz-adv-x="1000" />
+
+<glyph glyph-name="close" unicode="&#xe804;" d="M219 694a63 63 0 0 1-44-19 63 63 0 0 1 0-88l562-562a63 63 0 0 1 88 0 63 63 0 0 1 0 88l-562 562a63 63 0 0 1-44 19z m562 0a63 63 0 0 1-44-19l-562-562a63 63 0 0 1 0-88 63 63 0 0 1 88 0l562 562a63 63 0 0 1 0 88 63 63 0 0 1-44 19z" horiz-adv-x="1000" />
+
+<glyph glyph-name="hamburger" unicode="&#xe805;" d="M188 163a63 63 0 0 1-63-63 63 63 0 0 1 63-62h625a63 63 0 0 1 62 62 63 63 0 0 1-62 63z m0 250a63 63 0 0 1-63-63 63 63 0 0 1 63-62h625a63 63 0 0 1 62 62 63 63 0 0 1-62 63z m0 250a63 63 0 0 1-63-63 63 63 0 0 1 63-62h625a63 63 0 0 1 62 62 63 63 0 0 1-62 63z" horiz-adv-x="1000" />
+
+<glyph glyph-name="location" unicode="&#xe806;" d="M942 787l-358-900-145 398-397 144z" horiz-adv-x="1000" />
+
+<glyph glyph-name="plus" unicode="&#xe807;" d="M500 704a63 63 0 0 1-62-62v-590a63 63 0 0 1 62-62 63 63 0 0 1 63 62v590a63 63 0 0 1-63 62z m-295-294a63 63 0 0 1-62-63 63 63 0 0 1 62-62h590a63 63 0 0 1 62 62 63 63 0 0 1-62 63z" horiz-adv-x="1000" />
+
+<glyph glyph-name="search" unicode="&#xe808;" d="M719 194a63 63 0 0 1-44-19 63 63 0 0 1 0-88l208-208a63 63 0 0 1 88 0 63 63 0 0 1 0 88l-208 208a63 63 0 0 1-44 19z m-292 646c-229 0-417-188-417-417 0-229 188-417 417-417 230 0 417 188 417 417 0 229-187 417-417 417z m0-125c162 0 292-130 292-292 0-162-130-292-292-292-162 0-292 130-292 292 0 162 130 292 292 292z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow_adv" unicode="&#xe809;" d="M531 801l-55-56 27-28 367-367-367-367-27-28 55-56 28 28 423 423-423 423z m-513-411v-79h40 789 40v79h-40-789z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow_bread" unicode="&#xe80a;" d="M154 843l-109-108 55-55 330-330-330-330-55-55 109-108 54 54 439 439-439 439z" horiz-adv-x="692" />
+
+<glyph glyph-name="mail" unicode="&#xe80b;" d="M906 694h-812c-17 0-31-14-31-31v-625c0-18 14-32 31-32h812c18 0 32 14 32 32v625c0 17-14 31-32 31z m-79-107l-308-239c-7-6-18-6-26 0l-308 239c-1 1-2 3-2 4-1 1-1 3 0 4 0 2 1 3 2 4 2 1 3 1 5 1h633c2 0 3 0 4-1 1-1 2-2 3-4 0-1 0-3 0-4-1-1-1-3-3-4z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
