@@ -92,10 +92,10 @@
                 </div>
                 <div class="footer__top__right-side">
                     <ul class="footer-menu">
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">О проекте</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Вузы</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Новости</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Истории</a></li>
+                        <li class="footer-menu__item"><a href="#" class="error-modal footer-menu__link">О проекте</a></li>
+                        <li class="footer-menu__item"><a href="#" class="error-modal footer-menu__link">Вузы</a></li>
+                        <li class="footer-menu__item"><a href="#" class="error-modal footer-menu__link">Новости</a></li>
+                        <li class="footer-menu__item"><a href="#" class="error-modal footer-menu__link">Истории</a></li>
                     </ul>
                 </div>
             </div>
@@ -113,10 +113,17 @@
         </div>
         <a href="javascript:void(0);" class="toTop_btn"><i class="icon icon-slider_arrow"></i></a>
     </footer>
-    <link rel="stylesheet" href="css/styles.min.css">
+    <div id="error-modal" class="mfp-hide error-modal">
+        <div class="modal-content">
+            <p class="modal-title">Ой, эта страничка всё ещё в разработке.</p>
+            <p class="modal-title">Возвращайся сюда чуть попозже.</p>
+            <a href="javascript:void(0);" class="ok-btn">Хорошо</a>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/styles.min.css?v=2">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script defer src="js/common.min.js"></script>
+    <script defer src="js/common.min.js?v=2"></script>
 </body>
 </html>
