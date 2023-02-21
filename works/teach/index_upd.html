@@ -45,42 +45,42 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__content">
-            <a href="/" class="logo-link">
-                <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
-                <p>Будь <span>учителем</span></p>
-            </a>
-            <nav class="main-menu">
-                <ul class="main-menu__list">
-                    <li class="main-menu__item"><a href="#" class="main-menu__link">О проекте</a></li>
-                    <li class="main-menu__item"><a href="#" class="main-menu__link">Вузы</a></li>
-                    <li class="main-menu__item"><a href="#" class="main-menu__link">Новости</a></li>
-                    <li class="main-menu__item"><a href="#" class="main-menu__link">Истории</a></li>
+    <div id="main" class="main-content">
+        <header class="header">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                    <p>Будь <span>учителем</span></p>
+                </a>
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">О проекте</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Вузы</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Новости</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Истории</a></li>
+                    </ul>
+                </nav>
+                <div class="search-block">
+                    <form action="#" class="search-form">
+                        <div class="input-group search-group">
+                            <input type="text" name="search_val" class="search-input" placeholder="Поиск...">
+                        </div>
+                        <div class="input-group btn-group">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <ul class="social-list" data-name="Социалки">
+                    <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk"></i></a></li>
+                    <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tg"></i></a></li>
                 </ul>
-            </nav>
-            <div class="search-block">
-                <form action="#" class="search-form">
-                    <div class="input-group search-group">
-                        <input type="text" name="search_val" class="search-input" placeholder="Поиск...">
-                    </div>
-                    <div class="input-group btn-group">
-                        <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
-                    </div>
-                </form>
+                <button id="hamburger" class="hamburger hamburger--slider" type="button" style="display: none;">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
-            <ul class="social-list" data-name="Социалки">
-                <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk"></i></a></li>
-                <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tg"></i></a></li>
-            </ul>
-            <button id="hamburger" class="hamburger hamburger--slider" type="button" style="display: none;">
-                <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </div>
-    </header>
-    <div class="page-content">
+        </header>
         <main class="main-page">
             <div class="content-wrapper">
                 <div class="container">
@@ -449,7 +449,7 @@
             <div class="content-wrapper">
                 <div class="footer__top">
                     <div class="footer__top__left-side">
-                        <p>© 2023 «Профессионалитет» — информационный ресурс и агрегатор учебных заведений на базе среднего общего образования. Материалы подготовлены объединенной редакцией АНО «Национальные приоритеты».</p>
+                        <p>2023 «Будь учителем» — информационный ресурс и агрегатор учебных заведений среднего профессионального и высшего образования по педагогическим специальностям. Материалы подготовлены объединенной редакцией АНО «Национальные приоритеты».</p>
                         <ul class="social-list">
                             <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk"></i></a></li>
                             <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tg"></i></a></li>
@@ -476,6 +476,7 @@
                     </div>
                 </div>
             </div>
+            <a href="javascript:void(0);" class="toTop_btn"><i class="icon icon-slider_arrow"></i></a>
         </footer>
     </div>
     <link rel="stylesheet" href="css/styles.min.css">

@@ -51,7 +51,7 @@
                 <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
                 <p>Будь <span>учителем</span></p>
             </a>
-            <nav class="main-menu">
+            <nav id="main-menu" class="main-menu">
                 <ul class="main-menu__list">
                     <li class="main-menu__item"><a href="#" class="main-menu__link">О проекте</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Вузы</a></li>
@@ -73,7 +73,7 @@
                 <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk"></i></a></li>
                 <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tg"></i></a></li>
             </ul>
-            <button id="hamburger" class="hamburger hamburger--slider" type="button" style="display: none;">
+            <button id="hamburger" class="hamburger hamburger--slider" data-menu="main-menu" type="button">
                 <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
                 </span>
@@ -84,7 +84,7 @@
         <div class="content-wrapper">
             <div class="container">
                 <div class="title-row">
-                    <h1 class="main-title" data-interval="4000" data-titles="Любовь,Будущее,Знания,Престиж">Учитель — <br> это <span>Любовь</span></h1>
+                    <h1 class="main-title" data-interval="5000" data-titles="Любовь,Будущее,Знания,Престиж">Учитель — <br> это <span>Любовь</span></h1>
                     <div id="title_animation" class="title_animation"></div>
                 </div>
                 <div class="main-descr">
@@ -94,7 +94,8 @@
             </div>
             <div class="main-page__bottom">
                 <div class="link-block">
-                    <a href="#main_about" class="about-link go_to"> <i class="icon icon-down_arrow"></i> О проекте
+                    <a href="#main_about" class="about-link go_to">
+                        <i class="icon icon-down_arrow"></i> О проекте
                     </a>
                 </div>
                 <div class="add-block">
@@ -117,7 +118,7 @@
         <div class="content-wrapper">
             <div class="container">
                 <div class="main-about__content">
-                    <div id="test" class="main-about__content__left-side scroll-anim" data-name="Тут ты можешь учиться">
+                    <div class="main-about__content__left-side scroll-anim" data-name="Тут ты можешь учиться">
                         <div class="about-card">
                             <a href="#" class="card-link"></a>
                             <div class="image-block">
@@ -159,19 +160,22 @@
                     </div>
                 </div>
             </div>
-            <div class="main-about__scroll-row">
-                <p><span>#</span>Обучение</p>
-                <p><span>#</span>Университет</p>
-                <p><span>#</span>Университет</p>
-                <p><span>#</span>Техникум</p>
-                <p><span>#</span>Высшееучебноезаведение</p>
-            </div>
         </div>
     </section>
     <div class="main-map">
         <div class="content-wrapper">
-            <div class="container">
-                <div id="map_animation" class="main-map__content">
+            <div class="main-map__words">
+                <ul>
+                    <li>Обучение</li>
+                    <li>Университет</li>
+                    <li>Университет</li>
+                    <li>Техникум</li>
+                    <li>Высшееучебноезаведение</li>
+                </ul>
+            </div>
+            <div class="main-map__content">
+                <div class="container">
+                    <div id="map_animation" class="map_animation"></div>
                 </div>
             </div>
             <div class="main-map__descr">
@@ -369,28 +373,28 @@
     <div class="main-partners">
         <div class="content-wrapper">
             <div class="main-partners__list">
-                <div class="main-partners__item slide-item">
+                <div class="main-partners__item">
                     <img src="images/common/main/partners/partner_logo1.svg" alt="partner" class="partner-logo">
                 </div>
-                <div class="main-partners__item slide-item">
+                <div class="main-partners__item">
                     <img src="images/common/main/partners/partner_logo2.svg" alt="partner" class="partner-logo">
                 </div>
-                <div class="main-partners__item slide-item">
+                <div class="main-partners__item">
                     <img src="images/common/main/partners/partner_logo3.svg" alt="partner" class="partner-logo">
                 </div>
-                <div class="main-partners__item slide-item">
+                <div class="main-partners__item">
                     <img src="images/common/main/partners/partner_logo4.svg" alt="partner" class="partner-logo">
                 </div>
-                <div class="main-partners__item slide-item">
+                <div class="main-partners__item">
                     <img src="images/common/main/partners/partner_logo5.svg" alt="partner" class="partner-logo">
                 </div>
-                <div class="main-partners__item slide-item">
+                <div class="main-partners__item">
                     <img src="images/common/main/partners/partner_logo6.svg" alt="partner" class="partner-logo">
                 </div>
-                <div class="main-partners__item slide-item">
+                <div class="main-partners__item">
                     <img src="images/common/main/partners/partner_logo7.svg" alt="partner" class="partner-logo">
                 </div>
-                <div class="main-partners__item slide-item">
+                <div class="main-partners__item">
                     <img src="images/common/main/partners/partner_logo8.svg" alt="partner" class="partner-logo">
                 </div>
             </div>
@@ -448,7 +452,7 @@
         <div class="content-wrapper">
             <div class="footer__top">
                 <div class="footer__top__left-side">
-                    <p>© 2023 «Профессионалитет» — информационный ресурс и агрегатор учебных заведений на базе среднего общего образования. Материалы подготовлены объединенной редакцией АНО «Национальные приоритеты».</p>
+                    <p>2023 «Будь учителем» — информационный ресурс и агрегатор учебных заведений среднего профессионального и высшего образования по педагогическим специальностям. Материалы подготовлены объединенной редакцией АНО «Национальные приоритеты».</p>
                     <ul class="social-list">
                         <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk"></i></a></li>
                         <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-tg"></i></a></li>
@@ -475,6 +479,7 @@
                 </div>
             </div>
         </div>
+        <a href="javascript:void(0);" class="toTop_btn"><i class="icon icon-slider_arrow"></i></a>
     </footer>
     <link rel="stylesheet" href="css/styles.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
