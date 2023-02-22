@@ -88,9 +88,9 @@
                     <li class="breadcrumbs-list__item"><span class="current-item">Навигатор педагогических вузов</span></li>
                 </ul>
             </div>
-            <div class="filter-block">
+            <div class="catalog-page__top">
                 <h1 class="catalog-page__title page-title">Поиск заведений</h1>
-                <a href="javascript:void(0);" class="filter-btn">Фильтр <i class="icon icon-filter"></i></a>
+                <a href="javascript:void(0);" class="filter-btn js-filter-open">Фильтр <i class="icon icon-filter"></i></a>
                 <ul class="tags-list">
                     <li class="tags-list__item">
                         <span class="item-name">Санкт-Петербург</span>
@@ -109,7 +109,196 @@
                         <a href="#" class="item-link"><i class="icon icon-close"></i></a>
                     </li>
                 </ul>
-                <a href="javascript:void(0);" class="clean-filter">Сбросить все <i class="icon icon-trash"></i></a>
+                <a href="javascript:void(0);" class="clean-btn js-filter-clean">Сбросить все <i class="icon icon-trash"></i></a>
+                <div class="filter-block">
+                    <div class="filter-nav">
+                        <div class="filter-title">Фильтр</div>
+                        <a href="javascript:void(0);" class="close-btn js-filter-close">Закрыть <i class="icon icon-close"></i></a>
+                    </div>
+                    <form action="" class="filter-form">
+                        <div class="filter-form__item">
+                            <span class="item-title">Уровень образования</span>
+                            <div class="item-content">
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="level_name1" value="Бакалавриат">
+                                        <span class="label">Бакалавриат</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="level_name2" value="Специалитет">
+                                        <span class="label">Специалитет</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="level_name3" value="Магистратура" checked>
+                                        <span class="label">Магистратура</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="level_name4" value="Аспирантура" checked>
+                                        <span class="label">Аспирантура</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="level_name5" value="Программы дополнительного образования">
+                                        <span class="label">Программы дополнительного образования</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-form__item">
+                            <span class="item-title">Регион</span>
+                            <div class="search-group">
+                                <input type="text" name="region_search" placeholder="Поиск" class="search-input">
+                            </div>
+                            <div class="item-content">
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name1" value="Москва">
+                                        <span class="label">Москва</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name2" value="Санкт-Петербург">
+                                        <span class="label">Санкт-Петербург</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name3" value="Казань">
+                                        <span class="label">Казань</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name4" value="Калининград">
+                                        <span class="label">Калининград</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name5" value="Архангельск">
+                                        <span class="label">Архангельск</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name6" value="Нижний Новгород">
+                                        <span class="label">Нижний Новгород</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name7" value="Владимир">
+                                        <span class="label">Владимир</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name8" value="Екатеринбург">
+                                        <span class="label">Екатеринбург</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name9" value="Волгоград">
+                                        <span class="label">Волгоград</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name7" value="Владимир">
+                                        <span class="label">Владимир</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name8" value="Екатеринбург">
+                                        <span class="label">Екатеринбург</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="city_name9" value="Волгоград">
+                                        <span class="label">Волгоград</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-form__item">
+                            <span class="item-title">Направление</span>
+                            <div class="search-group">
+                                <input type="text" name="area_search" placeholder="Поиск" class="search-input">
+                            </div>
+                            <div class="item-content">
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="lang_name1" value="Английский">
+                                        <span class="label">Английский</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="lang_name2" value="Биология">
+                                        <span class="label">Биология</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="lang_name3" value="География">
+                                        <span class="label">География</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="lang_name4" value="Информатика">
+                                        <span class="label">Информатика</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="lang_name5" value="Испанский">
+                                        <span class="label">Испанский</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="lang_name6" value="Китайский">
+                                        <span class="label">Китайский</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="lang_name7" value="Русский язык">
+                                        <span class="label">Русский язык</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="lang_name8" value="Французкий язык">
+                                        <span class="label">Французкий язык</span>
+                                    </label>
+                                </div>
+                                <div class="input-group check-group">
+                                    <label>
+                                        <input type="checkbox" name="lang_name9" value="Немецкий язык">
+                                        <span class="label">Немецкий язык</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-form__btns">
+                            <a href="javascript:void(0);" class="js-clean-btn clean-btn">Сбросить все</a>
+                            <button type="submit" class="btn-style submit-btn">Применить</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="catalog-page__content">
                 <div class="catalog-page__content__item card-item">
