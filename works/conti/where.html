@@ -64,13 +64,15 @@
                         </form>
                     </div>
                 </div>
-                <button id="hamburger" class="hamburger hamburger--slider" type="button">
+                <button id="hamburger" data-menu="main-menu" class="hamburger hamburger--slider" type="button">
                     <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                     </span>
                 </button>
             </div>
-            <nav class="main-menu">
+            <nav id="main-menu" class="main-menu">
+                <a href="#" class="buy-btn btn-style gray-style">Где купить</a>
+                <a href="#" class="select-btn btn-style">Подобрать шины</a>
                 <ul class="main-menu__list">
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Каталог шин</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Наши преимущества</a></li>
@@ -85,28 +87,31 @@
         <div class="container">
             <div class="breadcrumbs-block">
                 <ul class="breadcumbs-list">
-                    <li class="breadcumbs-list__item"><a href="#" class="breadcumbs-list__link">Главная</a></li>
-                    <li class="breadcumbs-list__item"><a href="#" class="breadcumbs-list__link">Шины</a></li>
-                    <li class="breadcumbs-list__item"><span class="breadcumbs-list__link last">Для легковых автомобилей</span></a></li>
+                    <li class="breadcumbs-list__item"><a href="#" class="breadcumbs-list__link">Публикации</a></li>
+                    <li class="breadcumbs-list__item"><a href="#" class="breadcumbs-list__link">Публикации</a></li>
+                    <li class="breadcumbs-list__item"><a href="#" class="breadcumbs-list__link">Публикации</a></li>
+                    <li class="breadcumbs-list__item"><span class="breadcumbs-list__link last">Публикации</span></a></li>
                 </ul>
             </div>
-            <h1 class="where-page__title page-title">Где купить</h1>
-            <div class="search-block">
-                <form action="" class="search-form">
-                    <div class="form-title">Начните печатать название города</div>
-                    <div class="input-group">
-                        <input type="text" name="search" placeholder="Например Москва">
-                        <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
-                    </div>
-                </form>
-                <ul class="city-list">
-                    <li class="city-list__item"><a href="#" class="city-list__link">Москва</a></li>
-                    <li class="city-list__item"><a href="#" class="city-list__link">Санкт-Петербург</a></li>
-                    <li class="city-list__item"><a href="#" class="city-list__link">Новосибирск</a></li>
-                    <li class="city-list__item"><a href="#" class="city-list__link">Екатеринбург</a></li>
-                    <li class="city-list__item"><a href="#" class="city-list__link">Нижний Новгород</a></li>
-                    <li class="city-list__item"><a href="#" class="city-list__link">Казань</a></li>
-                </ul>
+            <div class="where-page__content">
+                <h1 class="where-page__title page-title">Где купить</h1>
+                <div class="search-block">
+                    <form action="" class="search-form">
+                        <div class="form-title">Начните печатать название города</div>
+                        <div class="input-group">
+                            <input type="text" name="search" placeholder="Например Москва">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                    <ul class="city-list">
+                        <li class="city-list__item"><a href="#" class="city-list__link">Москва</a></li>
+                        <li class="city-list__item"><a href="#" class="city-list__link">Санкт-Петербург</a></li>
+                        <li class="city-list__item"><a href="#" class="city-list__link">Новосибирск</a></li>
+                        <li class="city-list__item"><a href="#" class="city-list__link">Екатеринбург</a></li>
+                        <li class="city-list__item"><a href="#" class="city-list__link">Нижний Новгород</a></li>
+                        <li class="city-list__item"><a href="#" class="city-list__link">Казань</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="where-page__map">
@@ -121,48 +126,25 @@
                         <img src="images/common/svg/logo.svg" alt="matador" class="logo-image">
                     </a>
                     <div class="descr-block">
-                        <p>Посещая сайт continental.ru, вы предоставляете <a href="#">согласие на обработку данных</a> в соответствии с политикой конфиденциальности.</p>
+                        <p>ООО «Континентал Тайрс РУС»</p>
+                        <p>Ленинградский пр-т, 15, стр.</p>
+                        <p>15125040, Москва, Россия</p>
+                        <a href="tel:#" class="phone-link">+7 (495) 787-67-35</a>
+                        <a href="mailto:#" class="mail-link">ctrus@gislaved.pro</a>
                     </div>
                 </div>
                 <div class="footer__content__column">
-                    <a href="#" class="column-title">О компании</a>
                     <div class="list-item">
-                        <a href="#" class="list-title">Наши преимущества</a>
+                        <a href="#" class="column-title">О компании</a>
                         <ul>
-                            <li><a href="#">Тесты и испытания</a></li>
-                            <li><a href="#">Расширенная гарантия</a></li>
-                            <li><a href="#">Ассоциация производителей шин</a></li>
-                            <li><a href="#">Технологии</a></li>
-                        </ul>
-                    </div>
-                    <div class="list-item">
-                        <a href="#" class="list-title">Новости</a>
-                        <ul>
-                            <li><a href="#">Обзоры</a></li>
+                            <li><a href="#">О Matador</a></li>
+                            <li><a href="#">Завод в калуге</a></li>
                             <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="list-item">
-                        <a href="#" class="list-title">Контакты</a>
-                        <ul>
-                            <li><a href="#">Отдел продаж</a></li>
-                            <li><a href="#">Партнерство</a></li>
-                            <li><a href="#">Обратная связь</a></li>
-                            <li><a href="#">Контакты PR и Медиа</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer__content__column">
-                    <a href="#" class="column-title">Шины</a>
-                    <div class="list-item">
-                        <a href="#" class="list-title">Тип транспорта</a>
-                        <ul>
-                            <li><a href="#">Для легковых автомобилей</a></li>
-                            <li><a href="#">Шины для коммерческого транспорта</a></li>
-                        </ul>
-                    </div>
-                    <div class="list-item">
-                        <a href="#" class="list-title">Обзоры продукции</a>
+                        <a href="#" class="column-title">Шины</a>
                         <ul>
                             <li><a href="#">Акции</a></li>
                             <li><a href="#">Специальные проекты</a></li>
@@ -170,42 +152,39 @@
                     </div>
                 </div>
                 <div class="footer__content__column">
-                    <a href="#" class="column-title">Технический совет</a>
-                    <ul class="tech-list">
-                        <li class="tech-list__item"><a href="#" class="tech-list__link">Первичная комплектация</a></li>
-                        <li class="tech-list__item"><a href="#" class="tech-list__link">Технические вопросы</a></li>
-                        <li class="tech-list__item"><a href="#" class="tech-list__link">Найти диллера</a></li>
-                        <li class="tech-list__item"><a href="#" class="tech-list__link">Сравнение шин</a></li>
+                    <div class="list-item">
+                        <a href="#" class="column-title">Технический совет</a>
+                        <ul>
+                            <li><a href="#">Технические вопросы</a></li>
+                            <li><a href="#">Тесты и испытания</a></li>
+                            <li><a href="#">Первичная комплектация</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-item">
+                        <a href="#" class="column-title">Где купить</a>
+                    </div>
+                </div>
+                <div class="footer__content__column">
+                    <ul class="social-list">
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-yt"></i></a></li>
+                        <li class="social-list__item"><a href="#" target="_blank" class="social-list__link"><i class="icon icon-vk"></i></a></li>
                     </ul>
+                    <ul class="docs-list">
+                        <li class="docs-list__item"><a href="#" class="docs-list__link">Политика обработки персональных данных</a></li>
+                        <li class="docs-list__item"><a href="#" class="docs-list__link">Правовая информация</a></li>
+                        <li class="docs-list__item"><a href="#" class="docs-list__link">Политика использования файлов cookie</a></li>
+                    </ul>
+                    <div class="info-block">
+                        <p>Горячая линия работает по будням:</p>
+                        <a href="tel:#" class="phone-link">8 (800) 555-77-06</a>
+                        <p>График работы: 10:30–18:00 (по МСК)</p>
+                        <p>Звонок внутри страны бесплатный</p>
+                    </div>
                 </div>
             </div>
             <a href="javascript:void(0);" class="scrollbtn"><i class="icon icon-icon-arrow"></i></a>
         </div>
     </footer>
-    <div class="modal micromodal-slide simple-modal" id="modal-backcall" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div class="modal__container" role="dialog" aria-modal="true">
-                <header class="modal__header">
-                    <h2 class="modal__title"></h2>
-                    <h3 class="modal__subtitle"></h3>
-                    <button class="modal__close" aria-label="Закрыть" data-micromodal-close><i class="icon icon-close-icon"></i></button>
-                </header>
-                <main class="modal__content">
-                    <form action="" class="backcall-form">
-                        <div class="input-group">
-                            <input type="text" name="name" placeholder="Имя*" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" name="phone" placeholder="Телефон*" required>
-                        </div>
-                        <div class="input-group btn-group">
-                            <button type="submit" class="btn-style btn-fill-style white-style">Заказать</button>
-                        </div>
-                    </form>
-                </main>
-            </div>
-        </div>
-    </div>
     <link rel="stylesheet" href="css/styles.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.min.js"></script>
     <script defer src="js/common.min.js"></script>
