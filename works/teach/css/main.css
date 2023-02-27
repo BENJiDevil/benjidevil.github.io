@@ -1632,7 +1632,6 @@ body.overflow .header {
   color: #292d33
 }
 .catalog-page__top .filter-block {
-  display: none;
   position: absolute;
   top: calc(100% + 10px);
   right: 0;
@@ -1640,7 +1639,25 @@ body.overflow .header {
   background-color: #fff;
   border-radius: 30px 0 0 30px;
   width: 380px;
-  padding: 40px 20px 20px
+  padding: 40px 20px 20px;
+  -webkit-transform: translateX(100vw);
+  -ms-transform: translateX(100vw);
+  transform: translateX(100vw);
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s
+}
+@media (max-width:450px) {
+  .catalog-page__top .filter-block {
+    border-radius: 20px;
+    width: calc(100vw - 20px)
+  }
+}
+.catalog-page__top .filter-block.show {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0)
 }
 .catalog-page__top .filter-block .filter-nav {
   display: -webkit-box;

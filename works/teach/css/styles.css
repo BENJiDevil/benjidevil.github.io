@@ -100,17 +100,17 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start
 }
 .main-about__content__left-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -118,7 +118,7 @@
   -ms-flex: 0 0 calc(50% + 12px);
   flex: 0 0 calc(50% + 12px);
   max-width: calc(50% + 12px);
-  padding-top: 38px;
+  padding-top: 15px;
   position: relative
 }
 @media (max-width:1200px) {
@@ -139,9 +139,6 @@
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%
-  }
-  .main-about__content__left-side .about-card {
-    min-height: 375px
   }
 }
 @media (max-width:414px) {
@@ -168,7 +165,7 @@
 .main-about__content__left-side:after {
   content: attr(data-name);
   position: absolute;
-  top: calc(100% - 60px);
+  top: calc(100% + 35px);
   left: calc(72% + 10px);
   width: 65px;
   font-weight: 200;
@@ -179,6 +176,11 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   z-index: 2
+}
+@media (max-width:1024px) {
+  .main-about__content__left-side:after {
+    top: calc(100% - 60px)
+  }
 }
 @media (max-width:768px) {
   .main-about__content__left-side:after {
@@ -200,7 +202,7 @@
   background-position: center;
   background-size: contain;
   position: absolute;
-  top: calc(100% - 57px);
+  top: calc(100% + 55px);
   left: calc(72% - 26px);
   z-index: 2
 }
@@ -239,6 +241,14 @@
   transition: background-color .3s,color .3s,transform .3s,border-color .3s,box-shadow .3s,-webkit-transform .3s,-webkit-box-shadow .3s;
   -o-transition: background-color .3s,color .3s,transform .3s,border-color .3s,box-shadow .3s;
   position: relative
+}
+@media (max-width:1024px) {
+  .main-about__content__left-side:before {
+    top: calc(100% - 40px)
+  }
+  .main-about__content__left-side .about-card {
+    min-height: 375px
+  }
 }
 @media (max-width:576px) {
   .main-about__content__left-side .about-card {
@@ -383,6 +393,11 @@
 .main-about__content__left-side .about-card .descr-block {
   padding: 22px 8px 10px
 }
+@media (max-width:420px) {
+  .main-about__content__left-side .about-card .descr-block {
+    padding: 20px 5px 10px
+  }
+}
 .main-about__content__left-side .about-card .descr-block .tags-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,7 +410,7 @@
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: auto;
-  color: #292d33;
+  color: #434a53;
   display: inline-block;
   border: 1px solid #eff0f4;
   border-radius: 10px;
@@ -418,7 +433,8 @@
   font-weight: 700;
   font-size: 38px;
   line-height: 140%;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  color: #292d33
 }
 .main-about__content__left-side .about-card:hover {
   border-color: #292d33;
@@ -456,11 +472,6 @@
   background: linear-gradient(92.17deg,#2b3bd0 0,#4eb4ff 100%);
   top: 5px;
   right: 5px
-}
-.main-about__content__left-side .about-card:hover .image-block .more-link .icon {
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0)
 }
 .main-about__content__left-side .about-card:hover .image-block .more-link span {
   width: 100%;
@@ -1574,11 +1585,21 @@
   }
 }
 .main-gallery__content__item:nth-of-type(3) .descr-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 calc(52% - 6px);
   flex: 0 0 calc(52% - 6px);
   max-width: calc(52% - 6px);
-  padding: 32px 50px 32px 30px
+  padding: 32px 35px 20px 30px;
+  text-align: right
 }
 @media (max-width:414px) {
   .main-gallery__content__item:nth-of-type(3) .descr-block {
@@ -1587,7 +1608,7 @@
     flex: 0 0 50%;
     max-width: 50%;
     margin-left: 12px;
-    padding: 15px 8px 0
+    padding: 15px 15px 15px 10px
   }
 }
 .main-gallery__content__item:nth-of-type(4) {
