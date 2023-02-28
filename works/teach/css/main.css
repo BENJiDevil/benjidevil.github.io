@@ -24,19 +24,19 @@
 }
 @font-face {
   font-family: Unbounded;
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/UnboundedLight/UnboundedLight.eot);
-  src: url(../fonts/UnboundedLight/UnboundedLight.eot?#iefix) format("embedded-opentype"),url(../fonts/UnboundedLight/UnboundedLight.woff) format("woff"),url(../fonts/UnboundedLight/UnboundedLight.woff2) format("woff2"),url(../fonts/UnboundedLight/UnboundedLight.ttf) format("truetype")
-}
-@font-face {
-  font-family: Unbounded;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/UnboundedMedium/UnboundedMedium.eot);
   src: url(../fonts/UnboundedMedium/UnboundedMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/UnboundedMedium/UnboundedMedium.woff) format("woff"),url(../fonts/UnboundedMedium/UnboundedMedium.woff2) format("woff2"),url(../fonts/UnboundedMedium/UnboundedMedium.ttf) format("truetype")
+}
+@font-face {
+  font-family: Unbounded;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/UnboundedLight/UnboundedLight.eot);
+  src: url(../fonts/UnboundedLight/UnboundedLight.eot?#iefix) format("embedded-opentype"),url(../fonts/UnboundedLight/UnboundedLight.woff) format("woff"),url(../fonts/UnboundedLight/UnboundedLight.woff2) format("woff2"),url(../fonts/UnboundedLight/UnboundedLight.ttf) format("truetype")
 }
 @font-face {
   font-family: Unbounded;
@@ -57,7 +57,8 @@
   text-decoration: inherit;
   text-align: center;
   font-variant: normal;
-  text-transform: none
+  text-transform: none;
+  line-height: normal
 }
 .icon-books:before {
   content: "\e800"
@@ -1418,6 +1419,9 @@ body.overflow .header {
   line-height: 20px;
   margin-bottom: 12px
 }
+.catalog-page .content-wrapper {
+  overflow-x: hidden
+}
 .catalog-page__title {
   text-transform: uppercase;
   font-weight: 700;
@@ -1573,7 +1577,7 @@ body.overflow .header {
   color: #292d33;
   position: absolute;
   top: 2px;
-  right: 3px;
+  right: 2px;
   -webkit-transition: background-color .3s,color .3s;
   -o-transition: background-color .3s,color .3s;
   transition: background-color .3s,color .3s

@@ -328,7 +328,7 @@
   position: absolute;
   top: 9px;
   right: 8px;
-  width: auto;
+  min-width: 40px;
   height: 40px;
   overflow: hidden;
   border-radius: 20px;
@@ -373,9 +373,11 @@
     margin: 0 -5px
   }
   .main-about__content__left-side .about-card .image-block .more-link {
+    min-width: 32px;
     height: 32px;
-    top: 2px;
-    right: 2px
+    width: 32px;
+    top: 5px;
+    right: 5px
   }
   .main-about__content__left-side .about-card .image-block .more-link .icon {
     -webkit-box-flex: 0;
@@ -506,21 +508,6 @@
     max-width: calc(100% - 550px)
   }
 }
-.main-about__content__right-side .descr-block {
-  margin-top: 42px;
-  font-size: 15px;
-  line-height: 160%;
-  color: #838b97
-}
-.main-about__content__right-side .descr-block p {
-  margin-top: 24px
-}
-.main-about__content__right-side .descr-block p:nth-of-type(1) {
-  margin-top: 0
-}
-.main-map .content-wrapper {
-  padding-bottom: 40px
-}
 @media (max-width:1024px) {
   .main-about__content__right-side {
     -webkit-box-flex: 0;
@@ -533,9 +520,18 @@
     margin-bottom: 20px;
     padding-left: 0
   }
-  .main-map .content-wrapper {
-    padding-bottom: 0
-  }
+}
+.main-about__content__right-side .descr-block {
+  margin-top: 42px;
+  font-size: 15px;
+  line-height: 160%;
+  color: #838b97
+}
+.main-about__content__right-side .descr-block p {
+  margin-top: 24px
+}
+.main-about__content__right-side .descr-block p:nth-of-type(1) {
+  margin-top: 0
 }
 .main-map__words {
   padding: 0;
@@ -668,23 +664,8 @@
 .main-map__words ul li:last-child {
   margin-right: 0
 }
-.main-map__content {
-  padding: 50px 0 5px
-}
-@media (max-width:1024px) {
-  .main-map__words:after {
-    display: none
-  }
-  .main-map__words ul {
-    max-width: calc(100% + 20px);
-    margin: 0 -10px
-  }
-  .main-map__content {
-    padding: 5px 0 165px
-  }
-}
 .main-map__content .map_animation {
-  padding: 0 32px
+  padding: 50px 32px
 }
 .main-map__descr {
   position: absolute;
@@ -703,6 +684,13 @@
   }
 }
 @media (max-width:1024px) {
+  .main-map__words:after {
+    display: none
+  }
+  .main-map__words ul {
+    max-width: calc(100% + 20px);
+    margin: 0 -10px
+  }
   .main-map__descr {
     width: 50%
   }
@@ -715,7 +703,10 @@
 }
 @media (max-width:640px) {
   .main-map__descr {
-    width: 100%
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    padding: 30px
   }
   .main-map__descr p {
     font-size: 14px
@@ -728,7 +719,9 @@
   .main-map__descr {
     padding: 30px 20px;
     min-height: 133px;
-    border-radius: 20px
+    border-radius: 20px;
+    position: relative;
+    margin-top: 20px
   }
   .main-map__descr p {
     font-size: 12px
@@ -2389,21 +2382,60 @@
   margin-top: 21px
 }
 .main-history__content__right-side .descr-block__quote:before {
-  content: '"';
+  content: "\e80c";
+  font-family: Fontello;
+  font-style: normal;
+  font-weight: 400;
+  speak: never;
+  display: block;
+  margin: 0;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
   position: absolute;
   top: 0;
   left: 0;
   color: #292d33;
-  font-size: 20px;
-  line-height: 20px
+  font-size: 10px;
+  line-height: 10px
+}
+.main-history__content__right-side .descr-block__quote p:last-child {
+  display: inline-block
+}
+.main-history__content__right-side .descr-block__quote p:last-child:after {
+  content: "\e80c";
+  font-family: Fontello;
+  font-style: normal;
+  font-weight: 400;
+  speak: never;
+  display: inline-block;
+  margin: 0;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  color: #292d33;
+  font-size: 6px;
+  line-height: 6px;
+  position: relative;
+  top: -5px;
+  left: 5px;
+  -webkit-transform: scale(-1,1);
+  -ms-transform: scale(-1,1);
+  transform: scale(-1,1)
 }
 @media (max-width:1024px) {
   .main-history__content__right-side .descr-block__quote {
     font-size: 14px
   }
   .main-history__content__right-side .descr-block__quote:before {
-    font-size: 30px;
-    line-height: 30px
+    font-size: 12px;
+    line-height: 12px
+  }
+  .main-history__content__right-side .descr-block__quote p:last-child:after {
+    font-size: 8px;
+    line-height: 8px
   }
 }
 .main-history__content__more {
@@ -4230,7 +4262,8 @@ screen and (max-height:300px) {
 }
 .mfp-gallery .mfp-arrow {
   width: 46px;
-  height: 46px
+  height: 46px;
+  top: calc(50% + 23px)
 }
 .mfp-gallery .mfp-arrow:after,
 .mfp-gallery .mfp-arrow:before {
