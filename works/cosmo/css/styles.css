@@ -377,6 +377,12 @@
   line-height: 38px;
   font-weight: 700
 }
+@media (max-width:339px) {
+  .section-title {
+    font-size: 26px;
+    line-height: 32px
+  }
+}
 @media (min-width:1024px) {
   .section-title {
     font-size: 50px;
@@ -388,10 +394,10 @@
   font-size: 32px;
   line-height: 38px
 }
-@media (max-width:379px) {
+@media (max-width:339px) {
   .page-title {
-    font-size: 30px;
-    line-height: 35px
+    font-size: 26px;
+    line-height: 32px
   }
 }
 @media (min-width:1200px) {
@@ -1242,6 +1248,30 @@
   max-width: calc(50% - 10px);
   margin: 20px 20px 0 0
 }
+@media (max-width:339px) {
+  .catalog-filter .filter-wrapper .section-block__title {
+    font-size: 16px;
+    line-height: 20px
+  }
+  .catalog-filter .filter-wrapper .section-block .checkbox-list__item label input[type=checkbox]+span,
+  .catalog-filter .filter-wrapper .section-block .checkbox-list__item label input[type=radio]+span,
+  .catalog-filter .filter-wrapper .section-block .checkbox-list__item label span {
+    font-size: 14px
+  }
+  .catalog-filter .filter-wrapper .section-block .select-list__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 20px 0 0
+  }
+  .catalog-filter .filter-wrapper .section-block .select-list__item:nth-of-type(1) {
+    margin-bottom: 20px
+  }
+  .recommended {
+    overflow-x: hidden
+  }
+}
 .catalog-filter .filter-wrapper .section-block .select-list__item:nth-of-type(1),
 .catalog-filter .filter-wrapper .section-block .select-list__item:nth-of-type(2) {
   margin-top: 0
@@ -1452,12 +1482,12 @@
 }
 @media (min-width:1024px) {
   .stocks {
-    margin-top: 117px
+    margin-top: 65px
   }
 }
 @media (min-width:1200px) {
   .stocks {
-    margin-top: 136px
+    margin-top: 85px
   }
 }
 .stocks__content {
@@ -1893,6 +1923,11 @@
   margin: -30px -20px -10px;
   padding: 50px 20px 30px
 }
+@media (max-width:339px) {
+  .recommended__content .recommended-slider {
+    padding: 30px 20px 0
+  }
+}
 @media (min-width:960px) {
   .recommended__content .recommended-slider {
     max-width: 100%;
@@ -1921,7 +1956,7 @@
   }
   .recommended__content .recommended-slider .slide-item {
     max-width: 100%;
-    margin: auto
+    margin: 0
   }
 }
 .recommended__content .nav-btn-row {
@@ -1985,6 +2020,9 @@
   color: #367de7;
   cursor: pointer
 }
+.recommended__content .nav-btn-row .nav-btn.swiper-button-disabled {
+  display: none
+}
 .recommended__content .nav-btn-row .nav-btn .icon {
   position: relative;
   left: -2px
@@ -1992,7 +2030,8 @@
 .recommended__content .nav-btn-row .nav-btn.btn-next {
   -webkit-transform: scale(-1,1);
   -ms-transform: scale(-1,1);
-  transform: scale(-1,1)
+  transform: scale(-1,1);
+  margin-left: auto
 }
 .brands {
   background-color: #eee;
@@ -2776,6 +2815,11 @@
   max-width: calc(100% - 80px);
   margin: 41px auto 0
 }
+@media (max-width:339px) {
+  .catalog-page__content__right-side .catalog-item {
+    max-width: calc(100% - 20px)
+  }
+}
 @media (min-width:576px) {
   .catalog-page__content__right-side .catalog-item {
     -webkit-box-flex: 0;
@@ -3047,6 +3091,11 @@
   margin-top: 41px;
   padding: 10px 26px
 }
+@media (max-width:339px) {
+  .question-form__content .search-link {
+    margin-top: 30px
+  }
+}
 @media (min-width:640px) {
   .question-form__content .search-subtitle {
     max-width: 100%
@@ -3096,6 +3145,12 @@
   display: block;
   width: auto;
   max-width: 41%
+}
+@media (max-width:339px) {
+  .question-form__content .search-image {
+    max-width: 40%;
+    right: -5px
+  }
 }
 @media (min-width:640px) {
   .question-form__content .search-image {
@@ -3463,6 +3518,11 @@
 }
 .brand-single-page__descr {
   margin-top: 46px
+}
+@media (max-width:339px) {
+  .brand-single-page__descr {
+    margin-top: 20px
+  }
 }
 .brand-single-page__descr .image-block .brand-image {
   display: block;
@@ -4677,6 +4737,13 @@
   max-width: calc(100% - 80px);
   padding-left: 20px
 }
+@media (max-width:339px) {
+  .cart-page__content__list .cart-item .descr-block {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px
+  }
+}
 @media (min-width:640px) {
   .cart-page__content__list .cart-item .descr-block {
     -webkit-box-flex: 0;
@@ -5696,6 +5763,13 @@
 .profile-page__content__info .table-wrapper::-webkit-scrollbar-track {
   background: rgba(113,113,113,.8);
   border-radius: 10px
+}
+@media (max-width:339px) {
+  .profile-page__content__info .table-wrapper {
+    max-width: calc(100% + 10px);
+    width: calc(100% + 10px);
+    padding-right: 10px
+  }
 }
 .profile-page__content__info .table-wrapper .orders-table {
   font-size: 14px;
@@ -6913,6 +6987,11 @@
   padding-top: 60px;
   position: relative
 }
+@media (max-width:339px) {
+  .footer__content {
+    padding-top: 30px
+  }
+}
 @media (min-width:576px) {
   .footer__content {
     padding-top: 35px
@@ -6989,6 +7068,11 @@
   color: #fff;
   position: relative
 }
+@media (max-width:339px) {
+  .footer__content .footer-menu__link {
+    font-size: 13px
+  }
+}
 @media (min-width:1024px) {
   .footer__content .footer-menu__item {
     margin-top: 8px
@@ -7061,6 +7145,14 @@
 .footer__content .footer-menu__column.info-column {
   margin-right: 0;
   text-align: right
+}
+@media (max-width:339px) {
+  .footer__content .footer-menu__column.info-column .logo-link,
+  .footer__content .footer-menu__column.info-column .logo-link .logo-image {
+    display: block;
+    width: auto;
+    max-width: 100%
+  }
 }
 @media (min-width:576px) {
   .footer__content .footer-menu__column:nth-of-type(3n) {
@@ -8457,6 +8549,15 @@ button.swiper-pagination-bullet {
   display: block;
   position: relative
 }
+@media (max-width:339px) {
+  .modal__container {
+    padding: 15px;
+    width: calc(100% - 10px)
+  }
+  .modal__header {
+    overflow-x: hidden
+  }
+}
 .modal__header:before {
   content: "";
   display: block;
@@ -8762,6 +8863,25 @@ button.swiper-pagination-bullet {
   flex: 0 0 calc(50% - 5px);
   max-width: calc(50% - 5px);
   margin: 0 10px 20px 0
+}
+@media (max-width:339px) {
+  .modal .reg-types__link {
+    padding: 10px 0 5px
+  }
+  .modal.selection-modal .filter-types .input-group label input:checked + span {
+    font-size: 14px
+  }
+  .modal.selection-modal .filter-types .input-group label span {
+    min-width: 50%;
+    font-size: 14px
+  }
+  .modal.selection-modal .filter-form .input-group {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 0 20px
+  }
 }
 .modal.selection-modal .filter-form .input-group select {
   width: 100%
