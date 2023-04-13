@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>VkusOn</title>
+    <meta name="description" content="VkusOn">
+    <meta name="keywords" content="VkusOn">
+    <meta name="author" content="VkusOn">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VkusOn">
+    <meta property="og:title" content="VkusOn">
+    <meta property="og:description" content="VkusOn">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://site-url.ru/">
+    <link rel="canonical" href="https://site-url.ru/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/CirceRegular/CirceRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CirceBold/CirceBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/DINCondensedBold/DINCondensedBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/DINCondensedLight/DINCondensedLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/DINCondensedRegular/DINCondensedRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="logo" class="logo-image">
+                </a>
+                <nav id="main-menu" class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">О Компании</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Концепция</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Оборудование</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Меню</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Акции</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button id="hamburger" data-menu="main-menu" class="hamburger hamburger--slider" type="button" style="display: none;">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="menu-page main-block">
+        <div class="container">
+            <div class="main-block__content">
+                <div class="main-block__content__left-side">
+                    <h1 class="menu-page__title page-title wow fadeInDown">Меню ВкусON</h1>
+                    <h2 class="menu-page__subtitle page-subtitle wow fadeInDown">У нас большое меню — каждый найдёт для себя блюдо по вкусу!</h2>
+                </div>
+                <div class="main-block__content__right-side">
+                    <img src="images/common/menu/menu_main.png" alt="menu" class="menu-image">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="menu-bestsellers">
+        <div class="container">
+            <div class="menu-bestsellers__title-row">
+                <h2 class="menu-bestsellers__title section-title">Бестселлеры</h2>
+                <div class="nav-btns">
+                    <a href="javascript:void(0);" class="nav-btn prev-btn"><i class="icon icon-slide_arrow"></i></a>
+                    <a href="javascript:void(0);" class="nav-btn next-btn"><i class="icon icon-slide_arrow"></i></a>
+                </div>
+            </div>
+            <div class="menu-bestsellers__content">
+                <div id="bestsellers-slider" class="bestsellers-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <a href="#" class="item-link"></a>
+                                <div class="image-block">
+                                    <img src="images/common/menu/best/best_image1.png" alt="slide" class="slide-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-name">Френч-дог</h3>
+                                    <div class="item-descr">
+                                        <p>Две сосиски — вкуса в два раза больше!</p>
+                                    </div>
+                                    <a href="#" class="see-link">Перейти к продукту <i class="icon icon-link_arrow2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <a href="#" class="item-link"></a>
+                                <div class="image-block">
+                                    <img src="images/common/menu/best/best_image2.png" alt="slide" class="slide-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-name">гриль-дог</h3>
+                                    <div class="item-descr">
+                                        <p>Абсолютный бестселлер нашего меню, это — классика вкуса!</p>
+                                    </div>
+                                    <a href="#" class="see-link">Перейти к продукту <i class="icon icon-link_arrow2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <a href="#" class="item-link"></a>
+                                <div class="image-block">
+                                    <img src="images/common/menu/best/best_image3.png" alt="slide" class="slide-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-name">Бургер</h3>
+                                    <div class="item-descr">
+                                        <p>Этот вкус ни с чем не спутать!</p>
+                                    </div>
+                                    <a href="#" class="see-link">Перейти к продукту <i class="icon icon-link_arrow2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <a href="#" class="item-link"></a>
+                                <div class="image-block">
+                                    <img src="images/common/menu/best/best_image1.png" alt="slide" class="slide-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-name">Френч-дог</h3>
+                                    <div class="item-descr">
+                                        <p>Две сосиски — вкуса в два раза больше!</p>
+                                    </div>
+                                    <a href="#" class="see-link">Перейти к продукту <i class="icon icon-link_arrow2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <a href="#" class="item-link"></a>
+                                <div class="image-block">
+                                    <img src="images/common/menu/best/best_image2.png" alt="slide" class="slide-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-name">Френч-дог</h3>
+                                    <div class="item-descr">
+                                        <p>Абсолютный бестселлер нашего меню, это — классика вкуса!</p>
+                                    </div>
+                                    <a href="#" class="see-link">Перейти к продукту <i class="icon icon-link_arrow2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <a href="#" class="item-link"></a>
+                                <div class="image-block">
+                                    <img src="images/common/menu/best/best_image3.png" alt="slide" class="slide-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-name">Френч-дог</h3>
+                                    <div class="item-descr">
+                                        <p>Две сосиски — вкуса в два раза больше!</p>
+                                    </div>
+                                    <a href="#" class="see-link">Перейти к продукту <i class="icon icon-link_arrow2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-item">
+                            <div class="slide-content">
+                                <a href="#" class="item-link"></a>
+                                <div class="image-block">
+                                    <img src="images/common/menu/best/best_image1.png" alt="slide" class="slide-image">
+                                </div>
+                                <div class="descr-block">
+                                    <h3 class="item-name">Френч-дог</h3>
+                                    <div class="item-descr">
+                                        <p>Две сосиски — вкуса в два раза больше!</p>
+                                    </div>
+                                    <a href="#" class="see-link">Перейти к продукту <i class="icon icon-link_arrow2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="menu-addinfo">
+        <div class="container">
+            <div class="menu-addinfo__content">
+                <div class="menu-addinfo__content__left-side">
+                    <img src="images/common/svg/cherk_logo_gray.svg" alt="черкизово" class="addinfo-logo">
+                </div>
+                <div class="menu-addinfo__content__right-side">
+                    <p>Мясные продукты, которые специально для нас производит ГК Черкизово, помогают сделать вкус наших блюд уникальным и таким аппетитным.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="menu-categories">
+        <div class="container">
+            <h2 class="menu-categories__title section-title">Категории</h2>
+            <div class="menu-categories__content">
+                <div class="menu-categories__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/menu/categories/category_image1.png" alt="category" class="category-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-title">Хот-доги</h3>
+                        <div class="item-descr">
+                            <p>Фирменные хот-доги ВкусON — настоящая классика вкуса!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-categories__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/menu/categories/category_image2.png" alt="category" class="category-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-title">Бургеры</h3>
+                        <div class="item-descr">
+                            <p>Сочные бургеры для самых голодных</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-categories__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/menu/categories/category_image3.png" alt="category" class="category-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-title">Снеки</h3>
+                        <div class="item-descr">
+                            <p>Для тех, кто любит смаковать удовольствие</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-categories__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/menu/categories/category_image4.png" alt="category" class="category-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-title">Только разогреть</h3>
+                        <div class="item-descr">
+                            <p>Врапы для быстрого перекуса</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-categories__content__item">
+                    <a href="#" class="item-link"></a>
+                    <div class="image-block">
+                        <img src="images/common/menu/categories/category_image5.png" alt="category" class="category-image">
+                    </div>
+                    <div class="descr-block">
+                        <h3 class="item-title">Конструктор рецептов</h3>
+                        <div class="item-descr">
+                            <p>Дополнительные ингредиенты для создания персонализированных блюд</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content__column main-column">
+                    <a href="/" class="logo-link">
+                        <img src="images/common/svg/logo_white.svg" alt="logo" class="logo-image">
+                    </a>
+                    <p>Права на товарный знак ВкусOn <br> принадлежат ПАО «Группа Черкизово»</p>
+                    <p class="copyright">© 2022</p>
+                </div>
+                <div class="footer__content__column menu-column">
+                    <nav class="footer-menu">
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Концепция</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Партнерам</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Продукция</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Поддержка</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Оборудование</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__content__column info-column">
+                    <div class="info-row">
+                        <div class="info-row__side">
+                            <a href="tel:+78005558463" class="phone-link">+7 800 555 84-63</a>
+                            <p>По вопросам приобритения франшизы</p>
+                        </div>
+                        <div class="info-row__side">
+                            <ul class="social-links">
+                                <li class="social-links__item"><a href="#" target="_blank" class="social-links__link"><i class="icon icon-paper-plane"></i></a></li>
+                                <li class="social-links__item"><a href="#" target="_blank" class="social-links__link"><i class="icon icon-vkontakte"></i></a></li>
+                            </ul>
+                            <p>Мы в социальных сетях</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-row__side">
+                            <div class="partners-list">
+                                <div class="partners-list__item">
+                                    <img src="images/common/svg/cherk_logo.svg" alt="icon" class="partner-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-row__side">
+                            <div class="check-list">
+                                <div class="check-list__item">
+                                    <img src="images/common/main/iso.png" alt="icon" class="check-image">
+                                </div>
+                                <div class="check-list__item">
+                                    <img src="images/common/svg/eac.svg" alt="icon" class="check-image">
+                                </div>
+                                <div class="check-list__item">
+                                    <img src="images/common/svg/ru.svg" alt="icon" class="check-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script defer src="js/common.min.js"></script>
+</body>
+</html>
