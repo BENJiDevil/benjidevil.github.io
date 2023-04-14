@@ -1,13 +1,5 @@
 @font-face {
   font-family: Circe;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/CirceBold/CirceBold.eot);
-  src: url(../fonts/CirceBold/CirceBold.eot?#iefix) format("embedded-opentype"),url(../fonts/CirceBold/CirceBold.woff) format("woff"),url(../fonts/CirceBold/CirceBold.woff2) format("woff2"),url(../fonts/CirceBold/CirceBold.ttf) format("truetype")
-}
-@font-face {
-  font-family: Circe;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -15,12 +7,12 @@
   src: url(../fonts/CirceRegular/CirceRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/CirceRegular/CirceRegular.woff) format("woff"),url(../fonts/CirceRegular/CirceRegular.woff2) format("woff2"),url(../fonts/CirceRegular/CirceRegular.ttf) format("truetype")
 }
 @font-face {
-  font-family: DINCondensed;
+  font-family: Circe;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/DINCondensedBold/DINCondensedBold.eot);
-  src: url(../fonts/DINCondensedBold/DINCondensedBold.eot?#iefix) format("embedded-opentype"),url(../fonts/DINCondensedBold/DINCondensedBold.woff) format("woff"),url(../fonts/DINCondensedBold/DINCondensedBold.woff2) format("woff2"),url(../fonts/DINCondensedBold/DINCondensedBold.ttf) format("truetype")
+  src: url(../fonts/CirceBold/CirceBold.eot);
+  src: url(../fonts/CirceBold/CirceBold.eot?#iefix) format("embedded-opentype"),url(../fonts/CirceBold/CirceBold.woff) format("woff"),url(../fonts/CirceBold/CirceBold.woff2) format("woff2"),url(../fonts/CirceBold/CirceBold.ttf) format("truetype")
 }
 @font-face {
   font-family: DINCondensed;
@@ -29,6 +21,14 @@
   font-display: swap;
   src: url(../fonts/DINCondensedLight/DINCondensedLight.eot);
   src: url(../fonts/DINCondensedLight/DINCondensedLight.eot?#iefix) format("embedded-opentype"),url(../fonts/DINCondensedLight/DINCondensedLight.woff) format("woff"),url(../fonts/DINCondensedLight/DINCondensedLight.woff2) format("woff2"),url(../fonts/DINCondensedLight/DINCondensedLight.ttf) format("truetype")
+}
+@font-face {
+  font-family: DINCondensed;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/DINCondensedBold/DINCondensedBold.eot);
+  src: url(../fonts/DINCondensedBold/DINCondensedBold.eot?#iefix) format("embedded-opentype"),url(../fonts/DINCondensedBold/DINCondensedBold.woff) format("woff"),url(../fonts/DINCondensedBold/DINCondensedBold.woff2) format("woff2"),url(../fonts/DINCondensedBold/DINCondensedBold.ttf) format("truetype")
 }
 @font-face {
   font-family: DINCondensed;
