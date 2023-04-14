@@ -15526,13 +15526,6 @@ document.addEventListener('DOMContentLoaded', () => {
       el: ".slider-pagination",
       clickable: true
     },
-
-    /*
-    autoplay: {
-    	delay: 3000,
-    	pauseOnMouseEnter: true
-    },
-     */
     navigation: {
       prevEl: '.about-gallery .nav-btns .nav-btn.prev-btn',
       nextEl: '.about-gallery .nav-btns .nav-btn.next-btn'
@@ -15563,7 +15556,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     breakpoints: {
       1025: {
-        spaceBetween: 43
+        spaceBetween: 43,
+        slidesPerView: 3
       },
       769: {
         slidesPerView: 3
@@ -15590,11 +15584,12 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     breakpoints: {
       1025: {
-        spaceBetween: 40
+        spaceBetween: 40,
+        slidesPerView: 4
       },
       961: {
-        slidesPerView: 4,
-        spaceBetween: 40
+        spaceBetween: 40,
+        slidesPerView: 4
       },
       769: {
         slidesPerView: 3
@@ -15621,9 +15616,11 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     breakpoints: {
       1025: {
+        slidesPerView: 2,
         spaceBetween: 60
       },
       969: {
+        slidesPerView: 2,
         spaceBetween: 30
       },
       421: {

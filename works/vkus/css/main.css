@@ -7,14 +7,6 @@
   src: url(../fonts/CirceBold/CirceBold.eot?#iefix) format("embedded-opentype"),url(../fonts/CirceBold/CirceBold.woff) format("woff"),url(../fonts/CirceBold/CirceBold.woff2) format("woff2"),url(../fonts/CirceBold/CirceBold.ttf) format("truetype")
 }
 @font-face {
-  font-family: Circe;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/CirceRegular/CirceRegular.eot);
-  src: url(../fonts/CirceRegular/CirceRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/CirceRegular/CirceRegular.woff) format("woff"),url(../fonts/CirceRegular/CirceRegular.woff2) format("woff2"),url(../fonts/CirceRegular/CirceRegular.ttf) format("truetype")
-}
-@font-face {
   font-family: DINCondensed;
   font-weight: 700;
   font-style: normal;
@@ -29,6 +21,14 @@
   font-display: swap;
   src: url(../fonts/DINCondensedLight/DINCondensedLight.eot);
   src: url(../fonts/DINCondensedLight/DINCondensedLight.eot?#iefix) format("embedded-opentype"),url(../fonts/DINCondensedLight/DINCondensedLight.woff) format("woff"),url(../fonts/DINCondensedLight/DINCondensedLight.woff2) format("woff2"),url(../fonts/DINCondensedLight/DINCondensedLight.ttf) format("truetype")
+}
+@font-face {
+  font-family: Circe;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/CirceRegular/CirceRegular.eot);
+  src: url(../fonts/CirceRegular/CirceRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/CirceRegular/CirceRegular.woff) format("woff"),url(../fonts/CirceRegular/CirceRegular.woff2) format("woff2"),url(../fonts/CirceRegular/CirceRegular.ttf) format("truetype")
 }
 @font-face {
   font-family: DINCondensed;
@@ -859,15 +859,18 @@ body.overflow:before {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 200px;
-  margin: 0 auto 60px 0
+  margin: 0 auto 40px 0
 }
 @media (max-width:959px) {
   .main-descr__content__left-side .descr-item {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    max-width: 25%;
+    max-width: unset;
     margin: 0 auto 30px 0
+  }
+  .main-descr__content__left-side .descr-item:nth-of-type(1) {
+    margin-left: 0
   }
 }
 .main-descr__content__left-side .descr-item:nth-of-type(2n) {
@@ -877,7 +880,7 @@ body.overflow:before {
   font-family: DINCondensed,sans-serif;
   font-weight: 700;
   font-size: 120px;
-  line-height: 90px;
+  line-height: 100%;
   background: -o-linear-gradient(15.57deg,#da0c39 7.11%,#fdc62c 94.7%);
   background: linear-gradient(74.43deg,#da0c39 7.11%,#fdc62c 94.7%);
   -webkit-background-clip: text;
@@ -887,8 +890,7 @@ body.overflow:before {
 }
 @media (max-width:1199px) {
   .main-descr__content__left-side .descr-item .number-block {
-    font-size: 90px;
-    line-height: 70px
+    font-size: 90px
   }
 }
 @media (max-width:959px) {
@@ -896,14 +898,12 @@ body.overflow:before {
     margin-right: 0
   }
   .main-descr__content__left-side .descr-item .number-block {
-    font-size: 75px;
-    line-height: 65px
+    font-size: 75px
   }
 }
 @media (max-width:767px) {
   .main-descr__content__left-side .descr-item .number-block {
-    font-size: 70px;
-    line-height: 55px
+    font-size: 70px
   }
 }
 @media (max-width:639px) {
@@ -914,8 +914,7 @@ body.overflow:before {
     max-width: 50%
   }
   .main-descr__content__left-side .descr-item .number-block {
-    font-size: 82px;
-    line-height: 65px
+    font-size: 82px
   }
 }
 .main-descr__content__left-side .descr-item .descr-block {
@@ -924,7 +923,6 @@ body.overflow:before {
   font-size: 22px;
   line-height: 24px;
   text-transform: uppercase;
-  margin-top: 15px;
   max-width: 150px
 }
 @media (max-width:959px) {
@@ -994,7 +992,6 @@ body.overflow:before {
   .main-descr__content__left-side .descr-item .descr-block {
     font-size: 18px;
     line-height: 18px;
-    margin-top: 5px;
     padding-right: 10px
   }
   .main-descr__content__right-side {
