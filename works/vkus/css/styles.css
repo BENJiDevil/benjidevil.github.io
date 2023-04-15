@@ -635,15 +635,27 @@
   border-radius: 8px;
   position: relative
 }
+@media (max-width:767px) {
+  .main-support__content .support-slider .swiper-wrapper .slide-item {
+    min-height: 280px
+  }
+}
 .main-support__content .support-slider .swiper-wrapper .slide-item.empty {
   opacity: 0;
   visibility: hidden
 }
 .main-support__content .support-slider .swiper-wrapper .slide-item .number-row {
+  display: block;
   font-family: DINCondensed,sans-serif;
   font-weight: 700;
   font-size: 32px;
-  line-height: normal;
+  line-height: 1!important;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-appearance: none;
+  vertical-align: middle;
   letter-spacing: -.02em;
   color: #da0c39;
   -webkit-transition: color .3s;
@@ -680,9 +692,6 @@
   }
 }
 @media (max-width:767px) {
-  .main-support__content .support-slider .swiper-wrapper .slide-item {
-    min-height: 280px
-  }
   .main-support__content .support-slider .swiper-wrapper .slide-item .number-row {
     font-size: 24px
   }
@@ -1532,11 +1541,6 @@
     min-height: 355px
   }
 }
-@media (max-width:959px) {
-  .main-block__content {
-    min-height: 300px
-  }
-}
 .main-block__content__left-side {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 38%;
@@ -1548,6 +1552,9 @@
   margin-top: 35px
 }
 @media (max-width:959px) {
+  .main-block__content {
+    min-height: 300px
+  }
   .main-block__content__left-side .page-subtitle {
     margin-top: 20px
   }
@@ -2776,13 +2783,15 @@
 .about-info__numbers .numbers-item:nth-of-type(1) {
   margin-left: 0
 }
-.about-info__numbers .numbers-item:nth-of-type(4n) {
-  margin-right: 0
-}
 @media (max-width:767px) {
   .about-info__numbers .numbers-item:nth-of-type(1) {
     margin-left: 10%
   }
+}
+.about-info__numbers .numbers-item:nth-of-type(4n) {
+  margin-right: 0
+}
+@media (max-width:767px) {
   .about-info__numbers .numbers-item:nth-of-type(4n) {
     margin-right: 10%
   }
@@ -7057,6 +7066,15 @@ button.swiper-pagination-bullet {
   max-width: 50%;
   margin-bottom: 10px
 }
+@media (max-width:959px) {
+  .footer__content__column.menu-column .footer-menu__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    margin: 0
+  }
+}
 .footer__content__column.menu-column .footer-menu__link {
   display: inline-block;
   position: relative;
@@ -7086,18 +7104,6 @@ button.swiper-pagination-bullet {
 .footer__content__column.info-column {
   margin-left: auto;
   padding-top: 5px
-}
-@media (max-width:959px) {
-  .footer__content__column.menu-column .footer-menu__item {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    width: auto;
-    margin: 0
-  }
-  .footer__content__column.info-column {
-    padding-top: 0
-  }
 }
 @media (max-width:639px) {
   .footer__content__column.menu-column .footer-menu__item {
@@ -7285,6 +7291,73 @@ button.swiper-pagination-bullet {
   display: block;
   width: auto;
   max-width: 100%
+}
+.footer .cookie-message {
+  position: fixed;
+  bottom: 30px;
+  right: calc((100vw - 1400px)/ 2 + 15px);
+  width: 100%;
+  max-width: 775px;
+  background-color: rgba(247,247,247,.9);
+  border-radius: 15px;
+  z-index: 9
+}
+@media (max-width:1400px) {
+  .footer .cookie-message {
+    right: 30px
+  }
+}
+@media (max-width:959px) {
+  .footer__content__column.info-column {
+    padding-top: 0
+  }
+  .footer .cookie-message {
+    max-width: calc(100vw - 60px)
+  }
+}
+.footer .cookie-message__content {
+  padding: 20px 77px 20px 25px;
+  position: relative
+}
+@media (max-width:767px) {
+  .footer .cookie-message {
+    max-width: calc(100vw - 30px);
+    right: 15px;
+    bottom: 20px
+  }
+  .footer .cookie-message__content {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 50px 20px 15px
+  }
+}
+@media (max-width:420px) {
+  .footer .cookie-message__content {
+    font-size: 12px;
+    line-height: 14px
+  }
+}
+.footer .cookie-message__content p {
+  margin-top: 5px
+}
+.footer .cookie-message__content p:nth-of-type(1) {
+  margin-top: 0
+}
+.footer .cookie-message__content .close-btn {
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: calc(50% - 13px);
+  right: 25px;
+  color: rgba(0,0,0,.6);
+  font-size: 22px;
+  line-height: 22px
+}
+@media (max-width:767px) {
+  .footer .cookie-message__content .close-btn {
+    right: 14px
+  }
 }
 .mfp-bg {
   top: 0;
