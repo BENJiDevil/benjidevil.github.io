@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- meta tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>ProZamer</title>
@@ -8,13 +9,16 @@
     <meta name="keywords" content="ProZamer">
     <meta name="author" content="ProZamer">
     <meta name="image" content="images/preview.jpg">
+    <!-- OG -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ProZamer">
     <meta property="og:title" content="ProZamer">
     <meta property="og:description" content="ProZamer">
     <meta property="og:image" content="images/preview.jpg">
     <meta property="og:url" content="https://site-url.ru/">
+    <!-- canonical -->
     <link rel="canonical" href="https://site-url.ru/">
+    <!-- favicon -->
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -30,13 +34,17 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/manifest.json">
+    <!-- app icon -->
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+    <!-- app icon -->
     <meta name="apple-mobile-web-app-title" content="">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- browser settings -->
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
+    <!-- preload fonts -->
     <link rel="preload" href="fonts/ManropeBold/ManropeBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/ManropeExtraBold/ManropeExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/ManropeSemiBold/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -44,7 +52,8 @@
     <link rel="preload" href="fonts/OpenSansMedium/OpenSansMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/OpenSansRegular/OpenSansRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/OpenSansSemiBold/OpenSansSemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/main.min.css">
+    <!-- critical styles -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header class="header">
@@ -78,10 +87,23 @@
                             </nav>
                             <div class="personal-block">
                                 <a href="javascript:void(0);" class="js-personal-link personal-link"><i class="custom-icon icon-personal"></i> ЛИЧНЫЙ КАБИНЕТ</a>
+                                <!-- if not login -->
                                 <div class="personal-menu" style="display: none;">
                                     <a href="#" class="enter-link btn-border-style">Войти</a>
                                     <a href="#" class="reg-link btn-border-style">Зарегистрироваться</a>
                                 </div>
+                                <!-- if login
+                            <div class="personal-menu" style="display: none;">
+                                <span class="user-name">Абрамович Александр Романович</span>
+                                <ul class="user-menu">
+                                    <li class="user-menu__item"><a href="#" class="user-menu__link">МОИ ЗАКАЗЫ</a></li>
+                                    <li class="user-menu__item"><a href="#" class="user-menu__link">ЛИЧНЫЕ ДАННЫЕ</a></li>
+                                    <li class="user-menu__item"><a href="#" class="user-menu__link">ДОКУМЕНТЫ</a></li>
+                                    <li class="user-menu__item"><a href="#" class="user-menu__link">ЗАЯВКА НА ЗАМЕР</a></li>
+                                </ul>
+                                <a href="#" class="logout-link"><i class="custom-icon icon-exit-mini"></i> Выйти из аккаунта</a>
+                            </div>
+                            -->
                             </div>
                             <a href="#consultation_modal" class="js-modal-simple sample-link">ЗАКАЗАТЬ ЗАМЕР <i class="icon icon-link_arrow"></i></a>
                             <p class="work">Работаем по Санкт-Петербургу и всей области</p>
@@ -97,6 +119,7 @@
             </div>
         </div>
     </header>
+    <!-- main content -->
     <main class="main-page">
         <div class="container">
             <h1 class="main-page__title">Профессиональный замер помещений под мебель <span>в Санкт-Петербурге и ЛО</span></h1>
@@ -115,7 +138,7 @@
             <div class="main-how__content">
                 <div class="main-how__content__left-side">
                     <div class="image-block">
-                        <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class=.min.js-modal-video how-video-link">
+                        <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class="js-modal-video how-video-link">
                             <img src="images/common/main/how_image.jpg" alt="image" class="image">
                         </a>
                     </div>
@@ -140,22 +163,22 @@
             </div>
             <div class="video-answers__content">
                 <div class="video-answers__content__item">
-                    <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class=.min.js-modal-video video-link">
+                    <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class="js-modal-video video-link">
                         <img src="images/common/main/video_preview.jpg" alt="preview" class="item-image">
                     </a>
                 </div>
                 <div class="video-answers__content__item">
-                    <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class=.min.js-modal-video video-link">
+                    <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class="js-modal-video video-link">
                         <img src="images/common/main/video_preview.jpg" alt="preview" class="item-image">
                     </a>
                 </div>
                 <div class="video-answers__content__item">
-                    <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class=.min.js-modal-video video-link">
+                    <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class="js-modal-video video-link">
                         <img src="images/common/main/video_preview.jpg" alt="preview" class="item-image">
                     </a>
                 </div>
                 <div class="video-answers__content__item">
-                    <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class=.min.js-modal-video video-link">
+                    <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class="js-modal-video video-link">
                         <img src="images/common/main/video_preview.jpg" alt="preview" class="item-image">
                     </a>
                 </div>
@@ -305,7 +328,7 @@
                 </div>
                 <div class="main-legal__content__right-side">
                     <div class="image-block">
-                        <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class=.min.js-modal-video legal-video-link">
+                        <a href="http://www.youtube.com/watch?v=gWwti1JmhsY" class="js-modal-video legal-video-link">
                             <img src="images/common/main/adv_image.jpg" alt="image" class="item-image">
                         </a>
                     </div>
@@ -466,6 +489,7 @@
             </div>
         </div>
     </section>
+    <!-- main end content -->
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -795,13 +819,15 @@
             </form>
         </div>
     </div>
-    <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="https://cd.min.js.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/i18n/datepicker.ru-RU.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script defer src="js/common.min.js"></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css" integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/i18n/datepicker.ru-RU.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script defer src="js/common.js"></script>
 </body>
 </html>
