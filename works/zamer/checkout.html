@@ -301,7 +301,7 @@
                                 <div class="item-title">Выберете дату замера</div>
                                 <div class="input-group date-group">
                                     <i class="custom-icon icon-date-mini"></i>
-                                    <input type="date" placeholder="21.03.2023" class="input-style">
+                                    <input type="text" data-type="date" placeholder="21.03.2023" class="input-style" readonly>
                                 </div>
                             </div>
                             <div class="choose-list__item">
@@ -309,7 +309,7 @@
                                 <div class="input-row">
                                     <div class="input-group">
                                         <label>
-                                            <input type="radio" name="time" value="В течении дня*" checked>
+                                            <input type="radio" class="js-content-enable" name="time" value="В течении дня*" checked>
                                             <span class="label">В течении дня*</span>
                                         </label>
                                         <p>Замер выполняется в указанный день, если не получается договориться с заказчиком на обоюдно удобное время, замерщик в праве перенести заказ.</p>
@@ -318,14 +318,14 @@
                                 <div class="input-row">
                                     <div class="input-group">
                                         <label>
-                                            <input type="radio" name="time" value="Двухчасовой промежуток">
+                                            <input type="radio" class="js-content-enable" name="time" value="Двухчасовой промежуток">
                                             <span class="label">Двухчасовой промежуток</span>
                                         </label>
                                         <p>Выполняется точно в день. Дороже на 500 рублей.</p>
                                     </div>
                                     <div class="input-group select-group">
                                         <i class="custom-icon icon-time-mini"></i>
-                                        <select name="time_period">
+                                        <select name="time_period" disabled>
                                             <option value="">С 8:00 до 10:00</option>
                                             <option value="1">С 10:00 до 12:00</option>
                                             <option value="2">С 12:00 до 14:00</option>
@@ -336,7 +336,7 @@
                                 <div class="input-row">
                                     <div class="input-group">
                                         <label>
-                                            <input type="radio" name="time" value="Точно ко времени">
+                                            <input type="radio" class="js-content-enable" name="time" value="Точно ко времени">
                                             <span class="label">Точно ко времени</span>
                                         </label>
                                         <p>Выполняется точно в день.</p>
@@ -344,14 +344,14 @@
                                     </div>
                                     <div class="select-row">
                                         <div class="input-group select-group">
-                                            <select name="hours">
+                                            <select name="hours" disabled>
                                                 <option value="8 часов">8 часов</option>
                                                 <option value="10 часов">10 часов</option>
                                                 <option value="12 часов">12 часов</option>
                                             </select>
                                         </div>
                                         <div class="input-group select-group">
-                                            <select name="minutes">
+                                            <select name="minutes" disabled>
                                                 <option value="0 минут">0 минут</option>
                                                 <option value="10 минут">10 минут</option>
                                                 <option value="20 минут">20 минут</option>
@@ -763,7 +763,7 @@
     </div>
     <!-- styles -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css" integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.css" />
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.js"></script>

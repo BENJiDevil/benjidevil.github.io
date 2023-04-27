@@ -14955,12 +14955,22 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       $('.personal-page__filter').hide();
     }
-  }); // checkout
+  });
+  /* checkout */
   // custom inputs/selects
 
   $('input[type="file"], select').styler({
     filePlaceholder: $(undefined).attr('data-placeholder'),
     fileBrowse: '<i class="icon icon-file"></i>'
+  });
+  $('.choose-list input.js-content-enable').change(function () {
+    $('input.js-content-enable').each(function () {
+      if ($(this).prop('checked')) {
+        $(this).parents('.input-row').find('select').prop('disabled', false).trigger('refresh');
+      } else {
+        $(this).parents('.input-row').find('select').prop('disabled', true).trigger('refresh');
+      }
+    });
   }); // add new file inputs
 
   $('.files-list').on('change', 'input[type="file"]', function () {
@@ -14974,9 +14984,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }); // date picker
 
-  $('input[type="date"]').datepicker({
+  $('input[data-type="date"]').datepicker({
     language: 'ru-RU',
-    format: 'yyyy-mm-dd'
+    format: 'dd.mm.yyyy'
   }).on('pick.datepicker', function (e) {
     $(this).addClass('changed');
   }); // count function
