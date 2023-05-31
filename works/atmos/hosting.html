@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>atmos</title>
+    <meta name="description" content="atmos">
+    <meta name="keywords" content="atmos">
+    <meta name="author" content="atmos">
+    <meta name="image" content="images/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="atmos">
+    <meta property="og:title" content="atmos">
+    <meta property="og:description" content="atmos">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://site-url.ru/">
+    <link rel="canonical" href="https://site-url.ru/">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="preload" href="fonts/AvenirNextCyrBold/AvenirNextCyrBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/AvenirNextCyrDemi/AvenirNextCyrDemi.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/AvenirNextCyrHeavy/AvenirNextCyrHeavy.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/AvenirNextCyrMedium/AvenirNextCyrMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/AvenirNextCyrRegular/AvenirNextCyrRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ObjectSansBold/ObjectSansBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ObjectSansMedium/ObjectSansMedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ObjectSansRegular/ObjectSansRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link data-v="cache" rel="stylesheet" href="css/main.min.css?v=202305311631">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo-link">
+                    <img src="images/common/svg/logo.svg" alt="atmos" class="logo-image">
+                </a>
+                <nav id="main-menu" class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Каталог</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Размещение</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Обслуживание</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Миссия</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Вакансии</a></li>
+                    </ul>
+                </nav>
+                <div class="search-block">
+                    <form action="#" class="search-form">
+                        <div class="input-group">
+                            <input type="text" name="search" placeholder="Поиск" class="search-input">
+                            <button type="submit" class="search-btn"><i class="icon icon-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="links-block">
+                    <a href="#backcall_modal" class="backcall-link js-simple-modal">Заказать звонок</a>
+                    <ul class="social-list">
+                        <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-telegram"></i></a></li>
+                        <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-whatsapp"></i></a></li>
+                        <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-viber"></i></a></li>
+                    </ul>
+                </div>
+                <div class="lang-block">
+                    <span class="current-lang js-lang-menu">RU</span>
+                    <ul class="lang-list">
+                        <li class="lang-list__item"><a href="#" class="lang-list__link">EN</a></li>
+                        <li class="lang-list__item"><a href="#" class="lang-list__link">DE</a></li>
+                    </ul>
+                </div>
+                <a href="tel:+79998839494" class="phone-link">+7 999 883-94-94</a>
+                <button id="hamburger" class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="hosting-main main-section lazyload" data-bgset="images/bg/hosting_bg_mobile.jpg [(max-width: 575px)] | images/bg/hosting_bg_pad.jpg [(max-width: 1024px)] | images/bg/hosting_bg.jpg [(min-width: 1025px)]">
+        <div class="container">
+            <div class="hosting-main__content">
+                <div class="hosting-main__content__left-side">
+                    <h1 class="hosting-main__title page-title">Размещение оборудования для майнинга</h1>
+                    <div class="page-descr">
+                        <p>Решения для стабильной и безопасной работы вашего оборудования.</p>
+                    </div>
+                </div>
+                <div class="hosting-main__content__right-side">
+                    <img src="images/common/svg/hosting/hosting_image.svg" alt="hosting-image" class="hosting-image">
+                </div>
+            </div>
+            <div class="hosting-main__services">
+                <div class="hosting-main__services__item">
+                    <div class="image-block">
+                        <img src="images/common/svg/hosting/service_icon1.svg" alt="service-icon" class="item-icon">
+                    </div>
+                    <div class="descr-block">
+                        <h3>Отсутствие перебоев в подаче электричества</h3>
+                        <p>бесперебойная подача электроэнергии для работы ваших устройств по фиксированной цене.</p>
+                    </div>
+                </div>
+                <div class="hosting-main__services__item">
+                    <div class="image-block">
+                        <img src="images/common/svg/hosting/service_icon2.svg" alt="service-icon" class="item-icon">
+                    </div>
+                    <div class="descr-block">
+                        <h3>Поддержка специалистов 24/7</h3>
+                        <p>круглосуточный мониторинг и своевременное техническое обслуживание для максимизации прибыли</p>
+                    </div>
+                </div>
+                <div class="hosting-main__services__item">
+                    <div class="image-block">
+                        <img src="images/common/svg/hosting/service_icon3.svg" alt="service-icon" class="item-icon">
+                    </div>
+                    <div class="descr-block">
+                        <h3>Круглосуточная охрана оборудования</h3>
+                        <p>применение специальных технических средств и вооруженная охрана исключают кражу или порчу оборудования</p>
+                    </div>
+                </div>
+                <div class="hosting-main__services__item">
+                    <div class="image-block">
+                        <img src="images/common/svg/hosting/service_icon4.svg" alt="service-icon" class="item-icon">
+                    </div>
+                    <div class="descr-block">
+                        <h3>Отсутсвие перегревов</h3>
+                        <p>размещение в специально оборудованных контейнерах, исключает поломки вызванные перегревом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="hosting-advantages">
+        <div class="container">
+            <h2 class="hosting-advantages__title">Премущества размещения на наших площадках</h2>
+            <div class="hosting-advantages__content">
+                <div class="hosting-advantages__content__item">
+                    <h4 class="item-name">Стоимость электричества</h4>
+                    <div class="item-value">от 4 р. кв/ч </div>
+                    <div class="item-descr">
+                        <p>в стоимость заложены размещение и технический сервис</p>
+                    </div>
+                </div>
+                <div class="hosting-advantages__content__item">
+                    <h4 class="item-name">Высокий аптайм</h4>
+                    <div class="item-value">99,8%</div>
+                    <div class="item-descr">
+                        <p>максимальная прибыль от вашего оборудования</p>
+                    </div>
+                </div>
+                <div class="hosting-advantages__content__item">
+                    <h4 class="item-name">Информационная безопасность</h4>
+                    <div class="item-value">
+                        <img src="images/common/svg/hosting/virus.svg" alt="virus">
+                    </div>
+                    <div class="item-descr">
+                        <p>100% защита от внешнего воздействия</p>
+                    </div>
+                </div>
+                <div class="hosting-advantages__content__btns-row">
+                    <a href="#order_modal" class="advantage-btn btn-style js-simple-modal">Оставить заявку</a>
+                </div>
+            </div>
+            <div class="hosting-advantages__descr">
+                <div class="hosting-advantages__descr__item">
+                    <div class="descr-block">
+                        <h3>Название места размещения</h3>
+                        <p>Описание места размещения и его преимущества на несколько строк. Хотите войти в бизнес по майнингу, но не знаете, с чего начать? Оставьте заявку, мы проведём подробную консультацию.</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/hosting/info_image1.jpg" alt="info-image" class="item-image">
+                    </div>
+                </div>
+                <div class="hosting-advantages__descr__item">
+                    <div class="descr-block">
+                        <h3>Название места размещения</h3>
+                        <p>Описание места размещения и его преимущества на несколько строк. Хотите войти в бизнес по майнингу, но не знаете, с чего начать? Оставьте заявку, мы проведём подробную консультацию.</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/hosting/info_image2.jpg" alt="info-image" class="item-image">
+                    </div>
+                </div>
+                <div class="hosting-advantages__descr__item">
+                    <div class="descr-block">
+                        <h3>Название места размещения</h3>
+                        <p>Описание места размещения и его преимущества на несколько строк. Хотите войти в бизнес по майнингу, но не знаете, с чего начать? Оставьте заявку, мы проведём подробную консультацию.</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/hosting/info_image3.jpg" alt="info-image" class="item-image">
+                    </div>
+                </div>
+                <div class="hosting-advantages__descr__item">
+                    <div class="descr-block">
+                        <h3>Название места размещения</h3>
+                        <p>Описание места размещения и его преимущества на несколько строк. Хотите войти в бизнес по майнингу, но не знаете, с чего начать? Оставьте заявку, мы проведём подробную консультацию.</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/hosting/info_image4.jpg" alt="info-image" class="item-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hosting-how">
+        <div class="container">
+            <h2 class="hosting-how__title">Как разместить оборудование у нас </h2>
+            <div class="hosting-how__descr">
+                <p>Описание места размещения и его преимущества на несколько строк. Хотите войти в бизнес по майнингу, но не знаете, с чего начать? Оставьте заявку, мы проведем подробную консультацию.</p>
+            </div>
+            <div class="hosting-how__content">
+                <div class="hosting-how__content__item">
+                    <div class="item-number">1</div>
+                    <div class="item-descr">
+                        <h3>Заявка</h3>
+                        <p>оставьте заявку на нашем сайте или у наших менеджеров по телефону</p>
+                    </div>
+                </div>
+                <div class="hosting-how__content__item">
+                    <div class="item-number">2</div>
+                    <div class="item-descr">
+                        <h3>Заключение договора и оплата</h3>
+                        <p>согласовываем все условия и закрепляем документально</p>
+                    </div>
+                </div>
+                <div class="hosting-how__content__item">
+                    <div class="item-number">3</div>
+                    <div class="item-descr">
+                        <h3>Размещение</h3>
+                        <p>мы проводим логистику, размещение и настройку оборудования</p>
+                    </div>
+                </div>
+                <div class="hosting-how__content__item">
+                    <div class="item-number">4</div>
+                    <div class="item-descr">
+                        <h3>Выплаты</h3>
+                        <p>выплаты осуществляются ежедневно</p>
+                    </div>
+                </div>
+                <div class="hosting-how__content__item">
+                    <div class="item-number">5</div>
+                    <div class="item-descr">
+                        <h3>Контроль</h3>
+                        <p>вы имеет полный доступ ко всей статистике оборудования</p>
+                    </div>
+                </div>
+                <div class="hosting-how__content__btns-row">
+                    <a href="#order_modal" class="how-btn btn-style js-simple-modal">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hosting-calc">
+        <div class="container">
+            <div class="hosting-calc__content">
+                <div class="hosting-calc__content__left-side">
+                    <img src="images/common/svg/hosting/calc.svg" alt="calc" class="calc-icon">
+                    <h2 class="hosting-calc__title">Калькулятор</h2>
+                    <div class="calc-descr">
+                        <p>Описание места размещения и его преимущества на несколько строк. Хотите войти в бизнес по майнингу, но не знаете, с чего начать? Оставьте заявку, мы проведём подробную консультацию.</p>
+                        <p>Описание места размещения и его преимущества на несколько строк. Хотите войти в бизнес по майнингу.</p>
+                    </div>
+                </div>
+                <div class="hosting-calc__content__right-side">
+                    <form action="#" class="calc-form">
+                        <div class="input-group">
+                            <label>Тип майнера</label>
+                            <select name="equip" class="select-style">
+                                <option value="Bitmain 100">Bitmain 100</option>
+                                <option value="Bitmain 100">Bitmain 102</option>
+                                <option value="Bitmain 100">Bitmain 103</option>
+                                <option value="Bitmain 100">Bitmain 104</option>
+                            </select>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Стоимость <br> электроэнергии</label>
+                                <div class="style-group">
+                                    <input type="text" value="4,14" class="price-input" readonly>
+                                    <span class="placeholder">кв./ч</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label>Предполагаемый <br> курс Биткоина</label>
+                                <div class="style-group">
+                                    <input type="text" value="30000" class="price-input">
+                                    <span class="placeholder">$</span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label>Курс <br> доллара</label>
+                                <div class="style-group">
+                                    <input type="text" value="60" class="price-input">
+                                    <span class="placeholder">$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group result-group">
+                            <p>Предполагаемый доход</p>
+                            <p class="result"><span>$300</span>мес.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__question">
+            <div class="container">
+                <div class="footer__question__left-side">
+                    <div class="question-title">Остались вопросы?</div>
+                    <div class="descr-block">
+                        <p>Оставьте заявку или позвоните нам. Менеджеры отправят коммерческое предложение исходя из Ваших пожеланий и интересов.</p>
+                    </div>
+                </div>
+                <div class="footer__question__right-side">
+                    <a href="#questions_modal" class="footer-btn btn-style js-simple-modal">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__content">
+            <div class="container">
+                <a href="tel:+79991942605" class="phone-link">+7 (999) 194-26-05</a>
+                <div class="footer__content__top">
+                    <p class="address">Россия, Москва, Варшавское шоссе, 1, стр. 1-2 W-Plaza</p>
+                    <a href="mailto:info@gis-corp.ru" class="mail-link">info@gis-corp.ru</a>
+                    <ul class="footer-links">
+                        <li class="footer-links__item"><a href="#" class="footer-links__link">Отзывы</a></li>
+                        <li class="footer-links__item"><a href="#" class="footer-links__link">Все вопросы и ответы</a></li>
+                    </ul>
+                    <ul class="social-list">
+                        <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-telegram"></i></a></li>
+                        <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-whatsapp"></i></a></li>
+                        <li class="social-list__item"><a href="#" class="social-list__link"><i class="icon icon-viber"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer__content__info">
+                    <p class="copyright">2022, ООО «ИНТЕЛИОН МАЙН». Все права защищены</p>
+                    <a href="#" class="privacy-link">Политика конфеденциальности</a>
+                </div>
+                <div class="footer__content__addinfo">
+                    <p>Оставьте заявку или позвоните нам. Менеджеры отправят коммерческое предложение исходя из ваших пожеланий и интересов. Оставьте заявку или позвоните нам. Менеджеры отправят коммерческое предложение исходя из ваших пожеланий и интересов.Оставьте заявку или позвоните нам. Менеджеры отправят коммерческое предложение исходя из ваших пожеланий и интересов.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="backcall_modal" class="mfp-hide simple_modal">
+        <div class="modal-content">
+            <div class="modal-title">Обратный звонок</div>
+            <div class="modal-form">
+                <form action>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Имя</span>
+                            <input type="text" name="name" class="input-style">
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Email</span>
+                            <input type="email" name="email" class="input-style">
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Сообщение</span>
+                            <textarea name="message" class="input-style"></textarea>
+                        </label>
+                    </div>
+                    <div class="input-group btn-group">
+                        <button class="form-btn btn-style" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="consultation_modal" class="mfp-hide simple_modal">
+        <div class="modal-content">
+            <div class="modal-title">Консультация</div>
+            <div class="modal-form">
+                <form action>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Имя</span>
+                            <input type="text" name="name" class="input-style">
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Email</span>
+                            <input type="email" name="email" class="input-style">
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Сообщение</span>
+                            <textarea name="message" class="input-style"></textarea>
+                        </label>
+                    </div>
+                    <div class="input-group btn-group">
+                        <button class="form-btn btn-style" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="order_modal" class="mfp-hide simple_modal">
+        <div class="modal-content">
+            <div class="modal-title">Заявка</div>
+            <div class="modal-form">
+                <form action>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Имя</span>
+                            <input type="text" name="name" class="input-style">
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Email</span>
+                            <input type="email" name="email" class="input-style">
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Сообщение</span>
+                            <textarea name="message" class="input-style"></textarea>
+                        </label>
+                    </div>
+                    <div class="input-group btn-group">
+                        <button class="form-btn btn-style" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="questions_modal" class="mfp-hide simple_modal">
+        <div class="modal-content">
+            <div class="modal-title">Вопрос</div>
+            <div class="modal-form">
+                <form action>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Имя</span>
+                            <input type="text" name="name" class="input-style">
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Email</span>
+                            <input type="email" name="email" class="input-style">
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <span class="label">Сообщение</span>
+                            <textarea name="message" class="input-style"></textarea>
+                        </label>
+                    </div>
+                    <div class="input-group btn-group">
+                        <button class="form-btn btn-style" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <link data-v="cache" rel="stylesheet" href="css/styles.min.css?v=202305311631">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+    <script data-v="cache" defer src="js/common.min.js?v=202305311631"></script>
+</body>
+</html>
