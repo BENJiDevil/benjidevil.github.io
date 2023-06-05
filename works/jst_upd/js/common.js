@@ -20100,7 +20100,7 @@ document.addEventListener('DOMContentLoaded', function () {
             eventsTarget: '.main-page'
           }
         },
-        960: {
+        959: {
           direction: "vertical",
           mousewheel: {
             sensitivity: 2,
@@ -20108,14 +20108,23 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         },
         576: {
-          spaceBetween: 30
+          spaceBetween: 30,
+          direction: "horizontal",
+          mousewheel: {
+            sensitivity: 2,
+            eventsTarget: '.main-page'
+          }
         }
       }
     });
     mainSlider.init();
-    $(window).scroll(function () {
-      workCheck(this.pageYOffset);
-    });
+    if ($(window).width() > 1200) {
+      $(window).scroll(function () {
+        workCheck(this.pageYOffset);
+      });
+    } else {
+      mainSlider.mousewheel.disable();
+    }
   }
   // news slider
   var newsSlider = new _swiper["default"]('#news-slider', {
@@ -20201,15 +20210,16 @@ document.addEventListener('DOMContentLoaded', function () {
   /* restaurant sliders */
   // first slider
   var smallSlider = new _swiper["default"]("#small-slider", {
-    modules: [_swiper.Autoplay],
+    modules: [_swiper.Autoplay, _swiper.EffectFade],
     loop: true,
     slidesPerView: 1,
     spaceBetween: 0,
-    speed: 800,
+    speed: 1000,
     grabCursor: true,
-    // effect: "creative",
+    effect: 'fade',
     autoplay: {
-      delay: 3000
+      delay: 3000,
+      disableOnInteraction: false
     },
     on: {
       activeIndexChange: function activeIndexChange() {
@@ -20218,28 +20228,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     }
-    /*
-    creativeEffect: {
-        prev: {
-            translate: ['-20%', 0, 0],
-        },
-        next: {
-            translate: ['100%', 0, 0],
-        },
-    }
-     */
   });
-
   var bigSlider = new _swiper["default"]("#big-slider", {
-    modules: [_swiper.Autoplay],
+    modules: [_swiper.Autoplay, _swiper.EffectFade],
     loop: true,
     grabCursor: true,
-    speed: 800,
+    speed: 1000,
     slidesPerView: 1,
     spaceBetween: 0,
-    // effect: "creative",
+    effect: 'fade',
     autoplay: {
-      delay: 3000
+      delay: 3000,
+      disableOnInteraction: false
     },
     on: {
       activeIndexChange: function activeIndexChange() {
@@ -20248,21 +20248,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     }
-    /*
-    creativeEffect: {
-        prev: {
-            translate: ['-20%', 0, 0],
-        },
-        next: {
-            translate: ['100%', 0, 0],
-        },
-    }
-    */
   });
-
-  function connectSlides() {
-    console.log('test');
-  }
   // dish slider
   var dishSlider = new _swiper["default"]('#dish-slider', {
     speed: 800,
