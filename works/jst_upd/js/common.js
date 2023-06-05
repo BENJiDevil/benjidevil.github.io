@@ -20196,16 +20196,6 @@ document.addEventListener('DOMContentLoaded', function () {
       repeat: -1
     });
   }
-  /*
-  var eventsSlider = new Swiper('#events-slider', {
-      speed: 800,
-      loop: true,
-      grabCursor: true,
-      centeredSlides: true,
-      initialSlide: 3,
-      slidesPerView: 'auto'
-  });
-   */
 
   /* restaurant sliders */
   // first slider

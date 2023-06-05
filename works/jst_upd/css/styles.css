@@ -276,7 +276,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #2b211f;
+  background-color: var(--footer-bg);
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
@@ -314,7 +314,7 @@
 }
 .news-section .news-slider .slide-item .descr-block .date {
   display: block;
-  color: #d74f29;
+  color: var(--accent-color);
   font-size: 14px;
   line-height: normal
 }
@@ -360,7 +360,7 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #d74f29;
+  color: var(--accent-color);
   margin-top: 20px
 }
 @media (max-width:1199px) {
@@ -437,7 +437,7 @@
     background-color: #212121
   }
   .news-section .news-slider .swiper-pagination .swiper-pagination-progressbar-fill {
-    background-color: #d74f29
+    background-color: var(--accent-color)
   }
   .events-section {
     margin-top: 100px
@@ -716,7 +716,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #2b211f;
+  background-color: var(--footer-bg);
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
@@ -743,7 +743,7 @@
   -o-transition: opacity .3s 1.5s;
   transition: opacity .3s 1.5s;
   margin-top: 30px;
-  color: #212121
+  color: var(--title-color)
 }
 .events-section__content .events-slider .wheel__card.custom-animate .image-block:before {
   -webkit-transform: translateY(0);
@@ -779,7 +779,7 @@
   width: 100%
 }
 .events-section__btn-row .events-btn {
-  color: #d74f29;
+  color: var(--accent-color);
   position: relative;
   padding: 20px 48px;
   z-index: 1
@@ -1243,7 +1243,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #2b211f;
+  background-color: var(--footer-bg);
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
@@ -1281,7 +1281,7 @@
 }
 .restaurant-news .news-slider .slide-item .descr-block .date {
   display: block;
-  color: #d74f29;
+  color: var(--accent-color);
   font-size: 14px;
   line-height: normal
 }
@@ -1327,7 +1327,7 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #d74f29;
+  color: var(--accent-color);
   margin-top: 20px
 }
 @media (max-width:1199px) {
@@ -1384,7 +1384,7 @@
     background-color: #212121
   }
   .restaurant-news .news-slider .swiper-pagination .swiper-pagination-progressbar-fill {
-    background-color: #d74f29
+    background-color: var(--accent-color)
   }
   .restaurant-dish {
     padding-top: 170px
@@ -1485,7 +1485,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #2b211f;
+  background-color: var(--footer-bg);
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
@@ -1580,7 +1580,7 @@
 }
 .restaurant-dish__content .dish-slider .slide-item .descr-block .date {
   display: block;
-  color: #d74f29;
+  color: var(--accent-color);
   font-size: 14px;
   line-height: normal
 }
@@ -1610,7 +1610,7 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  color: #d74f29;
+  color: var(--accent-color);
   margin-top: 20px
 }
 .restaurant-dish__content .dish-slider .slide-item .descr-block .more-link .icon {
@@ -1653,7 +1653,7 @@
   margin-top: 68px
 }
 .restaurant-dish__btn-row .menu-btn {
-  color: #d74f29;
+  color: var(--accent-color);
   position: relative;
   padding: 20px 48px;
   z-index: 1
@@ -2009,7 +2009,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #2b211f;
+  background-color: var(--footer-bg);
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
@@ -2036,7 +2036,7 @@
   -o-transition: opacity .3s 1.5s;
   transition: opacity .3s 1.5s;
   margin-top: 30px;
-  color: #212121
+  color: var(--title-color)
 }
 .restaurant-events__content .events-slider .wheel__card.custom-animate .image-block:before {
   -webkit-transform: translateY(0);
@@ -2067,7 +2067,7 @@
   justify-content: center
 }
 .restaurant-events__btn-row .events-btn {
-  color: #d74f29;
+  color: var(--accent-color);
   position: relative;
   padding: 20px 48px;
   z-index: 1
@@ -2836,7 +2836,7 @@ swiper-container .swiper-notification {
 }
 .footer {
   margin-top: 160px;
-  background-color: #2b211f;
+  background-color: var(--footer-bg);
   padding: 150px 0 60px
 }
 @media (max-width:1439px) {
@@ -3373,7 +3373,7 @@ swiper-container .swiper-notification {
   }
 }
 .footer__content__column.main-column .search-form button:hover {
-  color: #d74f29
+  color: var(--accent-color)
 }
 .footer__content__column.main-column .search-form .required-label {
   display: none;
@@ -3386,7 +3386,7 @@ swiper-container .swiper-notification {
   padding: 0 30px
 }
 .footer__content__column.delivery-column .social-list__link {
-  background-color: #d74f29
+  background-color: var(--accent-color)
 }
 .footer__content__column.delivery-column .social-list__link:hover {
   background-color: #ad4123
@@ -3449,7 +3449,7 @@ swiper-container .swiper-notification {
   transition: color .3s
 }
 .footer__bottom .work a:hover {
-  color: #d74f29
+  color: var(--accent-color)
 }
 .footer .scrollbtn {
   position: fixed;
@@ -3713,7 +3713,7 @@ swiper-container .swiper-notification {
   transition: color .3s
 }
 .footer.restaurant-footer .footer__content__column.adress-column .phone-link:hover {
-  color: #d74f29
+  color: var(--accent-color)
 }
 .mfp-bg {
   top: 0;
@@ -4129,7 +4129,7 @@ screen and (max-height:300px) {
   opacity: 0
 }
 .simple_modal {
-  background-color: #f2e9e0;
+  background-color: var(--bg-color);
   margin: 0;
   position: relative;
   width: 100vw;
@@ -4315,28 +4315,28 @@ screen and (max-height:300px) {
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group .input-style {
   background-color: rgba(0,0,0,.1);
-  color: #4d4d4d
+  color: var(--txt-color)
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group .input-style.placeholder {
-  color: #4d4d4d
+  color: var(--txt-color)
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group .input-style::-webkit-input-placeholder {
-  color: #4d4d4d
+  color: var(--txt-color)
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group .input-style::-moz-placeholder {
-  color: #4d4d4d
+  color: var(--txt-color)
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group .input-style:-moz-placeholder {
-  color: #4d4d4d
+  color: var(--txt-color)
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group .input-style:-ms-input-placeholder {
-  color: #4d4d4d
+  color: var(--txt-color)
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group.check-group {
   margin-top: 35px
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group.check-group label input:checked + .label:before {
-  color: #4d4d4d
+  color: var(--txt-color)
 }
 @media (max-width:767px) {
   .simple_modal .modal-content .modal-descr .modal-form {
@@ -4347,14 +4347,14 @@ screen and (max-height:300px) {
   }
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group.check-group label .label:before {
-  border-color: #4d4d4d
+  border-color: var(--txt-color)
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group.btn-group {
   margin-top: 60px;
   padding-left: 15px
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group.btn-group button {
-  color: #4d4d4d
+  color: var(--txt-color)
 }
 @-webkit-keyframes spin {
   from {
