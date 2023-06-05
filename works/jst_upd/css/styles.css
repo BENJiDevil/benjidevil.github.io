@@ -1042,6 +1042,12 @@
 .restaurant-descr__content__right-side .small-slider .slide-item {
   position: relative
 }
+.restaurant-descr__content__right-side .small-slider .slide-item .item-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0
+}
 .restaurant-descr__content__right-side .big-slider {
   width: 85%;
   max-width: 760px;
@@ -1083,6 +1089,12 @@
 }
 .restaurant-descr__content__right-side .big-slider .slide-item {
   position: relative
+}
+.restaurant-descr__content__right-side .big-slider .slide-item .item-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0
 }
 .restaurant-descr__content__right-side .circle-wrapper {
   position: absolute;
