@@ -1,18 +1,18 @@
 @font-face {
-  font-family: Fontello;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/fontello/fontello.eot);
-  src: url(../fonts/fontello/fontello.eot?#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff) format("woff"),url(../fonts/fontello/fontello.woff2) format("woff2"),url(../fonts/fontello/fontello.ttf) format("truetype")
-}
-@font-face {
   font-family: GardensC;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/GardensCRegular/GardensCRegular.eot);
   src: url(../fonts/GardensCRegular/GardensCRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/GardensCRegular/GardensCRegular.woff) format("woff"),url(../fonts/GardensCRegular/GardensCRegular.woff2) format("woff2"),url(../fonts/GardensCRegular/GardensCRegular.ttf) format("truetype")
+}
+@font-face {
+  font-family: Fontello;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/fontello/fontello.eot);
+  src: url(../fonts/fontello/fontello.eot?#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff) format("woff"),url(../fonts/fontello/fontello.woff2) format("woff2"),url(../fonts/fontello/fontello.ttf) format("truetype")
 }
 @font-face {
   font-family: Oswald;
@@ -516,7 +516,6 @@ body.overflow.menu-show:before {
 }
 .header__content .main-menu__item.submenu-item .submenu-list {
   background-color: #fff;
-  padding: 30px 0;
   border: 1px solid #f2e9e0;
   position: relative
 }
@@ -531,17 +530,20 @@ body.overflow.menu-show:before {
 }
 .header__content .main-menu__item.submenu-item .submenu-list__item {
   white-space: nowrap;
-  margin-top: 20px;
-  padding: 0 30px
+  padding: 15px 30px;
+  position: relative
 }
 .header__content .main-menu__item.submenu-item .submenu-list__item:nth-of-type(1) {
-  margin-top: 0
+  padding-top: 30px
 }
 .header__content .main-menu__item.submenu-item .submenu-list__item.submenu-item .thirdmenu-wrapper {
   display: none;
   position: absolute;
   left: 100%;
   top: -1px
+}
+.header__content .main-menu__item.submenu-item .submenu-list__item.submenu-item .thirdmenu-wrapper .submenu-list__item {
+  padding: 15px 30px
 }
 .header__content .main-menu__item.submenu-item .submenu-list__item.submenu-item:hover > .submenu-list__link:before {
   width: 100%
@@ -809,11 +811,6 @@ body.overflow.menu-show:before {
     margin: 0 20px
   }
 }
-@media (max-width:1023px) {
-  .header.restaurant-header .header__content .main-menu__item {
-    margin: 0 15px
-  }
-}
 .header.restaurant-header .header__content .main-menu__item.delivery-item {
   margin-left: auto
 }
@@ -859,34 +856,16 @@ body.overflow.menu-show:before {
   justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: calc(100vh - 109px);
-  min-height: 800px
-}
-@media (max-height:800px) {
-  .main-page__content {
-    min-height: 659px
-  }
+  max-height: calc(100vh - 109px);
+  height: 935px;
+  min-height: 500px
 }
 @media (max-width:1199px) {
   .main-page__title {
     font-size: 60px
   }
   .main-page__content {
-    min-height: 510px;
-    height: 62vh
-  }
-}
-@media (max-width:959px) {
-  .header.restaurant-header .header__content .main-menu__item,
-  .header.restaurant-header .header__content .main-menu__item.delivery-item {
-    margin: 30px 0 0
-  }
-  .main-page__content {
-    height: calc(100vh - 70px);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
+    height: 510px
   }
 }
 .main-page__content__left-side {
@@ -924,18 +903,35 @@ body.overflow.menu-show:before {
   }
 }
 @media (max-width:1023px) {
+  .header.restaurant-header .header__content .main-menu__item {
+    margin: 0 15px
+  }
   .main-page__content__left-side {
     padding-right: 0
   }
 }
 @media (max-width:959px) {
+  .header.restaurant-header .header__content .main-menu__item,
+  .header.restaurant-header .header__content .main-menu__item.delivery-item {
+    margin: 30px 0 0
+  }
+  .main-page__content {
+    min-height: calc(100vh - 70px);
+    height: auto;
+    max-height: unset
+  }
   .main-page__content__left-side {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     max-width: 450px;
     margin-top: auto;
-    padding: 0 0 40px
+    padding: 20px 0 0
+  }
+}
+@media (max-width:500px) {
+  .main-page__content__left-side {
+    max-width: 100%
   }
 }
 .main-page__content__right-side {
@@ -950,6 +946,7 @@ body.overflow.menu-show:before {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+    width: calc(100% + 122px);
     max-width: calc(100% + 122px);
     margin: 0 -61px
   }
@@ -1236,7 +1233,8 @@ body.overflow.menu-show:before {
   display: inline-block;
   color: #fff;
   position: relative;
-  padding: 20px 42px
+  padding: 20px 42px;
+  margin-bottom: 30px
 }
 .main-page.restaurant-page .main-page__btn .link-line {
   position: absolute;
