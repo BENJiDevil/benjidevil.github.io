@@ -19826,9 +19826,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getScrollWidth = void 0;
 var getScrollWidth = function getScrollWidth() {
-  setTimeout(function () {
-    $('html').css('--scroll-width', $(window).outerWidth() - $(document).width() + 'px');
-  }, 3500);
+  if ($(window).width() > 991) {
+    setTimeout(function () {
+      $('html').css('--scroll-width', $(window).outerWidth() - $(document).width() + 'px');
+    }, 3500);
+  }
 };
 exports.getScrollWidth = getScrollWidth;
 

@@ -1,18 +1,18 @@
 @font-face {
-  font-family: GardensC;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/GardensCRegular/GardensCRegular.eot);
-  src: url(../fonts/GardensCRegular/GardensCRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/GardensCRegular/GardensCRegular.woff) format("woff"),url(../fonts/GardensCRegular/GardensCRegular.woff2) format("woff2"),url(../fonts/GardensCRegular/GardensCRegular.ttf) format("truetype")
-}
-@font-face {
   font-family: Fontello;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/fontello/fontello.eot);
   src: url(../fonts/fontello/fontello.eot?#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff) format("woff"),url(../fonts/fontello/fontello.woff2) format("woff2"),url(../fonts/fontello/fontello.ttf) format("truetype")
+}
+@font-face {
+  font-family: GardensC;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/GardensCRegular/GardensCRegular.eot);
+  src: url(../fonts/GardensCRegular/GardensCRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/GardensCRegular/GardensCRegular.woff) format("woff"),url(../fonts/GardensCRegular/GardensCRegular.woff2) format("woff2"),url(../fonts/GardensCRegular/GardensCRegular.ttf) format("truetype")
 }
 @font-face {
   font-family: Oswald;
@@ -326,7 +326,16 @@ body.overflow.menu-show:before {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 10
+}
+.header:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #fff
 }
 .header__content {
@@ -341,16 +350,8 @@ body.overflow.menu-show:before {
   justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 25px 0;
-  max-width: 1044px
-}
-@media (max-width:1199px) {
-  .header__content {
-    padding: 15px 0
-  }
-  .header__content .logo-link {
-    max-width: 40px
-  }
+  max-width: 1044px;
+  position: relative
 }
 .header__content .logo-link {
   display: -webkit-box;
@@ -378,6 +379,9 @@ body.overflow.menu-show:before {
   margin: 0 auto
 }
 @media (max-width:1800px) {
+  .header {
+    z-index: 11
+  }
   .header__content {
     max-width: 100%
   }
@@ -387,7 +391,7 @@ body.overflow.menu-show:before {
 }
 @media (max-width:991px) {
   .header__content {
-    padding: 10px 0
+    padding: 15px 0
   }
   .header__content .main-menu {
     position: absolute;
@@ -396,7 +400,7 @@ body.overflow.menu-show:before {
     padding: 70px 0;
     margin: 0;
     top: 0;
-    right: 0;
+    right: -61px;
     -webkit-transform: translateX(100vw);
     -ms-transform: translateX(100vw);
     transform: translateX(100vw);
@@ -404,7 +408,8 @@ body.overflow.menu-show:before {
     -webkit-transition: -webkit-transform .3s;
     transition: transform .3s;
     -o-transition: transform .3s;
-    transition: transform .3s,-webkit-transform .3s
+    transition: transform .3s,-webkit-transform .3s;
+    overflow-x: scroll
   }
   .header__content .main-menu.show {
     -webkit-transform: translateX(0);
@@ -414,12 +419,14 @@ body.overflow.menu-show:before {
 }
 @media (max-width:767px) {
   .header__content .main-menu {
-    width: 265px
+    width: 265px;
+    right: -20px
   }
 }
 @media (max-width:575px) {
   .header__content .main-menu {
-    width: 255px
+    width: 255px;
+    right: -15px
   }
 }
 .header__content .main-menu__list {
@@ -455,7 +462,17 @@ body.overflow.menu-show:before {
   flex: 0 0 auto;
   width: auto;
   margin: 0 25px;
-  position: relative
+  position: relative;
+  padding: 25px 0
+}
+@media (max-width:1199px) {
+  .header__content .logo-link {
+    max-width: 40px;
+    min-height: 42px
+  }
+  .header__content .main-menu__item {
+    padding: 15px 0
+  }
 }
 .header__content .main-menu__item .link-line {
   position: absolute;
@@ -464,9 +481,6 @@ body.overflow.menu-show:before {
   z-index: -1
 }
 @media (max-width:1199px) {
-  .header__content .logo-link {
-    min-height: 42px
-  }
   .header__content .main-menu__item .link-line {
     max-width: 150%;
     left: calc(-25% - 5px)
@@ -483,21 +497,15 @@ body.overflow.menu-show:before {
   position: absolute;
   top: 100%;
   left: -30px;
-  z-index: 1;
-  padding-top: 40px;
   width: auto;
   min-width: calc(100% + 60px)
-}
-@media (max-width:1199px) {
-  .header__content .main-menu__item.submenu-item .submenu-wrapper {
-    padding-top: 25px
-  }
 }
 @media (max-width:991px) {
   .header__content .main-menu__item {
     margin: 35px 0 0;
     width: 100%;
-    text-align: center
+    text-align: center;
+    padding: 0
   }
   .header__content .main-menu__item .link-line {
     left: calc(50% - 82px);
@@ -511,7 +519,7 @@ body.overflow.menu-show:before {
     min-width: auto;
     border-top: 1px solid rgba(var(--accent-color),.15);
     padding: 0;
-    margin-top: 20px
+    margin-top: 15px
   }
 }
 .header__content .main-menu__item.submenu-item .submenu-list {
@@ -522,7 +530,7 @@ body.overflow.menu-show:before {
 @media (max-width:991px) {
   .header__content .main-menu__item.submenu-item .submenu-list {
     background-color: transparent;
-    padding: 20px 0
+    padding: 10px 0
   }
 }
 .header__content .main-menu__item.submenu-item .submenu-list:nth-of-type(2) {
