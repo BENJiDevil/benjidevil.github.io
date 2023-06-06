@@ -776,16 +776,7 @@ body.overflow.menu-show:before {
   padding-top: 109px
 }
 .header.restaurant-header .header__content {
-  max-width: 100%;
-  padding: 25px 0
-}
-@media (max-width:1199px) {
-  .header + .main-section {
-    padding-top: 71px
-  }
-  .header.restaurant-header .header__content {
-    padding: 15px 0
-  }
+  max-width: 100%
 }
 .header.restaurant-header .header__content .logo-link {
   margin-right: auto
@@ -807,15 +798,15 @@ body.overflow.menu-show:before {
   }
 }
 @media (max-width:991px) {
-  .header.restaurant-header .header__content {
-    padding: 10px 0
-  }
   .header.restaurant-header .header__content .main-menu {
     width: 330px;
     margin: 0
   }
 }
 @media (max-width:1199px) {
+  .header + .main-section {
+    padding-top: 71px
+  }
   .header.restaurant-header .header__content .main-menu__item {
     margin: 0 20px
   }
