@@ -20100,7 +20100,7 @@ document.addEventListener('DOMContentLoaded', function () {
             eventsTarget: '.main-page'
           }
         },
-        959: {
+        992: {
           direction: "vertical",
           mousewheel: {
             sensitivity: 2,
@@ -20144,10 +20144,12 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 20,
         pagination: false
       },
+      992: {
+        pagination: false
+      },
       960: {
         slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: false
+        spaceBetween: 30
       },
       576: {
         slidesPerView: 2

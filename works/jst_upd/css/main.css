@@ -1,18 +1,18 @@
 @font-face {
-  font-family: Fontello;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/fontello/fontello.eot);
-  src: url(../fonts/fontello/fontello.eot?#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff) format("woff"),url(../fonts/fontello/fontello.woff2) format("woff2"),url(../fonts/fontello/fontello.ttf) format("truetype")
-}
-@font-face {
   font-family: GardensC;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/GardensCRegular/GardensCRegular.eot);
   src: url(../fonts/GardensCRegular/GardensCRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/GardensCRegular/GardensCRegular.woff) format("woff"),url(../fonts/GardensCRegular/GardensCRegular.woff2) format("woff2"),url(../fonts/GardensCRegular/GardensCRegular.ttf) format("truetype")
+}
+@font-face {
+  font-family: Fontello;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/fontello/fontello.eot);
+  src: url(../fonts/fontello/fontello.eot?#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff) format("woff"),url(../fonts/fontello/fontello.woff2) format("woff2"),url(../fonts/fontello/fontello.ttf) format("truetype")
 }
 @font-face {
   font-family: Oswald;
@@ -217,7 +217,7 @@ body.overflow.menu-show:before {
     padding: 0 30px
   }
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .container {
     padding: 0 61px
   }
@@ -385,7 +385,7 @@ body.overflow.menu-show:before {
     margin: 0 0 0 5%
   }
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .header__content {
     padding: 10px 0
   }
@@ -435,7 +435,7 @@ body.overflow.menu-show:before {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .header__content .main-menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -493,7 +493,7 @@ body.overflow.menu-show:before {
     padding-top: 25px
   }
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .header__content .main-menu__item {
     margin: 35px 0 0;
     width: 100%;
@@ -519,7 +519,7 @@ body.overflow.menu-show:before {
   border: 1px solid var(--bg-color);
   position: relative
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .header__content .main-menu__item.submenu-item .submenu-list {
     background-color: transparent;
     padding: 20px 0
@@ -627,7 +627,7 @@ body.overflow.menu-show:before {
     line-height: 22px
   }
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .header__content .main-menu__item.submenu-item .submenu-list__item.submenu-item .thirdmenu-wrapper {
     position: relative;
     top: 0;
@@ -673,7 +673,7 @@ body.overflow.menu-show:before {
   margin: 0 0 0 50px;
   background-color: var(--accent-color)
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .header__content .hamburger {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -798,7 +798,7 @@ body.overflow.menu-show:before {
     width: auto
   }
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .header.restaurant-header .header__content {
     padding: 10px 0
   }
@@ -911,7 +911,7 @@ body.overflow.menu-show:before {
     padding-right: 0
   }
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .header.restaurant-header .header__content .main-menu__item,
   .header.restaurant-header .header__content .main-menu__item.delivery-item {
     margin: 30px 0 0
@@ -942,7 +942,7 @@ body.overflow.menu-show:before {
   max-width: 45%;
   position: relative
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .main-page__content__right-side {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
@@ -973,7 +973,7 @@ body.overflow.menu-show:before {
     padding: 20px 0
   }
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .main-page__content__right-side .main-slider {
     max-width: 100%;
     position: relative;
@@ -1122,7 +1122,7 @@ body.overflow.menu-show:before {
     margin-top: 25px
   }
 }
-@media (max-width:959px) {
+@media (max-width:991px) {
   .main-page__content__right-side .main-slider .slide-item .descr-block {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
