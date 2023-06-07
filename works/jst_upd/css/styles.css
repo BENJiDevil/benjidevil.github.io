@@ -137,6 +137,15 @@
   -webkit-animation: .5s cubic-bezier(.47,0,.745,.715) both link-arrow;
   animation: .5s cubic-bezier(.47,0,.745,.715) both link-arrow
 }
+svg.link-line path {
+  stroke: var(--accent-color)
+}
+svg.circle-info .circle-arrow {
+  fill: var(--accent-color)
+}
+svg.close-line path {
+  stroke: var(--accent-color)
+}
 .news-section {
   padding-top: 200px
 }
@@ -1699,7 +1708,7 @@
 }
 .backcall-section {
   margin-top: 180px;
-  background-color: #bc8548;
+  background-color: var(--accent-color);
   color: #fff;
   padding: 100px 0
 }
@@ -1798,6 +1807,9 @@
 }
 .backcall-section .backcall-form .input-group.btn-group {
   padding-left: 40px
+}
+.backcall-section .backcall-form .input-group.btn-group .link-line path {
+  stroke: #fff
 }
 .restaurant-events {
   margin-top: 200px
@@ -3152,16 +3164,17 @@ swiper-container .swiper-notification {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgba(255,255,255,.1);
+  background-color: rgba(255,255,255,.2);
+  opacity: .8;
   color: #fff;
   font-size: 20px;
   line-height: 20px;
-  -webkit-transition: background-color .3s;
-  -o-transition: background-color .3s;
-  transition: background-color .3s
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s
 }
 .footer__content__column .column-list__item .social-list__link:hover {
-  background-color: rgba(255,255,255,.2)
+  opacity: 1
 }
 .footer__content__column:nth-of-type(4n) {
   margin-right: 0
@@ -3500,9 +3513,6 @@ swiper-container .swiper-notification {
 .footer__content__column.delivery-column .social-list__link {
   background-color: var(--accent-color)
 }
-.footer__content__column.delivery-column .social-list__link:hover {
-  background-color: #ad4123
-}
 .footer__content__column.answers-column,
 .footer__content__column.delivery-column,
 .footer__content__column.social-column {
@@ -3705,10 +3715,7 @@ swiper-container .swiper-notification {
   line-height: 24px
 }
 .footer.restaurant-footer .footer__content__column.links-column .column-list .social-list__link.active {
-  background-color: #bc8548
-}
-.footer.restaurant-footer .footer__content__column.links-column .column-list .social-list__link.active:hover {
-  background-color: rgba(188,133,72,.8)
+  background-color: var(--accent-color)
 }
 .footer.restaurant-footer .footer__content__column.time-column .time-list__item {
   display: -webkit-box;

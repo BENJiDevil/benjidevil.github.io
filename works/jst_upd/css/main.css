@@ -477,8 +477,7 @@ body.overflow.menu-show:before {
 .header__content .main-menu__item .link-line {
   position: absolute;
   top: calc(50% - 32px);
-  left: calc(50% - 80px);
-  z-index: -1
+  left: calc(50% - 80px)
 }
 @media (max-width:1199px) {
   .header__content .main-menu__item .link-line {
@@ -490,7 +489,8 @@ body.overflow.menu-show:before {
   -webkit-animation: .5s cubic-bezier(.47,0,.745,.715) both link-arrow;
   animation: .5s cubic-bezier(.47,0,.745,.715) both link-arrow;
   -webkit-animation-delay: 4s;
-  animation-delay: 4s
+  animation-delay: 4s;
+  stroke: var(--accent-color)
 }
 .header__content .main-menu__item.submenu-item .submenu-wrapper {
   display: none;
@@ -1018,10 +1018,10 @@ body.overflow.menu-show:before {
   background-color: var(--accent-color)
 }
 .main-page__content__right-side .main-slider .slide-item:nth-of-type(2n) .descr-block {
-  background-color: #bc8548
+  background-color: var(--main-color)
 }
 .main-page__content__right-side .main-slider .slide-item:nth-of-type(3n) .descr-block {
-  background-color: #2d3e72
+  background-color: var(--blue-color)
 }
 .main-page__content__right-side .main-slider .slide-item .descr-block {
   -webkit-box-flex: 0;
@@ -1145,6 +1145,9 @@ body.overflow.menu-show:before {
   left: -7px;
   width: calc(100% + 14px);
   height: calc(100% + 14px)
+}
+.main-page__content__right-side .main-slider .slide-item .descr-block .order-btn .link-line path {
+  stroke: #fff
 }
 .main-page__content__right-side .main-slider .slide-item .descr-block .order-btn:hover .link-line path {
   -webkit-animation: .5s cubic-bezier(.47,0,.745,.715) both link-arrow;
