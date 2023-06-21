@@ -213,7 +213,7 @@ body.overflow .header {
   background: rgba(255,255,255,.1);
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
-  padding: 40px 20px 15px;
+  padding: 20px;
   z-index: 10
 }
 .header__content {
@@ -244,9 +244,6 @@ body.overflow .header {
   margin: 0
 }
 @media (min-width:1024px) {
-  .header {
-    padding: 20px
-  }
   .header__content {
     max-width: 945px
   }
@@ -713,4 +710,3 @@ body.overflow .header {
     top: 14%
   }
 }
-/*# sourceMappingURL=main.css.map */

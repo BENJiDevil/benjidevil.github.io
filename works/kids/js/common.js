@@ -11188,6 +11188,37 @@ var simpleModal = function simpleModal() {
       }
     }
   });
+  $('.js-video-modal').magnificPopup({
+    type: 'inline',
+    mainClass: 'mfp-fade video-modal',
+    tClose: 'Закрыть',
+    tLoading: 'Загрузка',
+    removalDelay: 500,
+    closeBtnInside: true,
+    fixedContentPos: true,
+    preloader: false,
+    closeMarkup: '<button title="%title%" type="button" class="mfp-close"><i class="icon icon-close"></i></button>',
+    callbacks: {
+      open: function open() {
+        $('body').addClass('overflow');
+        $('.js-video-start').click(function () {
+          $(this).fadeOut();
+          $(this).parent().find('.modal-descr').fadeOut();
+          var src = $(this).parent().find('.video-file').attr('data-src');
+          $(this).parent().find('.video-file').attr('src', src + '?&autoplay=1');
+          $(this).parent().find('.video-file').fadeIn();
+          $(this).parents().find('.modal-video-style').find('.mfp-close').addClass('active');
+        });
+      },
+      close: function close() {
+        $('body').removeClass('overflow');
+        $('.modal-video-style .js-video-start').show();
+        $('.modal-video-style .modal-descr').show();
+        $('.modal-video-style .video-file').attr('src', '').hide();
+        $('.modal-video-style .mfp-close').removeClass('active');
+      }
+    }
+  });
 };
 exports.simpleModal = simpleModal;
 var galleryModal = function galleryModal(galleryBlock) {

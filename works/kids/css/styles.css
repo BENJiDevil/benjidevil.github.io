@@ -279,7 +279,8 @@
 }
 .main-products__title {
   max-width: 340px;
-  margin-top: 6.75vh
+  margin-top: 6.75vh;
+  position: relative
 }
 @media (min-width:768px) {
   .main-products__title {
@@ -1163,7 +1164,8 @@
   padding: 20px 15px;
   max-width: 300px;
   z-index: 2;
-  overflow: hidden
+  overflow: hidden;
+  text-align: left
 }
 @media (min-width:421px) {
   .main-fathers__title {
@@ -1240,6 +1242,14 @@
 }
 .main-fathers__content .fathers-slider .swiper-slide {
   height: auto
+}
+.main-fathers__content .fathers-slider .swiper-slide .slide-image {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 @media (min-width:1200px) and (max-height:1000px) {
   .main-fathers__title {
@@ -3038,7 +3048,8 @@ swiper-container .swiper-notification {
   position: fixed;
   background: #012238
 }
-.mfp-bg.info-modal {
+.mfp-bg.info-modal,
+.mfp-bg.video-modal {
   background: rgba(1,34,56,.5)
 }
 .mfp-wrap {
@@ -3155,7 +3166,8 @@ button.mfp-close {
 button.mfp-arrow .icon,
 button.mfp-close .icon {
   position: relative;
-  z-index: -1
+  z-index: -1;
+  pointer-events: none
 }
 button::-moz-focus-inner {
   padding: 0;
@@ -4450,4 +4462,148 @@ screen and (max-height:300px) {
 .modal-info-style .modal-links a:hover {
   color: #101010
 }
-/*# sourceMappingURL=styles.css.map */
+.modal-video-style {
+  height: var(--app-height);
+  width: 100%
+}
+.modal-video-style .mfp-close {
+  color: #000;
+  right: 20px
+}
+.modal-video-style .mfp-close.active {
+  color: #fff
+}
+.modal-video-style .modal-content {
+  position: relative;
+  height: var(--app-height);
+  margin: 0 auto
+}
+@media (min-width:900px) {
+  .video-modal .mfp-content {
+    max-width: 831px;
+    height: var(--app-height);
+    max-height: calc(100vh - 60px);
+    overflow: hidden;
+    border-radius: 10px
+  }
+  .modal-video-style .modal-content {
+    max-height: calc(100vh - 60px)
+  }
+}
+.modal-video-style .modal-content .video-file {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+.modal-video-style .modal-content .video-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1
+}
+.modal-video-style .modal-content .video-link span {
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s
+}
+.modal-video-style .modal-content .video-link span:before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255,255,255,.6);
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  left: -15px
+}
+.modal-video-style .modal-content .video-link .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #09d335;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 15px rgba(9,211,163,.55);
+  box-shadow: 0 8px 15px rgba(9,211,163,.55);
+  font-size: 20px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 4px
+}
+.modal-video-style .modal-content .video-link:hover span {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+.modal-video-style .modal-content .image-block {
+  position: relative;
+  max-width: 100%;
+  height: var(--app-height);
+  overflow: hidden
+}
+.modal-video-style .modal-content .image-block .video-preview {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px
+}
+.modal-video-style .modal-content .descr-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(217,217,217,0)),color-stop(89.58%,#012238));
+  background: -o-linear-gradient(top,rgba(217,217,217,0) 0,#012238 89.58%);
+  background: linear-gradient(180deg,rgba(217,217,217,0) 0,#012238 89.58%);
+  width: 100%;
+  height: 50%;
+  padding: 60px 15px
+}
+.modal-video-style .modal-content .descr-block .modal-title {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-family: Lineatura,sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  text-shadow: 0 4px 4px rgba(0,0,0,.25);
+  color: #fff
+}
