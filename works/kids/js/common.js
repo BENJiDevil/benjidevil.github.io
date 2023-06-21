@@ -11110,6 +11110,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.getAppHeight = void 0;
+var getAppHeight = function getAppHeight() {
+  function getHeight() {
+    $('html').css('--app-height', $(window).innerHeight() + 'px');
+  }
+  getHeight();
+  window.addEventListener('resize', function () {
+    getHeight();
+  });
+};
+exports.getAppHeight = getAppHeight;
+
+},{}],103:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.videoModal = exports.simpleModal = exports.galleryModal = void 0;
 var videoModal = function videoModal() {
   $('.js-video-modal').magnificPopup({
@@ -11192,13 +11210,14 @@ var galleryModal = function galleryModal(galleryBlock) {
 };
 exports.galleryModal = galleryModal;
 
-},{}],103:[function(require,module,exports){
+},{}],104:[function(require,module,exports){
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 require("lazysizes/plugins/bgset/ls.bgset.js");
 require("lazysizes/plugins/parent-fit/ls.parent-fit.js");
 var _swiper = _interopRequireWildcard(require("swiper"));
+var _getAppHeight = require("./_func/_jq/getAppHeight");
 var _modalMagnific = require("./_func/_jq/modalMagnific");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -11209,6 +11228,7 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 /* ------------------- */
 
 document.addEventListener('DOMContentLoaded', function () {
+  (0, _getAppHeight.getAppHeight)();
   var touchstartY = 0;
   var touchendY = 0;
   /* main slider */
@@ -11354,6 +11374,6 @@ document.addEventListener('DOMContentLoaded', function () {
    */
 });
 
-},{"./_func/_jq/modalMagnific":102,"lazysizes/plugins/bgset/ls.bgset.js":2,"lazysizes/plugins/parent-fit/ls.parent-fit.js":3,"swiper":101}]},{},[103])
+},{"./_func/_jq/getAppHeight":102,"./_func/_jq/modalMagnific":103,"lazysizes/plugins/bgset/ls.bgset.js":2,"lazysizes/plugins/parent-fit/ls.parent-fit.js":3,"swiper":101}]},{},[104])
 
 //# sourceMappingURL=common.js.map
