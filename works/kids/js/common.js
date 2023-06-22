@@ -11282,6 +11282,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (e.activeIndex == 2) {
           $('#kid').attr('data-position', 2);
+          setTimeout(function () {
+            qualitySlider.autoplay.start();
+          }, 3500);
         }
       }
     }
@@ -11308,18 +11311,26 @@ document.addEventListener('DOMContentLoaded', function () {
   /* main page sliders */
   /* TODO bag with slider */
   var qualitySlider = new _swiper["default"]("#quality-slider", {
-    modules: [_swiper.Pagination],
-    speed: 800,
+    modules: [_swiper.Pagination, _swiper.Autoplay, _swiper.FreeMode],
+    speed: 3500,
     slidesPerView: 'auto',
+    centeredSlides: true,
+    loopedSlides: 2,
     spaceBetween: 0,
     loop: true,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false
+    },
+    freeMode: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true
     },
-    breakpoints: {
-      421: {
-        centeredSlides: true
+    on: {
+      init: function init() {
+        this.autoplay.stop();
       }
     }
   });
@@ -11342,7 +11353,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var fathersSlider = new _swiper["default"]("#fathers-slider", {
     modules: [_swiper.Pagination],
     speed: 800,
-    loop: true,
     spaceBetween: 0,
     slidesPerView: 'auto',
     pagination: {
@@ -11352,18 +11362,15 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       421: {
         spaceBetween: 0,
-        centeredSlides: true,
-        loop: true
+        centeredSlides: true
       },
       768: {
         spaceBetween: 0,
-        centeredSlides: false,
-        loop: true
+        centeredSlides: false
       },
       1024: {
         spaceBetween: 0,
-        centeredSlides: false,
-        loop: true
+        centeredSlides: false
       }
     }
   });

@@ -714,6 +714,11 @@
   width: 100%;
   height: auto
 }
+.main-quality__content .quality-slider .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear
+}
 .main-quality__content .quality-slider .swiper-slide .image-wrapper {
   display: none
 }
@@ -723,7 +728,7 @@
 @media (min-width:421px) {
   .main-quality__content .quality-slider .swiper-slide {
     max-width: 390px;
-    margin-right: 15px
+    margin: 0 7px
   }
 }
 @media (min-width:768px) {
@@ -764,9 +769,8 @@
 }
 .main-quality__content .quality-slider .swiper-slide .slide-image {
   display: block;
-  width: auto;
-  height: 100%;
-  min-width: 100%;
+  width: 100%;
+  margin: 0 auto;
   -o-object-fit: cover;
   object-fit: cover
 }
@@ -1889,7 +1893,9 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin: 10vh auto 5vh
+  margin: 10vh auto 5vh;
+  position: relative;
+  z-index: 2
 }
 @media (min-width:1024px) {
   .main-challenge__content .steps-list {
