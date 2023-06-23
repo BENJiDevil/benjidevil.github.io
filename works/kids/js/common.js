@@ -11309,7 +11309,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* main page sliders */
-  /* TODO bag with slider */
   var qualitySlider = new _swiper["default"]("#quality-slider", {
     modules: [_swiper.Pagination, _swiper.Autoplay, _swiper.FreeMode],
     speed: 3500,

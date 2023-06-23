@@ -1,18 +1,18 @@
 @font-face {
-  font-family: Fontello;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/fontello/fontello.eot);
-  src: url(../fonts/fontello/fontello.eot?#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff) format("woff"),url(../fonts/fontello/fontello.woff2) format("woff2"),url(../fonts/fontello/fontello.ttf) format("truetype")
-}
-@font-face {
   font-family: Exo2;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/Exo2Regular/Exo2Regular.eot);
   src: url(../fonts/Exo2Regular/Exo2Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Exo2Regular/Exo2Regular.woff) format("woff"),url(../fonts/Exo2Regular/Exo2Regular.woff2) format("woff2"),url(../fonts/Exo2Regular/Exo2Regular.ttf) format("truetype")
+}
+@font-face {
+  font-family: Fontello;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/fontello/fontello.eot);
+  src: url(../fonts/fontello/fontello.eot?#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff) format("woff"),url(../fonts/fontello/fontello.woff2) format("woff2"),url(../fonts/fontello/fontello.ttf) format("truetype")
 }
 @font-face {
   font-family: Gilroy;
@@ -547,7 +547,7 @@ body.overflow .header {
   display: inline-block;
   background-color: #09d3c6;
   font-family: Exo2,sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
@@ -556,12 +556,13 @@ body.overflow .header {
   box-shadow: 0 8px 15px rgba(9,211,198,.55);
   border-radius: 10px;
   padding: 18px 40px;
-  -webkit-transition: background-color .3s,-webkit-box-shadow .3s;
-  transition: background-color .3s,box-shadow .3s,-webkit-box-shadow .3s;
-  -o-transition: background-color .3s,box-shadow .3s
+  -webkit-transition: background-color .3s,color .3s,-webkit-box-shadow .3s;
+  transition: background-color .3s,box-shadow .3s,color .3s,-webkit-box-shadow .3s;
+  -o-transition: background-color .3s,box-shadow .3s,color .3s
 }
 .main-page__btn-row .test-link:hover {
-  background-color: #09d335;
+  background-color: #ecc032;
+  color: #34b6b4;
   -webkit-box-shadow: 0 8px 15px rgba(9,211,53,.55);
   box-shadow: 0 8px 15px rgba(9,211,53,.55)
 }
@@ -629,9 +630,9 @@ body.overflow .header {
 }
 @media (min-width:1200px) and (max-height:1000px) {
   .main-page__image-wrapper[data-position="1"] {
-    -webkit-transform: translate(0,calc(50vh + 30%)) scale(.8);
-    -ms-transform: translate(0,calc(50vh + 30%)) scale(.8);
-    transform: translate(0,calc(50vh + 30%)) scale(.8)
+    -webkit-transform: translate(0,calc(50vh + 42%)) scale(.8);
+    -ms-transform: translate(0,calc(50vh + 42%)) scale(.8);
+    transform: translate(0,calc(50vh + 42%)) scale(.8)
   }
 }
 @media (min-width:1441px) and (max-height:870px) {
