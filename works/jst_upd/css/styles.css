@@ -57,6 +57,9 @@
 .input-group .input-style:-ms-input-placeholder {
   color: #fff
 }
+.input-group .input-style.wpcf7-not-valid {
+  border-color: red
+}
 .input-group.check-group label {
   display: block
 }
@@ -1069,9 +1072,13 @@ svg.close-line path {
 }
 .restaurant-descr__content__right-side .small-slider .slide-item .item-image {
   display: block;
-  width: auto;
   max-width: 100%;
-  margin: 0
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 559px;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .restaurant-descr__content__right-side .big-slider {
   width: 85%;
@@ -1117,9 +1124,13 @@ svg.close-line path {
 }
 .restaurant-descr__content__right-side .big-slider .slide-item .item-image {
   display: block;
-  width: auto;
   max-width: 100%;
-  margin: 0
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 840px;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .restaurant-descr__content__right-side .circle-wrapper {
   position: absolute;
@@ -1166,14 +1177,9 @@ svg.close-line path {
   }
 }
 .restaurant-news__content__title-block {
-  max-width: 500px;
-  margin: 0 calc(22% - 5px) 0 auto;
+  max-width: calc(50% - 15px);
+  margin: 0 0 0 auto;
   position: relative
-}
-@media (max-width:1439px) {
-  .restaurant-news__content__title-block {
-    max-width: 485px
-  }
 }
 @media (max-width:1199px) {
   .restaurant-descr__content__right-side .circle-wrapper {
@@ -1811,6 +1817,25 @@ svg.close-line path {
 .backcall-section .backcall-form .input-group.btn-group .link-line path {
   stroke: #fff
 }
+.backcall-section .message-block .message-error,
+.backcall-section .message-block .message-succsess {
+  padding: 30px 0
+}
+.backcall-section .message-block .message-error .message-title,
+.backcall-section .message-block .message-succsess .message-title {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 500
+}
+@media (max-width:959px) {
+  .backcall-section .message-block .message-error .message-title,
+  .backcall-section .message-block .message-succsess .message-title {
+    font-size: 26px
+  }
+}
+.backcall-section + .footer {
+  margin-top: 0
+}
 .restaurant-events {
   margin-top: 200px
 }
@@ -1858,6 +1883,10 @@ svg.close-line path {
   }
 }
 @media (max-width:639px) {
+  .backcall-section .message-block .message-error .message-title,
+  .backcall-section .message-block .message-succsess .message-title {
+    font-size: 22px
+  }
   .restaurant-events__subtitle {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -1971,7 +2000,17 @@ svg.close-line path {
   .backcall-section .backcall-form .input-group.check-group label .label {
     width: 100%
   }
-  .backcall-section .backcall-form .input-group.btn-group button,
+  .backcall-section .backcall-form .input-group.btn-group button {
+    margin: 20px 0 0
+  }
+  .backcall-section .message-block .message-error,
+  .backcall-section .message-block .message-succsess {
+    padding: 15px 0
+  }
+  .backcall-section .message-block .message-error .message-title,
+  .backcall-section .message-block .message-succsess .message-title {
+    font-size: 20px
+  }
   .restaurant-events__descr__right-side .descr-block {
     margin: 20px 0 0
   }
@@ -3461,6 +3500,12 @@ swiper-container .swiper-notification {
 .footer__content__column.main-column .search-form input.validate-error + .required-label {
   display: block
 }
+.footer__content__column.main-column .search-form input:-internal-autofill-selected {
+  color: #000!important
+}
+.footer__content__column.main-column .search-form input:-internal-autofill-selected + .required-label + button {
+  color: #000!important
+}
 .footer__content__column.main-column .search-form button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4255,7 +4300,7 @@ screen and (max-height:300px) {
   margin: 0;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: var(--app-height);
   overflow: hidden
 }
 .simple_modal .mfp-close {
@@ -4293,13 +4338,15 @@ screen and (max-height:300px) {
 }
 .simple_modal .mfp-close .icon {
   position: relative;
-  z-index: -1
+  z-index: -1;
+  pointer-events: none!important
 }
 .simple_modal .mfp-close .close-line {
   position: absolute;
   top: calc(-50% + 5px);
   left: calc(-50% + 12px);
-  z-index: -1
+  z-index: -1;
+  pointer-events: none!important
 }
 .simple_modal .mfp-close:hover .close-line path {
   -webkit-animation: .5s cubic-bezier(.47,0,.745,.715) both link-arrow;
@@ -4323,7 +4370,7 @@ screen and (max-height:300px) {
   -ms-flex: 0 0 calc(50% - 10px);
   flex: 0 0 calc(50% - 10px);
   max-width: calc(50% - 10px);
-  height: 100vh;
+  height: var(--app-height);
   overflow: hidden;
   position: relative
 }
@@ -4408,7 +4455,7 @@ screen and (max-height:300px) {
   .simple_modal .modal-content .modal-descr .descr-wrapper {
     padding: 50px 20px 50px 0;
     overflow: scroll;
-    max-height: 100vh;
+    max-height: var(--app-height);
     max-width: 460px
   }
 }
@@ -4502,6 +4549,9 @@ screen and (max-height:300px) {
 }
 .simple_modal .modal-content .modal-descr .modal-form .input-group.btn-group button {
   color: var(--txt-color)
+}
+.simple_modal .modal-content .modal-descr .modal-form .wpcf7-response-output {
+  display: none
 }
 .mfp-ready .simple_modal .modal-content .modal-image:before {
   -webkit-transform: translateY(0);

@@ -19956,6 +19956,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.scrollTo = void 0;
 var scrollTo = function scrollTo(selector, offset) {
   $("body").on('click', selector, function (e) {
+    console.log('test');
     $('html,body').stop().animate({
       scrollTop: $('#' + $(this).attr('data-section')).offset().top - offset
     }, 1000);
@@ -20038,32 +20039,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   wow.init();
-
   /* main menu */
-  $('.main-menu__item').hover(function (event) {
-    event.stopPropagation();
-    $(this).addClass('active');
-    if ($(this).hasClass('submenu-item')) {
-      $(this).find('.submenu-wrapper').stop(true, true).slideDown(500);
+  $('.main-menu__item').hover(function () {
+    if ($('> .submenu-wrapper', this).length > 0) {
+      $('> .submenu-wrapper', this).stop().slideDown('slow');
     }
-  }, function (event) {
-    event.stopPropagation();
-    $(this).removeClass('active');
-    if ($(this).hasClass('submenu-item')) {
-      $(this).find('.submenu-wrapper').stop(true, true).slideUp(500);
+  }, function () {
+    if ($('> .submenu-wrapper', this).length > 0) {
+      $('> .submenu-wrapper', this).stop().slideUp('slow');
     }
   });
-  $('.submenu-list__item').hover(function (event) {
-    event.stopPropagation();
+  $('.submenu-list__item').hover(function () {
     $(this).addClass('active');
     if ($(this).hasClass('submenu-item')) {
-      $(this).find('.thirdmenu-wrapper').stop(true, true).show();
+      $(this).find('.thirdmenu-wrapper').stop().show();
     }
-  }, function (event) {
-    event.stopPropagation();
+  }, function () {
     $(this).removeClass('active');
     if ($(this).hasClass('submenu-item')) {
-      $(this).find('.thirdmenu-wrapper').stop(true, true).hide();
+      $(this).find('.thirdmenu-wrapper').stop().hide();
     }
   });
   /* main page */
@@ -20071,6 +20065,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var workCheck = function workCheck(scroll) {
       if (scroll == 0) {
         mainSlider.mousewheel.enable();
+      } else {
+        mainSlider.mousewheel.disable();
       }
     };
     var mainSlider = new _swiper["default"]("#main-slider", {
@@ -20147,6 +20143,8 @@ document.addEventListener('DOMContentLoaded', function () {
         pagination: false
       },
       992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
         pagination: false
       },
       960: {
@@ -20284,6 +20282,41 @@ document.addEventListener('DOMContentLoaded', function () {
    */
   /* modals */
   (0, _modalMagnific.simpleModal)();
+  /* phone mask */
+  $('input[name="phone"]').mask("+7 (999) 999-9999");
+  // modal form message
+  document.addEventListener('wpcf7mailsent', function (event) {
+    if ($(event.target).parents('.modal-descr')) {
+      var form_wrapper = $(event.target).parents('.modal-descr');
+      form_wrapper.find('.main-form').hide();
+      form_wrapper.find('.modal-message .message-succsess').fadeIn();
+    }
+    if ($(event.target).parents('.backcall-section')) {
+      var form_wrapper = $(event.target).parents('.backcall-section');
+      form_wrapper.find('.form-block').hide();
+      form_wrapper.find('.message-block .message-succsess').fadeIn();
+      setTimeout(function () {
+        form_wrapper.find('.message-block .message-succsess').hide();
+        form_wrapper.find('.form-block').fadeIn();
+      }, 4000);
+    }
+  }, false);
+  document.addEventListener('wpcf7mailfailed', function (event) {
+    if ($(event.target).parents('.modal-descr')) {
+      var form_wrapper = $(event.target).parents('.modal-descr');
+      form_wrapper.find('.main-form').hide();
+      form_wrapper.find('.modal-message .message-error').fadeIn();
+    }
+    if ($(event.target).parents('.backcall-section')) {
+      var form_wrapper = $(event.target).parents('.backcall-section');
+      form_wrapper.find('.form-block').hide();
+      form_wrapper.find('.message-block .message-error').fadeIn();
+      setTimeout(function () {
+        form_wrapper.find('.message-block .message-error').hide();
+        form_wrapper.find('.form-block').fadeIn();
+      }, 4000);
+    }
+  }, false);
   $(window).scroll(function () {
     var scroll = $(this).scrollTop() + $(window).innerHeight(),
       mainContent = $('.main-page').innerHeight(),
@@ -20301,6 +20334,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000);
     e.preventDefault();
   });
+  /* scroll to sections */
+  (0, _scrollTo.scrollTo)('.js-scroll-section', 30);
 });
 
 },{"./_func/_jq/getAppHeight":106,"./_func/_jq/getScrollWidth":107,"./_func/_jq/headerScrollChange":108,"./_func/_jq/menuBtn":109,"./_func/_jq/modalMagnific":110,"./_func/_jq/scrollTo":111,"gsap":3,"gsap/Draggable":1,"gsap/Flip":2,"lazysizes/plugins/bgset/ls.bgset.js":6,"lazysizes/plugins/parent-fit/ls.parent-fit.js":7,"swiper":105}]},{},[112])
