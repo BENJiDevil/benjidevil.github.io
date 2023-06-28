@@ -1,18 +1,18 @@
 @font-face {
-  font-family: WorkSans;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/WorkSansBold/WorkSansBold.eot);
-  src: url(../fonts/WorkSansBold/WorkSansBold.eot?#iefix) format("embedded-opentype"),url(../fonts/WorkSansBold/WorkSansBold.woff) format("woff"),url(../fonts/WorkSansBold/WorkSansBold.woff2) format("woff2"),url(../fonts/WorkSansBold/WorkSansBold.ttf) format("truetype")
-}
-@font-face {
   font-family: Fontello;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url(../fonts/fontello/fontello.eot);
   src: url(../fonts/fontello/fontello.eot?#iefix) format("embedded-opentype"),url(../fonts/fontello/fontello.woff) format("woff"),url(../fonts/fontello/fontello.woff2) format("woff2"),url(../fonts/fontello/fontello.ttf) format("truetype")
+}
+@font-face {
+  font-family: WorkSans;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/WorkSansBold/WorkSansBold.eot);
+  src: url(../fonts/WorkSansBold/WorkSansBold.eot?#iefix) format("embedded-opentype"),url(../fonts/WorkSansBold/WorkSansBold.woff) format("woff"),url(../fonts/WorkSansBold/WorkSansBold.woff2) format("woff2"),url(../fonts/WorkSansBold/WorkSansBold.ttf) format("truetype")
 }
 @font-face {
   font-family: WorkSans;
