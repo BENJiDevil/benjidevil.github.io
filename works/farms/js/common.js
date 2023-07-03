@@ -11181,6 +11181,23 @@ exports.menuBtn = menuBtn;
 },{}],106:[function(require,module,exports){
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.scrollTo = void 0;
+var scrollTo = function scrollTo(selector, offset) {
+  $("body").on('click', selector, function (e) {
+    $('html,body').stop().animate({
+      scrollTop: $('#' + $(this).attr('data-section')).offset().top - offset
+    }, 1000);
+    e.preventDefault();
+  });
+};
+exports.scrollTo = scrollTo;
+
+},{}],107:[function(require,module,exports){
+"use strict";
+
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 require("lazysizes/plugins/bgset/ls.bgset.js");
 require("lazysizes/plugins/parent-fit/ls.parent-fit.js");
@@ -11189,6 +11206,7 @@ var _headerScrollChange = require("./_func/_jq/headerScrollChange");
 var _getAppHeight = require("./_func/_jq/getAppHeight");
 var _getScrollWidth = require("./_func/_jq/getScrollWidth");
 var _menuBtn = require("./_func/_jq/menuBtn");
+var _scrollTo = require("./_func/_jq/scrollTo");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 // slider
@@ -11262,8 +11280,11 @@ document.addEventListener('DOMContentLoaded', function () {
       el: '.preview-how-slider .slider-pagination'
     }
   });
+
+  /* functions */
+  (0, _scrollTo.scrollTo)('.js-scroll-link', 100);
 });
 
-},{"./_func/_jq/getAppHeight":102,"./_func/_jq/getScrollWidth":103,"./_func/_jq/headerScrollChange":104,"./_func/_jq/menuBtn":105,"lazysizes/plugins/bgset/ls.bgset.js":2,"lazysizes/plugins/parent-fit/ls.parent-fit.js":3,"swiper":101}]},{},[106])
+},{"./_func/_jq/getAppHeight":102,"./_func/_jq/getScrollWidth":103,"./_func/_jq/headerScrollChange":104,"./_func/_jq/menuBtn":105,"./_func/_jq/scrollTo":106,"lazysizes/plugins/bgset/ls.bgset.js":2,"lazysizes/plugins/parent-fit/ls.parent-fit.js":3,"swiper":101}]},{},[107])
 
 //# sourceMappingURL=common.js.map

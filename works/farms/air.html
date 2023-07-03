@@ -40,10 +40,10 @@
     <link rel="preload" href="fonts/WorkSansBold/WorkSansBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/WorkSansExtraBold/WorkSansExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/WorkSansLight/WorkSansLight.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/WorkSansMedium/WorkSansMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/WorkSansRegular/WorkSansRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/WorkSansMedium/WorkSansMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/WorkSansSemiBold/WorkSansSemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link data-v="cache" rel="stylesheet" href="css/main.min.css?v=202306282028">
+    <link data-v="cache" rel="stylesheet" href="css/main.min.css?v=202307031532">
 </head>
 <body>
     <header class="header">
@@ -55,9 +55,9 @@
                 </a>
                 <nav class="add-menu">
                     <ul class="add-menu__list">
-                        <li class="add-menu__item"><a href="#" class="add-menu__link">Overview</a></li>
-                        <li class="add-menu__item"><a href="#" class="add-menu__link">Features</a></li>
-                        <li class="add-menu__item"><a href="#" class="add-menu__link">Tech Specs</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="start" class="add-menu__link js-scroll-link">Overview</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="#" class="add-menu__link js-scroll-link">Features</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="spec" class="add-menu__link js-scroll-link">Tech Specs</a></li>
                     </ul>
                 </nav>
                 <nav class="main-menu">
@@ -78,7 +78,7 @@
             </div>
         </div>
     </header>
-    <main class="preview-page air-page" style="background-image: url('images/common/air/main_bg.jpg')">
+    <main id="start" class="preview-page air-page">
         <div class="container">
             <h1 class="preview-page__title big-title">Air</h1>
             <div class="preview-page__descr">
@@ -86,7 +86,7 @@
             </div>
         </div>
     </main>
-    <section class="preview-descr" style="background-image: url('images/common/air/environment.jpg')">
+    <section class="preview-descr air-page">
         <div class="container">
             <i class="icon icon-air section-icon"></i>
             <h2 class="preview-descr__title section-title">Tune your environment.</h2>
@@ -107,21 +107,24 @@
                     <p>Full lighting control <br> (dimming, sunset, <br> sunrise & spectrum)</p>
                 </div>
                 <div class="preview-blocks__item">
+                    <a href="javascript:void(0);" data-section="grow" class="scroll-link js-scroll-link"></a>
                     <i class="icon icon-devices"></i>
                     <p>App control <br> for convenient <br> management</p>
                 </div>
                 <div class="preview-blocks__item">
+                    <a href="javascript:void(0);" data-section="#" class="scroll-link js-scroll-link"></a>
                     <i class="icon icon-aqua"></i>
                     <p>Aqua nutrient <br> solution controller <br> compatible</p>
                 </div>
                 <div class="preview-blocks__item">
+                    <a href="javascript:void(0);" data-section="#" class="scroll-link js-scroll-link"></a>
                     <i class="icon icon-ignis"></i>
                     <p>Ignis light <br> compatible</p>
                 </div>
             </div>
         </div>
     </div>
-    <section class="preview-ready">
+    <section class="preview-ready air-page">
         <div class="container">
             <i class="icon icon-config section-icon"></i>
             <h2 class="preview-ready__title section-title">Ready. Set. Grow.</h2>
@@ -170,7 +173,7 @@
             </div>
         </div>
     </section>
-    <section class="preview-carousel">
+    <section class="preview-carousel air-page">
         <div class="container">
             <h2 class="preview-carousel__title section-title">Air can be used in…</h2>
             <div class="preview-carousel__content">
@@ -205,7 +208,7 @@
             </div>
         </div>
     </section>
-    <section class="preview-control">
+    <section class="preview-control air-page">
         <div class="container">
             <h2 class="preview-control__title section-title">Full control of your farm.</h2>
             <div class="preview-control__content">
@@ -281,7 +284,7 @@
             </div>
         </div>
     </section>
-    <section class="preview-cloud" style="background-image: url('images/common/air/cloud_bg.jpg')">
+    <section class="preview-cloud air-page">
         <div class="container">
             <i class="icon icon-cloud section-icon"></i>
             <h2 class="preview-cloud__title section-title">Cloud subscription.</h2>
@@ -307,11 +310,11 @@
                         <div class="item-name">Cultivation recipes for 60+ varieties</div>
                         <div class="item-descr">
                             <p>Achieve better yields with automatic settings and maintenance based on 7+ years of research</p>
-                            <a href="#" class="download-link" target="_blank"><i class="icon icon-input"></i></a>
                         </div>
                     </div>
                     <div class="image-block">
                         <img src="images/common/air/cloud/cloud_image2.png" alt="image" class="item-image">
+                        <a href="#" class="download-link" target="_blank"><i class="icon icon-input"></i></a>
                     </div>
                 </div>
                 <div class="preview-cloud__content__item">
@@ -365,7 +368,7 @@
             </div>
         </div>
     </section>
-    <section class="preview-grow" style="background-image: url('images/common/air/grow_bg.jpg')">
+    <section id="grow" class="preview-grow air-page">
         <div class="container">
             <i class="icon icon-devices section-icon"></i>
             <h2 class="preview-grow__title section-title">Grow from your phone</h2>
@@ -391,7 +394,7 @@
             </div>
         </div>
     </section>
-    <section class="preview-how">
+    <section class="preview-how air-page">
         <div class="container">
             <h2 class="preview-how__title section-title">How Air + Aqua <br> work in harmony.</h2>
             <div class="preview-how__descr section-descr">
@@ -483,7 +486,7 @@
             </div>
         </div>
     </section>
-    <section class="air-installation" style="background-image: url('images/common/air/install_bg.jpg')">
+    <section class="air-installation">
         <div class="container">
             <i class="icon icon-settings section-icon"></i>
             <h2 class="air-installation__title section-title">Simple installation.</h2>
@@ -492,7 +495,7 @@
             </div>
         </div>
     </section>
-    <section class="preview-protection">
+    <section class="preview-protection air-page">
         <div class="container">
             <div class="preview-protection__content">
                 <div class="preview-protection__content__left-side">
@@ -508,7 +511,7 @@
             </div>
         </div>
     </section>
-    <section class="preview-specification">
+    <section id="spec" class="preview-specification air-page">
         <div class="container">
             <i class="icon icon-air section-icon"></i>
             <h2 class="preview-specification__title section-title">Technical Specification</h2>
@@ -579,7 +582,7 @@
                 </div>
             </div>
             <div class="btns-row">
-                <a href="#" class="file-link btn-fill-style">Download Specification <i class="icon icon-input"></i></a>
+                <a href="#" class="file-link btn-fill-style" target="_blank">Download Specification <i class="icon icon-input"></i></a>
             </div>
         </div>
     </section>
@@ -626,7 +629,7 @@
         <div class="container">
             <div class="footer__content">
                 <div class="footer__content__side">
-                    <p>© Visionary Farms 2023</p>
+                    <a href="/" class="copyright-link">© Visionary Farms 2023</a>
                     <a href="#" target="_blank" class="doc-link">Conformity Certificate</a>
                     <a href="#" target="_blank" class="doc-link">Privacy</a>
                 </div>
@@ -642,9 +645,9 @@
             </div>
         </div>
     </footer>
-    <link data-v="cache" rel="stylesheet" href="css/styles.min.css?v=202306282028">
+    <link data-v="cache" rel="stylesheet" href="css/styles.min.css?v=202307031532">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
-    <script data-v="cache" defer src="js/common.min.js?v=202306282028"></script>
+    <script data-v="cache" defer src="js/common.min.js?v=202307031532"></script>
 </body>
 </html>

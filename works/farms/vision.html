@@ -40,10 +40,10 @@
     <link rel="preload" href="fonts/WorkSansBold/WorkSansBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/WorkSansExtraBold/WorkSansExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/WorkSansLight/WorkSansLight.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/WorkSansMedium/WorkSansMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/WorkSansRegular/WorkSansRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/WorkSansMedium/WorkSansMedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/WorkSansSemiBold/WorkSansSemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link data-v="cache" rel="stylesheet" href="css/main.min.css?v=202306282028">
+    <link data-v="cache" rel="stylesheet" href="css/main.min.css?v=202307031533">
 </head>
 <body>
     <header class="header">
@@ -55,9 +55,13 @@
                 </a>
                 <nav class="add-menu">
                     <ul class="add-menu__list">
-                        <li class="add-menu__item"><a href="#" class="add-menu__link">Overview</a></li>
-                        <li class="add-menu__item"><a href="#" class="add-menu__link">Features</a></li>
-                        <li class="add-menu__item"><a href="#" class="add-menu__link">Tech Specs</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="about" class="add-menu__link js-scroll-link">About us</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="vision" class="add-menu__link js-scroll-link">Vision</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="software" class="add-menu__link js-scroll-link">Software</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="philosophy" class="add-menu__link js-scroll-link">Philosophy</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="audience" class="add-menu__link js-scroll-link">Audience</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="competencies" class="add-menu__link js-scroll-link">Competencies</a></li>
+                        <li class="add-menu__item"><a href="javascript:void(0);" data-section="case" class="add-menu__link js-scroll-link">Case studies</a></li>
                     </ul>
                 </nav>
                 <nav class="main-menu">
@@ -78,74 +82,83 @@
             </div>
         </div>
     </header>
-    <main class="vision-page">
+    <main class="preview-page vision-page">
         <div class="container">
-            <h1 class="vision-page__title big-title">Vision</h1>
-            <div class="vision-page__descr">
+            <h1 class="preview-page__title big-title">Vision</h1>
+            <div class="preview-page__descr">
                 <p>About us, our values and mission</p>
             </div>
         </div>
     </main>
     <div class="vision-decsr">
-        <div class="vision-decsr__top">
+        <div id="about" class="vision-decsr__top">
             <div class="container">
-                <p>Visionary Farms is a young company that develops <b>optimised cultivation solutions</b> for growing crops in controlled environments.</p>
-                <p>We make <b>smart cultivation technology</b> accessible to individuals, small businesses, and medium-sized enterprises.</p>
-                <p>In developing our solutions, we prioritise efficiency and productivity. This makes smart cultivation appealing to <b>everyone</b>.</p>
+                <p>Visionary Farms is a young company that <br> develops <b>optimised cultivation solutions</b> for <br> growing crops in controlled environments.</p>
+                <p>We make <b>smart cultivation technology</b> <br> accessible to individuals, small businesses, <br> and medium-sized enterprises.</p>
+                <p>In developing our solutions, we prioritise <br> efficiency and productivity. This makes <br> smart cultivation appealing to <b class="everyone">everyone</b>.</p>
             </div>
         </div>
-        <div class="vision-decsr__bottom">
+        <div id="vision" class="vision-decsr__bottom">
             <div class="container">
-                <p>Success in controlled environment cultivation requires knowledge in multiple complicated fields, including plant science, light engineering, hydroponics, as well as software and automation.</p>
-                <p>Lacking knowledge in any of these areas makes it challenging to achieve stable cultivation and predictable harvests. Therefore, our vision and philosophy revolve around sharing the knowledge required for success. We strive to make our systems and components efficient and productive, but also straightforward and user-friendly.</p>
-                <p><b>Our goal is to simplify the complex and make it accessible.</b></p>
+                <p>Success in controlled environment cultivation <br> requires knowledge in multiple complicated fields, including plant science, light engineering,
+                    <br> hydroponics, as well as software and automation.
+                </p>
+                <p>Lacking knowledge in any of these areas makes it <br> challenging to achieve stable cultivation and predictable harvests. Therefore, our vision and philosophy revolve around sharing the knowledge required for success. We strive to make our systems and components efficient and productive, but also straightforward and user-friendly.</p>
+                <p><b>Our goal is to simplify the complex <br> and make it accessible.</b></p>
             </div>
         </div>
     </div>
-    <section class="vision-software">
+    <section id="software" class="vision-software">
         <div class="container">
-            <i class="icon icon-devices"></i>
+            <i class="icon icon-devices section-icon"></i>
             <h2 class="vision-software__title section-title">Software that’s not hard.</h2>
-            <div class="vision-software__descr">
+            <div class="vision-software__descr section-descr">
                 <p>The core of our solutions is our software system, available to users through our mobile app. The app has an intuitive interface, making Cloud-enabled automation simple and accessible. It is a living ecosystem that we develop in collaboration with our users.</p>
             </div>
-            <img src="images/common/vision/software.jpg" alt="software" class="software-image">
         </div>
     </section>
-    <section class="vision-philosophy">
+    <section id="philosophy" class="vision-philosophy">
         <div class="container">
-            <i class="icon icon-bulb"></i>
+            <i class="icon icon-bulb section-icon"></i>
             <h2 class="vision-philosophy__title section-title">Our Philosophy.</h2>
-            <div class="vision-philosophy__descr">
+            <div class="vision-philosophy__descr section-descr">
                 <p>The foundation of our triangle represents the principles upon which we rely to achieve the goals at its apex.</p>
             </div>
             <div class="vision-philosophy__content">
                 <div class="vision-philosophy__content__item">
-                    <h3 class="item-name">Trust</h3>
-                    <p>Mutual trust and respect lead to fruitful collaboration.</p>
+                    <div class="item-wrapper">
+                        <h3 class="item-name">Trust</h3>
+                        <p>Mutual trust and respect lead to fruitful collaboration.</p>
+                    </div>
                 </div>
                 <div class="vision-philosophy__content__item">
-                    <h3 class="item-name">Transparency</h3>
-                    <p>Openness features in all aspects of our operations, especially in our willingness to share information about our technology with all interested parties.</p>
+                    <div class="item-wrapper">
+                        <h3 class="item-name">Transparency</h3>
+                        <p>Openness features in all aspects of our operations, especially in our willingness to share information about our technology with all interested parties.</p>
+                    </div>
                 </div>
                 <div class="vision-philosophy__content__item">
-                    <h3 class="item-name">Knowledge Sharing</h3>
-                    <p>Our Cloud-based software system allows us to gather, digitise, analyze, and share knowledge, while its flexibility facilitates collaboration.</p>
+                    <div class="item-wrapper">
+                        <h3 class="item-name">Knowledge Sharing</h3>
+                        <p>Our Cloud-based software system allows us to gather, digitise, analyze, and share knowledge, while its flexibility facilitates collaboration.</p>
+                    </div>
                 </div>
                 <div class="vision-philosophy__content__item">
-                    <h3 class="item-name">Usability</h3>
-                    <h3 class="item-name">Effective Resource Management</h3>
-                    <h3 class="item-name">Continuous Development</h3>
-                    <h3 class="item-name">Flexibility</h3>
+                    <div class="item-wrapper">
+                        <h3 class="item-name">Usability</h3>
+                        <h3 class="item-name">Effective Resource Management</h3>
+                        <h3 class="item-name">Continuous Development</h3>
+                        <h3 class="item-name">Flexibility</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="vision-design">
+    <section id="audience" class="vision-design">
         <div class="container">
-            <i class="icon icon-profile"></i>
+            <i class="icon icon-profile section-icon"></i>
             <h2 class="vision-design__title section-title">Designed for everyone.</h2>
-            <div class="vision-design__descr">
+            <div class="vision-design__descr section-descr">
                 <p>Because of our focus on accessibility, we’re always finding new audiences for our technology.</p>
             </div>
             <div class="vision-design__content">
@@ -162,7 +175,7 @@
                     <p>Bring nature into your office and give your employees the option to enjoy fresh greens as snacks.</p>
                 </div>
                 <div class="vision-design__content__item">
-                    <h3 class="item-name">Hotels, restaurants & cafés</h3>
+                    <h3 class="item-name">Hotels, <br> restaurants <br> & cafés</h3>
                     <p>Bring nature into your office and give your employees the option to enjoy fresh greens as snacks.</p>
                 </div>
                 <div class="vision-design__content__item">
@@ -184,140 +197,156 @@
             </div>
         </div>
     </section>
-    <section class="vision-key">
+    <section id="competencies" class="vision-key">
         <div class="container">
-            <i class="icon icon-flask"></i>
+            <i class="icon icon-flask section-icon"></i>
             <h2 class="vision-key__title section-title">Our key competencies.</h2>
-            <div class="vision-key__descr">
+            <div class="vision-key__descr section-descr">
                 <p>The key ingredients to growing full of pleasure and profit.</p>
             </div>
-            <div class="vision-key__content-row">
-                <div class="descr-block">
-                    <h3 class="row-title">Plant science</h3>
-                    <p>In the past, knowledge about growing specific varieties was only accessible to a few, and that expertise was never shared beyond large-scale agricultural operations.</p>
-                    <p>We digitize the expertise of plant scientists by translating their knowledge into algorithms for lighting, hydroponic and climate control systems. Once digitized, we adjust and refine these algorithms and finally share them with our users.</p>
-                    <p>Our goal is to ensure that our technology provides a stable and high yield, minimising crop loss and maximising pleasure.</p>
+            <div class="vision-key__content">
+                <div class="vision-key__content__row">
+                    <div class="descr-block">
+                        <h3 class="row-title">Plant science</h3>
+                        <p>In the past, knowledge about growing specific varieties was only accessible to a few, and that expertise was never shared beyond large-scale agricultural operations.</p>
+                        <p>We digitize the expertise of plant scientists by translating their knowledge into algorithms for lighting, hydroponic and climate control systems. Once digitized, we adjust and refine these algorithms and finally share them with our users.</p>
+                        <p>Our goal is to ensure that our technology provides a stable and high yield, minimising crop loss and maximising pleasure.</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/vision/key_image1.jpg" alt="image" class="row-image">
+                    </div>
                 </div>
-                <div class="image-block">
-                    <img src="images/common/vision/key_image1.jpg" alt="image" class="row-image">
+                <div class="vision-key__content__row">
+                    <div class="descr-block">
+                        <h3 class="row-title">Lighting</h3>
+                        <p>Lighting enables us to replace the sun and grow vertically, achieving a high crop density, regardless of the location on the planet. However, lighting is the main investment component and a significant portion of operating expenses related to the electricity consumption of farms. The efficiency and cost-effectiveness of the lighting solutions used have a huge impact on the length of the payback period.</p>
+                        <p>Light engineering is a key competency of the Visionary Farms team, with experience in creating lighting fixtures that have sold hundreds of thousands of units and lighting installations on a city scale. We put this knowledge towards creating efficient and easy-to-use cultivation lighting to suit your needs.</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/vision/key_image2.jpg" alt="image" class="row-image">
+                    </div>
                 </div>
-            </div>
-            <div class="vision-key__content-row">
-                <div class="descr-block">
-                    <h3 class="row-title">Lighting</h3>
-                    <p>Lighting enables us to replace the sun and grow vertically, achieving a high crop density, regardless of the location on the planet. However, lighting is the main investment component and a significant portion of operating expenses related to the electricity consumption of farms. The efficiency and cost-effectiveness of the lighting solutions used have a huge impact on the length of the payback period.</p>
-                    <p>Light engineering is a key competency of the Visionary Farms team, with experience in creating lighting fixtures that have sold hundreds of thousands of units and lighting installations on a city scale. We put this knowledge towards creating efficient and easy-to-use cultivation lighting to suit your needs.</p>
-                </div>
-                <div class="image-block">
-                    <img src="images/common/vision/key_image1.jpg" alt="image" class="row-image">
-                </div>
-            </div>
-            <div class="vision-key__content-row">
-                <div class="descr-block">
-                    <h3 class="row-title">Automation and IT</h3>
-                    <p>Our cloud-based software system orchestrates all of the elements of cultivation, automatically creating and maintaining the optimal conditions for your crops.</p>
-                    <p>You interact with the software system through our mobile app, where you can manually set cultivation parameters or access our cultivation recipes. Visionary Farms algorithms are constantly updated and refined to optimise your cultivation.</p>
-                </div>
-                <div class="image-block">
-                    <img src="images/common/vision/key_image1.jpg" alt="image" class="row-image">
+                <div class="vision-key__content__row">
+                    <div class="descr-block">
+                        <h3 class="row-title">Automation and IT</h3>
+                        <p>Our cloud-based software system orchestrates all of the elements of cultivation, automatically creating and maintaining the optimal conditions for your crops.</p>
+                        <p>You interact with the software system through our mobile app, where you can manually set cultivation parameters or access our cultivation recipes. Visionary Farms algorithms are constantly updated and refined to optimise your cultivation.</p>
+                    </div>
+                    <div class="image-block">
+                        <img src="images/common/vision/key_image3.jpg" alt="image" class="row-image">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="vision-products">
         <div class="container">
-            <i class="icon icon-settings"></i>
+            <i class="icon icon-settings section-icon"></i>
             <h2 class="vision-products__title section-title">Our products & services.</h2>
-            <div class="vision-products__descr">
+            <div class="vision-products__descr section-descr">
                 <p>From beginning to end, we’re here to help guide you.</p>
             </div>
             <div class="vision-products__control">
-                <div class="block-name">Everything for effective controlled-environment cultivation</div>
-                <div class="block-item">
-                    <h3 class="item-name">Lighting</h3>
-                </div>
-                <div class="block-item">
-                    <h3 class="item-name">Automation</h3>
-                </div>
-                <div class="block-item">
-                    <h3 class="item-name">Shelving</h3>
-                </div>
-                <div class="block-item">
-                    <h3 class="item-name">Software</h3>
-                </div>
-                <div class="block-item">
-                    <h3 class="item-name">Consumables</h3>
+                <div class="control-name">Everything for effective controlled-environment cultivation</div>
+                <div class="control-list">
+                    <div class="control-list__item">
+                        <a href="#" class="item-link"></a>
+                        <img src="images/common/vision/products/product_image1.jpg" alt="product" class="item-image">
+                        <h3 class="item-name">Lighting</h3>
+                    </div>
+                    <div class="control-list__item">
+                        <a href="#" class="item-link"></a>
+                        <img src="images/common/vision/products/product_image2.jpg" alt="product" class="item-image">
+                        <h3 class="item-name">Automation</h3>
+                    </div>
+                    <div class="control-list__item">
+                        <h3 class="item-name">Shelving</h3>
+                    </div>
+                    <div class="control-list__item">
+                        <img src="images/common/vision/products/product_image3.jpg" alt="product" class="item-image">
+                        <h3 class="item-name">Software</h3>
+                    </div>
+                    <div class="control-list__item">
+                        <img src="images/common/vision/products/product_image4.jpg" alt="product" class="item-image">
+                        <h3 class="item-name">Consumables</h3>
+                    </div>
                 </div>
             </div>
             <div class="vision-products__grow">
-                <div class="block-name">Everything we do to help you grow</div>
-                <div class="grow-side">
-                    <div class="side-title">Before Purchase</div>
-                    <div class="grow-side__item">
-                        <i class="icon icon-tasks"></i>
-                        <p>Help in creating a business plan</p>
+                <div class="grow-name">Everything we do to help you grow</div>
+                <div class="grow-list">
+                    <div class="grow-list__item">
+                        <div class="side-title">Before Purchase</div>
+                        <div class="side-item">
+                            <i class="icon icon-tasks"></i>
+                            <p>Help in creating a business plan</p>
+                        </div>
+                        <div class="side-item">
+                            <i class="icon icon-edit"></i>
+                            <p>Knowledge sharing</p>
+                        </div>
+                        <div class="side-item">
+                            <i class="icon icon-bulb"></i>
+                            <p>Optimised farm design</p>
+                        </div>
+                        <div class="side-item">
+                            <i class="icon icon-tick"></i>
+                            <p>Guidance in finding a suitable farm location</p>
+                        </div>
                     </div>
-                    <div class="grow-side__item">
-                        <i class="icon icon-edit"></i>
-                        <p>Knowledge sharing</p>
-                    </div>
-                    <div class="grow-side__item">
-                        <i class="icon icon-bulb"></i>
-                        <p>Optimised farm design</p>
-                    </div>
-                    <div class="grow-side__item">
-                        <i class="icon icon-tick"></i>
-                        <p>Guidance in finding a suitable farm location</p>
-                    </div>
-                </div>
-                <div class="grow-side">
-                    <div class="side-title">After Purchase</div>
-                    <div class="grow-side__item">
-                        <i class="icon"></i>
-                        <p>Full technical support</p>
-                    </div>
-                    <div class="grow-side__item">
-                        <i class="icon icon-input"></i>
-                        <p>Continuous software updates</p>
-                    </div>
-                    <div class="grow-side__item">
-                        <i class="icon icon-flaskleaf"></i>
-                        <p>New cultivation recipes added regularly</p>
+                    <div class="grow-list__item">
+                        <div class="side-title">After Purchase</div>
+                        <div class="side-item">
+                            <i class="icon icon-question"></i>
+                            <p>Full technical support</p>
+                        </div>
+                        <div class="side-item">
+                            <i class="icon icon-input"></i>
+                            <p>Continuous software updates</p>
+                        </div>
+                        <div class="side-item">
+                            <i class="icon icon-flaskleaf"></i>
+                            <p>New cultivation recipes added regularly</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="btns-row">
-                <a href="#" class="contact-link btn-fill-style">Contact us <i class="icon icon-notifications"></i></a>
+                <a href="javascript:void(0);" data-section="contacts" class="contact-link btn-fill-style js-scroll-link">Contact us <i class="icon icon-notifications"></i></a>
             </div>
         </div>
     </section>
-    <section class="vision-cases">
+    <section id="case" class="vision-cases">
         <div class="container">
-            <i class="icon icon-search"></i>
+            <i class="icon icon-search section-icon"></i>
             <h2 class="vision-cases__title section-title">Case studies.</h2>
-            <div class="vision-cases__descr">
+            <div class="vision-cases__descr section-descr">
                 <p>Take a look at some of the places we’ve applied our technology.</p>
             </div>
             <div class="vision-cases__content">
-                <div class="vision-cases__row">
-                    <div class="vision-cases__row__side image-side">
+                <div class="case-item">
+                    <div class="case-item__image-side">
                         <div class="image-column">
-                            <img src="images/common/vision/image.jpg" alt="image">
-                            <img src="images/common/vision/image.jpg" alt="image">
+                            <img src="images/common/vision/cases/case_image1.jpg" alt="image" class="item-image">
+                            <img src="images/common/vision/cases/case_image2.jpg" alt="image" class="item-image">
                         </div>
                         <div class="image-column">
-                            <img src="images/common/vision/image.jpg" alt="image">
-                            <div class="info-item">
+                            <img src="images/common/vision/cases/case_image3.jpg" alt="image" class="item-image">
+                            <div class="item-info">
                                 <span>$97k</span>
                                 <p>Revenue in 2022</p>
                             </div>
                         </div>
                     </div>
-                    <div class="vision-cases__row__side">
+                    <div class="case-item__descr-side">
                         <h3 class="side-name">Two leafy greens farms</h3>
-                        <p><b>With the help of Visionary Farms lighting, hardware and consulting services, in 2020, the first city farm in the Udmurtia region was launched, which grows greens all year round.</b></p>
-                        <p>«The founder of Visionary Farms was the first person to help me understand urban farming, and only thanks to him I was able to build and operate my first vertical farm.»</p>
-                        <p>Andrey Golovkin, urban vertical farmer</p>
+                        <p>With the help of Visionary Farms lighting, hardware and <br> consulting services, in 2020, the first city farm in the Udmurtia <br> region was launched, which grows greens all year round.</p>
+                        <div class="side-descr">
+                            <p>«The founder of Visionary Farms was the first person to help me <br> understand urban farming, and only thanks to him I was able to
+                                <br> build and operate my first vertical farm.»
+                            </p>
+                            <p>Andrey Golovkin, urban vertical farmer</p>
+                        </div>
                         <div class="info-block">Rocket, Romaine lettuce, Binex lettuce, Swiss chard + Dunstar lettuce</div>
                         <div class="info-row">
                             <div class="info-row__item">
@@ -331,25 +360,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="vision-cases__row">
-                    <div class="vision-cases__row__side image-side">
+                <div class="case-item">
+                    <div class="case-item__image-side">
                         <div class="image-column">
-                            <img src="images/common/vision/image.jpg" alt="image">
-                            <img src="images/common/vision/image.jpg" alt="image">
+                            <img src="images/common/vision/cases/case_image22.jpg" alt="image" class="item-image">
+                            <img src="images/common/vision/cases/case_image23.jpg" alt="image" class="item-image">
                         </div>
                         <div class="image-column">
-                            <img src="images/common/vision/image.jpg" alt="image">
-                            <div class="info-item">
+                            <img src="images/common/vision/cases/case_image24.jpg" alt="image" class="item-image">
+                            <div class="item-info">
                                 <span>$103k</span>
                                 <p>Revenue in 2022</p>
                             </div>
                         </div>
                     </div>
-                    <div class="vision-cases__row__side">
+                    <div class="case-item__descr-side">
                         <h3 class="side-name">Strawberry greenhouse</h3>
-                        <p><b>This greenhouse, created in 2021, boasts uninterrupted strawberry production for 10 months out of the year.</b></p>
-                        <p>It was created using Visionary Farms lighting, hardware and software solutions and consulting services.</p>
-                        <img src="images/common/vision/image.jpg" alt="image">
+                        <p>This greenhouse, created in 2021, boasts uninterrupted <br> strawberry production for 10 months out of the year.</p>
+                        <div class="side-descr">
+                            <p>It was created using Visionary Farms lighting, hardware <br> and software solutions and consulting services.</p>
+                        </div>
+                        <img src="images/common/vision/cases/case_image21.jpg" alt="image" class="item-image">
                         <div class="info-row">
                             <div class="info-row__item">
                                 <span>450 m²</span>
@@ -362,53 +393,57 @@
                         </div>
                     </div>
                 </div>
-                <div class="vision-cases__row">
-                    <div class="vision-cases__row__side image-side">
+                <div class="case-item">
+                    <div class="case-item__image-side">
                         <div class="image-column">
-                            <img src="images/common/vision/image.jpg" alt="image">
+                            <img src="images/common/vision/cases/case_image31.jpg" alt="image" class="item-image">
                         </div>
                         <div class="image-column">
-                            <img src="images/common/vision/image.jpg" alt="image">
+                            <img src="images/common/vision/cases/case_image32.jpg" alt="image" class="item-image">
                             <div class="image-row">
-                                <img src="images/common/vision/image.jpg" alt="image">
-                                <img src="images/common/vision/image.jpg" alt="image">
+                                <img src="images/common/vision/cases/case_image33.jpg" alt="image" class="item-image">
+                                <img src="images/common/vision/cases/case_image34.jpg" alt="image" class="item-image">
                             </div>
                         </div>
                     </div>
-                    <div class="vision-cases__row__side">
+                    <div class="case-item__descr-side">
                         <h3 class="side-name">Visionary Farms R&D centre</h3>
-                        <p><b>Our R&D centre is located in a repurposed basement boiler room of an office building.</b></p>
-                        <p>The centre uses our hardware and software for developing new cultivation algorithms, as well as research and development in the following areas:</p>
-                        <div class="info-block">Using micropropagation for large-scale production of strawberry seedlings.</div>
+                        <p>Our R&D centre is located in a repurposed basement boiler <br> room of an office building.</p>
+                        <div class="side-descr">
+                            <p>The centre uses our hardware and software for developing <br> new cultivation algorithms, as well as research and <br> development in the following areas:</p>
+                        </div>
+                        <div class="info-block">Using micropropagation for large-scale <br> production of strawberry seedlings.</div>
                         <div class="info-block">Development of environmentally neutral synthetic biodegradable substrates for growing plants in vertical farms.</div>
-                        <div class="info-block">Optimization of lighting recipes for strawberry cultivation in environments completely deprived of natural light.</div>
+                        <div class="info-block">Optimization of lighting recipes for strawberry cultivation in <br> environments completely deprived of natural light.</div>
                     </div>
                 </div>
-                <div class="vision-cases__row">
-                    <div class="vision-cases__row__side image-side">
+                <div class="case-item">
+                    <div class="case-item__image-side">
                         <div class="image-column">
-                            <img src="images/common/vision/image.jpg" alt="image">
-                            <img src="images/common/vision/image.jpg" alt="image">
+                            <img src="images/common/vision/cases/case_image42.jpg" alt="image" class="item-image">
+                            <img src="images/common/vision/cases/case_image43.jpg" alt="image" class="item-image">
                         </div>
                         <div class="image-column">
-                            <img src="images/common/vision/image.jpg" alt="image">
+                            <img src="images/common/vision/cases/case_image44.jpg" alt="image" class="item-image">
                         </div>
                     </div>
-                    <div class="vision-cases__row__side">
+                    <div class="case-item__descr-side">
                         <h3 class="side-name">Restaurant «Parnik»</h3>
-                        <p><b>Parnik is a trendy salad bar. All of the herbs, microgreens and leafy greens used in its dishes are grown directly in-house using Visionary Farms technology.</b></p>
-                        <p>The project was completed in January 2020 and continues to operate using Visionary Farms hardware and software.</p>
-                        <img src="images/common/vision/image.jpg" alt="image">
+                        <p>Parnik is a trendy salad bar. All of the herbs, microgreens and leafy greens used in its dishes are grown directly in-house using Visionary Farms technology.</p>
+                        <div class="side-descr">
+                            <p>The project was completed in January 2020 and continues to operate using Visionary Farms hardware and software.</p>
+                        </div>
+                        <img src="images/common/vision/cases/case_image41.jpg" alt="image" class="item-image">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="message-section">
+    <section id="contacts" class="message-section">
         <div class="container">
-            <i class="icon icon-notifications"></i>
+            <i class="icon icon-notifications section-icon"></i>
             <h2 class="message-section__title section-title">Message us.</h2>
-            <div class="message-section__descr">
+            <div class="message-section__descr section-descr">
                 <p>For any enquiries don’t hesitate to send us a message and we’ll get back to you as soon as possible.</p>
             </div>
             <form action="#" class="message-section__form">
@@ -447,7 +482,7 @@
         <div class="container">
             <div class="footer__content">
                 <div class="footer__content__side">
-                    <p>© Visionary Farms 2023</p>
+                    <a href="/" class="copyright-link">© Visionary Farms 2023</a>
                     <a href="#" target="_blank" class="doc-link">Conformity Certificate</a>
                     <a href="#" target="_blank" class="doc-link">Privacy</a>
                 </div>
@@ -463,9 +498,9 @@
             </div>
         </div>
     </footer>
-    <link data-v="cache" rel="stylesheet" href="css/styles.min.css?v=202306282028">
+    <link data-v="cache" rel="stylesheet" href="css/styles.min.css?v=202307031533">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
-    <script data-v="cache" defer src="js/common.min.js?v=202306282028"></script>
+    <script data-v="cache" defer src="js/common.min.js?v=202307031533"></script>
 </body>
 </html>
